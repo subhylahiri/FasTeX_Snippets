@@ -40,7 +40,7 @@ def get_template(text: ty.List[str], snip: str) -> ty.List[str]:
     except ValueError:
         raise
     else:
-        return text[start:stop]
+        return [x[:-1].replace('$', r'\$') for x in text[start:stop]]
 
 
 def next_ini_line(file: io.TextIOBase, check: re.Pattern) -> re.Match:
@@ -92,11 +92,11 @@ def get_macro_template(macro: str, dat_text: ty.List[str]) -> ty.List[str]:
         return None
     groups = match.groups()
     trigger = groups[0]
-    snippet = get_template(dat_text, trigger)
+    body = get_template(dat_text, trigger)
     if len(groups) == 2:
         line_num = int(groups[1])
-        snippet[-line_num] += "$1"
-    return snippet
+        body[-line_num] += "$1"
+    return body
 
 
 def get_macro_insert(macro: str) -> str:
@@ -105,16 +105,16 @@ def get_macro_insert(macro: str) -> str:
     if match is None:
         return None
     groups = match.groups()
-    snippet = groups[0]
+    body = groups[0].replace('$', r'\$')
     if index == 0:
-        return snippet
+        return body
     if index == 1:
-        return snippet[:-1] + "$1" + snippet[-1:]
+        return body[:-1] + "$1" + body[-1:]
     char_num = int(groups[1])
     if index == 2:
-        return snippet[:-char_num] + "$1" + snippet[-char_num:]
-    snippet = snippet[:-char_num-1] + "$1" + snippet[-char_num-1:]
-    return snippet[:-1] + "$2" + snippet[-1:]
+        return body[:-char_num] + "$1" + body[-char_num:]
+    body = body[:-char_num-1] + "$1" + body[-char_num-1:]
+    return body[:-2] + "$2" + body[-1:]
 
 
 def next_ini_entry(file: io.TextIOBase,
@@ -125,15 +125,16 @@ def next_ini_entry(file: io.TextIOBase,
     macro = get_ini_macro(file)
     if trigger is None or macro is None:
         return None
-    snippet = get_macro_template(macro, dat_text)
-    if snippet:
-        description = snippet[0]
+    body = get_macro_template(macro, dat_text)
+    if body:
+        description = body[0]
     else:
-        snippet = get_macro_insert(macro)
-        description = snippet
-    if snippet is None:
+        body = get_macro_insert(macro)
+        description = body
+    if body is None:
         return None
-    return {'prefix': trigger, 'body': snippet, 'description': description}
+    snippet = {'prefix': trigger, 'body': body, 'description': description}
+    return {trigger: snippet}
 
 
 def process_ini(ini_file: str, dat_file: str) -> ty.List[ty.Dict[str, Snippet]]:
@@ -149,5 +150,7 @@ def process_ini(ini_file: str, dat_file: str) -> ty.List[ty.Dict[str, Snippet]]:
 
 
 if __name__ == "__main__":
-    snips = process_ini('../data/ActiveStrings-FasTeX.ini',
-                        '../data/FasTeX_Templates.edt.dat')
+    snips = process_ini('data/ActiveStrings-FasTeX.ini',
+                        'data/FasTeX_Templates.edt.dat')
+    for snip in snips[780:790]:
+        print(snip)

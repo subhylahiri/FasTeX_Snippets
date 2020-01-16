@@ -144,7 +144,7 @@ F(b)-F(a)=\int^b_af(x)\, dx
 
 eqtxt
 \[
-\quad \text{}
+\quad \text{$1}
 \]
 -eqtxt-
 
@@ -1070,7 +1070,7 @@ crlr
 csnewp
 % #1:
 %
-\cs_new_protected:Nn 
+\cs_new_protected:Nn 
   {
     \group_begin:
     \group_end:
