@@ -1,0 +1,18 @@
+// -*- ASCII:EDT -*-
+IfFileExists("%X.dat","ReadFile('%X.dat',0);","Prompt('File %X.dat not found!',3,1);JMP('_end');");
+FindInString("%!0", "<%$(`FasTeX`);>", 1, 2, 11, %!2);
+IfOK(!"Assign('beginFasTeX', '%!2+1');", !"Prompt('FasTeX Active String (%$(`FasTeX`);) not found!',3,1);JMP('_end');");
+FindInString("%!0", "<-%$(`FasTeX`);->", 3, 4, 1011);
+IfOK(!"Assign('endFasTeX', '%!3-1');", !"Prompt('FasTeX Active String (%$(`FasTeX`);) end not found!',3,1);JMP('_end');");
+LetRegNum(1,"%$('beginFasTeX');");
+LetRegNum(2,"%$('endFasTeX');");
+ExtractByIndex(3, "%!0", %!1, %!2);
+GetLength(1,"%$(`FasTeX`);");
+LetRegNum(2,%!1+2); // account for the two spaces after shortcut name!
+BeginGroup;
+Repeat(%!2,"Backspace;");
+Ins("%!3");
+EndGroup;
+:_end:: =========================================================
+Release("FasTeX");
+End;

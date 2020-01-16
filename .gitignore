@@ -127,3 +127,15 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+##Editors
+
+# WinEdt
+*.bak
+*.sav
+*.prj
+
+# VSCode
+*.code-workspace
+.vscode/*
+
