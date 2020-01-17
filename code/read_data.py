@@ -50,7 +50,7 @@ def make_description(body: Body, trigger: str) -> str:
                 describe = ";".join([x[:10] for x in body])
                 return "Divider: " + describe
             return make_description(body[1:], trigger)
-        return describe
+        return describe.lstrip('%&')
     return TAB_STOP.sub('', body, count=9).replace('\\$', '$')
 
 

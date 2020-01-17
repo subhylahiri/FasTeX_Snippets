@@ -40,7 +40,7 @@
             "\\end{document}"
         ],
         "mode": "text",
-        "description": "%&latex2e--tepaper simplest"
+        "description": "latex2e--tepaper simplest"
     },
     "tepaper.eqnwith": {
         "prefix": "tepaper.eqnwith",
@@ -126,7 +126,7 @@
             "\\end{document}"
         ],
         "mode": "text",
-        "description": "%&latex2e--tepaper eqnwith"
+        "description": "latex2e--tepaper eqnwith"
     },
     "tepaper.simple": {
         "prefix": "tepaper.simple",
@@ -186,7 +186,7 @@
             "\\end{document}"
         ],
         "mode": "text",
-        "description": "%&latex2e--tepaper.simple"
+        "description": "latex2e--tepaper.simple"
     },
     "tepaper.amsart": {
         "prefix": "tepaper.amsart",
@@ -281,7 +281,7 @@
             "\\end{document}"
         ],
         "mode": "text",
-        "description": "%&AMS article"
+        "description": "AMS article"
     },
     "tepaper.html": {
         "prefix": "tepaper.html",
@@ -322,7 +322,7 @@
             "\\end{document}"
         ],
         "mode": "text",
-        "description": "%article html"
+        "description": "article html"
     },
     "teletter": {
         "prefix": "teletter",
@@ -344,7 +344,7 @@
             "\\end{document}"
         ],
         "mode": "text",
-        "description": "%&latex2e--te2letter"
+        "description": "latex2e--te2letter"
     },
     "opcpcgcl": {
         "prefix": "opcpcgcl",
@@ -492,7 +492,7 @@
             "\\end{document}"
         ],
         "mode": "text",
-        "description": "%&latex2e--tepaper"
+        "description": "latex2e--tepaper"
     },
     "ovstcpq": {
         "prefix": "ovstcpq",
@@ -711,7 +711,7 @@
             "\\end{document}"
         ],
         "mode": "text",
-        "description": "%&latex2e--tebook"
+        "description": "latex2e--tebook"
     },
     "tabex6": {
         "prefix": "tabex6",
@@ -2577,7 +2577,7 @@
             "%================================================================================"
         ],
         "mode": "text",
-        "description": "%--Article Preamble-----------------------------------------------"
+        "description": "Article Preamble"
     },
     "tebibx": {
         "prefix": "tebibx",
@@ -2604,7 +2604,7 @@
             "%--------------------------------------------------------------------------------"
         ],
         "mode": "text",
-        "description": "\\usepackage[style=numeric-links,language=british]{biblatex}"
+        "description": "\\usepackage[...]{biblatex}"
     },
     "tbex": {
         "prefix": "tbex",
