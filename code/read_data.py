@@ -26,17 +26,44 @@ INSERT_TWO = re.compile(INSERT_PRE + BACK_ONE + BACK_SOME + END_GROUP)
 INSERT_ONE = re.compile(INSERT_PRE + BACK_ONE + END_GROUP)
 INSERT_ONES = re.compile(INSERT_PRE + BACK_SOME + END_GROUP)
 INSERT_ZERO = re.compile(INSERT_PRE + END_GROUP)
+TAB_STOP = re.compile(r'(?<!\\)\$\d')
 
 TEMPLATES = (TEMPLATE_ZERO, TEMPLATE_ONES, TEMPLATE_ONE)
 INSERTS = (INSERT_ZERO, INSERT_ONE, INSERT_ONES, INSERT_TWO)
 
 
-def escape_body(body: str) -> str:
+def escape_body(body: Body) -> Body:
     """Escape special characters in snippets
     """
     if isinstance(body, list):
         return [escape_body(txt) for txt in body]
     return body.replace('$', '\\$')
+
+
+def make_description(body: Body) -> str:
+    """Format description from body
+    """
+    if isinstance(body, list):
+        return make_description(body[0])
+    return TAB_STOP.sub('', body, count=9)
+
+
+def choose_mode(body: Body, trigger: str) -> str:
+    """Choose mode for snippet
+    """
+    if body is None:
+        return None
+    if isinstance(body, list):
+        if trigger.startswith('mx'):
+            return "maths"
+        return "text"
+    if body.count('\\$') >= 2:
+        return "text"
+    if trigger.startswith('w') and not body.startswith('\\'):
+        return "text"
+    if any(x in body for x in ('\\math', '_', '^', '\\frac')):
+        return "maths"
+    return "any"
 
 
 def read_dat(file_name: str):
@@ -149,14 +176,17 @@ def next_ini_entry(file: io.TextIOBase,
     if trigger is None or macro is None:
         return None
     body = get_macro_template(macro, dat_text)
-    if body:
-        description = body[0]
-    else:
+    if body is None:
         body = get_macro_insert(macro)
-        description = body
     if body is None:
         return None
-    return {'prefix': trigger, 'body': body, 'description': description}
+    # for live snippets
+    mode = choose_mode(body, trigger)
+    # for VS Code
+    describe = make_description(body)
+
+    return {'prefix': trigger, 'body': body, 'mode': mode,
+            'description': describe}
 
 
 def process_ini(ini_file: str, dat_file: str) -> ty.Dict[str, Snippet]:
