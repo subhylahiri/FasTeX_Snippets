@@ -1,9 +1,5 @@
 tebd
-% -*- TeX -*- -*- UK -*-
-% ----------------------------------------------------------------
-% !TEX program = pdflatex
-% !BIB program = bibtex
-% **** -----------------------------------------------------------
+%--Article Preamble-----------------------------------------------
 \documentclass[11pt]{article}
 % Preamble:
 \usepackage{sl-preamble}

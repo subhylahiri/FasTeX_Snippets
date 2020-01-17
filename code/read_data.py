@@ -40,12 +40,18 @@ def escape_body(body: Body) -> Body:
     return body.replace('$', '\\$')
 
 
-def make_description(body: Body) -> str:
+def make_description(body: Body, trigger: str) -> str:
     """Format description from body
     """
     if isinstance(body, list):
-        return make_description(body[0])
-    return TAB_STOP.sub('', body, count=9)
+        describe = make_description(body[0], trigger)
+        if describe.startswith(('%====', '%----')):
+            if trigger.startswith('c'):
+                describe = ";".join([x[:10] for x in body])
+                return "Divider: " + describe
+            return make_description(body[1:], trigger)
+        return describe
+    return TAB_STOP.sub('', body, count=9).replace('\\$', '$')
 
 
 def choose_mode(body: Body, trigger: str) -> str:
@@ -183,7 +189,7 @@ def next_ini_entry(file: io.TextIOBase,
     # for live snippets
     mode = choose_mode(body, trigger)
     # for VS Code
-    describe = make_description(body)
+    describe = make_description(body, trigger)
 
     return {'prefix': trigger, 'body': body, 'mode': mode,
             'description': describe}

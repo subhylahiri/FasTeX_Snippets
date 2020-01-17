@@ -368,13 +368,13 @@
         "prefix": "dovstcpq",
         "body": "\\$\\overset{\\longrightarrow}{\\text{PQ}}\\$",
         "mode": "text",
-        "description": "\\$\\overset{\\longrightarrow}{\\text{PQ}}\\$"
+        "description": "$\\overset{\\longrightarrow}{\\text{PQ}}$"
     },
     "dovstcpp": {
         "prefix": "dovstcpp",
         "body": "\\$\\overset{\\longrightarrow}{\\text{PP}}\\$",
         "mode": "text",
-        "description": "\\$\\overset{\\longrightarrow}{\\text{PP}}\\$"
+        "description": "$\\overset{\\longrightarrow}{\\text{PP}}$"
     },
     "upkgvrb": {
         "prefix": "upkgvrb",
@@ -510,7 +510,7 @@
         "prefix": "opdcso3",
         "body": "\\$\\operatorname{SO(3)}\\$",
         "mode": "text",
-        "description": "\\$\\operatorname{SO(3)}\\$"
+        "description": "$\\operatorname{SO(3)}$"
     },
     "opcrank": {
         "prefix": "opcrank",
@@ -552,7 +552,7 @@
         "prefix": "dblackl",
         "body": "\\quad \\$\\blacklozenge\\$",
         "mode": "text",
-        "description": "\\quad \\$\\blacklozenge\\$"
+        "description": "\\quad $\\blacklozenge$"
     },
     "upkggr": {
         "prefix": "upkggr",
@@ -1081,43 +1081,43 @@
         "prefix": "dtriap",
         "body": "\\$(a_1, a_2, a_3)\\$",
         "mode": "text",
-        "description": "\\$(a_1, a_2, a_3)\\$"
+        "description": "$(a_1, a_2, a_3)$"
     },
     "dopso3": {
         "prefix": "dopso3",
         "body": "\\$\\operatorname{so(3)}\\$",
         "mode": "text",
-        "description": "\\$\\operatorname{so(3)}\\$"
+        "description": "$\\operatorname{so(3)}$"
     },
     "dopcrn": {
         "prefix": "dopcrn",
         "body": "\\$\\mathbb{R}^n\\$ ",
         "mode": "text",
-        "description": "\\$\\mathbb{R}^n\\$ "
+        "description": "$\\mathbb{R}^n$ "
     },
     "dopcrm": {
         "prefix": "dopcrm",
         "body": "\\$\\mathbb{R}^m\\$ ",
         "mode": "text",
-        "description": "\\$\\mathbb{R}^m\\$ "
+        "description": "$\\mathbb{R}^m$ "
     },
     "dopcr3": {
         "prefix": "dopcr3",
         "body": "\\$\\mathbb{R}^3\\$ ",
         "mode": "text",
-        "description": "\\$\\mathbb{R}^3\\$ "
+        "description": "$\\mathbb{R}^3$ "
     },
     "dopcr2": {
         "prefix": "dopcr2",
         "body": "\\$\\mathbb{R}^2\\$ ",
         "mode": "text",
-        "description": "\\$\\mathbb{R}^2\\$ "
+        "description": "$\\mathbb{R}^2$ "
     },
     "dopcr1": {
         "prefix": "dopcr1",
         "body": "\\$\\mathbb{R}^1\\$ ",
         "mode": "text",
-        "description": "\\$\\mathbb{R}^1\\$ "
+        "description": "$\\mathbb{R}^1$ "
     },
     "dfrbox": {
         "prefix": "dfrbox",
@@ -1138,31 +1138,31 @@
         "prefix": "dbbcrn",
         "body": "\\$\\mathbb{R}^n\\$ ",
         "mode": "text",
-        "description": "\\$\\mathbb{R}^n\\$ "
+        "description": "$\\mathbb{R}^n$ "
     },
     "dbbcrm": {
         "prefix": "dbbcrm",
         "body": "\\$\\mathbb{R}^m\\$ ",
         "mode": "text",
-        "description": "\\$\\mathbb{R}^m\\$ "
+        "description": "$\\mathbb{R}^m$ "
     },
     "dbbcr3": {
         "prefix": "dbbcr3",
         "body": "\\$\\mathbb{R}^3\\$ ",
         "mode": "text",
-        "description": "\\$\\mathbb{R}^3\\$ "
+        "description": "$\\mathbb{R}^3$ "
     },
     "dbbcr2": {
         "prefix": "dbbcr2",
         "body": "\\$\\mathbb{R}^2\\$ ",
         "mode": "text",
-        "description": "\\$\\mathbb{R}^2\\$ "
+        "description": "$\\mathbb{R}^2$ "
     },
     "dbbcr1": {
         "prefix": "dbbcr1",
         "body": "\\$\\mathbb{R}^1\\$ ",
         "mode": "text",
-        "description": "\\$\\mathbb{R}^1\\$ "
+        "description": "$\\mathbb{R}^1$ "
     },
     "blackl": {
         "prefix": "blackl",
@@ -1408,31 +1408,31 @@
         "prefix": "rcmdl",
         "body": "\\renewcommand{\\labelenumi}{\\em \\$(\\$\\roman{enumi}\\$)\\$}",
         "mode": "text",
-        "description": "\\renewcommand{\\labelenumi}{\\em \\$(\\$\\roman{enumi}\\$)\\$}"
+        "description": "\\renewcommand{\\labelenumi}{\\em $($\\roman{enumi}$)$}"
     },
     "qdetd": {
         "prefix": "qdetd",
         "body": "\\quad \\$\\bigtriangledown\\$",
         "mode": "text",
-        "description": "\\quad \\$\\bigtriangledown\\$"
+        "description": "\\quad $\\bigtriangledown$"
     },
     "qdesq": {
         "prefix": "qdesq",
         "body": "\\quad \\$\\square\\$",
         "mode": "text",
-        "description": "\\quad \\$\\square\\$"
+        "description": "\\quad $\\square$"
     },
     "qdbtd": {
         "prefix": "qdbtd",
         "body": "\\quad \\$\\blacktriangledown\\$",
         "mode": "text",
-        "description": "\\quad \\$\\blacktriangledown\\$"
+        "description": "\\quad $\\blacktriangledown$"
     },
     "qdbsq": {
         "prefix": "qdbsq",
         "body": "\\quad \\$\\blacksquare\\$",
         "mode": "text",
-        "description": "\\quad \\$\\blacksquare\\$"
+        "description": "\\quad $\\blacksquare$"
     },
     "pictu": {
         "prefix": "pictu",
@@ -1927,139 +1927,139 @@
         "prefix": "dxyzp",
         "body": "\\$(x, y, z)\\$",
         "mode": "text",
-        "description": "\\$(x, y, z)\\$"
+        "description": "$(x, y, z)$"
     },
     "dxvth": {
         "prefix": "dxvth",
         "body": "\\$\\vartheta\\$",
         "mode": "text",
-        "description": "\\$\\vartheta\\$"
+        "description": "$\\vartheta$"
     },
     "dxvph": {
         "prefix": "dxvph",
         "body": "\\$\\varphi\\$",
         "mode": "text",
-        "description": "\\$\\varphi\\$"
+        "description": "$\\varphi$"
     },
     "dxpyq": {
         "prefix": "dxpyq",
         "body": "\\$x^2 + y^2\\$",
         "mode": "text",
-        "description": "\\$x^2 + y^2\\$"
+        "description": "$x^2 + y^2$"
     },
     "dxcth": {
         "prefix": "dxcth",
         "body": "\\$\\Theta\\$",
         "mode": "text",
-        "description": "\\$\\Theta\\$"
+        "description": "$\\Theta$"
     },
     "dxcps": {
         "prefix": "dxcps",
         "body": "\\$\\Psi\\$",
         "mode": "text",
-        "description": "\\$\\Psi\\$"
+        "description": "$\\Psi$"
     },
     "dxcph": {
         "prefix": "dxcph",
         "body": "\\$\\Phi\\$",
         "mode": "text",
-        "description": "\\$\\Phi\\$"
+        "description": "$\\Phi$"
     },
     "dtsqq": {
         "prefix": "dtsqq",
         "body": "\\$T^{\\ast}_{q} Q\\$",
         "mode": "text",
-        "description": "\\$T^{\\ast}_{q} Q\\$"
+        "description": "$T^{\\ast}_{q} Q$"
     },
     "dpdzy": {
         "prefix": "dpdzy",
         "body": "\\$\\partial z/\\partial y\\$",
         "mode": "text",
-        "description": "\\$\\partial z/\\partial y\\$"
+        "description": "$\\partial z/\\partial y$"
     },
     "dopcz": {
         "prefix": "dopcz",
         "body": "\\$\\mathbb{Z}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathbb{Z}\\$ "
+        "description": "$\\mathbb{Z}$ "
     },
     "dopct": {
         "prefix": "dopct",
         "body": "\\$\\mathbb{T}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathbb{T}\\$ "
+        "description": "$\\mathbb{T}$ "
     },
     "dopcr": {
         "prefix": "dopcr",
         "body": "\\$\\mathbb{R}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathbb{R}\\$ "
+        "description": "$\\mathbb{R}$ "
     },
     "dopci": {
         "prefix": "dopci",
         "body": "\\$\\mathbb{I}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathbb{I}\\$ "
+        "description": "$\\mathbb{I}$ "
     },
     "dopcc": {
         "prefix": "dopcc",
         "body": "\\$\\mathbb{C}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathbb{C}\\$ "
+        "description": "$\\mathbb{C}$ "
     },
     "dgmks": {
         "prefix": "dgmks",
         "body": "\\$\\mathfrak{k}^{\\ast}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathfrak{k}^{\\ast}\\$ "
+        "description": "$\\mathfrak{k}^{\\ast}$ "
     },
     "dgmhs": {
         "prefix": "dgmhs",
         "body": "\\$\\mathfrak{h}^{\\ast}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathfrak{h}^{\\ast}\\$ "
+        "description": "$\\mathfrak{h}^{\\ast}$ "
     },
     "dgmgs": {
         "prefix": "dgmgs",
         "body": "\\$\\mathfrak{g}^{\\ast}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathfrak{g}^{\\ast}\\$ "
+        "description": "$\\mathfrak{g}^{\\ast}$ "
     },
     "dgmcx": {
         "prefix": "dgmcx",
         "body": "\\$\\mathfrak{X}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathfrak{X}\\$ "
+        "description": "$\\mathfrak{X}$ "
     },
     "dgmct": {
         "prefix": "dgmct",
         "body": "\\$\\mathfrak{T}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathfrak{T}\\$ "
+        "description": "$\\mathfrak{T}$ "
     },
     "dgmck": {
         "prefix": "dgmck",
         "body": "\\$\\mathfrak{K}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathfrak{K}\\$ "
+        "description": "$\\mathfrak{K}$ "
     },
     "dgmch": {
         "prefix": "dgmch",
         "body": "\\$\\mathfrak{H}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathfrak{H}\\$ "
+        "description": "$\\mathfrak{H}$ "
     },
     "dgmcg": {
         "prefix": "dgmcg",
         "body": "\\$\\mathfrak{G}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathfrak{G}\\$ "
+        "description": "$\\mathfrak{G}$ "
     },
     "dgmca": {
         "prefix": "dgmca",
         "body": "\\$\\mathfrak{A}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathfrak{A}\\$ "
+        "description": "$\\mathfrak{A}$ "
     },
     "dcrep": {
         "prefix": "dcrep",
@@ -2083,31 +2083,31 @@
         "prefix": "dbbcz",
         "body": "\\$\\mathbb{Z}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathbb{Z}\\$ "
+        "description": "$\\mathbb{Z}$ "
     },
     "dbbct": {
         "prefix": "dbbct",
         "body": "\\$\\mathbb{T}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathbb{T}\\$ "
+        "description": "$\\mathbb{T}$ "
     },
     "dbbcr": {
         "prefix": "dbbcr",
         "body": "\\$\\mathbb{R}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathbb{R}\\$ "
+        "description": "$\\mathbb{R}$ "
     },
     "dbbci": {
         "prefix": "dbbci",
         "body": "\\$\\mathbb{I}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathbb{I}\\$ "
+        "description": "$\\mathbb{I}$ "
     },
     "dbbcc": {
         "prefix": "dbbcc",
         "body": "\\$\\mathbb{C}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathbb{C}\\$ "
+        "description": "$\\mathbb{C}$ "
     },
     "captu": {
         "prefix": "captu",
@@ -2525,7 +2525,7 @@
         "prefix": "txpf",
         "body": "\\texorpdfstring{\\$$1\\$}{$2}",
         "mode": "text",
-        "description": "\\texorpdfstring{\\$\\$}{}"
+        "description": "\\texorpdfstring{$$}{}"
     },
     "tsqq": {
         "prefix": "tsqq",
@@ -2558,11 +2558,7 @@
     "tebd": {
         "prefix": "tebd",
         "body": [
-            "% -*- TeX -*- -*- UK -*-",
-            "% ----------------------------------------------------------------",
-            "% !TEX program = pdflatex",
-            "% !BIB program = bibtex",
-            "% **** -----------------------------------------------------------",
+            "%--Article Preamble-----------------------------------------------",
             "\\documentclass[11pt]{article}",
             "% Preamble:",
             "\\usepackage{sl-preamble}",
@@ -2581,7 +2577,7 @@
             "%================================================================================"
         ],
         "mode": "text",
-        "description": "% -*- TeX -*- -*- UK -*-"
+        "description": "%--Article Preamble-----------------------------------------------"
     },
     "tebibx": {
         "prefix": "tebibx",
@@ -2593,7 +2589,7 @@
             "\\end{document}"
         ],
         "mode": "text",
-        "description": "%================================================================================"
+        "description": "\\bibliographystyle{utcaps_nat}"
     },
     "teblx": {
         "prefix": "teblx",
@@ -2608,7 +2604,7 @@
             "%--------------------------------------------------------------------------------"
         ],
         "mode": "text",
-        "description": "%--------------------------------------------------------------------------------"
+        "description": "\\usepackage[style=numeric-links,language=british]{biblatex}"
     },
     "tbex": {
         "prefix": "tbex",
@@ -4306,61 +4302,61 @@
         "prefix": "dxyp",
         "body": "\\$(x, y)\\$",
         "mode": "text",
-        "description": "\\$(x, y)\\$"
+        "description": "$(x, y)$"
     },
     "dxvs": {
         "prefix": "dxvs",
         "body": "\\$\\varsigma\\$",
         "mode": "text",
-        "description": "\\$\\varsigma\\$"
+        "description": "$\\varsigma$"
     },
     "dxvr": {
         "prefix": "dxvr",
         "body": "\\$\\varrho\\$",
         "mode": "text",
-        "description": "\\$\\varrho\\$"
+        "description": "$\\varrho$"
     },
     "dxvp": {
         "prefix": "dxvp",
         "body": "\\$\\varpi\\$",
         "mode": "text",
-        "description": "\\$\\varpi\\$"
+        "description": "$\\varpi$"
     },
     "dxve": {
         "prefix": "dxve",
         "body": "\\$\\varepsilon\\$",
         "mode": "text",
-        "description": "\\$\\varepsilon\\$"
+        "description": "$\\varepsilon$"
     },
     "dxth": {
         "prefix": "dxth",
         "body": "\\$\\theta\\$",
         "mode": "text",
-        "description": "\\$\\theta\\$"
+        "description": "$\\theta$"
     },
     "dxps": {
         "prefix": "dxps",
         "body": "\\$\\psi\\$",
         "mode": "text",
-        "description": "\\$\\psi\\$"
+        "description": "$\\psi$"
     },
     "dxph": {
         "prefix": "dxph",
         "body": "\\$\\phi\\$",
         "mode": "text",
-        "description": "\\$\\phi\\$"
+        "description": "$\\phi$"
     },
     "dxio": {
         "prefix": "dxio",
         "body": "\\$\\iota\\$",
         "mode": "text",
-        "description": "\\$\\iota\\$"
+        "description": "$\\iota$"
     },
     "dxet": {
         "prefix": "dxet",
         "body": "\\$\\eta\\$",
         "mode": "text",
-        "description": "\\$\\eta\\$"
+        "description": "$\\eta$"
     },
     "dxdy": {
         "prefix": "dxdy",
@@ -4378,55 +4374,55 @@
         "prefix": "dxcx",
         "body": "\\$\\Xi\\$",
         "mode": "text",
-        "description": "\\$\\Xi\\$"
+        "description": "$\\Xi$"
     },
     "dxcu": {
         "prefix": "dxcu",
         "body": "\\$\\Upsilon\\$",
         "mode": "text",
-        "description": "\\$\\Upsilon\\$"
+        "description": "$\\Upsilon$"
     },
     "dxcs": {
         "prefix": "dxcs",
         "body": "\\$\\Sigma\\$",
         "mode": "text",
-        "description": "\\$\\Sigma\\$"
+        "description": "$\\Sigma$"
     },
     "dxcp": {
         "prefix": "dxcp",
         "body": "\\$\\Pi\\$",
         "mode": "text",
-        "description": "\\$\\Pi\\$"
+        "description": "$\\Pi$"
     },
     "dxco": {
         "prefix": "dxco",
         "body": "\\$\\Omega\\$",
         "mode": "text",
-        "description": "\\$\\Omega\\$"
+        "description": "$\\Omega$"
     },
     "dxcl": {
         "prefix": "dxcl",
         "body": "\\$\\Lambda\\$",
         "mode": "text",
-        "description": "\\$\\Lambda\\$"
+        "description": "$\\Lambda$"
     },
     "dxcg": {
         "prefix": "dxcg",
         "body": "\\$\\Gamma\\$",
         "mode": "text",
-        "description": "\\$\\Gamma\\$"
+        "description": "$\\Gamma$"
     },
     "dxcd": {
         "prefix": "dxcd",
         "body": "\\$\\Delta\\$",
         "mode": "text",
-        "description": "\\$\\Delta\\$"
+        "description": "$\\Delta$"
     },
     "dtsq": {
         "prefix": "dtsq",
         "body": "\\$T^\\ast Q\\$",
         "mode": "text",
-        "description": "\\$T^\\ast Q\\$"
+        "description": "$T^\\ast Q$"
     },
     "divi": {
         "prefix": "divi",
@@ -4444,373 +4440,373 @@
         "prefix": "dgmu",
         "body": "\\$\\mathfrak{}$1\\$",
         "mode": "text",
-        "description": "\\$\\mathfrak{}\\$"
+        "description": "$\\mathfrak{}$"
     },
     "dgmt": {
         "prefix": "dgmt",
         "body": "\\$\\mathfrak{t}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathfrak{t}\\$ "
+        "description": "$\\mathfrak{t}$ "
     },
     "dgmp": {
         "prefix": "dgmp",
         "body": "\\$\\mathfrak{p}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathfrak{p}\\$ "
+        "description": "$\\mathfrak{p}$ "
     },
     "dgmk": {
         "prefix": "dgmk",
         "body": "\\$\\mathfrak{k}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathfrak{k}\\$ "
+        "description": "$\\mathfrak{k}$ "
     },
     "dgmh": {
         "prefix": "dgmh",
         "body": "\\$\\mathfrak{h}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathfrak{h}\\$ "
+        "description": "$\\mathfrak{h}$ "
     },
     "dgmg": {
         "prefix": "dgmg",
         "body": "\\$\\mathfrak{g}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathfrak{g}\\$ "
+        "description": "$\\mathfrak{g}$ "
     },
     "dgmb": {
         "prefix": "dgmb",
         "body": "\\$\\mathfrak{b}\\$ ",
         "mode": "text",
-        "description": "\\$\\mathfrak{b}\\$ "
+        "description": "$\\mathfrak{b}$ "
     },
     "dccz": {
         "prefix": "dccz",
         "body": "\\$\\mathcal{Z}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{Z}\\$"
+        "description": "$\\mathcal{Z}$"
     },
     "dccy": {
         "prefix": "dccy",
         "body": "\\$\\mathcal{Y}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{Y}\\$"
+        "description": "$\\mathcal{Y}$"
     },
     "dccx": {
         "prefix": "dccx",
         "body": "\\$\\mathcal{X}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{X}\\$"
+        "description": "$\\mathcal{X}$"
     },
     "dccw": {
         "prefix": "dccw",
         "body": "\\$\\mathcal{W}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{W}\\$"
+        "description": "$\\mathcal{W}$"
     },
     "dccv": {
         "prefix": "dccv",
         "body": "\\$\\mathcal{V}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{V}\\$"
+        "description": "$\\mathcal{V}$"
     },
     "dccu": {
         "prefix": "dccu",
         "body": "\\$\\mathcal{U}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{U}\\$"
+        "description": "$\\mathcal{U}$"
     },
     "dcct": {
         "prefix": "dcct",
         "body": "\\$\\mathcal{T}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{T}\\$"
+        "description": "$\\mathcal{T}$"
     },
     "dccs": {
         "prefix": "dccs",
         "body": "\\$\\mathcal{S}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{S}\\$"
+        "description": "$\\mathcal{S}$"
     },
     "dccr": {
         "prefix": "dccr",
         "body": "\\$\\mathcal{R}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{R}\\$"
+        "description": "$\\mathcal{R}$"
     },
     "dccq": {
         "prefix": "dccq",
         "body": "\\$\\mathcal{Q}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{Q}\\$"
+        "description": "$\\mathcal{Q}$"
     },
     "dccp": {
         "prefix": "dccp",
         "body": "\\$\\mathcal{P}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{P}\\$"
+        "description": "$\\mathcal{P}$"
     },
     "dcco": {
         "prefix": "dcco",
         "body": "\\$\\mathcal{O}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{O}\\$"
+        "description": "$\\mathcal{O}$"
     },
     "dccn": {
         "prefix": "dccn",
         "body": "\\$\\mathcal{N}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{N}\\$"
+        "description": "$\\mathcal{N}$"
     },
     "dccm": {
         "prefix": "dccm",
         "body": "\\$\\mathcal{M}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{M}\\$"
+        "description": "$\\mathcal{M}$"
     },
     "dccl": {
         "prefix": "dccl",
         "body": "\\$\\mathcal{L}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{L}\\$"
+        "description": "$\\mathcal{L}$"
     },
     "dcck": {
         "prefix": "dcck",
         "body": "\\$\\mathcal{K}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{K}\\$"
+        "description": "$\\mathcal{K}$"
     },
     "dccj": {
         "prefix": "dccj",
         "body": "\\$\\mathcal{J}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{J}\\$"
+        "description": "$\\mathcal{J}$"
     },
     "dcci": {
         "prefix": "dcci",
         "body": "\\$\\mathcal{I}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{I}\\$"
+        "description": "$\\mathcal{I}$"
     },
     "dcch": {
         "prefix": "dcch",
         "body": "\\$\\mathcal{H}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{H}\\$"
+        "description": "$\\mathcal{H}$"
     },
     "dccg": {
         "prefix": "dccg",
         "body": "\\$\\mathcal{G}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{G}\\$"
+        "description": "$\\mathcal{G}$"
     },
     "dccf": {
         "prefix": "dccf",
         "body": "\\$\\mathcal{F}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{F}\\$"
+        "description": "$\\mathcal{F}$"
     },
     "dcce": {
         "prefix": "dcce",
         "body": "\\$\\mathcal{E}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{E}\\$"
+        "description": "$\\mathcal{E}$"
     },
     "dccd": {
         "prefix": "dccd",
         "body": "\\$\\mathcal{D}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{D}\\$"
+        "description": "$\\mathcal{D}$"
     },
     "dccc": {
         "prefix": "dccc",
         "body": "\\$\\mathcal{C}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{C}\\$"
+        "description": "$\\mathcal{C}$"
     },
     "dccb": {
         "prefix": "dccb",
         "body": "\\$\\mathcal{B}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{B}\\$"
+        "description": "$\\mathcal{B}$"
     },
     "dcca": {
         "prefix": "dcca",
         "body": "\\$\\mathcal{A}\\$",
         "mode": "text",
-        "description": "\\$\\mathcal{A}\\$"
+        "description": "$\\mathcal{A}$"
     },
     "dbcz": {
         "prefix": "dbcz",
         "body": "\\$\\mathbf{Z}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{Z}\\$"
+        "description": "$\\mathbf{Z}$"
     },
     "dbcy": {
         "prefix": "dbcy",
         "body": "\\$\\mathbf{Y}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{Y}\\$"
+        "description": "$\\mathbf{Y}$"
     },
     "dbcx": {
         "prefix": "dbcx",
         "body": "\\$\\mathbf{X}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{X}\\$"
+        "description": "$\\mathbf{X}$"
     },
     "dbcw": {
         "prefix": "dbcw",
         "body": "\\$\\mathbf{W}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{W}\\$"
+        "description": "$\\mathbf{W}$"
     },
     "dbcv": {
         "prefix": "dbcv",
         "body": "\\$\\mathbf{V}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{V}\\$"
+        "description": "$\\mathbf{V}$"
     },
     "dbcu": {
         "prefix": "dbcu",
         "body": "\\$\\mathbf{U}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{U}\\$"
+        "description": "$\\mathbf{U}$"
     },
     "dbct": {
         "prefix": "dbct",
         "body": "\\$\\mathbf{T}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{T}\\$"
+        "description": "$\\mathbf{T}$"
     },
     "dbcs": {
         "prefix": "dbcs",
         "body": "\\$\\mathbf{S}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{S}\\$"
+        "description": "$\\mathbf{S}$"
     },
     "dbcr": {
         "prefix": "dbcr",
         "body": "\\$\\mathbf{R}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{R}\\$"
+        "description": "$\\mathbf{R}$"
     },
     "dbcq": {
         "prefix": "dbcq",
         "body": "\\$\\mathbf{Q}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{Q}\\$"
+        "description": "$\\mathbf{Q}$"
     },
     "dbcp": {
         "prefix": "dbcp",
         "body": "\\$\\mathbf{P}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{P}\\$"
+        "description": "$\\mathbf{P}$"
     },
     "dbco": {
         "prefix": "dbco",
         "body": "\\$\\mathbf{O}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{O}\\$"
+        "description": "$\\mathbf{O}$"
     },
     "dbcn": {
         "prefix": "dbcn",
         "body": "\\$\\mathbf{N}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{N}\\$"
+        "description": "$\\mathbf{N}$"
     },
     "dbcm": {
         "prefix": "dbcm",
         "body": "\\$\\mathbf{M}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{M}\\$"
+        "description": "$\\mathbf{M}$"
     },
     "dbcl": {
         "prefix": "dbcl",
         "body": "\\$\\mathbf{L}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{L}\\$"
+        "description": "$\\mathbf{L}$"
     },
     "dbck": {
         "prefix": "dbck",
         "body": "\\$\\mathbf{K}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{K}\\$"
+        "description": "$\\mathbf{K}$"
     },
     "dbcj": {
         "prefix": "dbcj",
         "body": "\\$\\mathbf{J}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{J}\\$"
+        "description": "$\\mathbf{J}$"
     },
     "dbci": {
         "prefix": "dbci",
         "body": "\\$\\mathbf{I}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{I}\\$"
+        "description": "$\\mathbf{I}$"
     },
     "dbch": {
         "prefix": "dbch",
         "body": "\\$\\mathbf{H}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{H}\\$"
+        "description": "$\\mathbf{H}$"
     },
     "dbcg": {
         "prefix": "dbcg",
         "body": "\\$\\mathbf{G}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{G}\\$"
+        "description": "$\\mathbf{G}$"
     },
     "dbcf": {
         "prefix": "dbcf",
         "body": "\\$\\mathbf{F}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{F}\\$"
+        "description": "$\\mathbf{F}$"
     },
     "dbce": {
         "prefix": "dbce",
         "body": "\\$\\mathbf{E}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{E}\\$"
+        "description": "$\\mathbf{E}$"
     },
     "dbcd": {
         "prefix": "dbcd",
         "body": "\\$\\mathbf{D}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{D}\\$"
+        "description": "$\\mathbf{D}$"
     },
     "dbcc": {
         "prefix": "dbcc",
         "body": "\\$\\mathbf{C}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{C}\\$"
+        "description": "$\\mathbf{C}$"
     },
     "dbcb": {
         "prefix": "dbcb",
         "body": "\\$\\mathbf{B}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{B}\\$"
+        "description": "$\\mathbf{B}$"
     },
     "dbca": {
         "prefix": "dbca",
         "body": "\\$\\mathbf{A}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{A}\\$"
+        "description": "$\\mathbf{A}$"
     },
     "db10": {
         "prefix": "db10",
         "body": "\\$\\mathbf{10}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{10}\\$"
+        "description": "$\\mathbf{10}$"
     },
     "d03p": {
         "prefix": "d03p",
         "body": "\\$(0, 0, 0)\\$",
         "mode": "text",
-        "description": "\\$(0, 0, 0)\\$"
+        "description": "$(0, 0, 0)$"
     },
     "d00p": {
         "prefix": "d00p",
         "body": "\\$(0,0)\\$",
         "mode": "text",
-        "description": "\\$(0,0)\\$"
+        "description": "$(0,0)$"
     },
     "crlr": {
         "prefix": "crlr",
@@ -4821,7 +4817,7 @@
             "%===============================================================================%"
         ],
         "mode": "text",
-        "description": "%===============================================================================%"
+        "description": "Divider: %=========;%.......10;%________|;%========="
     },
     "cprt": {
         "prefix": "cprt",
@@ -6646,7 +6642,7 @@
         "prefix": "mvb",
         "body": "{\\mathversion{bold} \\$ \\$1$}",
         "mode": "text",
-        "description": "{\\mathversion{bold} \\$ \\$1$}"
+        "description": "{\\mathversion{bold} $ $1$}"
     },
     "mtt": {
         "prefix": "mtt",
@@ -7786,109 +7782,109 @@
         "prefix": "dxz",
         "body": "\\$\\zeta\\$",
         "mode": "text",
-        "description": "\\$\\zeta\\$"
+        "description": "$\\zeta$"
     },
     "dxx": {
         "prefix": "dxx",
         "body": "\\$\\xi\\$",
         "mode": "text",
-        "description": "\\$\\xi\\$"
+        "description": "$\\xi$"
     },
     "dxu": {
         "prefix": "dxu",
         "body": "\\$\\upsilon\\$",
         "mode": "text",
-        "description": "\\$\\upsilon\\$"
+        "description": "$\\upsilon$"
     },
     "dxt": {
         "prefix": "dxt",
         "body": "\\$\\tau\\$",
         "mode": "text",
-        "description": "\\$\\tau\\$"
+        "description": "$\\tau$"
     },
     "dxs": {
         "prefix": "dxs",
         "body": "\\$\\sigma\\$",
         "mode": "text",
-        "description": "\\$\\sigma\\$"
+        "description": "$\\sigma$"
     },
     "dxr": {
         "prefix": "dxr",
         "body": "\\$\\rho\\$",
         "mode": "text",
-        "description": "\\$\\rho\\$"
+        "description": "$\\rho$"
     },
     "dxp": {
         "prefix": "dxp",
         "body": "\\$\\pi\\$",
         "mode": "text",
-        "description": "\\$\\pi\\$"
+        "description": "$\\pi$"
     },
     "dxo": {
         "prefix": "dxo",
         "body": "\\$\\omega\\$",
         "mode": "text",
-        "description": "\\$\\omega\\$"
+        "description": "$\\omega$"
     },
     "dxn": {
         "prefix": "dxn",
         "body": "\\$\\nu\\$",
         "mode": "text",
-        "description": "\\$\\nu\\$"
+        "description": "$\\nu$"
     },
     "dxm": {
         "prefix": "dxm",
         "body": "\\$\\mu\\$",
         "mode": "text",
-        "description": "\\$\\mu\\$"
+        "description": "$\\mu$"
     },
     "dxl": {
         "prefix": "dxl",
         "body": "\\$\\lambda\\$",
         "mode": "text",
-        "description": "\\$\\lambda\\$"
+        "description": "$\\lambda$"
     },
     "dxk": {
         "prefix": "dxk",
         "body": "\\$\\kappa\\$",
         "mode": "text",
-        "description": "\\$\\kappa\\$"
+        "description": "$\\kappa$"
     },
     "dxg": {
         "prefix": "dxg",
         "body": "\\$\\gamma\\$",
         "mode": "text",
-        "description": "\\$\\gamma\\$"
+        "description": "$\\gamma$"
     },
     "dxe": {
         "prefix": "dxe",
         "body": "\\$\\epsilon\\$",
         "mode": "text",
-        "description": "\\$\\epsilon\\$"
+        "description": "$\\epsilon$"
     },
     "dxd": {
         "prefix": "dxd",
         "body": "\\$\\delta\\$",
         "mode": "text",
-        "description": "\\$\\delta\\$"
+        "description": "$\\delta$"
     },
     "dxc": {
         "prefix": "dxc",
         "body": "\\$\\chi\\$",
         "mode": "text",
-        "description": "\\$\\chi\\$"
+        "description": "$\\chi$"
     },
     "dxb": {
         "prefix": "dxb",
         "body": "\\$\\beta\\$",
         "mode": "text",
-        "description": "\\$\\beta\\$"
+        "description": "$\\beta$"
     },
     "dxa": {
         "prefix": "dxa",
         "body": "\\$\\alpha\\$",
         "mode": "text",
-        "description": "\\$\\alpha\\$"
+        "description": "$\\alpha$"
     },
     "dtt": {
         "prefix": "dtt",
@@ -7912,7 +7908,7 @@
         "prefix": "doo",
         "body": "\\$o\\$",
         "mode": "text",
-        "description": "\\$o\\$"
+        "description": "$o$"
     },
     "dmn": {
         "prefix": "dmn",
@@ -7924,7 +7920,7 @@
         "prefix": "dlr",
         "body": "\\$\\$",
         "mode": "text",
-        "description": "\\$\\$"
+        "description": "$$"
     },
     "dds": {
         "prefix": "dds",
@@ -7936,385 +7932,385 @@
         "prefix": "dcz",
         "body": "\\$Z\\$",
         "mode": "text",
-        "description": "\\$Z\\$"
+        "description": "$Z$"
     },
     "dcy": {
         "prefix": "dcy",
         "body": "\\$Y\\$",
         "mode": "text",
-        "description": "\\$Y\\$"
+        "description": "$Y$"
     },
     "dcx": {
         "prefix": "dcx",
         "body": "\\$X\\$",
         "mode": "text",
-        "description": "\\$X\\$"
+        "description": "$X$"
     },
     "dcw": {
         "prefix": "dcw",
         "body": "\\$W\\$",
         "mode": "text",
-        "description": "\\$W\\$"
+        "description": "$W$"
     },
     "dcv": {
         "prefix": "dcv",
         "body": "\\$V\\$",
         "mode": "text",
-        "description": "\\$V\\$"
+        "description": "$V$"
     },
     "dcu": {
         "prefix": "dcu",
         "body": "\\$U\\$",
         "mode": "text",
-        "description": "\\$U\\$"
+        "description": "$U$"
     },
     "dct": {
         "prefix": "dct",
         "body": "\\$T\\$",
         "mode": "text",
-        "description": "\\$T\\$"
+        "description": "$T$"
     },
     "dcs": {
         "prefix": "dcs",
         "body": "\\$S\\$",
         "mode": "text",
-        "description": "\\$S\\$"
+        "description": "$S$"
     },
     "dcr": {
         "prefix": "dcr",
         "body": "\\$R\\$",
         "mode": "text",
-        "description": "\\$R\\$"
+        "description": "$R$"
     },
     "dcq": {
         "prefix": "dcq",
         "body": "\\$Q\\$",
         "mode": "text",
-        "description": "\\$Q\\$"
+        "description": "$Q$"
     },
     "dcp": {
         "prefix": "dcp",
         "body": "\\$P\\$",
         "mode": "text",
-        "description": "\\$P\\$"
+        "description": "$P$"
     },
     "dco": {
         "prefix": "dco",
         "body": "\\$O\\$",
         "mode": "text",
-        "description": "\\$O\\$"
+        "description": "$O$"
     },
     "dcn": {
         "prefix": "dcn",
         "body": "\\$N\\$",
         "mode": "text",
-        "description": "\\$N\\$"
+        "description": "$N$"
     },
     "dcm": {
         "prefix": "dcm",
         "body": "\\$M\\$",
         "mode": "text",
-        "description": "\\$M\\$"
+        "description": "$M$"
     },
     "dcl": {
         "prefix": "dcl",
         "body": "\\$L\\$",
         "mode": "text",
-        "description": "\\$L\\$"
+        "description": "$L$"
     },
     "dck": {
         "prefix": "dck",
         "body": "\\$K\\$",
         "mode": "text",
-        "description": "\\$K\\$"
+        "description": "$K$"
     },
     "dcj": {
         "prefix": "dcj",
         "body": "\\$J\\$",
         "mode": "text",
-        "description": "\\$J\\$"
+        "description": "$J$"
     },
     "dci": {
         "prefix": "dci",
         "body": "\\$I\\$",
         "mode": "text",
-        "description": "\\$I\\$"
+        "description": "$I$"
     },
     "dch": {
         "prefix": "dch",
         "body": "\\$H\\$",
         "mode": "text",
-        "description": "\\$H\\$"
+        "description": "$H$"
     },
     "dcg": {
         "prefix": "dcg",
         "body": "\\$G\\$",
         "mode": "text",
-        "description": "\\$G\\$"
+        "description": "$G$"
     },
     "dcf": {
         "prefix": "dcf",
         "body": "\\$F\\$",
         "mode": "text",
-        "description": "\\$F\\$"
+        "description": "$F$"
     },
     "dce": {
         "prefix": "dce",
         "body": "\\$E\\$",
         "mode": "text",
-        "description": "\\$E\\$"
+        "description": "$E$"
     },
     "dcd": {
         "prefix": "dcd",
         "body": "\\$D\\$",
         "mode": "text",
-        "description": "\\$D\\$"
+        "description": "$D$"
     },
     "dcc": {
         "prefix": "dcc",
         "body": "\\$C\\$",
         "mode": "text",
-        "description": "\\$C\\$"
+        "description": "$C$"
     },
     "dcb": {
         "prefix": "dcb",
         "body": "\\$B\\$",
         "mode": "text",
-        "description": "\\$B\\$"
+        "description": "$B$"
     },
     "dca": {
         "prefix": "dca",
         "body": "\\$A\\$",
         "mode": "text",
-        "description": "\\$A\\$"
+        "description": "$A$"
     },
     "dbz": {
         "prefix": "dbz",
         "body": "\\$\\mathbf{z}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{z}\\$"
+        "description": "$\\mathbf{z}$"
     },
     "dby": {
         "prefix": "dby",
         "body": "\\$\\mathbf{y}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{y}\\$"
+        "description": "$\\mathbf{y}$"
     },
     "dbx": {
         "prefix": "dbx",
         "body": "\\$\\mathbf{x}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{x}\\$"
+        "description": "$\\mathbf{x}$"
     },
     "dbw": {
         "prefix": "dbw",
         "body": "\\$\\mathbf{w}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{w}\\$"
+        "description": "$\\mathbf{w}$"
     },
     "dbv": {
         "prefix": "dbv",
         "body": "\\$\\mathbf{v}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{v}\\$"
+        "description": "$\\mathbf{v}$"
     },
     "dbu": {
         "prefix": "dbu",
         "body": "\\$\\mathbf{u}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{u}\\$"
+        "description": "$\\mathbf{u}$"
     },
     "dbt": {
         "prefix": "dbt",
         "body": "\\$\\mathbf{t}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{t}\\$"
+        "description": "$\\mathbf{t}$"
     },
     "dbs": {
         "prefix": "dbs",
         "body": "\\$\\mathbf{s}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{s}\\$"
+        "description": "$\\mathbf{s}$"
     },
     "dbr": {
         "prefix": "dbr",
         "body": "\\$\\mathbf{r}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{r}\\$"
+        "description": "$\\mathbf{r}$"
     },
     "dbq": {
         "prefix": "dbq",
         "body": "\\$\\mathbf{q}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{q}\\$"
+        "description": "$\\mathbf{q}$"
     },
     "dbp": {
         "prefix": "dbp",
         "body": "\\$\\mathbf{p}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{p}\\$"
+        "description": "$\\mathbf{p}$"
     },
     "dbo": {
         "prefix": "dbo",
         "body": "\\$\\mathbf{o}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{o}\\$"
+        "description": "$\\mathbf{o}$"
     },
     "dbn": {
         "prefix": "dbn",
         "body": "\\$\\mathbf{n}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{n}\\$"
+        "description": "$\\mathbf{n}$"
     },
     "dbm": {
         "prefix": "dbm",
         "body": "\\$\\mathbf{m}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{m}\\$"
+        "description": "$\\mathbf{m}$"
     },
     "dbl": {
         "prefix": "dbl",
         "body": "\\$\\mathbf{l}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{l}\\$"
+        "description": "$\\mathbf{l}$"
     },
     "dbk": {
         "prefix": "dbk",
         "body": "\\$\\mathbf{k}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{k}\\$"
+        "description": "$\\mathbf{k}$"
     },
     "dbj": {
         "prefix": "dbj",
         "body": "\\$\\mathbf{j}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{j}\\$"
+        "description": "$\\mathbf{j}$"
     },
     "dbi": {
         "prefix": "dbi",
         "body": "\\$\\mathbf{i}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{i}\\$"
+        "description": "$\\mathbf{i}$"
     },
     "dbh": {
         "prefix": "dbh",
         "body": "\\$\\mathbf{h}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{h}\\$"
+        "description": "$\\mathbf{h}$"
     },
     "dbg": {
         "prefix": "dbg",
         "body": "\\$\\mathbf{g}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{g}\\$"
+        "description": "$\\mathbf{g}$"
     },
     "dbf": {
         "prefix": "dbf",
         "body": "\\$\\mathbf{f}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{f}\\$"
+        "description": "$\\mathbf{f}$"
     },
     "dbe": {
         "prefix": "dbe",
         "body": "\\$\\mathbf{e}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{e}\\$"
+        "description": "$\\mathbf{e}$"
     },
     "dbd": {
         "prefix": "dbd",
         "body": "\\$\\mathbf{d}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{d}\\$"
+        "description": "$\\mathbf{d}$"
     },
     "dbc": {
         "prefix": "dbc",
         "body": "\\$\\mathbf{c}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{c}\\$"
+        "description": "$\\mathbf{c}$"
     },
     "dbb": {
         "prefix": "dbb",
         "body": "\\$\\mathbf{b}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{b}\\$"
+        "description": "$\\mathbf{b}$"
     },
     "dba": {
         "prefix": "dba",
         "body": "\\$\\mathbf{a}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{a}\\$"
+        "description": "$\\mathbf{a}$"
     },
     "db9": {
         "prefix": "db9",
         "body": "\\$\\mathbf{9}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{9}\\$"
+        "description": "$\\mathbf{9}$"
     },
     "db8": {
         "prefix": "db8",
         "body": "\\$\\mathbf{8}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{8}\\$"
+        "description": "$\\mathbf{8}$"
     },
     "db7": {
         "prefix": "db7",
         "body": "\\$\\mathbf{7}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{7}\\$"
+        "description": "$\\mathbf{7}$"
     },
     "db6": {
         "prefix": "db6",
         "body": "\\$\\mathbf{6}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{6}\\$"
+        "description": "$\\mathbf{6}$"
     },
     "db5": {
         "prefix": "db5",
         "body": "\\$\\mathbf{5}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{5}\\$"
+        "description": "$\\mathbf{5}$"
     },
     "db4": {
         "prefix": "db4",
         "body": "\\$\\mathbf{4}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{4}\\$"
+        "description": "$\\mathbf{4}$"
     },
     "db3": {
         "prefix": "db3",
         "body": "\\$\\mathbf{3}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{3}\\$"
+        "description": "$\\mathbf{3}$"
     },
     "db2": {
         "prefix": "db2",
         "body": "\\$\\mathbf{2}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{2}\\$"
+        "description": "$\\mathbf{2}$"
     },
     "db1": {
         "prefix": "db1",
         "body": "\\$\\mathbf{1}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{1}\\$"
+        "description": "$\\mathbf{1}$"
     },
     "db0": {
         "prefix": "db0",
         "body": "\\$\\mathbf{0}\\$",
         "mode": "text",
-        "description": "\\$\\mathbf{0}\\$"
+        "description": "$\\mathbf{0}$"
     },
     "d10": {
         "prefix": "d10",
         "body": "\\$10\\$",
         "mode": "text",
-        "description": "\\$10\\$"
+        "description": "$10$"
     },
     "d0p": {
         "prefix": "d0p",
         "body": "\\$(0)\\$",
         "mode": "text",
-        "description": "\\$(0)\\$"
+        "description": "$(0)$"
     },
     "csp": {
         "prefix": "csp",
@@ -8551,7 +8547,7 @@
             "%========================================================%"
         ],
         "mode": "text",
-        "description": "%========================================================%"
+        "description": "Divider: %=========;%         ;%========="
     },
     "cdv": {
         "prefix": "cdv",
@@ -8559,7 +8555,7 @@
             "%--------------------------------------------------------------------------------"
         ],
         "mode": "text",
-        "description": "%--------------------------------------------------------------------------------"
+        "description": "Divider: %---------"
     },
     "cddv": {
         "prefix": "cddv",
@@ -8567,7 +8563,7 @@
             "%================================================================================"
         ],
         "mode": "text",
-        "description": "%================================================================================"
+        "description": "Divider: %========="
     },
     "cau": {
         "prefix": "cau",
@@ -9959,211 +9955,211 @@
         "prefix": "dz",
         "body": "\\$z\\$",
         "mode": "text",
-        "description": "\\$z\\$"
+        "description": "$z$"
     },
     "dy": {
         "prefix": "dy",
         "body": "\\$y\\$",
         "mode": "text",
-        "description": "\\$y\\$"
+        "description": "$y$"
     },
     "dx": {
         "prefix": "dx",
         "body": "\\$x\\$",
         "mode": "text",
-        "description": "\\$x\\$"
+        "description": "$x$"
     },
     "dw": {
         "prefix": "dw",
         "body": "\\$w\\$",
         "mode": "text",
-        "description": "\\$w\\$"
+        "description": "$w$"
     },
     "dv": {
         "prefix": "dv",
         "body": "\\$v\\$",
         "mode": "text",
-        "description": "\\$v\\$"
+        "description": "$v$"
     },
     "du": {
         "prefix": "du",
         "body": "\\$u\\$",
         "mode": "text",
-        "description": "\\$u\\$"
+        "description": "$u$"
     },
     "dt": {
         "prefix": "dt",
         "body": "\\$t\\$",
         "mode": "text",
-        "description": "\\$t\\$"
+        "description": "$t$"
     },
     "ds": {
         "prefix": "ds",
         "body": "\\$s\\$",
         "mode": "text",
-        "description": "\\$s\\$"
+        "description": "$s$"
     },
     "dr": {
         "prefix": "dr",
         "body": "\\$r\\$",
         "mode": "text",
-        "description": "\\$r\\$"
+        "description": "$r$"
     },
     "dq": {
         "prefix": "dq",
         "body": "\\$q\\$",
         "mode": "text",
-        "description": "\\$q\\$"
+        "description": "$q$"
     },
     "dp": {
         "prefix": "dp",
         "body": "\\$p\\$",
         "mode": "text",
-        "description": "\\$p\\$"
+        "description": "$p$"
     },
     "dn": {
         "prefix": "dn",
         "body": "\\$n\\$",
         "mode": "text",
-        "description": "\\$n\\$"
+        "description": "$n$"
     },
     "dm": {
         "prefix": "dm",
         "body": "\\$m\\$",
         "mode": "text",
-        "description": "\\$m\\$"
+        "description": "$m$"
     },
     "dl": {
         "prefix": "dl",
         "body": "\\$l\\$",
         "mode": "text",
-        "description": "\\$l\\$"
+        "description": "$l$"
     },
     "dk": {
         "prefix": "dk",
         "body": "\\$k\\$",
         "mode": "text",
-        "description": "\\$k\\$"
+        "description": "$k$"
     },
     "dj": {
         "prefix": "dj",
         "body": "\\$j\\$",
         "mode": "text",
-        "description": "\\$j\\$"
+        "description": "$j$"
     },
     "di": {
         "prefix": "di",
         "body": "\\$i\\$",
         "mode": "text",
-        "description": "\\$i\\$"
+        "description": "$i$"
     },
     "dh": {
         "prefix": "dh",
         "body": "\\$h\\$",
         "mode": "text",
-        "description": "\\$h\\$"
+        "description": "$h$"
     },
     "dg": {
         "prefix": "dg",
         "body": "\\$g\\$",
         "mode": "text",
-        "description": "\\$g\\$"
+        "description": "$g$"
     },
     "df": {
         "prefix": "df",
         "body": "\\$f\\$",
         "mode": "text",
-        "description": "\\$f\\$"
+        "description": "$f$"
     },
     "de": {
         "prefix": "de",
         "body": "\\$e\\$",
         "mode": "text",
-        "description": "\\$e\\$"
+        "description": "$e$"
     },
     "dd": {
         "prefix": "dd",
         "body": "\\$d\\$",
         "mode": "text",
-        "description": "\\$d\\$"
+        "description": "$d$"
     },
     "dc": {
         "prefix": "dc",
         "body": "\\$c\\$",
         "mode": "text",
-        "description": "\\$c\\$"
+        "description": "$c$"
     },
     "db": {
         "prefix": "db",
         "body": "\\$b\\$",
         "mode": "text",
-        "description": "\\$b\\$"
+        "description": "$b$"
     },
     "da": {
         "prefix": "da",
         "body": "\\$a\\$",
         "mode": "text",
-        "description": "\\$a\\$"
+        "description": "$a$"
     },
     "d9": {
         "prefix": "d9",
         "body": "\\$9\\$",
         "mode": "text",
-        "description": "\\$9\\$"
+        "description": "$9$"
     },
     "d8": {
         "prefix": "d8",
         "body": "\\$8\\$",
         "mode": "text",
-        "description": "\\$8\\$"
+        "description": "$8$"
     },
     "d7": {
         "prefix": "d7",
         "body": "\\$7\\$",
         "mode": "text",
-        "description": "\\$7\\$"
+        "description": "$7$"
     },
     "d6": {
         "prefix": "d6",
         "body": "\\$6\\$",
         "mode": "text",
-        "description": "\\$6\\$"
+        "description": "$6$"
     },
     "d5": {
         "prefix": "d5",
         "body": "\\$5\\$",
         "mode": "text",
-        "description": "\\$5\\$"
+        "description": "$5$"
     },
     "d4": {
         "prefix": "d4",
         "body": "\\$4\\$",
         "mode": "text",
-        "description": "\\$4\\$"
+        "description": "$4$"
     },
     "d3": {
         "prefix": "d3",
         "body": "\\$3\\$",
         "mode": "text",
-        "description": "\\$3\\$"
+        "description": "$3$"
     },
     "d2": {
         "prefix": "d2",
         "body": "\\$2\\$",
         "mode": "text",
-        "description": "\\$2\\$"
+        "description": "$2$"
     },
     "d1": {
         "prefix": "d1",
         "body": "\\$1\\$",
         "mode": "text",
-        "description": "\\$1\\$"
+        "description": "$1$"
     },
     "d0": {
         "prefix": "d0",
         "body": "\\$0\\$",
         "mode": "text",
-        "description": "\\$0\\$"
+        "description": "$0$"
     },
     "cu": {
         "prefix": "cu",
@@ -10415,6 +10411,6 @@
         "prefix": "d",
         "body": "\\$",
         "mode": "any",
-        "description": "\\$"
+        "description": "$"
     }
 }
