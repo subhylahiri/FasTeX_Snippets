@@ -349,7 +349,7 @@
     "opcpcgcl": {
         "prefix": "opcpcgcl",
         "body": "\\operatorname{PGL}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{PGL}"
     },
     "mx3b35pt": {
@@ -379,31 +379,31 @@
     "upkgvrb": {
         "prefix": "upkgvrb",
         "body": "\\usepackage{verbatim}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\usepackage{verbatim}"
     },
     "upkgeuf": {
         "prefix": "upkgeuf",
         "body": "\\usepackage{eufrak}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\usepackage{eufrak}"
     },
     "upkgeuc": {
         "prefix": "upkgeuc",
         "body": "\\usepackage{eucal}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\usepackage{eucal}"
     },
     "upkgclr": {
         "prefix": "upkgclr",
         "body": "\\usepackage{color}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\usepackage{color}"
     },
     "upkgams": {
         "prefix": "upkgams",
         "body": "\\usepackage{amsmath,amssymb,eufrak,amsthm,amscd}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\usepackage{amsmath,amssymb,eufrak,amsthm,amscd}"
     },
     "txtstyu": {
@@ -515,37 +515,37 @@
     "opcrank": {
         "prefix": "opcrank",
         "body": "\\operatorname{Rank}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{Rank}"
     },
     "opcprym": {
         "prefix": "opcprym",
         "body": "\\operatorname{Prym}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{Prym}"
     },
     "opcdiff": {
         "prefix": "opcdiff",
         "body": "\\operatorname{Diff}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{Diff}"
     },
     "opccorr": {
         "prefix": "opccorr",
         "body": "\\operatorname{Corr}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{Corr}"
     },
     "opccard": {
         "prefix": "opccard",
         "body": "\\operatorname{Card}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{Card}"
     },
     "dcarta4": {
         "prefix": "dcarta4",
         "body": "\\documentclass[a4paper]{article}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\documentclass[a4paper]{article}"
     },
     "dblackl": {
@@ -557,7 +557,7 @@
     "upkggr": {
         "prefix": "upkggr",
         "body": "\\usepackage{graphicx}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\usepackage{graphicx}"
     },
     "txtupu": {
@@ -918,145 +918,145 @@
     "rcqeds": {
         "prefix": "rcqeds",
         "body": "\\renewcommand{qedsymbol}{}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\renewcommand{qedsymbol}{}"
     },
     "opsech": {
         "prefix": "opsech",
         "body": "\\operatorname{sech}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{sech}"
     },
     "oprank": {
         "prefix": "oprank",
         "body": "\\operatorname{rank}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{rank}"
     },
     "opcsym": {
         "prefix": "opcsym",
         "body": "\\operatorname{Sym}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{Sym}"
     },
     "opcso3": {
         "prefix": "opcso3",
         "body": "\\operatorname{SO(3)}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{SO(3)}"
     },
     "opcscu": {
         "prefix": "opcscu",
         "body": "\\operatorname{SU}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{SU}"
     },
     "opcscp": {
         "prefix": "opcscp",
         "body": "\\operatorname{SP}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{SP}"
     },
     "opcsco": {
         "prefix": "opcsco",
         "body": "\\operatorname{SO}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{SO}"
     },
     "opcscl": {
         "prefix": "opcscl",
         "body": "\\operatorname{SL}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{SL}"
     },
     "opcrez": {
         "prefix": "opcrez",
         "body": "\\operatorname{Re}(z)",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{Re}(z)"
     },
     "opcreu": {
         "prefix": "opcreu",
         "body": "\\operatorname{Re}(",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{Re}("
     },
     "opcres": {
         "prefix": "opcres",
         "body": "\\operatorname{Res}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{Res}"
     },
     "opcram": {
         "prefix": "opcram",
         "body": "\\operatorname{Ram}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{Ram}"
     },
     "opcpic": {
         "prefix": "opcpic",
         "body": "\\operatorname{Pic}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{Pic}"
     },
     "opclie": {
         "prefix": "opclie",
         "body": "\\operatorname{Lie}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{Lie}"
     },
     "opcjac": {
         "prefix": "opcjac",
         "body": "\\operatorname{Jac}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{Jac}"
     },
     "opcimz": {
         "prefix": "opcimz",
         "body": "\\operatorname{Im}(z)",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{Im}(z)"
     },
     "opcimu": {
         "prefix": "opcimu",
         "body": "\\operatorname{Im}(",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{Im}("
     },
     "opchom": {
         "prefix": "opchom",
         "body": "\\operatorname{Hom}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{Hom}"
     },
     "opchar": {
         "prefix": "opchar",
         "body": "\\operatorname{char}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{char}"
     },
     "opcgcl": {
         "prefix": "opcgcl",
         "body": "\\operatorname{GL}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{GL}"
     },
     "opcfcl": {
         "prefix": "opcfcl",
         "body": "\\operatorname{FL}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{FL}"
     },
     "opcext": {
         "prefix": "opcext",
         "body": "\\operatorname{Ext}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{Ext}"
     },
     "opcaut": {
         "prefix": "opcaut",
         "body": "\\operatorname{Aut}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{Aut}"
     },
     "intxtu": {
@@ -1131,7 +1131,7 @@
     "dcbook": {
         "prefix": "dcbook",
         "body": "\\documentclass{book}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\documentclass{book}"
     },
     "dbbcrn": {
@@ -1203,7 +1203,7 @@
     "upkgu": {
         "prefix": "upkgu",
         "body": "\\usepackage{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\usepackage{}"
     },
     "unstu": {
@@ -1401,7 +1401,7 @@
     "rcmdu": {
         "prefix": "rcmdu",
         "body": "\\renewcommand{",
-        "mode": "any",
+        "mode": "text",
         "description": "\\renewcommand{"
     },
     "rcmdl": {
@@ -1486,37 +1486,37 @@
     "opso3": {
         "prefix": "opso3",
         "body": "\\operatorname{so(3)}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{so(3)}"
     },
     "opres": {
         "prefix": "opres",
         "body": "\\operatorname{res}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{res}"
     },
     "opreg": {
         "prefix": "opreg",
         "body": "\\operatorname{reg}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{reg}"
     },
     "opdiv": {
         "prefix": "opdiv",
         "body": "\\operatorname{div}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{div}"
     },
     "opctr": {
         "prefix": "opctr",
         "body": "\\operatorname{Tr}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{Tr}"
     },
     "opcsp": {
         "prefix": "opcsp",
         "body": "\\operatorname{Sp}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{Sp}"
     },
     "opcrn": {
@@ -1552,13 +1552,13 @@
     "opcnm": {
         "prefix": "opcnm",
         "body": "\\operatorname{Nm}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{Nm}"
     },
     "opcad": {
         "prefix": "opcad",
         "body": "\\operatorname{Ad}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{Ad}"
     },
     "oddxg": {
@@ -1588,7 +1588,7 @@
     "ncmdu": {
         "prefix": "ncmdu",
         "body": "\\newcommand{",
-        "mode": "any",
+        "mode": "text",
         "description": "\\newcommand{"
     },
     "mxspu": {
@@ -1648,7 +1648,7 @@
     "mprop": {
         "prefix": "mprop",
         "body": "\\newtheorem{proposition}{Proposition}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\newtheorem{proposition}{Proposition}"
     },
     "mfrku": {
@@ -1791,7 +1791,7 @@
     "fdbfi": {
         "prefix": "fdbfi",
         "body": "\\newcommand{\\bfi}{\\bfseries\\itshape}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\newcommand{\\bfi}{\\bfseries\\itshape}"
     },
     "esplt": {
@@ -2064,19 +2064,19 @@
     "dcrep": {
         "prefix": "dcrep",
         "body": "\\documentclass{report}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\documentclass{report}"
     },
     "dclet": {
         "prefix": "dclet",
         "body": "\\documentclass{letter}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\documentclass{letter}"
     },
     "dcart": {
         "prefix": "dcart",
         "body": "\\documentclass{article}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\documentclass{article}"
     },
     "dbbcz": {
@@ -2160,7 +2160,7 @@
     "blstr": {
         "prefix": "blstr",
         "body": "\\renewcommand{\\baselinestretch}{1.5}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\renewcommand{\\baselinestretch}{1.5}"
     },
     "blskp": {
@@ -2266,7 +2266,7 @@
     "atibp": {
         "prefix": "atibp",
         "body": "(\\mathbf{a} \\times \\mathbf{b})",
-        "mode": "maths",
+        "mode": "any",
         "description": "(\\mathbf{a} \\times \\mathbf{b})"
     },
     "xyzp": {
@@ -2500,7 +2500,7 @@
     "upkg": {
         "prefix": "upkg",
         "body": "\\usepackage{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\usepackage{}"
     },
     "unst": {
@@ -2577,7 +2577,7 @@
             "%================================================================================"
         ],
         "mode": "text",
-        "description": "Article Preamble"
+        "description": "--Article Preamble-----------------------------------------------"
     },
     "tebibx": {
         "prefix": "tebibx",
@@ -2604,7 +2604,7 @@
             "%--------------------------------------------------------------------------------"
         ],
         "mode": "text",
-        "description": "\\usepackage[...]{biblatex}"
+        "description": "\\usepackage[style=numeric-links,language=british]{biblatex}"
     },
     "tbex": {
         "prefix": "tbex",
@@ -2698,13 +2698,13 @@
     "sqxp": {
         "prefix": "sqxp",
         "body": "\\sqrt{\\pi}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\sqrt{\\pi}"
     },
     "sq10": {
         "prefix": "sq10",
         "body": "\\sqrt{10}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\sqrt{10}"
     },
     "spdt": {
@@ -2764,19 +2764,19 @@
     "rlin": {
         "prefix": "rlin",
         "body": "\\rightline{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\rightline{}"
     },
     "ribr": {
         "prefix": "ribr",
         "body": "\\right\\}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\right\\}"
     },
     "ribk": {
         "prefix": "ribk",
         "body": "\\right]",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\right]"
     },
     "refu": {
@@ -2794,7 +2794,7 @@
     "rcmd": {
         "prefix": "rcmd",
         "body": "\\renewcommand{$1}{$2}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\renewcommand{}{}"
     },
     "qetd": {
@@ -2986,19 +2986,19 @@
     "opsq": {
         "prefix": "opsq",
         "body": "\\operatorname{sq}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{sq}"
     },
     "opsl": {
         "prefix": "opsl",
         "body": "\\operatorname{sl}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{sl}"
     },
     "opnu": {
         "prefix": "opnu",
         "body": "\\operatorname{",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{"
     },
     "opcz": {
@@ -3034,7 +3034,7 @@
     "opad": {
         "prefix": "opad",
         "body": "\\operatorname{ad}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{ad}"
     },
     "olxg": {
@@ -3172,7 +3172,7 @@
     "nrbu": {
         "prefix": "nrbu",
         "body": "\\|\\mathbf{u}\\|",
-        "mode": "maths",
+        "mode": "any",
         "description": "\\|\\mathbf{u}\\|"
     },
     "nonu": {
@@ -3184,7 +3184,7 @@
     "nlin": {
         "prefix": "nlin",
         "body": "\\newline",
-        "mode": "any",
+        "mode": "text",
         "description": "\\newline"
     },
     "ndsp": {
@@ -3196,7 +3196,7 @@
     "ncmd": {
         "prefix": "ncmd",
         "body": "\\newcommand{$1}{$2}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\newcommand{}{}"
     },
     "mxvu": {
@@ -3344,7 +3344,7 @@
     "mthm": {
         "prefix": "mthm",
         "body": "\\newtheorem{theorem}{Theorem}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\newtheorem{theorem}{Theorem}"
     },
     "mskp": {
@@ -3380,7 +3380,7 @@
     "mlem": {
         "prefix": "mlem",
         "body": "\\newtheorem{lemma}{Lemma}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\newtheorem{lemma}{Lemma}"
     },
     "mitu": {
@@ -3404,13 +3404,13 @@
     "mdfn": {
         "prefix": "mdfn",
         "body": "\\newtheorem{definition}{Definition}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\newtheorem{definition}{Definition}"
     },
     "mcor": {
         "prefix": "mcor",
         "body": "\\newtheorem{corollary}{Corollary}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\newtheorem{corollary}{Corollary}"
     },
     "mcal": {
@@ -3578,7 +3578,7 @@
     "llin": {
         "prefix": "llin",
         "body": "\\leftline{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\leftline{}"
     },
     "limu": {
@@ -3643,13 +3643,13 @@
     "lebr": {
         "prefix": "lebr",
         "body": "\\left\\{",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\left\\{"
     },
     "lebk": {
         "prefix": "lebk",
         "body": "\\left[",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\left["
     },
     "lbrk": {
@@ -5514,7 +5514,7 @@
     "wpf": {
         "prefix": "wpf",
         "body": "\\wp",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\wp"
     },
     "wnl": {
@@ -5562,7 +5562,7 @@
     "wed": {
         "prefix": "wed",
         "body": "\\wedge",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\wedge"
     },
     "wdp": {
@@ -5730,31 +5730,31 @@
     "squ": {
         "prefix": "squ",
         "body": "\\sqrt{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\sqrt{}"
     },
     "sq7": {
         "prefix": "sq7",
         "body": "\\sqrt{7}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\sqrt{7}"
     },
     "sq5": {
         "prefix": "sq5",
         "body": "\\sqrt{5}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\sqrt{5}"
     },
     "sq3": {
         "prefix": "sq3",
         "body": "\\sqrt{3}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\sqrt{3}"
     },
     "sq2": {
         "prefix": "sq2",
         "body": "\\sqrt{2}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\sqrt{2}"
     },
     "sps": {
@@ -5910,7 +5910,7 @@
     "rrd": {
         "prefix": "rrd",
         "body": "\\right\\rangle \\! \\right\\rangle",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\right\\rangle \\! \\right\\rangle"
     },
     "rmu": {
@@ -5934,13 +5934,13 @@
     "rir": {
         "prefix": "rir",
         "body": "\\right\\rangle",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\right\\rangle"
     },
     "rip": {
         "prefix": "rip",
         "body": "\\right)",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\right)"
     },
     "reo": {
@@ -5958,7 +5958,7 @@
     "rdo": {
         "prefix": "rdo",
         "body": "\\right.",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\right."
     },
     "qqd": {
@@ -6144,7 +6144,7 @@
     "wtu": {
         "prefix": "wtu",
         "body": "\\widetilde{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\widetilde{}"
     },
     "otu": {
@@ -6168,7 +6168,7 @@
     "opn": {
         "prefix": "opn",
         "body": "\\operatorname{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\operatorname{}"
     },
     "opl": {
@@ -6234,7 +6234,7 @@
     "whu": {
         "prefix": "whu",
         "body": "\\widehat{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\widehat{}"
     },
     "ohz": {
@@ -6594,7 +6594,7 @@
     "nr2": {
         "prefix": "nr2",
         "body": "\\sqrt[n]{2}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\sqrt[n]{2}"
     },
     "noi": {
@@ -6839,7 +6839,7 @@
     "lra": {
         "prefix": "lra",
         "body": "\\leftrightarrow",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\leftrightarrow"
     },
     "lmn": {
@@ -6857,7 +6857,7 @@
     "lld": {
         "prefix": "lld",
         "body": "\\left\\langle \\! \\left\\langle",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\left\\langle \\! \\left\\langle"
     },
     "llb": {
@@ -6899,19 +6899,19 @@
     "lep": {
         "prefix": "lep",
         "body": "\\left(",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\left("
     },
     "lel": {
         "prefix": "lel",
         "body": "\\left\\langle",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\left\\langle"
     },
     "lea": {
         "prefix": "lea",
         "body": "\\leftarrow",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\leftarrow"
     },
     "lds": {
@@ -6923,7 +6923,7 @@
     "ldo": {
         "prefix": "ldo",
         "body": "\\left.",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\left."
     },
     "lcz": {
@@ -8321,7 +8321,7 @@
     "cr2": {
         "prefix": "cr2",
         "body": "\\sqrt[3]{2}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\sqrt[3]{2}"
     },
     "cpg": {
@@ -9168,7 +9168,7 @@
     "ra": {
         "prefix": "ra",
         "body": "\\rightarrow",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\rightarrow"
     },
     "qd": {
@@ -9402,7 +9402,7 @@
     "np": {
         "prefix": "np",
         "body": "\\newpage",
-        "mode": "any",
+        "mode": "text",
         "description": "\\newpage"
     },
     "nl": {

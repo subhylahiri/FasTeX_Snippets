@@ -8,6 +8,7 @@ import typing as ty
 Body = ty.Union[str, ty.List[str]]
 Snippet = ty.Dict[str, Body]
 
+# regex building blocks
 TEMPLATE_PRE = (
     r"Assign\('FasTeX','(\S*)'\);" +
     r"Exe\('%b\\Macros\\Active Strings\\FasTeX\\FasTeX_Templates.edt'\);")
@@ -17,6 +18,7 @@ BACK_ONE = "CharLeft;"
 BACK_SOME = r"CharLeft\((\d)\);"
 END_GROUP = "EndGroup;$"
 
+# regex for reading winedt data
 TRIGGER = re.compile(r'^STRING="(\S*)  "$')
 MACRO = re.compile(r'^  MACRO="\[(.*)\]"$')
 TEMPLATE_ONE = re.compile(TEMPLATE_PRE + LINE_UP + "$")
@@ -30,6 +32,24 @@ TAB_STOP = re.compile(r'(?<!\\)\$\d')
 
 TEMPLATES = (TEMPLATE_ZERO, TEMPLATE_ONES, TEMPLATE_ONE)
 INSERTS = (INSERT_ZERO, INSERT_ONE, INSERT_ONES, INSERT_TWO)
+
+# mode recognition
+TEXT_START = (
+    '\\usepackage',
+    '\\new',
+    '\\renew',
+    '\\leftline',
+    '\\rightline',
+    '\\doc',
+)
+MATHS_START = (
+    '\\frac',
+    '\\math',
+    '\\operatorname',
+    '\\sqrt',
+    '\\left',
+    '\\right',
+)
 
 
 def escape_body(body: Body) -> Body:
@@ -67,7 +87,13 @@ def choose_mode(body: Body, trigger: str) -> str:
         return "text"
     if trigger.startswith('w') and not body.startswith('\\'):
         return "text"
-    if any(x in body for x in ('\\math', '_', '^', '\\frac')):
+    if trigger.startswith('w') and body.startswith('\\'):
+        return "maths"
+    if any(x in body for x in ('_', '^', '\\frac')):
+        return "maths"
+    if body.startswith(TEXT_START):
+        return "text"
+    if body.startswith( MATHS_START):
         return "maths"
     return "any"
 
@@ -208,16 +234,24 @@ def process_ini(ini_file: str, dat_file: str) -> ty.Dict[str, Snippet]:
     return snippets
 
 
-def write_json(file_name: str, snippets: ty.Dict[str, Snippet]):
+def write_data_json(file_name: str, snippets: ty.Dict[str, Snippet]):
     """Write imported snippet data to json file
     """
     with open(file_name, 'w') as file:
         json.dump(snippets, file, indent=4)
 
 
+def read_data_json(file_name: str):
+    """Write imported snippet data to json file
+    """
+    with open(file_name, 'r') as file:
+        snippets = json.load(file)
+    return snippets
+
+
 if __name__ == "__main__":
     snips = process_ini('data/ActiveStrings-FasTeX.ini',
                         'data/FasTeX_Templates.edt.dat')
-    write_json('data/data.json', snips)
+    write_data_json('data/data.json', snips)
     for pref in ['txpf', 'dccd', 'eqtxt', 'xa', 'txt']:
         print(snips[pref])
