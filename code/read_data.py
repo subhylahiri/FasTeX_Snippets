@@ -1,12 +1,23 @@
-"""Reading active string data from winedt
+"""Reading active string data from Winedt, convert to JSON
+
+Stores superset of the info needed by: vscode/latex-utilities/atom snippets
+
+Functions
+---------
+process_ini
+    Read all Winedt data.
+write_data_json
+    Write imported snippet data to .json file.
+read_data_json
+    Read imported snippet data from json file.
 """
 import io
 import re
 import json
-import typing as ty
+from typing import Union, List, Dict, Sequence
 
-Body = ty.Union[str, ty.List[str]]
-Snippet = ty.Dict[str, Body]
+Body = Union[str, List[str]]
+Snippet = Dict[str, Body]
 
 # regex building blocks
 TEMPLATE_PRE = (
@@ -18,7 +29,7 @@ BACK_ONE = "CharLeft;"
 BACK_SOME = r"CharLeft\((\d)\);"
 END_GROUP = "EndGroup;$"
 
-# regex for reading winedt data
+# regex for reading Winedt data
 TRIGGER = re.compile(r'^STRING="(\S*)  "$')
 MACRO = re.compile(r'^  MACRO="\[(.*)\]"$')
 TEMPLATE_ONE = re.compile(TEMPLATE_PRE + LINE_UP + "$")
@@ -53,7 +64,17 @@ MATHS_START = (
 
 
 def escape_body(body: Body) -> Body:
-    """Escape special characters in snippets
+    """Escape special characters in snippets.
+    
+    Parameters
+    ----------
+    body : str / list[str]
+        String with body of snippet.
+
+    Returns
+    -------
+    body : str / list[str]
+        Input with dollar signs escaped.
     """
     if isinstance(body, list):
         return [escape_body(txt) for txt in body]
@@ -61,7 +82,19 @@ def escape_body(body: Body) -> Body:
 
 
 def make_description(body: Body, trigger: str) -> str:
-    """Format description from body
+    """Format description from body of snippet.
+    
+    Parameters
+    ----------
+    body : str / list[str]
+        String with body of snippet.
+    trigger : str
+        Trigger string for snippet.
+
+    Returns
+    -------
+    description : str
+        Attempted snippet description.
     """
     if isinstance(body, list):
         describe = make_description(body[0], trigger)
@@ -75,7 +108,19 @@ def make_description(body: Body, trigger: str) -> str:
 
 
 def choose_mode(body: Body, trigger: str) -> str:
-    """Choose mode for snippet
+    """Choose mode for snippet.
+    
+    Parameters
+    ----------
+    body : str / list[str]
+        String with body of snippet.
+    trigger : str
+        Trigger string for snippet.
+
+    Returns
+    -------
+    mode : str
+        Inferred mode of snippet, one of {`text`, `maths`, `any`}.
     """
     if body is None:
         return None
@@ -93,33 +138,69 @@ def choose_mode(body: Body, trigger: str) -> str:
         return "maths"
     if body.startswith(TEXT_START):
         return "text"
-    if body.startswith( MATHS_START):
+    if body.startswith(MATHS_START):
         return "maths"
     return "any"
 
 
-def read_dat(file_name: str):
-    """Read templates dat file
+def read_dat(file_name: str) -> List[str]:
+    """Read .dat file containing templates.
+    
+    Parameters
+    ----------
+    file_name : str
+        Name of Winedt `.dat` file containing multi-line template snippets.
+        
+    Returns
+    -------
+    lines : List[str]
+        List of text lines from Winedt `.dat` file of multi-line template 
+        snippets.
     """
     with open(file_name, mode='r') as text_file:
         text = text_file.readlines()
     return text
 
 
-def get_template(text: ty.List[str], snip: str) -> ty.List[str]:
-    """Find a template snippet in dat file
+def get_template(dat_text: List[str], trigger: str) -> List[str]:
+    """Find a template snippet in .dat file.
+
+    Parameters
+    ----------
+    dat_text : List[str]
+        List of text lines from Winedt `.dat` file of multi-line template 
+        snippets.
+    trigger : str
+        Trigger string for snippet.
+        
+    Returns
+    -------
+    body : List[str]
+        List of text lines for specified snippet body.
     """
     try:
-        start = text.index(f"{snip}\n") + 1
-        stop = text.index(f"-{snip}-\n")
+        start = dat_text.index(f"{trigger}\n") + 1
+        stop = dat_text.index(f"-{trigger}-\n")
     except ValueError:
         raise
     else:
-        return [escape_body(x[:-1]) for x in text[start:stop]]
+        return [escape_body(x[:-1]) for x in dat_text[start:stop]]
 
 
 def next_ini_line(file: io.TextIOBase, check: re.Pattern) -> re.Match:
-    """Read next line in ini file
+    """Read next line in .ini file and check match.
+    
+    Parameters
+    ----------
+    file : io.TextIO
+        Text file object for Winedt active string `.ini` file.
+    check : re.Pattern
+        Regex pattern to match with next line of `file`.
+        
+    Returns
+    -------
+    match: re.Match
+        Result of matching next line of `file` against `check`.
     """
     line = file.readline()
     if not line:
@@ -130,6 +211,16 @@ def next_ini_line(file: io.TextIOBase, check: re.Pattern) -> re.Match:
 
 def get_ini_trigger(file: io.TextIOBase) -> str:
     """Get trigger for next snippet
+    
+    Parameters
+    ----------
+    file : io.TextIO
+        Text file object for Winedt active string `.ini` file.
+        
+    Returns
+    -------
+    trigger : str
+        Trigger string for snippet, spaces stripped.
     """
     line_match = next_ini_line(file, TRIGGER)
     if line_match is None:
@@ -140,6 +231,16 @@ def get_ini_trigger(file: io.TextIOBase) -> str:
 
 def get_ini_macro(file: io.TextIOBase) -> str:
     """Get macro for current snippet
+    
+    Parameters
+    ----------
+    file : io.TextIO
+        Text file object for Winedt active string `.ini` file.
+        
+    Returns
+    -------
+    macro : str
+        Contents of Winedt macro for active string.
     """
     file.readline()
     file.readline()
@@ -151,8 +252,22 @@ def get_ini_macro(file: io.TextIOBase) -> str:
 
 
 def get_macro_matches(macro: str,
-                      patterns: ty.Sequence[re.Pattern]) -> (re.Match, int):
-    """Get match object from macro
+                      patterns: Sequence[re.Pattern]) -> (re.Match, int):
+    """Get match object from macro.
+    
+    Parameters
+    ----------
+    macro : str
+        Contents of Winedt macro for active string.
+    patterns : Sequence[re.Pattern]
+        Regex pattern to match with next line of `file`.
+        
+    Returns
+    -------
+    match: re.Match
+        Result of matching `macro` against members of `patterns`.
+    index : int
+        Index of first `patterns` member that matched `macro.
     """
     for index, pattern in enumerate(patterns):
         match = pattern.match(macro)
@@ -161,8 +276,21 @@ def get_macro_matches(macro: str,
     return None, 0
 
 
-def get_macro_template(macro: str, dat_text: ty.List[str]) -> ty.List[str]:
-    """Get template text from macro
+def get_macro_template(macro: str, dat_text: List[str]) -> List[str]:
+    """Get template text from macro.
+    
+    Parameters
+    ----------
+    macro : str
+        Contents of Winedt macro for active string.
+    dat_text : List[str]
+        List of text lines from Winedt `.dat` file of multi-line template 
+        snippets.
+        
+    Returns
+    -------
+    body : List[str]
+        List of text lines for snippet body.
     """
     match, index = get_macro_matches(macro, TEMPLATES)
     if match is None:
@@ -181,6 +309,16 @@ def get_macro_template(macro: str, dat_text: ty.List[str]) -> ty.List[str]:
 
 def get_macro_insert(macro: str) -> str:
     """Get inserted text from macro
+    
+    Parameters
+    ----------
+    macro : str
+        Contents of Winedt macro for active string.
+        
+    Returns
+    -------
+    body : str
+        Text of snippet body.
     """
     match, index = get_macro_matches(macro, INSERTS)
     if match is None:
@@ -195,13 +333,28 @@ def get_macro_insert(macro: str) -> str:
     if index == 2:
         return body[:-char_num] + "$1" + body[-char_num:]
     body = body[:-char_num-1] + "$1" + body[-char_num-1:]
-    # second tab-stop was a winedt bullet - remove
+    # second tab-stop was a Winedt bullet - remove
     return body[:-2] + "$2" + body[-1:]
 
 
 def next_ini_entry(file: io.TextIOBase,
-                   dat_text: ty.List[str]) -> ty.Dict[str, Body]:
-    """Find next entry in ini file
+                   dat_text: List[str]) -> Snippet:
+    """Read next entry in .ini file
+    
+    Parameters
+    ----------
+    file : io.TextIO
+        Text file object for Winedt active string `.ini` file.
+    dat_text : List[str]
+        List of text lines from Winedt `.dat` file of multi-line template 
+        snippets.
+        
+    Returns
+    -------
+    snippet : Snippet = Dict[str, str] or Dict[str, List[str]]
+        Snippet object: dict with prefix, body, mode, description.
+        Superset of the info needed by: vscode/latex-utilities/atom snippets
+        Derived: `multiline = isinstance(body, list)`, `priority = len(prefix)`
     """
     trigger = get_ini_trigger(file)
     macro = get_ini_macro(file)
@@ -221,8 +374,23 @@ def next_ini_entry(file: io.TextIOBase,
             'description': describe}
 
 
-def process_ini(ini_file: str, dat_file: str) -> ty.Dict[str, Snippet]:
-    """Read all winedt data
+def process_ini(ini_file: str, dat_file: str) -> Dict[str, Snippet]:
+    """Read all Winedt data
+
+    Parameters
+    ----------
+    ini_file : str
+        Name of Winedt active string `.ini` file.
+    dat_file : str
+        Name of Winedt `.dat` file containing multi-line template snippets.
+        
+    Returns
+    -------
+    snippets : Dict[str, Snippet]
+        Dict of snippet objects: dicts with prefix, body, mode, description.
+        Superset of the info needed by: vscode/latex-utilities/atom snippets
+        Derived: `multiline = isinstance(body, list)`, `priority = len(prefix)`
+        Type: `Snippet = Dict[str, str]` or `Dict[str, List[str]]`.
     """
     dat_text = read_dat(dat_file)
     snippets = {}
@@ -234,15 +402,38 @@ def process_ini(ini_file: str, dat_file: str) -> ty.Dict[str, Snippet]:
     return snippets
 
 
-def write_data_json(file_name: str, snippets: ty.Dict[str, Snippet]):
-    """Write imported snippet data to json file
+def write_data_json(file_name: str, snippets: Dict[str, Snippet]):
+    """Write imported snippet data to .json file
+
+    Parameters
+    ----------
+    file_name : str
+        name of internal `.json` file for snippet info.
+    snippets : Dict[str, Snippet]
+        Dict of snippet objects: dicts with prefix, body, mode, description.
+        Superset of the info needed by: vscode/latex-utilities/atom snippets
+        Derived: `multiline = isinstance(body, list)`, `priority = len(prefix)`
+        Type: `Snippet = Dict[str, str]` or `Dict[str, List[str]]`.
     """
     with open(file_name, 'w') as file:
         json.dump(snippets, file, indent=4)
 
 
 def read_data_json(file_name: str):
-    """Write imported snippet data to json file
+    """Read imported snippet data from json file
+
+    Parameters
+    ----------
+    file_name : str
+        Name of internal `.json` file with snippet info.
+        
+    Returns
+    -------
+    snippets : Dict[str, Snippet]
+        dict of snippet objects: dicts with prefix, body, mode, description.
+        Superset of the info needed by: vscode/latex-utilities/atom snippets
+        Derived: `multiline = isinstance(body, list)`, `priority = len(prefix)`
+        Type: `Snippet = Dict[str, str]` or `Dict[str, List[str]]`.
     """
     with open(file_name, 'r') as file:
         snippets = json.load(file)
