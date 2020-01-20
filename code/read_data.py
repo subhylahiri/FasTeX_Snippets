@@ -374,7 +374,7 @@ def next_ini_entry(file: io.TextIOBase,
             'description': describe}
 
 
-def process_ini(ini_file: str, dat_file: str) -> Dict[str, Snippet]:
+def process_ini(ini_file: str, dat_file: str) -> List[Snippet]:
     """Read all Winedt data
 
     Parameters
@@ -393,16 +393,16 @@ def process_ini(ini_file: str, dat_file: str) -> Dict[str, Snippet]:
         Type: `Snippet = Dict[str, str]` or `Dict[str, List[str]]`.
     """
     dat_text = read_dat(dat_file)
-    snippets = {}
+    snippets = []
     with open(ini_file, mode='r') as file:
         snip = next_ini_entry(file, dat_text)
         while snip:
-            snippets[snip['prefix']] = snip
+            snippets.append(snip)
             snip = next_ini_entry(file, dat_text)
     return snippets
 
 
-def write_data_json(file_name: str, snippets: Dict[str, Snippet]):
+def write_data_json(file_name: str, snippets: List[Snippet]):
     """Write imported snippet data to .json file
 
     Parameters
@@ -410,7 +410,7 @@ def write_data_json(file_name: str, snippets: Dict[str, Snippet]):
     file_name : str
         name of internal `.json` file for snippet info.
     snippets : Dict[str, Snippet]
-        Dict of snippet objects: dicts with prefix, body, mode, description.
+        List of snippet objects: dicts with prefix, body, mode, description.
         Superset of the info needed by: vscode/latex-utilities/atom snippets
         Derived: `multiline = isinstance(body, list)`, `priority = len(prefix)`
         Type: `Snippet = Dict[str, str]` or `Dict[str, List[str]]`.
@@ -430,7 +430,7 @@ def read_data_json(file_name: str):
     Returns
     -------
     snippets : Dict[str, Snippet]
-        dict of snippet objects: dicts with prefix, body, mode, description.
+        List of snippet objects: dicts with prefix, body, mode, description.
         Superset of the info needed by: vscode/latex-utilities/atom snippets
         Derived: `multiline = isinstance(body, list)`, `priority = len(prefix)`
         Type: `Snippet = Dict[str, str]` or `Dict[str, List[str]]`.
@@ -444,5 +444,3 @@ if __name__ == "__main__":
     snips = process_ini('data/ActiveStrings-FasTeX.ini',
                         'data/FasTeX_Templates.edt.dat')
     write_data_json('data/data.json', snips)
-    for pref in ['txpf', 'dccd', 'eqtxt', 'xa', 'txt']:
-        print(snips[pref])
