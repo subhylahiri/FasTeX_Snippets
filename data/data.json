@@ -409,7 +409,7 @@
     {
         "prefix": "txtstyu",
         "body": "\\textstyle{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\textstyle{}"
     },
     {
@@ -497,13 +497,13 @@
     {
         "prefix": "ovstcpq",
         "body": "\\overset{\\longrightarrow}{\\text{PQ}}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\overset{\\longrightarrow}{\\text{PQ}}"
     },
     {
         "prefix": "ovstcpp",
         "body": "\\overset{\\longrightarrow}{\\text{PP}}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\overset{\\longrightarrow}{\\text{PP}}"
     },
     {
@@ -563,49 +563,49 @@
     {
         "prefix": "txtupu",
         "body": "\\textup{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\textup{}"
     },
     {
         "prefix": "txtttu",
         "body": "\\texttt{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\texttt{}"
     },
     {
         "prefix": "txtsty",
         "body": "\\textstyle{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\textstyle{}"
     },
     {
         "prefix": "txtslu",
         "body": "\\textsl{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\textsl{}"
     },
     {
         "prefix": "txtsfu",
         "body": "\\textsf{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\textsf{}"
     },
     {
         "prefix": "txtscu",
         "body": "\\textsc{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\textsc{}"
     },
     {
         "prefix": "txtrmu",
         "body": "\\textrm{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\textrm{}"
     },
     {
         "prefix": "txtitu",
         "body": "\\textit{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\textit{}"
     },
     {
@@ -912,7 +912,7 @@
     {
         "prefix": "snsref",
         "body": "\\section*{References}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\section*{References}"
     },
     {
@@ -1068,7 +1068,7 @@
     {
         "prefix": "frboxn",
         "body": "\\fbox{\\parbox{2.0in}{{\\large \\bf Note: \\,} text }}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\fbox{\\parbox{2.0in}{{\\large \\bf Note: \\,} text }}"
     },
     {
@@ -1122,7 +1122,7 @@
     {
         "prefix": "dfrbox",
         "body": "\\fbox{\\fbox{\\parbox{2.0in}{\\centerline{\\large \\bf type header} text}}}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\fbox{\\fbox{\\parbox{2.0in}{\\centerline{\\large \\bf type header} text}}}"
     },
     {
@@ -1221,37 +1221,37 @@
     {
         "prefix": "txtup",
         "body": "\\textup{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\textup{}"
     },
     {
         "prefix": "txttt",
         "body": "\\texttt{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\texttt{}"
     },
     {
         "prefix": "txtsl",
         "body": "\\textsl{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\textsl{}"
     },
     {
         "prefix": "txtsf",
         "body": "\\textsf{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\textsf{}"
     },
     {
         "prefix": "txtsc",
         "body": "\\textsc{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\textsc{}"
     },
     {
         "prefix": "txtrm",
         "body": "\\textrm{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\textrm{}"
     },
     {
@@ -1269,7 +1269,7 @@
     {
         "prefix": "txtit",
         "body": "\\textit{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\textit{}"
     },
     {
@@ -1468,31 +1468,31 @@
     {
         "prefix": "oxvth",
         "body": "(\\vartheta)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\vartheta)"
     },
     {
         "prefix": "oxvph",
         "body": "(\\varphi)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\varphi)"
     },
     {
         "prefix": "oxcth",
         "body": "(\\Theta)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\Theta)"
     },
     {
         "prefix": "oxcps",
         "body": "(\\Psi)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\Psi)"
     },
     {
         "prefix": "oxcph",
         "body": "(\\Phi)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\Phi)"
     },
     {
@@ -1576,19 +1576,19 @@
     {
         "prefix": "oddxg",
         "body": "\\ddot{\\gamma}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\ddot{\\gamma}"
     },
     {
         "prefix": "oddxb",
         "body": "\\ddot{\\beta}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\ddot{\\beta}"
     },
     {
         "prefix": "oddxa",
         "body": "\\ddot{\\alpha}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\ddot{\\alpha}"
     },
     {
@@ -1773,7 +1773,7 @@
     {
         "prefix": "frbox",
         "body": "\\fbox{\\parbox{2.0in}{\\centerline{\\large \\bf type header} text }}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\fbox{\\parbox{2.0in}{\\centerline{\\large \\bf type header} text }}"
     },
     {
@@ -2284,19 +2284,19 @@
     {
         "prefix": "xyzp",
         "body": "(x, y, z)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(x, y, z)"
     },
     {
         "prefix": "xvth",
         "body": "\\vartheta",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\vartheta"
     },
     {
         "prefix": "xvph",
         "body": "\\varphi",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\varphi"
     },
     {
@@ -2308,19 +2308,19 @@
     {
         "prefix": "xcth",
         "body": "\\Theta",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\Theta"
     },
     {
         "prefix": "xcps",
         "body": "\\Psi",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\Psi"
     },
     {
         "prefix": "xcph",
         "body": "\\Phi",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\Phi"
     },
     {
@@ -2530,7 +2530,7 @@
     {
         "prefix": "txtu",
         "body": "\\text{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\text{}"
     },
     {
@@ -2890,109 +2890,109 @@
     {
         "prefix": "oxvs",
         "body": "(\\varsigma)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\varsigma)"
     },
     {
         "prefix": "oxvr",
         "body": "(\\varrho)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\varrho)"
     },
     {
         "prefix": "oxvp",
         "body": "(\\varpi)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\varpi)"
     },
     {
         "prefix": "oxve",
         "body": "(\\varepsilon)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\varepsilon)"
     },
     {
         "prefix": "oxth",
         "body": "(\\theta)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\theta)"
     },
     {
         "prefix": "oxps",
         "body": "(\\psi)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\psi)"
     },
     {
         "prefix": "oxph",
         "body": "(\\phi)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\phi)"
     },
     {
         "prefix": "oxet",
         "body": "(\\eta)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\eta)"
     },
     {
         "prefix": "oxcx",
         "body": "(\\Xi)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\Xi)"
     },
     {
         "prefix": "oxcu",
         "body": "(\\Upsilon)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\Upsilon)"
     },
     {
         "prefix": "oxcs",
         "body": "(\\Sigma)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\Sigma)"
     },
     {
         "prefix": "oxcp",
         "body": "(\\Pi)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\Pi)"
     },
     {
         "prefix": "oxco",
         "body": "(\\Omega)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\Omega)"
     },
     {
         "prefix": "oxcl",
         "body": "(\\Lambda)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\Lambda)"
     },
     {
         "prefix": "oxcg",
         "body": "(\\Gamma)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\Gamma)"
     },
     {
         "prefix": "oxcd",
         "body": "(\\Delta)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\Delta)"
     },
     {
         "prefix": "ovsu",
         "body": "\\overset{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\overset{}"
     },
     {
         "prefix": "ovst",
         "body": "\\overset{$1}{$2}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\overset{}{}"
     },
     {
@@ -3052,19 +3052,19 @@
     {
         "prefix": "olxg",
         "body": "\\overline{\\gamma}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\overline{\\gamma}"
     },
     {
         "prefix": "olxb",
         "body": "\\overline{\\beta}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\overline{\\beta}"
     },
     {
         "prefix": "olxa",
         "body": "\\overline{\\alpha}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\overline{\\alpha}"
     },
     {
@@ -3076,109 +3076,109 @@
     {
         "prefix": "ohxg",
         "body": "\\hat{\\gamma}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\hat{\\gamma}"
     },
     {
         "prefix": "ohxb",
         "body": "\\hat{\\beta}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\hat{\\beta}"
     },
     {
         "prefix": "ohxa",
         "body": "\\hat{\\alpha}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\hat{\\alpha}"
     },
     {
         "prefix": "odxg",
         "body": "\\dot{\\gamma}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\dot{\\gamma}"
     },
     {
         "prefix": "odxb",
         "body": "\\dot{\\beta}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\dot{\\beta}"
     },
     {
         "prefix": "odxa",
         "body": "\\dot{\\alpha}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\dot{\\alpha}"
     },
     {
         "prefix": "oddz",
         "body": "\\ddot{z}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\ddot{z}"
     },
     {
         "prefix": "oddy",
         "body": "\\ddot{y}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\ddot{y}"
     },
     {
         "prefix": "oddx",
         "body": "\\ddot{x}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\ddot{x}"
     },
     {
         "prefix": "oddu",
         "body": "\\ddot{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\ddot{}"
     },
     {
         "prefix": "odds",
         "body": "\\ddot{s}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\ddot{s}"
     },
     {
         "prefix": "oddr",
         "body": "\\ddot{r}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\ddot{r}"
     },
     {
         "prefix": "oddq",
         "body": "\\ddot{q}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\ddot{q}"
     },
     {
         "prefix": "oddp",
         "body": "\\ddot{p}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\ddot{p}"
     },
     {
         "prefix": "ocuu",
         "body": "(U)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(U)"
     },
     {
         "prefix": "obxg",
         "body": "\\bar{\\gamma}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\bar{\\gamma}"
     },
     {
         "prefix": "obxb",
         "body": "\\bar{\\beta}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\bar{\\beta}"
     },
     {
         "prefix": "obxa",
         "body": "\\bar{\\alpha}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\bar{\\alpha}"
     },
     {
@@ -5382,49 +5382,49 @@
     {
         "prefix": "xyp",
         "body": "(x, y)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(x, y)"
     },
     {
         "prefix": "xvs",
         "body": "\\varsigma",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\varsigma"
     },
     {
         "prefix": "xvr",
         "body": "\\varrho",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\varrho"
     },
     {
         "prefix": "xvp",
         "body": "\\varpi",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\varpi"
     },
     {
         "prefix": "xve",
         "body": "\\varepsilon",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\varepsilon"
     },
     {
         "prefix": "xth",
         "body": "\\theta",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\theta"
     },
     {
         "prefix": "xps",
         "body": "\\psi",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\psi"
     },
     {
         "prefix": "xph",
         "body": "\\phi",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\phi"
     },
     {
@@ -5436,55 +5436,55 @@
     {
         "prefix": "xet",
         "body": "\\eta",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\eta"
     },
     {
         "prefix": "xcx",
         "body": "\\Xi",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\Xi"
     },
     {
         "prefix": "xcu",
         "body": "\\Upsilon",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\Upsilon"
     },
     {
         "prefix": "xcs",
         "body": "\\Sigma",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\Sigma"
     },
     {
         "prefix": "xcp",
         "body": "\\Pi",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\Pi"
     },
     {
         "prefix": "xco",
         "body": "\\Omega",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\Omega"
     },
     {
         "prefix": "xcl",
         "body": "\\Lambda",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\Lambda"
     },
     {
         "prefix": "xcg",
         "body": "\\Gamma",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\Gamma"
     },
     {
         "prefix": "xcd",
         "body": "\\Delta",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\Delta"
     },
     {
@@ -5658,13 +5658,13 @@
     {
         "prefix": "txt",
         "body": "\\text{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\text{}"
     },
     {
         "prefix": "ttu",
         "body": "\\texttt{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\texttt{}"
     },
     {
@@ -5796,7 +5796,7 @@
     {
         "prefix": "sns",
         "body": "\\section*{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\section*{}"
     },
     {
@@ -6012,151 +6012,151 @@
     {
         "prefix": "oxz",
         "body": "(\\zeta)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\zeta)"
     },
     {
         "prefix": "oxx",
         "body": "(\\xi)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\xi)"
     },
     {
         "prefix": "oxu",
         "body": "(\\upsilon)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\upsilon)"
     },
     {
         "prefix": "oxt",
         "body": "(\\tau)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\tau)"
     },
     {
         "prefix": "oxs",
         "body": "(\\sigma)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\sigma)"
     },
     {
         "prefix": "oxr",
         "body": "(\\rho)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\rho)"
     },
     {
         "prefix": "oxp",
         "body": "(\\pi)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\pi)"
     },
     {
         "prefix": "oxo",
         "body": "(\\omega)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\omega)"
     },
     {
         "prefix": "oxn",
         "body": "(\\nu)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\nu)"
     },
     {
         "prefix": "oxm",
         "body": "(\\mu)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\mu)"
     },
     {
         "prefix": "oxl",
         "body": "(\\lambda)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\lambda)"
     },
     {
         "prefix": "oxk",
         "body": "(\\kappa)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\kappa)"
     },
     {
         "prefix": "oxi",
         "body": "(\\iota)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\iota)"
     },
     {
         "prefix": "oxg",
         "body": "(\\gamma)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\gamma)"
     },
     {
         "prefix": "oxe",
         "body": "(\\epsilon)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\epsilon)"
     },
     {
         "prefix": "oxd",
         "body": "(\\delta)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\delta)"
     },
     {
         "prefix": "oxc",
         "body": "(\\chi)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\chi)"
     },
     {
         "prefix": "oxb",
         "body": "(\\beta)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\beta)"
     },
     {
         "prefix": "oxa",
         "body": "(\\alpha)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\alpha)"
     },
     {
         "prefix": "ovw",
         "body": "\\vec{w}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\vec{w}"
     },
     {
         "prefix": "ovv",
         "body": "\\vec{v}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\vec{v}"
     },
     {
         "prefix": "ovu",
         "body": "\\vec{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\vec{}"
     },
     {
         "prefix": "ovc",
         "body": "\\vec{c}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\vec{c}"
     },
     {
         "prefix": "ovb",
         "body": "\\vec{b}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\vec{b}"
     },
     {
         "prefix": "ova",
         "body": "\\vec{a}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\vec{a}"
     },
     {
@@ -6204,49 +6204,49 @@
     {
         "prefix": "olz",
         "body": "\\overline{z}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\overline{z}"
     },
     {
         "prefix": "oly",
         "body": "\\overline{y}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\overline{y}"
     },
     {
         "prefix": "olx",
         "body": "\\overline{x}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\overline{x}"
     },
     {
         "prefix": "olu",
         "body": "\\overline{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\overline{}"
     },
     {
         "prefix": "ols",
         "body": "\\overline{s}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\overline{s}"
     },
     {
         "prefix": "olr",
         "body": "\\overline{r}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\overline{r}"
     },
     {
         "prefix": "olq",
         "body": "\\overline{q}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\overline{q}"
     },
     {
         "prefix": "olp",
         "body": "\\overline{p}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\overline{p}"
     },
     {
@@ -6258,157 +6258,157 @@
     {
         "prefix": "ohz",
         "body": "\\hat{z}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\hat{z}"
     },
     {
         "prefix": "ohy",
         "body": "\\hat{y}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\hat{y}"
     },
     {
         "prefix": "ohx",
         "body": "\\hat{x}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\hat{x}"
     },
     {
         "prefix": "ohu",
         "body": "\\hat{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\hat{}"
     },
     {
         "prefix": "ohs",
         "body": "\\hat{s}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\hat{s}"
     },
     {
         "prefix": "ohr",
         "body": "\\hat{r}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\hat{r}"
     },
     {
         "prefix": "ohq",
         "body": "\\hat{q}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\hat{q}"
     },
     {
         "prefix": "ohp",
         "body": "\\hat{p}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\hat{p}"
     },
     {
         "prefix": "oer",
         "body": "(r)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(r)"
     },
     {
         "prefix": "oep",
         "body": "(p)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(p)"
     },
     {
         "prefix": "oen",
         "body": "(n)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(n)"
     },
     {
         "prefix": "oef",
         "body": "(f)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(f)"
     },
     {
         "prefix": "oeb",
         "body": "(b)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(b)"
     },
     {
         "prefix": "odz",
         "body": "\\dot{z}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\dot{z}"
     },
     {
         "prefix": "ody",
         "body": "\\dot{y}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\dot{y}"
     },
     {
         "prefix": "odx",
         "body": "\\dot{x}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\dot{x}"
     },
     {
         "prefix": "odu",
         "body": "\\dot{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\dot{}"
     },
     {
         "prefix": "ods",
         "body": "\\dot{s}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\dot{s}"
     },
     {
         "prefix": "odr",
         "body": "\\dot{r}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\dot{r}"
     },
     {
         "prefix": "odq",
         "body": "\\dot{q}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\dot{q}"
     },
     {
         "prefix": "odp",
         "body": "\\dot{p}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\dot{p}"
     },
     {
         "prefix": "ocz",
         "body": "(Z)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(Z)"
     },
     {
         "prefix": "ocy",
         "body": "(Y)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(Y)"
     },
     {
         "prefix": "ocx",
         "body": "(X)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(X)"
     },
     {
         "prefix": "ocw",
         "body": "(W)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(W)"
     },
     {
         "prefix": "ocv",
         "body": "(V)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(V)"
     },
     {
@@ -6420,169 +6420,169 @@
     {
         "prefix": "oct",
         "body": "(T)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(T)"
     },
     {
         "prefix": "ocs",
         "body": "(S)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(S)"
     },
     {
         "prefix": "ocr",
         "body": "(R)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(R)"
     },
     {
         "prefix": "ocq",
         "body": "(Q)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(Q)"
     },
     {
         "prefix": "ocp",
         "body": "(P)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(P)"
     },
     {
         "prefix": "oco",
         "body": "(O)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(O)"
     },
     {
         "prefix": "ocn",
         "body": "(N)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(N)"
     },
     {
         "prefix": "ocm",
         "body": "(M)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(M)"
     },
     {
         "prefix": "ocl",
         "body": "(L)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(L)"
     },
     {
         "prefix": "ock",
         "body": "(K)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(K)"
     },
     {
         "prefix": "ocj",
         "body": "(J)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(J)"
     },
     {
         "prefix": "oci",
         "body": "(I)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(I)"
     },
     {
         "prefix": "och",
         "body": "(H)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(H)"
     },
     {
         "prefix": "ocg",
         "body": "(G)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(G)"
     },
     {
         "prefix": "ocf",
         "body": "(F)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(F)"
     },
     {
         "prefix": "oce",
         "body": "(E)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(E)"
     },
     {
         "prefix": "ocd",
         "body": "(D)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(D)"
     },
     {
         "prefix": "occ",
         "body": "(C)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(C)"
     },
     {
         "prefix": "ocb",
         "body": "(B)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(B)"
     },
     {
         "prefix": "oca",
         "body": "(A)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(A)"
     },
     {
         "prefix": "obz",
         "body": "\\bar{z}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\bar{z}"
     },
     {
         "prefix": "oby",
         "body": "\\bar{y}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\bar{y}"
     },
     {
         "prefix": "obx",
         "body": "\\bar{x}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\bar{x}"
     },
     {
         "prefix": "obu",
         "body": "\\bar{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\bar{}"
     },
     {
         "prefix": "obs",
         "body": "\\bar{s}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\bar{s}"
     },
     {
         "prefix": "obr",
         "body": "\\bar{r}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\bar{r}"
     },
     {
         "prefix": "obq",
         "body": "\\bar{q}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\bar{q}"
     },
     {
         "prefix": "obp",
         "body": "\\bar{p}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\bar{p}"
     },
     {
@@ -7715,7 +7715,7 @@
     {
         "prefix": "emp",
         "body": "\\varnothing",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\varnothing"
     },
     {
@@ -7943,7 +7943,7 @@
     {
         "prefix": "dds",
         "body": "\\ddots",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\ddots"
     },
     {
@@ -8652,7 +8652,7 @@
     {
         "prefix": "bfu",
         "body": "\\textbf{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\textbf{}"
     },
     {
@@ -8982,37 +8982,37 @@
     {
         "prefix": "xz",
         "body": "\\zeta",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\zeta"
     },
     {
         "prefix": "xx",
         "body": "\\xi",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\xi"
     },
     {
         "prefix": "xu",
         "body": "\\upsilon",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\upsilon"
     },
     {
         "prefix": "xt",
         "body": "\\tau",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\tau"
     },
     {
         "prefix": "xs",
         "body": "\\sigma",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\sigma"
     },
     {
         "prefix": "xr",
         "body": "\\rho",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\rho"
     },
     {
@@ -9024,79 +9024,79 @@
     {
         "prefix": "xp",
         "body": "\\pi",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\pi"
     },
     {
         "prefix": "xo",
         "body": "\\omega",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\omega"
     },
     {
         "prefix": "xn",
         "body": "\\nu",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\nu"
     },
     {
         "prefix": "xm",
         "body": "\\mu",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\mu"
     },
     {
         "prefix": "xl",
         "body": "\\lambda",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\lambda"
     },
     {
         "prefix": "xk",
         "body": "\\kappa",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\kappa"
     },
     {
         "prefix": "xi",
         "body": "\\iota",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\iota"
     },
     {
         "prefix": "xg",
         "body": "\\gamma",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\gamma"
     },
     {
         "prefix": "xe",
         "body": "\\epsilon",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\epsilon"
     },
     {
         "prefix": "xd",
         "body": "\\delta",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\delta"
     },
     {
         "prefix": "xc",
         "body": "\\chi",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\chi"
     },
     {
         "prefix": "xb",
         "body": "\\beta",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\beta"
     },
     {
         "prefix": "xa",
         "body": "\\alpha",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\alpha"
     },
     {
@@ -9162,7 +9162,7 @@
     {
         "prefix": "sn",
         "body": "\\section{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\section{}"
     },
     {
@@ -9222,127 +9222,127 @@
     {
         "prefix": "oz",
         "body": "(z)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(z)"
     },
     {
         "prefix": "oy",
         "body": "(y)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(y)"
     },
     {
         "prefix": "ox",
         "body": "(x)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(x)"
     },
     {
         "prefix": "ow",
         "body": "(w)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(w)"
     },
     {
         "prefix": "ov",
         "body": "(v)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(v)"
     },
     {
         "prefix": "ou",
         "body": "(u)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(u)"
     },
     {
         "prefix": "ot",
         "body": "(t)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(t)"
     },
     {
         "prefix": "os",
         "body": "(s)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(s)"
     },
     {
         "prefix": "oq",
         "body": "(q)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(q)"
     },
     {
         "prefix": "op",
         "body": "(",
-        "mode": "any",
+        "mode": "maths",
         "description": "("
     },
     {
         "prefix": "oo",
         "body": "(o)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(o)"
     },
     {
         "prefix": "om",
         "body": "(m)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(m)"
     },
     {
         "prefix": "ol",
         "body": "(l)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(l)"
     },
     {
         "prefix": "ok",
         "body": "(k)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(k)"
     },
     {
         "prefix": "oj",
         "body": "(j)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(j)"
     },
     {
         "prefix": "oi",
         "body": "(i)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(i)"
     },
     {
         "prefix": "oh",
         "body": "(h)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(h)"
     },
     {
         "prefix": "og",
         "body": "(g)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(g)"
     },
     {
         "prefix": "oe",
         "body": "(e)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(e)"
     },
     {
         "prefix": "od",
         "body": "(d)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(d)"
     },
     {
         "prefix": "oc",
         "body": "(c)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(c)"
     },
     {
@@ -9354,67 +9354,67 @@
     {
         "prefix": "oa",
         "body": "(a)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(a)"
     },
     {
         "prefix": "o9",
         "body": "(9)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(9)"
     },
     {
         "prefix": "o8",
         "body": "(8)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(8)"
     },
     {
         "prefix": "o7",
         "body": "(7)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(7)"
     },
     {
         "prefix": "o6",
         "body": "(6)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(6)"
     },
     {
         "prefix": "o5",
         "body": "(5)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(5)"
     },
     {
         "prefix": "o4",
         "body": "(4)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(4)"
     },
     {
         "prefix": "o3",
         "body": "(3)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(3)"
     },
     {
         "prefix": "o2",
         "body": "(2)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(2)"
     },
     {
         "prefix": "o1",
         "body": "(1)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(1)"
     },
     {
         "prefix": "o0",
         "body": "(0)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(0)"
     },
     {

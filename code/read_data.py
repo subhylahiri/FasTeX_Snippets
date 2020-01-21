@@ -8,8 +8,6 @@ process_ini
     Read all Winedt data.
 write_data_json
     Write imported snippet data to .json file.
-read_data_json
-    Read imported snippet data from json file.
 """
 import io
 import re
@@ -52,6 +50,9 @@ TEXT_START = (
     '\\leftline',
     '\\rightline',
     '\\doc',
+    '\\text',
+    '\\section',
+    '\\fbox',
 )
 MATHS_START = (
     '\\frac',
@@ -60,6 +61,16 @@ MATHS_START = (
     '\\sqrt',
     '\\left',
     '\\right',
+    '\\var',
+    '\\over',
+    '\\wide',
+    '\\dot',
+    '\\ddot',
+    '\\bar',
+    '\\bar',
+    '\\vec',
+    '\\hat',
+    '\\tilde',
 )
 
 
@@ -134,7 +145,13 @@ def choose_mode(body: Body, trigger: str) -> str:
         return "text"
     if trigger.startswith('w') and body.startswith('\\'):
         return "maths"
+    if trigger.startswith('o') and body.startswith('('):
+        return "maths"
+    if trigger.startswith('x'):
+        return "maths"
     if any(x in body for x in ('_', '^', '\\frac')):
+        return "maths"
+    if body.startswith(('\\textstyle', '\\text{}')):
         return "maths"
     if body.startswith(TEXT_START):
         return "text"
@@ -417,27 +434,6 @@ def write_data_json(file_name: str, snippets: List[Snippet]):
     """
     with open(file_name, 'w') as file:
         json.dump(snippets, file, indent=4)
-
-
-def read_data_json(file_name: str):
-    """Read imported snippet data from json file
-
-    Parameters
-    ----------
-    file_name : str
-        Name of internal `.json` file with snippet info.
-        
-    Returns
-    -------
-    snippets : Dict[str, Snippet]
-        List of snippet objects: dicts with prefix, body, mode, description.
-        Superset of the info needed by: vscode/latex-utilities/atom snippets
-        Derived: `multiline = isinstance(body, list)`, `priority = len(prefix)`
-        Type: `Snippet = Dict[str, str]` or `Dict[str, List[str]]`.
-    """
-    with open(file_name, 'r') as file:
-        snippets = json.load(file)
-    return snippets
 
 
 if __name__ == "__main__":
