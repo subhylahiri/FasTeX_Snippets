@@ -1,10 +1,66 @@
 [
     {
+        "prefix": "(^|[^\\\\])tepaper.simplest  ",
+        "body": "$1\\n%&latex2e--tepaper simplest\\n\\documentclass{article}\\n\\begin{document}\\n\\title{Title of paper}\\n\\author{Author1\\n   \\thanks{Research partially supported by ...}\\n   \\\\Department of Mathematics\\n   \\\\University of Nebraska \\\\\\n\\and\\nAuthor2\\n   \\thanks{Research partially supported by ...}\\n   \\\\Department of Physics\\n   \\\\San Jose State University }\\n\\date{put in custom date; delete this line for today's date}\\n\\maketitle\\n\\begin{abstract}\\nThis brick is called {\\it paper/simplest/template.tex}. It uses the\\ndefault \\LaTeX\\ numbering, with theorems etc. and equations numbered\\nconsecutively throughout the paper.\\n\\end{abstract}\\n\\section*{Introduction}\\nText goes here\\n\\section{First Section Title}\\nText goes here\\n\\section{Second Section Title}\\nText goes here\\n\\bigskip\\n    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\\n    %  REFERENCES\\n    %  use ``biba or bibb'' to fill in reference items\\n    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\\n\\section*{References}\\n\\begin{description}\\n\\item Author, U. N., ...\\n\\end{description}\\n\\end{document}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "latex2e--tepaper simplest",
+        "priority": 16
+    },
+    {
+        "prefix": "(^|[^\\\\])tepaper.eqnwith  ",
+        "body": "$1\\n%&latex2e--tepaper eqnwith\\n\\documentclass{article}\\n\\usepackage{latexsym,amssymb}             % special symbols\\n\\usepackage{amsmath}                      % amsmath environments\\n\\usepackage{amsthm}                       % ams theorem/proof environments\\n% \\usepackage{amscd}                      % ams commutative diagrams\\n% \\usepackage{graphicx}                   % graphics commands\\n% \\usepackage{color}                      % color commands\\n% \\usepackage{verbatim}                   % comment/verbatim environments\\n\\newcommand{\\bfi}{\\bfseries\\itshape}\\n\\theoremstyle{plain} %--default\\n\\newtheorem{theorem}             {Theorem}  [section]\\n\\newtheorem{lemma}      [theorem]{Lemma}\\n\\newtheorem{corollary}  [theorem]{Corollary}\\n\\newtheorem{proposition}[theorem]{Proposition}\\n\\newtheorem{algorithm}  [theorem]{Algorithm}\\n\\newtheorem{criterion}  [theorem]{Criterion}\\n\\newtheorem{conjecture} [theorem]{Conjecture}\\n\\newtheorem{question}   [theorem]{Question}\\n\\theoremstyle{definition}\\n\\newtheorem{definition} [theorem]{Definition}\\n\\newtheorem{condition}  [theorem]{Condition}\\n\\newtheorem{example}    [theorem]{Example}\\n\\newtheorem{problem}    [theorem]{Problem}\\n\\newtheorem{solution}   [theorem]{Solution}\\n\\theoremstyle{remark}\\n\\newtheorem{remark}              {Remark}\\n\\newtheorem{note}                {Note}\\n\\newtheorem{claim}               {Claim}\\n\\newtheorem{summary}             {Summary}\\n\\newtheorem{case}                {Case}\\n\\newtheorem{acknowledgment}      {Acknowledgments}\\n\\newtheorem{conclusion}          {Conclusion}\\n\\newtheorem{notation}            {Notation}\\n{\\renewcommand{\\theequation}{\\thesection.\\arabic{equation}}\\n%--------------------------------\\n\\makeatletter\\n\\def\\equationwith#1{%\\n  \\expandafter\\edef\\expandafter\\c@equation%\\n  \\expandafter{\\csname c@#1\\endcsname}%\\n  \\expandafter\\let\\expandafter\\theequation\\csname the#1\\endcsname\\n}\\n\\makeatother\\n\\equationwith{theorem}\\n%--------------------------------\\n\\begin{document}\\n\\title{Title of paper}\\n\\author{ Author1\\n   \\thanks{Research partially supported by ...}\\n   \\\\Department of Mathematics\\n   \\\\University of ... \\\\\\n\\and  Author2\\n   \\thanks{Research partially supported by ...}\\n   \\\\Department of Physics\\n   \\\\State University of ... }\\n\\date{put in custom date; delete this line for today's date}\\n\\maketitle\\n\\begin{abstract}\\nThis brick is called {\\it paper/eqnwith/template.tex}.\\nIt numbers equations and\\ntheorems within each section, but you are required to insert counters;\\nit does not require any special style files.\\n\\end{abstract}\\n%The counters below will renumber equations in each section.\\n\\section*{Introduction}\\n                Text goes here\\n\\section{First Section Title}\\n                Text goes here\\n\\begin{acknowledgment}\\nWe thank ...\\n\\end{acknowledgment}\\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\\n%  BIBLIOGRAPHY\\n%  %use ``bibia'' or ``bibib'' to fill in  bibitems\\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\\n\\begin{thebibliography}{}\\n\\bibitem[]{}\\n\\end{thebibliography}\\n\\end{document}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "latex2e--tepaper eqnwith",
+        "priority": 15
+    },
+    {
+        "prefix": "(^|[^\\\\])tepaper.simple  ",
+        "body": "$1\\n%&latex2e--tepaper.simple\\n\\documentclass{article}\\n\\usepackage{latexsym,amssymb}             % special symbols\\n\\usepackage{amsmath}                      % amsmath environments\\n\\usepackage{amsthm}                       % ams theorem/proof environments\\n% \\usepackage{amscd}                      % ams commutative diagrams\\n% \\usepackage{graphicx}                   % graphics commands\\n% \\usepackage{color}                      % color commands\\n% \\usepackage{verbatim}                   % comment/verbatim environments\\n\\newcommand{\\bfi}{\\bfseries\\itshape}\\n\\newtheorem{theorem}{Theorem}[section]\\n\\newtheorem{proposition}[theorem]{Proposition}\\n\\newtheorem{lemma}[theorem]{Lemma}\\n\\newtheorem{corollary}[theorem]{Corollary}\\n\\newtheorem{definition}[theorem]{Definition}\\n{\\renewcommand{\\theequation}{\\thesection.\\arabic{equation}}\\n\\begin{document}\\n\\title{Title of paper}\\n\\author{ Author1\\n   \\thanks{Research partially supported by ...}\\n   \\\\Department of Mathematics\\n   \\\\University of ... \\\\\\n\\and  Author2\\n   \\thanks{Research partially supported by ...}\\n   \\\\Department of Physics\\n   \\\\State University of ... }\\n\\date{put in custom date; delete this line for today's date}\\n\\maketitle\\n\\begin{abstract}\\nThis brick is called {\\it paper/simple/template.tex}.\\nIt numbers equations and\\ntheorems within each section, but you are required to insert counters;\\nit does not require any special style files.\\n\\end{abstract}\\n%The counters below will renumber equations in each section.\\n\\section*{Introduction}\\n\\setcounter{equation}{0}\\n                Text goes here\\n\\section{First Section Title}\\n\\setcounter{equation}{0}\\n                Text goes here\\n\\begin{acknowledgment}\\nWe thank ...\\n\\end{acknowledgment}\\n    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\\n    %  REFERENCES\\n    %  use ``biba or bibb'' to fill in reference items\\n    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\\n\\section*{References}\\n\\begin{description}\\n\\item Author, U. N., ...\\n\\end{description}\\n\\end{document}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "latex2e--tepaper.simple",
+        "priority": 14
+    },
+    {
+        "prefix": "(^|[^\\\\])tepaper.amsart  ",
+        "body": "$1\\n%&AMS article\\n\\documentclass{amsart}\\n\\usepackage{graphicx}\\n\\newcommand{\\bfi}{\\bfseries\\itshape}\\n\\theoremstyle{plain} %--default\\n\\newtheorem{theorem}             {Theorem}  [section]\\n\\newtheorem{lemma}      [theorem]{Lemma}\\n\\newtheorem{corollary}  [theorem]{Corollary}\\n\\newtheorem{proposition}[theorem]{Proposition}\\n\\newtheorem{algorithm}  [theorem]{Algorithm}\\n\\newtheorem{criterion}  [theorem]{Criterion}\\n\\newtheorem{conjecture} [theorem]{Conjecture}\\n\\newtheorem{question}   [theorem]{Question}\\n\\theoremstyle{definition}\\n\\newtheorem{definition} [theorem]{Definition}\\n\\newtheorem{condition}  [theorem]{Condition}\\n\\newtheorem{example}    [theorem]{Example}\\n\\newtheorem{problem}    [theorem]{Problem}\\n\\newtheorem{solution}   [theorem]{Solution}\\n\\theoremstyle{remark}\\n\\newtheorem{remark}              {Remark}\\n\\newtheorem{note}                {Note}\\n\\newtheorem{claim}               {Claim}\\n\\newtheorem{summary}             {Summary}\\n\\newtheorem{case}                {Case}\\n\\newtheorem{acknowledgment}      {Acknowledgments}\\n\\newtheorem{conclusion}          {Conclusion}\\n\\newtheorem{notation}            {Notation}\\n\t\t\\numberwithin{equation}{section}\\n%----------------------------------------------------\\n\\begin{document}\\n\\title[put short title here]%\\n\t  {Put the real title here\\\\\\n\t\tand rest of title here}\\n\\author[Author One and Author Two]{%\\n\t\tAuthor One\\\\\\n\t\tAuthor Two\\\\\\n}\\n\t\t\\address{Department of Mathematics\\\\\\n\t\t\t\t Northeastern University\\\\\\n\t\t\t\t Boston, Massachusetts 02115}%\\n\t\t\\address{Mathematical Research Section\\\\\\n\t\t\t\t School of Mathematical Sciences\\\\\\n\t\t\t\t Australian National University\\\\\\n\t\t\t\t Canberra ACT 2601, Australia}\\n\\subjclass{Primary 54C40, 14E20; Secondary 46E25, 20C20}\\n\\date     {July 2, 1991}\\n%         \\thanks will become a 1st page footnote.\\n\\thanks{The first author was supported in part by NSF\\n\t\tGrant \\#000000.}\\n%\\dedicatory{}\\n\\maketitle\\n\\begin{abstract}\\n\t\tThis is the abstract.\\n\\end{abstract}\\n\\tableofcontents\\n\\section{Other headings}\\n\\section*{This is an unnumbered first-level section head}\\n\\subsection{This is a numbered second-level section head}\\n\\subsection*{This is an unnumbered second-level section head}\\n\\subsubsection{This is a numbered third-level section head}\\n\\subsubsection*{This is an unnumbered third-level section head}\\n\\begin{theorem}\\n\t\tDefinition environemnt\\n\\end{theorem}\\n\\begin{definition}\\n\t\tDefinition environemnt\\n\\end{definition}\\n\\begin{remark}\\n\t\tRemark environemnt\\n\\end{remark}\\n%-----------------\\n\\bibliographystyle{}\\n\\begin{thebibliography}{}\\n\\bibitem[{Arnol\\$'\\$d et al. [1982]}] {arnold:sing}\\n\t\t Arnol\\$'\\$d, V. L., Varchenko, A. N.,\\n\t\t  and Gusein-Zade, S. M. [1982]\\n\t\t \\emph{Singularities of differentiable maps.} I,\\n\t\t  ``Nauka'', Moscow (Russian);\\n\t\t English transl. Birkh\\\"auser, 1985.\\n\\bibitem[{Arnol\\$'\\$d et al. [1984]}] {arnold:sing2}\\n\\bysame [1984]\\n\t\t\\emph{Singularities of differentiable maps.}~II,\\n\t\t  ``Nauka'', Moscow;\\n\t\t English transl., Birkh\\\"auser, 1988.\\n\\end{thebibliography}\\n%-----------------\\n\\end{document}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "AMS article",
+        "priority": 14
+    },
+    {
+        "prefix": "(^|[^\\\\])tepaper.html  ",
+        "body": "$1\\n%article html\\n\\n%% Source: Ross Moore, Macquarie University, Sydney Australia\\n%% Manual: http://www-dsed.llnl.gov/files/programs/unix/latex2html/manual/\\n\\documentclass{article}\\n%% load extra AMS math symbols\\n\\usepackage[psamsfonts]{amsfonts}\\n%% and the extended enumerate environments\\n\\usepackage{enumerate}\t\\n%% These are for making Web pages, using LaTeX2HTML\\n\\usepackage{html}\\n\\begin{htmlonly}\\n\\bodytext{BGCOLOR=#FFFFFF LINK=#9600a8 VLINK=#ff3b21 ALINK=#26ffab}\\n\\end{htmlonly}\\n\\usepackage[dvips]{color}\\n\\begin{htmlonly}\\n\\pagecolor{white}\\n\\end{htmlonly}\t\\n%% adjust the size and positioning\\n%% of the text-area on the paper\\n%begin{latexonly}\\n\\addtolength{\\voffset}{-2cm}\\n\\addtolength{\\textheight}{4cm}\\n\\addtolength{\\hoffset}{-2cm}\\n\\addtolength{\\textwidth}{4cm}\\n%end{latexonly}\t\\n\\title{}\\n\\author{}\\n\\date{}\\n\\begin{document}\\n\\maketitle\\n\\thispagestyle{empty}\\n%... put text here\\n\\end{document}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "article html",
+        "priority": 12
+    },
+    {
+        "prefix": "(^|[^\\\\])teletter  ",
+        "body": "$1\\n%&latex2e--te2letter\\n\\documentclass{letter}\\n\\begin{document}\\n\\signature{yourName}\\n\\telephone{phone (TTT) EEE-LLLL}\\n\\begin{letter}{Addressee\\\\\\n               Address\\\\\\n               More Address\\\\\\n               More and more lines separated by double backslashes\\n               }\\n\\opening{Dear Whoever,}\\nThe Text\\n\\closing{Sincerely yours,}\\n\\end{letter}\\n\\end{document}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "latex2e--te2letter",
+        "priority": 8
+    },
+    {
         "prefix": "(^|[^\\\\])opcpcgcl  ",
         "body": "$1\\operatorname{PGL}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\operatorname{PGL}",
+        "priority": 8
+    },
+    {
+        "prefix": "(^|[^\\\\])mx3b35pt  ",
+        "body": "$1\\n\\begin{bmatrix}\\na & b & c \\\\ [35pt]\\nd & e & f \\\\ [35pt]\\ng & h & i\\n\\end{bmatrix}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\begin{bmatrix}",
         "priority": 8
     },
     {
@@ -69,6 +125,14 @@
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\textstyle{}",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])tepaper  ",
+        "body": "$1\\n%&latex2e--tepaper\\n\\documentclass{article}\\n\\usepackage{latexsym,amssymb}             % special symbols\\n\\usepackage{amsmath}                      % amsmath environments\\n\\usepackage{amsthm}                       % ams theorem/proof environments\\n% \\usepackage{amscd}                      % ams commutative diagrams\\n% \\usepackage{graphicx}                   % graphics commands\\n% \\usepackage{color}                      % color commands\\n% \\usepackage{verbatim}                   % comment/verbatim environments\\n\\newcommand{\\bfi}{\\bfseries\\itshape}      % bold italic\\n\\makeatletter\\n\\@addtoreset{figure}{section}\\n\\def\\thefigure{\\thesection.\\@arabic\\c@figure}\\n\\def\\fps@figure{h, t}\\n\\@addtoreset{equation}{section}\\n\\def\\theequation{\\thesection.\\arabic{equation}}\\n\\makeatother\\n\\theoremstyle{plain} %--default\\n\\newtheorem{theorem}             {Theorem}  [section]\\n\\newtheorem{lemma}      [theorem]{Lemma}\\n\\newtheorem{corollary}  [theorem]{Corollary}\\n\\newtheorem{proposition}[theorem]{Proposition}\\n\\newtheorem{algorithm}  [theorem]{Algorithm}\\n\\newtheorem{criterion}  [theorem]{Criterion}\\n\\newtheorem{conjecture} [theorem]{Conjecture}\\n\\newtheorem{question}   [theorem]{Question}\\n\\theoremstyle{definition}\\n\\newtheorem{definition} [theorem]{Definition}\\n\\newtheorem{condition}  [theorem]{Condition}\\n\\newtheorem{example}    [theorem]{Example}\\n\\newtheorem{problem}    [theorem]{Problem}\\n\\newtheorem{solution}   [theorem]{Solution}\\n\\theoremstyle{remark}\\n\\newtheorem{remark}              {Remark}\\n\\newtheorem{note}                {Note}\\n\\newtheorem{claim}               {Claim}\\n\\newtheorem{summary}             {Summary}\\n\\newtheorem{case}                {Case}\\n\\newtheorem{acknowledgment}      {Acknowledgments}\\n\\newtheorem{conclusion}          {Conclusion}\\n\\newtheorem{notation}            {Notation}\\n\\begin{document}\\n\\title{Title of paper}\\n\\author{ Author1\\n   \\thanks{Research partially supported by ...}\\n   \\\\Department of Mathematics\\n   \\\\University of ... \\\\\\n\\and  Author2\\n   \\thanks{Research partially supported by ...}\\n   \\\\Department of Physics\\n   \\\\State University of ... }\\n\\date{put in custom date; delete this line for today's date}\\n\\maketitle\\n\\begin{abstract}\\nThis template is called {\\it paper/template.tex}.\\nIt numbers equations, figures, tables and theorems within each section.\\nFigures are placed automatically following the paragraph in which they\\nare cited, or at the top of the next page if there is not room\\non the page of citation.\\n\\end{abstract}\\n\\section*{Introduction}\\nText goes here\\n\\section{First Section Title}\\nText goes here\\n\\begin{acknowledgment}\\nWe thank ...\\n\\end{acknowledgment}\\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\\n%  BIBLIOGRAPHY\\n%  %use ``bibia'' or ``bibib'' to fill in  bibitems\\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\\n\\begin{thebibliography}{}\\n\\bibitem[]{}\\n\\end{thebibliography}\\n\\end{document}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "latex2e--tepaper",
         "priority": 7
     },
     {
@@ -224,11 +288,75 @@
         "priority": 6
     },
     {
+        "prefix": "(^|[^\\\\])thmsty  ",
+        "body": "$1\\n\\theoremstyle{plain} %--default\\n\\newtheorem{theorem}             {Theorem}  [section]\\n\\newtheorem{lemma}      [theorem]{Lemma}\\n\\newtheorem{corollary}  [theorem]{Corollary}\\n\\newtheorem{proposition}[theorem]{Proposition}\\n\\newtheorem{algorithm}  [theorem]{Algorithm}\\n\\newtheorem{criterion}  [theorem]{Criterion}\\n\\newtheorem{conjecture} [theorem]{Conjecture}\\n\\newtheorem{question}   [theorem]{Question}\\n\\theoremstyle{definition}\\n\\newtheorem{definition} [theorem]{Definition}\\n\\newtheorem{condition}  [theorem]{Condition}\\n\\newtheorem{example}    [theorem]{Example}\\n\\newtheorem{problem}    [theorem]{Problem}\\n\\newtheorem{solution}   [theorem]{Solution}\\n\\theoremstyle{remark}\\n\\newtheorem{remark}              {Remark}\\n\\newtheorem{note}                {Note}\\n\\newtheorem{claim}               {Claim}\\n\\newtheorem{summary}             {Summary}\\n\\newtheorem{case}                {Case}\\n\\newtheorem{acknowledgment}      {Acknowledgments}\\n\\newtheorem{conclusion}          {Conclusion}\\n\\newtheorem{notation}            {Notation}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\theoremstyle{plain} %--default",
+        "priority": 6
+    },
+    {
         "prefix": "(^|[^\\\\])tgqeds  ",
         "body": "$1\\tag*{\\qedsymbol}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\tag*{\\qedsymbol}",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])tebook  ",
+        "body": "$1\\n%&latex2e--tebook\\n\\documentclass{book}\\n\\usepackage{latexsym,amssymb}             % special symbols\\n\\usepackage{amsmath}                      % amsmath environments\\n\\usepackage{amsthm}                       % ams theorem/proof environments\\n% \\usepackage{amscd}                      % ams commutative diagrams\\n% \\usepackage{graphicx}                   % graphics commands\\n% \\usepackage{color}                      % color commands\\n% \\usepackage{verbatim}                   % comment/verbatim environments\\n% \\usepackage{makeidx}                    % makeindex\\n\\theoremstyle{plain} %--default\\n\\newtheorem{theorem}             {Theorem}  [section]\\n\\newtheorem{lemma}      [theorem]{Lemma}\\n\\newtheorem{corollary}  [theorem]{Corollary}\\n\\newtheorem{proposition}[theorem]{Proposition}\\n\\newtheorem{algorithm}  [theorem]{Algorithm}\\n\\newtheorem{criterion}  [theorem]{Criterion}\\n\\newtheorem{conjecture} [theorem]{Conjecture}\\n\\newtheorem{question}   [theorem]{Question}\\n\\theoremstyle{definition}\\n\\newtheorem{definition} [theorem]{Definition}\\n\\newtheorem{condition}  [theorem]{Condition}\\n\\newtheorem{example}    [theorem]{Example}\\n\\newtheorem{problem}    [theorem]{Problem}\\n\\newtheorem{solution}   [theorem]{Solution}\\n\\theoremstyle{remark}\\n\\newtheorem{remark}              {Remark}\\n\\newtheorem{note}                {Note}\\n\\newtheorem{claim}               {Claim}\\n\\newtheorem{summary}             {Summary}\\n\\newtheorem{case}                {Case}\\n\\newtheorem{acknowledgment}      {Acknowledgments}\\n\\newtheorem{conclusion}          {Conclusion}\\n\\newtheorem{notation}            {Notation}\\n\\makeatletter\\n\\@addtoreset{figure}{section}             % figure numbering within section\\n\\def\\thefigure{\\thesection.\\@arabic\\c@figure}\\n\\def\\fps@figure{h, t}\\n\\@addtoreset{equation}{section}           % equation numbering within section\\n\\def\\theequation{\\thesection.\\arabic{equation}}\\n\\makeatother\\n\\begin{document}\\n\\title{Title of Book}\\n\\author{ Author1\\n   \\thanks{Research partially supported by ...}\\n   \\\\Department of Mathematics\\n   \\\\University of ... \\\\\\n\\and  Author2\\n   \\thanks{Research partially supported by ...}\\n   \\\\Department of Physics\\n   \\\\State University of ... }\\n\\date{put in custom date; delete this line for today's date}\\n\\maketitle\\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\\n%  BIBLIOGRAPHY\\n%  %use ``bibia'' or ``bibib'' to fill in  bibitems\\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\\n\\begin{thebibliography}{}\\n\\bibitem[]{}\\n\\end{thebibliography}\\n\\end{document}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "latex2e--tebook",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])tabex6  ",
+        "body": "$1\\n\\begin{center}\\n\\begin{tabular}{||l|c|c||}\\n    \\hline\\n Case & Conditions & Connection                               \\\\ \\hline\\n Unconstrained\\n      & \\${\\cal D}_q = T_q Q\\$\\n      & \\${\\cal A}^{\\rm sym}(\\dot q)={\\Bbb I} ^{-1} J(\\dot{q})\\$ \\\\ [1ex]\\n Purely Kinematic\\n      & \\${\\cal D}_q \\cap T_q({\\rm Orb}(q)) = \\{0\\}\\$\\n      & \\${\\cal A}^{\\rm kin} (\\dot{q}) = 0\\$                     \\\\ [1ex]\\n Horizontal symmetries\\n      & \\${\\cal D}_q \\cap T_q({\\rm Orb}(q))_G\\n                         = T_q({\\rm Orb}(q))_H\\$\\n      & \\${\\cal A}^{\\rm sym} (\\dot{q})\\n                     + {\\cal A}^{\\rm kin} (\\dot{q})\\n                     ={\\Bbb I} ^{-1} J_H (\\dot{q})\\$            \\\\ [1ex]\\n General principal\\n      & \\${\\cal D}_q + T_q({\\rm Orb}(q)) = T_q Q\\$\\n      & \\${\\cal A}^{\\rm sym}(\\dot{q}) + {\\cal A}^{\\rm kin}(\\dot{q}) =\\n        {\\Bbb I} ^{-1} J ^{\\rm nhc}(\\dot{q})\\$ \\\\\\n bundle case\\n      &\\n      &                                                       \\\\ \\hline\\n\\end{tabular}\\n\\end{center}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{center}",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])tabex5  ",
+        "body": "$1\\n\\begin{center}\\n\\fbox{\\fbox{\\parbox{4.0in}{\\n\\begin{tabular}{ll}\\n\\quad {\\bf Classical Mechanics}\\n      & \\quad {\\bf Quantum Mechanics}                  \\\\ \\hline \\hline\\nimmersed Lagrangian manifold\\n      & element of \\$L^2 (Q)\\$ or \\${\\cal D}^\\prime (Q)\\$  \\\\\\n\\$\\Lambda \\rightarrow (T ^\\ast Q,\\Omega)\\$\\n      &                        \\\\ \\hline\\n\\$\\Lambda = \\$ graph of \\${\\bf d} S\\$\\n      & \\$\\psi = \\exp (iS/\\hbar)\\$                       \\\\ \\hline\\n\\$T ^{\\ast} Q\\$\\n      & Hilbertspace                                   \\\\ \\hline\\nLagrangian manifold\\n      & (possibly unbounded)                           \\\\\\n\\$\\quad \\Omega \\subset (T^\\ast Q, \\Omega _Q)\\n\\times (T^\\ast R,-\\Omega_R)\\$\\n      & \\$\\quad L^2 (R)\\$ to \\$L^2 (Q)\\$                   \\\\ \\hline\\n        composition of canonical relations\\n     & composition of operators                       \\\\\\n\\end{tabular}\\n}}} \\end{center}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{center}",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])tabex4  ",
+        "body": "$1\\n\\begin{center}\\n\\begin{tabular}{||l|l||}\\n\\hline \\hline\\n\\quad {\\bf Classical Mechanics}\\n      & \\quad {\\bf Quantum Mechanics}                 \\\\ \\hline \\hline\\nimmersed Lagrangian manifold\\n      & element of \\$L^2 (Q)\\$\\n        or \\${\\cal D}^\\prime (Q)\\$                      \\\\\\n\\$\\Lambda \\rightarrow (T ^\\ast Q,\\Omega)\\$\\n      &                                               \\\\ \\hline\\n\\$\\Lambda = \\$ graph of \\${\\bf d} S\\$\\n      & \\$\\psi = \\exp (iS/\\hbar)\\$                      \\\\ \\hline\\n\\$T ^{\\ast} Q\\$\\n      & Hilbertspace                                  \\\\ \\hline\\nLagrangian manifold\\n      & (possibly unbounded)                          \\\\\\n\\$\\quad \\Omega \\subset(T^\\ast Q, \\Omega _Q)\\n\\times (T^\\ast R,-\\Omega_R)\\$\\n      & \\$\\quad L^2 (R)\\$ to \\$L^2 (Q)\\$                  \\\\ \\hline\\ncomposition of canonical relations\\n      & composition of operators                      \\\\ \\hline \\hline\\n\\end{tabular}\\n\\end{center}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{center}",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])tabex3  ",
+        "body": "$1\\n\\begin{center}\\n\\begin{tabular}{lll}\\n{\\it Classical Tensor Analysis\\/}\\n     &\\n     & {\\it Tensor Analysis on Manifolds\\/}\\n\\\\ \\\\\\n\\$ \\{ x ^a\\}\\$\\n     & Coordinates\\n     & \\$ \\{ x ^a\\}\\$\\n\\\\ \\\\\\n\\$ e _a = {\\displaystyle \\frac{\\partial z ^i }\\n                             {\\partial x ^a} \\dot{ i} _i }\\$\\n     & \\$ \\!\\!\\! \\begin{array}{l}\\n                {\\rm coordinate} \\\\\\n                {\\rm basis \\, vectors }\\n                \\end{array} \\$\\n     & \\$ {\\displaystyle \\frac{\\partial}{\\partial x^a} = e _a } \\$                \\\\ \\\\\\n       \\$ \\!\\!\\!\\! \\left. \\begin{array}{l}\\n                \\bar{e} _a = {\\displaystyle \\frac{\\partial x ^b}\\n                                   {\\partial \\bar{x} ^a} e _b }\\n\\\\ \\\\\\n                \\bar{e} ^a = {\\displaystyle \\frac{\\partial \\bar{x} ^a}\\n                                   {\\partial \\bar{x} ^b} e^b }\\n                 \\end{array}  \\right\\}\\$\\n     & \\$ \\!\\!\\! \\begin{array}{l}\\n                {\\rm change \\, of} \\\\\\n                {\\rm coordinates} \\\\\\n                \\end{array} \\$\\n     & \\$ \\left\\{ \\begin{array}{l}\\n                {\\displaystyle \\frac{\\partial}{\\partial \\bar{x} ^a} =\\n                \\frac{ \\partial x ^b}{\\partial \\bar{x} ^a}\\n                \\frac{ \\partial} {\\partial x ^b} }\\n                \\\\  \\\\\\n                {\\displaystyle d \\bar{x} ^a =\\n                \\frac{ \\partial \\bar{x} ^a }{ \\partial x ^b} d x ^b }\\n                \\end{array}  \\right. \\$\\n\\\\\\n\\end{tabular}\\n\\end{center}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{center}",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])tabex2  ",
+        "body": "$1\\n\\begin{center}\\n\\fbox{\\parbox{4.5in}{\\n\\begin{tabular}{ll}\\n\\multicolumn{2}{c}{\\bf Box 2.1.1 \\quad\\n                       Summary of Important Formulas for \\S 2.1}  \\\\\\n{\\it Velocity\\/}\\n      &                                                           \\\\\\n      &                                                           \\\\\\n\\$ V = {\\displaystyle \\frac{\\partial \\phi}{\\partial t} } \\$\\n      & \\$ V ^a ={\\displaystyle \\frac{\\partial \\phi ^a}\\n                                    {\\partial t}}\\$                \\\\\\n      &                                                           \\\\\\n\\$ v _t = V _t \\circ \\phi _t ^{-1} \\$\\n      & \\$ v ^a _t = V ^a _t \\circ \\phi _t ^{-1} \\$                 \\\\\\n      &                                                           \\\\\\n{\\it Covariant Derivative\\/}\\n      &                                                           \\\\\\n      &                                                           \\\\\\n\\$ {\\bf D} v \\cdot w = \\nabla _w v \\$\\n      & \\$ (\\nabla _w v) ^a =\\n          {\\displaystyle \\frac{\\partial v ^a}\\n                              {\\partial x ^b}} w ^b +\\n                         \\gamma ^a _{b c} w ^b v ^c \\$             \\\\\\n\\end{tabular}\\n}}\\n\\end{center}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{center}",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])tabex1  ",
+        "body": "$1\\n\\begin{center}\\n\\begin{tabular}{ccccc}\\n                   & & \\multicolumn{3}{c}{Definition}    \\\\\\n                   & & \\multicolumn{3}{c}{of derivative} \\\\\\n                   & & & \\$\\downarrow\\$\\n                   &                                     \\\\\\nPartials exist and & \\$\\Longrightarrow\\$\\n                   & Differentiable\\n                   & \\$\\Longrightarrow\\$\\n                   & Partials exist                       \\\\\\nare continuous     & & & &\\n\\end{tabular}\\n\\end{center}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{center}",
         "priority": 6
     },
     {
@@ -528,6 +656,14 @@
         "priority": 6
     },
     {
+        "prefix": "(^|[^\\\\])dfrbox  ",
+        "body": "$1\\n\\fbox{\\fbox{\\parbox{2.0in}{\\n\\centerline{\\large \\bf type header} text }}}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\fbox{\\fbox{\\parbox{2.0in}{",
+        "priority": 6
+    },
+    {
         "prefix": "(^|[^\\\\])dcbook  ",
         "body": "$1\\documentclass{book}",
         "mode": "text",
@@ -720,6 +856,54 @@
         "priority": 5
     },
     {
+        "prefix": "(^|[^\\\\])teref  ",
+        "body": "$1\\n\\section*{References}\\n\\begin{description}\\n\\item   %use ``biba'' to fill in ref. items\\n\\end{description}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\section*{References}",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])temar  ",
+        "body": "$1\\n\\textwidth 6.5 truein\\n\\oddsidemargin 0 truein\\n\\evensidemargin -0.50 truein\\n\\topmargin -.5 truein\\n\\textheight 8.5in",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\textwidth 6.5 truein",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])tebib  ",
+        "body": "$1\\n\\begin{thebibliography}{}\\n\\bibitem[]{}   %use ``bibia'' or ``bibib'' to fill in  bibitems\\n\\end{thebibliography}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{thebibliography}{}",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])teaut  ",
+        "body": "$1\\n\\title{Title of paper}\\n\\author{\\nAuthor1\\n   \\thanks{Research partially supported by ...}\\n   \\\\Department of Mathematics\\n   \\\\University of ... \\\\\\n\\and\\nAuthor2\\n   \\thanks{Research partially supported by ...}\\n   \\\\Department of Physics\\n   \\\\State University of ... }\\n\\date{put in custom date; delete this line for today's date}\\n\\maketitle\\n%================================================================================",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\title{Title of paper}",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])teack  ",
+        "body": "$1\\n\\begin{acknowledgment}\\n\\end{acknowledgment}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{acknowledgment}",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])teabs  ",
+        "body": "$1\\n\\begin{abstract}\\nText goes here\\n\\end{abstract}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{abstract}",
+        "priority": 5
+    },
+    {
         "prefix": "(^|[^\\\\])sumlu  ",
         "body": "$1\\sum_{",
         "mode": "maths",
@@ -752,11 +936,35 @@
         "priority": 5
     },
     {
+        "prefix": "(^|[^\\\\])setlu  ",
+        "body": "$1\\n\\left\\{ \\left.  \\!\\right|\\n     \\right\\}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\left\\{ \\left.  \\!\\right|",
+        "priority": 5
+    },
+    {
         "prefix": "(^|[^\\\\])setcu  ",
         "body": "$1\\setcounter{",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\setcounter{",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])refib  ",
+        "body": "$1\\n\\item Author [year]\\n{\\it Title.\\/}\\nPublisher.",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\item Author [year]",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])refia  ",
+        "body": "$1\\n\\item Author [year]\\nTitle.\\n{\\it Journal\\/} {\\bf 11}, 123--223.",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\item Author [year]",
         "priority": 5
     },
     {
@@ -805,6 +1013,14 @@
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\quad $\\blacksquare$",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])pictu  ",
+        "body": "$1\\n\\begin{figure}[ht]\\n\\begin{center}\\n       \\special{picture } %add pict filename\\n\\caption{\\label{}}\\n\\end{center}\\n\\end{figure}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{figure}[ht]",
         "priority": 5
     },
     {
@@ -1000,6 +1216,38 @@
         "priority": 5
     },
     {
+        "prefix": "(^|[^\\\\])mxspu  ",
+        "body": "$1\\n\\left(\\n\\begin{smallmatrix}\\n...&...\\\\\\n...&...\\n\\end{smallmatrix}\\n\\right)",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\left(",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])mxsbu  ",
+        "body": "$1\\n\\left[\\n\\begin{smallmatrix}\\n...&...\\\\\\n...&...\\n\\end{smallmatrix}\\n\\right]",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\left[",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])mxcvu  ",
+        "body": "$1\\n\\begin{Vmatrix}\\n...&...\\\\\\n...&...\\n\\end{Vmatrix}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\begin{Vmatrix}",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])mx2bk  ",
+        "body": "$1\\n\\begin{bmatrix}\\n a & b \\\\\\n c & d\\n\\end{bmatrix}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\begin{bmatrix}",
+        "priority": 5
+    },
+    {
         "prefix": "(^|[^\\\\])mrkbu  ",
         "body": "$1\\markboth{",
         "mode": "any",
@@ -1077,6 +1325,14 @@
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\lim_{x \\rightarrow x_0}",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])lequs  ",
+        "body": "$1\\n\\begin{eqnarray*}\\n\\lefteqn{}\\\\\\n& &\\n\\end{eqnarray*}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{eqnarray*}",
         "priority": 5
     },
     {
@@ -1197,6 +1453,46 @@
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\end{split}",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])eqtxt  ",
+        "body": "$1\\n\\[\\n\\quad \\text{$$\u0001}\\n\\]",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\[",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])eqlbr  ",
+        "body": "$1\\n\\begin{equation}\\n\\left.\\n\\begin{aligned}\\n&x = y           \\\\\\n&a = b^2 + b + 1\\n\\end{aligned}\\n\\right\\}\\n\\end{equation}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{equation}",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])eqbox  ",
+        "body": "$1\\n\\begin{equation}\\n\\fbox{\\parbox{.7in}{\\$\\displaystyle{\\frac{x^2 + 1}{5} = y}\\$ }}\\n\\end{equation}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{equation}",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])eqaun  ",
+        "body": "$1\\n\\begin{align*}\\nx^2   &= y+1 \\\\\\nx^2+1 &= u+v\\n\\end{align*}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{align*}",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])eqanu  ",
+        "body": "$1\\n\\begin{align}\\nx^2   &= y+1    \\\\\\nx^2+1 &= u+v\\n\\end{align}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{align}",
         "priority": 5
     },
     {
@@ -1621,6 +1917,22 @@
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\bigcap",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])bibib  ",
+        "body": "$1\\n\\bibitem[]{}\\nAuthor [year]\\n{\\it Title.\\/}\\nPublisher.",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\bibitem[]{}",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])bibia  ",
+        "body": "$1\\n\\bibitem[]{}\\nAuthor [year]\\nTitle.\\n{\\it Journal\\/} {\\bf 11}, 123--223.",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\bibitem[]{}",
         "priority": 5
     },
     {
@@ -2085,6 +2397,54 @@
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\tag*{}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])tecs  ",
+        "body": "$1\\n\\begin{cases}\\n$$\u0001\\n\\end{cases}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{cases}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])tebd  ",
+        "body": "$1\\n%--Article Preamble-----------------------------------------------\\n\\documentclass[11pt]{article}\\n% Preamble:\\n\\usepackage{sl-preamble}\\n\\usepackage[margin=1.5in]{geometry}\\n%\\n% ----------------------------------------------------------------\\n\\vfuzz2pt % Don't report over-full v-boxes if over-edge is small\\n\\hfuzz2pt % Don't report over-full h-boxes if over-edge is small\\n%\\numberwithin{equation}{section}\\n%\\renewcommand{\\baselinestretch}{1.5}\\n% ----------------------------------------------------------------\\n% New commands etc.\\n%\\n%================================================================================\\n\\begin{document}\\n%================================================================================",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "--Article Preamble-----------------------------------------------",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])tebibx  ",
+        "body": "$1\\n%================================================================================\\n\\bibliographystyle{utcaps_nat}\\n\\bibliography{journals}\\n%================================================================================\\n\\end{document}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\bibliographystyle{utcaps_nat}",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])teblx  ",
+        "body": "$1\\n%--------------------------------------------------------------------------------\\n\\usepackage[style=numeric-links,language=british]{biblatex}\\n\\ExecuteBibliographyOptions{sorting=none,giveninits=true,maxbibnames=99,uniquename=init}\\n\\DeclareNameAlias{author}{default}\\n%\\renewcommand{\\mkbibnamegiven}[1]{}\\n\\addbibresource{journals.bib}\\n\\setlength{\\bibitemsep}{\\parsep}\\n%--------------------------------------------------------------------------------",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\usepackage[style=numeric-links,language=british]{biblatex}",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])tbex  ",
+        "body": "$1\\n\\begin{tabbing}\\nxxxxxxxxxxx\\= xxxxxxxxxxx\\= xxxxxxxxxxx\\= \\kill\\nitems      \\> for        \\> row        \\> one      \\\\\\nitems      \\> for        \\> row        \\> two      \\\\\\n\\end{tabbing}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{tabbing}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])tabl  ",
+        "body": "$1\\n\\begin{table}[ht]                 %optional [t, b or h];\\n\\begin{minipage}{0.9\\textwidth}\\n\\begin{tabular}[ccc]\\n &  &  \\\\\\n &  &  \\\\\\n\\end{tabular}\\n\\end{minipage}\\n\\caption{}\\n\\label{}\\n\\end{table}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{table}[ht]                 %optional [t, b or h];",
         "priority": 4
     },
     {
@@ -2840,6 +3200,102 @@
         "priority": 4
     },
     {
+        "prefix": "(^|[^\\\\])mxvu  ",
+        "body": "$1\\n\\begin{vmatrix}\\n...&...\\\\\\n...&...\\n\\end{vmatrix}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\begin{vmatrix}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])mxsu  ",
+        "body": "$1\\n\\begin{smallmatrix}\\n...&...\\\\\\n...&...\\n\\end{smallmatrix}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\begin{smallmatrix}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])mxpu  ",
+        "body": "$1\\n\\begin{pmatrix}\\n...&...\\\\\\n...&...\\n\\end{pmatrix}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\begin{pmatrix}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])mxcb  ",
+        "body": "$1\\n\\begin{bmatrix}\\nx  \\\\\\ny\\n\\end{bmatrix}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\begin{bmatrix}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])mxbu  ",
+        "body": "$1\\n\\begin{bmatrix}\\n...&...\\\\\\n...&...\\n\\end{bmatrix}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\begin{bmatrix}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])mx3p  ",
+        "body": "$1\\n\\begin{pmatrix}\\na & b & c \\\\\\nd & e & f \\\\\\ng & h & i\\n\\end{pmatrix}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\begin{pmatrix}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])mx3i  ",
+        "body": "$1\\n\\begin{pmatrix}\\n 1 & 0 & 0 \\\\\\n 0 & 1 & 0 \\\\\\n 0 & 0 & 1\\n\\end{pmatrix}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\begin{pmatrix}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])mx3d  ",
+        "body": "$1\\n\\left| \\begin{matrix}\\na & b & c \\\\\\nd & e & f \\\\\\ng & h & i\\n\\end{matrix} \\right|",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\left| \\begin{matrix}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])mx3b  ",
+        "body": "$1\\n\\begin{bmatrix}\\na & b & c \\\\\\nd & e & f \\\\\\ng & h & i\\n\\end{bmatrix}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\begin{bmatrix}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])mx2s  ",
+        "body": "$1\\n\\begin{bmatrix}\\n 0 & 1 \\\\\\n-1 & 0\\n\\end{bmatrix}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\begin{bmatrix}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])mx2p  ",
+        "body": "$1\\n\\begin{pmatrix}\\n a & b \\\\\\n c & d\\n\\end{pmatrix}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\begin{pmatrix}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])mx2i  ",
+        "body": "$1\\n\\begin{bmatrix}\\n1 & 0 \\\\\\n0 & 1\\n\\end{bmatrix}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\begin{bmatrix}",
+        "priority": 4
+    },
+    {
         "prefix": "(^|[^\\\\])mttu  ",
         "body": "$1\\mathtt{$$\u0001}",
         "mode": "maths",
@@ -3232,6 +3688,14 @@
         "priority": 4
     },
     {
+        "prefix": "(^|[^\\\\])lequ  ",
+        "body": "$1\\n\\begin{eqnarray}\\n\\lefteqn{} \\nonumber \\\\\\n& &\\n\\end{eqnarray}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{eqnarray}",
+        "priority": 4
+    },
+    {
         "prefix": "(^|[^\\\\])lebr  ",
         "body": "$1\\left\\{",
         "mode": "maths",
@@ -3341,6 +3805,14 @@
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\Leftarrow",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])illu  ",
+        "body": "$1\\n\\begin{figure}\\n\\begin{center}\\n       \\special{illustration } %add eps filename\\n\\caption{\\label{}}\\n\\end{center}\\n\\end{figure}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{figure}",
         "priority": 4
     },
     {
@@ -3672,6 +4144,14 @@
         "priority": 4
     },
     {
+        "prefix": "(^|[^\\\\])figu  ",
+        "body": "$1\\n\\begin{figure}[ht]\\n\\begin{center}\\n\\includegraphics{}\\n\\caption{\\label{}}\\n\\end{center}\\n\\end{figure}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{figure}[ht]",
+        "priority": 4
+    },
+    {
         "prefix": "(^|[^\\\\])fddt  ",
         "body": "$1\\frac{d}{dt}",
         "mode": "maths",
@@ -3701,6 +4181,14 @@
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\end{verbatim}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])eval  ",
+        "body": "$1\\n\\[\\n\\left. f \\left(\\frac{t}{2}\\right)\\right|_{t=0}\\n\\]",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\[",
         "priority": 4
     },
     {
@@ -3752,6 +4240,14 @@
         "priority": 4
     },
     {
+        "prefix": "(^|[^\\\\])equn  ",
+        "body": "$1\\n\\[\\nF(b)-F(a)=\\int^b_af(x)\\, dx\\n\\]",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\[",
+        "priority": 4
+    },
+    {
         "prefix": "(^|[^\\\\])eqst  ",
         "body": "$1\\end{question}",
         "mode": "any",
@@ -3760,11 +4256,35 @@
         "priority": 4
     },
     {
+        "prefix": "(^|[^\\\\])eqsp  ",
+        "body": "$1\\n\\begin{equation}\\n\\begin{split}\\na  =  b &+ c + (c + d)  \\\\\\n        &{}- e + f\\n\\end{split}\\n\\end{equation}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{equation}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])eqnu  ",
+        "body": "$1\\n\\begin{equation}\\nF(b)-F(a)=\\int^b_af(x)\\, dx$$\u0001\\n\\end{equation}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{equation}",
+        "priority": 4
+    },
+    {
         "prefix": "(^|[^\\\\])eqas  ",
         "body": "$1\\end{eqnarray*}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\end{eqnarray*}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])eqad  ",
+        "body": "$1\\n\\begin{equation}\\n \\begin{aligned}\\n {}&a = b + c \\\\\\n {}&d = e + f + g\\n\\end{aligned}\\n\\end{equation}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{equation}",
         "priority": 4
     },
     {
@@ -4680,6 +5200,14 @@
         "priority": 4
     },
     {
+        "prefix": "(^|[^\\\\])crlr  ",
+        "body": "$1\\n%===============================================================================%\\n%.......10........20........30........40........50........60........70........80%\\n%________|_________|_________|_________|_________|_________|_________|_________|%\\n%===============================================================================%",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "Divider: %=========;%.......10;%________|;%=========",
+        "priority": 4
+    },
+    {
         "prefix": "(^|[^\\\\])cprt  ",
         "body": "$1\\copyright",
         "mode": "any",
@@ -4725,6 +5253,22 @@
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "(\\cite{})",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])cdsq  ",
+        "body": "$1\\n\\begin{equation*}\\n \\begin{CD}\\n A @>F>>B\\\\\\n @VGVV  @VVgV \\\\\\n C @>>f>D\\\\\\n \\end{CD}\\n \\end{equation*}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{equation*}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])cdli  ",
+        "body": "$1\\n\\begin{equation*}\\n \\begin{CD}\\n 0 @>>> A @>f>>B @>g>> C @>h>> C/g(B) @>>>0\\n \\end{CD}\\n \\end{equation*}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{equation*}",
         "priority": 4
     },
     {
@@ -7048,6 +7592,22 @@
         "priority": 3
     },
     {
+        "prefix": "(^|[^\\\\])mxu  ",
+        "body": "$1\\n\\begin{matrix}\\n...&...\\\\\\n...&...\\n\\end{matrix}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\begin{matrix}",
+        "priority": 3
+    },
+    {
+        "prefix": "(^|[^\\\\])mxc  ",
+        "body": "$1\\n\\begin{pmatrix}\\n x_1  \\\\\\n x_2  \\\\\\n x_3\\n\\end{pmatrix}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\begin{pmatrix}",
+        "priority": 3
+    },
+    {
         "prefix": "(^|[^\\\\])mvb  ",
         "body": "$1{\\mathversion{bold} \\$ \\$1$}",
         "mode": "text",
@@ -9336,6 +9896,14 @@
         "priority": 3
     },
     {
+        "prefix": "(^|[^\\\\])cdu  ",
+        "body": "$1\\n\\[\\n\\begin{CD}\\n\\end{CD}\\n\\]",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\[",
+        "priority": 3
+    },
+    {
         "prefix": "(^|[^\\\\])cds  ",
         "body": "$1\\cdots",
         "mode": "any",
@@ -9566,6 +10134,30 @@
         "triggerWhenComplete": true,
         "description": "\\mathcal{A}",
         "priority": 3
+    },
+    {
+        "prefix": "(^|[^\\\\])cbx  ",
+        "body": "$1\\n%========================================================%\\n%                                                        %\\n%========================================================%",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "Divider: %=========;%         ;%=========",
+        "priority": 3
+    },
+    {
+        "prefix": "(^|[^\\\\])cdv  ",
+        "body": "$1\\n%--------------------------------------------------------------------------------",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "Divider: %---------",
+        "priority": 3
+    },
+    {
+        "prefix": "(^|[^\\\\])cddv  ",
+        "body": "$1\\n%================================================================================",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "Divider: %=========",
+        "priority": 4
     },
     {
         "prefix": "(^|[^\\\\])cau  ",
