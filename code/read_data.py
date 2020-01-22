@@ -76,7 +76,7 @@ MATHS_START = (
 
 def escape_body(body: Body) -> Body:
     """Escape special characters in snippets.
-    
+
     Parameters
     ----------
     body : str / list[str]
@@ -94,7 +94,7 @@ def escape_body(body: Body) -> Body:
 
 def make_description(body: Body, trigger: str) -> str:
     """Format description from body of snippet.
-    
+
     Parameters
     ----------
     body : str / list[str]
@@ -120,7 +120,7 @@ def make_description(body: Body, trigger: str) -> str:
 
 def choose_mode(body: Body, trigger: str) -> str:
     """Choose mode for snippet.
-    
+
     Parameters
     ----------
     body : str / list[str]
@@ -162,16 +162,16 @@ def choose_mode(body: Body, trigger: str) -> str:
 
 def read_dat(file_name: str) -> List[str]:
     """Read .dat file containing templates.
-    
+
     Parameters
     ----------
     file_name : str
         Name of Winedt `.dat` file containing multi-line template snippets.
-        
+
     Returns
     -------
     lines : List[str]
-        List of text lines from Winedt `.dat` file of multi-line template 
+        List of text lines from Winedt `.dat` file of multi-line template
         snippets.
     """
     with open(file_name, mode='r') as text_file:
@@ -185,35 +185,31 @@ def get_template(dat_text: List[str], trigger: str) -> List[str]:
     Parameters
     ----------
     dat_text : List[str]
-        List of text lines from Winedt `.dat` file of multi-line template 
+        List of text lines from Winedt `.dat` file of multi-line template
         snippets.
     trigger : str
         Trigger string for snippet.
-        
+
     Returns
     -------
     body : List[str]
         List of text lines for specified snippet body.
     """
-    try:
-        start = dat_text.index(f"{trigger}\n") + 1
-        stop = dat_text.index(f"-{trigger}-\n")
-    except ValueError:
-        raise
-    else:
-        return [escape_body(x[:-1]) for x in dat_text[start:stop]]
+    start = dat_text.index(f"{trigger}\n") + 1
+    stop = dat_text.index(f"-{trigger}-\n")
+    return [escape_body(x[:-1]) for x in dat_text[start:stop]]
 
 
 def next_ini_line(file: io.TextIOBase, check: re.Pattern) -> re.Match:
     """Read next line in .ini file and check match.
-    
+
     Parameters
     ----------
     file : io.TextIO
         Text file object for Winedt active string `.ini` file.
     check : re.Pattern
         Regex pattern to match with next line of `file`.
-        
+
     Returns
     -------
     match: re.Match
@@ -228,12 +224,12 @@ def next_ini_line(file: io.TextIOBase, check: re.Pattern) -> re.Match:
 
 def get_ini_trigger(file: io.TextIOBase) -> str:
     """Get trigger for next snippet
-    
+
     Parameters
     ----------
     file : io.TextIO
         Text file object for Winedt active string `.ini` file.
-        
+
     Returns
     -------
     trigger : str
@@ -248,12 +244,12 @@ def get_ini_trigger(file: io.TextIOBase) -> str:
 
 def get_ini_macro(file: io.TextIOBase) -> str:
     """Get macro for current snippet
-    
+
     Parameters
     ----------
     file : io.TextIO
         Text file object for Winedt active string `.ini` file.
-        
+
     Returns
     -------
     macro : str
@@ -271,14 +267,14 @@ def get_ini_macro(file: io.TextIOBase) -> str:
 def get_macro_matches(macro: str,
                       patterns: Sequence[re.Pattern]) -> (re.Match, int):
     """Get match object from macro.
-    
+
     Parameters
     ----------
     macro : str
         Contents of Winedt macro for active string.
     patterns : Sequence[re.Pattern]
         Regex pattern to match with next line of `file`.
-        
+
     Returns
     -------
     match: re.Match
@@ -295,15 +291,15 @@ def get_macro_matches(macro: str,
 
 def get_macro_template(macro: str, dat_text: List[str]) -> List[str]:
     """Get template text from macro.
-    
+
     Parameters
     ----------
     macro : str
         Contents of Winedt macro for active string.
     dat_text : List[str]
-        List of text lines from Winedt `.dat` file of multi-line template 
+        List of text lines from Winedt `.dat` file of multi-line template
         snippets.
-        
+
     Returns
     -------
     body : List[str]
@@ -326,12 +322,12 @@ def get_macro_template(macro: str, dat_text: List[str]) -> List[str]:
 
 def get_macro_insert(macro: str) -> str:
     """Get inserted text from macro
-    
+
     Parameters
     ----------
     macro : str
         Contents of Winedt macro for active string.
-        
+
     Returns
     -------
     body : str
@@ -357,15 +353,15 @@ def get_macro_insert(macro: str) -> str:
 def next_ini_entry(file: io.TextIOBase,
                    dat_text: List[str]) -> Snippet:
     """Read next entry in .ini file
-    
+
     Parameters
     ----------
     file : io.TextIO
         Text file object for Winedt active string `.ini` file.
     dat_text : List[str]
-        List of text lines from Winedt `.dat` file of multi-line template 
+        List of text lines from Winedt `.dat` file of multi-line template
         snippets.
-        
+
     Returns
     -------
     snippet : Snippet = Dict[str, str] or Dict[str, List[str]]
@@ -400,7 +396,7 @@ def process_ini(ini_file: str, dat_file: str) -> List[Snippet]:
         Name of Winedt active string `.ini` file.
     dat_file : str
         Name of Winedt `.dat` file containing multi-line template snippets.
-        
+
     Returns
     -------
     snippets : Dict[str, Snippet]

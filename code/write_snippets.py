@@ -1,9 +1,7 @@
 """Write snippets in the relevant form for vscode/latex-utilities/atom
 """
-import io
 import re
 import json
-import os.path as osp
 from typing import Union, List, Dict, Optional
 
 Body = Union[str, List[str]]
@@ -16,12 +14,12 @@ TAB_STOP = re.compile(r'(?<!\\)\$(\d)')
 
 def count_tabs(body: Body) -> int:
     """Count tab stops in snippet body.
-    
+
     Parameters
     ----------
     body : Body = str or List[str]
         Body of snippet with tabstops `$1`,...,`$n`.
-    
+
     Returns
     -------
     count : int
@@ -51,7 +49,7 @@ def body_prepend(body: Body, addendum: str) -> Body:
 
 def convert_body_vsc(body: Body, endtab: bool = True, maxtab: int = 0) -> Body:
     """Convert tab stops for a VSCode snippet
-    
+
     Parameters
     ----------
     body : Body = str or List[str]
@@ -60,7 +58,7 @@ def convert_body_vsc(body: Body, endtab: bool = True, maxtab: int = 0) -> Body:
         Do we want a tabstop at the end?
     maxtab : int, optional, default: 0
         What is the maximum tabstop, `n`, in the snippet? Unused `if endtab`.
-    
+
     Returns
     -------
     body : Body = str or List[str]
@@ -77,7 +75,7 @@ def convert_body_vsc(body: Body, endtab: bool = True, maxtab: int = 0) -> Body:
 def convert_snippet_vsc(snippet: Snippet, prefix: str = '', suffix: str = '',
                         endtab: bool = True) -> Snippet:
     """Convert a snippet from internal to VSCode format.
-    
+
     Parameters
     ----------
     snippet : Snippet = Dict[str, str] or Dict[str, List[str]]
@@ -88,7 +86,7 @@ def convert_snippet_vsc(snippet: Snippet, prefix: str = '', suffix: str = '',
         String to append to every snippet trigger.
     endtab : bool, optional, default: False
         Do we want a tabstop at the end?
-    
+
     Returns
     -------
     snippet : Snippet = Dict[str, str] or Dict[str, List[str]]
@@ -105,7 +103,7 @@ def convert_snippet_vsc(snippet: Snippet, prefix: str = '', suffix: str = '',
 
 def convert_body_atom(body: Body, endtab: bool = True, maxtab: int = 0) -> Body:
     """Convert body for an Atom snippet
-    
+
     Parameters
     ----------
     body : Body = str or List[str]
@@ -114,7 +112,7 @@ def convert_body_atom(body: Body, endtab: bool = True, maxtab: int = 0) -> Body:
         Do we want a tabstop at the end?
     maxtab : int, optional, default: 0
         What is the maximum tabstop, `n`, in the snippet? Unused `if endtab`.
-    
+
     Returns
     -------
     body : Body = str or List[str]
@@ -131,7 +129,7 @@ def convert_body_atom(body: Body, endtab: bool = True, maxtab: int = 0) -> Body:
 def convert_snippet_atom(snippet: Snippet, prefix: str = '', suffix: str = '',
                          endtab: bool = True) -> Snippet:
     """Convert a snippet from internal to Atom format.
-    
+
     Parameters
     ----------
     snippet : Snippet = Dict[str, str] or Dict[str, List[str]]
@@ -142,7 +140,7 @@ def convert_snippet_atom(snippet: Snippet, prefix: str = '', suffix: str = '',
         String to append to every snippet trigger.
     endtab : bool, optional, default: False
         Do we want a tabstop at the end?
-   
+
     Returns
     -------
     snippet : Snippet = Dict[str, str] or Dict[str, List[str]]
@@ -157,10 +155,10 @@ def convert_snippet_atom(snippet: Snippet, prefix: str = '', suffix: str = '',
 
 
 def convert_trigger_live(trigger: str,
-                        prefix: str = '',
-                        suffix: str = '  ') -> str:
+                         prefix: str = '',
+                         suffix: str = '  ') -> str:
     """Convert tab stops for a LaTeX-Utilities live snippet
-    
+
     Parameters
     ----------
     trigger : str
@@ -169,7 +167,7 @@ def convert_trigger_live(trigger: str,
         String to prepend to every snippet trigger.
     suffix : str
         String to append to every snippet trigger.
-    
+
     Returns
     -------
     trigger : str
@@ -180,7 +178,7 @@ def convert_trigger_live(trigger: str,
 
 def _help_body_live(body: str, endtab: bool = True, maxtab: int = 0) -> str:
     """Convert tab stops for one line of a live snippet
-    
+
     Parameters
     ----------
     body : str
@@ -189,7 +187,7 @@ def _help_body_live(body: str, endtab: bool = True, maxtab: int = 0) -> str:
         Do we want a tabstop at the end?
     maxtab : int, optional, default: 0
         What is the maximum tabstop, `n`, in the snippet? Unused `if endtab`.
-    
+
     Returns
     -------
     body : str
@@ -201,7 +199,7 @@ def _help_body_live(body: str, endtab: bool = True, maxtab: int = 0) -> str:
 
 def convert_body_live(body: Body, endtab: bool = True, maxtab: int = 0) -> Body:
     """Convert tab stops for a VSCode live snippet
-    
+
     Parameters
     ----------
     body : str
@@ -210,7 +208,7 @@ def convert_body_live(body: Body, endtab: bool = True, maxtab: int = 0) -> Body:
         Do we want a tabstop at the end?
     maxtab : int, optional, default: 0
         What is the maximum tabstop, `n`, in the snippet? Unused `if endtab`.
-    
+
     Returns
     -------
     body : str
@@ -228,7 +226,7 @@ def convert_body_live(body: Body, endtab: bool = True, maxtab: int = 0) -> Body:
 def convert_snippet_live(snippet: Snippet, prefix: str = '', suffix: str = '',
                          endtab: bool = True) -> Snippet:
     """Convert a snippet from internal to VSCode format.
-    
+
     Parameters
     ----------
     snippet : Snippet = Dict[str, str] or Dict[str, List[str]]
@@ -239,7 +237,7 @@ def convert_snippet_live(snippet: Snippet, prefix: str = '', suffix: str = '',
         String to append to every snippet trigger.
     endtab : bool, optional, default: False
         Do we want a tabstop at the end?
-   
+
     Returns
     -------
     snippet : Snippet = Dict[str, str] or Dict[str, List[str]]
@@ -259,7 +257,7 @@ def convert_snippet_live(snippet: Snippet, prefix: str = '', suffix: str = '',
 def convert_vscode(snippets: List[Snippet], prefix: str = '', suffix: str = '',
                    endtab: bool = True) -> SnippetDict:
     """Convert list of snippets from internal to VSCode format.
-    
+
     Parameters
     ----------
     snippets : List[Snippet]
@@ -271,7 +269,7 @@ def convert_vscode(snippets: List[Snippet], prefix: str = '', suffix: str = '',
         String to append to every snippet trigger.
     endtab : bool, optional, default: False
         Do we want a tabstop at the end?
-    
+
     Returns
     -------
     snippets : Dict[str, Snippet]
@@ -288,7 +286,7 @@ def convert_vscode(snippets: List[Snippet], prefix: str = '', suffix: str = '',
 def convert_atom(snippets: List[Snippet], prefix: str = '', suffix: str = '',
                  endtab: bool = True) -> AtomSnippetDict:
     """Convert list of snippets from internal to VSCode format.
-    
+
     Parameters
     ----------
     snippets : List[Snippet]
@@ -300,7 +298,7 @@ def convert_atom(snippets: List[Snippet], prefix: str = '', suffix: str = '',
         String to append to every snippet trigger.
     endtab : bool, optional, default: False
         Do we want a tabstop at the end?
-    
+
     Returns
     -------
     snippets : Dict[str, Snippet]
@@ -318,7 +316,7 @@ def convert_live(snippets: List[Snippet],
                  prefix: str = '', suffix: str = '', endtab: bool = True,
                  ) -> List[Snippet]:
     """Convert list of snippets from internal to VSCode format.
-    
+
     Parameters
     ----------
     snippets : List[Snippet]
@@ -332,11 +330,11 @@ def convert_live(snippets: List[Snippet],
         Do we want a tabstop at the end?
     prefix_m, suffix_m, endtab_m
         Versions of `prefix`, `suffix`, `endtab` for multiline snippets.
-    
+
     Returns
     -------
     live_snippets : List[Snippet]
-        List of snippet objects: dicts with prefix, body, mode, 
+        List of snippet objects: dicts with prefix, body, mode,
         triggerWhenComplete, description, priority.
     """
     live_snippets = []
@@ -351,9 +349,9 @@ def convert_split(snippets: List[Snippet],
                   prefix_m: str = '', suffix_m: str = '', endtab_m: bool = True
                   ) -> (List[Snippet], SnippetDict):
     """Convert list of snippets from internal to live/VSCode format.
-    
+
     single/multi-line snippets -> live/VSCode format.
-    
+
     Parameters
     ----------
     snippets : List[Snippet]
@@ -367,7 +365,7 @@ def convert_split(snippets: List[Snippet],
         Do we want a tabstop at the end?
     prefix_m, suffix_m, endtab_m
         Versions of `prefix`, `suffix`, `endtab` for multiline snippets.
-    
+
     Returns
     -------
     live_snippets : List[Snippet]
@@ -395,7 +393,7 @@ def read_data_json(file_name: str):
     ----------
     file_name : str
         Name of internal `.json` file with snippet info.
-        
+
     Returns
     -------
     snippets : Dict[str, Snippet]
@@ -414,7 +412,7 @@ def make_snippet_json(snippets: Optional[Union[Snippet, SnippetDict]] = None,
                       live_snippets: Optional[List[Snippet]] = None,
                       live_file: str = 'liveSnippets.json'):
     """Write snippets in the chosen format to .json files.
-    
+
     Parameters
     ----------
     out_path : str
@@ -440,10 +438,10 @@ def make_snippet_json(snippets: Optional[Union[Snippet, SnippetDict]] = None,
 
 if __name__ == "__main__":
     snippet_data = read_data_json('data/data.json')
-    snippets = convert_vscode(snippet_data, prefix=';')
-    make_snippet_json(snippets)
-    snippets = convert_atom(snippet_data, prefix=';')
-    make_snippet_json(snippets, 'snippets.json')
+    snips = convert_vscode(snippet_data, prefix=';')
+    make_snippet_json(snips)
+    snips = convert_atom(snippet_data, prefix=';')
+    make_snippet_json(snips, 'snippets.json')
     live_snips = convert_live(snippet_data, suffix='  ')
     make_snippet_json(live_snippets=live_snips)
     # live_snips, snips = convert_split(snippet_data, suffix='  ', prefix_m=';')
