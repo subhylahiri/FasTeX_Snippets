@@ -89,6 +89,7 @@ def escape_body(body: Body) -> Body:
     """
     if isinstance(body, list):
         return [escape_body(txt) for txt in body]
+    body = body.replace(r'\""""', r'\"')
     return body.replace('$', '\\$')
 
 

@@ -121,6 +121,42 @@ def convert_snippet_vsc(snippet: Snippet, prefix: str = '', suffix: str = '',
             'description': snippet['description']}
 
 
+def convert_vscode(snippets: List[Snippet], prefix: str = '', suffix: str = '',
+                   endtab: bool = True) -> SnippetDict:
+    """Convert list of snippets from internal to VSCode format.
+
+    Parameters
+    ----------
+    snippets : List[Snippet]
+        List of snippet objects: dict with prefix, body, mode, description.
+        `Snippet =  = Dict[str, str] or Dict[str, List[str]]`.
+    prefix : str
+        String to prepend to every snippet trigger.
+    suffix : str
+        String to append to every snippet trigger.
+    endtab : bool, optional, default: False
+        Do we want a tabstop at the end?
+
+    Returns
+    -------
+    snippets : Dict[str, Snippet]
+        Dict of snippet objects: dict with prefix, body, description.
+        `Snippet =  = Dict[str, str] or Dict[str, List[str]]`.
+    """
+    vsc_snippets = {}
+    for snip in snippets:
+        new_snip = convert_snippet_vsc(snip, prefix, suffix, endtab)
+        vsc_snippets[snip['description']] = new_snip
+    return vsc_snippets
+
+
+def _help_body_atom(body: str) -> str:
+    """Helper for converting body for an Atom snippet"""
+    body = body.replace('\\', '\\\\\\\\')
+    body = body.replace('"', '\\"')
+    return body
+
+
 def convert_body_atom(body: Body, endtab: bool = True, maxtab: int = 0) -> Body:
     """Convert body for an Atom snippet
 
@@ -142,8 +178,9 @@ def convert_body_atom(body: Body, endtab: bool = True, maxtab: int = 0) -> Body:
     if endtab and maxtab:
         body = body_append(body, f'${maxtab + 1}')
     if isinstance(body, list):
+        body = [_help_body_atom(line) for line in body]
         return '\n'.join(body)
-    return body
+    return _help_body_atom(body)
 
 
 def convert_snippet_atom(snippet: Snippet, prefix: str = '', suffix: str = '',
@@ -172,6 +209,35 @@ def convert_snippet_atom(snippet: Snippet, prefix: str = '', suffix: str = '',
     atom_prefix = prefix + snippet['prefix'] + suffix
     atom_body = convert_body_atom(snippet['body'], endtab, maxtab)
     return {'prefix': atom_prefix, 'body': atom_body}
+
+
+def convert_atom(snippets: List[Snippet], prefix: str = '', suffix: str = '',
+                 endtab: bool = True) -> AtomSnippetDict:
+    """Convert list of snippets from internal to VSCode format.
+
+    Parameters
+    ----------
+    snippets : List[Snippet]
+        List of snippet objects: dict with prefix, body, mode, description.
+        `Snippet =  = Dict[str, str] or Dict[str, List[str]]`.
+    prefix : str
+        String to prepend to every snippet trigger.
+    suffix : str
+        String to append to every snippet trigger.
+    endtab : bool, optional, default: False
+        Do we want a tabstop at the end?
+
+    Returns
+    -------
+    snippets : Dict[str, Snippet]
+        Dict of dict of snippet objects: dict with prefix, body.
+        `Snippet = Dict[str, str] or Dict[str, List[str]]`.
+    """
+    atom_snippets = {}
+    for snip in snippets:
+        new_snip = convert_snippet_atom(snip, prefix, suffix, endtab)
+        atom_snippets[_help_body_atom(snip['description'])] = new_snip
+    return {'.text.tex.latex': atom_snippets}
 
 
 def convert_trigger_live(trigger: str,
@@ -276,64 +342,6 @@ def convert_snippet_live(snippet: Snippet, prefix: str = '', suffix: str = '',
             'priority': len(snippet['prefix'])}
 
 
-def convert_vscode(snippets: List[Snippet], prefix: str = '', suffix: str = '',
-                   endtab: bool = True) -> SnippetDict:
-    """Convert list of snippets from internal to VSCode format.
-
-    Parameters
-    ----------
-    snippets : List[Snippet]
-        List of snippet objects: dict with prefix, body, mode, description.
-        `Snippet =  = Dict[str, str] or Dict[str, List[str]]`.
-    prefix : str
-        String to prepend to every snippet trigger.
-    suffix : str
-        String to append to every snippet trigger.
-    endtab : bool, optional, default: False
-        Do we want a tabstop at the end?
-
-    Returns
-    -------
-    snippets : Dict[str, Snippet]
-        Dict of snippet objects: dict with prefix, body, description.
-        `Snippet =  = Dict[str, str] or Dict[str, List[str]]`.
-    """
-    vsc_snippets = {}
-    for snip in snippets:
-        new_snip = convert_snippet_vsc(snip, prefix, suffix, endtab)
-        vsc_snippets[snip['description']] = new_snip
-    return vsc_snippets
-
-
-def convert_atom(snippets: List[Snippet], prefix: str = '', suffix: str = '',
-                 endtab: bool = True) -> AtomSnippetDict:
-    """Convert list of snippets from internal to VSCode format.
-
-    Parameters
-    ----------
-    snippets : List[Snippet]
-        List of snippet objects: dict with prefix, body, mode, description.
-        `Snippet =  = Dict[str, str] or Dict[str, List[str]]`.
-    prefix : str
-        String to prepend to every snippet trigger.
-    suffix : str
-        String to append to every snippet trigger.
-    endtab : bool, optional, default: False
-        Do we want a tabstop at the end?
-
-    Returns
-    -------
-    snippets : Dict[str, Snippet]
-        Dict of dict of snippet objects: dict with prefix, body.
-        `Snippet = Dict[str, str] or Dict[str, List[str]]`.
-    """
-    atom_snippets = {}
-    for snip in snippets:
-        new_snip = convert_snippet_atom(snip, prefix, suffix, endtab)
-        atom_snippets[snip['description']] = new_snip
-    return {'.text.tex.latex': atom_snippets}
-
-
 def convert_live(snippets: List[Snippet],
                  prefix: str = '', suffix: str = '', endtab: bool = True,
                  ) -> List[Snippet]:
@@ -432,7 +440,7 @@ def read_data_json(file_name: str):
 def make_snippet_json(snippets: Union[Snippet, SnippetDict, None] = None,
                       snip_file: str = 'latex.json',
                       live_snippets: Optional[List[Snippet]] = None,
-                      live_file: str = 'liveSnippets.json'):
+                      live_file: str = 'latexUtilsLiveSnippets.json'):
     """Write snippets in the chosen format to .json files.
 
     Parameters
@@ -457,7 +465,7 @@ def make_snippet_json(snippets: Union[Snippet, SnippetDict, None] = None,
 
 
 def make_snippet_cson(snippets: Optional[SnippetDict] = None,
-                      snip_file: str = 'language-latex.cson'):
+                      snip_file: str = 'snippets.cson'):
     """Write snippets in the chosen format to .json files.
 
     Parameters
@@ -470,14 +478,14 @@ def make_snippet_cson(snippets: Optional[SnippetDict] = None,
     """
     if snippets is not None:
         with open(snip_file, 'w') as file:
-            cson.dump(snippets, file, indent=4)
+            cson.dump(snippets, file, indent=4, level=-1)
 
 
 def _main():
     snippet_data = read_data_json('data/data.json')
     snips = convert_vscode(snippet_data, prefix=';')
     make_snippet_json(snips)
-    snips = convert_atom(snippet_data, prefix=';')
+    snips = convert_atom(snippet_data, prefix='')
     make_snippet_cson(snips)
     live_snips = convert_live(snippet_data, suffix='  ')
     make_snippet_json(live_snippets=live_snips)

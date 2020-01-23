@@ -4178,20 +4178,20 @@
         "body": "\\upharpoonright",
         "description": "\\upharpoonright"
     },
-    "\\\"\"\"\"{U}": {
+    "\\\"{U}": {
         "prefix": ";ucu",
-        "body": "\\\"\"\"\"{U}",
-        "description": "\\\"\"\"\"{U}"
+        "body": "\\\"{U}",
+        "description": "\\\"{U}"
     },
-    "\\\"\"\"\"{O}": {
+    "\\\"{O}": {
         "prefix": ";uco",
-        "body": "\\\"\"\"\"{O}",
-        "description": "\\\"\"\"\"{O}"
+        "body": "\\\"{O}",
+        "description": "\\\"{O}"
     },
-    "\\\"\"\"\"{A}": {
+    "\\\"{A}": {
         "prefix": ";uca",
-        "body": "\\\"\"\"\"{A}",
-        "description": "\\\"\"\"\"{A}"
+        "body": "\\\"{A}",
+        "description": "\\\"{A}"
     },
     " \\textstyle": {
         "prefix": ";tsz",
@@ -6886,20 +6886,20 @@
         "body": "\\alpha",
         "description": "\\alpha"
     },
-    "\\\"\"\"\"{u}": {
+    "\\\"{u}": {
         "prefix": ";uu",
-        "body": "\\\"\"\"\"{u}",
-        "description": "\\\"\"\"\"{u}"
+        "body": "\\\"{u}",
+        "description": "\\\"{u}"
     },
-    "\\\"\"\"\"{o}": {
+    "\\\"{o}": {
         "prefix": ";uo",
-        "body": "\\\"\"\"\"{o}",
-        "description": "\\\"\"\"\"{o}"
+        "body": "\\\"{o}",
+        "description": "\\\"{o}"
     },
-    "\\\"\"\"\"{a}": {
+    "\\\"{a}": {
         "prefix": ";ua",
-        "body": "\\\"\"\"\"{a}",
-        "description": "\\\"\"\"\"{a}"
+        "body": "\\\"{a}",
+        "description": "\\\"{a}"
     },
     "\\tan": {
         "prefix": ";tn",

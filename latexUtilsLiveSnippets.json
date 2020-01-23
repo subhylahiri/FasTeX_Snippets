@@ -6265,26 +6265,26 @@
     },
     {
         "prefix": "(^|[^\\\\])ucu  ",
-        "body": "$1\\\"\"\"\"{U}",
+        "body": "$1\\\"{U}",
         "mode": "any",
         "triggerWhenComplete": true,
-        "description": "\\\"\"\"\"{U}",
+        "description": "\\\"{U}",
         "priority": 3
     },
     {
         "prefix": "(^|[^\\\\])uco  ",
-        "body": "$1\\\"\"\"\"{O}",
+        "body": "$1\\\"{O}",
         "mode": "any",
         "triggerWhenComplete": true,
-        "description": "\\\"\"\"\"{O}",
+        "description": "\\\"{O}",
         "priority": 3
     },
     {
         "prefix": "(^|[^\\\\])uca  ",
-        "body": "$1\\\"\"\"\"{A}",
+        "body": "$1\\\"{A}",
         "mode": "any",
         "triggerWhenComplete": true,
-        "description": "\\\"\"\"\"{A}",
+        "description": "\\\"{A}",
         "priority": 3
     },
     {
@@ -6970,7 +6970,7 @@
     {
         "prefix": "(^|[^\\\\])otu  ",
         "body": "$1\\tilde{$$\u0001}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\tilde{}",
         "priority": 3
@@ -10849,26 +10849,26 @@
     },
     {
         "prefix": "(^|[^\\\\])uu  ",
-        "body": "$1\\\"\"\"\"{u}",
+        "body": "$1\\\"{u}",
         "mode": "any",
         "triggerWhenComplete": true,
-        "description": "\\\"\"\"\"{u}",
+        "description": "\\\"{u}",
         "priority": 2
     },
     {
         "prefix": "(^|[^\\\\])uo  ",
-        "body": "$1\\\"\"\"\"{o}",
+        "body": "$1\\\"{o}",
         "mode": "any",
         "triggerWhenComplete": true,
-        "description": "\\\"\"\"\"{o}",
+        "description": "\\\"{o}",
         "priority": 2
     },
     {
         "prefix": "(^|[^\\\\])ua  ",
-        "body": "$1\\\"\"\"\"{a}",
+        "body": "$1\\\"{a}",
         "mode": "any",
         "triggerWhenComplete": true,
-        "description": "\\\"\"\"\"{a}",
+        "description": "\\\"{a}",
         "priority": 2
     },
     {

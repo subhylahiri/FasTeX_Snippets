@@ -5639,21 +5639,21 @@
     },
     {
         "prefix": "ucu",
-        "body": "\\\"\"\"\"{U}",
+        "body": "\\\"{U}",
         "mode": "any",
-        "description": "\\\"\"\"\"{U}"
+        "description": "\\\"{U}"
     },
     {
         "prefix": "uco",
-        "body": "\\\"\"\"\"{O}",
+        "body": "\\\"{O}",
         "mode": "any",
-        "description": "\\\"\"\"\"{O}"
+        "description": "\\\"{O}"
     },
     {
         "prefix": "uca",
-        "body": "\\\"\"\"\"{A}",
+        "body": "\\\"{A}",
         "mode": "any",
-        "description": "\\\"\"\"\"{A}"
+        "description": "\\\"{A}"
     },
     {
         "prefix": "txt",
@@ -6168,7 +6168,7 @@
     {
         "prefix": "otu",
         "body": "\\tilde{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\tilde{}"
     },
     {
@@ -9101,21 +9101,21 @@
     },
     {
         "prefix": "uu",
-        "body": "\\\"\"\"\"{u}",
+        "body": "\\\"{u}",
         "mode": "any",
-        "description": "\\\"\"\"\"{u}"
+        "description": "\\\"{u}"
     },
     {
         "prefix": "uo",
-        "body": "\\\"\"\"\"{o}",
+        "body": "\\\"{o}",
         "mode": "any",
-        "description": "\\\"\"\"\"{o}"
+        "description": "\\\"{o}"
     },
     {
         "prefix": "ua",
-        "body": "\\\"\"\"\"{a}",
+        "body": "\\\"{a}",
         "mode": "any",
-        "description": "\\\"\"\"\"{a}"
+        "description": "\\\"{a}"
     },
     {
         "prefix": "tn",
