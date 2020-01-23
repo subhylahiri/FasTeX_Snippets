@@ -5,160 +5,151 @@ from typing import Any
 from numbers import Number
 
 
-def write_strings(file: TextIOBase, text: str, level: int = 0, indent: int = 4):
-    """Write a multi-line string to a CSON file.
+class CSONWriter():
+    """Class for writing to a CSON file
 
     Parameters
     ----------
     file : io.TextIO
         Text file object for snippet `.cson` file.
-    text : str
-        Multi-line string to write to `file`.
     level : int, optional, default = 0
         Indent level of current entry.
     indent : int, optional, default = 4
         Number of spaces per indent level.
     """
-    lines = text.splitlines()
-    file.write('"""\n')
-    for line in lines:
-        file.write(' ' * indent * level)
-        file.write(line + '\n')
-    file.write(indent * level)
-    file.write('"""\n')
+    file: TextIOBase
+    indent: int = 4
+    level: int = 0
 
+    def __init__(self, file: TextIOBase, indent: int = 4, level: int = 0):
+        self.file = file
+        self.indent = indent
+        self.level = level
 
-def write_str(file: TextIOBase, text: str, level: int = 0, indent: int = 4):
-    """Write a string to a CSON file.
+    def _indent(self):
+        """Write an indent to a CSON file.
+        """
+        self.file.write(' ' * self.indent * self.level)
 
-    Parameters
-    ----------
-    file : io.TextIO
-        Text file object for snippet `.cson` file.
-    text : str
-        String to write to `file`.
-    level : int, optional, default = 0
-        Indent level of current entry.
-    indent : int, optional, default = 4
-        Number of spaces per indent level.
-   """
-    if '\n' in text:
-        write_strings(file, text, level, indent)
-    else:
-        file.write('"' + text + '"\n')
+    def _write_strings(self, text: str):
+        """Write a multi-line string to a CSON file.
 
+        Parameters
+        ----------
+        text : str
+            Multi-line string to write to `file`.
+        """
+        lines = text.splitlines()
+        self.file.write('"""\n')
+        for line in lines:
+            self._indent()
+            self.file.write(line + '\n')
+        self._indent()
+        self.file.write('"""\n')
 
-def write_dict(file: TextIOBase, thing: dict, level: int = 0, indent: int = 4):
-    """Write a dict to a CSON file.
+    def write_str(self, text: str):
+        """Write a string to a CSON file.
 
-    Parameters
-    ----------
-    file : io.TextIO
-        Text file object for snippet `.cson` file.
-    thing : dict
-        Dictionary to write to `file`.
-    level : int, optional, default = 0
-        Indent level of current entry.
-    indent : int, optional, default = 4
-        Number of spaces per indent level.
+        Parameters
+        ----------
+        text : str
+            String to write to `file`.
     """
-    file.write('\n')
-    for key, value in thing.items():
-        file.write(' ' * indent * (level + 1))
-        file.write('"' + key + '": ')
-        write_any(file, value, level + 1)
-    # file.write(' ' * indent * level + '}\n')
+        if '\n' in text:
+            self._write_strings(text)
+        else:
+            self.file.write('"' + text + '"\n')
 
+    def write_dict(self, thing: dict):
+        """Write a dict to a CSON file.
 
-def write_num(file: TextIOBase, value: Number):
-    """Write a number to a CSON file.
+        Parameters
+        ----------
+        thing : dict
+            Dictionary to write to `file`.
+        """
+        self.file.write('\n')
+        self.level += 1
+        for key, value in thing.items():
+            self._indent()
+            self.file.write('"' + key + '": ')
+            self.write_any(value)
+        self.level -= 1
+        # _indent(file, indent, level + '}\n')
 
-    Parameters
-    ----------
-    file : io.TextIO
-        Text file object for snippet `.cson` file.
-    value : Number
-        Number to write to `file`.
-    """
-    file.write(f'{value}\n')
+    def write_num(self, value: Number):
+        """Write a number to a CSON file.
 
+        Parameters
+        ----------
+        value : Number
+            Number to write to `file`.
+        """
+        self.file.write(f'{value}\n')
 
-def write_bool(file: TextIOBase, value: bool):
-    """Write a boolean to a CSON file.
+    def write_bool(self, value: bool):
+        """Write a boolean to a CSON file.
 
-    Parameters
-    ----------
-    file : io.TextIO
-        Text file object for snippet `.cson` file.
-    value : bool
-        Boolean to write to `file`.
-    """
-    if value:
-        file.write('true\n')
-    else:
-        file.write('false\n')
+        Parameters
+        ----------
+        value : bool
+            Boolean to write to `file`.
+        """
+        if value:
+            self.file.write('true\n')
+        else:
+            self.file.write('false\n')
 
+    def write_null(self):
+        """Write a null to a CSON file.
+        """
+        self.file.write('null\n')
 
-def write_null(file: TextIOBase):
-    """Write a null to a CSON file.
+    def write_list(self, array: list):
+        """Write a list to a CSON file.
 
-    Parameters
-    ----------
-    file : io.TextIO
-        Text file object for snippet `.cson` file.
-    """
-    file.write('null\n')
+        Parameters
+        ----------
+        array : list
+            List to write to `file`.
+        """
+        self.file.write('[\n')
+        self.level += 1
+        for element in array:
+            self._indent()
+            self.write_any(element)
+        self.level -= 1
+        self._indent()
+        self.file.write(']\n')
 
+    def write_any(self, data: Any):
+        """Write piece of data to a CSON file.
 
-def write_list(file: TextIOBase, array: list, level: int = 0, indent: int = 4):
-    """Write a list to a CSON file.
-
-    Parameters
-    ----------
-    file : io.TextIO
-        Text file object for snippet `.cson` file.
-    array : list
-        List to write to `file`.
-    level : int, optional, default = 0
-        Indent level of current entry.
-    indent : int, optional, default = 4
-        Number of spaces per indent level.
-    """
-    file.write('[\n')
-    for element in array:
-        file.write(' ' * indent * (level + 1))
-        write_any(file, element, level + 1)
-    file.write(' ' * indent * level + ']\n')
-
-
-def write_any(file: TextIOBase, data: Any, level: int = 0, indent: int = 4):
-    """Write piece of data to a CSON file.
-
-    Parameters
-    ----------
-    file : io.TextIO
-        Text file object for snippet `.cson` file.
-    data : Any
-        Thing to write to `file`.
-    level : int, optional, default = 0
-        Indent level of current entry.
-    indent : int, optional, default = 4
-        Number of spaces per indent level.
-    """
-    if isinstance(data, str):
-        write_str(file, data, level, indent)
-    elif isinstance(data, dict):
-        write_dict(file, data, level, indent)
-    elif isinstance(data, list):
-        write_list(file, data, level, indent)
-    elif isinstance(data, Number):
-        write_num(file, data)
-    elif isinstance(data, bool):
-        write_bool(file, data)
-    elif isinstance(data, None):
-        write_null(file)
-    else:
-        raise ValueError(f'Unknown type: {type(data)}.')
+        Parameters
+        ----------
+        file : io.TextIO
+            Text file object for snippet `.cson` file.
+        data : Any
+            Thing to write to `file`.
+        level : int, optional, default = 0
+            Indent level of current entry.
+        indent : int, optional, default = 4
+            Number of spaces per indent level.
+        """
+        if isinstance(data, str):
+            self.write_str(data)
+        elif isinstance(data, dict):
+            self.write_dict(data)
+        elif isinstance(data, list):
+            self.write_list(data)
+        elif isinstance(data, Number):
+            self.write_num(data)
+        elif isinstance(data, bool):
+            self.write_bool(data)
+        elif isinstance(data, None):
+            self.write_null()
+        else:
+            raise TypeError(f'Unknown type: {type(data)}.')
 
 
 def dump(obj: Any, file: TextIOBase, indent=4):
@@ -173,4 +164,5 @@ def dump(obj: Any, file: TextIOBase, indent=4):
     indent : int, optional, default = 4
         Number of spaces per indent level.
     """
-    write_any(file, obj, 0, indent)
+    cson_file = CSONWriter(file, indent)
+    cson_file.write_any(obj)
