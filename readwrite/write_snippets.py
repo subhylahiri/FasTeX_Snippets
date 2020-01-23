@@ -138,7 +138,7 @@ def convert_body_atom(body: Body, endtab: bool = True, maxtab: int = 0) -> Body:
     if endtab and maxtab:
         body = body_append(body, f'${maxtab + 1}')
     if isinstance(body, list):
-        return r'\n'.join(body)
+        return '\n'.join(body)
     return body
 
 
