@@ -25,7 +25,7 @@
     },
     {
         "prefix": "(^|[^\\\\])tepaper.amsart  ",
-        "body": "$1\\n%&AMS article\\n\\documentclass{amsart}\\n\\usepackage{graphicx}\\n\\newcommand{\\bfi}{\\bfseries\\itshape}\\n\\theoremstyle{plain} %--default\\n\\newtheorem{theorem}             {Theorem}  [section]\\n\\newtheorem{lemma}      [theorem]{Lemma}\\n\\newtheorem{corollary}  [theorem]{Corollary}\\n\\newtheorem{proposition}[theorem]{Proposition}\\n\\newtheorem{algorithm}  [theorem]{Algorithm}\\n\\newtheorem{criterion}  [theorem]{Criterion}\\n\\newtheorem{conjecture} [theorem]{Conjecture}\\n\\newtheorem{question}   [theorem]{Question}\\n\\theoremstyle{definition}\\n\\newtheorem{definition} [theorem]{Definition}\\n\\newtheorem{condition}  [theorem]{Condition}\\n\\newtheorem{example}    [theorem]{Example}\\n\\newtheorem{problem}    [theorem]{Problem}\\n\\newtheorem{solution}   [theorem]{Solution}\\n\\theoremstyle{remark}\\n\\newtheorem{remark}              {Remark}\\n\\newtheorem{note}                {Note}\\n\\newtheorem{claim}               {Claim}\\n\\newtheorem{summary}             {Summary}\\n\\newtheorem{case}                {Case}\\n\\newtheorem{acknowledgment}      {Acknowledgments}\\n\\newtheorem{conclusion}          {Conclusion}\\n\\newtheorem{notation}            {Notation}\\n\t\t\\numberwithin{equation}{section}\\n%----------------------------------------------------\\n\\begin{document}\\n\\title[put short title here]%\\n\t  {Put the real title here\\\\\\n\t\tand rest of title here}\\n\\author[Author One and Author Two]{%\\n\t\tAuthor One\\\\\\n\t\tAuthor Two\\\\\\n}\\n\t\t\\address{Department of Mathematics\\\\\\n\t\t\t\t Northeastern University\\\\\\n\t\t\t\t Boston, Massachusetts 02115}%\\n\t\t\\address{Mathematical Research Section\\\\\\n\t\t\t\t School of Mathematical Sciences\\\\\\n\t\t\t\t Australian National University\\\\\\n\t\t\t\t Canberra ACT 2601, Australia}\\n\\subjclass{Primary 54C40, 14E20; Secondary 46E25, 20C20}\\n\\date     {July 2, 1991}\\n%         \\thanks will become a 1st page footnote.\\n\\thanks{The first author was supported in part by NSF\\n\t\tGrant \\#000000.}\\n%\\dedicatory{}\\n\\maketitle\\n\\begin{abstract}\\n\t\tThis is the abstract.\\n\\end{abstract}\\n\\tableofcontents\\n\\section{Other headings}\\n\\section*{This is an unnumbered first-level section head}\\n\\subsection{This is a numbered second-level section head}\\n\\subsection*{This is an unnumbered second-level section head}\\n\\subsubsection{This is a numbered third-level section head}\\n\\subsubsection*{This is an unnumbered third-level section head}\\n\\begin{theorem}\\n\t\tDefinition environemnt\\n\\end{theorem}\\n\\begin{definition}\\n\t\tDefinition environemnt\\n\\end{definition}\\n\\begin{remark}\\n\t\tRemark environemnt\\n\\end{remark}\\n%-----------------\\n\\bibliographystyle{}\\n\\begin{thebibliography}{}\\n\\bibitem[{Arnol\\$'\\$d et al. [1982]}] {arnold:sing}\\n\t\t Arnol\\$'\\$d, V. L., Varchenko, A. N.,\\n\t\t  and Gusein-Zade, S. M. [1982]\\n\t\t \\emph{Singularities of differentiable maps.} I,\\n\t\t  ``Nauka'', Moscow (Russian);\\n\t\t English transl. Birkh\\\"auser, 1985.\\n\\bibitem[{Arnol\\$'\\$d et al. [1984]}] {arnold:sing2}\\n\\bysame [1984]\\n\t\t\\emph{Singularities of differentiable maps.}~II,\\n\t\t  ``Nauka'', Moscow;\\n\t\t English transl., Birkh\\\"auser, 1988.\\n\\end{thebibliography}\\n%-----------------\\n\\end{document}",
+        "body": "$1\\n%&AMS article\\n\\documentclass{amsart}\\n\\usepackage{graphicx}\\n\\newcommand{\\bfi}{\\bfseries\\itshape}\\n\\theoremstyle{plain} %--default\\n\\newtheorem{theorem}             {Theorem}  [section]\\n\\newtheorem{lemma}      [theorem]{Lemma}\\n\\newtheorem{corollary}  [theorem]{Corollary}\\n\\newtheorem{proposition}[theorem]{Proposition}\\n\\newtheorem{algorithm}  [theorem]{Algorithm}\\n\\newtheorem{criterion}  [theorem]{Criterion}\\n\\newtheorem{conjecture} [theorem]{Conjecture}\\n\\newtheorem{question}   [theorem]{Question}\\n\\theoremstyle{definition}\\n\\newtheorem{definition} [theorem]{Definition}\\n\\newtheorem{condition}  [theorem]{Condition}\\n\\newtheorem{example}    [theorem]{Example}\\n\\newtheorem{problem}    [theorem]{Problem}\\n\\newtheorem{solution}   [theorem]{Solution}\\n\\theoremstyle{remark}\\n\\newtheorem{remark}              {Remark}\\n\\newtheorem{note}                {Note}\\n\\newtheorem{claim}               {Claim}\\n\\newtheorem{summary}             {Summary}\\n\\newtheorem{case}                {Case}\\n\\newtheorem{acknowledgment}      {Acknowledgments}\\n\\newtheorem{conclusion}          {Conclusion}\\n\\newtheorem{notation}            {Notation}\\n\t\t\\numberwithin{equation}{section}\\n%----------------------------------------------------\\n\\begin{document}\\n\\title[put short title here]%\\n\t  {Put the real title here\\\\\\n\t\tand rest of title here}\\n\\author[Author One and Author Two]{%\\n\t\tAuthor One\\\\\\n\t\tAuthor Two\\\\\\n}\\n\t\t\\address{Department of Mathematics\\\\\\n\t\t\t\t Northeastern University\\\\\\n\t\t\t\t Boston, Massachusetts 02115}%\\n\t\t\\address{Mathematical Research Section\\\\\\n\t\t\t\t School of Mathematical Sciences\\\\\\n\t\t\t\t Australian National University\\\\\\n\t\t\t\t Canberra ACT 2601, Australia}\\n\\subjclass{Primary 54C40, 14E20; Secondary 46E25, 20C20}\\n\\date     {July 2, 1991}\\n%         \\thanks will become a 1st page footnote.\\n\\thanks{The first author was supported in part by NSF\\n\t\tGrant \\#000000.}\\n%\\dedicatory{}\\n\\maketitle\\n\\begin{abstract}\\n\t\tThis is the abstract.\\n\\end{abstract}\\n\\tableofcontents\\n\\section{Other headings}\\n\\section*{This is an unnumbered first-level section head}\\n\\subsection{This is a numbered second-level section head}\\n\\subsection*{This is an unnumbered second-level section head}\\n\\subsubsection{This is a numbered third-level section head}\\n\\subsubsection*{This is an unnumbered third-level section head}\\n\\begin{theorem}\\n\t\tDefinition environemnt\\n\\end{theorem}\\n\\begin{definition}\\n\t\tDefinition environemnt\\n\\end{definition}\\n\\begin{remark}\\n\t\tRemark environemnt\\n\\end{remark}\\n%-----------------\\n\\bibliographystyle{}\\n\\begin{thebibliography}{}\\n\\bibitem[{Arnol$'$d et al. [1982]}] {arnold:sing}\\n\t\t Arnol$'$d, V. L., Varchenko, A. N.,\\n\t\t  and Gusein-Zade, S. M. [1982]\\n\t\t \\emph{Singularities of differentiable maps.} I,\\n\t\t  ``Nauka'', Moscow (Russian);\\n\t\t English transl. Birkh\\\"auser, 1985.\\n\\bibitem[{Arnol$'$d et al. [1984]}] {arnold:sing2}\\n\\bysame [1984]\\n\t\t\\emph{Singularities of differentiable maps.}~II,\\n\t\t  ``Nauka'', Moscow;\\n\t\t English transl., Birkh\\\"auser, 1988.\\n\\end{thebibliography}\\n%-----------------\\n\\end{document}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "AMS article",
@@ -65,7 +65,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dovstcpq  ",
-        "body": "$1\\$\\overset{\\longrightarrow}{\\text{PQ}}\\$",
+        "body": "$1$\\overset{\\longrightarrow}{\\text{PQ}}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\overset{\\longrightarrow}{\\text{PQ}}$",
@@ -73,7 +73,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dovstcpp  ",
-        "body": "$1\\$\\overset{\\longrightarrow}{\\text{PP}}\\$",
+        "body": "$1$\\overset{\\longrightarrow}{\\text{PP}}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\overset{\\longrightarrow}{\\text{PP}}$",
@@ -121,7 +121,7 @@
     },
     {
         "prefix": "(^|[^\\\\])txtstyu  ",
-        "body": "$1\\textstyle{$$\u0001}",
+        "body": "$1\\textstyle{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\textstyle{}",
@@ -153,7 +153,7 @@
     },
     {
         "prefix": "(^|[^\\\\])opdcso3  ",
-        "body": "$1\\$\\operatorname{SO(3)}\\$",
+        "body": "$1$\\operatorname{SO(3)}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\operatorname{SO(3)}$",
@@ -209,7 +209,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dblackl  ",
-        "body": "$1\\quad \\$\\blacklozenge\\$",
+        "body": "$1\\quad $\\blacklozenge$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\quad $\\blacklozenge$",
@@ -225,7 +225,7 @@
     },
     {
         "prefix": "(^|[^\\\\])txtupu  ",
-        "body": "$1\\textup{$$\u0001}",
+        "body": "$1\\textup{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\textup{}",
@@ -233,7 +233,7 @@
     },
     {
         "prefix": "(^|[^\\\\])txtttu  ",
-        "body": "$1\\texttt{$$\u0001}",
+        "body": "$1\\texttt{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\texttt{}",
@@ -241,7 +241,7 @@
     },
     {
         "prefix": "(^|[^\\\\])txtsty  ",
-        "body": "$1\\textstyle{$$\u0001}",
+        "body": "$1\\textstyle{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\textstyle{}",
@@ -249,7 +249,7 @@
     },
     {
         "prefix": "(^|[^\\\\])txtslu  ",
-        "body": "$1\\textsl{$$\u0001}",
+        "body": "$1\\textsl{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\textsl{}",
@@ -257,7 +257,7 @@
     },
     {
         "prefix": "(^|[^\\\\])txtsfu  ",
-        "body": "$1\\textsf{$$\u0001}",
+        "body": "$1\\textsf{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\textsf{}",
@@ -265,7 +265,7 @@
     },
     {
         "prefix": "(^|[^\\\\])txtscu  ",
-        "body": "$1\\textsc{$$\u0001}",
+        "body": "$1\\textsc{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\textsc{}",
@@ -273,7 +273,7 @@
     },
     {
         "prefix": "(^|[^\\\\])txtrmu  ",
-        "body": "$1\\textrm{$$\u0001}",
+        "body": "$1\\textrm{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\textrm{}",
@@ -281,7 +281,7 @@
     },
     {
         "prefix": "(^|[^\\\\])txtitu  ",
-        "body": "$1\\textit{$$\u0001}",
+        "body": "$1\\textit{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\textit{}",
@@ -313,7 +313,7 @@
     },
     {
         "prefix": "(^|[^\\\\])tabex6  ",
-        "body": "$1\\n\\begin{center}\\n\\begin{tabular}{||l|c|c||}\\n    \\hline\\n Case & Conditions & Connection                               \\\\ \\hline\\n Unconstrained\\n      & \\${\\cal D}_q = T_q Q\\$\\n      & \\${\\cal A}^{\\rm sym}(\\dot q)={\\Bbb I} ^{-1} J(\\dot{q})\\$ \\\\ [1ex]\\n Purely Kinematic\\n      & \\${\\cal D}_q \\cap T_q({\\rm Orb}(q)) = \\{0\\}\\$\\n      & \\${\\cal A}^{\\rm kin} (\\dot{q}) = 0\\$                     \\\\ [1ex]\\n Horizontal symmetries\\n      & \\${\\cal D}_q \\cap T_q({\\rm Orb}(q))_G\\n                         = T_q({\\rm Orb}(q))_H\\$\\n      & \\${\\cal A}^{\\rm sym} (\\dot{q})\\n                     + {\\cal A}^{\\rm kin} (\\dot{q})\\n                     ={\\Bbb I} ^{-1} J_H (\\dot{q})\\$            \\\\ [1ex]\\n General principal\\n      & \\${\\cal D}_q + T_q({\\rm Orb}(q)) = T_q Q\\$\\n      & \\${\\cal A}^{\\rm sym}(\\dot{q}) + {\\cal A}^{\\rm kin}(\\dot{q}) =\\n        {\\Bbb I} ^{-1} J ^{\\rm nhc}(\\dot{q})\\$ \\\\\\n bundle case\\n      &\\n      &                                                       \\\\ \\hline\\n\\end{tabular}\\n\\end{center}",
+        "body": "$1\\n\\begin{center}\\n\\begin{tabular}{||l|c|c||}\\n    \\hline\\n Case & Conditions & Connection                               \\\\ \\hline\\n Unconstrained\\n      & ${\\cal D}_q = T_q Q$\\n      & ${\\cal A}^{\\rm sym}(\\dot q)={\\Bbb I} ^{-1} J(\\dot{q})$ \\\\ [1ex]\\n Purely Kinematic\\n      & ${\\cal D}_q \\cap T_q({\\rm Orb}(q)) = \\{0\\}$\\n      & ${\\cal A}^{\\rm kin} (\\dot{q}) = 0$                     \\\\ [1ex]\\n Horizontal symmetries\\n      & ${\\cal D}_q \\cap T_q({\\rm Orb}(q))_G\\n                         = T_q({\\rm Orb}(q))_H$\\n      & ${\\cal A}^{\\rm sym} (\\dot{q})\\n                     + {\\cal A}^{\\rm kin} (\\dot{q})\\n                     ={\\Bbb I} ^{-1} J_H (\\dot{q})$            \\\\ [1ex]\\n General principal\\n      & ${\\cal D}_q + T_q({\\rm Orb}(q)) = T_q Q$\\n      & ${\\cal A}^{\\rm sym}(\\dot{q}) + {\\cal A}^{\\rm kin}(\\dot{q}) =\\n        {\\Bbb I} ^{-1} J ^{\\rm nhc}(\\dot{q})$ \\\\\\n bundle case\\n      &\\n      &                                                       \\\\ \\hline\\n\\end{tabular}\\n\\end{center}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{center}",
@@ -321,7 +321,7 @@
     },
     {
         "prefix": "(^|[^\\\\])tabex5  ",
-        "body": "$1\\n\\begin{center}\\n\\fbox{\\fbox{\\parbox{4.0in}{\\n\\begin{tabular}{ll}\\n\\quad {\\bf Classical Mechanics}\\n      & \\quad {\\bf Quantum Mechanics}                  \\\\ \\hline \\hline\\nimmersed Lagrangian manifold\\n      & element of \\$L^2 (Q)\\$ or \\${\\cal D}^\\prime (Q)\\$  \\\\\\n\\$\\Lambda \\rightarrow (T ^\\ast Q,\\Omega)\\$\\n      &                        \\\\ \\hline\\n\\$\\Lambda = \\$ graph of \\${\\bf d} S\\$\\n      & \\$\\psi = \\exp (iS/\\hbar)\\$                       \\\\ \\hline\\n\\$T ^{\\ast} Q\\$\\n      & Hilbertspace                                   \\\\ \\hline\\nLagrangian manifold\\n      & (possibly unbounded)                           \\\\\\n\\$\\quad \\Omega \\subset (T^\\ast Q, \\Omega _Q)\\n\\times (T^\\ast R,-\\Omega_R)\\$\\n      & \\$\\quad L^2 (R)\\$ to \\$L^2 (Q)\\$                   \\\\ \\hline\\n        composition of canonical relations\\n     & composition of operators                       \\\\\\n\\end{tabular}\\n}}} \\end{center}",
+        "body": "$1\\n\\begin{center}\\n\\fbox{\\fbox{\\parbox{4.0in}{\\n\\begin{tabular}{ll}\\n\\quad {\\bf Classical Mechanics}\\n      & \\quad {\\bf Quantum Mechanics}                  \\\\ \\hline \\hline\\nimmersed Lagrangian manifold\\n      & element of $L^2 (Q)$ or ${\\cal D}^\\prime (Q)$  \\\\\\n$\\Lambda \\rightarrow (T ^\\ast Q,\\Omega)$\\n      &                        \\\\ \\hline\\n$\\Lambda = $ graph of ${\\bf d} S$\\n      & $\\psi = \\exp (iS/\\hbar)$                       \\\\ \\hline\\n$T ^{\\ast} Q$\\n      & Hilbertspace                                   \\\\ \\hline\\nLagrangian manifold\\n      & (possibly unbounded)                           \\\\\\n$\\quad \\Omega \\subset (T^\\ast Q, \\Omega _Q)\\n\\times (T^\\ast R,-\\Omega_R)$\\n      & $\\quad L^2 (R)$ to $L^2 (Q)$                   \\\\ \\hline\\n        composition of canonical relations\\n     & composition of operators                       \\\\\\n\\end{tabular}\\n}}} \\end{center}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{center}",
@@ -329,7 +329,7 @@
     },
     {
         "prefix": "(^|[^\\\\])tabex4  ",
-        "body": "$1\\n\\begin{center}\\n\\begin{tabular}{||l|l||}\\n\\hline \\hline\\n\\quad {\\bf Classical Mechanics}\\n      & \\quad {\\bf Quantum Mechanics}                 \\\\ \\hline \\hline\\nimmersed Lagrangian manifold\\n      & element of \\$L^2 (Q)\\$\\n        or \\${\\cal D}^\\prime (Q)\\$                      \\\\\\n\\$\\Lambda \\rightarrow (T ^\\ast Q,\\Omega)\\$\\n      &                                               \\\\ \\hline\\n\\$\\Lambda = \\$ graph of \\${\\bf d} S\\$\\n      & \\$\\psi = \\exp (iS/\\hbar)\\$                      \\\\ \\hline\\n\\$T ^{\\ast} Q\\$\\n      & Hilbertspace                                  \\\\ \\hline\\nLagrangian manifold\\n      & (possibly unbounded)                          \\\\\\n\\$\\quad \\Omega \\subset(T^\\ast Q, \\Omega _Q)\\n\\times (T^\\ast R,-\\Omega_R)\\$\\n      & \\$\\quad L^2 (R)\\$ to \\$L^2 (Q)\\$                  \\\\ \\hline\\ncomposition of canonical relations\\n      & composition of operators                      \\\\ \\hline \\hline\\n\\end{tabular}\\n\\end{center}",
+        "body": "$1\\n\\begin{center}\\n\\begin{tabular}{||l|l||}\\n\\hline \\hline\\n\\quad {\\bf Classical Mechanics}\\n      & \\quad {\\bf Quantum Mechanics}                 \\\\ \\hline \\hline\\nimmersed Lagrangian manifold\\n      & element of $L^2 (Q)$\\n        or ${\\cal D}^\\prime (Q)$                      \\\\\\n$\\Lambda \\rightarrow (T ^\\ast Q,\\Omega)$\\n      &                                               \\\\ \\hline\\n$\\Lambda = $ graph of ${\\bf d} S$\\n      & $\\psi = \\exp (iS/\\hbar)$                      \\\\ \\hline\\n$T ^{\\ast} Q$\\n      & Hilbertspace                                  \\\\ \\hline\\nLagrangian manifold\\n      & (possibly unbounded)                          \\\\\\n$\\quad \\Omega \\subset(T^\\ast Q, \\Omega _Q)\\n\\times (T^\\ast R,-\\Omega_R)$\\n      & $\\quad L^2 (R)$ to $L^2 (Q)$                  \\\\ \\hline\\ncomposition of canonical relations\\n      & composition of operators                      \\\\ \\hline \\hline\\n\\end{tabular}\\n\\end{center}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{center}",
@@ -337,7 +337,7 @@
     },
     {
         "prefix": "(^|[^\\\\])tabex3  ",
-        "body": "$1\\n\\begin{center}\\n\\begin{tabular}{lll}\\n{\\it Classical Tensor Analysis\\/}\\n     &\\n     & {\\it Tensor Analysis on Manifolds\\/}\\n\\\\ \\\\\\n\\$ \\{ x ^a\\}\\$\\n     & Coordinates\\n     & \\$ \\{ x ^a\\}\\$\\n\\\\ \\\\\\n\\$ e _a = {\\displaystyle \\frac{\\partial z ^i }\\n                             {\\partial x ^a} \\dot{ i} _i }\\$\\n     & \\$ \\!\\!\\! \\begin{array}{l}\\n                {\\rm coordinate} \\\\\\n                {\\rm basis \\, vectors }\\n                \\end{array} \\$\\n     & \\$ {\\displaystyle \\frac{\\partial}{\\partial x^a} = e _a } \\$                \\\\ \\\\\\n       \\$ \\!\\!\\!\\! \\left. \\begin{array}{l}\\n                \\bar{e} _a = {\\displaystyle \\frac{\\partial x ^b}\\n                                   {\\partial \\bar{x} ^a} e _b }\\n\\\\ \\\\\\n                \\bar{e} ^a = {\\displaystyle \\frac{\\partial \\bar{x} ^a}\\n                                   {\\partial \\bar{x} ^b} e^b }\\n                 \\end{array}  \\right\\}\\$\\n     & \\$ \\!\\!\\! \\begin{array}{l}\\n                {\\rm change \\, of} \\\\\\n                {\\rm coordinates} \\\\\\n                \\end{array} \\$\\n     & \\$ \\left\\{ \\begin{array}{l}\\n                {\\displaystyle \\frac{\\partial}{\\partial \\bar{x} ^a} =\\n                \\frac{ \\partial x ^b}{\\partial \\bar{x} ^a}\\n                \\frac{ \\partial} {\\partial x ^b} }\\n                \\\\  \\\\\\n                {\\displaystyle d \\bar{x} ^a =\\n                \\frac{ \\partial \\bar{x} ^a }{ \\partial x ^b} d x ^b }\\n                \\end{array}  \\right. \\$\\n\\\\\\n\\end{tabular}\\n\\end{center}",
+        "body": "$1\\n\\begin{center}\\n\\begin{tabular}{lll}\\n{\\it Classical Tensor Analysis\\/}\\n     &\\n     & {\\it Tensor Analysis on Manifolds\\/}\\n\\\\ \\\\\\n$ \\{ x ^a\\}$\\n     & Coordinates\\n     & $ \\{ x ^a\\}$\\n\\\\ \\\\\\n$ e _a = {\\displaystyle \\frac{\\partial z ^i }\\n                             {\\partial x ^a} \\dot{ i} _i }$\\n     & $ \\!\\!\\! \\begin{array}{l}\\n                {\\rm coordinate} \\\\\\n                {\\rm basis \\, vectors }\\n                \\end{array} $\\n     & $ {\\displaystyle \\frac{\\partial}{\\partial x^a} = e _a } $                \\\\ \\\\\\n       $ \\!\\!\\!\\! \\left. \\begin{array}{l}\\n                \\bar{e} _a = {\\displaystyle \\frac{\\partial x ^b}\\n                                   {\\partial \\bar{x} ^a} e _b }\\n\\\\ \\\\\\n                \\bar{e} ^a = {\\displaystyle \\frac{\\partial \\bar{x} ^a}\\n                                   {\\partial \\bar{x} ^b} e^b }\\n                 \\end{array}  \\right\\}$\\n     & $ \\!\\!\\! \\begin{array}{l}\\n                {\\rm change \\, of} \\\\\\n                {\\rm coordinates} \\\\\\n                \\end{array} $\\n     & $ \\left\\{ \\begin{array}{l}\\n                {\\displaystyle \\frac{\\partial}{\\partial \\bar{x} ^a} =\\n                \\frac{ \\partial x ^b}{\\partial \\bar{x} ^a}\\n                \\frac{ \\partial} {\\partial x ^b} }\\n                \\\\  \\\\\\n                {\\displaystyle d \\bar{x} ^a =\\n                \\frac{ \\partial \\bar{x} ^a }{ \\partial x ^b} d x ^b }\\n                \\end{array}  \\right. $\\n\\\\\\n\\end{tabular}\\n\\end{center}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{center}",
@@ -345,7 +345,7 @@
     },
     {
         "prefix": "(^|[^\\\\])tabex2  ",
-        "body": "$1\\n\\begin{center}\\n\\fbox{\\parbox{4.5in}{\\n\\begin{tabular}{ll}\\n\\multicolumn{2}{c}{\\bf Box 2.1.1 \\quad\\n                       Summary of Important Formulas for \\S 2.1}  \\\\\\n{\\it Velocity\\/}\\n      &                                                           \\\\\\n      &                                                           \\\\\\n\\$ V = {\\displaystyle \\frac{\\partial \\phi}{\\partial t} } \\$\\n      & \\$ V ^a ={\\displaystyle \\frac{\\partial \\phi ^a}\\n                                    {\\partial t}}\\$                \\\\\\n      &                                                           \\\\\\n\\$ v _t = V _t \\circ \\phi _t ^{-1} \\$\\n      & \\$ v ^a _t = V ^a _t \\circ \\phi _t ^{-1} \\$                 \\\\\\n      &                                                           \\\\\\n{\\it Covariant Derivative\\/}\\n      &                                                           \\\\\\n      &                                                           \\\\\\n\\$ {\\bf D} v \\cdot w = \\nabla _w v \\$\\n      & \\$ (\\nabla _w v) ^a =\\n          {\\displaystyle \\frac{\\partial v ^a}\\n                              {\\partial x ^b}} w ^b +\\n                         \\gamma ^a _{b c} w ^b v ^c \\$             \\\\\\n\\end{tabular}\\n}}\\n\\end{center}",
+        "body": "$1\\n\\begin{center}\\n\\fbox{\\parbox{4.5in}{\\n\\begin{tabular}{ll}\\n\\multicolumn{2}{c}{\\bf Box 2.1.1 \\quad\\n                       Summary of Important Formulas for \\S 2.1}  \\\\\\n{\\it Velocity\\/}\\n      &                                                           \\\\\\n      &                                                           \\\\\\n$ V = {\\displaystyle \\frac{\\partial \\phi}{\\partial t} } $\\n      & $ V ^a ={\\displaystyle \\frac{\\partial \\phi ^a}\\n                                    {\\partial t}}$                \\\\\\n      &                                                           \\\\\\n$ v _t = V _t \\circ \\phi _t ^{-1} $\\n      & $ v ^a _t = V ^a _t \\circ \\phi _t ^{-1} $                 \\\\\\n      &                                                           \\\\\\n{\\it Covariant Derivative\\/}\\n      &                                                           \\\\\\n      &                                                           \\\\\\n$ {\\bf D} v \\cdot w = \\nabla _w v $\\n      & $ (\\nabla _w v) ^a =\\n          {\\displaystyle \\frac{\\partial v ^a}\\n                              {\\partial x ^b}} w ^b +\\n                         \\gamma ^a _{b c} w ^b v ^c $             \\\\\\n\\end{tabular}\\n}}\\n\\end{center}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{center}",
@@ -353,7 +353,7 @@
     },
     {
         "prefix": "(^|[^\\\\])tabex1  ",
-        "body": "$1\\n\\begin{center}\\n\\begin{tabular}{ccccc}\\n                   & & \\multicolumn{3}{c}{Definition}    \\\\\\n                   & & \\multicolumn{3}{c}{of derivative} \\\\\\n                   & & & \\$\\downarrow\\$\\n                   &                                     \\\\\\nPartials exist and & \\$\\Longrightarrow\\$\\n                   & Differentiable\\n                   & \\$\\Longrightarrow\\$\\n                   & Partials exist                       \\\\\\nare continuous     & & & &\\n\\end{tabular}\\n\\end{center}",
+        "body": "$1\\n\\begin{center}\\n\\begin{tabular}{ccccc}\\n                   & & \\multicolumn{3}{c}{Definition}    \\\\\\n                   & & \\multicolumn{3}{c}{of derivative} \\\\\\n                   & & & $\\downarrow$\\n                   &                                     \\\\\\nPartials exist and & $\\Longrightarrow$\\n                   & Differentiable\\n                   & $\\Longrightarrow$\\n                   & Partials exist                       \\\\\\nare continuous     & & & &\\n\\end{tabular}\\n\\end{center}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{center}",
@@ -569,7 +569,7 @@
     },
     {
         "prefix": "(^|[^\\\\])intxtu  ",
-        "body": "$1\\intertext{$$\u0001}",
+        "body": "$1\\intertext{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\intertext{}",
@@ -593,7 +593,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dtriap  ",
-        "body": "$1\\$(a_1, a_2, a_3)\\$",
+        "body": "$1$(a_1, a_2, a_3)$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$(a_1, a_2, a_3)$",
@@ -601,7 +601,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dopso3  ",
-        "body": "$1\\$\\operatorname{so(3)}\\$",
+        "body": "$1$\\operatorname{so(3)}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\operatorname{so(3)}$",
@@ -609,7 +609,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dopcrn  ",
-        "body": "$1\\$\\mathbb{R}^n\\$ ",
+        "body": "$1$\\mathbb{R}^n$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbb{R}^n$ ",
@@ -617,7 +617,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dopcrm  ",
-        "body": "$1\\$\\mathbb{R}^m\\$ ",
+        "body": "$1$\\mathbb{R}^m$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbb{R}^m$ ",
@@ -625,7 +625,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dopcr3  ",
-        "body": "$1\\$\\mathbb{R}^3\\$ ",
+        "body": "$1$\\mathbb{R}^3$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbb{R}^3$ ",
@@ -633,7 +633,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dopcr2  ",
-        "body": "$1\\$\\mathbb{R}^2\\$ ",
+        "body": "$1$\\mathbb{R}^2$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbb{R}^2$ ",
@@ -641,7 +641,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dopcr1  ",
-        "body": "$1\\$\\mathbb{R}^1\\$ ",
+        "body": "$1$\\mathbb{R}^1$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbb{R}^1$ ",
@@ -673,7 +673,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbbcrn  ",
-        "body": "$1\\$\\mathbb{R}^n\\$ ",
+        "body": "$1$\\mathbb{R}^n$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbb{R}^n$ ",
@@ -681,7 +681,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbbcrm  ",
-        "body": "$1\\$\\mathbb{R}^m\\$ ",
+        "body": "$1$\\mathbb{R}^m$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbb{R}^m$ ",
@@ -689,7 +689,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbbcr3  ",
-        "body": "$1\\$\\mathbb{R}^3\\$ ",
+        "body": "$1$\\mathbb{R}^3$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbb{R}^3$ ",
@@ -697,7 +697,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbbcr2  ",
-        "body": "$1\\$\\mathbb{R}^2\\$ ",
+        "body": "$1$\\mathbb{R}^2$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbb{R}^2$ ",
@@ -705,7 +705,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbbcr1  ",
-        "body": "$1\\$\\mathbb{R}^1\\$ ",
+        "body": "$1$\\mathbb{R}^1$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbb{R}^1$ ",
@@ -761,7 +761,7 @@
     },
     {
         "prefix": "(^|[^\\\\])upkgu  ",
-        "body": "$1\\usepackage{$$\u0001}",
+        "body": "$1\\usepackage{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\usepackage{}",
@@ -769,7 +769,7 @@
     },
     {
         "prefix": "(^|[^\\\\])unstu  ",
-        "body": "$1\\underset{$$\u0001}",
+        "body": "$1\\underset{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\underset{}",
@@ -777,7 +777,7 @@
     },
     {
         "prefix": "(^|[^\\\\])txtup  ",
-        "body": "$1\\textup{$$\u0001}",
+        "body": "$1\\textup{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\textup{}",
@@ -785,7 +785,7 @@
     },
     {
         "prefix": "(^|[^\\\\])txttt  ",
-        "body": "$1\\texttt{$$\u0001}",
+        "body": "$1\\texttt{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\texttt{}",
@@ -793,7 +793,7 @@
     },
     {
         "prefix": "(^|[^\\\\])txtsl  ",
-        "body": "$1\\textsl{$$\u0001}",
+        "body": "$1\\textsl{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\textsl{}",
@@ -801,7 +801,7 @@
     },
     {
         "prefix": "(^|[^\\\\])txtsf  ",
-        "body": "$1\\textsf{$$\u0001}",
+        "body": "$1\\textsf{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\textsf{}",
@@ -809,7 +809,7 @@
     },
     {
         "prefix": "(^|[^\\\\])txtsc  ",
-        "body": "$1\\textsc{$$\u0001}",
+        "body": "$1\\textsc{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\textsc{}",
@@ -817,7 +817,7 @@
     },
     {
         "prefix": "(^|[^\\\\])txtrm  ",
-        "body": "$1\\textrm{$$\u0001}",
+        "body": "$1\\textrm{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\textrm{}",
@@ -825,7 +825,7 @@
     },
     {
         "prefix": "(^|[^\\\\])txtqu  ",
-        "body": "$1\\quad\\text{$$\u0001}\\quad",
+        "body": "$1\\quad\\text{$$1}\\quad",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\quad\\text{}\\quad",
@@ -841,7 +841,7 @@
     },
     {
         "prefix": "(^|[^\\\\])txtit  ",
-        "body": "$1\\textit{$$\u0001}",
+        "body": "$1\\textit{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\textit{}",
@@ -977,7 +977,7 @@
     },
     {
         "prefix": "(^|[^\\\\])rcmdl  ",
-        "body": "$1\\renewcommand{\\labelenumi}{\\em \\$(\\$\\roman{enumi}\\$)\\$}",
+        "body": "$1\\renewcommand{\\labelenumi}{\\em $($\\roman{enumi}$)$}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\renewcommand{\\labelenumi}{\\em $($\\roman{enumi}$)$}",
@@ -985,7 +985,7 @@
     },
     {
         "prefix": "(^|[^\\\\])qdetd  ",
-        "body": "$1\\quad \\$\\bigtriangledown\\$",
+        "body": "$1\\quad $\\bigtriangledown$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\quad $\\bigtriangledown$",
@@ -993,7 +993,7 @@
     },
     {
         "prefix": "(^|[^\\\\])qdesq  ",
-        "body": "$1\\quad \\$\\square\\$",
+        "body": "$1\\quad $\\square$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\quad $\\square$",
@@ -1001,7 +1001,7 @@
     },
     {
         "prefix": "(^|[^\\\\])qdbtd  ",
-        "body": "$1\\quad \\$\\blacktriangledown\\$",
+        "body": "$1\\quad $\\blacktriangledown$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\quad $\\blacktriangledown$",
@@ -1009,7 +1009,7 @@
     },
     {
         "prefix": "(^|[^\\\\])qdbsq  ",
-        "body": "$1\\quad \\$\\blacksquare\\$",
+        "body": "$1\\quad $\\blacksquare$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\quad $\\blacksquare$",
@@ -1025,7 +1025,7 @@
     },
     {
         "prefix": "(^|[^\\\\])parau  ",
-        "body": "$1\\paragraph{$$\u0001}",
+        "body": "$1\\paragraph{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\paragraph{}",
@@ -1265,7 +1265,7 @@
     },
     {
         "prefix": "(^|[^\\\\])mfrku  ",
-        "body": "$1\\mathfrak{$$\u0001}",
+        "body": "$1\\mathfrak{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mathfrak{}",
@@ -1273,7 +1273,7 @@
     },
     {
         "prefix": "(^|[^\\\\])mcalu  ",
-        "body": "$1\\mathcal{$$\u0001}",
+        "body": "$1\\mathcal{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mathcal{}",
@@ -1337,7 +1337,7 @@
     },
     {
         "prefix": "(^|[^\\\\])intxt  ",
-        "body": "$1\\intertext{$$\u0001}",
+        "body": "$1\\intertext{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\intertext{}",
@@ -1457,7 +1457,7 @@
     },
     {
         "prefix": "(^|[^\\\\])eqtxt  ",
-        "body": "$1\\n\\[\\n\\quad \\text{$$\u0001}\\n\\]",
+        "body": "$1\\n\\[\\n\\quad \\text{$$1}\\n\\]",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\[",
@@ -1473,7 +1473,7 @@
     },
     {
         "prefix": "(^|[^\\\\])eqbox  ",
-        "body": "$1\\n\\begin{equation}\\n\\fbox{\\parbox{.7in}{\\$\\displaystyle{\\frac{x^2 + 1}{5} = y}\\$ }}\\n\\end{equation}",
+        "body": "$1\\n\\begin{equation}\\n\\fbox{\\parbox{.7in}{$\\displaystyle{\\frac{x^2 + 1}{5} = y}$ }}\\n\\end{equation}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{equation}",
@@ -1585,7 +1585,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxyzp  ",
-        "body": "$1\\$(x, y, z)\\$",
+        "body": "$1$(x, y, z)$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$(x, y, z)$",
@@ -1593,7 +1593,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxvth  ",
-        "body": "$1\\$\\vartheta\\$",
+        "body": "$1$\\vartheta$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\vartheta$",
@@ -1601,7 +1601,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxvph  ",
-        "body": "$1\\$\\varphi\\$",
+        "body": "$1$\\varphi$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\varphi$",
@@ -1609,7 +1609,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxpyq  ",
-        "body": "$1\\$x^2 + y^2\\$",
+        "body": "$1$x^2 + y^2$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$x^2 + y^2$",
@@ -1617,7 +1617,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxcth  ",
-        "body": "$1\\$\\Theta\\$",
+        "body": "$1$\\Theta$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\Theta$",
@@ -1625,7 +1625,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxcps  ",
-        "body": "$1\\$\\Psi\\$",
+        "body": "$1$\\Psi$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\Psi$",
@@ -1633,7 +1633,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxcph  ",
-        "body": "$1\\$\\Phi\\$",
+        "body": "$1$\\Phi$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\Phi$",
@@ -1641,7 +1641,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dtsqq  ",
-        "body": "$1\\$T^{\\ast}_{q} Q\\$",
+        "body": "$1$T^{\\ast}_{q} Q$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$T^{\\ast}_{q} Q$",
@@ -1649,7 +1649,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dpdzy  ",
-        "body": "$1\\$\\partial z/\\partial y\\$",
+        "body": "$1$\\partial z/\\partial y$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\partial z/\\partial y$",
@@ -1657,7 +1657,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dopcz  ",
-        "body": "$1\\$\\mathbb{Z}\\$ ",
+        "body": "$1$\\mathbb{Z}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbb{Z}$ ",
@@ -1665,7 +1665,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dopct  ",
-        "body": "$1\\$\\mathbb{T}\\$ ",
+        "body": "$1$\\mathbb{T}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbb{T}$ ",
@@ -1673,7 +1673,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dopcr  ",
-        "body": "$1\\$\\mathbb{R}\\$ ",
+        "body": "$1$\\mathbb{R}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbb{R}$ ",
@@ -1681,7 +1681,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dopci  ",
-        "body": "$1\\$\\mathbb{I}\\$ ",
+        "body": "$1$\\mathbb{I}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbb{I}$ ",
@@ -1689,7 +1689,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dopcc  ",
-        "body": "$1\\$\\mathbb{C}\\$ ",
+        "body": "$1$\\mathbb{C}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbb{C}$ ",
@@ -1697,7 +1697,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dgmks  ",
-        "body": "$1\\$\\mathfrak{k}^{\\ast}\\$ ",
+        "body": "$1$\\mathfrak{k}^{\\ast}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathfrak{k}^{\\ast}$ ",
@@ -1705,7 +1705,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dgmhs  ",
-        "body": "$1\\$\\mathfrak{h}^{\\ast}\\$ ",
+        "body": "$1$\\mathfrak{h}^{\\ast}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathfrak{h}^{\\ast}$ ",
@@ -1713,7 +1713,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dgmgs  ",
-        "body": "$1\\$\\mathfrak{g}^{\\ast}\\$ ",
+        "body": "$1$\\mathfrak{g}^{\\ast}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathfrak{g}^{\\ast}$ ",
@@ -1721,7 +1721,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dgmcx  ",
-        "body": "$1\\$\\mathfrak{X}\\$ ",
+        "body": "$1$\\mathfrak{X}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathfrak{X}$ ",
@@ -1729,7 +1729,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dgmct  ",
-        "body": "$1\\$\\mathfrak{T}\\$ ",
+        "body": "$1$\\mathfrak{T}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathfrak{T}$ ",
@@ -1737,7 +1737,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dgmck  ",
-        "body": "$1\\$\\mathfrak{K}\\$ ",
+        "body": "$1$\\mathfrak{K}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathfrak{K}$ ",
@@ -1745,7 +1745,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dgmch  ",
-        "body": "$1\\$\\mathfrak{H}\\$ ",
+        "body": "$1$\\mathfrak{H}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathfrak{H}$ ",
@@ -1753,7 +1753,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dgmcg  ",
-        "body": "$1\\$\\mathfrak{G}\\$ ",
+        "body": "$1$\\mathfrak{G}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathfrak{G}$ ",
@@ -1761,7 +1761,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dgmca  ",
-        "body": "$1\\$\\mathfrak{A}\\$ ",
+        "body": "$1$\\mathfrak{A}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathfrak{A}$ ",
@@ -1793,7 +1793,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbbcz  ",
-        "body": "$1\\$\\mathbb{Z}\\$ ",
+        "body": "$1$\\mathbb{Z}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbb{Z}$ ",
@@ -1801,7 +1801,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbbct  ",
-        "body": "$1\\$\\mathbb{T}\\$ ",
+        "body": "$1$\\mathbb{T}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbb{T}$ ",
@@ -1809,7 +1809,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbbcr  ",
-        "body": "$1\\$\\mathbb{R}\\$ ",
+        "body": "$1$\\mathbb{R}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbb{R}$ ",
@@ -1817,7 +1817,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbbci  ",
-        "body": "$1\\$\\mathbb{I}\\$ ",
+        "body": "$1$\\mathbb{I}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbb{I}$ ",
@@ -1825,7 +1825,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbbcc  ",
-        "body": "$1\\$\\mathbb{C}\\$ ",
+        "body": "$1$\\mathbb{C}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbb{C}$ ",
@@ -1833,7 +1833,7 @@
     },
     {
         "prefix": "(^|[^\\\\])captu  ",
-        "body": "$1\\caption{$$\u0001}",
+        "body": "$1\\caption{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\caption{}",
@@ -2009,7 +2009,7 @@
     },
     {
         "prefix": "(^|[^\\\\])balda  ",
-        "body": "$1\\begin{alignedat}{$$\u0001}",
+        "body": "$1\\begin{alignedat}{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\begin{alignedat}{}",
@@ -2017,7 +2017,7 @@
     },
     {
         "prefix": "(^|[^\\\\])balas  ",
-        "body": "$1\\begin{alignat*}{$$\u0001}",
+        "body": "$1\\begin{alignat*}{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\begin{alignat*}{}",
@@ -2313,7 +2313,7 @@
     },
     {
         "prefix": "(^|[^\\\\])vspu  ",
-        "body": "$1\\vspace{$$\u0001}",
+        "body": "$1\\vspace{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\vspace{}",
@@ -2337,7 +2337,7 @@
     },
     {
         "prefix": "(^|[^\\\\])upkg  ",
-        "body": "$1\\usepackage{$$\u0001}",
+        "body": "$1\\usepackage{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\usepackage{}",
@@ -2345,7 +2345,7 @@
     },
     {
         "prefix": "(^|[^\\\\])unst  ",
-        "body": "$1\\underset{$$\u0001}{$$\u0001}",
+        "body": "$1\\underset{$$1}{$$2}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\underset{}{}",
@@ -2361,7 +2361,7 @@
     },
     {
         "prefix": "(^|[^\\\\])txtu  ",
-        "body": "$1\\text{$$\u0001}",
+        "body": "$1\\text{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\text{}",
@@ -2369,7 +2369,7 @@
     },
     {
         "prefix": "(^|[^\\\\])txpf  ",
-        "body": "$1\\texorpdfstring{\\$$$\u0001\\$}{$$\u0001}",
+        "body": "$1\\texorpdfstring{$$$1$}{$$2}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\texorpdfstring{$$}{}",
@@ -2393,7 +2393,7 @@
     },
     {
         "prefix": "(^|[^\\\\])tgsu  ",
-        "body": "$1\\tag*{$$\u0001}",
+        "body": "$1\\tag*{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\tag*{}",
@@ -2401,7 +2401,7 @@
     },
     {
         "prefix": "(^|[^\\\\])tecs  ",
-        "body": "$1\\n\\begin{cases}\\n$$\u0001\\n\\end{cases}",
+        "body": "$1\\n\\begin{cases}\\n$$1\\n\\end{cases}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{cases}",
@@ -2497,7 +2497,7 @@
     },
     {
         "prefix": "(^|[^\\\\])sstu  ",
-        "body": "$1\\sideset{$$\u0001}",
+        "body": "$1\\sideset{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\sideset{}",
@@ -2513,7 +2513,7 @@
     },
     {
         "prefix": "(^|[^\\\\])ssns  ",
-        "body": "$1\\subsection*{$$\u0001}",
+        "body": "$1\\subsection*{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\subsection*{}",
@@ -2561,7 +2561,7 @@
     },
     {
         "prefix": "(^|[^\\\\])slnu  ",
-        "body": "$1\\setlength{$$\u0001}",
+        "body": "$1\\setlength{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\setlength{}",
@@ -2601,7 +2601,7 @@
     },
     {
         "prefix": "(^|[^\\\\])setc  ",
-        "body": "$1\\setcounter{$$\u0001}{$$\u0001}",
+        "body": "$1\\setcounter{$$1}{$$2}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\setcounter{}{}",
@@ -2609,7 +2609,7 @@
     },
     {
         "prefix": "(^|[^\\\\])rtgu  ",
-        "body": "$1\\raisetag{$$\u0001}",
+        "body": "$1\\raisetag{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\raisetag{}",
@@ -2617,7 +2617,7 @@
     },
     {
         "prefix": "(^|[^\\\\])rlin  ",
-        "body": "$1\\rightline{$$\u0001}",
+        "body": "$1\\rightline{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\rightline{}",
@@ -2649,7 +2649,7 @@
     },
     {
         "prefix": "(^|[^\\\\])refp  ",
-        "body": "$1(\\ref{$$\u0001})",
+        "body": "$1(\\ref{$$1})",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "(\\ref{})",
@@ -2657,7 +2657,7 @@
     },
     {
         "prefix": "(^|[^\\\\])rcmd  ",
-        "body": "$1\\renewcommand{$$\u0001}{$$\u0001}",
+        "body": "$1\\renewcommand{$$1}{$$2}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\renewcommand{}{}",
@@ -2713,7 +2713,7 @@
     },
     {
         "prefix": "(^|[^\\\\])pmbu  ",
-        "body": "$1\\mathop{\\pmb{$$\u0001}}",
+        "body": "$1\\mathop{\\pmb{$$1}}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mathop{\\pmb{}}",
@@ -2897,7 +2897,7 @@
     },
     {
         "prefix": "(^|[^\\\\])ovsu  ",
-        "body": "$1\\overset{$$\u0001}",
+        "body": "$1\\overset{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\overset{}",
@@ -2905,7 +2905,7 @@
     },
     {
         "prefix": "(^|[^\\\\])ovst  ",
-        "body": "$1\\overset{$$\u0001}{$$\u0001}",
+        "body": "$1\\overset{$$1}{$$2}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\overset{}{}",
@@ -3089,7 +3089,7 @@
     },
     {
         "prefix": "(^|[^\\\\])oddu  ",
-        "body": "$1\\ddot{$$\u0001}",
+        "body": "$1\\ddot{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\ddot{}",
@@ -3193,7 +3193,7 @@
     },
     {
         "prefix": "(^|[^\\\\])ncmd  ",
-        "body": "$1\\newcommand{$$\u0001}{$$\u0001}",
+        "body": "$1\\newcommand{$$1}{$$2}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\newcommand{}{}",
@@ -3297,7 +3297,7 @@
     },
     {
         "prefix": "(^|[^\\\\])mttu  ",
-        "body": "$1\\mathtt{$$\u0001}",
+        "body": "$1\\mathtt{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mathtt{}",
@@ -3321,7 +3321,7 @@
     },
     {
         "prefix": "(^|[^\\\\])msfu  ",
-        "body": "$1\\mathsf{$$\u0001}",
+        "body": "$1\\mathsf{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mathsf{}",
@@ -3329,7 +3329,7 @@
     },
     {
         "prefix": "(^|[^\\\\])mrmu  ",
-        "body": "$1\\mathrm{$$\u0001}",
+        "body": "$1\\mathrm{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mathrm{}",
@@ -3337,7 +3337,7 @@
     },
     {
         "prefix": "(^|[^\\\\])mrkb  ",
-        "body": "$1\\markboth{$$\u0001}{$$\u0001}",
+        "body": "$1\\markboth{$$1}{$$2}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\markboth{}{}",
@@ -3345,7 +3345,7 @@
     },
     {
         "prefix": "(^|[^\\\\])mopu  ",
-        "body": "$1\\mathop{$$\u0001}",
+        "body": "$1\\mathop{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mathop{}",
@@ -3361,7 +3361,7 @@
     },
     {
         "prefix": "(^|[^\\\\])mitu  ",
-        "body": "$1\\mathit{$$\u0001}",
+        "body": "$1\\mathit{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mathit{}",
@@ -3377,7 +3377,7 @@
     },
     {
         "prefix": "(^|[^\\\\])mfrk  ",
-        "body": "$1\\mathfrak{$$\u0001}",
+        "body": "$1\\mathfrak{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mathfrak{}",
@@ -3401,7 +3401,7 @@
     },
     {
         "prefix": "(^|[^\\\\])mcal  ",
-        "body": "$1\\mathcal{$$\u0001}",
+        "body": "$1\\mathcal{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mathcal{}",
@@ -3409,7 +3409,7 @@
     },
     {
         "prefix": "(^|[^\\\\])mbxu  ",
-        "body": "$1\\mbox{$$\u0001}",
+        "body": "$1\\mbox{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\mbox{}",
@@ -3417,7 +3417,7 @@
     },
     {
         "prefix": "(^|[^\\\\])mbfu  ",
-        "body": "$1\\mathbf{$$\u0001}",
+        "body": "$1\\mathbf{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mathbf{}",
@@ -3425,7 +3425,7 @@
     },
     {
         "prefix": "(^|[^\\\\])mbbu  ",
-        "body": "$1\\mathbb{$$\u0001}",
+        "body": "$1\\mathbb{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mathbb{}",
@@ -3617,7 +3617,7 @@
     },
     {
         "prefix": "(^|[^\\\\])llin  ",
-        "body": "$1\\leftline{$$\u0001}",
+        "body": "$1\\leftline{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\leftline{}",
@@ -3625,7 +3625,7 @@
     },
     {
         "prefix": "(^|[^\\\\])limu  ",
-        "body": "$1\\lim{$$\u0001}",
+        "body": "$1\\lim{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\lim{}",
@@ -3721,7 +3721,7 @@
     },
     {
         "prefix": "(^|[^\\\\])lblu  ",
-        "body": "$1\\label{$$\u0001}",
+        "body": "$1\\label{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\label{}",
@@ -3833,7 +3833,7 @@
     },
     {
         "prefix": "(^|[^\\\\])igru  ",
-        "body": "$1\\includegraphics{$$\u0001}",
+        "body": "$1\\includegraphics{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\includegraphics{}",
@@ -3841,7 +3841,7 @@
     },
     {
         "prefix": "(^|[^\\\\])idxu  ",
-        "body": "$1\\index{$$\u0001}",
+        "body": "$1\\index{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\index{}",
@@ -3993,7 +3993,7 @@
     },
     {
         "prefix": "(^|[^\\\\])hspu  ",
-        "body": "$1\\hspace{$$\u0001}",
+        "body": "$1\\hspace{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\hspace{}",
@@ -4121,7 +4121,7 @@
     },
     {
         "prefix": "(^|[^\\\\])ftnu  ",
-        "body": "$1\\footnote{$$\u0001}",
+        "body": "$1\\footnote{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\footnote{}",
@@ -4265,7 +4265,7 @@
     },
     {
         "prefix": "(^|[^\\\\])eqnu  ",
-        "body": "$1\\n\\begin{equation}\\nF(b)-F(a)=\\int^b_af(x)\\, dx$$\u0001\\n\\end{equation}",
+        "body": "$1\\n\\begin{equation}\\nF(b)-F(a)=\\int^b_af(x)\\, dx$$1\\n\\end{equation}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{equation}",
@@ -4521,7 +4521,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxyp  ",
-        "body": "$1\\$(x, y)\\$",
+        "body": "$1$(x, y)$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$(x, y)$",
@@ -4529,7 +4529,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxvs  ",
-        "body": "$1\\$\\varsigma\\$",
+        "body": "$1$\\varsigma$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\varsigma$",
@@ -4537,7 +4537,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxvr  ",
-        "body": "$1\\$\\varrho\\$",
+        "body": "$1$\\varrho$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\varrho$",
@@ -4545,7 +4545,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxvp  ",
-        "body": "$1\\$\\varpi\\$",
+        "body": "$1$\\varpi$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\varpi$",
@@ -4553,7 +4553,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxve  ",
-        "body": "$1\\$\\varepsilon\\$",
+        "body": "$1$\\varepsilon$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\varepsilon$",
@@ -4561,7 +4561,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxth  ",
-        "body": "$1\\$\\theta\\$",
+        "body": "$1$\\theta$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\theta$",
@@ -4569,7 +4569,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxps  ",
-        "body": "$1\\$\\psi\\$",
+        "body": "$1$\\psi$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\psi$",
@@ -4577,7 +4577,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxph  ",
-        "body": "$1\\$\\phi\\$",
+        "body": "$1$\\phi$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\phi$",
@@ -4585,7 +4585,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxio  ",
-        "body": "$1\\$\\iota\\$",
+        "body": "$1$\\iota$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\iota$",
@@ -4593,7 +4593,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxet  ",
-        "body": "$1\\$\\eta\\$",
+        "body": "$1$\\eta$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\eta$",
@@ -4617,7 +4617,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxcx  ",
-        "body": "$1\\$\\Xi\\$",
+        "body": "$1$\\Xi$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\Xi$",
@@ -4625,7 +4625,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxcu  ",
-        "body": "$1\\$\\Upsilon\\$",
+        "body": "$1$\\Upsilon$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\Upsilon$",
@@ -4633,7 +4633,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxcs  ",
-        "body": "$1\\$\\Sigma\\$",
+        "body": "$1$\\Sigma$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\Sigma$",
@@ -4641,7 +4641,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxcp  ",
-        "body": "$1\\$\\Pi\\$",
+        "body": "$1$\\Pi$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\Pi$",
@@ -4649,7 +4649,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxco  ",
-        "body": "$1\\$\\Omega\\$",
+        "body": "$1$\\Omega$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\Omega$",
@@ -4657,7 +4657,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxcl  ",
-        "body": "$1\\$\\Lambda\\$",
+        "body": "$1$\\Lambda$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\Lambda$",
@@ -4665,7 +4665,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxcg  ",
-        "body": "$1\\$\\Gamma\\$",
+        "body": "$1$\\Gamma$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\Gamma$",
@@ -4673,7 +4673,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxcd  ",
-        "body": "$1\\$\\Delta\\$",
+        "body": "$1$\\Delta$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\Delta$",
@@ -4681,7 +4681,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dtsq  ",
-        "body": "$1\\$T^\\ast Q\\$",
+        "body": "$1$T^\\ast Q$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$T^\\ast Q$",
@@ -4705,7 +4705,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dgmu  ",
-        "body": "$1\\$\\mathfrak{}$$\u0001\\$",
+        "body": "$1$\\mathfrak{}$$1$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathfrak{}$",
@@ -4713,7 +4713,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dgmt  ",
-        "body": "$1\\$\\mathfrak{t}\\$ ",
+        "body": "$1$\\mathfrak{t}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathfrak{t}$ ",
@@ -4721,7 +4721,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dgmp  ",
-        "body": "$1\\$\\mathfrak{p}\\$ ",
+        "body": "$1$\\mathfrak{p}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathfrak{p}$ ",
@@ -4729,7 +4729,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dgmk  ",
-        "body": "$1\\$\\mathfrak{k}\\$ ",
+        "body": "$1$\\mathfrak{k}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathfrak{k}$ ",
@@ -4737,7 +4737,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dgmh  ",
-        "body": "$1\\$\\mathfrak{h}\\$ ",
+        "body": "$1$\\mathfrak{h}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathfrak{h}$ ",
@@ -4745,7 +4745,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dgmg  ",
-        "body": "$1\\$\\mathfrak{g}\\$ ",
+        "body": "$1$\\mathfrak{g}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathfrak{g}$ ",
@@ -4753,7 +4753,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dgmb  ",
-        "body": "$1\\$\\mathfrak{b}\\$ ",
+        "body": "$1$\\mathfrak{b}$ ",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathfrak{b}$ ",
@@ -4761,7 +4761,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dccz  ",
-        "body": "$1\\$\\mathcal{Z}\\$",
+        "body": "$1$\\mathcal{Z}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{Z}$",
@@ -4769,7 +4769,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dccy  ",
-        "body": "$1\\$\\mathcal{Y}\\$",
+        "body": "$1$\\mathcal{Y}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{Y}$",
@@ -4777,7 +4777,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dccx  ",
-        "body": "$1\\$\\mathcal{X}\\$",
+        "body": "$1$\\mathcal{X}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{X}$",
@@ -4785,7 +4785,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dccw  ",
-        "body": "$1\\$\\mathcal{W}\\$",
+        "body": "$1$\\mathcal{W}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{W}$",
@@ -4793,7 +4793,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dccv  ",
-        "body": "$1\\$\\mathcal{V}\\$",
+        "body": "$1$\\mathcal{V}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{V}$",
@@ -4801,7 +4801,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dccu  ",
-        "body": "$1\\$\\mathcal{U}\\$",
+        "body": "$1$\\mathcal{U}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{U}$",
@@ -4809,7 +4809,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcct  ",
-        "body": "$1\\$\\mathcal{T}\\$",
+        "body": "$1$\\mathcal{T}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{T}$",
@@ -4817,7 +4817,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dccs  ",
-        "body": "$1\\$\\mathcal{S}\\$",
+        "body": "$1$\\mathcal{S}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{S}$",
@@ -4825,7 +4825,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dccr  ",
-        "body": "$1\\$\\mathcal{R}\\$",
+        "body": "$1$\\mathcal{R}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{R}$",
@@ -4833,7 +4833,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dccq  ",
-        "body": "$1\\$\\mathcal{Q}\\$",
+        "body": "$1$\\mathcal{Q}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{Q}$",
@@ -4841,7 +4841,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dccp  ",
-        "body": "$1\\$\\mathcal{P}\\$",
+        "body": "$1$\\mathcal{P}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{P}$",
@@ -4849,7 +4849,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcco  ",
-        "body": "$1\\$\\mathcal{O}\\$",
+        "body": "$1$\\mathcal{O}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{O}$",
@@ -4857,7 +4857,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dccn  ",
-        "body": "$1\\$\\mathcal{N}\\$",
+        "body": "$1$\\mathcal{N}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{N}$",
@@ -4865,7 +4865,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dccm  ",
-        "body": "$1\\$\\mathcal{M}\\$",
+        "body": "$1$\\mathcal{M}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{M}$",
@@ -4873,7 +4873,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dccl  ",
-        "body": "$1\\$\\mathcal{L}\\$",
+        "body": "$1$\\mathcal{L}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{L}$",
@@ -4881,7 +4881,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcck  ",
-        "body": "$1\\$\\mathcal{K}\\$",
+        "body": "$1$\\mathcal{K}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{K}$",
@@ -4889,7 +4889,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dccj  ",
-        "body": "$1\\$\\mathcal{J}\\$",
+        "body": "$1$\\mathcal{J}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{J}$",
@@ -4897,7 +4897,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcci  ",
-        "body": "$1\\$\\mathcal{I}\\$",
+        "body": "$1$\\mathcal{I}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{I}$",
@@ -4905,7 +4905,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcch  ",
-        "body": "$1\\$\\mathcal{H}\\$",
+        "body": "$1$\\mathcal{H}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{H}$",
@@ -4913,7 +4913,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dccg  ",
-        "body": "$1\\$\\mathcal{G}\\$",
+        "body": "$1$\\mathcal{G}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{G}$",
@@ -4921,7 +4921,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dccf  ",
-        "body": "$1\\$\\mathcal{F}\\$",
+        "body": "$1$\\mathcal{F}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{F}$",
@@ -4929,7 +4929,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcce  ",
-        "body": "$1\\$\\mathcal{E}\\$",
+        "body": "$1$\\mathcal{E}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{E}$",
@@ -4937,7 +4937,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dccd  ",
-        "body": "$1\\$\\mathcal{D}\\$",
+        "body": "$1$\\mathcal{D}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{D}$",
@@ -4945,7 +4945,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dccc  ",
-        "body": "$1\\$\\mathcal{C}\\$",
+        "body": "$1$\\mathcal{C}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{C}$",
@@ -4953,7 +4953,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dccb  ",
-        "body": "$1\\$\\mathcal{B}\\$",
+        "body": "$1$\\mathcal{B}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{B}$",
@@ -4961,7 +4961,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcca  ",
-        "body": "$1\\$\\mathcal{A}\\$",
+        "body": "$1$\\mathcal{A}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathcal{A}$",
@@ -4969,7 +4969,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbcz  ",
-        "body": "$1\\$\\mathbf{Z}\\$",
+        "body": "$1$\\mathbf{Z}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{Z}$",
@@ -4977,7 +4977,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbcy  ",
-        "body": "$1\\$\\mathbf{Y}\\$",
+        "body": "$1$\\mathbf{Y}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{Y}$",
@@ -4985,7 +4985,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbcx  ",
-        "body": "$1\\$\\mathbf{X}\\$",
+        "body": "$1$\\mathbf{X}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{X}$",
@@ -4993,7 +4993,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbcw  ",
-        "body": "$1\\$\\mathbf{W}\\$",
+        "body": "$1$\\mathbf{W}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{W}$",
@@ -5001,7 +5001,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbcv  ",
-        "body": "$1\\$\\mathbf{V}\\$",
+        "body": "$1$\\mathbf{V}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{V}$",
@@ -5009,7 +5009,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbcu  ",
-        "body": "$1\\$\\mathbf{U}\\$",
+        "body": "$1$\\mathbf{U}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{U}$",
@@ -5017,7 +5017,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbct  ",
-        "body": "$1\\$\\mathbf{T}\\$",
+        "body": "$1$\\mathbf{T}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{T}$",
@@ -5025,7 +5025,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbcs  ",
-        "body": "$1\\$\\mathbf{S}\\$",
+        "body": "$1$\\mathbf{S}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{S}$",
@@ -5033,7 +5033,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbcr  ",
-        "body": "$1\\$\\mathbf{R}\\$",
+        "body": "$1$\\mathbf{R}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{R}$",
@@ -5041,7 +5041,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbcq  ",
-        "body": "$1\\$\\mathbf{Q}\\$",
+        "body": "$1$\\mathbf{Q}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{Q}$",
@@ -5049,7 +5049,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbcp  ",
-        "body": "$1\\$\\mathbf{P}\\$",
+        "body": "$1$\\mathbf{P}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{P}$",
@@ -5057,7 +5057,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbco  ",
-        "body": "$1\\$\\mathbf{O}\\$",
+        "body": "$1$\\mathbf{O}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{O}$",
@@ -5065,7 +5065,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbcn  ",
-        "body": "$1\\$\\mathbf{N}\\$",
+        "body": "$1$\\mathbf{N}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{N}$",
@@ -5073,7 +5073,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbcm  ",
-        "body": "$1\\$\\mathbf{M}\\$",
+        "body": "$1$\\mathbf{M}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{M}$",
@@ -5081,7 +5081,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbcl  ",
-        "body": "$1\\$\\mathbf{L}\\$",
+        "body": "$1$\\mathbf{L}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{L}$",
@@ -5089,7 +5089,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbck  ",
-        "body": "$1\\$\\mathbf{K}\\$",
+        "body": "$1$\\mathbf{K}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{K}$",
@@ -5097,7 +5097,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbcj  ",
-        "body": "$1\\$\\mathbf{J}\\$",
+        "body": "$1$\\mathbf{J}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{J}$",
@@ -5105,7 +5105,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbci  ",
-        "body": "$1\\$\\mathbf{I}\\$",
+        "body": "$1$\\mathbf{I}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{I}$",
@@ -5113,7 +5113,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbch  ",
-        "body": "$1\\$\\mathbf{H}\\$",
+        "body": "$1$\\mathbf{H}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{H}$",
@@ -5121,7 +5121,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbcg  ",
-        "body": "$1\\$\\mathbf{G}\\$",
+        "body": "$1$\\mathbf{G}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{G}$",
@@ -5129,7 +5129,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbcf  ",
-        "body": "$1\\$\\mathbf{F}\\$",
+        "body": "$1$\\mathbf{F}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{F}$",
@@ -5137,7 +5137,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbce  ",
-        "body": "$1\\$\\mathbf{E}\\$",
+        "body": "$1$\\mathbf{E}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{E}$",
@@ -5145,7 +5145,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbcd  ",
-        "body": "$1\\$\\mathbf{D}\\$",
+        "body": "$1$\\mathbf{D}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{D}$",
@@ -5153,7 +5153,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbcc  ",
-        "body": "$1\\$\\mathbf{C}\\$",
+        "body": "$1$\\mathbf{C}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{C}$",
@@ -5161,7 +5161,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbcb  ",
-        "body": "$1\\$\\mathbf{B}\\$",
+        "body": "$1$\\mathbf{B}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{B}$",
@@ -5169,7 +5169,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbca  ",
-        "body": "$1\\$\\mathbf{A}\\$",
+        "body": "$1$\\mathbf{A}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{A}$",
@@ -5177,7 +5177,7 @@
     },
     {
         "prefix": "(^|[^\\\\])db10  ",
-        "body": "$1\\$\\mathbf{10}\\$",
+        "body": "$1$\\mathbf{10}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{10}$",
@@ -5185,7 +5185,7 @@
     },
     {
         "prefix": "(^|[^\\\\])d03p  ",
-        "body": "$1\\$(0, 0, 0)\\$",
+        "body": "$1$(0, 0, 0)$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$(0, 0, 0)$",
@@ -5193,7 +5193,7 @@
     },
     {
         "prefix": "(^|[^\\\\])d00p  ",
-        "body": "$1\\$(0,0)\\$",
+        "body": "$1$(0,0)$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$(0,0)$",
@@ -5233,7 +5233,7 @@
     },
     {
         "prefix": "(^|[^\\\\])clin  ",
-        "body": "$1\\centerline{$$\u0001}",
+        "body": "$1\\centerline{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\centerline{}",
@@ -5249,7 +5249,7 @@
     },
     {
         "prefix": "(^|[^\\\\])citp  ",
-        "body": "$1(\\cite{$$\u0001})",
+        "body": "$1(\\cite{$$1})",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "(\\cite{})",
@@ -5273,7 +5273,7 @@
     },
     {
         "prefix": "(^|[^\\\\])capt  ",
-        "body": "$1\\caption{$$\u0001}",
+        "body": "$1\\caption{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\caption{}",
@@ -5329,7 +5329,7 @@
     },
     {
         "prefix": "(^|[^\\\\])bsyu  ",
-        "body": "$1\\boldsymbol{$$\u0001}",
+        "body": "$1\\boldsymbol{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\boldsymbol{}",
@@ -5385,7 +5385,7 @@
     },
     {
         "prefix": "(^|[^\\\\])bqal  ",
-        "body": "$1\\begin{eqnarray}\\label{$$\u0001}",
+        "body": "$1\\begin{eqnarray}\\label{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\begin{eqnarray}\\label{}",
@@ -5521,7 +5521,7 @@
     },
     {
         "prefix": "(^|[^\\\\])beql  ",
-        "body": "$1\\begin{equation}\\label{$$\u0001}",
+        "body": "$1\\begin{equation}\\label{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\begin{equation}\\label{}",
@@ -5857,7 +5857,7 @@
     },
     {
         "prefix": "(^|[^\\\\])bala  ",
-        "body": "$1\\begin{alignat}{$$\u0001}",
+        "body": "$1\\begin{alignat}{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\begin{alignat}{}",
@@ -6201,7 +6201,7 @@
     },
     {
         "prefix": "(^|[^\\\\])vsp  ",
-        "body": "$1\\vspace{$$\u0001}",
+        "body": "$1\\vspace{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\vspace{}",
@@ -6289,7 +6289,7 @@
     },
     {
         "prefix": "(^|[^\\\\])txt  ",
-        "body": "$1\\text{$$\u0001}",
+        "body": "$1\\text{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\text{}",
@@ -6297,7 +6297,7 @@
     },
     {
         "prefix": "(^|[^\\\\])ttu  ",
-        "body": "$1\\texttt{$$\u0001}",
+        "body": "$1\\texttt{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\texttt{}",
@@ -6345,7 +6345,7 @@
     },
     {
         "prefix": "(^|[^\\\\])tgu  ",
-        "body": "$1\\tag{$$\u0001}",
+        "body": "$1\\tag{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\tag{}",
@@ -6353,7 +6353,7 @@
     },
     {
         "prefix": "(^|[^\\\\])tgs  ",
-        "body": "$1\\tag*{$$\u0001}",
+        "body": "$1\\tag*{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\tag*{}",
@@ -6377,7 +6377,7 @@
     },
     {
         "prefix": "(^|[^\\\\])sst  ",
-        "body": "$1\\sideset{$$\u0001}{$$\u0001}",
+        "body": "$1\\sideset{$$1}{$$2}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\sideset{}{}",
@@ -6393,7 +6393,7 @@
     },
     {
         "prefix": "(^|[^\\\\])ssn  ",
-        "body": "$1\\subsection{$$\u0001}",
+        "body": "$1\\subsection{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\subsection{}",
@@ -6401,7 +6401,7 @@
     },
     {
         "prefix": "(^|[^\\\\])ssn  ",
-        "body": "$1\\paragraph{$$\u0001}",
+        "body": "$1\\paragraph{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\paragraph{}",
@@ -6409,7 +6409,7 @@
     },
     {
         "prefix": "(^|[^\\\\])squ  ",
-        "body": "$1\\sqrt{$$\u0001}",
+        "body": "$1\\sqrt{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\sqrt{}",
@@ -6457,7 +6457,7 @@
     },
     {
         "prefix": "(^|[^\\\\])spn  ",
-        "body": "$1\\setcounter{page}{$$\u0001}",
+        "body": "$1\\setcounter{page}{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\setcounter{page}{}",
@@ -6473,7 +6473,7 @@
     },
     {
         "prefix": "(^|[^\\\\])sns  ",
-        "body": "$1\\section*{$$\u0001}",
+        "body": "$1\\section*{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\section*{}",
@@ -6481,7 +6481,7 @@
     },
     {
         "prefix": "(^|[^\\\\])smt  ",
-        "body": "$1\\smash[t$$\u0001]{}",
+        "body": "$1\\smash[t$$1]{}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\smash[t]{}",
@@ -6489,7 +6489,7 @@
     },
     {
         "prefix": "(^|[^\\\\])smb  ",
-        "body": "$1\\smash[b$$\u0001]{}",
+        "body": "$1\\smash[b$$1]{}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\smash[b]{}",
@@ -6505,7 +6505,7 @@
     },
     {
         "prefix": "(^|[^\\\\])sln  ",
-        "body": "$1\\setlength{$$\u0001}{$$\u0001}",
+        "body": "$1\\setlength{$$1}{$$2}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\setlength{}{}",
@@ -6657,7 +6657,7 @@
     },
     {
         "prefix": "(^|[^\\\\])rmu  ",
-        "body": "$1\\mathrm{$$\u0001}",
+        "body": "$1\\mathrm{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mathrm{}",
@@ -6929,7 +6929,7 @@
     },
     {
         "prefix": "(^|[^\\\\])ovu  ",
-        "body": "$1\\vec{$$\u0001}",
+        "body": "$1\\vec{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\vec{}",
@@ -6961,7 +6961,7 @@
     },
     {
         "prefix": "(^|[^\\\\])wtu  ",
-        "body": "$1\\widetilde{$$\u0001}",
+        "body": "$1\\widetilde{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\widetilde{}",
@@ -6969,7 +6969,7 @@
     },
     {
         "prefix": "(^|[^\\\\])otu  ",
-        "body": "$1\\tilde{$$\u0001}",
+        "body": "$1\\tilde{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\tilde{}",
@@ -6985,7 +6985,7 @@
     },
     {
         "prefix": "(^|[^\\\\])opu  ",
-        "body": "$1\\mathbb{$$\u0001}",
+        "body": "$1\\mathbb{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mathbb{}",
@@ -6993,7 +6993,7 @@
     },
     {
         "prefix": "(^|[^\\\\])opn  ",
-        "body": "$1\\operatorname{$$\u0001}",
+        "body": "$1\\operatorname{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\operatorname{}",
@@ -7041,7 +7041,7 @@
     },
     {
         "prefix": "(^|[^\\\\])olu  ",
-        "body": "$1\\overline{$$\u0001}",
+        "body": "$1\\overline{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\overline{}",
@@ -7081,7 +7081,7 @@
     },
     {
         "prefix": "(^|[^\\\\])whu  ",
-        "body": "$1\\widehat{$$\u0001}",
+        "body": "$1\\widehat{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\widehat{}",
@@ -7113,7 +7113,7 @@
     },
     {
         "prefix": "(^|[^\\\\])ohu  ",
-        "body": "$1\\hat{$$\u0001}",
+        "body": "$1\\hat{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\hat{}",
@@ -7217,7 +7217,7 @@
     },
     {
         "prefix": "(^|[^\\\\])odu  ",
-        "body": "$1\\dot{$$\u0001}",
+        "body": "$1\\dot{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\dot{}",
@@ -7297,7 +7297,7 @@
     },
     {
         "prefix": "(^|[^\\\\])ocu  ",
-        "body": "$1\\check{$$\u0001}",
+        "body": "$1\\check{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\check{}",
@@ -7489,7 +7489,7 @@
     },
     {
         "prefix": "(^|[^\\\\])obu  ",
-        "body": "$1\\bar{$$\u0001}",
+        "body": "$1\\bar{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\bar{}",
@@ -7609,7 +7609,7 @@
     },
     {
         "prefix": "(^|[^\\\\])mvb  ",
-        "body": "$1{\\mathversion{bold} \\$ \\$1$}",
+        "body": "$1{\\mathversion{bold} $ $ 1$}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "{\\mathversion{bold} $ $1$}",
@@ -7617,7 +7617,7 @@
     },
     {
         "prefix": "(^|[^\\\\])mtt  ",
-        "body": "$1\\mathtt{$$\u0001}",
+        "body": "$1\\mathtt{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mathtt{}",
@@ -7633,7 +7633,7 @@
     },
     {
         "prefix": "(^|[^\\\\])msf  ",
-        "body": "$1\\mathsf{$$\u0001}",
+        "body": "$1\\mathsf{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mathsf{}",
@@ -7641,7 +7641,7 @@
     },
     {
         "prefix": "(^|[^\\\\])mrm  ",
-        "body": "$1\\mathrm{$$\u0001}",
+        "body": "$1\\mathrm{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mathrm{}",
@@ -7657,7 +7657,7 @@
     },
     {
         "prefix": "(^|[^\\\\])mit  ",
-        "body": "$1\\mathit{$$\u0001}",
+        "body": "$1\\mathit{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mathit{}",
@@ -7681,7 +7681,7 @@
     },
     {
         "prefix": "(^|[^\\\\])mbx  ",
-        "body": "$1\\mbox{$$\u0001}",
+        "body": "$1\\mbox{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\mbox{}",
@@ -7689,7 +7689,7 @@
     },
     {
         "prefix": "(^|[^\\\\])mbf  ",
-        "body": "$1\\mathbf{$$\u0001}",
+        "body": "$1\\mathbf{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mathbf{}",
@@ -7921,7 +7921,7 @@
     },
     {
         "prefix": "(^|[^\\\\])lin  ",
-        "body": "$1\\line{$$\u0001}",
+        "body": "$1\\line{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\line{}",
@@ -8201,7 +8201,7 @@
     },
     {
         "prefix": "(^|[^\\\\])lbl  ",
-        "body": "$1\\label{$$\u0001}",
+        "body": "$1\\label{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\label{}",
@@ -8273,7 +8273,7 @@
     },
     {
         "prefix": "(^|[^\\\\])igr  ",
-        "body": "$1\\includegraphics{$$\u0001}",
+        "body": "$1\\includegraphics{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\includegraphics{}",
@@ -8281,7 +8281,7 @@
     },
     {
         "prefix": "(^|[^\\\\])iqe  ",
-        "body": "$1\\( $$\u0001 \\)",
+        "body": "$1\\( $$1 \\)",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\(  \\)",
@@ -8289,7 +8289,7 @@
     },
     {
         "prefix": "(^|[^\\\\])idx  ",
-        "body": "$1\\index{$$\u0001}",
+        "body": "$1\\index{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\index{}",
@@ -8473,7 +8473,7 @@
     },
     {
         "prefix": "(^|[^\\\\])hup  ",
-        "body": "$1^{$$\u0001}",
+        "body": "$1^{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "^{}",
@@ -8489,7 +8489,7 @@
     },
     {
         "prefix": "(^|[^\\\\])hsp  ",
-        "body": "$1\\hspace{$$\u0001}",
+        "body": "$1\\hspace{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\hspace{}",
@@ -8809,7 +8809,7 @@
     },
     {
         "prefix": "(^|[^\\\\])gmu  ",
-        "body": "$1\\mathfrak{$$\u0001}",
+        "body": "$1\\mathfrak{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mathfrak{}",
@@ -8881,7 +8881,7 @@
     },
     {
         "prefix": "(^|[^\\\\])ftn  ",
-        "body": "$1\\footnote{$$\u0001}",
+        "body": "$1\\footnote{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\footnote{}",
@@ -9009,7 +9009,7 @@
     },
     {
         "prefix": "(^|[^\\\\])emu  ",
-        "body": "$1\\emph{$$\u0001}",
+        "body": "$1\\emph{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\emph{}",
@@ -9129,7 +9129,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxz  ",
-        "body": "$1\\$\\zeta\\$",
+        "body": "$1$\\zeta$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\zeta$",
@@ -9137,7 +9137,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxx  ",
-        "body": "$1\\$\\xi\\$",
+        "body": "$1$\\xi$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\xi$",
@@ -9145,7 +9145,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxu  ",
-        "body": "$1\\$\\upsilon\\$",
+        "body": "$1$\\upsilon$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\upsilon$",
@@ -9153,7 +9153,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxt  ",
-        "body": "$1\\$\\tau\\$",
+        "body": "$1$\\tau$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\tau$",
@@ -9161,7 +9161,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxs  ",
-        "body": "$1\\$\\sigma\\$",
+        "body": "$1$\\sigma$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\sigma$",
@@ -9169,7 +9169,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxr  ",
-        "body": "$1\\$\\rho\\$",
+        "body": "$1$\\rho$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\rho$",
@@ -9177,7 +9177,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxp  ",
-        "body": "$1\\$\\pi\\$",
+        "body": "$1$\\pi$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\pi$",
@@ -9185,7 +9185,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxo  ",
-        "body": "$1\\$\\omega\\$",
+        "body": "$1$\\omega$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\omega$",
@@ -9193,7 +9193,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxn  ",
-        "body": "$1\\$\\nu\\$",
+        "body": "$1$\\nu$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\nu$",
@@ -9201,7 +9201,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxm  ",
-        "body": "$1\\$\\mu\\$",
+        "body": "$1$\\mu$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mu$",
@@ -9209,7 +9209,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxl  ",
-        "body": "$1\\$\\lambda\\$",
+        "body": "$1$\\lambda$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\lambda$",
@@ -9217,7 +9217,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxk  ",
-        "body": "$1\\$\\kappa\\$",
+        "body": "$1$\\kappa$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\kappa$",
@@ -9225,7 +9225,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxg  ",
-        "body": "$1\\$\\gamma\\$",
+        "body": "$1$\\gamma$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\gamma$",
@@ -9233,7 +9233,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxe  ",
-        "body": "$1\\$\\epsilon\\$",
+        "body": "$1$\\epsilon$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\epsilon$",
@@ -9241,7 +9241,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxd  ",
-        "body": "$1\\$\\delta\\$",
+        "body": "$1$\\delta$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\delta$",
@@ -9249,7 +9249,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxc  ",
-        "body": "$1\\$\\chi\\$",
+        "body": "$1$\\chi$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\chi$",
@@ -9257,7 +9257,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxb  ",
-        "body": "$1\\$\\beta\\$",
+        "body": "$1$\\beta$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\beta$",
@@ -9265,7 +9265,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dxa  ",
-        "body": "$1\\$\\alpha\\$",
+        "body": "$1$\\alpha$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\alpha$",
@@ -9297,7 +9297,7 @@
     },
     {
         "prefix": "(^|[^\\\\])doo  ",
-        "body": "$1\\$o\\$",
+        "body": "$1$o$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$o$",
@@ -9313,7 +9313,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dlr  ",
-        "body": "$1\\$\\$",
+        "body": "$1$$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$$",
@@ -9329,7 +9329,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcz  ",
-        "body": "$1\\$Z\\$",
+        "body": "$1$Z$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$Z$",
@@ -9337,7 +9337,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcy  ",
-        "body": "$1\\$Y\\$",
+        "body": "$1$Y$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$Y$",
@@ -9345,7 +9345,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcx  ",
-        "body": "$1\\$X\\$",
+        "body": "$1$X$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$X$",
@@ -9353,7 +9353,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcw  ",
-        "body": "$1\\$W\\$",
+        "body": "$1$W$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$W$",
@@ -9361,7 +9361,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcv  ",
-        "body": "$1\\$V\\$",
+        "body": "$1$V$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$V$",
@@ -9369,7 +9369,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcu  ",
-        "body": "$1\\$U\\$",
+        "body": "$1$U$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$U$",
@@ -9377,7 +9377,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dct  ",
-        "body": "$1\\$T\\$",
+        "body": "$1$T$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$T$",
@@ -9385,7 +9385,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcs  ",
-        "body": "$1\\$S\\$",
+        "body": "$1$S$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$S$",
@@ -9393,7 +9393,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcr  ",
-        "body": "$1\\$R\\$",
+        "body": "$1$R$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$R$",
@@ -9401,7 +9401,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcq  ",
-        "body": "$1\\$Q\\$",
+        "body": "$1$Q$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$Q$",
@@ -9409,7 +9409,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcp  ",
-        "body": "$1\\$P\\$",
+        "body": "$1$P$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$P$",
@@ -9417,7 +9417,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dco  ",
-        "body": "$1\\$O\\$",
+        "body": "$1$O$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$O$",
@@ -9425,7 +9425,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcn  ",
-        "body": "$1\\$N\\$",
+        "body": "$1$N$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$N$",
@@ -9433,7 +9433,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcm  ",
-        "body": "$1\\$M\\$",
+        "body": "$1$M$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$M$",
@@ -9441,7 +9441,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcl  ",
-        "body": "$1\\$L\\$",
+        "body": "$1$L$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$L$",
@@ -9449,7 +9449,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dck  ",
-        "body": "$1\\$K\\$",
+        "body": "$1$K$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$K$",
@@ -9457,7 +9457,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcj  ",
-        "body": "$1\\$J\\$",
+        "body": "$1$J$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$J$",
@@ -9465,7 +9465,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dci  ",
-        "body": "$1\\$I\\$",
+        "body": "$1$I$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$I$",
@@ -9473,7 +9473,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dch  ",
-        "body": "$1\\$H\\$",
+        "body": "$1$H$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$H$",
@@ -9481,7 +9481,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcg  ",
-        "body": "$1\\$G\\$",
+        "body": "$1$G$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$G$",
@@ -9489,7 +9489,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcf  ",
-        "body": "$1\\$F\\$",
+        "body": "$1$F$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$F$",
@@ -9497,7 +9497,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dce  ",
-        "body": "$1\\$E\\$",
+        "body": "$1$E$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$E$",
@@ -9505,7 +9505,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcd  ",
-        "body": "$1\\$D\\$",
+        "body": "$1$D$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$D$",
@@ -9513,7 +9513,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcc  ",
-        "body": "$1\\$C\\$",
+        "body": "$1$C$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$C$",
@@ -9521,7 +9521,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dcb  ",
-        "body": "$1\\$B\\$",
+        "body": "$1$B$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$B$",
@@ -9529,7 +9529,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dca  ",
-        "body": "$1\\$A\\$",
+        "body": "$1$A$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$A$",
@@ -9537,7 +9537,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbz  ",
-        "body": "$1\\$\\mathbf{z}\\$",
+        "body": "$1$\\mathbf{z}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{z}$",
@@ -9545,7 +9545,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dby  ",
-        "body": "$1\\$\\mathbf{y}\\$",
+        "body": "$1$\\mathbf{y}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{y}$",
@@ -9553,7 +9553,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbx  ",
-        "body": "$1\\$\\mathbf{x}\\$",
+        "body": "$1$\\mathbf{x}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{x}$",
@@ -9561,7 +9561,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbw  ",
-        "body": "$1\\$\\mathbf{w}\\$",
+        "body": "$1$\\mathbf{w}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{w}$",
@@ -9569,7 +9569,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbv  ",
-        "body": "$1\\$\\mathbf{v}\\$",
+        "body": "$1$\\mathbf{v}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{v}$",
@@ -9577,7 +9577,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbu  ",
-        "body": "$1\\$\\mathbf{u}\\$",
+        "body": "$1$\\mathbf{u}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{u}$",
@@ -9585,7 +9585,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbt  ",
-        "body": "$1\\$\\mathbf{t}\\$",
+        "body": "$1$\\mathbf{t}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{t}$",
@@ -9593,7 +9593,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbs  ",
-        "body": "$1\\$\\mathbf{s}\\$",
+        "body": "$1$\\mathbf{s}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{s}$",
@@ -9601,7 +9601,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbr  ",
-        "body": "$1\\$\\mathbf{r}\\$",
+        "body": "$1$\\mathbf{r}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{r}$",
@@ -9609,7 +9609,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbq  ",
-        "body": "$1\\$\\mathbf{q}\\$",
+        "body": "$1$\\mathbf{q}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{q}$",
@@ -9617,7 +9617,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbp  ",
-        "body": "$1\\$\\mathbf{p}\\$",
+        "body": "$1$\\mathbf{p}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{p}$",
@@ -9625,7 +9625,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbo  ",
-        "body": "$1\\$\\mathbf{o}\\$",
+        "body": "$1$\\mathbf{o}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{o}$",
@@ -9633,7 +9633,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbn  ",
-        "body": "$1\\$\\mathbf{n}\\$",
+        "body": "$1$\\mathbf{n}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{n}$",
@@ -9641,7 +9641,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbm  ",
-        "body": "$1\\$\\mathbf{m}\\$",
+        "body": "$1$\\mathbf{m}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{m}$",
@@ -9649,7 +9649,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbl  ",
-        "body": "$1\\$\\mathbf{l}\\$",
+        "body": "$1$\\mathbf{l}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{l}$",
@@ -9657,7 +9657,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbk  ",
-        "body": "$1\\$\\mathbf{k}\\$",
+        "body": "$1$\\mathbf{k}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{k}$",
@@ -9665,7 +9665,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbj  ",
-        "body": "$1\\$\\mathbf{j}\\$",
+        "body": "$1$\\mathbf{j}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{j}$",
@@ -9673,7 +9673,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbi  ",
-        "body": "$1\\$\\mathbf{i}\\$",
+        "body": "$1$\\mathbf{i}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{i}$",
@@ -9681,7 +9681,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbh  ",
-        "body": "$1\\$\\mathbf{h}\\$",
+        "body": "$1$\\mathbf{h}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{h}$",
@@ -9689,7 +9689,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbg  ",
-        "body": "$1\\$\\mathbf{g}\\$",
+        "body": "$1$\\mathbf{g}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{g}$",
@@ -9697,7 +9697,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbf  ",
-        "body": "$1\\$\\mathbf{f}\\$",
+        "body": "$1$\\mathbf{f}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{f}$",
@@ -9705,7 +9705,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbe  ",
-        "body": "$1\\$\\mathbf{e}\\$",
+        "body": "$1$\\mathbf{e}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{e}$",
@@ -9713,7 +9713,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbd  ",
-        "body": "$1\\$\\mathbf{d}\\$",
+        "body": "$1$\\mathbf{d}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{d}$",
@@ -9721,7 +9721,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbc  ",
-        "body": "$1\\$\\mathbf{c}\\$",
+        "body": "$1$\\mathbf{c}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{c}$",
@@ -9729,7 +9729,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dbb  ",
-        "body": "$1\\$\\mathbf{b}\\$",
+        "body": "$1$\\mathbf{b}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{b}$",
@@ -9737,7 +9737,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dba  ",
-        "body": "$1\\$\\mathbf{a}\\$",
+        "body": "$1$\\mathbf{a}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{a}$",
@@ -9745,7 +9745,7 @@
     },
     {
         "prefix": "(^|[^\\\\])db9  ",
-        "body": "$1\\$\\mathbf{9}\\$",
+        "body": "$1$\\mathbf{9}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{9}$",
@@ -9753,7 +9753,7 @@
     },
     {
         "prefix": "(^|[^\\\\])db8  ",
-        "body": "$1\\$\\mathbf{8}\\$",
+        "body": "$1$\\mathbf{8}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{8}$",
@@ -9761,7 +9761,7 @@
     },
     {
         "prefix": "(^|[^\\\\])db7  ",
-        "body": "$1\\$\\mathbf{7}\\$",
+        "body": "$1$\\mathbf{7}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{7}$",
@@ -9769,7 +9769,7 @@
     },
     {
         "prefix": "(^|[^\\\\])db6  ",
-        "body": "$1\\$\\mathbf{6}\\$",
+        "body": "$1$\\mathbf{6}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{6}$",
@@ -9777,7 +9777,7 @@
     },
     {
         "prefix": "(^|[^\\\\])db5  ",
-        "body": "$1\\$\\mathbf{5}\\$",
+        "body": "$1$\\mathbf{5}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{5}$",
@@ -9785,7 +9785,7 @@
     },
     {
         "prefix": "(^|[^\\\\])db4  ",
-        "body": "$1\\$\\mathbf{4}\\$",
+        "body": "$1$\\mathbf{4}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{4}$",
@@ -9793,7 +9793,7 @@
     },
     {
         "prefix": "(^|[^\\\\])db3  ",
-        "body": "$1\\$\\mathbf{3}\\$",
+        "body": "$1$\\mathbf{3}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{3}$",
@@ -9801,7 +9801,7 @@
     },
     {
         "prefix": "(^|[^\\\\])db2  ",
-        "body": "$1\\$\\mathbf{2}\\$",
+        "body": "$1$\\mathbf{2}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{2}$",
@@ -9809,7 +9809,7 @@
     },
     {
         "prefix": "(^|[^\\\\])db1  ",
-        "body": "$1\\$\\mathbf{1}\\$",
+        "body": "$1$\\mathbf{1}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{1}$",
@@ -9817,7 +9817,7 @@
     },
     {
         "prefix": "(^|[^\\\\])db0  ",
-        "body": "$1\\$\\mathbf{0}\\$",
+        "body": "$1$\\mathbf{0}$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$\\mathbf{0}$",
@@ -9825,7 +9825,7 @@
     },
     {
         "prefix": "(^|[^\\\\])d10  ",
-        "body": "$1\\$10\\$",
+        "body": "$1$ 10$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$10$",
@@ -9833,7 +9833,7 @@
     },
     {
         "prefix": "(^|[^\\\\])d0p  ",
-        "body": "$1\\$(0)\\$",
+        "body": "$1$(0)$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$(0)$",
@@ -10161,7 +10161,7 @@
     },
     {
         "prefix": "(^|[^\\\\])cau  ",
-        "body": "$1\\mathcal{$$\u0001}",
+        "body": "$1\\mathcal{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mathcal{}",
@@ -10193,7 +10193,7 @@
     },
     {
         "prefix": "(^|[^\\\\])bsy  ",
-        "body": "$1\\boldsymbol{$$\u0001}",
+        "body": "$1\\boldsymbol{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\boldsymbol{}",
@@ -10249,7 +10249,7 @@
     },
     {
         "prefix": "(^|[^\\\\])bfu  ",
-        "body": "$1\\textbf{$$\u0001}",
+        "body": "$1\\textbf{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\textbf{}",
@@ -10537,7 +10537,7 @@
     },
     {
         "prefix": "(^|[^\\\\])bbu  ",
-        "body": "$1\\mathbb{$$\u0001}",
+        "body": "$1\\mathbb{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mathbb{}",
@@ -10889,7 +10889,7 @@
     },
     {
         "prefix": "(^|[^\\\\])tg  ",
-        "body": "$1\\tag{$$\u0001}",
+        "body": "$1\\tag{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\tag{}",
@@ -10929,7 +10929,7 @@
     },
     {
         "prefix": "(^|[^\\\\])sn  ",
-        "body": "$1\\section{$$\u0001}",
+        "body": "$1\\section{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\section{}",
@@ -11953,7 +11953,7 @@
     },
     {
         "prefix": "(^|[^\\\\])f2  ",
-        "body": "$1\\frac{$$\u0001}{2}",
+        "body": "$1\\frac{$$1}{2}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\frac{}{2}",
@@ -12009,7 +12009,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dz  ",
-        "body": "$1\\$z\\$",
+        "body": "$1$z$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$z$",
@@ -12017,7 +12017,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dy  ",
-        "body": "$1\\$y\\$",
+        "body": "$1$y$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$y$",
@@ -12025,7 +12025,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dx  ",
-        "body": "$1\\$x\\$",
+        "body": "$1$x$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$x$",
@@ -12033,7 +12033,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dw  ",
-        "body": "$1\\$w\\$",
+        "body": "$1$w$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$w$",
@@ -12041,7 +12041,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dv  ",
-        "body": "$1\\$v\\$",
+        "body": "$1$v$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$v$",
@@ -12049,7 +12049,7 @@
     },
     {
         "prefix": "(^|[^\\\\])du  ",
-        "body": "$1\\$u\\$",
+        "body": "$1$u$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$u$",
@@ -12057,7 +12057,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dt  ",
-        "body": "$1\\$t\\$",
+        "body": "$1$t$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$t$",
@@ -12065,7 +12065,7 @@
     },
     {
         "prefix": "(^|[^\\\\])ds  ",
-        "body": "$1\\$s\\$",
+        "body": "$1$s$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$s$",
@@ -12073,7 +12073,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dr  ",
-        "body": "$1\\$r\\$",
+        "body": "$1$r$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$r$",
@@ -12081,7 +12081,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dq  ",
-        "body": "$1\\$q\\$",
+        "body": "$1$q$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$q$",
@@ -12089,7 +12089,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dp  ",
-        "body": "$1\\$p\\$",
+        "body": "$1$p$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$p$",
@@ -12097,7 +12097,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dn  ",
-        "body": "$1\\$n\\$",
+        "body": "$1$n$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$n$",
@@ -12105,7 +12105,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dm  ",
-        "body": "$1\\$m\\$",
+        "body": "$1$m$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$m$",
@@ -12113,7 +12113,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dl  ",
-        "body": "$1\\$l\\$",
+        "body": "$1$l$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$l$",
@@ -12121,7 +12121,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dk  ",
-        "body": "$1\\$k\\$",
+        "body": "$1$k$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$k$",
@@ -12129,7 +12129,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dj  ",
-        "body": "$1\\$j\\$",
+        "body": "$1$j$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$j$",
@@ -12137,7 +12137,7 @@
     },
     {
         "prefix": "(^|[^\\\\])di  ",
-        "body": "$1\\$i\\$",
+        "body": "$1$i$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$i$",
@@ -12145,7 +12145,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dh  ",
-        "body": "$1\\$h\\$",
+        "body": "$1$h$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$h$",
@@ -12153,7 +12153,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dg  ",
-        "body": "$1\\$g\\$",
+        "body": "$1$g$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$g$",
@@ -12161,7 +12161,7 @@
     },
     {
         "prefix": "(^|[^\\\\])df  ",
-        "body": "$1\\$f\\$",
+        "body": "$1$f$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$f$",
@@ -12169,7 +12169,7 @@
     },
     {
         "prefix": "(^|[^\\\\])de  ",
-        "body": "$1\\$e\\$",
+        "body": "$1$e$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$e$",
@@ -12177,7 +12177,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dd  ",
-        "body": "$1\\$d\\$",
+        "body": "$1$d$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$d$",
@@ -12185,7 +12185,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dc  ",
-        "body": "$1\\$c\\$",
+        "body": "$1$c$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$c$",
@@ -12193,7 +12193,7 @@
     },
     {
         "prefix": "(^|[^\\\\])db  ",
-        "body": "$1\\$b\\$",
+        "body": "$1$b$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$b$",
@@ -12201,7 +12201,7 @@
     },
     {
         "prefix": "(^|[^\\\\])da  ",
-        "body": "$1\\$a\\$",
+        "body": "$1$a$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$a$",
@@ -12209,7 +12209,7 @@
     },
     {
         "prefix": "(^|[^\\\\])d9  ",
-        "body": "$1\\$9\\$",
+        "body": "$1$9$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$9$",
@@ -12217,7 +12217,7 @@
     },
     {
         "prefix": "(^|[^\\\\])d8  ",
-        "body": "$1\\$8\\$",
+        "body": "$1$8$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$8$",
@@ -12225,7 +12225,7 @@
     },
     {
         "prefix": "(^|[^\\\\])d7  ",
-        "body": "$1\\$7\\$",
+        "body": "$1$7$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$7$",
@@ -12233,7 +12233,7 @@
     },
     {
         "prefix": "(^|[^\\\\])d6  ",
-        "body": "$1\\$6\\$",
+        "body": "$1$6$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$6$",
@@ -12241,7 +12241,7 @@
     },
     {
         "prefix": "(^|[^\\\\])d5  ",
-        "body": "$1\\$5\\$",
+        "body": "$1$5$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$5$",
@@ -12249,7 +12249,7 @@
     },
     {
         "prefix": "(^|[^\\\\])d4  ",
-        "body": "$1\\$4\\$",
+        "body": "$1$4$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$4$",
@@ -12257,7 +12257,7 @@
     },
     {
         "prefix": "(^|[^\\\\])d3  ",
-        "body": "$1\\$3\\$",
+        "body": "$1$3$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$3$",
@@ -12265,7 +12265,7 @@
     },
     {
         "prefix": "(^|[^\\\\])d2  ",
-        "body": "$1\\$2\\$",
+        "body": "$1$2$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$2$",
@@ -12273,7 +12273,7 @@
     },
     {
         "prefix": "(^|[^\\\\])d1  ",
-        "body": "$1\\$1\\$",
+        "body": "$1$ 1$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$1$",
@@ -12281,7 +12281,7 @@
     },
     {
         "prefix": "(^|[^\\\\])d0  ",
-        "body": "$1\\$0\\$",
+        "body": "$1$0$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$0$",
@@ -12305,7 +12305,7 @@
     },
     {
         "prefix": "(^|[^\\\\])cl  ",
-        "body": "$1\\centerline{$$\u0001}",
+        "body": "$1\\centerline{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\centerline{}",
@@ -12617,7 +12617,7 @@
     },
     {
         "prefix": "(^|[^\\\\])d  ",
-        "body": "$1\\$",
+        "body": "$1$",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "$",

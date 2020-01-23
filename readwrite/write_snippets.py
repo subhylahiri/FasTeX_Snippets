@@ -282,7 +282,10 @@ def _help_body_live(body: str, endtab: bool = True, maxtab: int = 0) -> str:
     """
     if not endtab or maxtab:
         body = re.sub(fr'[^\\]\${maxtab}', '$0', body)
-    return TAB_STOP.sub('$$\1', body)
+    body = TAB_STOP.sub('$$\\1', body)
+    body = body.replace('\\$1', '$ 1')
+    body = body.replace('\\$', '$')
+    return body
 
 
 def convert_body_live(body: Body, endtab: bool = True, maxtab: int = 0) -> Body:
