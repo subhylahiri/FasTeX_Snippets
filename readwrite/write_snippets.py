@@ -19,6 +19,10 @@ make_snippet_json
 import re
 import json
 from typing import Union, List, Dict, Optional
+if __name__ == "__main__":
+    import cson
+else:
+    from . import cson
 
 Body = Union[str, List[str]]
 Snippet = Dict[str, Body]
@@ -452,12 +456,29 @@ def make_snippet_json(snippets: Union[Snippet, SnippetDict, None] = None,
             json.dump(live_snippets, file, indent=4)
 
 
+def make_snippet_cson(snippets: Optional[SnippetDict] = None,
+                      snip_file: str = 'language-latex.cson'):
+    """Write snippets in the chosen format to .json files.
+
+    Parameters
+    ----------
+    snippets : Dict[str, Dict[str, Snippet]]
+        Dict of dict of snippet objects: dict with prefix, body.
+        `Snippet =  = Dict[str, str] or Dict[str, List[str]]`.
+    snip_file : str, optional, default: language-latex.cson
+        Name of file for normal snippets.
+    """
+    if snippets is not None:
+        with open(snip_file, 'w') as file:
+            cson.dump(snippets, file, indent=4)
+
+
 if __name__ == "__main__":
     snippet_data = read_data_json('data/data.json')
     snips = convert_vscode(snippet_data, prefix=';')
     make_snippet_json(snips)
     snips = convert_atom(snippet_data, prefix=';')
-    make_snippet_json(snips, 'snippets.json')
+    make_snippet_cson(snips)
     live_snips = convert_live(snippet_data, suffix='  ')
     make_snippet_json(live_snippets=live_snips)
     # live_snips, snips = convert_split(snippet_data, suffix='  ', prefix_m=';')
