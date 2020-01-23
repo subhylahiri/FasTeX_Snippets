@@ -9,9 +9,9 @@ process_ini
 write_data_json
     Write imported snippet data to .json file.
 """
-import io
 import re
 import json
+from io import TextIOBase
 from typing import Union, List, Dict, Sequence
 
 Body = Union[str, List[str]]
@@ -200,7 +200,7 @@ def get_template(dat_text: List[str], trigger: str) -> List[str]:
     return [escape_body(x[:-1]) for x in dat_text[start:stop]]
 
 
-def next_ini_line(file: io.TextIOBase, check: re.Pattern) -> re.Match:
+def next_ini_line(file: TextIOBase, check: re.Pattern) -> re.Match:
     """Read next line in .ini file and check match.
 
     Parameters
@@ -222,7 +222,7 @@ def next_ini_line(file: io.TextIOBase, check: re.Pattern) -> re.Match:
     return match
 
 
-def get_ini_trigger(file: io.TextIOBase) -> str:
+def get_ini_trigger(file: TextIOBase) -> str:
     """Get trigger for next snippet
 
     Parameters
@@ -242,7 +242,7 @@ def get_ini_trigger(file: io.TextIOBase) -> str:
     return trigger
 
 
-def get_ini_macro(file: io.TextIOBase) -> str:
+def get_ini_macro(file: TextIOBase) -> str:
     """Get macro for current snippet
 
     Parameters
@@ -350,7 +350,7 @@ def get_macro_insert(macro: str) -> str:
     return body[:-2] + "$2" + body[-1:]
 
 
-def next_ini_entry(file: io.TextIOBase,
+def next_ini_entry(file: TextIOBase,
                    dat_text: List[str]) -> Snippet:
     """Read next entry in .ini file
 

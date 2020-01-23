@@ -1,4 +1,20 @@
 """Write snippets in the relevant form for vscode/latex-utilities/atom
+
+Functions
+---------
+read_data_json
+    Import FasTeX snippet data in internal format.
+convert_vscode
+    Convert snippet data to VS Code snippet format.
+convert_atom
+    Convert snippet data to Atom snippet format.
+convert_live
+    Convert snippet data to VS Code LaTeX-Utilities live snippet format.
+convert_vscode
+    Convert multiline snippet data to VS Code snippet format
+    and single-line snippet data to LaTeX-Utilities live snippet format.
+make_snippet_json
+    Write snippet data to a `.json` file.
 """
 import re
 import json
@@ -194,6 +210,8 @@ def _help_body_live(body: str, endtab: bool = True, maxtab: int = 0) -> str:
         Line of body of snippet with tabstops: `if endtab:` `$$1`,...,`$$n`,
         `else:` `$$1`,...,`$$n-1`,`$0`.
     """
+    if not endtab or maxtab:
+        body = re.sub(fr'[^\\]\${maxtab}', '$0', body)
     return TAB_STOP.sub('$$\1', body)
 
 
@@ -407,7 +425,7 @@ def read_data_json(file_name: str):
     return snippets
 
 
-def make_snippet_json(snippets: Optional[Union[Snippet, SnippetDict]] = None,
+def make_snippet_json(snippets: Union[Snippet, SnippetDict, None] = None,
                       snip_file: str = 'latex.json',
                       live_snippets: Optional[List[Snippet]] = None,
                       live_file: str = 'liveSnippets.json'):
@@ -415,8 +433,6 @@ def make_snippet_json(snippets: Optional[Union[Snippet, SnippetDict]] = None,
 
     Parameters
     ----------
-    out_path : str
-        Path to folder where `.json` file(s) will be written.
     snippets : Dict[str, Snippet] or Dict[str, Dict[str, Snippet]]
         Dict of (dict of) snippet objects: dict with prefix, body, description.
         `Snippet =  = Dict[str, str] or Dict[str, List[str]]`.
