@@ -432,7 +432,11 @@ def write_data_json(file_name: str, snippets: List[Snippet]):
         json.dump(snippets, file, indent=4)
 
 
-if __name__ == "__main__":
+def _main():
     snips = process_ini('data/ActiveStrings-FasTeX.ini',
                         'data/FasTeX_Templates.edt.dat')
     write_data_json('data/data.json', snips)
+
+
+if __name__ == "__main__":
+    _main()

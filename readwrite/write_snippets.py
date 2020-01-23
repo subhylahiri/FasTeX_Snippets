@@ -473,7 +473,7 @@ def make_snippet_cson(snippets: Optional[SnippetDict] = None,
             cson.dump(snippets, file, indent=4)
 
 
-if __name__ == "__main__":
+def _main():
     snippet_data = read_data_json('data/data.json')
     snips = convert_vscode(snippet_data, prefix=';')
     make_snippet_json(snips)
@@ -483,3 +483,7 @@ if __name__ == "__main__":
     make_snippet_json(live_snippets=live_snips)
     # live_snips, snips = convert_split(snippet_data, suffix='  ', prefix_m=';')
     # make_snippet_json(snips, live_snippets=live_snips)
+
+
+if __name__ == "__main__":
+    _main()

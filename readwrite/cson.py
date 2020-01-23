@@ -30,7 +30,7 @@ def write_strings(file: TextIOBase, text: str, level: int = 0, indent: int = 4):
 
 def write_str(file: TextIOBase, text: str, level: int = 0, indent: int = 4):
     """Write a string to a CSON file.
- 
+
     Parameters
     ----------
     file : io.TextIO
