@@ -17,13 +17,13 @@ The shortcuts are fairly systematic: prefix `x` for greek,
 `c` for upper-case, `d` for in dollars,
 `h` for superscript, `l` for subscript (high & low), 
 `o` for in parentheses, `f` for fraction,...
+(the order of the prefixes matters).  
 suffix `a` for `a`/`alpha`,..., `u` for unfinished/universal, `mo` for `-1`,...  
 so `dxcd` → `$\Delta$` | 
 `hct` → `^T` |
 `hmo` → `^{-1}` |
+(tox` → `(x)`,...  
 `lij` → `_{ij}` |
-`ox` → `(x)`,...  
-The prefixes can only appear in one order.  
 Have a look at the documentation linked to above for more information 
 although they have been modernised since.
 

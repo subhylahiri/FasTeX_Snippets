@@ -609,6 +609,12 @@
         "description": "\\textit{}"
     },
     {
+        "prefix": "txtbfu",
+        "body": "\\textbf{$1}",
+        "mode": "text",
+        "description": "\\textbf{}"
+    },
+    {
         "prefix": "thmsty",
         "body": [
             "\\theoremstyle{plain} %--default",
@@ -1271,6 +1277,12 @@
         "body": "\\textit{$1}",
         "mode": "text",
         "description": "\\textit{}"
+    },
+    {
+        "prefix": "txtbf",
+        "body": "\\textbf{$1}",
+        "mode": "text",
+        "description": "\\textbf{}"
     },
     {
         "prefix": "triap",
@@ -5933,9 +5945,9 @@
     },
     {
         "prefix": "rmu",
-        "body": "\\mathrm{$1}",
+        "body": "{\\rm ",
         "mode": "maths",
-        "description": "\\mathrm{}"
+        "description": "{\\rm"
     },
     {
         "prefix": "rle",

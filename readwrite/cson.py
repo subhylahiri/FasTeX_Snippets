@@ -78,7 +78,8 @@ class CSONWriter():
         thing : dict
             Dictionary to write to `self.file`.
         """
-        self._write('\n')
+        if self.level >= 0:
+            self._write('\n')
         self.level += 1
         for key, value in thing.items():
             self._indent()
@@ -167,6 +168,9 @@ def dump(obj: Any, file: TextIOBase, indent: int = 4, level: int = 0):
         Text file object for snippet `.cson` file.
     indent : int, optional, default = 4
         Number of spaces per indent level.
+    level : int, optional, default = 0
+        Indent level of `obj`. If `obj` is a `dict` choose `-1` if you want its
+        entries to have 0 indent.
     """
     cson_file = CSONWriter(file, indent, level)
     cson_file.write_any(obj)

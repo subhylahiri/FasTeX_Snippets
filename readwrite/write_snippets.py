@@ -35,7 +35,27 @@ DOUBLE_DOLLAR = re.compile(r'\\\$(.*)\\\$')
 
 
 def modern_live(snippet: Snippet) -> (Snippet, Snippet):
-    """Replace old style TeX with modern LaTeX
+    """Replace old style TeX with modern LaTeX.
+
+    Replaces snippet with `body = "{\\?? "`, `mode = "any"` with
+    `body = "\\text??{$1}"`, `mode = "text"` and
+    `body = "\\math??{$1}"`, `mode = "maths"`
+
+    Parameters
+    ----------
+    snippet : Snippet = Dict[str, Union[str, List[str]]]
+        Snippet to modify *in place*.
+
+    Returns
+    -------
+    snippet : Snippet
+        Unmodified input.
+    OR
+
+    txt_snippet : Snippet
+        Text mode version of snippet.
+    mth_snippet : Snippet
+        Maths mode version of snippet.
     """
     if not (isinstance(snippet['body'], str) or snippet['mode'] == "any"):
         return snippet
@@ -54,6 +74,11 @@ def modern_live(snippet: Snippet) -> (Snippet, Snippet):
 
 def un_dollar(snippet: Snippet):
     """Replace $...$ with \\(...\\)
+
+    Parameters
+    ----------
+    snippet : Snippet = Dict[str, Union[str, List[str]]]
+        Snippet to modify *in place*.
     """
     body = snippet['body']
     if isinstance(body, list) or DOUBLE_DOLLAR.search(body) is None:
@@ -66,7 +91,27 @@ def choose(snippet: Snippet,
            body: Sequence[re.Pattern] = (),
            multiline: bool = True,
            singleline: bool = True) -> bool:
-    """Filter the list of snippets
+    """Filter the list of snippets.
+
+    Parameters
+    ----------
+    snippet : Snippet = Dict[str, Union[str, List[str]]]
+        The candidate snippet.
+    prefix : Sequence[re.Pattern], optional, default = ()
+        Regex patterns to test `snippet['prefix']` against, using `re.match`.
+        Excludes `snippet` if *any* of them match.
+    body : Sequence[re.Pattern], optional, default = ()
+        Regex patterns to test `snippet['body']` against, using `re.search`.
+        Excludes `snippet` if *any* of them match.
+    multiline : bool, optional, default = True
+        Include snippets with multi-line bodies?
+    singleline : bool, optional, default = True
+        Include snippets with single-line bodies?
+
+    Returns
+    -------
+    choice : bool
+        Include this snippet?
     """
     the_body = snippet['body']
     multi = isinstance(the_body, list)
@@ -78,7 +123,7 @@ def choose(snippet: Snippet,
         return False
     if (not multi) and any(rule.search(the_body) for rule in body):
         return False
-    return any(rule.search(line) for rule in body for line in the_body)
+    return not any(rule.search(line) for rule in body for line in the_body)
 
 
 def count_tabs(body: Body) -> int:
@@ -285,7 +330,7 @@ def convert_atom(snippets: List[Snippet], prefix: str = '', suffix: str = '',
     atom_snippets = {}
     for snip in snippets:
         new_snip = convert_snippet_atom(snip, prefix, suffix, endtab)
-        atom_snippets[_help_body_atom(snip['description'])] = new_snip
+        atom_snippets[snip['prefix']] = new_snip
     return {'.text.tex.latex': atom_snippets}
 
 
@@ -426,48 +471,6 @@ def convert_live(snippets: List[Snippet],
     return live_snippets
 
 
-def convert_split(snippets: List[Snippet],
-                  prefix: str = '', suffix: str = '', endtab: bool = True,
-                  prefix_m: str = '', suffix_m: str = '', endtab_m: bool = True
-                  ) -> (List[Snippet], SnippetDict):
-    """Convert list of snippets from internal to live/VSCode format.
-
-    single/multi-line snippets -> live/VSCode format.
-
-    Parameters
-    ----------
-    snippets : List[Snippet]
-        List of snippet objects: dict with prefix, body, mode, description.
-        `Snippet =  = Dict[str, str] or Dict[str, List[str]]`.
-    prefix : str
-        String to prepend to every snippet trigger.
-    suffix : str
-        String to append to every snippet trigger.
-    endtab : bool, optional, default: False
-        Do we want a tabstop at the end?
-    prefix_m, suffix_m, endtab_m
-        Versions of `prefix`, `suffix`, `endtab` for multiline snippets.
-
-    Returns
-    -------
-    live_snippets : List[Snippet]
-        List of single-line snippet objects: dicts with prefix, body, mode,
-        triggerWhenComplete, description, priority.
-    vsc_snippets : Dict[str, Snippet]
-        Dict of multi-line snippets: dicts with prefix, body, description.
-    """
-    vsc_snippets = {}
-    live_snippets = []
-    for snip in snippets:
-        if isinstance(snip['body'], list):
-            new_snip = convert_snippet_vsc(snip, prefix_m, suffix_m, endtab_m)
-            vsc_snippets[snip['description']] = new_snip
-        else:
-            new_snip = convert_snippet_live(snip, prefix, suffix, endtab)
-            live_snippets.append(new_snip)
-    return live_snippets, vsc_snippets
-
-
 def read_data_json(file_name: str):
     """Read imported snippet data from json file
 
@@ -478,7 +481,7 @@ def read_data_json(file_name: str):
 
     Returns
     -------
-    snippets : Dict[str, Snippet]
+    snippets : List[Snippet]
         List of snippet objects: dicts with prefix, body, mode, description.
         Superset of the info needed by: vscode/latex-utilities/atom snippets
         Derived: `multiline = isinstance(body, list)`, `priority = len(prefix)`
@@ -493,7 +496,34 @@ def apply_options(snippets: List[Snippet],
                   prefix: Sequence[re.Pattern] = (),
                   body: Sequence[re.Pattern] = (),
                   **kwds) -> List[Snippet]:
-    """Perform cull and modify snippets"""
+    """Perform cull and modify snippets
+
+    Parameters
+    ----------
+    snippets : List[Snippet]
+        List of snippet objects: dicts with prefix, body, mode, description.
+        Superset of the info needed by: vscode/latex-utilities/atom snippets
+        Derived: `multiline = isinstance(body, list)`, `priority = len(prefix)`
+        Type: `Snippet = Dict[str, str]` or `Dict[str, List[str]]`.
+    prefix : Sequence[re.Pattern], optional, default = ()
+        Regex patterns to test `snippet['prefix']` against, using `re.match`.
+        Excludes `snippet` if *any* of them match.
+    body : Sequence[re.Pattern], optional, default = ()
+        Regex patterns to test `snippet['body']` against, using `re.search`.
+        Excludes `snippet` if *any* of them match.
+
+    Keywords
+    --------
+    multiline : bool, optional, default = True
+        Include snippets with multi-line bodies?
+    singleline : bool, optional, default = True
+        Include snippets with single-line bodies?
+    dollar : bool, optional, default = True
+        Allow dollar signs in snippets? If false, replaces `$...$ -> \\(...\\)`.
+    modern : bool, optional, default = False
+        Replace old-fashioned `{\\?? ` with modern versions: `\\text??{$1}` and
+        `\\math??{$1}` (e.g. `?? = bf`)? Creates two snippets.
+    """
     multiline: bool = kwds.pop('multiline', True)
     singleline: bool = kwds.pop('singleline', True)
     dollar: bool = kwds.pop('dollar', True)
