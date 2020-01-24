@@ -288,6 +288,14 @@
         "priority": 6
     },
     {
+        "prefix": "(^|[^\\\\])txtbfu  ",
+        "body": "$1\\textbf{$$1}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\textbf{}",
+        "priority": 6
+    },
+    {
         "prefix": "(^|[^\\\\])thmsty  ",
         "body": "$1\\n\\theoremstyle{plain} %--default\\n\\newtheorem{theorem}             {Theorem}  [section]\\n\\newtheorem{lemma}      [theorem]{Lemma}\\n\\newtheorem{corollary}  [theorem]{Corollary}\\n\\newtheorem{proposition}[theorem]{Proposition}\\n\\newtheorem{algorithm}  [theorem]{Algorithm}\\n\\newtheorem{criterion}  [theorem]{Criterion}\\n\\newtheorem{conjecture} [theorem]{Conjecture}\\n\\newtheorem{question}   [theorem]{Question}\\n\\theoremstyle{definition}\\n\\newtheorem{definition} [theorem]{Definition}\\n\\newtheorem{condition}  [theorem]{Condition}\\n\\newtheorem{example}    [theorem]{Example}\\n\\newtheorem{problem}    [theorem]{Problem}\\n\\newtheorem{solution}   [theorem]{Solution}\\n\\theoremstyle{remark}\\n\\newtheorem{remark}              {Remark}\\n\\newtheorem{note}                {Note}\\n\\newtheorem{claim}               {Claim}\\n\\newtheorem{summary}             {Summary}\\n\\newtheorem{case}                {Case}\\n\\newtheorem{acknowledgment}      {Acknowledgments}\\n\\newtheorem{conclusion}          {Conclusion}\\n\\newtheorem{notation}            {Notation}",
         "mode": "text",
@@ -845,6 +853,14 @@
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\textit{}",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])txtbf  ",
+        "body": "$1\\textbf{$$1}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\textbf{}",
         "priority": 5
     },
     {
@@ -6497,7 +6513,7 @@
     },
     {
         "prefix": "(^|[^\\\\])slu  ",
-        "body": "$1{\\sl",
+        "body": "$1{\\sl ",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "{\\sl",
@@ -6548,7 +6564,7 @@
         "body": "$1{\\sf ",
         "mode": "any",
         "triggerWhenComplete": true,
-        "description": "{\\sf ",
+        "description": "{\\sf",
         "priority": 3
     },
     {
@@ -6636,7 +6652,7 @@
         "body": "$1{\\sc ",
         "mode": "any",
         "triggerWhenComplete": true,
-        "description": "{\\sc ",
+        "description": "{\\sc",
         "priority": 3
     },
     {
@@ -6657,10 +6673,10 @@
     },
     {
         "prefix": "(^|[^\\\\])rmu  ",
-        "body": "$1\\mathrm{$$1}",
+        "body": "$1{\\rm ",
         "mode": "maths",
         "triggerWhenComplete": true,
-        "description": "\\mathrm{}",
+        "description": "{\\rm",
         "priority": 3
     },
     {
@@ -7609,7 +7625,7 @@
     },
     {
         "prefix": "(^|[^\\\\])mvb  ",
-        "body": "$1{\\mathversion{bold} $ $ 1$}",
+        "body": "$1{\\mathversion{bold} $ $$1$}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "{\\mathversion{bold} $ $1$}",
@@ -8228,7 +8244,7 @@
         "body": "$1{\\it ",
         "mode": "any",
         "triggerWhenComplete": true,
-        "description": "{\\it ",
+        "description": "{\\it",
         "priority": 3
     },
     {
@@ -10249,10 +10265,10 @@
     },
     {
         "prefix": "(^|[^\\\\])bfu  ",
-        "body": "$1\\textbf{$$1}",
-        "mode": "text",
+        "body": "$1{\\bf ",
+        "mode": "any",
         "triggerWhenComplete": true,
-        "description": "\\textbf{}",
+        "description": "{\\bf",
         "priority": 3
     },
     {

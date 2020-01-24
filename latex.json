@@ -566,6 +566,11 @@
         "body": "\\textit{$1}",
         "description": "\\textit{}"
     },
+    "\\textbf{}": {
+        "prefix": ";txtbf",
+        "body": "\\textbf{$1}",
+        "description": "\\textbf{}"
+    },
     "\\theoremstyle{plain} %--default": {
         "prefix": ";thmsty",
         "body": [
@@ -4305,7 +4310,7 @@
     },
     "{\\sl": {
         "prefix": ";slu",
-        "body": "{\\sl",
+        "body": "{\\sl ",
         "description": "{\\sl"
     },
     "\\setlength{}{}": {
@@ -4333,10 +4338,10 @@
         "body": "A^i_{\\;a}",
         "description": "A^i_{\\;a}"
     },
-    "{\\sf ": {
+    "{\\sf": {
         "prefix": ";sfu",
         "body": "{\\sf ",
-        "description": "{\\sf "
+        "description": "{\\sf"
     },
     "\\,dz": {
         "prefix": ";sdz",
@@ -4383,10 +4388,10 @@
         "body": "\\,\\circledS\\,",
         "description": "\\,\\circledS\\,"
     },
-    "{\\sc ": {
+    "{\\sc": {
         "prefix": ";scu",
         "body": "{\\sc ",
-        "description": "{\\sc "
+        "description": "{\\sc"
     },
     "\\ell": {
         "prefix": ";scl",
@@ -4397,6 +4402,11 @@
         "prefix": ";rrd",
         "body": "\\right\\rangle \\! \\right\\rangle",
         "description": "\\right\\rangle \\! \\right\\rangle"
+    },
+    "{\\rm": {
+        "prefix": ";rmu",
+        "body": "{\\rm ",
+        "description": "{\\rm"
     },
     "\\rangle": {
         "prefix": ";rle",
@@ -4985,7 +4995,7 @@
     },
     "{\\mathversion{bold} $ $1$}": {
         "prefix": ";mvb",
-        "body": "{\\mathversion{bold} \\$ \\$1$}",
+        "body": "{\\mathversion{bold} \\$ $1\\$}",
         "description": "{\\mathversion{bold} $ $1$}"
     },
     "\\:": {
@@ -5328,10 +5338,10 @@
         "body": "_{10}",
         "description": "_{10}"
     },
-    "{\\it ": {
+    "{\\it": {
         "prefix": ";itu",
         "body": "{\\it ",
-        "description": "{\\it "
+        "description": "{\\it"
     },
     "\\item": {
         "prefix": ";itm",
@@ -6536,10 +6546,10 @@
         "body": "\\begin{gather}",
         "description": "\\begin{gather}"
     },
-    "\\textbf{}": {
+    "{\\bf": {
         "prefix": ";bfu",
-        "body": "\\textbf{$1}",
-        "description": "\\textbf{}"
+        "body": "{\\bf ",
+        "description": "{\\bf"
     },
     "\\mathbf{f}": {
         "prefix": ";bff",

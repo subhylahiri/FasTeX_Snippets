@@ -1,6 +1,5 @@
-
 ".text.tex.latex": 
-    "latex2e--tepaper simplest": 
+    "tepaper.simplest": 
         "prefix": "tepaper.simplest"
         "body": """
         %&latex2e--tepaper simplest
@@ -40,7 +39,7 @@
         \\\\end{description}
         \\\\end{document}
         """
-    "latex2e--tepaper eqnwith": 
+    "tepaper.eqnwith": 
         "prefix": "tepaper.eqnwith"
         "body": """
         %&latex2e--tepaper eqnwith
@@ -123,7 +122,7 @@
         \\\\end{thebibliography}
         \\\\end{document}
         """
-    "latex2e--tepaper.simple": 
+    "tepaper.simple": 
         "prefix": "tepaper.simple"
         "body": """
         %&latex2e--tepaper.simple
@@ -180,7 +179,7 @@
         \\\\end{description}
         \\\\end{document}
         """
-    "AMS article": 
+    "tepaper.amsart": 
         "prefix": "tepaper.amsart"
         "body": """
         %&AMS article
@@ -272,7 +271,7 @@
         %-----------------
         \\\\end{document}
         """
-    "article html": 
+    "tepaper.html": 
         "prefix": "tepaper.html"
         "body": """
         %article html
@@ -310,7 +309,7 @@
         %... put text here
         \\\\end{document}
         """
-    "latex2e--te2letter": 
+    "teletter": 
         "prefix": "teletter"
         "body": """
         %&latex2e--te2letter
@@ -329,42 +328,43 @@
         \\\\end{letter}
         \\\\end{document}
         """
-    "\\\\operatorname{PGL}": 
+    "opcpcgcl": 
         "prefix": "opcpcgcl"
         "body": "\\\\operatorname{PGL}"
-    "\\\\begin{bmatrix}": 
-        "prefix": "mx2i"
+    "mx3b35pt": 
+        "prefix": "mx3b35pt"
         "body": """
         \\\\begin{bmatrix}
-        1 & 0 \\\\\\\\
-        0 & 1
+        a & b & c \\\\\\\\ [35pt]
+        d & e & f \\\\\\\\ [35pt]
+        g & h & i
         \\\\end{bmatrix}
         """
-    "$\\\\overset{\\\\longrightarrow}{\\\\text{PQ}}$": 
+    "dovstcpq": 
         "prefix": "dovstcpq"
         "body": "\\\\$\\\\overset{\\\\longrightarrow}{\\\\text{PQ}}\\\\$"
-    "$\\\\overset{\\\\longrightarrow}{\\\\text{PP}}$": 
+    "dovstcpp": 
         "prefix": "dovstcpp"
         "body": "\\\\$\\\\overset{\\\\longrightarrow}{\\\\text{PP}}\\\\$"
-    "\\\\usepackage{verbatim}": 
+    "upkgvrb": 
         "prefix": "upkgvrb"
         "body": "\\\\usepackage{verbatim}"
-    "\\\\usepackage{eufrak}": 
+    "upkgeuf": 
         "prefix": "upkgeuf"
         "body": "\\\\usepackage{eufrak}"
-    "\\\\usepackage{eucal}": 
+    "upkgeuc": 
         "prefix": "upkgeuc"
         "body": "\\\\usepackage{eucal}"
-    "\\\\usepackage{color}": 
+    "upkgclr": 
         "prefix": "upkgclr"
         "body": "\\\\usepackage{color}"
-    "\\\\usepackage{amsmath,amssymb,eufrak,amsthm,amscd}": 
+    "upkgams": 
         "prefix": "upkgams"
         "body": "\\\\usepackage{amsmath,amssymb,eufrak,amsthm,amscd}"
-    "\\\\textstyle{}": 
-        "prefix": "txtsty"
+    "txtstyu": 
+        "prefix": "txtstyu"
         "body": "\\\\textstyle{$1}"
-    "latex2e--tepaper": 
+    "tepaper": 
         "prefix": "tepaper"
         "body": """
         %&latex2e--tepaper
@@ -443,61 +443,67 @@
         \\\\end{thebibliography}
         \\\\end{document}
         """
-    "\\\\overset{\\\\longrightarrow}{\\\\text{PQ}}": 
+    "ovstcpq": 
         "prefix": "ovstcpq"
         "body": "\\\\overset{\\\\longrightarrow}{\\\\text{PQ}}"
-    "\\\\overset{\\\\longrightarrow}{\\\\text{PP}}": 
+    "ovstcpp": 
         "prefix": "ovstcpp"
         "body": "\\\\overset{\\\\longrightarrow}{\\\\text{PP}}"
-    "$\\\\operatorname{SO(3)}$": 
+    "opdcso3": 
         "prefix": "opdcso3"
         "body": "\\\\$\\\\operatorname{SO(3)}\\\\$"
-    "\\\\operatorname{Rank}": 
+    "opcrank": 
         "prefix": "opcrank"
         "body": "\\\\operatorname{Rank}"
-    "\\\\operatorname{Prym}": 
+    "opcprym": 
         "prefix": "opcprym"
         "body": "\\\\operatorname{Prym}"
-    "\\\\operatorname{Diff}": 
+    "opcdiff": 
         "prefix": "opcdiff"
         "body": "\\\\operatorname{Diff}"
-    "\\\\operatorname{Corr}": 
+    "opccorr": 
         "prefix": "opccorr"
         "body": "\\\\operatorname{Corr}"
-    "\\\\operatorname{Card}": 
+    "opccard": 
         "prefix": "opccard"
         "body": "\\\\operatorname{Card}"
-    "\\\\documentclass[a4paper]{article}": 
+    "dcarta4": 
         "prefix": "dcarta4"
         "body": "\\\\documentclass[a4paper]{article}"
-    "\\\\quad $\\\\blacklozenge$": 
+    "dblackl": 
         "prefix": "dblackl"
         "body": "\\\\quad \\\\$\\\\blacklozenge\\\\$"
-    "\\\\usepackage{graphicx}": 
+    "upkggr": 
         "prefix": "upkggr"
         "body": "\\\\usepackage{graphicx}"
-    "\\\\textup{}": 
-        "prefix": "txtup"
+    "txtupu": 
+        "prefix": "txtupu"
         "body": "\\\\textup{$1}"
-    "\\\\texttt{}": 
-        "prefix": "ttu"
+    "txtttu": 
+        "prefix": "txtttu"
         "body": "\\\\texttt{$1}"
-    "\\\\textsl{}": 
-        "prefix": "txtsl"
+    "txtsty": 
+        "prefix": "txtsty"
+        "body": "\\\\textstyle{$1}"
+    "txtslu": 
+        "prefix": "txtslu"
         "body": "\\\\textsl{$1}"
-    "\\\\textsf{}": 
-        "prefix": "txtsf"
+    "txtsfu": 
+        "prefix": "txtsfu"
         "body": "\\\\textsf{$1}"
-    "\\\\textsc{}": 
-        "prefix": "txtsc"
+    "txtscu": 
+        "prefix": "txtscu"
         "body": "\\\\textsc{$1}"
-    "\\\\textrm{}": 
-        "prefix": "txtrm"
+    "txtrmu": 
+        "prefix": "txtrmu"
         "body": "\\\\textrm{$1}"
-    "\\\\textit{}": 
-        "prefix": "txtit"
+    "txtitu": 
+        "prefix": "txtitu"
         "body": "\\\\textit{$1}"
-    "\\\\theoremstyle{plain} %--default": 
+    "txtbfu": 
+        "prefix": "txtbfu"
+        "body": "\\\\textbf{$1}"
+    "thmsty": 
         "prefix": "thmsty"
         "body": """
         \\\\theoremstyle{plain} %--default
@@ -525,10 +531,10 @@
         \\\\newtheorem{conclusion}          {Conclusion}
         \\\\newtheorem{notation}            {Notation}
         """
-    "\\\\tag*{\\\\qedsymbol}": 
+    "tgqeds": 
         "prefix": "tgqeds"
         "body": "\\\\tag*{\\\\qedsymbol}"
-    "latex2e--tebook": 
+    "tebook": 
         "prefix": "tebook"
         "body": """
         %&latex2e--tebook
@@ -593,13 +599,368 @@
         \\\\end{thebibliography}
         \\\\end{document}
         """
-    "\\\\begin{center}": 
-        "prefix": "bctr"
-        "body": "\\\\begin{center}"
-    "\\\\sum_{ij}": 
+    "tabex6": 
+        "prefix": "tabex6"
+        "body": """
+        \\\\begin{center}
+        \\\\begin{tabular}{||l|c|c||}
+            \\\\hline
+         Case & Conditions & Connection                               \\\\\\\\ \\\\hline
+         Unconstrained
+              & \\\\${\\\\cal D}_q = T_q Q\\\\$
+              & \\\\${\\\\cal A}^{\\\\rm sym}(\\\\dot q)={\\\\Bbb I} ^{-1} J(\\\\dot{q})\\\\$ \\\\\\\\ [1ex]
+         Purely Kinematic
+              & \\\\${\\\\cal D}_q \\\\cap T_q({\\\\rm Orb}(q)) = \\\\{0\\\\}\\\\$
+              & \\\\${\\\\cal A}^{\\\\rm kin} (\\\\dot{q}) = 0\\\\$                     \\\\\\\\ [1ex]
+         Horizontal symmetries
+              & \\\\${\\\\cal D}_q \\\\cap T_q({\\\\rm Orb}(q))_G
+                                 = T_q({\\\\rm Orb}(q))_H\\\\$
+              & \\\\${\\\\cal A}^{\\\\rm sym} (\\\\dot{q})
+                             + {\\\\cal A}^{\\\\rm kin} (\\\\dot{q})
+                             ={\\\\Bbb I} ^{-1} J_H (\\\\dot{q})\\\\$            \\\\\\\\ [1ex]
+         General principal
+              & \\\\${\\\\cal D}_q + T_q({\\\\rm Orb}(q)) = T_q Q\\\\$
+              & \\\\${\\\\cal A}^{\\\\rm sym}(\\\\dot{q}) + {\\\\cal A}^{\\\\rm kin}(\\\\dot{q}) =
+                {\\\\Bbb I} ^{-1} J ^{\\\\rm nhc}(\\\\dot{q})\\\\$ \\\\\\\\
+         bundle case
+              &
+              &                                                       \\\\\\\\ \\\\hline
+        \\\\end{tabular}
+        \\\\end{center}
+        """
+    "tabex5": 
+        "prefix": "tabex5"
+        "body": """
+        \\\\begin{center}
+        \\\\fbox{\\\\fbox{\\\\parbox{4.0in}{
+        \\\\begin{tabular}{ll}
+        \\\\quad {\\\\bf Classical Mechanics}
+              & \\\\quad {\\\\bf Quantum Mechanics}                  \\\\\\\\ \\\\hline \\\\hline
+        immersed Lagrangian manifold
+              & element of \\\\$L^2 (Q)\\\\$ or \\\\${\\\\cal D}^\\\\prime (Q)\\\\$  \\\\\\\\
+        \\\\$\\\\Lambda \\\\rightarrow (T ^\\\\ast Q,\\\\Omega)\\\\$
+              &                        \\\\\\\\ \\\\hline
+        \\\\$\\\\Lambda = \\\\$ graph of \\\\${\\\\bf d} S\\\\$
+              & \\\\$\\\\psi = \\\\exp (iS/\\\\hbar)\\\\$                       \\\\\\\\ \\\\hline
+        \\\\$T ^{\\\\ast} Q\\\\$
+              & Hilbertspace                                   \\\\\\\\ \\\\hline
+        Lagrangian manifold
+              & (possibly unbounded)                           \\\\\\\\
+        \\\\$\\\\quad \\\\Omega \\\\subset (T^\\\\ast Q, \\\\Omega _Q)
+        \\\\times (T^\\\\ast R,-\\\\Omega_R)\\\\$
+              & \\\\$\\\\quad L^2 (R)\\\\$ to \\\\$L^2 (Q)\\\\$                   \\\\\\\\ \\\\hline
+                composition of canonical relations
+             & composition of operators                       \\\\\\\\
+        \\\\end{tabular}
+        }}} \\\\end{center}
+        """
+    "tabex4": 
+        "prefix": "tabex4"
+        "body": """
+        \\\\begin{center}
+        \\\\begin{tabular}{||l|l||}
+        \\\\hline \\\\hline
+        \\\\quad {\\\\bf Classical Mechanics}
+              & \\\\quad {\\\\bf Quantum Mechanics}                 \\\\\\\\ \\\\hline \\\\hline
+        immersed Lagrangian manifold
+              & element of \\\\$L^2 (Q)\\\\$
+                or \\\\${\\\\cal D}^\\\\prime (Q)\\\\$                      \\\\\\\\
+        \\\\$\\\\Lambda \\\\rightarrow (T ^\\\\ast Q,\\\\Omega)\\\\$
+              &                                               \\\\\\\\ \\\\hline
+        \\\\$\\\\Lambda = \\\\$ graph of \\\\${\\\\bf d} S\\\\$
+              & \\\\$\\\\psi = \\\\exp (iS/\\\\hbar)\\\\$                      \\\\\\\\ \\\\hline
+        \\\\$T ^{\\\\ast} Q\\\\$
+              & Hilbertspace                                  \\\\\\\\ \\\\hline
+        Lagrangian manifold
+              & (possibly unbounded)                          \\\\\\\\
+        \\\\$\\\\quad \\\\Omega \\\\subset(T^\\\\ast Q, \\\\Omega _Q)
+        \\\\times (T^\\\\ast R,-\\\\Omega_R)\\\\$
+              & \\\\$\\\\quad L^2 (R)\\\\$ to \\\\$L^2 (Q)\\\\$                  \\\\\\\\ \\\\hline
+        composition of canonical relations
+              & composition of operators                      \\\\\\\\ \\\\hline \\\\hline
+        \\\\end{tabular}
+        \\\\end{center}
+        """
+    "tabex3": 
+        "prefix": "tabex3"
+        "body": """
+        \\\\begin{center}
+        \\\\begin{tabular}{lll}
+        {\\\\it Classical Tensor Analysis\\\\/}
+             &
+             & {\\\\it Tensor Analysis on Manifolds\\\\/}
+        \\\\\\\\ \\\\\\\\
+        \\\\$ \\\\{ x ^a\\\\}\\\\$
+             & Coordinates
+             & \\\\$ \\\\{ x ^a\\\\}\\\\$
+        \\\\\\\\ \\\\\\\\
+        \\\\$ e _a = {\\\\displaystyle \\\\frac{\\\\partial z ^i }
+                                     {\\\\partial x ^a} \\\\dot{ i} _i }\\\\$
+             & \\\\$ \\\\!\\\\!\\\\! \\\\begin{array}{l}
+                        {\\\\rm coordinate} \\\\\\\\
+                        {\\\\rm basis \\\\, vectors }
+                        \\\\end{array} \\\\$
+             & \\\\$ {\\\\displaystyle \\\\frac{\\\\partial}{\\\\partial x^a} = e _a } \\\\$                \\\\\\\\ \\\\\\\\
+               \\\\$ \\\\!\\\\!\\\\!\\\\! \\\\left. \\\\begin{array}{l}
+                        \\\\bar{e} _a = {\\\\displaystyle \\\\frac{\\\\partial x ^b}
+                                           {\\\\partial \\\\bar{x} ^a} e _b }
+        \\\\\\\\ \\\\\\\\
+                        \\\\bar{e} ^a = {\\\\displaystyle \\\\frac{\\\\partial \\\\bar{x} ^a}
+                                           {\\\\partial \\\\bar{x} ^b} e^b }
+                         \\\\end{array}  \\\\right\\\\}\\\\$
+             & \\\\$ \\\\!\\\\!\\\\! \\\\begin{array}{l}
+                        {\\\\rm change \\\\, of} \\\\\\\\
+                        {\\\\rm coordinates} \\\\\\\\
+                        \\\\end{array} \\\\$
+             & \\\\$ \\\\left\\\\{ \\\\begin{array}{l}
+                        {\\\\displaystyle \\\\frac{\\\\partial}{\\\\partial \\\\bar{x} ^a} =
+                        \\\\frac{ \\\\partial x ^b}{\\\\partial \\\\bar{x} ^a}
+                        \\\\frac{ \\\\partial} {\\\\partial x ^b} }
+                        \\\\\\\\  \\\\\\\\
+                        {\\\\displaystyle d \\\\bar{x} ^a =
+                        \\\\frac{ \\\\partial \\\\bar{x} ^a }{ \\\\partial x ^b} d x ^b }
+                        \\\\end{array}  \\\\right. \\\\$
+        \\\\\\\\
+        \\\\end{tabular}
+        \\\\end{center}
+        """
+    "tabex2": 
+        "prefix": "tabex2"
+        "body": """
+        \\\\begin{center}
+        \\\\fbox{\\\\parbox{4.5in}{
+        \\\\begin{tabular}{ll}
+        \\\\multicolumn{2}{c}{\\\\bf Box 2.1.1 \\\\quad
+                               Summary of Important Formulas for \\\\S 2.1}  \\\\\\\\
+        {\\\\it Velocity\\\\/}
+              &                                                           \\\\\\\\
+              &                                                           \\\\\\\\
+        \\\\$ V = {\\\\displaystyle \\\\frac{\\\\partial \\\\phi}{\\\\partial t} } \\\\$
+              & \\\\$ V ^a ={\\\\displaystyle \\\\frac{\\\\partial \\\\phi ^a}
+                                            {\\\\partial t}}\\\\$                \\\\\\\\
+              &                                                           \\\\\\\\
+        \\\\$ v _t = V _t \\\\circ \\\\phi _t ^{-1} \\\\$
+              & \\\\$ v ^a _t = V ^a _t \\\\circ \\\\phi _t ^{-1} \\\\$                 \\\\\\\\
+              &                                                           \\\\\\\\
+        {\\\\it Covariant Derivative\\\\/}
+              &                                                           \\\\\\\\
+              &                                                           \\\\\\\\
+        \\\\$ {\\\\bf D} v \\\\cdot w = \\\\nabla _w v \\\\$
+              & \\\\$ (\\\\nabla _w v) ^a =
+                  {\\\\displaystyle \\\\frac{\\\\partial v ^a}
+                                      {\\\\partial x ^b}} w ^b +
+                                 \\\\gamma ^a _{b c} w ^b v ^c \\\\$             \\\\\\\\
+        \\\\end{tabular}
+        }}
+        \\\\end{center}
+        """
+    "tabex1": 
+        "prefix": "tabex1"
+        "body": """
+        \\\\begin{center}
+        \\\\begin{tabular}{ccccc}
+                           & & \\\\multicolumn{3}{c}{Definition}    \\\\\\\\
+                           & & \\\\multicolumn{3}{c}{of derivative} \\\\\\\\
+                           & & & \\\\$\\\\downarrow\\\\$
+                           &                                     \\\\\\\\
+        Partials exist and & \\\\$\\\\Longrightarrow\\\\$
+                           & Differentiable
+                           & \\\\$\\\\Longrightarrow\\\\$
+                           & Partials exist                       \\\\\\\\
+        are continuous     & & & &
+        \\\\end{tabular}
+        \\\\end{center}
+        """
+    "sumlij": 
         "prefix": "sumlij"
         "body": "\\\\sum_{ij}"
-    "\\\\section*{References}": 
+    "snsref": 
+        "prefix": "snsref"
+        "body": "\\\\section*{References}"
+    "rcqeds": 
+        "prefix": "rcqeds"
+        "body": "\\\\renewcommand{qedsymbol}{}"
+    "opsech": 
+        "prefix": "opsech"
+        "body": "\\\\operatorname{sech}"
+    "oprank": 
+        "prefix": "oprank"
+        "body": "\\\\operatorname{rank}"
+    "opcsym": 
+        "prefix": "opcsym"
+        "body": "\\\\operatorname{Sym}"
+    "opcso3": 
+        "prefix": "opcso3"
+        "body": "\\\\operatorname{SO(3)}"
+    "opcscu": 
+        "prefix": "opcscu"
+        "body": "\\\\operatorname{SU}"
+    "opcscp": 
+        "prefix": "opcscp"
+        "body": "\\\\operatorname{SP}"
+    "opcsco": 
+        "prefix": "opcsco"
+        "body": "\\\\operatorname{SO}"
+    "opcscl": 
+        "prefix": "opcscl"
+        "body": "\\\\operatorname{SL}"
+    "opcrez": 
+        "prefix": "opcrez"
+        "body": "\\\\operatorname{Re}(z)"
+    "opcreu": 
+        "prefix": "opcreu"
+        "body": "\\\\operatorname{Re}("
+    "opcres": 
+        "prefix": "opcres"
+        "body": "\\\\operatorname{Res}"
+    "opcram": 
+        "prefix": "opcram"
+        "body": "\\\\operatorname{Ram}"
+    "opcpic": 
+        "prefix": "opcpic"
+        "body": "\\\\operatorname{Pic}"
+    "opclie": 
+        "prefix": "opclie"
+        "body": "\\\\operatorname{Lie}"
+    "opcjac": 
+        "prefix": "opcjac"
+        "body": "\\\\operatorname{Jac}"
+    "opcimz": 
+        "prefix": "opcimz"
+        "body": "\\\\operatorname{Im}(z)"
+    "opcimu": 
+        "prefix": "opcimu"
+        "body": "\\\\operatorname{Im}("
+    "opchom": 
+        "prefix": "opchom"
+        "body": "\\\\operatorname{Hom}"
+    "opchar": 
+        "prefix": "opchar"
+        "body": "\\\\operatorname{char}"
+    "opcgcl": 
+        "prefix": "opcgcl"
+        "body": "\\\\operatorname{GL}"
+    "opcfcl": 
+        "prefix": "opcfcl"
+        "body": "\\\\operatorname{FL}"
+    "opcext": 
+        "prefix": "opcext"
+        "body": "\\\\operatorname{Ext}"
+    "opcaut": 
+        "prefix": "opcaut"
+        "body": "\\\\operatorname{Aut}"
+    "intxtu": 
+        "prefix": "intxtu"
+        "body": "\\\\intertext{$1}"
+    "frboxn": 
+        "prefix": "frboxn"
+        "body": "\\\\fbox{\\\\parbox{2.0in}{{\\\\large \\\\bf Note: \\\\,} text }}"
+    "dxdydz": 
+        "prefix": "dxdydz"
+        "body": "\\\\,dx\\\\,dy\\\\,dz"
+    "dtriap": 
+        "prefix": "dtriap"
+        "body": "\\\\$(a_1, a_2, a_3)\\\\$"
+    "dopso3": 
+        "prefix": "dopso3"
+        "body": "\\\\$\\\\operatorname{so(3)}\\\\$"
+    "dopcrn": 
+        "prefix": "dopcrn"
+        "body": "\\\\$\\\\mathbb{R}^n\\\\$ "
+    "dopcrm": 
+        "prefix": "dopcrm"
+        "body": "\\\\$\\\\mathbb{R}^m\\\\$ "
+    "dopcr3": 
+        "prefix": "dopcr3"
+        "body": "\\\\$\\\\mathbb{R}^3\\\\$ "
+    "dopcr2": 
+        "prefix": "dopcr2"
+        "body": "\\\\$\\\\mathbb{R}^2\\\\$ "
+    "dopcr1": 
+        "prefix": "dopcr1"
+        "body": "\\\\$\\\\mathbb{R}^1\\\\$ "
+    "dfrbox": 
+        "prefix": "dfrbox"
+        "body": """
+        \\\\fbox{\\\\fbox{\\\\parbox{2.0in}{
+        \\\\centerline{\\\\large \\\\bf type header} text }}}
+        """
+    "dcbook": 
+        "prefix": "dcbook"
+        "body": "\\\\documentclass{book}"
+    "dbbcrn": 
+        "prefix": "dbbcrn"
+        "body": "\\\\$\\\\mathbb{R}^n\\\\$ "
+    "dbbcrm": 
+        "prefix": "dbbcrm"
+        "body": "\\\\$\\\\mathbb{R}^m\\\\$ "
+    "dbbcr3": 
+        "prefix": "dbbcr3"
+        "body": "\\\\$\\\\mathbb{R}^3\\\\$ "
+    "dbbcr2": 
+        "prefix": "dbbcr2"
+        "body": "\\\\$\\\\mathbb{R}^2\\\\$ "
+    "dbbcr1": 
+        "prefix": "dbbcr1"
+        "body": "\\\\$\\\\mathbb{R}^1\\\\$ "
+    "blackl": 
+        "prefix": "blackl"
+        "body": "\\\\quad\\\\blacklozenge"
+    "wrtns": 
+        "prefix": "wrtns"
+        "body": "rotations"
+    "wligs": 
+        "prefix": "wligs"
+        "body": "line integrals"
+    "wfuns": 
+        "prefix": "wfuns"
+        "body": "functions"
+    "weqns": 
+        "prefix": "weqns"
+        "body": "equations"
+    "wders": 
+        "prefix": "wders"
+        "body": "derivatives"
+    "upkgu": 
+        "prefix": "upkgu"
+        "body": "\\\\usepackage{$1}"
+    "unstu": 
+        "prefix": "unstu"
+        "body": "\\\\underset{$1}"
+    "txtup": 
+        "prefix": "txtup"
+        "body": "\\\\textup{$1}"
+    "txttt": 
+        "prefix": "txttt"
+        "body": "\\\\texttt{$1}"
+    "txtsl": 
+        "prefix": "txtsl"
+        "body": "\\\\textsl{$1}"
+    "txtsf": 
+        "prefix": "txtsf"
+        "body": "\\\\textsf{$1}"
+    "txtsc": 
+        "prefix": "txtsc"
+        "body": "\\\\textsc{$1}"
+    "txtrm": 
+        "prefix": "txtrm"
+        "body": "\\\\textrm{$1}"
+    "txtqu": 
+        "prefix": "txtqu"
+        "body": "\\\\quad\\\\text{$1}\\\\quad"
+    "txtqa": 
+        "prefix": "txtqa"
+        "body": "\\\\quad \\\\text{and}\\\\quad"
+    "txtit": 
+        "prefix": "txtit"
+        "body": "\\\\textit{$1}"
+    "txtbf": 
+        "prefix": "txtbf"
+        "body": "\\\\textbf{$1}"
+    "triap": 
+        "prefix": "triap"
+        "body": "(a_1, a_2, a_3)"
+    "teref": 
         "prefix": "teref"
         "body": """
         \\\\section*{References}
@@ -607,154 +968,7 @@
         \\\\item   %use ``biba'' to fill in ref. items
         \\\\end{description}
         """
-    "\\\\renewcommand{qedsymbol}{}": 
-        "prefix": "rcqeds"
-        "body": "\\\\renewcommand{qedsymbol}{}"
-    "\\\\operatorname{sech}": 
-        "prefix": "opsech"
-        "body": "\\\\operatorname{sech}"
-    "\\\\operatorname{rank}": 
-        "prefix": "oprank"
-        "body": "\\\\operatorname{rank}"
-    "\\\\operatorname{Sym}": 
-        "prefix": "opcsym"
-        "body": "\\\\operatorname{Sym}"
-    "\\\\operatorname{SO(3)}": 
-        "prefix": "opcso3"
-        "body": "\\\\operatorname{SO(3)}"
-    "\\\\operatorname{SU}": 
-        "prefix": "opcscu"
-        "body": "\\\\operatorname{SU}"
-    "\\\\operatorname{SP}": 
-        "prefix": "opcscp"
-        "body": "\\\\operatorname{SP}"
-    "\\\\operatorname{SO}": 
-        "prefix": "opcsco"
-        "body": "\\\\operatorname{SO}"
-    "\\\\operatorname{SL}": 
-        "prefix": "opcscl"
-        "body": "\\\\operatorname{SL}"
-    "\\\\operatorname{Re}(z)": 
-        "prefix": "opcrez"
-        "body": "\\\\operatorname{Re}(z)"
-    "\\\\operatorname{Re}(": 
-        "prefix": "opcreu"
-        "body": "\\\\operatorname{Re}("
-    "\\\\operatorname{Res}": 
-        "prefix": "opcres"
-        "body": "\\\\operatorname{Res}"
-    "\\\\operatorname{Ram}": 
-        "prefix": "opcram"
-        "body": "\\\\operatorname{Ram}"
-    "\\\\operatorname{Pic}": 
-        "prefix": "opcpic"
-        "body": "\\\\operatorname{Pic}"
-    "\\\\operatorname{Lie}": 
-        "prefix": "opclie"
-        "body": "\\\\operatorname{Lie}"
-    "\\\\operatorname{Jac}": 
-        "prefix": "opcjac"
-        "body": "\\\\operatorname{Jac}"
-    "\\\\operatorname{Im}(z)": 
-        "prefix": "opcimz"
-        "body": "\\\\operatorname{Im}(z)"
-    "\\\\operatorname{Im}(": 
-        "prefix": "opcimu"
-        "body": "\\\\operatorname{Im}("
-    "\\\\operatorname{Hom}": 
-        "prefix": "opchom"
-        "body": "\\\\operatorname{Hom}"
-    "\\\\operatorname{char}": 
-        "prefix": "opchar"
-        "body": "\\\\operatorname{char}"
-    "\\\\operatorname{GL}": 
-        "prefix": "opcgcl"
-        "body": "\\\\operatorname{GL}"
-    "\\\\operatorname{FL}": 
-        "prefix": "opcfcl"
-        "body": "\\\\operatorname{FL}"
-    "\\\\operatorname{Ext}": 
-        "prefix": "opcext"
-        "body": "\\\\operatorname{Ext}"
-    "\\\\operatorname{Aut}": 
-        "prefix": "opcaut"
-        "body": "\\\\operatorname{Aut}"
-    "\\\\intertext{}": 
-        "prefix": "intxt"
-        "body": "\\\\intertext{$1}"
-    "\\\\fbox{\\\\parbox{2.0in}{{\\\\large \\\\bf Note: \\\\,} text }}": 
-        "prefix": "frboxn"
-        "body": "\\\\fbox{\\\\parbox{2.0in}{{\\\\large \\\\bf Note: \\\\,} text }}"
-    "\\\\,dx\\\\,dy\\\\,dz": 
-        "prefix": "dxdydz"
-        "body": "\\\\,dx\\\\,dy\\\\,dz"
-    "$(a_1, a_2, a_3)$": 
-        "prefix": "dtriap"
-        "body": "\\\\$(a_1, a_2, a_3)\\\\$"
-    "$\\\\operatorname{so(3)}$": 
-        "prefix": "dopso3"
-        "body": "\\\\$\\\\operatorname{so(3)}\\\\$"
-    "$\\\\mathbb{R}^n$ ": 
-        "prefix": "dbbcrn"
-        "body": "\\\\$\\\\mathbb{R}^n\\\\$ "
-    "$\\\\mathbb{R}^m$ ": 
-        "prefix": "dbbcrm"
-        "body": "\\\\$\\\\mathbb{R}^m\\\\$ "
-    "$\\\\mathbb{R}^3$ ": 
-        "prefix": "dbbcr3"
-        "body": "\\\\$\\\\mathbb{R}^3\\\\$ "
-    "$\\\\mathbb{R}^2$ ": 
-        "prefix": "dbbcr2"
-        "body": "\\\\$\\\\mathbb{R}^2\\\\$ "
-    "$\\\\mathbb{R}^1$ ": 
-        "prefix": "dbbcr1"
-        "body": "\\\\$\\\\mathbb{R}^1\\\\$ "
-    "\\\\fbox{\\\\fbox{\\\\parbox{2.0in}{\\\\centerline{\\\\large \\\\bf type header} text}}}": 
-        "prefix": "dfrbox"
-        "body": "\\\\fbox{\\\\fbox{\\\\parbox{2.0in}{\\\\centerline{\\\\large \\\\bf type header} text}}}"
-    "\\\\fbox{\\\\fbox{\\\\parbox{2.0in}{": 
-        "prefix": "dfrbox"
-        "body": """
-        \\\\fbox{\\\\fbox{\\\\parbox{2.0in}{
-        \\\\centerline{\\\\large \\\\bf type header} text }}}
-        """
-    "\\\\documentclass{book}": 
-        "prefix": "dcbook"
-        "body": "\\\\documentclass{book}"
-    "\\\\quad\\\\blacklozenge": 
-        "prefix": "blackl"
-        "body": "\\\\quad\\\\blacklozenge"
-    "rotations": 
-        "prefix": "wrtns"
-        "body": "rotations"
-    "line integrals": 
-        "prefix": "wligs"
-        "body": "line integrals"
-    "functions": 
-        "prefix": "wfuns"
-        "body": "functions"
-    "equations": 
-        "prefix": "weqns"
-        "body": "equations"
-    "derivatives": 
-        "prefix": "wders"
-        "body": "derivatives"
-    "\\\\usepackage{}": 
-        "prefix": "upkg"
-        "body": "\\\\usepackage{$1}"
-    "\\\\underset{}": 
-        "prefix": "unstu"
-        "body": "\\\\underset{$1}"
-    "\\\\quad\\\\text{}\\\\quad": 
-        "prefix": "txtqu"
-        "body": "\\\\quad\\\\text{$1}\\\\quad"
-    "\\\\quad \\\\text{and}\\\\quad": 
-        "prefix": "txtqa"
-        "body": "\\\\quad \\\\text{and}\\\\quad"
-    "(a_1, a_2, a_3)": 
-        "prefix": "triap"
-        "body": "(a_1, a_2, a_3)"
-    "\\\\textwidth 6.5 truein": 
+    "temar": 
         "prefix": "temar"
         "body": """
         \\\\textwidth 6.5 truein
@@ -763,10 +977,14 @@
         \\\\topmargin -.5 truein
         \\\\textheight 8.5in
         """
-    "\\\\begin{thebibliography}{}": 
-        "prefix": "bbib"
-        "body": "\\\\begin{thebibliography}{}"
-    "\\\\title{Title of paper}": 
+    "tebib": 
+        "prefix": "tebib"
+        "body": """
+        \\\\begin{thebibliography}{}
+        \\\\bibitem[]{}   %use ``bibia'' or ``bibib'' to fill in  bibitems
+        \\\\end{thebibliography}
+        """
+    "teaut": 
         "prefix": "teaut"
         "body": """
         \\\\title{Title of paper}
@@ -784,143 +1002,172 @@
         \\\\maketitle
         %================================================================================
         """
-    "\\\\begin{acknowledgment}": 
-        "prefix": "bac"
-        "body": "\\\\begin{acknowledgment}"
-    "\\\\begin{abstract}": 
-        "prefix": "babs"
-        "body": "\\\\begin{abstract}"
-    "\\\\sum_{": 
+    "teack": 
+        "prefix": "teack"
+        "body": """
+        \\\\begin{acknowledgment}
+        \\\\end{acknowledgment}
+        """
+    "teabs": 
+        "prefix": "teabs"
+        "body": """
+        \\\\begin{abstract}
+        Text goes here
+        \\\\end{abstract}
+        """
+    "sumlu": 
         "prefix": "sumlu"
         "body": "\\\\sum_{"
-    "\\\\sum_i": 
+    "sumli": 
         "prefix": "sumli"
         "body": "\\\\sum_i"
-    "\\\\sum_j": 
+    "sumlj": 
         "prefix": "sumlj"
         "body": "\\\\sum_j"
-    "\\\\left\\\\{ \\\\left.  \\\\!\\\\right|\\\\right\\\\}": 
-        "prefix": "setlu"
-        "body": "\\\\left\\\\{ \\\\left.  \\\\!\\\\right|\\\\right\\\\}"
-    "\\\\left\\\\{ \\\\left.  \\\\!\\\\right|": 
+    "setlu": 
         "prefix": "setlu"
         "body": """
         \\\\left\\\\{ \\\\left.  \\\\!\\\\right|
              \\\\right\\\\}
         """
-    "\\\\setcounter{": 
+    "setcu": 
         "prefix": "setcu"
         "body": "\\\\setcounter{"
-    "\\\\item Author [year]": 
-        "prefix": "biba"
-        "body": "\\\\item Author [year]"
-    "\\\\renewcommand{": 
+    "refib": 
+        "prefix": "refib"
+        "body": """
+        \\\\item Author [year]
+        {\\\\it Title.\\\\/}
+        Publisher.
+        """
+    "refia": 
+        "prefix": "refia"
+        "body": """
+        \\\\item Author [year]
+        Title.
+        {\\\\it Journal\\\\/} {\\\\bf 11}, 123--223.
+        """
+    "rcmdu": 
         "prefix": "rcmdu"
         "body": "\\\\renewcommand{"
-    "\\\\renewcommand{\\\\labelenumi}{\\\\em $($\\\\roman{enumi}$)$}": 
+    "rcmdl": 
         "prefix": "rcmdl"
         "body": "\\\\renewcommand{\\\\labelenumi}{\\\\em \\\\$(\\\\$\\\\roman{enumi}\\\\$)\\\\$}"
-    "\\\\quad $\\\\bigtriangledown$": 
+    "qdetd": 
         "prefix": "qdetd"
         "body": "\\\\quad \\\\$\\\\bigtriangledown\\\\$"
-    "\\\\quad $\\\\square$": 
+    "qdesq": 
         "prefix": "qdesq"
         "body": "\\\\quad \\\\$\\\\square\\\\$"
-    "\\\\quad $\\\\blacktriangledown$": 
+    "qdbtd": 
         "prefix": "qdbtd"
         "body": "\\\\quad \\\\$\\\\blacktriangledown\\\\$"
-    "\\\\quad $\\\\blacksquare$": 
+    "qdbsq": 
         "prefix": "qdbsq"
         "body": "\\\\quad \\\\$\\\\blacksquare\\\\$"
-    "\\\\begin{figure}[ht]": 
-        "prefix": "figu"
+    "pictu": 
+        "prefix": "pictu"
         "body": """
         \\\\begin{figure}[ht]
         \\\\begin{center}
-        \\\\includegraphics{}
+               \\\\special{picture } %add pict filename
         \\\\caption{\\\\label{}}
         \\\\end{center}
         \\\\end{figure}
         """
-    "\\\\paragraph{}": 
-        "prefix": "ssn"
+    "parau": 
+        "prefix": "parau"
         "body": "\\\\paragraph{$1}"
-    "(\\\\vartheta)": 
+    "oxvth": 
         "prefix": "oxvth"
         "body": "(\\\\vartheta)"
-    "(\\\\varphi)": 
+    "oxvph": 
         "prefix": "oxvph"
         "body": "(\\\\varphi)"
-    "(\\\\Theta)": 
+    "oxcth": 
         "prefix": "oxcth"
         "body": "(\\\\Theta)"
-    "(\\\\Psi)": 
+    "oxcps": 
         "prefix": "oxcps"
         "body": "(\\\\Psi)"
-    "(\\\\Phi)": 
+    "oxcph": 
         "prefix": "oxcph"
         "body": "(\\\\Phi)"
-    "\\\\operatorname{so(3)}": 
+    "opso3": 
         "prefix": "opso3"
         "body": "\\\\operatorname{so(3)}"
-    "\\\\operatorname{res}": 
+    "opres": 
         "prefix": "opres"
         "body": "\\\\operatorname{res}"
-    "\\\\operatorname{reg}": 
+    "opreg": 
         "prefix": "opreg"
         "body": "\\\\operatorname{reg}"
-    "\\\\operatorname{div}": 
+    "opdiv": 
         "prefix": "opdiv"
         "body": "\\\\operatorname{div}"
-    "\\\\operatorname{Tr}": 
+    "opctr": 
         "prefix": "opctr"
         "body": "\\\\operatorname{Tr}"
-    "\\\\operatorname{Sp}": 
+    "opcsp": 
         "prefix": "opcsp"
         "body": "\\\\operatorname{Sp}"
-    "\\\\mathbb{R}^n ": 
-        "prefix": "bbcrn"
+    "opcrn": 
+        "prefix": "opcrn"
         "body": "\\\\mathbb{R}^n "
-    "\\\\mathbb{R}^m ": 
-        "prefix": "bbcrm"
+    "opcrm": 
+        "prefix": "opcrm"
         "body": "\\\\mathbb{R}^m "
-    "\\\\mathbb{R}^3 ": 
-        "prefix": "bbcr3"
+    "opcr3": 
+        "prefix": "opcr3"
         "body": "\\\\mathbb{R}^3 "
-    "\\\\mathbb{R}^2 ": 
-        "prefix": "bbcr2"
+    "opcr2": 
+        "prefix": "opcr2"
         "body": "\\\\mathbb{R}^2 "
-    "\\\\mathbb{R}^1 ": 
-        "prefix": "bbcr1"
+    "opcr1": 
+        "prefix": "opcr1"
         "body": "\\\\mathbb{R}^1 "
-    "\\\\operatorname{Nm}": 
+    "opcnm": 
         "prefix": "opcnm"
         "body": "\\\\operatorname{Nm}"
-    "\\\\operatorname{Ad}": 
+    "opcad": 
         "prefix": "opcad"
         "body": "\\\\operatorname{Ad}"
-    "\\\\ddot{\\\\gamma}": 
+    "oddxg": 
         "prefix": "oddxg"
         "body": "\\\\ddot{\\\\gamma}"
-    "\\\\ddot{\\\\beta}": 
+    "oddxb": 
         "prefix": "oddxb"
         "body": "\\\\ddot{\\\\beta}"
-    "\\\\ddot{\\\\alpha}": 
+    "oddxa": 
         "prefix": "oddxa"
         "body": "\\\\ddot{\\\\alpha}"
-    "\\\\nolimits": 
+    "nolim": 
         "prefix": "nolim"
         "body": "\\\\nolimits"
-    "\\\\newcommand{": 
+    "ncmdu": 
         "prefix": "ncmdu"
         "body": "\\\\newcommand{"
-    "\\\\left(": 
-        "prefix": "lep"
-        "body": "\\\\left("
-    "\\\\left[": 
-        "prefix": "lebk"
-        "body": "\\\\left["
-    "\\\\begin{Vmatrix}": 
+    "mxspu": 
+        "prefix": "mxspu"
+        "body": """
+        \\\\left(
+        \\\\begin{smallmatrix}
+        ...&...\\\\\\\\
+        ...&...
+        \\\\end{smallmatrix}
+        \\\\right)
+        """
+    "mxsbu": 
+        "prefix": "mxsbu"
+        "body": """
+        \\\\left[
+        \\\\begin{smallmatrix}
+        ...&...\\\\\\\\
+        ...&...
+        \\\\end{smallmatrix}
+        \\\\right]
+        """
+    "mxcvu": 
         "prefix": "mxcvu"
         "body": """
         \\\\begin{Vmatrix}
@@ -928,238 +1175,307 @@
         ...&...
         \\\\end{Vmatrix}
         """
-    "\\\\markboth{": 
+    "mx2bk": 
+        "prefix": "mx2bk"
+        "body": """
+        \\\\begin{bmatrix}
+         a & b \\\\\\\\
+         c & d
+        \\\\end{bmatrix}
+        """
+    "mrkbu": 
         "prefix": "mrkbu"
         "body": "\\\\markboth{"
-    "\\\\newtheorem{proposition}{Proposition}": 
+    "mprop": 
         "prefix": "mprop"
         "body": "\\\\newtheorem{proposition}{Proposition}"
-    "\\\\mathfrak{}": 
-        "prefix": "gmu"
+    "mfrku": 
+        "prefix": "mfrku"
         "body": "\\\\mathfrak{$1}"
-    "\\\\mathcal{}": 
-        "prefix": "cau"
+    "mcalu": 
+        "prefix": "mcalu"
         "body": "\\\\mathcal{$1}"
-    "_\\\\vartheta": 
+    "lxvth": 
         "prefix": "lxvth"
         "body": "_\\\\vartheta"
-    "_\\\\varphi": 
+    "lxvph": 
         "prefix": "lxvph"
         "body": "_\\\\varphi"
-    "_\\\\Theta": 
+    "lxcth": 
         "prefix": "lxcth"
         "body": "_\\\\Theta"
-    "_\\\\Psi": 
+    "lxcps": 
         "prefix": "lxcps"
         "body": "_\\\\Psi"
-    "_\\\\Phi": 
+    "lxcph": 
         "prefix": "lxcph"
         "body": "_\\\\Phi"
-    "\\\\lim_{x \\\\rightarrow x_0}": 
+    "lixl0": 
         "prefix": "lixl0"
         "body": "\\\\lim_{x \\\\rightarrow x_0}"
-    "\\\\begin{eqnarray*}": 
-        "prefix": "bqas"
-        "body": "\\\\begin{eqnarray*}"
-    "\\\\int^{2 \\\\pi}_0": 
+    "lequs": 
+        "prefix": "lequs"
+        "body": """
+        \\\\begin{eqnarray*}
+        \\\\lefteqn{}\\\\\\\\
+        & &
+        \\\\end{eqnarray*}
+        """
+    "intxt": 
+        "prefix": "intxt"
+        "body": "\\\\intertext{$1}"
+    "i2xp0": 
         "prefix": "i2xp0"
         "body": "\\\\int^{2 \\\\pi}_0"
-    "^\\\\vartheta": 
+    "hxvth": 
         "prefix": "hxvth"
         "body": "^\\\\vartheta"
-    "^\\\\varphi": 
+    "hxvph": 
         "prefix": "hxvph"
         "body": "^\\\\varphi"
-    "^\\\\Theta": 
+    "hxcth": 
         "prefix": "hxcth"
         "body": "^\\\\Theta"
-    "^\\\\Psi": 
+    "hxcps": 
         "prefix": "hxcps"
         "body": "^\\\\Psi"
-    "^\\\\Phi": 
+    "hxcph": 
         "prefix": "hxcph"
         "body": "^\\\\Phi"
-    "\\\\mathfrak{so}(3) ": 
+    "gmso3": 
         "prefix": "gmso3"
         "body": "\\\\mathfrak{so}(3) "
-    "\\\\fbox{\\\\parbox{2.0in}{\\\\centerline{\\\\large \\\\bf type header} text }}": 
+    "frbox": 
         "prefix": "frbox"
         "body": "\\\\fbox{\\\\parbox{2.0in}{\\\\centerline{\\\\large \\\\bf type header} text }}"
-    "\\\\frac{dz}{dt}": 
+    "fdzdt": 
         "prefix": "fdzdt"
         "body": "\\\\frac{dz}{dt}"
-    "\\\\frac{dy}{dt}": 
+    "fdydt": 
         "prefix": "fdydt"
         "body": "\\\\frac{dy}{dt}"
-    "\\\\frac{dx}{dt}": 
+    "fdxdt": 
         "prefix": "fdxdt"
         "body": "\\\\frac{dx}{dt}"
-    "\\\\frac{du}{dt}": 
+    "fdudt": 
         "prefix": "fdudt"
         "body": "\\\\frac{du}{dt}"
-    "\\\\newcommand{\\\\bfi}{\\\\bfseries\\\\itshape}": 
+    "fdbfi": 
         "prefix": "fdbfi"
         "body": "\\\\newcommand{\\\\bfi}{\\\\bfseries\\\\itshape}"
-    "\\\\end{split}": 
+    "esplt": 
         "prefix": "esplt"
         "body": "\\\\end{split}"
-    "\\\\[": 
-        "prefix": "bdp"
-        "body": "\\\\["
-    "\\\\begin{equation}": 
-        "prefix": "beq"
-        "body": "\\\\begin{equation}"
-    "\\\\begin{align*}": 
-        "prefix": "bals"
-        "body": "\\\\begin{align*}"
-    "\\\\begin{align}": 
-        "prefix": "bal"
-        "body": "\\\\begin{align}"
-    "\\\\end{proposition}": 
+    "eqtxt": 
+        "prefix": "eqtxt"
+        "body": """
+        \\\\[
+        \\\\quad \\\\text{$1}
+        \\\\]
+        """
+    "eqlbr": 
+        "prefix": "eqlbr"
+        "body": """
+        \\\\begin{equation}
+        \\\\left.
+        \\\\begin{aligned}
+        &x = y           \\\\\\\\
+        &a = b^2 + b + 1
+        \\\\end{aligned}
+        \\\\right\\\\}
+        \\\\end{equation}
+        """
+    "eqbox": 
+        "prefix": "eqbox"
+        "body": """
+        \\\\begin{equation}
+        \\\\fbox{\\\\parbox{.7in}{\\\\$\\\\displaystyle{\\\\frac{x^2 + 1}{5} = y}\\\\$ }}
+        \\\\end{equation}
+        """
+    "eqaun": 
+        "prefix": "eqaun"
+        "body": """
+        \\\\begin{align*}
+        x^2   &= y+1 \\\\\\\\
+        x^2+1 &= u+v
+        \\\\end{align*}
+        """
+    "eqanu": 
+        "prefix": "eqanu"
+        "body": """
+        \\\\begin{align}
+        x^2   &= y+1    \\\\\\\\
+        x^2+1 &= u+v
+        \\\\end{align}
+        """
+    "eprop": 
         "prefix": "eprop"
         "body": "\\\\end{proposition}"
-    "\\\\end{problem}": 
+    "eprob": 
         "prefix": "eprob"
         "body": "\\\\end{problem}"
-    "\\\\end{note}": 
+    "enote": 
         "prefix": "enote"
         "body": "\\\\end{note}"
-    "\\\\end{notation}": 
+    "enota": 
         "prefix": "enota"
         "body": "\\\\end{notation}"
-    "\\\\end{multline*}": 
+    "emlts": 
         "prefix": "emlts"
         "body": "\\\\end{multline*}"
-    "\\\\end{criterion}": 
+    "ecrit": 
         "prefix": "ecrit"
         "body": "\\\\end{criterion}"
-    "\\\\end{conclusion}": 
+    "ecncl": 
         "prefix": "ecncl"
         "body": "\\\\end{conclusion}"
-    "\\\\end{comment}": 
+    "ecmnt": 
         "prefix": "ecmnt"
         "body": "\\\\end{comment}"
-    "\\\\end{case}": 
+    "ecase": 
         "prefix": "ecase"
         "body": "\\\\end{case}"
-    "\\\\end{alignedat}": 
+    "ealda": 
         "prefix": "ealda"
         "body": "\\\\end{alignedat}"
-    "\\\\end{alignat*}": 
+    "ealas": 
         "prefix": "ealas"
         "body": "\\\\end{alignat*}"
-    "$(x, y, z)$": 
+    "dxyzp": 
         "prefix": "dxyzp"
         "body": "\\\\$(x, y, z)\\\\$"
-    "$\\\\vartheta$": 
+    "dxvth": 
         "prefix": "dxvth"
         "body": "\\\\$\\\\vartheta\\\\$"
-    "$\\\\varphi$": 
+    "dxvph": 
         "prefix": "dxvph"
         "body": "\\\\$\\\\varphi\\\\$"
-    "$x^2 + y^2$": 
+    "dxpyq": 
         "prefix": "dxpyq"
         "body": "\\\\$x^2 + y^2\\\\$"
-    "$\\\\Theta$": 
+    "dxcth": 
         "prefix": "dxcth"
         "body": "\\\\$\\\\Theta\\\\$"
-    "$\\\\Psi$": 
+    "dxcps": 
         "prefix": "dxcps"
         "body": "\\\\$\\\\Psi\\\\$"
-    "$\\\\Phi$": 
+    "dxcph": 
         "prefix": "dxcph"
         "body": "\\\\$\\\\Phi\\\\$"
-    "$T^{\\\\ast}_{q} Q$": 
+    "dtsqq": 
         "prefix": "dtsqq"
         "body": "\\\\$T^{\\\\ast}_{q} Q\\\\$"
-    "$\\\\partial z/\\\\partial y$": 
+    "dpdzy": 
         "prefix": "dpdzy"
         "body": "\\\\$\\\\partial z/\\\\partial y\\\\$"
-    "$\\\\mathbb{Z}$ ": 
-        "prefix": "dbbcz"
+    "dopcz": 
+        "prefix": "dopcz"
         "body": "\\\\$\\\\mathbb{Z}\\\\$ "
-    "$\\\\mathbb{T}$ ": 
-        "prefix": "dbbct"
+    "dopct": 
+        "prefix": "dopct"
         "body": "\\\\$\\\\mathbb{T}\\\\$ "
-    "$\\\\mathbb{R}$ ": 
-        "prefix": "dbbcr"
+    "dopcr": 
+        "prefix": "dopcr"
         "body": "\\\\$\\\\mathbb{R}\\\\$ "
-    "$\\\\mathbb{I}$ ": 
-        "prefix": "dbbci"
+    "dopci": 
+        "prefix": "dopci"
         "body": "\\\\$\\\\mathbb{I}\\\\$ "
-    "$\\\\mathbb{C}$ ": 
-        "prefix": "dbbcc"
+    "dopcc": 
+        "prefix": "dopcc"
         "body": "\\\\$\\\\mathbb{C}\\\\$ "
-    "$\\\\mathfrak{k}^{\\\\ast}$ ": 
+    "dgmks": 
         "prefix": "dgmks"
         "body": "\\\\$\\\\mathfrak{k}^{\\\\ast}\\\\$ "
-    "$\\\\mathfrak{h}^{\\\\ast}$ ": 
+    "dgmhs": 
         "prefix": "dgmhs"
         "body": "\\\\$\\\\mathfrak{h}^{\\\\ast}\\\\$ "
-    "$\\\\mathfrak{g}^{\\\\ast}$ ": 
+    "dgmgs": 
         "prefix": "dgmgs"
         "body": "\\\\$\\\\mathfrak{g}^{\\\\ast}\\\\$ "
-    "$\\\\mathfrak{X}$ ": 
+    "dgmcx": 
         "prefix": "dgmcx"
         "body": "\\\\$\\\\mathfrak{X}\\\\$ "
-    "$\\\\mathfrak{T}$ ": 
+    "dgmct": 
         "prefix": "dgmct"
         "body": "\\\\$\\\\mathfrak{T}\\\\$ "
-    "$\\\\mathfrak{K}$ ": 
+    "dgmck": 
         "prefix": "dgmck"
         "body": "\\\\$\\\\mathfrak{K}\\\\$ "
-    "$\\\\mathfrak{H}$ ": 
+    "dgmch": 
         "prefix": "dgmch"
         "body": "\\\\$\\\\mathfrak{H}\\\\$ "
-    "$\\\\mathfrak{G}$ ": 
+    "dgmcg": 
         "prefix": "dgmcg"
         "body": "\\\\$\\\\mathfrak{G}\\\\$ "
-    "$\\\\mathfrak{A}$ ": 
+    "dgmca": 
         "prefix": "dgmca"
         "body": "\\\\$\\\\mathfrak{A}\\\\$ "
-    "\\\\documentclass{report}": 
+    "dcrep": 
         "prefix": "dcrep"
         "body": "\\\\documentclass{report}"
-    "\\\\documentclass{letter}": 
+    "dclet": 
         "prefix": "dclet"
         "body": "\\\\documentclass{letter}"
-    "\\\\documentclass{article}": 
+    "dcart": 
         "prefix": "dcart"
         "body": "\\\\documentclass{article}"
-    "\\\\caption{}": 
-        "prefix": "capt"
+    "dbbcz": 
+        "prefix": "dbbcz"
+        "body": "\\\\$\\\\mathbb{Z}\\\\$ "
+    "dbbct": 
+        "prefix": "dbbct"
+        "body": "\\\\$\\\\mathbb{T}\\\\$ "
+    "dbbcr": 
+        "prefix": "dbbcr"
+        "body": "\\\\$\\\\mathbb{R}\\\\$ "
+    "dbbci": 
+        "prefix": "dbbci"
+        "body": "\\\\$\\\\mathbb{I}\\\\$ "
+    "dbbcc": 
+        "prefix": "dbbcc"
+        "body": "\\\\$\\\\mathbb{C}\\\\$ "
+    "captu": 
+        "prefix": "captu"
         "body": "\\\\caption{$1}"
-    "\\\\begin{theorem}[Gauss' Theorem]": 
+    "bthmt": 
         "prefix": "bthmt"
         "body": "\\\\begin{theorem}[Gauss' Theorem]"
-    "\\\\begin{split}": 
+    "bsplt": 
         "prefix": "bsplt"
         "body": "\\\\begin{split}"
-    "\\\\begin{proposition}": 
+    "bprop": 
         "prefix": "bprop"
         "body": "\\\\begin{proposition}"
-    "\\\\begin{problem}": 
+    "bprob": 
         "prefix": "bprob"
         "body": "\\\\begin{problem}"
-    "\\\\begin{note}": 
+    "bnote": 
         "prefix": "bnote"
         "body": "\\\\begin{note}"
-    "\\\\begin{notation}": 
+    "bnota": 
         "prefix": "bnota"
         "body": "\\\\begin{notation}"
-    "\\\\begin{multline*}": 
+    "bmlts": 
         "prefix": "bmlts"
         "body": "\\\\begin{multline*}"
-    "\\\\renewcommand{\\\\baselinestretch}{1.5}": 
+    "blstr": 
         "prefix": "blstr"
         "body": "\\\\renewcommand{\\\\baselinestretch}{1.5}"
-    "\\\\baselineskip": 
+    "blskp": 
         "prefix": "blskp"
         "body": "\\\\baselineskip"
-    "\\\\bigcap": 
+    "bints": 
         "prefix": "bints"
         "body": "\\\\bigcap"
-    "\\\\bibitem[]{}": 
+    "bibib": 
+        "prefix": "bibib"
+        "body": """
+        \\\\bibitem[]{}
+        Author [year]
+        {\\\\it Title.\\\\/}
+        Publisher.
+        """
+    "bibia": 
         "prefix": "bibia"
         "body": """
         \\\\bibitem[]{}
@@ -1167,170 +1483,188 @@
         Title.
         {\\\\it Journal\\\\/} {\\\\bf 11}, 123--223.
         """
-    "\\\\begin{criterion}": 
+    "bcrit": 
         "prefix": "bcrit"
         "body": "\\\\begin{criterion}"
-    "\\\\begin{conclusion}": 
+    "bcncl": 
         "prefix": "bcncl"
         "body": "\\\\begin{conclusion}"
-    "\\\\begin{comment}": 
+    "bcmnt": 
         "prefix": "bcmnt"
         "body": "\\\\begin{comment}"
-    "\\\\begin{case}": 
+    "bcase": 
         "prefix": "bcase"
         "body": "\\\\begin{case}"
-    "\\\\begin{alignedat}{}": 
+    "bbcrn": 
+        "prefix": "bbcrn"
+        "body": "\\\\mathbb{R}^n "
+    "bbcrm": 
+        "prefix": "bbcrm"
+        "body": "\\\\mathbb{R}^m "
+    "bbcr3": 
+        "prefix": "bbcr3"
+        "body": "\\\\mathbb{R}^3 "
+    "bbcr2": 
+        "prefix": "bbcr2"
+        "body": "\\\\mathbb{R}^2 "
+    "bbcr1": 
+        "prefix": "bbcr1"
+        "body": "\\\\mathbb{R}^1 "
+    "balda": 
         "prefix": "balda"
         "body": "\\\\begin{alignedat}{$1}"
-    "\\\\begin{alignat*}{}": 
+    "balas": 
         "prefix": "balas"
         "body": "\\\\begin{alignat*}{$1}"
-    "(\\\\mathbf{a} \\\\times \\\\mathbf{b})": 
+    "atibp": 
         "prefix": "atibp"
         "body": "(\\\\mathbf{a} \\\\times \\\\mathbf{b})"
-    "(x, y, z)": 
+    "xyzp": 
         "prefix": "xyzp"
         "body": "(x, y, z)"
-    "\\\\vartheta": 
+    "xvth": 
         "prefix": "xvth"
         "body": "\\\\vartheta"
-    "\\\\varphi": 
+    "xvph": 
         "prefix": "xvph"
         "body": "\\\\varphi"
-    "x^2 + y^2": 
+    "xpyq": 
         "prefix": "xpyq"
         "body": "x^2 + y^2"
-    "\\\\Theta": 
+    "xcth": 
         "prefix": "xcth"
         "body": "\\\\Theta"
-    "\\\\Psi": 
+    "xcps": 
         "prefix": "xcps"
         "body": "\\\\Psi"
-    "\\\\Phi": 
+    "xcph": 
         "prefix": "xcph"
         "body": "\\\\Phi"
-    "velocity": 
+    "wvel": 
         "prefix": "wvel"
         "body": "velocity"
-    "theorems": 
+    "wtms": 
         "prefix": "wtms"
         "body": "theorems"
-    "solutions": 
+    "wsns": 
         "prefix": "wsns"
         "body": "solutions"
-    "rotation": 
+    "wrtn": 
         "prefix": "wrtn"
         "body": "rotation"
-    "rotating": 
+    "wrtg": 
         "prefix": "wrtg"
         "body": "rotating"
-    "relation": 
+    "wrln": 
         "prefix": "wrln"
         "body": "relation"
-    "relative": 
+    "wrel": 
         "prefix": "wrel"
         "body": "relative"
-    "perpendicular": 
+    "wprp": 
         "prefix": "wprp"
         "body": "perpendicular"
-    "positive": 
+    "wpos": 
         "prefix": "wpos"
         "body": "positive"
-    "nonlinearity": 
+    "wnly": 
         "prefix": "wnly"
         "body": "nonlinearity"
-    "negative": 
+    "wneg": 
         "prefix": "wneg"
         "body": "negative"
-    "line integral": 
+    "wlig": 
         "prefix": "wlig"
         "body": "line integral"
-    "{\\\\it i.e.,\\\\/}": 
+    "wiie": 
         "prefix": "wiie"
         "body": "{\\\\it i.e.,\\\\/}"
-    "integrals": 
+    "wigs": 
         "prefix": "wigs"
         "body": "integrals"
-    "integration": 
+    "wign": 
         "prefix": "wign"
         "body": "integration"
-    "integrable": 
+    "wigb": 
         "prefix": "wigb"
         "body": "integrable"
-    "geometric": 
+    "wgmc": 
         "prefix": "wgmc"
         "body": "geometric"
-    "function": 
+    "wfun": 
         "prefix": "wfun"
         "body": "function"
-    "equation": 
+    "weqn": 
         "prefix": "weqn"
         "body": "equation"
-    "derivative": 
+    "wder": 
         "prefix": "wder"
         "body": "derivative"
-    "calculates": 
+    "wcls": 
         "prefix": "wcls"
         "body": "calculates"
-    "calculation": 
+    "wcln": 
         "prefix": "wcln"
         "body": "calculation"
-    "calculate": 
+    "wcle": 
         "prefix": "wcle"
         "body": "calculate"
-    "Department of Physics": 
+    "wcdp": 
         "prefix": "wcdp"
         "body": "Department of Physics"
-    "Department of Mathematics": 
+    "wcdm": 
         "prefix": "wcdm"
         "body": "Department of Mathematics"
-    "accelerates": 
+    "wacs": 
         "prefix": "wacs"
         "body": "accelerates"
-    "acceleration": 
+    "wacn": 
         "prefix": "wacn"
         "body": "acceleration"
-    "accelerate": 
+    "wace": 
         "prefix": "wace"
         "body": "accelerate"
-    "\\\\vspace{}": 
-        "prefix": "vsp"
+    "vspu": 
+        "prefix": "vspu"
         "body": "\\\\vspace{$1}"
-    "\\\\vskip 12pt": 
+    "vskp": 
         "prefix": "vskp"
         "body": "\\\\vskip 12pt"
-    "\\\\mid": 
+    "vbar": 
         "prefix": "vbar"
         "body": "\\\\mid"
-    "\\\\underset{}{}": 
+    "upkg": 
+        "prefix": "upkg"
+        "body": "\\\\usepackage{$1}"
+    "unst": 
         "prefix": "unst"
         "body": "\\\\underset{$1}{$2}"
-    "\\\\bigcup^{n}_{i = 1}": 
+    "uni1": 
         "prefix": "uni1"
         "body": "\\\\bigcup^{n}_{i = 1}"
-    "\\\\text{}": 
-        "prefix": "txt"
+    "txtu": 
+        "prefix": "txtu"
         "body": "\\\\text{$1}"
-    "\\\\texorpdfstring{$$}{}": 
+    "txpf": 
         "prefix": "txpf"
         "body": "\\\\texorpdfstring{\\\\$$1\\\\$}{$2}"
-    "T^{\\\\ast}_{q} Q": 
+    "tsqq": 
         "prefix": "tsqq"
         "body": "T^{\\\\ast}_{q} Q"
-    "\\\\topskip 24pt": 
+    "tskp": 
         "prefix": "tskp"
         "body": "\\\\topskip 24pt"
-    "\\\\tag*{}": 
-        "prefix": "tgs"
+    "tgsu": 
+        "prefix": "tgsu"
         "body": "\\\\tag*{$1}"
-    "\\\\begin{cases}": 
+    "tecs": 
         "prefix": "tecs"
         "body": """
         \\\\begin{cases}
         $1
         \\\\end{cases}
         """
-    "--Article Preamble-----------------------------------------------": 
+    "tebd": 
         "prefix": "tebd"
         "body": """
         %--Article Preamble-----------------------------------------------
@@ -1351,7 +1685,7 @@
         \\\\begin{document}
         %================================================================================
         """
-    "\\\\bibliographystyle{utcaps_nat}": 
+    "tebibx": 
         "prefix": "tebibx"
         "body": """
         %================================================================================
@@ -1360,7 +1694,7 @@
         %================================================================================
         \\\\end{document}
         """
-    "\\\\usepackage[style=numeric-links,language=british]{biblatex}": 
+    "teblx": 
         "prefix": "teblx"
         "body": """
         %--------------------------------------------------------------------------------
@@ -1372,10 +1706,16 @@
         \\\\setlength{\\\\bibitemsep}{\\\\parsep}
         %--------------------------------------------------------------------------------
         """
-    "\\\\begin{tabbing}": 
-        "prefix": "btb"
-        "body": "\\\\begin{tabbing}"
-    "\\\\begin{table}[ht]                 %optional [t, b or h];": 
+    "tbex": 
+        "prefix": "tbex"
+        "body": """
+        \\\\begin{tabbing}
+        xxxxxxxxxxx\\\\= xxxxxxxxxxx\\\\= xxxxxxxxxxx\\\\= \\\\kill
+        items      \\\\> for        \\\\> row        \\\\> one      \\\\\\\\
+        items      \\\\> for        \\\\> row        \\\\> two      \\\\\\\\
+        \\\\end{tabbing}
+        """
+    "tabl": 
         "prefix": "tabl"
         "body": """
         \\\\begin{table}[ht]                 %optional [t, b or h];
@@ -1389,289 +1729,289 @@
         \\\\label{}
         \\\\end{table}
         """
-    "\\\\supset": 
+    "sups": 
         "prefix": "sups"
         "body": "\\\\supset"
-    "\\\\sup": 
+    "supr": 
         "prefix": "supr"
         "body": "\\\\sup"
-    "\\\\supseteq": 
+    "supe": 
         "prefix": "supe"
         "body": "\\\\supseteq"
-    "\\\\sum": 
+    "sumu": 
         "prefix": "sumu"
         "body": "\\\\sum"
-    "\\\\subset": 
+    "subs": 
         "prefix": "subs"
         "body": "\\\\subset"
-    "\\\\subseteq": 
+    "sube": 
         "prefix": "sube"
         "body": "\\\\subseteq"
-    "\\\\sideset{}": 
+    "sstu": 
         "prefix": "sstu"
         "body": "\\\\sideset{$1}"
-    " \\\\scriptscriptstyle": 
+    "sssz": 
         "prefix": "sssz"
         "body": " \\\\scriptscriptstyle"
-    "\\\\subsection*{}": 
+    "ssns": 
         "prefix": "ssns"
         "body": "\\\\subsection*{$1}"
-    "\\\\smallskip": 
+    "sskp": 
         "prefix": "sskp"
         "body": "\\\\smallskip"
-    "\\\\sqrt{\\\\pi}": 
+    "sqxp": 
         "prefix": "sqxp"
         "body": "\\\\sqrt{\\\\pi}"
-    "\\\\sqrt{10}": 
+    "sq10": 
         "prefix": "sq10"
         "body": "\\\\sqrt{10}"
-    "\\\\,dt": 
-        "prefix": "sdt"
+    "spdt": 
+        "prefix": "spdt"
         "body": "\\\\,dt"
-    "\\\\sum^{n}_{i = 1}": 
+    "sni1": 
         "prefix": "sni1"
         "body": "\\\\sum^{n}_{i = 1}"
-    "\\\\setlength{}": 
+    "slnu": 
         "prefix": "slnu"
         "body": "\\\\setlength{$1}"
-    "\\\\sin \\\\theta": 
+    "sith": 
         "prefix": "sith"
         "body": "\\\\sin \\\\theta"
-    "\\\\sin \\\\phi": 
+    "siph": 
         "prefix": "siph"
         "body": "\\\\sin \\\\phi"
-    "\\\\{    \\\\mid    \\\\}": 
+    "setu": 
         "prefix": "setu"
         "body": "\\\\{    \\\\mid    \\\\}"
-    "\\\\setminus": 
+    "setm": 
         "prefix": "setm"
         "body": "\\\\setminus"
-    "\\\\setcounter{}{}": 
+    "setc": 
         "prefix": "setc"
         "body": "\\\\setcounter{$1}{$2}"
-    "\\\\raisetag{}": 
+    "rtgu": 
         "prefix": "rtgu"
         "body": "\\\\raisetag{$1}"
-    "\\\\rightline{}": 
+    "rlin": 
         "prefix": "rlin"
         "body": "\\\\rightline{$1}"
-    "\\\\right\\\\}": 
+    "ribr": 
         "prefix": "ribr"
         "body": "\\\\right\\\\}"
-    "\\\\right]": 
+    "ribk": 
         "prefix": "ribk"
         "body": "\\\\right]"
-    "\\\\ref{": 
+    "refu": 
         "prefix": "refu"
         "body": "\\\\ref{"
-    "(\\\\ref{})": 
+    "refp": 
         "prefix": "refp"
         "body": "(\\\\ref{$1})"
-    "\\\\renewcommand{}{}": 
+    "rcmd": 
         "prefix": "rcmd"
         "body": "\\\\renewcommand{$1}{$2}"
-    "\\\\quad\\\\bigtriangledown": 
+    "qetd": 
         "prefix": "qetd"
         "body": "\\\\quad\\\\bigtriangledown"
-    "\\\\quad\\\\square": 
+    "qesq": 
         "prefix": "qesq"
         "body": "\\\\quad\\\\square"
-    "\\\\qedsymbol": 
+    "qeds": 
         "prefix": "qeds"
         "body": "\\\\qedsymbol"
-    "\\\\quad\\\\blacktriangledown": 
+    "qbtd": 
         "prefix": "qbtd"
         "body": "\\\\quad\\\\blacktriangledown"
-    "\\\\quad\\\\blacksquare": 
+    "qbsq": 
         "prefix": "qbsq"
         "body": "\\\\quad\\\\blacksquare"
-    "\\\\prod^{n}_{i = 1}": 
+    "pni1": 
         "prefix": "pni1"
         "body": "\\\\prod^{n}_{i = 1}"
-    "\\\\mathop{\\\\pmb{}}": 
+    "pmbu": 
         "prefix": "pmbu"
         "body": "\\\\mathop{\\\\pmb{$1}}"
-    "\\\\printindex": 
+    "pidx": 
         "prefix": "pidx"
         "body": "\\\\printindex"
-    "\\\\pagestyle{myheadings}": 
+    "pgsm": 
         "prefix": "pgsm"
         "body": "\\\\pagestyle{myheadings}"
-    "\\\\pagestyle{empty}": 
+    "pgse": 
         "prefix": "pgse"
         "body": "\\\\pagestyle{empty}"
-    "\\\\pagenumbering{roman}": 
+    "pgnr": 
         "prefix": "pgnr"
         "body": "\\\\pagenumbering{roman}"
-    "\\\\pagenumbering{arabic}": 
+    "pgna": 
         "prefix": "pgna"
         "body": "\\\\pagenumbering{arabic}"
-    "\\\\partial z/\\\\partial y": 
+    "pdzy": 
         "prefix": "pdzy"
         "body": "\\\\partial z/\\\\partial y"
-    "(\\\\varsigma)": 
+    "oxvs": 
         "prefix": "oxvs"
         "body": "(\\\\varsigma)"
-    "(\\\\varrho)": 
+    "oxvr": 
         "prefix": "oxvr"
         "body": "(\\\\varrho)"
-    "(\\\\varpi)": 
+    "oxvp": 
         "prefix": "oxvp"
         "body": "(\\\\varpi)"
-    "(\\\\varepsilon)": 
+    "oxve": 
         "prefix": "oxve"
         "body": "(\\\\varepsilon)"
-    "(\\\\theta)": 
+    "oxth": 
         "prefix": "oxth"
         "body": "(\\\\theta)"
-    "(\\\\psi)": 
+    "oxps": 
         "prefix": "oxps"
         "body": "(\\\\psi)"
-    "(\\\\phi)": 
+    "oxph": 
         "prefix": "oxph"
         "body": "(\\\\phi)"
-    "(\\\\eta)": 
+    "oxet": 
         "prefix": "oxet"
         "body": "(\\\\eta)"
-    "(\\\\Xi)": 
+    "oxcx": 
         "prefix": "oxcx"
         "body": "(\\\\Xi)"
-    "(\\\\Upsilon)": 
+    "oxcu": 
         "prefix": "oxcu"
         "body": "(\\\\Upsilon)"
-    "(\\\\Sigma)": 
+    "oxcs": 
         "prefix": "oxcs"
         "body": "(\\\\Sigma)"
-    "(\\\\Pi)": 
+    "oxcp": 
         "prefix": "oxcp"
         "body": "(\\\\Pi)"
-    "(\\\\Omega)": 
+    "oxco": 
         "prefix": "oxco"
         "body": "(\\\\Omega)"
-    "(\\\\Lambda)": 
+    "oxcl": 
         "prefix": "oxcl"
         "body": "(\\\\Lambda)"
-    "(\\\\Gamma)": 
+    "oxcg": 
         "prefix": "oxcg"
         "body": "(\\\\Gamma)"
-    "(\\\\Delta)": 
+    "oxcd": 
         "prefix": "oxcd"
         "body": "(\\\\Delta)"
-    "\\\\overset{}": 
+    "ovsu": 
         "prefix": "ovsu"
         "body": "\\\\overset{$1}"
-    "\\\\overset{}{}": 
+    "ovst": 
         "prefix": "ovst"
         "body": "\\\\overset{$1}{$2}"
-    "\\\\operatorname{sq}": 
+    "opsq": 
         "prefix": "opsq"
         "body": "\\\\operatorname{sq}"
-    "\\\\operatorname{sl}": 
+    "opsl": 
         "prefix": "opsl"
         "body": "\\\\operatorname{sl}"
-    "\\\\operatorname{": 
+    "opnu": 
         "prefix": "opnu"
         "body": "\\\\operatorname{"
-    "\\\\mathbb{Z} ": 
-        "prefix": "bbcz"
+    "opcz": 
+        "prefix": "opcz"
         "body": "\\\\mathbb{Z} "
-    "\\\\mathbb{T} ": 
-        "prefix": "bbct"
+    "opct": 
+        "prefix": "opct"
         "body": "\\\\mathbb{T} "
-    "\\\\mathbb{R} ": 
-        "prefix": "bbcr"
+    "opcr": 
+        "prefix": "opcr"
         "body": "\\\\mathbb{R} "
-    "\\\\mathbb{I} ": 
-        "prefix": "bbci"
+    "opci": 
+        "prefix": "opci"
         "body": "\\\\mathbb{I} "
-    "\\\\mathbb{C} ": 
-        "prefix": "bbcc"
+    "opcc": 
+        "prefix": "opcc"
         "body": "\\\\mathbb{C} "
-    "\\\\operatorname{ad}": 
+    "opad": 
         "prefix": "opad"
         "body": "\\\\operatorname{ad}"
-    "\\\\overline{\\\\gamma}": 
+    "olxg": 
         "prefix": "olxg"
         "body": "\\\\overline{\\\\gamma}"
-    "\\\\overline{\\\\beta}": 
+    "olxb": 
         "prefix": "olxb"
         "body": "\\\\overline{\\\\beta}"
-    "\\\\overline{\\\\alpha}": 
+    "olxa": 
         "prefix": "olxa"
         "body": "\\\\overline{\\\\alpha}"
-    "\\\\Leftrightarrow": 
-        "prefix": "eqvt"
+    "olra": 
+        "prefix": "olra"
         "body": "\\\\Leftrightarrow"
-    "\\\\hat{\\\\gamma}": 
+    "ohxg": 
         "prefix": "ohxg"
         "body": "\\\\hat{\\\\gamma}"
-    "\\\\hat{\\\\beta}": 
+    "ohxb": 
         "prefix": "ohxb"
         "body": "\\\\hat{\\\\beta}"
-    "\\\\hat{\\\\alpha}": 
+    "ohxa": 
         "prefix": "ohxa"
         "body": "\\\\hat{\\\\alpha}"
-    "\\\\dot{\\\\gamma}": 
+    "odxg": 
         "prefix": "odxg"
         "body": "\\\\dot{\\\\gamma}"
-    "\\\\dot{\\\\beta}": 
+    "odxb": 
         "prefix": "odxb"
         "body": "\\\\dot{\\\\beta}"
-    "\\\\dot{\\\\alpha}": 
+    "odxa": 
         "prefix": "odxa"
         "body": "\\\\dot{\\\\alpha}"
-    "\\\\ddot{z}": 
+    "oddz": 
         "prefix": "oddz"
         "body": "\\\\ddot{z}"
-    "\\\\ddot{y}": 
+    "oddy": 
         "prefix": "oddy"
         "body": "\\\\ddot{y}"
-    "\\\\ddot{x}": 
+    "oddx": 
         "prefix": "oddx"
         "body": "\\\\ddot{x}"
-    "\\\\ddot{}": 
+    "oddu": 
         "prefix": "oddu"
         "body": "\\\\ddot{$1}"
-    "\\\\ddot{s}": 
+    "odds": 
         "prefix": "odds"
         "body": "\\\\ddot{s}"
-    "\\\\ddot{r}": 
+    "oddr": 
         "prefix": "oddr"
         "body": "\\\\ddot{r}"
-    "\\\\ddot{q}": 
+    "oddq": 
         "prefix": "oddq"
         "body": "\\\\ddot{q}"
-    "\\\\ddot{p}": 
+    "oddp": 
         "prefix": "oddp"
         "body": "\\\\ddot{p}"
-    "(U)": 
+    "ocuu": 
         "prefix": "ocuu"
         "body": "(U)"
-    "\\\\bar{\\\\gamma}": 
+    "obxg": 
         "prefix": "obxg"
         "body": "\\\\bar{\\\\gamma}"
-    "\\\\bar{\\\\beta}": 
+    "obxb": 
         "prefix": "obxb"
         "body": "\\\\bar{\\\\beta}"
-    "\\\\bar{\\\\alpha}": 
+    "obxa": 
         "prefix": "obxa"
         "body": "\\\\bar{\\\\alpha}"
-    "\\\\|\\\\mathbf{u}\\\\|": 
+    "nrbu": 
         "prefix": "nrbu"
         "body": "\\\\|\\\\mathbf{u}\\\\|"
-    "\\\\nonumber": 
+    "nonu": 
         "prefix": "nonu"
         "body": "\\\\nonumber"
-    "\\\\newline": 
+    "nlin": 
         "prefix": "nlin"
         "body": "\\\\newline"
-    "\\\\! \\\\!": 
+    "ndsp": 
         "prefix": "ndsp"
         "body": "\\\\! \\\\!"
-    "\\\\newcommand{}{}": 
+    "ncmd": 
         "prefix": "ncmd"
         "body": "\\\\newcommand{$1}{$2}"
-    "\\\\begin{vmatrix}": 
+    "mxvu": 
         "prefix": "mxvu"
         "body": """
         \\\\begin{vmatrix}
@@ -1679,7 +2019,7 @@
         ...&...
         \\\\end{vmatrix}
         """
-    "\\\\begin{smallmatrix}": 
+    "mxsu": 
         "prefix": "mxsu"
         "body": """
         \\\\begin{smallmatrix}
@@ -1687,16 +2027,49 @@
         ...&...
         \\\\end{smallmatrix}
         """
-    "\\\\begin{pmatrix}": 
-        "prefix": "mxc"
+    "mxpu": 
+        "prefix": "mxpu"
         "body": """
         \\\\begin{pmatrix}
-         x_1  \\\\\\\\
-         x_2  \\\\\\\\
-         x_3
+        ...&...\\\\\\\\
+        ...&...
         \\\\end{pmatrix}
         """
-    "\\\\left| \\\\begin{matrix}": 
+    "mxcb": 
+        "prefix": "mxcb"
+        "body": """
+        \\\\begin{bmatrix}
+        x  \\\\\\\\
+        y
+        \\\\end{bmatrix}
+        """
+    "mxbu": 
+        "prefix": "mxbu"
+        "body": """
+        \\\\begin{bmatrix}
+        ...&...\\\\\\\\
+        ...&...
+        \\\\end{bmatrix}
+        """
+    "mx3p": 
+        "prefix": "mx3p"
+        "body": """
+        \\\\begin{pmatrix}
+        a & b & c \\\\\\\\
+        d & e & f \\\\\\\\
+        g & h & i
+        \\\\end{pmatrix}
+        """
+    "mx3i": 
+        "prefix": "mx3i"
+        "body": """
+        \\\\begin{pmatrix}
+         1 & 0 & 0 \\\\\\\\
+         0 & 1 & 0 \\\\\\\\
+         0 & 0 & 1
+        \\\\end{pmatrix}
+        """
+    "mx3d": 
         "prefix": "mx3d"
         "body": """
         \\\\left| \\\\begin{matrix}
@@ -1705,691 +2078,799 @@
         g & h & i
         \\\\end{matrix} \\\\right|
         """
-    "\\\\mathtt{}": 
-        "prefix": "mtt"
+    "mx3b": 
+        "prefix": "mx3b"
+        "body": """
+        \\\\begin{bmatrix}
+        a & b & c \\\\\\\\
+        d & e & f \\\\\\\\
+        g & h & i
+        \\\\end{bmatrix}
+        """
+    "mx2s": 
+        "prefix": "mx2s"
+        "body": """
+        \\\\begin{bmatrix}
+         0 & 1 \\\\\\\\
+        -1 & 0
+        \\\\end{bmatrix}
+        """
+    "mx2p": 
+        "prefix": "mx2p"
+        "body": """
+        \\\\begin{pmatrix}
+         a & b \\\\\\\\
+         c & d
+        \\\\end{pmatrix}
+        """
+    "mx2i": 
+        "prefix": "mx2i"
+        "body": """
+        \\\\begin{bmatrix}
+        1 & 0 \\\\\\\\
+        0 & 1
+        \\\\end{bmatrix}
+        """
+    "mttu": 
+        "prefix": "mttu"
         "body": "\\\\mathtt{$1}"
-    "\\\\newtheorem{theorem}{Theorem}": 
+    "mthm": 
         "prefix": "mthm"
         "body": "\\\\newtheorem{theorem}{Theorem}"
-    "\\\\medskip": 
+    "mskp": 
         "prefix": "mskp"
         "body": "\\\\medskip"
-    "\\\\mathsf{}": 
-        "prefix": "msf"
+    "msfu": 
+        "prefix": "msfu"
         "body": "\\\\mathsf{$1}"
-    "\\\\mathrm{}": 
-        "prefix": "mrm"
+    "mrmu": 
+        "prefix": "mrmu"
         "body": "\\\\mathrm{$1}"
-    "\\\\markboth{}{}": 
+    "mrkb": 
         "prefix": "mrkb"
         "body": "\\\\markboth{$1}{$2}"
-    "\\\\mathop{}": 
+    "mopu": 
         "prefix": "mopu"
         "body": "\\\\mathop{$1}"
-    "\\\\newtheorem{lemma}{Lemma}": 
+    "mlem": 
         "prefix": "mlem"
         "body": "\\\\newtheorem{lemma}{Lemma}"
-    "\\\\mathit{}": 
-        "prefix": "mit"
+    "mitu": 
+        "prefix": "mitu"
         "body": "\\\\mathit{$1}"
-    "\\\\makeindex": 
+    "midx": 
         "prefix": "midx"
         "body": "\\\\makeindex"
-    "\\\\newtheorem{definition}{Definition}": 
+    "mfrk": 
+        "prefix": "mfrk"
+        "body": "\\\\mathfrak{$1}"
+    "mdfn": 
         "prefix": "mdfn"
         "body": "\\\\newtheorem{definition}{Definition}"
-    "\\\\newtheorem{corollary}{Corollary}": 
+    "mcor": 
         "prefix": "mcor"
         "body": "\\\\newtheorem{corollary}{Corollary}"
-    "\\\\mbox{}": 
-        "prefix": "mbx"
+    "mcal": 
+        "prefix": "mcal"
+        "body": "\\\\mathcal{$1}"
+    "mbxu": 
+        "prefix": "mbxu"
         "body": "\\\\mbox{$1}"
-    "\\\\mathbf{}": 
-        "prefix": "mbf"
+    "mbfu": 
+        "prefix": "mbfu"
         "body": "\\\\mathbf{$1}"
-    "\\\\mathbb{}": 
-        "prefix": "bbu"
+    "mbbu": 
+        "prefix": "mbbu"
         "body": "\\\\mathbb{$1}"
-    "_\\\\varsigma": 
+    "lxvs": 
         "prefix": "lxvs"
         "body": "_\\\\varsigma"
-    "_\\\\varrho": 
+    "lxvr": 
         "prefix": "lxvr"
         "body": "_\\\\varrho"
-    "_\\\\varpi": 
+    "lxvp": 
         "prefix": "lxvp"
         "body": "_\\\\varpi"
-    "_\\\\varepsilon": 
+    "lxve": 
         "prefix": "lxve"
         "body": "_\\\\varepsilon"
-    "_\\\\theta": 
+    "lxth": 
         "prefix": "lxth"
         "body": "_\\\\theta"
-    "_\\\\psi": 
+    "lxps": 
         "prefix": "lxps"
         "body": "_\\\\psi"
-    "_\\\\phi": 
+    "lxph": 
         "prefix": "lxph"
         "body": "_\\\\phi"
-    "_{\\\\mu\\\\nu}": 
+    "lxmn": 
         "prefix": "lxmn"
         "body": "_{\\\\mu\\\\nu}"
-    "_\\\\iota": 
+    "lxio": 
         "prefix": "lxio"
         "body": "_\\\\iota"
-    "_{\\\\gamma\\\\delta}": 
+    "lxgd": 
         "prefix": "lxgd"
         "body": "_{\\\\gamma\\\\delta}"
-    "_\\\\eta": 
+    "lxet": 
         "prefix": "lxet"
         "body": "_\\\\eta"
-    "_\\\\Xi": 
+    "lxcx": 
         "prefix": "lxcx"
         "body": "_\\\\Xi"
-    "_\\\\Upsilon": 
+    "lxcu": 
         "prefix": "lxcu"
         "body": "_\\\\Upsilon"
-    "_\\\\Sigma": 
+    "lxcs": 
         "prefix": "lxcs"
         "body": "_\\\\Sigma"
-    "_\\\\Pi": 
+    "lxcp": 
         "prefix": "lxcp"
         "body": "_\\\\Pi"
-    "_\\\\Omega": 
+    "lxco": 
         "prefix": "lxco"
         "body": "_\\\\Omega"
-    "_\\\\Lambda": 
+    "lxcl": 
         "prefix": "lxcl"
         "body": "_\\\\Lambda"
-    "_\\\\Gamma": 
+    "lxcg": 
         "prefix": "lxcg"
         "body": "_\\\\Gamma"
-    "_\\\\Delta": 
+    "lxcd": 
         "prefix": "lxcd"
         "body": "_\\\\Delta"
-    "_{\\\\alpha\\\\beta}": 
+    "lxab": 
         "prefix": "lxab"
         "body": "_{\\\\alpha\\\\beta}"
-    "_\\\\star": 
+    "lvst": 
         "prefix": "lvst"
         "body": "_\\\\star"
-    "\\\\longrightarrow": 
+    "lora": 
         "prefix": "lora"
         "body": "\\\\longrightarrow"
-    "\\\\log": 
+    "logg": 
         "prefix": "logg"
         "body": "\\\\log"
-    "\\\\leftline{}": 
+    "llin": 
         "prefix": "llin"
         "body": "\\\\leftline{$1}"
-    "\\\\lim{}": 
+    "limu": 
         "prefix": "limu"
         "body": "\\\\lim{$1}"
-    "\\\\limsup": 
+    "lims": 
         "prefix": "lims"
         "body": "\\\\limsup"
-    "\\\\lim": 
+    "limm": 
         "prefix": "limm"
         "body": "\\\\lim"
-    "\\\\liminf": 
+    "limi": 
         "prefix": "limi"
         "body": "\\\\liminf"
-    "_{ijk}": 
+    "lijk": 
         "prefix": "lijk"
         "body": "_{ijk}"
-    "\\\\pounds": 
+    "lied": 
         "prefix": "lied"
         "body": "\\\\pounds"
-    "\\\\lim_{a \\\\rightarrow \\\\infty}": 
+    "liai": 
         "prefix": "liai"
         "body": "\\\\lim_{a \\\\rightarrow \\\\infty}"
-    "\\\\lim_{(x,y) \\\\rightarrow (0,0)}": 
+    "li00": 
         "prefix": "li00"
         "body": "\\\\lim_{(x,y) \\\\rightarrow (0,0)}"
-    "\\\\begin{eqnarray}": 
-        "prefix": "bqa"
-        "body": "\\\\begin{eqnarray}"
-    "\\\\left\\\\{": 
+    "lequ": 
+        "prefix": "lequ"
+        "body": """
+        \\\\begin{eqnarray}
+        \\\\lefteqn{} \\\\nonumber \\\\\\\\
+        & &
+        \\\\end{eqnarray}
+        """
+    "lebr": 
         "prefix": "lebr"
         "body": "\\\\left\\\\{"
-    "\\\\linebreak": 
+    "lebk": 
+        "prefix": "lebk"
+        "body": "\\\\left["
+    "lbrk": 
         "prefix": "lbrk"
         "body": "\\\\linebreak"
-    "\\\\label{}": 
-        "prefix": "lbl"
+    "lblu": 
+        "prefix": "lblu"
         "body": "\\\\label{$1}"
-    "\\\\item[": 
+    "itmu": 
         "prefix": "itmu"
         "body": "\\\\item["
-    "\\\\int": 
+    "intu": 
         "prefix": "intu"
         "body": "\\\\int"
-    "\\\\int \\\\!\\\\!\\\\! \\\\int \\\\!\\\\!\\\\! \\\\int": 
+    "intt": 
         "prefix": "intt"
         "body": "\\\\int \\\\!\\\\!\\\\! \\\\int \\\\!\\\\!\\\\! \\\\int"
-    "\\\\cap": 
+    "ints": 
         "prefix": "ints"
         "body": "\\\\cap"
-    "\\\\int \\\\!\\\\!\\\\! \\\\int": 
+    "intd": 
         "prefix": "intd"
         "body": "\\\\int \\\\!\\\\!\\\\! \\\\int"
-    "\\\\oint": 
+    "intc": 
         "prefix": "intc"
         "body": "\\\\oint"
-    "\\\\bigcap^{n}_{i = 1}": 
+    "ini1": 
         "prefix": "ini1"
         "body": "\\\\bigcap^{n}_{i = 1}"
-    "\\\\inf": 
+    "infm": 
         "prefix": "infm"
         "body": "\\\\inf"
-    "\\\\infty": 
+    "infi": 
         "prefix": "infi"
         "body": "\\\\infty"
-    "\\\\Leftarrow": 
+    "impb": 
         "prefix": "impb"
         "body": "\\\\Leftarrow"
-    "\\\\begin{figure}": 
-        "prefix": "bfig"
-        "body": "\\\\begin{figure}"
-    "\\\\int_D": 
+    "illu": 
+        "prefix": "illu"
+        "body": """
+        \\\\begin{figure}
+        \\\\begin{center}
+               \\\\special{illustration } %add eps filename
+        \\\\caption{\\\\label{}}
+        \\\\end{center}
+        \\\\end{figure}
+        """
+    "ilcd": 
         "prefix": "ilcd"
         "body": "\\\\int_D"
-    "\\\\int^\\\\infty_{-\\\\infty}": 
+    "iinf": 
         "prefix": "iinf"
         "body": "\\\\int^\\\\infty_{-\\\\infty}"
-    "\\\\includegraphics{}": 
-        "prefix": "igr"
+    "igru": 
+        "prefix": "igru"
         "body": "\\\\includegraphics{$1}"
-    "\\\\index{}": 
-        "prefix": "idx"
+    "idxu": 
+        "prefix": "idxu"
         "body": "\\\\index{$1}"
-    "^\\\\varsigma": 
+    "hxvs": 
         "prefix": "hxvs"
         "body": "^\\\\varsigma"
-    "^\\\\varrho": 
+    "hxvr": 
         "prefix": "hxvr"
         "body": "^\\\\varrho"
-    "^\\\\varpi": 
+    "hxvp": 
         "prefix": "hxvp"
         "body": "^\\\\varpi"
-    "^\\\\varepsilon": 
+    "hxve": 
         "prefix": "hxve"
         "body": "^\\\\varepsilon"
-    "^\\\\theta": 
+    "hxth": 
         "prefix": "hxth"
         "body": "^\\\\theta"
-    "^\\\\psi": 
+    "hxps": 
         "prefix": "hxps"
         "body": "^\\\\psi"
-    "^\\\\phi": 
+    "hxph": 
         "prefix": "hxph"
         "body": "^\\\\phi"
-    "^\\\\iota": 
+    "hxio": 
         "prefix": "hxio"
         "body": "^\\\\iota"
-    "^\\\\eta": 
+    "hxet": 
         "prefix": "hxet"
         "body": "^\\\\eta"
-    "^\\\\Xi": 
+    "hxcx": 
         "prefix": "hxcx"
         "body": "^\\\\Xi"
-    "^\\\\Upsilon": 
+    "hxcu": 
         "prefix": "hxcu"
         "body": "^\\\\Upsilon"
-    "^\\\\Sigma": 
+    "hxcs": 
         "prefix": "hxcs"
         "body": "^\\\\Sigma"
-    "^\\\\Pi": 
+    "hxcp": 
         "prefix": "hxcp"
         "body": "^\\\\Pi"
-    "^\\\\Omega": 
+    "hxco": 
         "prefix": "hxco"
         "body": "^\\\\Omega"
-    "^\\\\Lambda": 
+    "hxcl": 
         "prefix": "hxcl"
         "body": "^\\\\Lambda"
-    "^\\\\Gamma": 
+    "hxcg": 
         "prefix": "hxcg"
         "body": "^\\\\Gamma"
-    "^\\\\Delta": 
+    "hxcd": 
         "prefix": "hxcd"
         "body": "^\\\\Delta"
-    "^\\\\star": 
+    "hvst": 
         "prefix": "hvst"
         "body": "^\\\\star"
-    "\\\\hspace{}": 
-        "prefix": "hsp"
+    "hspu": 
+        "prefix": "hspu"
         "body": "\\\\hspace{$1}"
-    "\\\\hskip 2in": 
+    "hskp": 
         "prefix": "hskp"
         "body": "\\\\hskip 2in"
-    "^\\\\sharp": 
+    "hshp": 
         "prefix": "hshp"
         "body": "^\\\\sharp"
-    "^\\\\perp": 
+    "hprp": 
         "prefix": "hprp"
         "body": "^\\\\perp"
-    "\\\\hline": 
+    "hlin": 
         "prefix": "hlin"
         "body": "\\\\hline"
-    "^{ijk}": 
+    "hijk": 
         "prefix": "hijk"
         "body": "^{ijk}"
-    "^\\\\flat": 
+    "hflt": 
         "prefix": "hflt"
         "body": "^\\\\flat"
-    "\\\\mathfrak{k}^{\\\\ast} ": 
+    "gmks": 
         "prefix": "gmks"
         "body": "\\\\mathfrak{k}^{\\\\ast} "
-    "\\\\mathfrak{h}^{\\\\ast} ": 
+    "gmhs": 
         "prefix": "gmhs"
         "body": "\\\\mathfrak{h}^{\\\\ast} "
-    "\\\\mathfrak{g}^{\\\\ast} ": 
+    "gmgs": 
         "prefix": "gmgs"
         "body": "\\\\mathfrak{g}^{\\\\ast} "
-    "\\\\mathfrak{X} ": 
+    "gmcx": 
         "prefix": "gmcx"
         "body": "\\\\mathfrak{X} "
-    "\\\\mathfrak{T} ": 
+    "gmct": 
         "prefix": "gmct"
         "body": "\\\\mathfrak{T} "
-    "\\\\mathfrak{K} ": 
+    "gmck": 
         "prefix": "gmck"
         "body": "\\\\mathfrak{K} "
-    "\\\\mathfrak{H} ": 
+    "gmch": 
         "prefix": "gmch"
         "body": "\\\\mathfrak{H} "
-    "\\\\mathfrak{G} ": 
+    "gmcg": 
         "prefix": "gmcg"
         "body": "\\\\mathfrak{G} "
-    "\\\\mathfrak{A} ": 
+    "gmca": 
         "prefix": "gmca"
         "body": "\\\\mathfrak{A} "
-    "\\\\footnote{}": 
-        "prefix": "ftn"
+    "ftnu": 
+        "prefix": "ftnu"
         "body": "\\\\footnote{$1}"
-    "\\\\frac{\\\\partial z}{\\\\partial x}": 
+    "fpzx": 
         "prefix": "fpzx"
         "body": "\\\\frac{\\\\partial z}{\\\\partial x}"
-    "\\\\frac{\\\\partial}{\\\\partial ": 
+    "fpdu": 
         "prefix": "fpdu"
         "body": "\\\\frac{\\\\partial}{\\\\partial "
-    "\\\\frac{d}{dt}": 
+    "figu": 
+        "prefix": "figu"
+        "body": """
+        \\\\begin{figure}[ht]
+        \\\\begin{center}
+        \\\\includegraphics{}
+        \\\\caption{\\\\label{}}
+        \\\\end{center}
+        \\\\end{figure}
+        """
+    "fddt": 
         "prefix": "fddt"
         "body": "\\\\frac{d}{dt}"
-    "\\\\end{xcb}": 
+    "excb": 
         "prefix": "excb"
         "body": "\\\\end{xcb}"
-    "\\\\end{xca}": 
+    "exca": 
         "prefix": "exca"
         "body": "\\\\end{xca}"
-    "\\\\end{verbatim}": 
+    "evrb": 
         "prefix": "evrb"
         "body": "\\\\end{verbatim}"
-    "\\\\end{theorem}": 
+    "eval": 
+        "prefix": "eval"
+        "body": """
+        \\\\[
+        \\\\left. f \\\\left(\\\\frac{t}{2}\\\\right)\\\\right|_{t=0}
+        \\\\]
+        """
+    "ethm": 
         "prefix": "ethm"
         "body": "\\\\end{theorem}"
-    "\\\\end{table}": 
+    "etab": 
         "prefix": "etab"
         "body": "\\\\end{table}"
-    "\\\\end{summary}": 
+    "esum": 
         "prefix": "esum"
         "body": "\\\\end{summary}"
-    "\\\\end{solution}": 
+    "esol": 
         "prefix": "esol"
         "body": "\\\\end{solution}"
-    "\\\\end{remark}": 
+    "ermk": 
         "prefix": "ermk"
         "body": "\\\\end{remark}"
-    "\\\\end{question}": 
+    "eqvt": 
+        "prefix": "eqvt"
+        "body": "\\\\Leftrightarrow"
+    "equn": 
+        "prefix": "equn"
+        "body": """
+        \\\\[
+        F(b)-F(a)=\\\\int^b_af(x)\\\\, dx
+        \\\\]
+        """
+    "eqst": 
         "prefix": "eqst"
         "body": "\\\\end{question}"
-    "\\\\end{eqnarray*}": 
+    "eqsp": 
+        "prefix": "eqsp"
+        "body": """
+        \\\\begin{equation}
+        \\\\begin{split}
+        a  =  b &+ c + (c + d)  \\\\\\\\
+                &{}- e + f
+        \\\\end{split}
+        \\\\end{equation}
+        """
+    "eqnu": 
+        "prefix": "eqnu"
+        "body": """
+        \\\\begin{equation}
+        F(b)-F(a)=\\\\int^b_af(x)\\\\, dx$1
+        \\\\end{equation}
+        """
+    "eqas": 
         "prefix": "eqas"
         "body": "\\\\end{eqnarray*}"
-    "\\\\end{proof}": 
+    "eqad": 
+        "prefix": "eqad"
+        "body": """
+        \\\\begin{equation}
+         \\\\begin{aligned}
+         {}&a = b + c \\\\\\\\
+         {}&d = e + f + g
+        \\\\end{aligned}
+        \\\\end{equation}
+        """
+    "eprf": 
         "prefix": "eprf"
         "body": "\\\\end{proof}"
-    "\\\\enspace": 
+    "ensp": 
         "prefix": "ensp"
         "body": "\\\\enspace"
-    "\\\\end{minipage}": 
+    "empg": 
         "prefix": "empg"
         "body": "\\\\end{minipage}"
-    "\\\\emptyset": 
+    "empa": 
         "prefix": "empa"
         "body": "\\\\emptyset"
-    "\\\\end{multline}": 
+    "emlt": 
         "prefix": "emlt"
         "body": "\\\\end{multline}"
-    "\\\\end{lemma}": 
+    "elem": 
         "prefix": "elem"
         "body": "\\\\end{lemma}"
-    "\\\\end{itemize}": 
+    "eitm": 
         "prefix": "eitm"
         "body": "\\\\end{itemize}"
-    "\\\\end{gather*}": 
+    "egas": 
         "prefix": "egas"
         "body": "\\\\end{gather*}"
-    "\\\\end{gathered}": 
+    "egad": 
         "prefix": "egad"
         "body": "\\\\end{gathered}"
-    "\\\\end{flushright}": 
+    "eflr": 
         "prefix": "eflr"
         "body": "\\\\end{flushright}"
-    "\\\\end{flushleft}": 
+    "efll": 
         "prefix": "efll"
         "body": "\\\\end{flushleft}"
-    "\\\\end{figure}": 
+    "efig": 
         "prefix": "efig"
         "body": "\\\\end{figure}"
-    "\\\\end{Sp}": 
+    "eesp": 
         "prefix": "eesp"
         "body": "\\\\end{Sp}"
-    "\\\\end{Sb}": 
+    "eesb": 
         "prefix": "eesb"
         "body": "\\\\end{Sb}"
-    "\\\\end{displaymath}": 
+    "edma": 
         "prefix": "edma"
         "body": "\\\\end{displaymath}"
-    "\\\\end{definition}": 
+    "edfn": 
         "prefix": "edfn"
         "body": "\\\\end{definition}"
-    "\\\\end{center}": 
+    "ectr": 
         "prefix": "ectr"
         "body": "\\\\end{center}"
-    "\\\\end{corollary}": 
+    "ecor": 
         "prefix": "ecor"
         "body": "\\\\end{corollary}"
-    "\\\\end{conjecture}": 
+    "ecnj": 
         "prefix": "ecnj"
         "body": "\\\\end{conjecture}"
-    "\\\\end{condition}": 
+    "ecnd": 
         "prefix": "ecnd"
         "body": "\\\\end{condition}"
-    "\\\\end{claim}": 
+    "eclm": 
         "prefix": "eclm"
         "body": "\\\\end{claim}"
-    "\\\\end{thebibliography}": 
+    "ebib": 
         "prefix": "ebib"
         "body": "\\\\end{thebibliography}"
-    "\\\\end{align*}": 
+    "eals": 
         "prefix": "eals"
         "body": "\\\\end{align*}"
-    "\\\\end{algorithm}": 
+    "ealg": 
         "prefix": "ealg"
         "body": "\\\\end{algorithm}"
-    "\\\\end{aligned}": 
+    "eald": 
         "prefix": "eald"
         "body": "\\\\end{aligned}"
-    "\\\\end{alignat}": 
+    "eala": 
         "prefix": "eala"
         "body": "\\\\end{alignat}"
-    "\\\\end{abstract}": 
+    "eabs": 
         "prefix": "eabs"
         "body": "\\\\end{abstract}"
-    "dz/dt": 
+    "dzdt": 
         "prefix": "dzdt"
         "body": "dz/dt"
-    "dy/dt": 
+    "dydt": 
         "prefix": "dydt"
         "body": "dy/dt"
-    "$(x, y)$": 
+    "dxyp": 
         "prefix": "dxyp"
         "body": "\\\\$(x, y)\\\\$"
-    "$\\\\varsigma$": 
+    "dxvs": 
         "prefix": "dxvs"
         "body": "\\\\$\\\\varsigma\\\\$"
-    "$\\\\varrho$": 
+    "dxvr": 
         "prefix": "dxvr"
         "body": "\\\\$\\\\varrho\\\\$"
-    "$\\\\varpi$": 
+    "dxvp": 
         "prefix": "dxvp"
         "body": "\\\\$\\\\varpi\\\\$"
-    "$\\\\varepsilon$": 
+    "dxve": 
         "prefix": "dxve"
         "body": "\\\\$\\\\varepsilon\\\\$"
-    "$\\\\theta$": 
+    "dxth": 
         "prefix": "dxth"
         "body": "\\\\$\\\\theta\\\\$"
-    "$\\\\psi$": 
+    "dxps": 
         "prefix": "dxps"
         "body": "\\\\$\\\\psi\\\\$"
-    "$\\\\phi$": 
+    "dxph": 
         "prefix": "dxph"
         "body": "\\\\$\\\\phi\\\\$"
-    "$\\\\iota$": 
+    "dxio": 
         "prefix": "dxio"
         "body": "\\\\$\\\\iota\\\\$"
-    "$\\\\eta$": 
+    "dxet": 
         "prefix": "dxet"
         "body": "\\\\$\\\\eta\\\\$"
-    "\\\\,dx\\\\,dy": 
+    "dxdy": 
         "prefix": "dxdy"
         "body": "\\\\,dx\\\\,dy"
-    "dx/dt": 
+    "dxdt": 
         "prefix": "dxdt"
         "body": "dx/dt"
-    "$\\\\Xi$": 
+    "dxcx": 
         "prefix": "dxcx"
         "body": "\\\\$\\\\Xi\\\\$"
-    "$\\\\Upsilon$": 
+    "dxcu": 
         "prefix": "dxcu"
         "body": "\\\\$\\\\Upsilon\\\\$"
-    "$\\\\Sigma$": 
+    "dxcs": 
         "prefix": "dxcs"
         "body": "\\\\$\\\\Sigma\\\\$"
-    "$\\\\Pi$": 
+    "dxcp": 
         "prefix": "dxcp"
         "body": "\\\\$\\\\Pi\\\\$"
-    "$\\\\Omega$": 
+    "dxco": 
         "prefix": "dxco"
         "body": "\\\\$\\\\Omega\\\\$"
-    "$\\\\Lambda$": 
+    "dxcl": 
         "prefix": "dxcl"
         "body": "\\\\$\\\\Lambda\\\\$"
-    "$\\\\Gamma$": 
+    "dxcg": 
         "prefix": "dxcg"
         "body": "\\\\$\\\\Gamma\\\\$"
-    "$\\\\Delta$": 
+    "dxcd": 
         "prefix": "dxcd"
         "body": "\\\\$\\\\Delta\\\\$"
-    "$T^\\\\ast Q$": 
+    "dtsq": 
         "prefix": "dtsq"
         "body": "\\\\$T^\\\\ast Q\\\\$"
-    "\\\\div": 
+    "divi": 
         "prefix": "divi"
         "body": "\\\\div"
-    "{\\\\displaystyle": 
+    "disu": 
         "prefix": "disu"
         "body": "{\\\\displaystyle"
-    "$\\\\mathfrak{}$": 
+    "dgmu": 
         "prefix": "dgmu"
         "body": "\\\\$\\\\mathfrak{}$1\\\\$"
-    "$\\\\mathfrak{t}$ ": 
+    "dgmt": 
         "prefix": "dgmt"
         "body": "\\\\$\\\\mathfrak{t}\\\\$ "
-    "$\\\\mathfrak{p}$ ": 
+    "dgmp": 
         "prefix": "dgmp"
         "body": "\\\\$\\\\mathfrak{p}\\\\$ "
-    "$\\\\mathfrak{k}$ ": 
+    "dgmk": 
         "prefix": "dgmk"
         "body": "\\\\$\\\\mathfrak{k}\\\\$ "
-    "$\\\\mathfrak{h}$ ": 
+    "dgmh": 
         "prefix": "dgmh"
         "body": "\\\\$\\\\mathfrak{h}\\\\$ "
-    "$\\\\mathfrak{g}$ ": 
+    "dgmg": 
         "prefix": "dgmg"
         "body": "\\\\$\\\\mathfrak{g}\\\\$ "
-    "$\\\\mathfrak{b}$ ": 
+    "dgmb": 
         "prefix": "dgmb"
         "body": "\\\\$\\\\mathfrak{b}\\\\$ "
-    "$\\\\mathcal{Z}$": 
+    "dccz": 
         "prefix": "dccz"
         "body": "\\\\$\\\\mathcal{Z}\\\\$"
-    "$\\\\mathcal{Y}$": 
+    "dccy": 
         "prefix": "dccy"
         "body": "\\\\$\\\\mathcal{Y}\\\\$"
-    "$\\\\mathcal{X}$": 
+    "dccx": 
         "prefix": "dccx"
         "body": "\\\\$\\\\mathcal{X}\\\\$"
-    "$\\\\mathcal{W}$": 
+    "dccw": 
         "prefix": "dccw"
         "body": "\\\\$\\\\mathcal{W}\\\\$"
-    "$\\\\mathcal{V}$": 
+    "dccv": 
         "prefix": "dccv"
         "body": "\\\\$\\\\mathcal{V}\\\\$"
-    "$\\\\mathcal{U}$": 
+    "dccu": 
         "prefix": "dccu"
         "body": "\\\\$\\\\mathcal{U}\\\\$"
-    "$\\\\mathcal{T}$": 
+    "dcct": 
         "prefix": "dcct"
         "body": "\\\\$\\\\mathcal{T}\\\\$"
-    "$\\\\mathcal{S}$": 
+    "dccs": 
         "prefix": "dccs"
         "body": "\\\\$\\\\mathcal{S}\\\\$"
-    "$\\\\mathcal{R}$": 
+    "dccr": 
         "prefix": "dccr"
         "body": "\\\\$\\\\mathcal{R}\\\\$"
-    "$\\\\mathcal{Q}$": 
+    "dccq": 
         "prefix": "dccq"
         "body": "\\\\$\\\\mathcal{Q}\\\\$"
-    "$\\\\mathcal{P}$": 
+    "dccp": 
         "prefix": "dccp"
         "body": "\\\\$\\\\mathcal{P}\\\\$"
-    "$\\\\mathcal{O}$": 
+    "dcco": 
         "prefix": "dcco"
         "body": "\\\\$\\\\mathcal{O}\\\\$"
-    "$\\\\mathcal{N}$": 
+    "dccn": 
         "prefix": "dccn"
         "body": "\\\\$\\\\mathcal{N}\\\\$"
-    "$\\\\mathcal{M}$": 
+    "dccm": 
         "prefix": "dccm"
         "body": "\\\\$\\\\mathcal{M}\\\\$"
-    "$\\\\mathcal{L}$": 
+    "dccl": 
         "prefix": "dccl"
         "body": "\\\\$\\\\mathcal{L}\\\\$"
-    "$\\\\mathcal{K}$": 
+    "dcck": 
         "prefix": "dcck"
         "body": "\\\\$\\\\mathcal{K}\\\\$"
-    "$\\\\mathcal{J}$": 
+    "dccj": 
         "prefix": "dccj"
         "body": "\\\\$\\\\mathcal{J}\\\\$"
-    "$\\\\mathcal{I}$": 
+    "dcci": 
         "prefix": "dcci"
         "body": "\\\\$\\\\mathcal{I}\\\\$"
-    "$\\\\mathcal{H}$": 
+    "dcch": 
         "prefix": "dcch"
         "body": "\\\\$\\\\mathcal{H}\\\\$"
-    "$\\\\mathcal{G}$": 
+    "dccg": 
         "prefix": "dccg"
         "body": "\\\\$\\\\mathcal{G}\\\\$"
-    "$\\\\mathcal{F}$": 
+    "dccf": 
         "prefix": "dccf"
         "body": "\\\\$\\\\mathcal{F}\\\\$"
-    "$\\\\mathcal{E}$": 
+    "dcce": 
         "prefix": "dcce"
         "body": "\\\\$\\\\mathcal{E}\\\\$"
-    "$\\\\mathcal{D}$": 
+    "dccd": 
         "prefix": "dccd"
         "body": "\\\\$\\\\mathcal{D}\\\\$"
-    "$\\\\mathcal{C}$": 
+    "dccc": 
         "prefix": "dccc"
         "body": "\\\\$\\\\mathcal{C}\\\\$"
-    "$\\\\mathcal{B}$": 
+    "dccb": 
         "prefix": "dccb"
         "body": "\\\\$\\\\mathcal{B}\\\\$"
-    "$\\\\mathcal{A}$": 
+    "dcca": 
         "prefix": "dcca"
         "body": "\\\\$\\\\mathcal{A}\\\\$"
-    "$\\\\mathbf{Z}$": 
+    "dbcz": 
         "prefix": "dbcz"
         "body": "\\\\$\\\\mathbf{Z}\\\\$"
-    "$\\\\mathbf{Y}$": 
+    "dbcy": 
         "prefix": "dbcy"
         "body": "\\\\$\\\\mathbf{Y}\\\\$"
-    "$\\\\mathbf{X}$": 
+    "dbcx": 
         "prefix": "dbcx"
         "body": "\\\\$\\\\mathbf{X}\\\\$"
-    "$\\\\mathbf{W}$": 
+    "dbcw": 
         "prefix": "dbcw"
         "body": "\\\\$\\\\mathbf{W}\\\\$"
-    "$\\\\mathbf{V}$": 
+    "dbcv": 
         "prefix": "dbcv"
         "body": "\\\\$\\\\mathbf{V}\\\\$"
-    "$\\\\mathbf{U}$": 
+    "dbcu": 
         "prefix": "dbcu"
         "body": "\\\\$\\\\mathbf{U}\\\\$"
-    "$\\\\mathbf{T}$": 
+    "dbct": 
         "prefix": "dbct"
         "body": "\\\\$\\\\mathbf{T}\\\\$"
-    "$\\\\mathbf{S}$": 
+    "dbcs": 
         "prefix": "dbcs"
         "body": "\\\\$\\\\mathbf{S}\\\\$"
-    "$\\\\mathbf{R}$": 
+    "dbcr": 
         "prefix": "dbcr"
         "body": "\\\\$\\\\mathbf{R}\\\\$"
-    "$\\\\mathbf{Q}$": 
+    "dbcq": 
         "prefix": "dbcq"
         "body": "\\\\$\\\\mathbf{Q}\\\\$"
-    "$\\\\mathbf{P}$": 
+    "dbcp": 
         "prefix": "dbcp"
         "body": "\\\\$\\\\mathbf{P}\\\\$"
-    "$\\\\mathbf{O}$": 
+    "dbco": 
         "prefix": "dbco"
         "body": "\\\\$\\\\mathbf{O}\\\\$"
-    "$\\\\mathbf{N}$": 
+    "dbcn": 
         "prefix": "dbcn"
         "body": "\\\\$\\\\mathbf{N}\\\\$"
-    "$\\\\mathbf{M}$": 
+    "dbcm": 
         "prefix": "dbcm"
         "body": "\\\\$\\\\mathbf{M}\\\\$"
-    "$\\\\mathbf{L}$": 
+    "dbcl": 
         "prefix": "dbcl"
         "body": "\\\\$\\\\mathbf{L}\\\\$"
-    "$\\\\mathbf{K}$": 
+    "dbck": 
         "prefix": "dbck"
         "body": "\\\\$\\\\mathbf{K}\\\\$"
-    "$\\\\mathbf{J}$": 
+    "dbcj": 
         "prefix": "dbcj"
         "body": "\\\\$\\\\mathbf{J}\\\\$"
-    "$\\\\mathbf{I}$": 
+    "dbci": 
         "prefix": "dbci"
         "body": "\\\\$\\\\mathbf{I}\\\\$"
-    "$\\\\mathbf{H}$": 
+    "dbch": 
         "prefix": "dbch"
         "body": "\\\\$\\\\mathbf{H}\\\\$"
-    "$\\\\mathbf{G}$": 
+    "dbcg": 
         "prefix": "dbcg"
         "body": "\\\\$\\\\mathbf{G}\\\\$"
-    "$\\\\mathbf{F}$": 
+    "dbcf": 
         "prefix": "dbcf"
         "body": "\\\\$\\\\mathbf{F}\\\\$"
-    "$\\\\mathbf{E}$": 
+    "dbce": 
         "prefix": "dbce"
         "body": "\\\\$\\\\mathbf{E}\\\\$"
-    "$\\\\mathbf{D}$": 
+    "dbcd": 
         "prefix": "dbcd"
         "body": "\\\\$\\\\mathbf{D}\\\\$"
-    "$\\\\mathbf{C}$": 
+    "dbcc": 
         "prefix": "dbcc"
         "body": "\\\\$\\\\mathbf{C}\\\\$"
-    "$\\\\mathbf{B}$": 
+    "dbcb": 
         "prefix": "dbcb"
         "body": "\\\\$\\\\mathbf{B}\\\\$"
-    "$\\\\mathbf{A}$": 
+    "dbca": 
         "prefix": "dbca"
         "body": "\\\\$\\\\mathbf{A}\\\\$"
-    "$\\\\mathbf{10}$": 
+    "db10": 
         "prefix": "db10"
         "body": "\\\\$\\\\mathbf{10}\\\\$"
-    "$(0, 0, 0)$": 
+    "d03p": 
         "prefix": "d03p"
         "body": "\\\\$(0, 0, 0)\\\\$"
-    "$(0,0)$": 
+    "d00p": 
         "prefix": "d00p"
         "body": "\\\\$(0,0)\\\\$"
-    "Divider: %=========;%.......10;%________|;%=========": 
+    "crlr": 
         "prefix": "crlr"
         "body": """
         %===============================================================================%
@@ -2397,25 +2878,36 @@
         %________|_________|_________|_________|_________|_________|_________|_________|%
         %===============================================================================%
         """
-    "\\\\copyright": 
+    "cprt": 
         "prefix": "cprt"
         "body": "\\\\copyright"
-    "\\\\cos \\\\theta": 
+    "coth": 
         "prefix": "coth"
         "body": "\\\\cos \\\\theta"
-    "\\\\cos \\\\phi": 
+    "coph": 
         "prefix": "coph"
         "body": "\\\\cos \\\\phi"
-    "\\\\centerline{}": 
-        "prefix": "cl"
+    "clin": 
+        "prefix": "clin"
         "body": "\\\\centerline{$1}"
-    "\\\\cite{": 
-        "prefix": "cit"
+    "citu": 
+        "prefix": "citu"
         "body": "\\\\cite{"
-    "(\\\\cite{})": 
+    "citp": 
         "prefix": "citp"
         "body": "(\\\\cite{$1})"
-    "\\\\begin{equation*}": 
+    "cdsq": 
+        "prefix": "cdsq"
+        "body": """
+        \\\\begin{equation*}
+         \\\\begin{CD}
+         A @>F>>B\\\\\\\\
+         @VGVV  @VVgV \\\\\\\\
+         C @>>f>D\\\\\\\\
+         \\\\end{CD}
+         \\\\end{equation*}
+        """
+    "cdli": 
         "prefix": "cdli"
         "body": """
         \\\\begin{equation*}
@@ -2424,811 +2916,874 @@
          \\\\end{CD}
          \\\\end{equation*}
         """
-    "\\\\begin{xcb}": 
+    "capt": 
+        "prefix": "capt"
+        "body": "\\\\caption{$1}"
+    "bxcb": 
         "prefix": "bxcb"
         "body": "\\\\begin{xcb}"
-    "\\\\begin{xca}": 
+    "bxca": 
         "prefix": "bxca"
         "body": "\\\\begin{xca}"
-    "\\\\begin{verbatim}": 
+    "bvrb": 
         "prefix": "bvrb"
         "body": "\\\\begin{verbatim}"
-    "\\\\bigcup": 
+    "buni": 
         "prefix": "buni"
         "body": "\\\\bigcup"
-    "\\\\begin{theorem}": 
+    "bthm": 
         "prefix": "bthm"
         "body": "\\\\begin{theorem}"
-    "\\\\begin{table}": 
+    "btab": 
         "prefix": "btab"
         "body": "\\\\begin{table}"
-    "\\\\boldsymbol{}": 
-        "prefix": "bsy"
+    "bsyu": 
+        "prefix": "bsyu"
         "body": "\\\\boldsymbol{$1}"
-    "\\\\begin{summary}": 
+    "bsum": 
         "prefix": "bsum"
         "body": "\\\\begin{summary}"
-    "\\\\begin{solution}": 
+    "bsol": 
         "prefix": "bsol"
         "body": "\\\\begin{solution}"
-    "\\\\bigskip": 
+    "bskp": 
         "prefix": "bskp"
         "body": "\\\\bigskip"
-    "\\\\begin{remark}": 
+    "brmk": 
         "prefix": "brmk"
         "body": "\\\\begin{remark}"
-    "\\\\begin{question}": 
+    "bqst": 
         "prefix": "bqst"
         "body": "\\\\begin{question}"
-    "\\\\begin{eqnarray}\\\\label{}": 
+    "bqas": 
+        "prefix": "bqas"
+        "body": "\\\\begin{eqnarray*}"
+    "bqal": 
         "prefix": "bqal"
         "body": "\\\\begin{eqnarray}\\\\label{$1}"
-    "\\\\begin{proof}": 
+    "bprf": 
         "prefix": "bprf"
         "body": "\\\\begin{proof}"
-    "\\\\begin{minipage}{\\\\textwidth}": 
+    "bmpg": 
         "prefix": "bmpg"
         "body": "\\\\begin{minipage}{\\\\textwidth}"
-    "\\\\begin{multline}": 
+    "bmlt": 
         "prefix": "bmlt"
         "body": "\\\\begin{multline}"
-    "\\\\begin{lemma}": 
+    "blem": 
         "prefix": "blem"
         "body": "\\\\begin{lemma}"
-    "\\\\": 
+    "bksl": 
         "prefix": "bksl"
         "body": "\\\\"
-    "\\\\begin{itemize}": 
+    "bitm": 
         "prefix": "bitm"
         "body": "\\\\begin{itemize}"
-    "\\\\begin{gather*}": 
+    "bibb": 
+        "prefix": "bibb"
+        "body": "\\\\item Author [year]"
+    "biba": 
+        "prefix": "biba"
+        "body": "\\\\item Author [year]"
+    "bgas": 
         "prefix": "bgas"
         "body": "\\\\begin{gather*}"
-    "\\\\begin{gathered}": 
+    "bgad": 
         "prefix": "bgad"
         "body": "\\\\begin{gathered}"
-    "\\\\begin{flushright}": 
+    "bflr": 
         "prefix": "bflr"
         "body": "\\\\begin{flushright}"
-    "\\\\begin{flushleft}": 
+    "bfll": 
         "prefix": "bfll"
         "body": "\\\\begin{flushleft}"
-    "{\\\\bfi ": 
+    "bfiu": 
         "prefix": "bfiu"
         "body": "{\\\\bfi "
-    "\\\\begin{Sp}": 
+    "bfig": 
+        "prefix": "bfig"
+        "body": "\\\\begin{figure}"
+    "besp": 
         "prefix": "besp"
         "body": "\\\\begin{Sp}"
-    "\\\\begin{Sb}": 
+    "besb": 
         "prefix": "besb"
         "body": "\\\\begin{Sb}"
-    "\\\\begin{equation}\\\\label{}": 
+    "beql": 
         "prefix": "beql"
         "body": "\\\\begin{equation}\\\\label{$1}"
-    "\\\\mathbf{e}_n": 
+    "beln": 
         "prefix": "beln"
         "body": "\\\\mathbf{e}_n"
-    "\\\\mathbf{e}_3": 
+    "bel3": 
         "prefix": "bel3"
         "body": "\\\\mathbf{e}_3"
-    "\\\\mathbf{e}_2": 
+    "bel2": 
         "prefix": "bel2"
         "body": "\\\\mathbf{e}_2"
-    "\\\\mathbf{e}_1": 
+    "bel1": 
         "prefix": "bel1"
         "body": "\\\\mathbf{e}_1"
-    "\\\\begin{displaymath}": 
+    "bdma": 
         "prefix": "bdma"
         "body": "\\\\begin{displaymath}"
-    "\\\\begin{definition}": 
+    "bdfn": 
         "prefix": "bdfn"
         "body": "\\\\begin{definition}"
-    "\\\\begin{corollary}": 
+    "bctr": 
+        "prefix": "bctr"
+        "body": "\\\\begin{center}"
+    "bcor": 
         "prefix": "bcor"
         "body": "\\\\begin{corollary}"
-    "\\\\begin{conjecture}": 
+    "bcnj": 
         "prefix": "bcnj"
         "body": "\\\\begin{conjecture}"
-    "\\\\begin{condition}": 
+    "bcnd": 
         "prefix": "bcnd"
         "body": "\\\\begin{condition}"
-    "\\\\begin{claim}": 
+    "bclm": 
         "prefix": "bclm"
         "body": "\\\\begin{claim}"
-    "\\\\mathbb{Y} ": 
+    "bbib": 
+        "prefix": "bbib"
+        "body": "\\\\begin{thebibliography}{}"
+    "bbcz": 
+        "prefix": "bbcz"
+        "body": "\\\\mathbb{Z} "
+    "bbcy": 
         "prefix": "bbcy"
         "body": "\\\\mathbb{Y} "
-    "\\\\mathbb{X} ": 
+    "bbcx": 
         "prefix": "bbcx"
         "body": "\\\\mathbb{X} "
-    "\\\\mathbb{W} ": 
+    "bbcw": 
         "prefix": "bbcw"
         "body": "\\\\mathbb{W} "
-    "\\\\mathbb{V} ": 
+    "bbcv": 
         "prefix": "bbcv"
         "body": "\\\\mathbb{V} "
-    "\\\\mathbb{U} ": 
+    "bbcu": 
         "prefix": "bbcu"
         "body": "\\\\mathbb{U} "
-    "\\\\mathbb{S} ": 
+    "bbct": 
+        "prefix": "bbct"
+        "body": "\\\\mathbb{T} "
+    "bbcs": 
         "prefix": "bbcs"
         "body": "\\\\mathbb{S} "
-    "\\\\mathbb{Q} ": 
+    "bbcr": 
+        "prefix": "bbcr"
+        "body": "\\\\mathbb{R} "
+    "bbcq": 
         "prefix": "bbcq"
         "body": "\\\\mathbb{Q} "
-    "\\\\mathbb{P} ": 
+    "bbcp": 
         "prefix": "bbcp"
         "body": "\\\\mathbb{P} "
-    "\\\\mathbb{O} ": 
+    "bbco": 
         "prefix": "bbco"
         "body": "\\\\mathbb{O} "
-    "\\\\mathbb{N} ": 
+    "bbcn": 
         "prefix": "bbcn"
         "body": "\\\\mathbb{N} "
-    "\\\\mathbb{M} ": 
+    "bbcm": 
         "prefix": "bbcm"
         "body": "\\\\mathbb{M} "
-    "\\\\mathbb{L} ": 
+    "bbcl": 
         "prefix": "bbcl"
         "body": "\\\\mathbb{L} "
-    "\\\\mathbb{K} ": 
+    "bbck": 
         "prefix": "bbck"
         "body": "\\\\mathbb{K} "
-    "\\\\mathbb{J} ": 
+    "bbcj": 
         "prefix": "bbcj"
         "body": "\\\\mathbb{J} "
-    "\\\\mathbb{H} ": 
+    "bbci": 
+        "prefix": "bbci"
+        "body": "\\\\mathbb{I} "
+    "bbch": 
         "prefix": "bbch"
         "body": "\\\\mathbb{H} "
-    "\\\\mathbb{G} ": 
+    "bbcg": 
         "prefix": "bbcg"
         "body": "\\\\mathbb{G} "
-    "\\\\mathbb{F} ": 
+    "bbcf": 
         "prefix": "bbcf"
         "body": "\\\\mathbb{F} "
-    "\\\\mathbb{E} ": 
+    "bbce": 
         "prefix": "bbce"
         "body": "\\\\mathbb{E} "
-    "\\\\mathbb{D} ": 
+    "bbcd": 
         "prefix": "bbcd"
         "body": "\\\\mathbb{D} "
-    "\\\\mathbb{B} ": 
+    "bbcc": 
+        "prefix": "bbcc"
+        "body": "\\\\mathbb{C} "
+    "bbcb": 
         "prefix": "bbcb"
         "body": "\\\\mathbb{B} "
-    "\\\\mathbb{A} ": 
+    "bbca": 
         "prefix": "bbca"
         "body": "\\\\mathbb{A} "
-    "\\\\begin{algorithm}": 
+    "bals": 
+        "prefix": "bals"
+        "body": "\\\\begin{align*}"
+    "balg": 
         "prefix": "balg"
         "body": "\\\\begin{algorithm}"
-    "\\\\begin{aligned}": 
+    "bald": 
         "prefix": "bald"
         "body": "\\\\begin{aligned}"
-    "\\\\begin{alignat}{}": 
+    "bala": 
         "prefix": "bala"
         "body": "\\\\begin{alignat}{$1}"
-    "\\\\mathbf{a} \\\\times \\\\mathbf{b}": 
+    "babs": 
+        "prefix": "babs"
+        "body": "\\\\begin{abstract}"
+    "atib": 
         "prefix": "atib"
         "body": "\\\\mathbf{a} \\\\times \\\\mathbf{b}"
-    "\\\\mapsto": 
+    "artl": 
         "prefix": "artl"
         "body": "\\\\mapsto"
-    "\\\\mathbf{a} + \\\\mathbf{b}": 
+    "aplb": 
         "prefix": "aplb"
         "body": "\\\\mathbf{a} + \\\\mathbf{b}"
-    "\\\\angle": 
+    "angl": 
         "prefix": "angl"
         "body": "\\\\angle"
-    "z_n": 
+    "zln": 
         "prefix": "zln"
         "body": "z_n"
-    "y_n": 
+    "yln": 
         "prefix": "yln"
         "body": "y_n"
-    "(x, y)": 
+    "xyp": 
         "prefix": "xyp"
         "body": "(x, y)"
-    "\\\\varsigma": 
+    "xvs": 
         "prefix": "xvs"
         "body": "\\\\varsigma"
-    "\\\\varrho": 
+    "xvr": 
         "prefix": "xvr"
         "body": "\\\\varrho"
-    "\\\\varpi": 
+    "xvp": 
         "prefix": "xvp"
         "body": "\\\\varpi"
-    "\\\\varepsilon": 
+    "xve": 
         "prefix": "xve"
         "body": "\\\\varepsilon"
-    "\\\\theta": 
+    "xth": 
         "prefix": "xth"
         "body": "\\\\theta"
-    "\\\\psi": 
+    "xps": 
         "prefix": "xps"
         "body": "\\\\psi"
-    "\\\\phi": 
+    "xph": 
         "prefix": "xph"
         "body": "\\\\phi"
-    "x_n": 
+    "xln": 
         "prefix": "xln"
         "body": "x_n"
-    "\\\\eta": 
+    "xet": 
         "prefix": "xet"
         "body": "\\\\eta"
-    "\\\\Xi": 
+    "xcx": 
         "prefix": "xcx"
         "body": "\\\\Xi"
-    "\\\\Upsilon": 
+    "xcu": 
         "prefix": "xcu"
         "body": "\\\\Upsilon"
-    "\\\\Sigma": 
+    "xcs": 
         "prefix": "xcs"
         "body": "\\\\Sigma"
-    "\\\\Pi": 
+    "xcp": 
         "prefix": "xcp"
         "body": "\\\\Pi"
-    "\\\\Omega": 
+    "xco": 
         "prefix": "xco"
         "body": "\\\\Omega"
-    "\\\\Lambda": 
+    "xcl": 
         "prefix": "xcl"
         "body": "\\\\Lambda"
-    "\\\\Gamma": 
+    "xcg": 
         "prefix": "xcg"
         "body": "\\\\Gamma"
-    "\\\\Delta": 
+    "xcd": 
         "prefix": "xcd"
         "body": "\\\\Delta"
-    "vectors": 
+    "wvs": 
         "prefix": "wvs"
         "body": "vectors"
-    "vector": 
+    "wve": 
         "prefix": "wve"
         "body": "vector"
-    "university": 
+    "wun": 
         "prefix": "wun"
         "body": "university"
-    "theory": 
+    "wty": 
         "prefix": "wty"
         "body": "theory"
-    "theorem": 
+    "wtm": 
         "prefix": "wtm"
         "body": "theorem"
-    "solution": 
+    "wsn": 
         "prefix": "wsn"
         "body": "solution"
-    "\\\\wp": 
+    "wpf": 
         "prefix": "wpf"
         "body": "\\\\wp"
-    "nonlinear": 
+    "wnl": 
         "prefix": "wnl"
         "body": "nonlinear"
-    "matrix": 
+    "wmx": 
         "prefix": "wmx"
         "body": "matrix"
-    "integral": 
+    "wig": 
         "prefix": "wig"
         "body": "integral"
-    "i.e.,": 
+    "wie": 
         "prefix": "wie"
         "body": "i.e.,"
-    "geometry": 
+    "wgm": 
         "prefix": "wgm"
         "body": "geometry"
-    "example": 
+    "wex": 
         "prefix": "wex"
         "body": "example"
-    "Euler-Poincar\\\\'e": 
+    "wep": 
         "prefix": "wep"
         "body": "Euler-Poincar\\\\'e"
-    "\\\\wedge": 
+    "wed": 
         "prefix": "wed"
         "body": "\\\\wedge"
-    "department of physics": 
+    "wdp": 
         "prefix": "wdp"
         "body": "department of physics"
-    "department of mathematics": 
+    "wdm": 
         "prefix": "wdm"
         "body": "department of mathematics"
-    "\\\\verb": 
+    "vsp": 
+        "prefix": "vsp"
+        "body": "\\\\vspace{$1}"
+    "vrb": 
         "prefix": "vrb"
         "body": "\\\\verb"
-    "\\\\vfill": 
+    "vfi": 
         "prefix": "vfi"
         "body": "\\\\vfill"
-    "\\\\vdots": 
+    "vds": 
         "prefix": "vds"
         "body": "\\\\vdots"
-    "v^A{}_\\\\nu": 
+    "van": 
         "prefix": "van"
         "body": "v^A{}_\\\\nu"
-    "\\\\uparrow": 
+    "upa": 
         "prefix": "upa"
         "body": "\\\\uparrow"
-    "\\\\cup": 
+    "uni": 
         "prefix": "uni"
         "body": "\\\\cup"
-    "\\\\upharpoonright": 
+    "uhr": 
         "prefix": "uhr"
         "body": "\\\\upharpoonright"
-    "\\\\\"{U}": 
+    "ucu": 
         "prefix": "ucu"
         "body": "\\\\\"{U}"
-    "\\\\\"{O}": 
+    "uco": 
         "prefix": "uco"
         "body": "\\\\\"{O}"
-    "\\\\\"{A}": 
+    "uca": 
         "prefix": "uca"
         "body": "\\\\\"{A}"
-    " \\\\textstyle": 
+    "txt": 
+        "prefix": "txt"
+        "body": "\\\\text{$1}"
+    "ttu": 
+        "prefix": "ttu"
+        "body": "\\\\texttt{$1}"
+    "tsz": 
         "prefix": "tsz"
         "body": " \\\\textstyle"
-    "T^\\\\ast Q": 
+    "tsq": 
         "prefix": "tsq"
         "body": "T^\\\\ast Q"
-    "\\\\;": 
+    "tsp": 
         "prefix": "tsp"
         "body": "\\\\;"
-    "\\\\pitchfork": 
+    "trv": 
         "prefix": "trv"
         "body": "\\\\pitchfork"
-    "\\\\tanh": 
+    "tnh": 
         "prefix": "tnh"
         "body": "\\\\tanh"
-    "\\\\tag{}": 
-        "prefix": "tg"
+    "tgu": 
+        "prefix": "tgu"
         "body": "\\\\tag{$1}"
-    "\\\\nearrow": 
+    "tgs": 
+        "prefix": "tgs"
+        "body": "\\\\tag*{$1}"
+    "sur": 
         "prefix": "sur"
         "body": "\\\\nearrow"
-    " \\\\scriptstyle": 
+    "ssz": 
         "prefix": "ssz"
         "body": " \\\\scriptstyle"
-    "\\\\sideset{}{}": 
+    "sst": 
         "prefix": "sst"
         "body": "\\\\sideset{$1}{$2}"
-    "\\\\,": 
+    "ssp": 
         "prefix": "ssp"
         "body": "\\\\,"
-    "\\\\subsection{}": 
+    "ssn": 
         "prefix": "ssn"
-        "body": "\\\\subsection{$1}"
-    "\\\\sqrt{}": 
+        "body": "\\\\paragraph{$1}"
+    "squ": 
         "prefix": "squ"
         "body": "\\\\sqrt{$1}"
-    "\\\\sqrt{7}": 
+    "sq7": 
         "prefix": "sq7"
         "body": "\\\\sqrt{7}"
-    "\\\\sqrt{5}": 
+    "sq5": 
         "prefix": "sq5"
         "body": "\\\\sqrt{5}"
-    "\\\\sqrt{3}": 
+    "sq3": 
         "prefix": "sq3"
         "body": "\\\\sqrt{3}"
-    "\\\\sqrt{2}": 
+    "sq2": 
         "prefix": "sq2"
         "body": "\\\\sqrt{2}"
-    "\\\\setlength{\\\\parskip1.5ex plus 0.5ex minus 0.5ex}": 
+    "sps": 
         "prefix": "sps"
         "body": "\\\\setlength{\\\\parskip1.5ex plus 0.5ex minus 0.5ex}"
-    "\\\\setcounter{page}{}": 
+    "spn": 
         "prefix": "spn"
         "body": "\\\\setcounter{page}{$1}"
-    "\\\\setlength{\\\\parindent}{0em}": 
+    "spi": 
         "prefix": "spi"
         "body": "\\\\setlength{\\\\parindent}{0em}"
-    "\\\\section*{}": 
+    "sns": 
         "prefix": "sns"
         "body": "\\\\section*{$1}"
-    "\\\\smash[t]{}": 
+    "smt": 
         "prefix": "smt"
         "body": "\\\\smash[t$1]{}"
-    "\\\\smash[b]{}": 
+    "smb": 
         "prefix": "smb"
         "body": "\\\\smash[b$1]{}"
-    "{\\\\sl": 
+    "slu": 
         "prefix": "slu"
-        "body": "{\\\\sl"
-    "\\\\setlength{}{}": 
+        "body": "{\\\\sl "
+    "sln": 
         "prefix": "sln"
         "body": "\\\\setlength{$1}{$2}"
-    "\\\\sin^2": 
+    "siq": 
         "prefix": "siq"
         "body": "\\\\sin^2"
-    "\\\\sinh": 
+    "sih": 
         "prefix": "sih"
         "body": "\\\\sinh"
-    "\\\\sharp": 
+    "shp": 
         "prefix": "shp"
         "body": "\\\\sharp"
-    "A^i_{\\\\;a}": 
+    "shl": 
         "prefix": "shl"
         "body": "A^i_{\\\\;a}"
-    "{\\\\sf ": 
+    "sfu": 
         "prefix": "sfu"
         "body": "{\\\\sf "
-    "\\\\,dz": 
+    "sdz": 
         "prefix": "sdz"
         "body": "\\\\,dz"
-    "\\\\,dy": 
+    "sdy": 
         "prefix": "sdy"
         "body": "\\\\,dy"
-    "\\\\,dx": 
+    "sdx": 
         "prefix": "sdx"
         "body": "\\\\,dx"
-    "\\\\,dw": 
+    "sdw": 
         "prefix": "sdw"
         "body": "\\\\,dw"
-    "\\\\,dv": 
+    "sdv": 
         "prefix": "sdv"
         "body": "\\\\,dv"
-    "\\\\,du": 
+    "sdu": 
         "prefix": "sdu"
         "body": "\\\\,du"
-    "\\\\,ds": 
+    "sdt": 
+        "prefix": "sdt"
+        "body": "\\\\,dt"
+    "sds": 
         "prefix": "sds"
         "body": "\\\\,ds"
-    "\\\\searrow": 
+    "sdr": 
         "prefix": "sdr"
         "body": "\\\\searrow"
-    "\\\\,\\\\circledS\\\\,": 
+    "sdp": 
         "prefix": "sdp"
         "body": "\\\\,\\\\circledS\\\\,"
-    "{\\\\sc ": 
+    "scu": 
         "prefix": "scu"
         "body": "{\\\\sc "
-    "\\\\ell": 
+    "scl": 
         "prefix": "scl"
         "body": "\\\\ell"
-    "\\\\right\\\\rangle \\\\! \\\\right\\\\rangle": 
+    "rrd": 
         "prefix": "rrd"
         "body": "\\\\right\\\\rangle \\\\! \\\\right\\\\rangle"
-    "\\\\rangle": 
+    "rmu": 
+        "prefix": "rmu"
+        "body": "{\\\\rm "
+    "rle": 
         "prefix": "rle"
         "body": "\\\\rangle"
-    "\\\\}": 
+    "rlb": 
         "prefix": "rlb"
         "body": "\\\\}"
-    "\\\\right\\\\rangle": 
+    "rir": 
         "prefix": "rir"
         "body": "\\\\right\\\\rangle"
-    "\\\\right)": 
+    "rip": 
         "prefix": "rip"
         "body": "\\\\right)"
-    "\\\\ni": 
+    "reo": 
         "prefix": "reo"
         "body": "\\\\ni"
-    "\\\\Re": 
+    "rea": 
         "prefix": "rea"
         "body": "\\\\Re"
-    "\\\\right.": 
+    "rdo": 
         "prefix": "rdo"
         "body": "\\\\right."
-    "\\\\qquad": 
-        "prefix": "dsp"
+    "qqd": 
+        "prefix": "qqd"
         "body": "\\\\qquad"
-    "\\\\qed": 
+    "qed": 
         "prefix": "qed"
         "body": "\\\\qed"
-    "\\\\prime": 
+    "prm": 
         "prefix": "prm"
         "body": "\\\\prime"
-    "\\\\propto": 
+    "ppt": 
         "prefix": "ppt"
         "body": "\\\\propto"
-    "\\\\pm": 
+    "plm": 
         "prefix": "plm"
         "body": "\\\\pm"
-    "(\\\\zeta)": 
+    "oxz": 
         "prefix": "oxz"
         "body": "(\\\\zeta)"
-    "(\\\\xi)": 
+    "oxx": 
         "prefix": "oxx"
         "body": "(\\\\xi)"
-    "(\\\\upsilon)": 
+    "oxu": 
         "prefix": "oxu"
         "body": "(\\\\upsilon)"
-    "(\\\\tau)": 
+    "oxt": 
         "prefix": "oxt"
         "body": "(\\\\tau)"
-    "(\\\\sigma)": 
+    "oxs": 
         "prefix": "oxs"
         "body": "(\\\\sigma)"
-    "(\\\\rho)": 
+    "oxr": 
         "prefix": "oxr"
         "body": "(\\\\rho)"
-    "(\\\\pi)": 
+    "oxp": 
         "prefix": "oxp"
         "body": "(\\\\pi)"
-    "(\\\\omega)": 
+    "oxo": 
         "prefix": "oxo"
         "body": "(\\\\omega)"
-    "(\\\\nu)": 
+    "oxn": 
         "prefix": "oxn"
         "body": "(\\\\nu)"
-    "(\\\\mu)": 
+    "oxm": 
         "prefix": "oxm"
         "body": "(\\\\mu)"
-    "(\\\\lambda)": 
+    "oxl": 
         "prefix": "oxl"
         "body": "(\\\\lambda)"
-    "(\\\\kappa)": 
+    "oxk": 
         "prefix": "oxk"
         "body": "(\\\\kappa)"
-    "(\\\\iota)": 
+    "oxi": 
         "prefix": "oxi"
         "body": "(\\\\iota)"
-    "(\\\\gamma)": 
+    "oxg": 
         "prefix": "oxg"
         "body": "(\\\\gamma)"
-    "(\\\\epsilon)": 
+    "oxe": 
         "prefix": "oxe"
         "body": "(\\\\epsilon)"
-    "(\\\\delta)": 
+    "oxd": 
         "prefix": "oxd"
         "body": "(\\\\delta)"
-    "(\\\\chi)": 
+    "oxc": 
         "prefix": "oxc"
         "body": "(\\\\chi)"
-    "(\\\\beta)": 
+    "oxb": 
         "prefix": "oxb"
         "body": "(\\\\beta)"
-    "(\\\\alpha)": 
+    "oxa": 
         "prefix": "oxa"
         "body": "(\\\\alpha)"
-    "\\\\vec{w}": 
+    "ovw": 
         "prefix": "ovw"
         "body": "\\\\vec{w}"
-    "\\\\vec{v}": 
+    "ovv": 
         "prefix": "ovv"
         "body": "\\\\vec{v}"
-    "\\\\vec{}": 
+    "ovu": 
         "prefix": "ovu"
         "body": "\\\\vec{$1}"
-    "\\\\vec{c}": 
+    "ovc": 
         "prefix": "ovc"
         "body": "\\\\vec{c}"
-    "\\\\vec{b}": 
+    "ovb": 
         "prefix": "ovb"
         "body": "\\\\vec{b}"
-    "\\\\vec{a}": 
+    "ova": 
         "prefix": "ova"
         "body": "\\\\vec{a}"
-    "\\\\widetilde{}": 
+    "wtu": 
         "prefix": "wtu"
         "body": "\\\\widetilde{$1}"
-    "\\\\tilde{}": 
+    "otu": 
         "prefix": "otu"
         "body": "\\\\tilde{$1}"
-    "\\\\otimes": 
+    "oti": 
         "prefix": "oti"
         "body": "\\\\otimes"
-    "\\\\operatorname{}": 
+    "opu": 
+        "prefix": "opu"
+        "body": "\\\\mathbb{$1}"
+    "opn": 
         "prefix": "opn"
         "body": "\\\\operatorname{$1}"
-    "\\\\oplus": 
+    "opl": 
         "prefix": "opl"
         "body": "\\\\oplus"
-    "\\\\ominus": 
+    "omi": 
         "prefix": "omi"
         "body": "\\\\ominus"
-    "\\\\overline{z}": 
+    "olz": 
         "prefix": "olz"
         "body": "\\\\overline{z}"
-    "\\\\overline{y}": 
+    "oly": 
         "prefix": "oly"
         "body": "\\\\overline{y}"
-    "\\\\overline{x}": 
+    "olx": 
         "prefix": "olx"
         "body": "\\\\overline{x}"
-    "\\\\overline{}": 
+    "olu": 
         "prefix": "olu"
         "body": "\\\\overline{$1}"
-    "\\\\overline{s}": 
+    "ols": 
         "prefix": "ols"
         "body": "\\\\overline{s}"
-    "\\\\overline{r}": 
+    "olr": 
         "prefix": "olr"
         "body": "\\\\overline{r}"
-    "\\\\overline{q}": 
+    "olq": 
         "prefix": "olq"
         "body": "\\\\overline{q}"
-    "\\\\overline{p}": 
+    "olp": 
         "prefix": "olp"
         "body": "\\\\overline{p}"
-    "\\\\widehat{}": 
+    "whu": 
         "prefix": "whu"
         "body": "\\\\widehat{$1}"
-    "\\\\hat{z}": 
+    "ohz": 
         "prefix": "ohz"
         "body": "\\\\hat{z}"
-    "\\\\hat{y}": 
+    "ohy": 
         "prefix": "ohy"
         "body": "\\\\hat{y}"
-    "\\\\hat{x}": 
+    "ohx": 
         "prefix": "ohx"
         "body": "\\\\hat{x}"
-    "\\\\hat{}": 
+    "ohu": 
         "prefix": "ohu"
         "body": "\\\\hat{$1}"
-    "\\\\hat{s}": 
+    "ohs": 
         "prefix": "ohs"
         "body": "\\\\hat{s}"
-    "\\\\hat{r}": 
+    "ohr": 
         "prefix": "ohr"
         "body": "\\\\hat{r}"
-    "\\\\hat{q}": 
+    "ohq": 
         "prefix": "ohq"
         "body": "\\\\hat{q}"
-    "\\\\hat{p}": 
+    "ohp": 
         "prefix": "ohp"
         "body": "\\\\hat{p}"
-    "(r)": 
+    "oer": 
         "prefix": "oer"
         "body": "(r)"
-    "(p)": 
+    "oep": 
         "prefix": "oep"
         "body": "(p)"
-    "(n)": 
+    "oen": 
         "prefix": "oen"
         "body": "(n)"
-    "(f)": 
+    "oef": 
         "prefix": "oef"
         "body": "(f)"
-    "(b)": 
+    "oeb": 
         "prefix": "oeb"
         "body": "(b)"
-    "\\\\dot{z}": 
+    "odz": 
         "prefix": "odz"
         "body": "\\\\dot{z}"
-    "\\\\dot{y}": 
+    "ody": 
         "prefix": "ody"
         "body": "\\\\dot{y}"
-    "\\\\dot{x}": 
+    "odx": 
         "prefix": "odx"
         "body": "\\\\dot{x}"
-    "\\\\dot{}": 
+    "odu": 
         "prefix": "odu"
         "body": "\\\\dot{$1}"
-    "\\\\dot{s}": 
+    "ods": 
         "prefix": "ods"
         "body": "\\\\dot{s}"
-    "\\\\dot{r}": 
+    "odr": 
         "prefix": "odr"
         "body": "\\\\dot{r}"
-    "\\\\dot{q}": 
+    "odq": 
         "prefix": "odq"
         "body": "\\\\dot{q}"
-    "\\\\dot{p}": 
+    "odp": 
         "prefix": "odp"
         "body": "\\\\dot{p}"
-    "(Z)": 
+    "ocz": 
         "prefix": "ocz"
         "body": "(Z)"
-    "(Y)": 
+    "ocy": 
         "prefix": "ocy"
         "body": "(Y)"
-    "(X)": 
+    "ocx": 
         "prefix": "ocx"
         "body": "(X)"
-    "(W)": 
+    "ocw": 
         "prefix": "ocw"
         "body": "(W)"
-    "(V)": 
+    "ocv": 
         "prefix": "ocv"
         "body": "(V)"
-    "\\\\check{}": 
+    "ocu": 
         "prefix": "ocu"
         "body": "\\\\check{$1}"
-    "(T)": 
+    "oct": 
         "prefix": "oct"
         "body": "(T)"
-    "(S)": 
+    "ocs": 
         "prefix": "ocs"
         "body": "(S)"
-    "(R)": 
+    "ocr": 
         "prefix": "ocr"
         "body": "(R)"
-    "(Q)": 
+    "ocq": 
         "prefix": "ocq"
         "body": "(Q)"
-    "(P)": 
+    "ocp": 
         "prefix": "ocp"
         "body": "(P)"
-    "(O)": 
+    "oco": 
         "prefix": "oco"
         "body": "(O)"
-    "(N)": 
+    "ocn": 
         "prefix": "ocn"
         "body": "(N)"
-    "(M)": 
+    "ocm": 
         "prefix": "ocm"
         "body": "(M)"
-    "(L)": 
+    "ocl": 
         "prefix": "ocl"
         "body": "(L)"
-    "(K)": 
+    "ock": 
         "prefix": "ock"
         "body": "(K)"
-    "(J)": 
+    "ocj": 
         "prefix": "ocj"
         "body": "(J)"
-    "(I)": 
+    "oci": 
         "prefix": "oci"
         "body": "(I)"
-    "(H)": 
+    "och": 
         "prefix": "och"
         "body": "(H)"
-    "(G)": 
+    "ocg": 
         "prefix": "ocg"
         "body": "(G)"
-    "(F)": 
+    "ocf": 
         "prefix": "ocf"
         "body": "(F)"
-    "(E)": 
+    "oce": 
         "prefix": "oce"
         "body": "(E)"
-    "(D)": 
+    "ocd": 
         "prefix": "ocd"
         "body": "(D)"
-    "(C)": 
+    "occ": 
         "prefix": "occ"
         "body": "(C)"
-    "(B)": 
+    "ocb": 
         "prefix": "ocb"
         "body": "(B)"
-    "(A)": 
+    "oca": 
         "prefix": "oca"
         "body": "(A)"
-    "\\\\bar{z}": 
+    "obz": 
         "prefix": "obz"
         "body": "\\\\bar{z}"
-    "\\\\bar{y}": 
+    "oby": 
         "prefix": "oby"
         "body": "\\\\bar{y}"
-    "\\\\bar{x}": 
+    "obx": 
         "prefix": "obx"
         "body": "\\\\bar{x}"
-    "\\\\bar{}": 
+    "obu": 
         "prefix": "obu"
         "body": "\\\\bar{$1}"
-    "\\\\bar{s}": 
+    "obs": 
         "prefix": "obs"
         "body": "\\\\bar{s}"
-    "\\\\bar{r}": 
+    "obr": 
         "prefix": "obr"
         "body": "\\\\bar{r}"
-    "\\\\bar{q}": 
+    "obq": 
         "prefix": "obq"
         "body": "\\\\bar{q}"
-    "\\\\bar{p}": 
+    "obp": 
         "prefix": "obp"
         "body": "\\\\bar{p}"
-    "[": 
+    "obk": 
         "prefix": "obk"
         "body": "["
-    "\\\\notag": 
+    "ntg": 
         "prefix": "ntg"
         "body": "\\\\notag"
-    "\\\\!": 
+    "nsp": 
         "prefix": "nsp"
         "body": "\\\\!"
-    "\\\\|": 
+    "nrm": 
         "prefix": "nrm"
         "body": "\\\\|"
-    "\\\\sqrt[n]{2}": 
+    "nr2": 
         "prefix": "nr2"
         "body": "\\\\sqrt[n]{2}"
-    "\\\\noindent": 
+    "noi": 
         "prefix": "noi"
         "body": "\\\\noindent"
-    "\\\\null": 
+    "nll": 
         "prefix": "nll"
         "body": "\\\\null"
-    "\\\\not\\\\in": 
+    "neo": 
         "prefix": "neo"
         "body": "\\\\not\\\\in"
-    "\\\\begin{matrix}": 
+    "mxu": 
         "prefix": "mxu"
         "body": """
         \\\\begin{matrix}
@@ -3236,1792 +3791,1902 @@
         ...&...
         \\\\end{matrix}
         """
-    "{\\\\mathversion{bold} $ $1$}": 
+    "mxc": 
+        "prefix": "mxc"
+        "body": """
+        \\\\begin{pmatrix}
+         x_1  \\\\\\\\
+         x_2  \\\\\\\\
+         x_3
+        \\\\end{pmatrix}
+        """
+    "mvb": 
         "prefix": "mvb"
-        "body": "{\\\\mathversion{bold} \\\\$ \\\\$1$}"
-    "\\\\:": 
+        "body": "{\\\\mathversion{bold} \\\\$ $1\\\\$}"
+    "mtt": 
+        "prefix": "mtt"
+        "body": "\\\\mathtt{$1}"
+    "msp": 
         "prefix": "msp"
         "body": "\\\\:"
-    "\\\\ll": 
+    "msf": 
+        "prefix": "msf"
+        "body": "\\\\mathsf{$1}"
+    "mrm": 
+        "prefix": "mrm"
+        "body": "\\\\mathrm{$1}"
+    "mlt": 
         "prefix": "mlt"
         "body": "\\\\ll"
-    "\\\\mp": 
+    "mit": 
+        "prefix": "mit"
+        "body": "\\\\mathit{$1}"
+    "mip": 
         "prefix": "mip"
         "body": "\\\\mp"
-    "\\\\gg": 
+    "mgt": 
         "prefix": "mgt"
         "body": "\\\\gg"
-    "_\\\\zeta": 
+    "mbx": 
+        "prefix": "mbx"
+        "body": "\\\\mbox{$1}"
+    "mbf": 
+        "prefix": "mbf"
+        "body": "\\\\mathbf{$1}"
+    "lxz": 
         "prefix": "lxz"
         "body": "_\\\\zeta"
-    "_\\\\xi": 
+    "lxx": 
         "prefix": "lxx"
         "body": "_\\\\xi"
-    "_\\\\upsilon": 
+    "lxu": 
         "prefix": "lxu"
         "body": "_\\\\upsilon"
-    "_\\\\tau": 
+    "lxt": 
         "prefix": "lxt"
         "body": "_\\\\tau"
-    "_\\\\sigma": 
+    "lxs": 
         "prefix": "lxs"
         "body": "_\\\\sigma"
-    "_\\\\rho": 
+    "lxr": 
         "prefix": "lxr"
         "body": "_\\\\rho"
-    "_\\\\pi": 
+    "lxp": 
         "prefix": "lxp"
         "body": "_\\\\pi"
-    "_\\\\omega": 
+    "lxo": 
         "prefix": "lxo"
         "body": "_\\\\omega"
-    "_\\\\nu": 
+    "lxn": 
         "prefix": "lxn"
         "body": "_\\\\nu"
-    "_\\\\mu": 
+    "lxm": 
         "prefix": "lxm"
         "body": "_\\\\mu"
-    "_\\\\lambda": 
+    "lxl": 
         "prefix": "lxl"
         "body": "_\\\\lambda"
-    "_\\\\kappa": 
+    "lxk": 
         "prefix": "lxk"
         "body": "_\\\\kappa"
-    "_\\\\gamma": 
+    "lxg": 
         "prefix": "lxg"
         "body": "_\\\\gamma"
-    "_\\\\epsilon": 
+    "lxe": 
         "prefix": "lxe"
         "body": "_\\\\epsilon"
-    "_\\\\delta": 
+    "lxd": 
         "prefix": "lxd"
         "body": "_\\\\delta"
-    "_\\\\chi": 
+    "lxc": 
         "prefix": "lxc"
         "body": "_\\\\chi"
-    "_\\\\beta": 
+    "lxb": 
         "prefix": "lxb"
         "body": "_\\\\beta"
-    "_\\\\alpha": 
+    "lxa": 
         "prefix": "lxa"
         "body": "_\\\\alpha"
-    "_u": 
+    "luu": 
         "prefix": "luu"
         "body": "_u"
-    "<": 
+    "ltn": 
         "prefix": "ltn"
         "body": "<"
-    "\\\\leq": 
+    "lte": 
         "prefix": "lte"
         "body": "\\\\leq"
-    "_\\\\ast": 
+    "lst": 
         "prefix": "lst"
         "body": "_\\\\ast"
-    "\\\\leftrightarrow": 
+    "lra": 
         "prefix": "lra"
         "body": "\\\\leftrightarrow"
-    "_{mn}": 
+    "lmn": 
         "prefix": "lmn"
         "body": "_{mn}"
-    "\\\\langle": 
+    "lle": 
         "prefix": "lle"
         "body": "\\\\langle"
-    "\\\\left\\\\langle \\\\! \\\\left\\\\langle": 
+    "lld": 
         "prefix": "lld"
         "body": "\\\\left\\\\langle \\\\! \\\\left\\\\langle"
-    "\\\\{": 
+    "llb": 
         "prefix": "llb"
         "body": "\\\\{"
-    "_{jk}": 
+    "ljk": 
         "prefix": "ljk"
         "body": "_{jk}"
-    "\\\\line{}": 
+    "lin": 
         "prefix": "lin"
         "body": "\\\\line{$1}"
-    "_{ij}": 
+    "lij": 
         "prefix": "lij"
         "body": "_{ij}"
-    "_{ji}": 
+    "lji": 
         "prefix": "lji"
         "body": "_{ji}"
-    "\\\\ln": 
+    "lgn": 
         "prefix": "lgn"
         "body": "\\\\ln"
-    "\\\\left\\\\langle": 
+    "lep": 
+        "prefix": "lep"
+        "body": "\\\\left("
+    "lel": 
         "prefix": "lel"
         "body": "\\\\left\\\\langle"
-    "\\\\leftarrow": 
+    "lea": 
         "prefix": "lea"
         "body": "\\\\leftarrow"
-    "\\\\ldots": 
+    "lds": 
         "prefix": "lds"
         "body": "\\\\ldots"
-    "\\\\left.": 
+    "ldo": 
         "prefix": "ldo"
         "body": "\\\\left."
-    "_Z": 
+    "lcz": 
         "prefix": "lcz"
         "body": "_Z"
-    "_Y": 
+    "lcy": 
         "prefix": "lcy"
         "body": "_Y"
-    "_X": 
+    "lcx": 
         "prefix": "lcx"
         "body": "_X"
-    "_W": 
+    "lcw": 
         "prefix": "lcw"
         "body": "_W"
-    "_V": 
+    "lcv": 
         "prefix": "lcv"
         "body": "_V"
-    "_U": 
+    "lcu": 
         "prefix": "lcu"
         "body": "_U"
-    "_T": 
+    "lct": 
         "prefix": "lct"
         "body": "_T"
-    "_S": 
+    "lcs": 
         "prefix": "lcs"
         "body": "_S"
-    "_R": 
+    "lcr": 
         "prefix": "lcr"
         "body": "_R"
-    "_Q": 
+    "lcq": 
         "prefix": "lcq"
         "body": "_Q"
-    "_P": 
+    "lcp": 
         "prefix": "lcp"
         "body": "_P"
-    "_O": 
+    "lco": 
         "prefix": "lco"
         "body": "_O"
-    "_N": 
+    "lcn": 
         "prefix": "lcn"
         "body": "_N"
-    "_M": 
+    "lcm": 
         "prefix": "lcm"
         "body": "_M"
-    "_L": 
+    "lcl": 
         "prefix": "lcl"
         "body": "_L"
-    "_K": 
+    "lck": 
         "prefix": "lck"
         "body": "_K"
-    "_J": 
+    "lcj": 
         "prefix": "lcj"
         "body": "_J"
-    "_I": 
+    "lci": 
         "prefix": "lci"
         "body": "_I"
-    "_H": 
+    "lch": 
         "prefix": "lch"
         "body": "_H"
-    "_G": 
+    "lcg": 
         "prefix": "lcg"
         "body": "_G"
-    "_F": 
+    "lcf": 
         "prefix": "lcf"
         "body": "_F"
-    "_E": 
+    "lce": 
         "prefix": "lce"
         "body": "_E"
-    "_D": 
+    "lcd": 
         "prefix": "lcd"
         "body": "_D"
-    "_C": 
+    "lcc": 
         "prefix": "lcc"
         "body": "_C"
-    "_B": 
+    "lcb": 
         "prefix": "lcb"
         "body": "_B"
-    "_A": 
+    "lca": 
         "prefix": "lca"
         "body": "_A"
-    "L_A{}^\\\\mu": 
+    "lbl": 
+        "prefix": "lbl"
+        "body": "\\\\label{$1}"
+    "lam": 
         "prefix": "lam"
         "body": "L_A{}^\\\\mu"
-    "_{10}": 
+    "l10": 
         "prefix": "l10"
         "body": "_{10}"
-    "{\\\\it ": 
+    "itu": 
         "prefix": "itu"
         "body": "{\\\\it "
-    "\\\\item": 
+    "itm": 
         "prefix": "itm"
         "body": "\\\\item"
-    "\\\\cong": 
+    "iso": 
         "prefix": "iso"
         "body": "\\\\cong"
-    "\\\\int_{\\\\mathbb{R}^3} ": 
+    "ir3": 
         "prefix": "ir3"
         "body": "\\\\int_{\\\\mathbb{R}^3} "
-    "\\\\implies": 
+    "imp": 
         "prefix": "imp"
         "body": "\\\\implies"
-    "\\\\Im": 
+    "ima": 
         "prefix": "ima"
         "body": "\\\\Im"
-    "\\\\(  \\\\)": 
+    "igr": 
+        "prefix": "igr"
+        "body": "\\\\includegraphics{$1}"
+    "iqe": 
         "prefix": "iqe"
         "body": "\\\\( $1 \\\\)"
-    "\\\\int^b_a": 
+    "idx": 
+        "prefix": "idx"
+        "body": "\\\\index{$1}"
+    "iba": 
         "prefix": "iba"
         "body": "\\\\int^b_a"
-    "\\\\int^1_0": 
+    "i10": 
         "prefix": "i10"
         "body": "\\\\int^1_0"
-    "^\\\\zeta": 
+    "hxz": 
         "prefix": "hxz"
         "body": "^\\\\zeta"
-    "^\\\\xi": 
+    "hxx": 
         "prefix": "hxx"
         "body": "^\\\\xi"
-    "^\\\\upsilon": 
+    "hxu": 
         "prefix": "hxu"
         "body": "^\\\\upsilon"
-    "^\\\\tau": 
+    "hxt": 
         "prefix": "hxt"
         "body": "^\\\\tau"
-    "^\\\\sigma": 
+    "hxs": 
         "prefix": "hxs"
         "body": "^\\\\sigma"
-    "^\\\\rho": 
+    "hxr": 
         "prefix": "hxr"
         "body": "^\\\\rho"
-    "^\\\\pi": 
+    "hxp": 
         "prefix": "hxp"
         "body": "^\\\\pi"
-    "^\\\\omega": 
+    "hxo": 
         "prefix": "hxo"
         "body": "^\\\\omega"
-    "^\\\\nu": 
+    "hxn": 
         "prefix": "hxn"
         "body": "^\\\\nu"
-    "^\\\\mu": 
+    "hxm": 
         "prefix": "hxm"
         "body": "^\\\\mu"
-    "^{\\\\mu\\\\nu}": 
+    "hxmn": 
         "prefix": "hxmn"
         "body": "^{\\\\mu\\\\nu}"
-    "^\\\\lambda": 
+    "hxl": 
         "prefix": "hxl"
         "body": "^\\\\lambda"
-    "^\\\\kappa": 
+    "hxk": 
         "prefix": "hxk"
         "body": "^\\\\kappa"
-    "^\\\\gamma": 
+    "hxg": 
         "prefix": "hxg"
         "body": "^\\\\gamma"
-    "^\\\\epsilon": 
+    "hxe": 
         "prefix": "hxe"
         "body": "^\\\\epsilon"
-    "^\\\\delta": 
+    "hxd": 
         "prefix": "hxd"
         "body": "^\\\\delta"
-    "^\\\\chi": 
+    "hxc": 
         "prefix": "hxc"
         "body": "^\\\\chi"
-    "^\\\\beta": 
+    "hxb": 
         "prefix": "hxb"
         "body": "^\\\\beta"
-    "^\\\\alpha": 
+    "hxa": 
         "prefix": "hxa"
         "body": "^\\\\alpha"
-    "^u": 
+    "huu": 
         "prefix": "huu"
         "body": "^u"
-    "^{}": 
+    "hup": 
         "prefix": "hup"
         "body": "^{$1}"
-    "^\\\\ast": 
+    "hst": 
         "prefix": "hst"
         "body": "^\\\\ast"
-    "^\\\\prime": 
+    "hsp": 
+        "prefix": "hsp"
+        "body": "\\\\hspace{$1}"
+    "hpr": 
         "prefix": "hpr"
         "body": "^\\\\prime"
-    "^{-1}": 
+    "hmo": 
         "prefix": "hmo"
         "body": "^{-1}"
-    "^{jk}": 
+    "hjk": 
         "prefix": "hjk"
         "body": "^{jk}"
-    "^{ij}": 
+    "hij": 
         "prefix": "hij"
         "body": "^{ij}"
-    "\\\\hfill": 
+    "hfi": 
         "prefix": "hfi"
         "body": "\\\\hfill"
-    "^e": 
+    "hee": 
         "prefix": "hee"
         "body": "^e"
-    "^\\\\dag": 
+    "hdg": 
         "prefix": "hdg"
         "body": "^\\\\dag"
-    "^Z": 
+    "hcz": 
         "prefix": "hcz"
         "body": "^Z"
-    "^Y": 
+    "hcy": 
         "prefix": "hcy"
         "body": "^Y"
-    "^X": 
+    "hcx": 
         "prefix": "hcx"
         "body": "^X"
-    "^W": 
+    "hcw": 
         "prefix": "hcw"
         "body": "^W"
-    "^V": 
+    "hcv": 
         "prefix": "hcv"
         "body": "^V"
-    "^U": 
+    "hcu": 
         "prefix": "hcu"
         "body": "^U"
-    "^T": 
+    "hct": 
         "prefix": "hct"
         "body": "^T"
-    "^S": 
+    "hcs": 
         "prefix": "hcs"
         "body": "^S"
-    "^R": 
+    "hcr": 
         "prefix": "hcr"
         "body": "^R"
-    "^Q": 
+    "hcq": 
         "prefix": "hcq"
         "body": "^Q"
-    "^P": 
+    "hcp": 
         "prefix": "hcp"
         "body": "^P"
-    "^O": 
+    "hco": 
         "prefix": "hco"
         "body": "^O"
-    "^N": 
+    "hcn": 
         "prefix": "hcn"
         "body": "^N"
-    "^M": 
+    "hcm": 
         "prefix": "hcm"
         "body": "^M"
-    "^L": 
+    "hcl": 
         "prefix": "hcl"
         "body": "^L"
-    "^K": 
+    "hck": 
         "prefix": "hck"
         "body": "^K"
-    "^J": 
+    "hcj": 
         "prefix": "hcj"
         "body": "^J"
-    "^I": 
+    "hci": 
         "prefix": "hci"
         "body": "^I"
-    "^H": 
+    "hch": 
         "prefix": "hch"
         "body": "^H"
-    "^G": 
+    "hcg": 
         "prefix": "hcg"
         "body": "^G"
-    "^F": 
+    "hcf": 
         "prefix": "hcf"
         "body": "^F"
-    "^E": 
+    "hce": 
         "prefix": "hce"
         "body": "^E"
-    "^D": 
+    "hcd": 
         "prefix": "hcd"
         "body": "^D"
-    "^C": 
+    "hcc": 
         "prefix": "hcc"
         "body": "^C"
-    "^B": 
+    "hcb": 
         "prefix": "hcb"
         "body": "^B"
-    "^A": 
+    "hca": 
         "prefix": "hca"
         "body": "^A"
-    "\\\\hbar": 
+    "hba": 
         "prefix": "hba"
         "body": "\\\\hbar"
-    "\\\\frac{1}{2}": 
-        "prefix": "f12"
+    "haf": 
+        "prefix": "haf"
         "body": "\\\\frac{1}{2}"
-    "^{10}": 
+    "h10": 
         "prefix": "h10"
         "body": "^{10}"
-    ">": 
+    "gtn": 
         "prefix": "gtn"
         "body": ">"
-    "\\\\geq": 
+    "gte": 
         "prefix": "gte"
         "body": "\\\\geq"
-    "\\\\ss": 
+    "gss": 
         "prefix": "gss"
         "body": "\\\\ss"
-    "\\\\mathfrak{t} ": 
+    "gmu": 
+        "prefix": "gmu"
+        "body": "\\\\mathfrak{$1}"
+    "gmt": 
         "prefix": "gmt"
         "body": "\\\\mathfrak{t} "
-    "\\\\mathfrak{p} ": 
+    "gmp": 
         "prefix": "gmp"
         "body": "\\\\mathfrak{p} "
-    "\\\\mathfrak{k} ": 
+    "gmk": 
         "prefix": "gmk"
         "body": "\\\\mathfrak{k} "
-    "\\\\mathfrak{h} ": 
+    "gmh": 
         "prefix": "gmh"
         "body": "\\\\mathfrak{h} "
-    "\\\\mathfrak{g} ": 
+    "gmg": 
         "prefix": "gmg"
         "body": "\\\\mathfrak{g} "
-    "\\\\mathfrak{b} ": 
+    "gmb": 
         "prefix": "gmb"
         "body": "\\\\mathfrak{b} "
-    "g_{ij}": 
+    "gij": 
         "prefix": "gij"
         "body": "g_{ij}"
-    "\\\\`{E}": 
+    "gce": 
         "prefix": "gce"
         "body": "\\\\`{E}"
-    "\\\\frac{\\\\partial}{\\\\partial y}": 
+    "ftn": 
+        "prefix": "ftn"
+        "body": "\\\\footnote{$1}"
+    "fpy": 
         "prefix": "fpy"
         "body": "\\\\frac{\\\\partial}{\\\\partial y}"
-    "\\\\frac{\\\\partial}{\\\\partial x}": 
+    "fpx": 
         "prefix": "fpx"
         "body": "\\\\frac{\\\\partial}{\\\\partial x}"
-    "\\\\frac{\\\\partial^3}{\\\\partial x \\\\partial y \\\\partial z}": 
+    "fpt": 
         "prefix": "fpt"
         "body": "\\\\frac{\\\\partial^3}{\\\\partial x \\\\partial y \\\\partial z}"
-    "\\\\frac{\\\\partial^2}{\\\\partial x \\\\partial y}": 
+    "fps": 
         "prefix": "fps"
         "body": "\\\\frac{\\\\partial^2}{\\\\partial x \\\\partial y}"
-    "}{": 
+    "fof": 
         "prefix": "fof"
         "body": "}{"
-    "\\\\flat": 
+    "flt": 
         "prefix": "flt"
         "body": "\\\\flat"
-    "\\\\frac{1}{4}": 
+    "f14": 
         "prefix": "f14"
         "body": "\\\\frac{1}{4}"
-    "\\\\frac{1}{3}": 
+    "f13": 
         "prefix": "f13"
         "body": "\\\\frac{1}{3}"
-    "\\\\end{tabular}": 
+    "f12": 
+        "prefix": "f12"
+        "body": "\\\\frac{1}{2}"
+    "etr": 
         "prefix": "etr"
         "body": "\\\\end{tabular}"
-    "\\\\end{tabbing}": 
+    "etb": 
         "prefix": "etb"
         "body": "\\\\end{tabbing}"
-    "\\\\equiv": 
+    "eqv": 
         "prefix": "eqv"
         "body": "\\\\equiv"
-    "\\\\end{quotation}": 
+    "eqt": 
         "prefix": "eqt"
         "body": "\\\\end{quotation}"
-    "''": 
+    "eqm": 
         "prefix": "eqm"
         "body": "''"
-    "\\\\end{eqnarray}": 
+    "eqa": 
         "prefix": "eqa"
         "body": "\\\\end{eqnarray}"
-    "\\\\emph{}": 
+    "emu": 
         "prefix": "emu"
         "body": "\\\\emph{$1}"
-    "\\\\varnothing": 
+    "emp": 
         "prefix": "emp"
         "body": "\\\\varnothing"
-    "\\\\end{math}": 
+    "ema": 
         "prefix": "ema"
         "body": "\\\\end{math}"
-    "\\\\/}": 
+    "eit": 
         "prefix": "eit"
         "body": "\\\\/}"
-    "\\\\end{gather}": 
+    "ega": 
         "prefix": "ega"
         "body": "\\\\end{gather}"
-    "\\\\end{": 
+    "endu": 
         "prefix": "endu"
         "body": "\\\\end{"
-    "\\\\end{equation}": 
+    "eeq": 
         "prefix": "eeq"
         "body": "\\\\end{equation}"
-    "\\\\end{enumerate}": 
+    "een": 
         "prefix": "een"
         "body": "\\\\end{enumerate}"
-    "\\\\end{array}": 
+    "eea": 
         "prefix": "eea"
         "body": "\\\\end{array}"
-    "\\\\end{description}": 
+    "eds": 
         "prefix": "eds"
         "body": "\\\\end{description}"
-    "\\\\]": 
+    "edp": 
         "prefix": "edp"
         "body": "\\\\]"
-    "\\\\end{document}": 
+    "edo": 
         "prefix": "edo"
         "body": "\\\\end{document}"
-    "]": 
+    "ebk": 
         "prefix": "ebk"
         "body": "]"
-    "\\\\end{align}": 
+    "eal": 
         "prefix": "eal"
         "body": "\\\\end{align}"
-    "\\\\end{acknowledgment}": 
+    "eac": 
         "prefix": "eac"
         "body": "\\\\end{acknowledgment}"
-    "$\\\\zeta$": 
+    "dxz": 
         "prefix": "dxz"
         "body": "\\\\$\\\\zeta\\\\$"
-    "$\\\\xi$": 
+    "dxx": 
         "prefix": "dxx"
         "body": "\\\\$\\\\xi\\\\$"
-    "$\\\\upsilon$": 
+    "dxu": 
         "prefix": "dxu"
         "body": "\\\\$\\\\upsilon\\\\$"
-    "$\\\\tau$": 
+    "dxt": 
         "prefix": "dxt"
         "body": "\\\\$\\\\tau\\\\$"
-    "$\\\\sigma$": 
+    "dxs": 
         "prefix": "dxs"
         "body": "\\\\$\\\\sigma\\\\$"
-    "$\\\\rho$": 
+    "dxr": 
         "prefix": "dxr"
         "body": "\\\\$\\\\rho\\\\$"
-    "$\\\\pi$": 
+    "dxp": 
         "prefix": "dxp"
         "body": "\\\\$\\\\pi\\\\$"
-    "$\\\\omega$": 
+    "dxo": 
         "prefix": "dxo"
         "body": "\\\\$\\\\omega\\\\$"
-    "$\\\\nu$": 
+    "dxn": 
         "prefix": "dxn"
         "body": "\\\\$\\\\nu\\\\$"
-    "$\\\\mu$": 
+    "dxm": 
         "prefix": "dxm"
         "body": "\\\\$\\\\mu\\\\$"
-    "$\\\\lambda$": 
+    "dxl": 
         "prefix": "dxl"
         "body": "\\\\$\\\\lambda\\\\$"
-    "$\\\\kappa$": 
+    "dxk": 
         "prefix": "dxk"
         "body": "\\\\$\\\\kappa\\\\$"
-    "$\\\\gamma$": 
+    "dxg": 
         "prefix": "dxg"
         "body": "\\\\$\\\\gamma\\\\$"
-    "$\\\\epsilon$": 
+    "dxe": 
         "prefix": "dxe"
         "body": "\\\\$\\\\epsilon\\\\$"
-    "$\\\\delta$": 
+    "dxd": 
         "prefix": "dxd"
         "body": "\\\\$\\\\delta\\\\$"
-    "$\\\\chi$": 
+    "dxc": 
         "prefix": "dxc"
         "body": "\\\\$\\\\chi\\\\$"
-    "$\\\\beta$": 
+    "dxb": 
         "prefix": "dxb"
         "body": "\\\\$\\\\beta\\\\$"
-    "$\\\\alpha$": 
+    "dxa": 
         "prefix": "dxa"
         "body": "\\\\$\\\\alpha\\\\$"
-    "\\\\det": 
+    "dtt": 
         "prefix": "dtt"
         "body": "\\\\det"
-    " \\\\displaystyle": 
+    "dsz": 
         "prefix": "dsz"
         "body": " \\\\displaystyle"
-    "$o$": 
+    "dsp": 
+        "prefix": "dsp"
+        "body": "\\\\qquad"
+    "doo": 
         "prefix": "doo"
         "body": "\\\\$o\\\\$"
-    "\\\\dim": 
+    "dmn": 
         "prefix": "dmn"
         "body": "\\\\dim"
-    "$$": 
+    "dlr": 
         "prefix": "dlr"
         "body": "\\\\$\\\\$"
-    "\\\\ddots": 
+    "dds": 
         "prefix": "dds"
         "body": "\\\\ddots"
-    "$Z$": 
+    "dcz": 
         "prefix": "dcz"
         "body": "\\\\$Z\\\\$"
-    "$Y$": 
+    "dcy": 
         "prefix": "dcy"
         "body": "\\\\$Y\\\\$"
-    "$X$": 
+    "dcx": 
         "prefix": "dcx"
         "body": "\\\\$X\\\\$"
-    "$W$": 
+    "dcw": 
         "prefix": "dcw"
         "body": "\\\\$W\\\\$"
-    "$V$": 
+    "dcv": 
         "prefix": "dcv"
         "body": "\\\\$V\\\\$"
-    "$U$": 
+    "dcu": 
         "prefix": "dcu"
         "body": "\\\\$U\\\\$"
-    "$T$": 
+    "dct": 
         "prefix": "dct"
         "body": "\\\\$T\\\\$"
-    "$S$": 
+    "dcs": 
         "prefix": "dcs"
         "body": "\\\\$S\\\\$"
-    "$R$": 
+    "dcr": 
         "prefix": "dcr"
         "body": "\\\\$R\\\\$"
-    "$Q$": 
+    "dcq": 
         "prefix": "dcq"
         "body": "\\\\$Q\\\\$"
-    "$P$": 
+    "dcp": 
         "prefix": "dcp"
         "body": "\\\\$P\\\\$"
-    "$O$": 
+    "dco": 
         "prefix": "dco"
         "body": "\\\\$O\\\\$"
-    "$N$": 
+    "dcn": 
         "prefix": "dcn"
         "body": "\\\\$N\\\\$"
-    "$M$": 
+    "dcm": 
         "prefix": "dcm"
         "body": "\\\\$M\\\\$"
-    "$L$": 
+    "dcl": 
         "prefix": "dcl"
         "body": "\\\\$L\\\\$"
-    "$K$": 
+    "dck": 
         "prefix": "dck"
         "body": "\\\\$K\\\\$"
-    "$J$": 
+    "dcj": 
         "prefix": "dcj"
         "body": "\\\\$J\\\\$"
-    "$I$": 
+    "dci": 
         "prefix": "dci"
         "body": "\\\\$I\\\\$"
-    "$H$": 
+    "dch": 
         "prefix": "dch"
         "body": "\\\\$H\\\\$"
-    "$G$": 
+    "dcg": 
         "prefix": "dcg"
         "body": "\\\\$G\\\\$"
-    "$F$": 
+    "dcf": 
         "prefix": "dcf"
         "body": "\\\\$F\\\\$"
-    "$E$": 
+    "dce": 
         "prefix": "dce"
         "body": "\\\\$E\\\\$"
-    "$D$": 
+    "dcd": 
         "prefix": "dcd"
         "body": "\\\\$D\\\\$"
-    "$C$": 
+    "dcc": 
         "prefix": "dcc"
         "body": "\\\\$C\\\\$"
-    "$B$": 
+    "dcb": 
         "prefix": "dcb"
         "body": "\\\\$B\\\\$"
-    "$A$": 
+    "dca": 
         "prefix": "dca"
         "body": "\\\\$A\\\\$"
-    "$\\\\mathbf{z}$": 
+    "dbz": 
         "prefix": "dbz"
         "body": "\\\\$\\\\mathbf{z}\\\\$"
-    "$\\\\mathbf{y}$": 
+    "dby": 
         "prefix": "dby"
         "body": "\\\\$\\\\mathbf{y}\\\\$"
-    "$\\\\mathbf{x}$": 
+    "dbx": 
         "prefix": "dbx"
         "body": "\\\\$\\\\mathbf{x}\\\\$"
-    "$\\\\mathbf{w}$": 
+    "dbw": 
         "prefix": "dbw"
         "body": "\\\\$\\\\mathbf{w}\\\\$"
-    "$\\\\mathbf{v}$": 
+    "dbv": 
         "prefix": "dbv"
         "body": "\\\\$\\\\mathbf{v}\\\\$"
-    "$\\\\mathbf{u}$": 
+    "dbu": 
         "prefix": "dbu"
         "body": "\\\\$\\\\mathbf{u}\\\\$"
-    "$\\\\mathbf{t}$": 
+    "dbt": 
         "prefix": "dbt"
         "body": "\\\\$\\\\mathbf{t}\\\\$"
-    "$\\\\mathbf{s}$": 
+    "dbs": 
         "prefix": "dbs"
         "body": "\\\\$\\\\mathbf{s}\\\\$"
-    "$\\\\mathbf{r}$": 
+    "dbr": 
         "prefix": "dbr"
         "body": "\\\\$\\\\mathbf{r}\\\\$"
-    "$\\\\mathbf{q}$": 
+    "dbq": 
         "prefix": "dbq"
         "body": "\\\\$\\\\mathbf{q}\\\\$"
-    "$\\\\mathbf{p}$": 
+    "dbp": 
         "prefix": "dbp"
         "body": "\\\\$\\\\mathbf{p}\\\\$"
-    "$\\\\mathbf{o}$": 
+    "dbo": 
         "prefix": "dbo"
         "body": "\\\\$\\\\mathbf{o}\\\\$"
-    "$\\\\mathbf{n}$": 
+    "dbn": 
         "prefix": "dbn"
         "body": "\\\\$\\\\mathbf{n}\\\\$"
-    "$\\\\mathbf{m}$": 
+    "dbm": 
         "prefix": "dbm"
         "body": "\\\\$\\\\mathbf{m}\\\\$"
-    "$\\\\mathbf{l}$": 
+    "dbl": 
         "prefix": "dbl"
         "body": "\\\\$\\\\mathbf{l}\\\\$"
-    "$\\\\mathbf{k}$": 
+    "dbk": 
         "prefix": "dbk"
         "body": "\\\\$\\\\mathbf{k}\\\\$"
-    "$\\\\mathbf{j}$": 
+    "dbj": 
         "prefix": "dbj"
         "body": "\\\\$\\\\mathbf{j}\\\\$"
-    "$\\\\mathbf{i}$": 
+    "dbi": 
         "prefix": "dbi"
         "body": "\\\\$\\\\mathbf{i}\\\\$"
-    "$\\\\mathbf{h}$": 
+    "dbh": 
         "prefix": "dbh"
         "body": "\\\\$\\\\mathbf{h}\\\\$"
-    "$\\\\mathbf{g}$": 
+    "dbg": 
         "prefix": "dbg"
         "body": "\\\\$\\\\mathbf{g}\\\\$"
-    "$\\\\mathbf{f}$": 
+    "dbf": 
         "prefix": "dbf"
         "body": "\\\\$\\\\mathbf{f}\\\\$"
-    "$\\\\mathbf{e}$": 
+    "dbe": 
         "prefix": "dbe"
         "body": "\\\\$\\\\mathbf{e}\\\\$"
-    "$\\\\mathbf{d}$": 
+    "dbd": 
         "prefix": "dbd"
         "body": "\\\\$\\\\mathbf{d}\\\\$"
-    "$\\\\mathbf{c}$": 
+    "dbc": 
         "prefix": "dbc"
         "body": "\\\\$\\\\mathbf{c}\\\\$"
-    "$\\\\mathbf{b}$": 
+    "dbb": 
         "prefix": "dbb"
         "body": "\\\\$\\\\mathbf{b}\\\\$"
-    "$\\\\mathbf{a}$": 
+    "dba": 
         "prefix": "dba"
         "body": "\\\\$\\\\mathbf{a}\\\\$"
-    "$\\\\mathbf{9}$": 
+    "db9": 
         "prefix": "db9"
         "body": "\\\\$\\\\mathbf{9}\\\\$"
-    "$\\\\mathbf{8}$": 
+    "db8": 
         "prefix": "db8"
         "body": "\\\\$\\\\mathbf{8}\\\\$"
-    "$\\\\mathbf{7}$": 
+    "db7": 
         "prefix": "db7"
         "body": "\\\\$\\\\mathbf{7}\\\\$"
-    "$\\\\mathbf{6}$": 
+    "db6": 
         "prefix": "db6"
         "body": "\\\\$\\\\mathbf{6}\\\\$"
-    "$\\\\mathbf{5}$": 
+    "db5": 
         "prefix": "db5"
         "body": "\\\\$\\\\mathbf{5}\\\\$"
-    "$\\\\mathbf{4}$": 
+    "db4": 
         "prefix": "db4"
         "body": "\\\\$\\\\mathbf{4}\\\\$"
-    "$\\\\mathbf{3}$": 
+    "db3": 
         "prefix": "db3"
         "body": "\\\\$\\\\mathbf{3}\\\\$"
-    "$\\\\mathbf{2}$": 
+    "db2": 
         "prefix": "db2"
         "body": "\\\\$\\\\mathbf{2}\\\\$"
-    "$\\\\mathbf{1}$": 
+    "db1": 
         "prefix": "db1"
         "body": "\\\\$\\\\mathbf{1}\\\\$"
-    "$\\\\mathbf{0}$": 
+    "db0": 
         "prefix": "db0"
         "body": "\\\\$\\\\mathbf{0}\\\\$"
-    "$10$": 
+    "d10": 
         "prefix": "d10"
         "body": "\\\\$10\\\\$"
-    "$(0)$": 
+    "d0p": 
         "prefix": "d0p"
         "body": "\\\\$(0)\\\\$"
-    "\\\\quad": 
-        "prefix": "qd"
+    "csp": 
+        "prefix": "csp"
         "body": "\\\\quad"
-    "\\\\sqrt[3]{2}": 
+    "cr2": 
         "prefix": "cr2"
         "body": "\\\\sqrt[3]{2}"
-    "\\\\clearpage": 
+    "cpg": 
         "prefix": "cpg"
         "body": "\\\\clearpage"
-    "\\\\cos^2": 
+    "coq": 
         "prefix": "coq"
         "body": "\\\\cos^2"
-    "\\\\cosh": 
+    "coh": 
         "prefix": "coh"
         "body": "\\\\cosh"
-    "\\\\circ": 
+    "cit": 
+        "prefix": "cit"
+        "body": "\\\\cite{"
+    "cir": 
         "prefix": "cir"
         "body": "\\\\circ"
-    "\\\\cdots": 
+    "cdu": 
+        "prefix": "cdu"
+        "body": """
+        \\\\[
+        \\\\begin{CD}
+        \\\\end{CD}
+        \\\\]
+        """
+    "cds": 
         "prefix": "cds"
         "body": "\\\\cdots"
-    "\\\\cleardoublepage": 
+    "cdp": 
         "prefix": "cdp"
         "body": "\\\\cleardoublepage"
-    "\\\\cdot": 
+    "cdo": 
         "prefix": "cdo"
         "body": "\\\\cdot"
-    "\\\\mathcal{Z}": 
+    "ccz": 
         "prefix": "ccz"
         "body": "\\\\mathcal{Z}"
-    "\\\\mathcal{Y}": 
+    "ccy": 
         "prefix": "ccy"
         "body": "\\\\mathcal{Y}"
-    "\\\\mathcal{X}": 
+    "ccx": 
         "prefix": "ccx"
         "body": "\\\\mathcal{X}"
-    "\\\\mathcal{W}": 
+    "ccw": 
         "prefix": "ccw"
         "body": "\\\\mathcal{W}"
-    "\\\\mathcal{V}": 
+    "ccv": 
         "prefix": "ccv"
         "body": "\\\\mathcal{V}"
-    "\\\\mathcal{U}": 
+    "ccu": 
         "prefix": "ccu"
         "body": "\\\\mathcal{U}"
-    "\\\\mathcal{T}": 
+    "cct": 
         "prefix": "cct"
         "body": "\\\\mathcal{T}"
-    "\\\\mathcal{S}": 
+    "ccs": 
         "prefix": "ccs"
         "body": "\\\\mathcal{S}"
-    "\\\\mathcal{R}": 
+    "ccr": 
         "prefix": "ccr"
         "body": "\\\\mathcal{R}"
-    "\\\\mathcal{Q}": 
+    "ccq": 
         "prefix": "ccq"
         "body": "\\\\mathcal{Q}"
-    "\\\\mathcal{P}": 
+    "ccp": 
         "prefix": "ccp"
         "body": "\\\\mathcal{P}"
-    "\\\\mathcal{O}": 
+    "cco": 
         "prefix": "cco"
         "body": "\\\\mathcal{O}"
-    "\\\\mathcal{N}": 
+    "ccn": 
         "prefix": "ccn"
         "body": "\\\\mathcal{N}"
-    "\\\\mathcal{M}": 
+    "ccm": 
         "prefix": "ccm"
         "body": "\\\\mathcal{M}"
-    "\\\\mathcal{L}": 
+    "ccl": 
         "prefix": "ccl"
         "body": "\\\\mathcal{L}"
-    "\\\\mathcal{K}": 
+    "cck": 
         "prefix": "cck"
         "body": "\\\\mathcal{K}"
-    "\\\\mathcal{J}": 
+    "ccj": 
         "prefix": "ccj"
         "body": "\\\\mathcal{J}"
-    "\\\\mathcal{I}": 
+    "cci": 
         "prefix": "cci"
         "body": "\\\\mathcal{I}"
-    "\\\\mathcal{H}": 
+    "cch": 
         "prefix": "cch"
         "body": "\\\\mathcal{H}"
-    "\\\\mathcal{G}": 
+    "ccg": 
         "prefix": "ccg"
         "body": "\\\\mathcal{G}"
-    "\\\\mathcal{F}": 
+    "ccf": 
         "prefix": "ccf"
         "body": "\\\\mathcal{F}"
-    "\\\\mathcal{E}": 
+    "cce": 
         "prefix": "cce"
         "body": "\\\\mathcal{E}"
-    "\\\\mathcal{D}": 
+    "ccd": 
         "prefix": "ccd"
         "body": "\\\\mathcal{D}"
-    "\\\\mathcal{C}": 
+    "ccc": 
         "prefix": "ccc"
         "body": "\\\\mathcal{C}"
-    "\\\\mathcal{B}": 
+    "ccb": 
         "prefix": "ccb"
         "body": "\\\\mathcal{B}"
-    "\\\\mathcal{A}": 
+    "cca": 
         "prefix": "cca"
         "body": "\\\\mathcal{A}"
-    "Divider: %=========;%         ;%=========": 
+    "cbx": 
         "prefix": "cbx"
         "body": """
         %========================================================%
         %                                                        %
         %========================================================%
         """
-    "Divider: %---------": 
+    "cdv": 
         "prefix": "cdv"
         "body": "%--------------------------------------------------------------------------------"
-    "Divider: %=========": 
+    "cddv": 
         "prefix": "cddv"
         "body": "%================================================================================"
-    "\\\\mathbf{y}": 
+    "cau": 
+        "prefix": "cau"
+        "body": "\\\\mathcal{$1}"
+    "byy": 
         "prefix": "byy"
         "body": "\\\\mathbf{y}"
-    "\\\\begin{tabular}{|c|c|}": 
+    "btr": 
         "prefix": "btr"
         "body": "\\\\begin{tabular}{|c|c|}"
-    "\\\\begin{quotation}": 
+    "btb": 
+        "prefix": "btb"
+        "body": "\\\\begin{tabbing}"
+    "bsy": 
+        "prefix": "bsy"
+        "body": "\\\\boldsymbol{$1}"
+    "bqt": 
         "prefix": "bqt"
         "body": "\\\\begin{quotation}"
-    "``": 
+    "bqm": 
         "prefix": "bqm"
         "body": "``"
-    "\\\\begin{math}": 
+    "bqa": 
+        "prefix": "bqa"
+        "body": "\\\\begin{eqnarray}"
+    "bma": 
         "prefix": "bma"
         "body": "\\\\begin{math}"
-    "\\\\bullet": 
+    "blt": 
         "prefix": "blt"
         "body": "\\\\bullet"
-    "\\\\begin{gather}": 
+    "bga": 
         "prefix": "bga"
         "body": "\\\\begin{gather}"
-    "\\\\textbf{}": 
+    "bfu": 
         "prefix": "bfu"
-        "body": "\\\\textbf{$1}"
-    "\\\\mathbf{f}": 
+        "body": "{\\\\bf "
+    "bff": 
         "prefix": "bff"
         "body": "\\\\mathbf{f}"
-    "\\\\begin{": 
+    "beu": 
         "prefix": "beu"
         "body": "\\\\begin{"
-    "\\\\begin{enumerate}": 
+    "beq": 
+        "prefix": "beq"
+        "body": "\\\\begin{equation}"
+    "ben": 
         "prefix": "ben"
         "body": "\\\\begin{enumerate}"
-    "\\\\mathbf{e}": 
+    "bee": 
         "prefix": "bee"
         "body": "\\\\mathbf{e}"
-    "\\\\begin{array}{ccc}": 
+    "bea": 
         "prefix": "bea"
         "body": "\\\\begin{array}{ccc}"
-    "\\\\begin{description}": 
+    "bds": 
         "prefix": "bds"
         "body": "\\\\begin{description}"
-    "\\\\begin{document}": 
+    "bdp": 
+        "prefix": "bdp"
+        "body": "\\\\["
+    "bdo": 
         "prefix": "bdo"
         "body": "\\\\begin{document}"
-    "\\\\mathbf{Z}": 
+    "bcz": 
         "prefix": "bcz"
         "body": "\\\\mathbf{Z}"
-    "\\\\mathbf{Y}": 
+    "bcy": 
         "prefix": "bcy"
         "body": "\\\\mathbf{Y}"
-    "\\\\mathbf{X}": 
+    "bcx": 
         "prefix": "bcx"
         "body": "\\\\mathbf{X}"
-    "\\\\mathbf{W}": 
+    "bcw": 
         "prefix": "bcw"
         "body": "\\\\mathbf{W}"
-    "\\\\mathbf{V}": 
+    "bcv": 
         "prefix": "bcv"
         "body": "\\\\mathbf{V}"
-    "\\\\mathbf{U}": 
+    "bcu": 
         "prefix": "bcu"
         "body": "\\\\mathbf{U}"
-    "\\\\mathbf{T}": 
+    "bct": 
         "prefix": "bct"
         "body": "\\\\mathbf{T}"
-    "\\\\mathbf{S}": 
+    "bcs": 
         "prefix": "bcs"
         "body": "\\\\mathbf{S}"
-    "\\\\mathbf{R}": 
+    "bcr": 
         "prefix": "bcr"
         "body": "\\\\mathbf{R}"
-    "\\\\mathbf{Q}": 
+    "bcq": 
         "prefix": "bcq"
         "body": "\\\\mathbf{Q}"
-    "\\\\mathbf{P}": 
+    "bcp": 
         "prefix": "bcp"
         "body": "\\\\mathbf{P}"
-    "\\\\mathbf{O}": 
+    "bco": 
         "prefix": "bco"
         "body": "\\\\mathbf{O}"
-    "\\\\mathbf{N}": 
+    "bcn": 
         "prefix": "bcn"
         "body": "\\\\mathbf{N}"
-    "\\\\mathbf{M}": 
+    "bcm": 
         "prefix": "bcm"
         "body": "\\\\mathbf{M}"
-    "\\\\mathbf{L}": 
+    "bcl": 
         "prefix": "bcl"
         "body": "\\\\mathbf{L}"
-    "\\\\mathbf{K}": 
+    "bck": 
         "prefix": "bck"
         "body": "\\\\mathbf{K}"
-    "\\\\mathbf{J}": 
+    "bcj": 
         "prefix": "bcj"
         "body": "\\\\mathbf{J}"
-    "\\\\mathbf{I}": 
+    "bci": 
         "prefix": "bci"
         "body": "\\\\mathbf{I}"
-    "\\\\mathbf{H}": 
+    "bch": 
         "prefix": "bch"
         "body": "\\\\mathbf{H}"
-    "\\\\mathbf{G}": 
+    "bcg": 
         "prefix": "bcg"
         "body": "\\\\mathbf{G}"
-    "\\\\mathbf{F}": 
+    "bcf": 
         "prefix": "bcf"
         "body": "\\\\mathbf{F}"
-    "\\\\mathbf{E}": 
+    "bce": 
         "prefix": "bce"
         "body": "\\\\mathbf{E}"
-    "\\\\mathbf{D}": 
+    "bcd": 
         "prefix": "bcd"
         "body": "\\\\mathbf{D}"
-    "\\\\mathbf{C}": 
+    "bcc": 
         "prefix": "bcc"
         "body": "\\\\mathbf{C}"
-    "\\\\mathbf{B}": 
+    "bcb": 
         "prefix": "bcb"
         "body": "\\\\mathbf{B}"
-    "\\\\mathbf{A}": 
+    "bca": 
         "prefix": "bca"
         "body": "\\\\mathbf{A}"
-    "\\\\mathbf{10}": 
+    "bbu": 
+        "prefix": "bbu"
+        "body": "\\\\mathbb{$1}"
+    "bal": 
+        "prefix": "bal"
+        "body": "\\\\begin{align}"
+    "bac": 
+        "prefix": "bac"
+        "body": "\\\\begin{acknowledgment}"
+    "b10": 
         "prefix": "b10"
         "body": "\\\\mathbf{10}"
-    "|z|": 
+    "avz": 
         "prefix": "avz"
         "body": "|z|"
-    "|y|": 
+    "avy": 
         "prefix": "avy"
         "body": "|y|"
-    "|x|": 
+    "avx": 
         "prefix": "avx"
         "body": "|x|"
-    "|c|": 
+    "avc": 
         "prefix": "avc"
         "body": "|c|"
-    "|b|": 
+    "avb": 
         "prefix": "avb"
         "body": "|b|"
-    "|a|": 
+    "ava": 
         "prefix": "ava"
         "body": "|a|"
-    "@": 
+    "ats": 
         "prefix": "ats"
         "body": "@"
-    "\\\\approx": 
+    "apx": 
         "prefix": "apx"
         "body": "\\\\approx"
-    "\\\\aleph": 
+    "ale": 
         "prefix": "ale"
         "body": "\\\\aleph"
-    "& = &": 
+    "ada": 
         "prefix": "ada"
         "body": "& = &"
-    "\\\\'{E}": 
+    "ace": 
         "prefix": "ace"
         "body": "\\\\'{E}"
-    "(0, 0, 0)": 
+    "03p": 
         "prefix": "03p"
         "body": "(0, 0, 0)"
-    "(0,0)": 
+    "00p": 
         "prefix": "00p"
         "body": "(0,0)"
-    "z^2": 
+    "zq": 
         "prefix": "zq"
         "body": "z^2"
-    "y^2": 
+    "yq": 
         "prefix": "yq"
         "body": "y^2"
-    "\\\\zeta": 
+    "xz": 
         "prefix": "xz"
         "body": "\\\\zeta"
-    "\\\\xi": 
+    "xx": 
         "prefix": "xx"
         "body": "\\\\xi"
-    "\\\\upsilon": 
+    "xu": 
         "prefix": "xu"
         "body": "\\\\upsilon"
-    "\\\\tau": 
+    "xt": 
         "prefix": "xt"
         "body": "\\\\tau"
-    "\\\\sigma": 
+    "xs": 
         "prefix": "xs"
         "body": "\\\\sigma"
-    "\\\\rho": 
+    "xr": 
         "prefix": "xr"
         "body": "\\\\rho"
-    "x^2": 
+    "xq": 
         "prefix": "xq"
         "body": "x^2"
-    "\\\\pi": 
+    "xp": 
         "prefix": "xp"
         "body": "\\\\pi"
-    "\\\\omega": 
+    "xo": 
         "prefix": "xo"
         "body": "\\\\omega"
-    "\\\\nu": 
+    "xn": 
         "prefix": "xn"
         "body": "\\\\nu"
-    "\\\\mu": 
+    "xm": 
         "prefix": "xm"
         "body": "\\\\mu"
-    "\\\\lambda": 
+    "xl": 
         "prefix": "xl"
         "body": "\\\\lambda"
-    "\\\\kappa": 
+    "xk": 
         "prefix": "xk"
         "body": "\\\\kappa"
-    "\\\\iota": 
+    "xi": 
         "prefix": "xi"
         "body": "\\\\iota"
-    "\\\\gamma": 
+    "xg": 
         "prefix": "xg"
         "body": "\\\\gamma"
-    "\\\\epsilon": 
+    "xe": 
         "prefix": "xe"
         "body": "\\\\epsilon"
-    "\\\\delta": 
+    "xd": 
         "prefix": "xd"
         "body": "\\\\delta"
-    "\\\\chi": 
+    "xc": 
         "prefix": "xc"
         "body": "\\\\chi"
-    "\\\\beta": 
+    "xb": 
         "prefix": "xb"
         "body": "\\\\beta"
-    "\\\\alpha": 
+    "xa": 
         "prefix": "xa"
         "body": "\\\\alpha"
-    "\\\\\"{u}": 
+    "uu": 
         "prefix": "uu"
         "body": "\\\\\"{u}"
-    "\\\\\"{o}": 
+    "uo": 
         "prefix": "uo"
         "body": "\\\\\"{o}"
-    "\\\\\"{a}": 
+    "ua": 
         "prefix": "ua"
         "body": "\\\\\"{a}"
-    "\\\\tan": 
+    "tn": 
         "prefix": "tn"
         "body": "\\\\tan"
-    "\\\\times": 
+    "ti": 
         "prefix": "ti"
         "body": "\\\\times"
-    "\\\\exists": 
+    "tg": 
+        "prefix": "tg"
+        "body": "\\\\tag{$1}"
+    "te": 
         "prefix": "te"
         "body": "\\\\exists"
-    "\\\\>": 
+    "tb": 
         "prefix": "tb"
         "body": "\\\\>"
-    "\\\\S": 
+    "ss": 
         "prefix": "ss"
         "body": "\\\\S"
-    "^2": 
-        "prefix": "h2"
+    "sq": 
+        "prefix": "sq"
         "body": "^2"
-    "\\\\section{}": 
+    "sn": 
         "prefix": "sn"
         "body": "\\\\section{$1}"
-    "\\\\sin": 
+    "si": 
         "prefix": "si"
         "body": "\\\\sin"
-    "\\\\heartsuit": 
+    "sh": 
         "prefix": "sh"
         "body": "\\\\heartsuit"
-    "d": 
+    "sd": 
         "prefix": "sd"
         "body": "d"
-    "\\\\rightarrow": 
+    "ra": 
         "prefix": "ra"
         "body": "\\\\rightarrow"
-    "%": 
+    "qd": 
+        "prefix": "qd"
+        "body": "\\\\quad"
+    "pt": 
         "prefix": "pt"
         "body": "%"
-    "\\\\P": 
+    "ps": 
         "prefix": "ps"
         "body": "\\\\P"
-    "+": 
+    "pl": 
         "prefix": "pl"
         "body": "+"
-    "\\\\partial": 
+    "pd": 
         "prefix": "pd"
         "body": "\\\\partial"
-    "(z)": 
+    "oz": 
         "prefix": "oz"
         "body": "(z)"
-    "(y)": 
+    "oy": 
         "prefix": "oy"
         "body": "(y)"
-    "(x)": 
+    "ox": 
         "prefix": "ox"
         "body": "(x)"
-    "(w)": 
+    "ow": 
         "prefix": "ow"
         "body": "(w)"
-    "(v)": 
+    "ov": 
         "prefix": "ov"
         "body": "(v)"
-    "(u)": 
+    "ou": 
         "prefix": "ou"
         "body": "(u)"
-    "(t)": 
+    "ot": 
         "prefix": "ot"
         "body": "(t)"
-    "(s)": 
+    "os": 
         "prefix": "os"
         "body": "(s)"
-    "(q)": 
+    "oq": 
         "prefix": "oq"
         "body": "(q)"
-    "(": 
+    "op": 
         "prefix": "op"
         "body": "("
-    "(o)": 
+    "oo": 
         "prefix": "oo"
         "body": "(o)"
-    "(m)": 
+    "om": 
         "prefix": "om"
         "body": "(m)"
-    "(l)": 
+    "ol": 
         "prefix": "ol"
         "body": "(l)"
-    "(k)": 
+    "ok": 
         "prefix": "ok"
         "body": "(k)"
-    "(j)": 
+    "oj": 
         "prefix": "oj"
         "body": "(j)"
-    "(i)": 
+    "oi": 
         "prefix": "oi"
         "body": "(i)"
-    "(h)": 
+    "oh": 
         "prefix": "oh"
         "body": "(h)"
-    "(g)": 
+    "og": 
         "prefix": "og"
         "body": "(g)"
-    "(e)": 
+    "oe": 
         "prefix": "oe"
         "body": "(e)"
-    "(d)": 
+    "od": 
         "prefix": "od"
         "body": "(d)"
-    "(c)": 
+    "oc": 
         "prefix": "oc"
         "body": "(c)"
-    "{": 
+    "ob": 
         "prefix": "ob"
         "body": "{"
-    "(a)": 
+    "oa": 
         "prefix": "oa"
         "body": "(a)"
-    "(9)": 
+    "o9": 
         "prefix": "o9"
         "body": "(9)"
-    "(8)": 
+    "o8": 
         "prefix": "o8"
         "body": "(8)"
-    "(7)": 
+    "o7": 
         "prefix": "o7"
         "body": "(7)"
-    "(6)": 
+    "o6": 
         "prefix": "o6"
         "body": "(6)"
-    "(5)": 
+    "o5": 
         "prefix": "o5"
         "body": "(5)"
-    "(4)": 
+    "o4": 
         "prefix": "o4"
         "body": "(4)"
-    "(3)": 
+    "o3": 
         "prefix": "o3"
         "body": "(3)"
-    "(2)": 
+    "o2": 
         "prefix": "o2"
         "body": "(2)"
-    "(1)": 
+    "o1": 
         "prefix": "o1"
         "body": "(1)"
-    "(0)": 
-        "prefix": "0p"
+    "o0": 
+        "prefix": "o0"
         "body": "(0)"
-    "\\\\newpage": 
+    "np": 
         "prefix": "np"
         "body": "\\\\newpage"
-    "\\\\\\\\": 
+    "nl": 
         "prefix": "nl"
         "body": "\\\\\\\\"
-    "\\\\neq": 
+    "ne": 
         "prefix": "ne"
         "body": "\\\\neq"
-    "\\\\nabla": 
+    "na": 
         "prefix": "na"
         "body": "\\\\nabla"
-    "\\\\max": 
+    "mx": 
         "prefix": "mx"
         "body": "\\\\max"
-    "-1": 
+    "mo": 
         "prefix": "mo"
         "body": "-1"
-    "\\\\min": 
+    "mn": 
         "prefix": "mn"
         "body": "\\\\min"
-    "-": 
+    "mi": 
         "prefix": "mi"
         "body": "-"
-    "_z": 
+    "lz": 
         "prefix": "lz"
         "body": "_z"
-    "_y": 
+    "ly": 
         "prefix": "ly"
         "body": "_y"
-    "_x": 
+    "lx": 
         "prefix": "lx"
         "body": "_x"
-    "_w": 
+    "lw": 
         "prefix": "lw"
         "body": "_w"
-    "_v": 
+    "lv": 
         "prefix": "lv"
         "body": "_v"
-    "_{": 
+    "lu": 
         "prefix": "lu"
         "body": "_{"
-    "_t": 
+    "lt": 
         "prefix": "lt"
         "body": "_t"
-    "_s": 
+    "ls": 
         "prefix": "ls"
         "body": "_s"
-    "_r": 
+    "lr": 
         "prefix": "lr"
         "body": "_r"
-    "_q": 
+    "lq": 
         "prefix": "lq"
         "body": "_q"
-    "_p": 
+    "lp": 
         "prefix": "lp"
         "body": "_p"
-    "_o": 
+    "lo": 
         "prefix": "lo"
         "body": "_o"
-    "_n": 
+    "ln": 
         "prefix": "ln"
         "body": "_n"
-    "_m": 
+    "lm": 
         "prefix": "lm"
         "body": "_m"
-    "_l": 
+    "ll": 
         "prefix": "ll"
         "body": "_l"
-    "_k": 
+    "lk": 
         "prefix": "lk"
         "body": "_k"
-    "_j": 
+    "lj": 
         "prefix": "lj"
         "body": "_j"
-    "_i": 
+    "li": 
         "prefix": "li"
         "body": "_i"
-    "_h": 
+    "lh": 
         "prefix": "lh"
         "body": "_h"
-    "_g": 
+    "lg": 
         "prefix": "lg"
         "body": "_g"
-    "_f": 
+    "lf": 
         "prefix": "lf"
         "body": "_f"
-    "_e": 
+    "le": 
         "prefix": "le"
         "body": "_e"
-    "_d": 
+    "ld": 
         "prefix": "ld"
         "body": "_d"
-    "_c": 
+    "lc": 
         "prefix": "lc"
         "body": "_c"
-    "_b": 
+    "lb": 
         "prefix": "lb"
         "body": "_b"
-    "_a": 
+    "la": 
         "prefix": "la"
         "body": "_a"
-    "_9": 
+    "l9": 
         "prefix": "l9"
         "body": "_9"
-    "_8": 
+    "l8": 
         "prefix": "l8"
         "body": "_8"
-    "_7": 
+    "l7": 
         "prefix": "l7"
         "body": "_7"
-    "_6": 
+    "l6": 
         "prefix": "l6"
         "body": "_6"
-    "_5": 
+    "l5": 
         "prefix": "l5"
         "body": "_5"
-    "_4": 
+    "l4": 
         "prefix": "l4"
         "body": "_4"
-    "_3": 
+    "l3": 
         "prefix": "l3"
         "body": "_3"
-    "_2": 
+    "l2": 
         "prefix": "l2"
         "body": "_2"
-    "_1": 
+    "l1": 
         "prefix": "l1"
         "body": "_1"
-    "_0": 
+    "l0": 
         "prefix": "l0"
         "body": "_0"
-    "\\\\ker": 
+    "kr": 
         "prefix": "kr"
         "body": "\\\\ker"
-    "^z": 
+    "hz": 
         "prefix": "hz"
         "body": "^z"
-    "^y": 
+    "hy": 
         "prefix": "hy"
         "body": "^y"
-    "^x": 
+    "hx": 
         "prefix": "hx"
         "body": "^x"
-    "^w": 
+    "hw": 
         "prefix": "hw"
         "body": "^w"
-    "^v": 
+    "hv": 
         "prefix": "hv"
         "body": "^v"
-    "^{": 
+    "hu": 
         "prefix": "hu"
         "body": "^{"
-    "^t": 
+    "ht": 
         "prefix": "ht"
         "body": "^t"
-    "^s": 
+    "hs": 
         "prefix": "hs"
         "body": "^s"
-    "^r": 
+    "hr": 
         "prefix": "hr"
         "body": "^r"
-    "^q": 
+    "hq": 
         "prefix": "hq"
         "body": "^q"
-    "^p": 
+    "hp": 
         "prefix": "hp"
         "body": "^p"
-    "^o": 
+    "ho": 
         "prefix": "ho"
         "body": "^o"
-    "^n": 
+    "hn": 
         "prefix": "hn"
         "body": "^n"
-    "^m": 
+    "hm": 
         "prefix": "hm"
         "body": "^m"
-    "^l": 
+    "hl": 
         "prefix": "hl"
         "body": "^l"
-    "^k": 
+    "hk": 
         "prefix": "hk"
         "body": "^k"
-    "^j": 
+    "hj": 
         "prefix": "hj"
         "body": "^j"
-    "^i": 
+    "hi": 
         "prefix": "hi"
         "body": "^i"
-    "^h": 
+    "hh": 
         "prefix": "hh"
         "body": "^h"
-    "^g": 
+    "hg": 
         "prefix": "hg"
         "body": "^g"
-    "^f": 
+    "hf": 
         "prefix": "hf"
         "body": "^f"
-    "^d": 
+    "hd": 
         "prefix": "hd"
         "body": "^d"
-    "^c": 
+    "hc": 
         "prefix": "hc"
         "body": "^c"
-    "^b": 
+    "hb": 
         "prefix": "hb"
         "body": "^b"
-    "^a": 
+    "ha": 
         "prefix": "ha"
         "body": "^a"
-    "^9": 
+    "h9": 
         "prefix": "h9"
         "body": "^9"
-    "^8": 
+    "h8": 
         "prefix": "h8"
         "body": "^8"
-    "^7": 
+    "h7": 
         "prefix": "h7"
         "body": "^7"
-    "^6": 
+    "h6": 
         "prefix": "h6"
         "body": "^6"
-    "^5": 
+    "h5": 
         "prefix": "h5"
         "body": "^5"
-    "^4": 
+    "h4": 
         "prefix": "h4"
         "body": "^4"
-    "^3": 
-        "prefix": "cu"
+    "h3": 
+        "prefix": "h3"
         "body": "^3"
-    "^1": 
+    "h2": 
+        "prefix": "h2"
+        "body": "^2"
+    "h1": 
         "prefix": "h1"
         "body": "^1"
-    "^0": 
+    "h0": 
         "prefix": "h0"
         "body": "^0"
-    "\\\\`{e}": 
+    "ge": 
         "prefix": "ge"
         "body": "\\\\`{e}"
-    "\\\\gcd": 
+    "gc": 
         "prefix": "gc"
         "body": "\\\\gcd"
-    "\\\\frac{": 
+    "fu": 
         "prefix": "fu"
         "body": "\\\\frac{"
-    "\\\\forall": 
+    "fa": 
         "prefix": "fa"
         "body": "\\\\forall"
-    "\\\\frac{1}{": 
+    "f1": 
         "prefix": "f1"
         "body": "\\\\frac{1}{"
-    "\\\\frac{}{2}": 
+    "f2": 
         "prefix": "f2"
         "body": "\\\\frac{$1}{2}"
-    "= 0": 
+    "ez": 
         "prefix": "ez"
         "body": "= 0"
-    "\\\\exp": 
+    "ex": 
         "prefix": "ex"
         "body": "\\\\exp"
-    "=": 
+    "eq": 
         "prefix": "eq"
         "body": "="
-    ")": 
+    "ep": 
         "prefix": "ep"
         "body": ")"
-    "\\\\in": 
+    "eo": 
         "prefix": "eo"
         "body": "\\\\in"
-    "}": 
+    "eb": 
         "prefix": "eb"
         "body": "}"
-    "$z$": 
+    "dz": 
         "prefix": "dz"
         "body": "\\\\$z\\\\$"
-    "$y$": 
+    "dy": 
         "prefix": "dy"
         "body": "\\\\$y\\\\$"
-    "$x$": 
+    "dx": 
         "prefix": "dx"
         "body": "\\\\$x\\\\$"
-    "$w$": 
+    "dw": 
         "prefix": "dw"
         "body": "\\\\$w\\\\$"
-    "$v$": 
+    "dv": 
         "prefix": "dv"
         "body": "\\\\$v\\\\$"
-    "$u$": 
+    "du": 
         "prefix": "du"
         "body": "\\\\$u\\\\$"
-    "$t$": 
+    "dt": 
         "prefix": "dt"
         "body": "\\\\$t\\\\$"
-    "$s$": 
+    "ds": 
         "prefix": "ds"
         "body": "\\\\$s\\\\$"
-    "$r$": 
+    "dr": 
         "prefix": "dr"
         "body": "\\\\$r\\\\$"
-    "$q$": 
+    "dq": 
         "prefix": "dq"
         "body": "\\\\$q\\\\$"
-    "$p$": 
+    "dp": 
         "prefix": "dp"
         "body": "\\\\$p\\\\$"
-    "$n$": 
+    "dn": 
         "prefix": "dn"
         "body": "\\\\$n\\\\$"
-    "$m$": 
+    "dm": 
         "prefix": "dm"
         "body": "\\\\$m\\\\$"
-    "$l$": 
+    "dl": 
         "prefix": "dl"
         "body": "\\\\$l\\\\$"
-    "$k$": 
+    "dk": 
         "prefix": "dk"
         "body": "\\\\$k\\\\$"
-    "$j$": 
+    "dj": 
         "prefix": "dj"
         "body": "\\\\$j\\\\$"
-    "$i$": 
+    "di": 
         "prefix": "di"
         "body": "\\\\$i\\\\$"
-    "$h$": 
+    "dh": 
         "prefix": "dh"
         "body": "\\\\$h\\\\$"
-    "$g$": 
+    "dg": 
         "prefix": "dg"
         "body": "\\\\$g\\\\$"
-    "$f$": 
+    "df": 
         "prefix": "df"
         "body": "\\\\$f\\\\$"
-    "$e$": 
+    "de": 
         "prefix": "de"
         "body": "\\\\$e\\\\$"
-    "$d$": 
+    "dd": 
         "prefix": "dd"
         "body": "\\\\$d\\\\$"
-    "$c$": 
+    "dc": 
         "prefix": "dc"
         "body": "\\\\$c\\\\$"
-    "$b$": 
+    "db": 
         "prefix": "db"
         "body": "\\\\$b\\\\$"
-    "$a$": 
+    "da": 
         "prefix": "da"
         "body": "\\\\$a\\\\$"
-    "$9$": 
+    "d9": 
         "prefix": "d9"
         "body": "\\\\$9\\\\$"
-    "$8$": 
+    "d8": 
         "prefix": "d8"
         "body": "\\\\$8\\\\$"
-    "$7$": 
+    "d7": 
         "prefix": "d7"
         "body": "\\\\$7\\\\$"
-    "$6$": 
+    "d6": 
         "prefix": "d6"
         "body": "\\\\$6\\\\$"
-    "$5$": 
+    "d5": 
         "prefix": "d5"
         "body": "\\\\$5\\\\$"
-    "$4$": 
+    "d4": 
         "prefix": "d4"
         "body": "\\\\$4\\\\$"
-    "$3$": 
+    "d3": 
         "prefix": "d3"
         "body": "\\\\$3\\\\$"
-    "$2$": 
+    "d2": 
         "prefix": "d2"
         "body": "\\\\$2\\\\$"
-    "$1$": 
+    "d1": 
         "prefix": "d1"
         "body": "\\\\$1\\\\$"
-    "$0$": 
+    "d0": 
         "prefix": "d0"
         "body": "\\\\$0\\\\$"
-    "\\\\cos": 
+    "cu": 
+        "prefix": "cu"
+        "body": "^3"
+    "co": 
         "prefix": "co"
         "body": "\\\\cos"
-    "D": 
+    "cl": 
+        "prefix": "cl"
+        "body": "\\\\centerline{$1}"
+    "cd": 
         "prefix": "cd"
         "body": "D"
-    "\\\\mathbf{z}": 
+    "bz": 
         "prefix": "bz"
         "body": "\\\\mathbf{z}"
-    "\\\\mathbf{x}": 
+    "bx": 
         "prefix": "bx"
         "body": "\\\\mathbf{x}"
-    "\\\\mathbf{w}": 
+    "bw": 
         "prefix": "bw"
         "body": "\\\\mathbf{w}"
-    "\\\\mathbf{v}": 
+    "bv": 
         "prefix": "bv"
         "body": "\\\\mathbf{v}"
-    "\\\\mathbf{u}": 
+    "bu": 
         "prefix": "bu"
         "body": "\\\\mathbf{u}"
-    "\\\\mathbf{t}": 
+    "bt": 
         "prefix": "bt"
         "body": "\\\\mathbf{t}"
-    "\\\\mathbf{s}": 
+    "bs": 
         "prefix": "bs"
         "body": "\\\\mathbf{s}"
-    "\\\\mathbf{r}": 
+    "br": 
         "prefix": "br"
         "body": "\\\\mathbf{r}"
-    "\\\\mathbf{q}": 
+    "bq": 
         "prefix": "bq"
         "body": "\\\\mathbf{q}"
-    "\\\\mathbf{p}": 
+    "bp": 
         "prefix": "bp"
         "body": "\\\\mathbf{p}"
-    "\\\\mathbf{o}": 
+    "bo": 
         "prefix": "bo"
         "body": "\\\\mathbf{o}"
-    "\\\\mathbf{n}": 
+    "bn": 
         "prefix": "bn"
         "body": "\\\\mathbf{n}"
-    "\\\\mathbf{m}": 
+    "bm": 
         "prefix": "bm"
         "body": "\\\\mathbf{m}"
-    "\\\\mathbf{l}": 
+    "bl": 
         "prefix": "bl"
         "body": "\\\\mathbf{l}"
-    "\\\\mathbf{k}": 
+    "bk": 
         "prefix": "bk"
         "body": "\\\\mathbf{k}"
-    "\\\\mathbf{j}": 
+    "bj": 
         "prefix": "bj"
         "body": "\\\\mathbf{j}"
-    "\\\\mathbf{i}": 
+    "bi": 
         "prefix": "bi"
         "body": "\\\\mathbf{i}"
-    "\\\\mathbf{h}": 
+    "bh": 
         "prefix": "bh"
         "body": "\\\\mathbf{h}"
-    "\\\\mathbf{g}": 
+    "bg": 
         "prefix": "bg"
         "body": "\\\\mathbf{g}"
-    "\\\\mathbf{d}": 
+    "bd": 
         "prefix": "bd"
         "body": "\\\\mathbf{d}"
-    "\\\\mathbf{c}": 
+    "bc": 
         "prefix": "bc"
         "body": "\\\\mathbf{c}"
-    "\\\\mathbf{b}": 
+    "bb": 
         "prefix": "bb"
         "body": "\\\\mathbf{b}"
-    "\\\\mathbf{a}": 
+    "ba": 
         "prefix": "ba"
         "body": "\\\\mathbf{a}"
-    "\\\\mathbf{9}": 
+    "b9": 
         "prefix": "b9"
         "body": "\\\\mathbf{9}"
-    "\\\\mathbf{8}": 
+    "b8": 
         "prefix": "b8"
         "body": "\\\\mathbf{8}"
-    "\\\\mathbf{7}": 
+    "b7": 
         "prefix": "b7"
         "body": "\\\\mathbf{7}"
-    "\\\\mathbf{6}": 
+    "b6": 
         "prefix": "b6"
         "body": "\\\\mathbf{6}"
-    "\\\\mathbf{5}": 
+    "b5": 
         "prefix": "b5"
         "body": "\\\\mathbf{5}"
-    "\\\\mathbf{4}": 
+    "b4": 
         "prefix": "b4"
         "body": "\\\\mathbf{4}"
-    "\\\\mathbf{3}": 
+    "b3": 
         "prefix": "b3"
         "body": "\\\\mathbf{3}"
-    "\\\\mathbf{2}": 
+    "b2": 
         "prefix": "b2"
         "body": "\\\\mathbf{2}"
-    "\\\\mathbf{1}": 
+    "b1": 
         "prefix": "b1"
         "body": "\\\\mathbf{1}"
-    "\\\\mathbf{0}": 
+    "b0": 
         "prefix": "b0"
         "body": "\\\\mathbf{0}"
-    "\\\\arg": 
+    "ag": 
         "prefix": "ag"
         "body": "\\\\arg"
-    "\\\\'{e}": 
+    "ae": 
         "prefix": "ae"
         "body": "\\\\'{e}"
-    "&": 
+    "ad": 
         "prefix": "ad"
         "body": "&"
-    "$": 
+    "0p": 
+        "prefix": "0p"
+        "body": "(0)"
+    "d": 
         "prefix": "d"
         "body": "\\\\$"

@@ -1,8 +1,8 @@
 # FasTeX_Snippets
-Snippet version of FasTeX shortcuts for LaTeX, for VS Code and Atom.
+Snippet version of FasTeX shortcuts for LaTeX, for VSCode and Atom.
 
 This is a port of the FasTeX system of shortcuts to editors that use snippets, 
-currently targeting VS Code and Atom.
+currently targeting VSCode and Atom.
 It is based on the WinEdt version by Bernhard Enders.
 
 - [FasTeX project](http://www.cds.caltech.edu/~fastex/fastex.html)
@@ -32,7 +32,7 @@ I have also mostly stopped using Atom, so those snippets are likely to be very b
 Please raise an issue if you find an error.
 
 They usually need a prefix or suffix to prevent them triggering accidentally.
-The regular VS Code snippets use `;` as a prefix (creating a word boundary is also necessary) and need `tab` or `enter` to complete.
+The regular VSCode snippets use `;` as a prefix (creating a word boundary is also necessary) and need `tab` or `enter` to complete.
 The Live Snippets do not need a prefix, use `⊔⊔` (double space) as a suffix, and they can complete automatically, if you've set up LaTeX-Utilities that way.
 I could not find a way to get prefixes and suffixes to work with Atom, so you need to start a new word to start and hit `tab`/`enter` to complete.
 These choices can be customised with the python code in this repo.
@@ -40,7 +40,7 @@ These choices can be customised with the python code in this repo.
 ## Requirements
 
 - Python ≥ 3.5 (for customising)
-- VS Code:
+- VSCode:
   - [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
   - [LaTeX Utilities](https://marketplace.visualstudio.com/items?itemName=tecosaur.latex-utilities) (for live snippets)
 - Atom:
@@ -51,16 +51,16 @@ These choices can be customised with the python code in this repo.
 You need to copy the snippet JSON/CSON files to your user folder.
 You probably want to append them to your existing snippets, rather than overwrite them.
 
-- VS Code, normal snippets  
-Copy `latex.cson` to your `<user folder>/snippets`.
-On Windows `<user folder>` is `%appdata%/Code/User`, not `%userprofile%/.vscode`.
-On Mac it is `$HOME/Library/Application Support/Code/User/settings.json`.
-On Linux it is `$HOME/.config/Code/User/settings.json`
+- VSCode, normal snippets  
+Copy `latex.json` to your `<user folder>/snippets`.
+On Windows `<user folder>` is `%APPDATA%/Code/User` (not `%USERPROFILE%/.vscode`),
+on Mac it is `$HOME/Library/Application Support/Code/User`,
+on Linux it is `$HOME/.config/Code/User`
 
-- VS Code, Live Snippets  
-Copy `latexUtilsLiveSnippets.json` to your `<user folder>` (see VS Code instructions).
+- VSCode, Live Snippets  
+Copy `latexUtilsLiveSnippets.json` to your `<user folder>` (see VSCode instructions).
 If you do not find a file with the same name already there, copying the file will erase all of the default live snippets.
-If you want to append instead, you can create a file: in VS Code press `Ctrl+Shift+P` (`Cmd+Shift+P` on Mac) then start typing `Edit Live Snippets File` and click on the entry when it appears.  
+If you want to append instead, you can create a file: in VSCode press `Ctrl+Shift+P` (`Cmd+Shift+P` on Mac) then start typing `Edit Live Snippets File` and click on the entry when it appears.  
 To enable automatic completion, you need `"latex-utilities.liveReformat.enabled": true` in your settings.
 
 - Atom  
@@ -72,3 +72,9 @@ If you already have some LaTeX snippets, make sure you combine the old and the n
 [Otherwise](https://flight-manual.atom.io/using-atom/sections/basic-customization/) you will disable the old snippets.
 
 My preference is to use the Live Snippets, overwriting the defaults, and enabling live reformat.
+
+## Customisation
+
+If you open the jupyter notebook `custom.ipynb`, you will see the options listed.
+You can make any changes you want and then run the appropriate cells to generate your file.
+You might also want to do a bit of editing of `data/data.json` by hand, removing some entries.
