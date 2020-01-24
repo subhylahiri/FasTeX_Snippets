@@ -5813,7 +5813,7 @@
     },
     {
         "prefix": "slu",
-        "body": "{\\sl",
+        "body": "{\\sl ",
         "mode": "any",
         "description": "{\\sl"
     },
@@ -5851,7 +5851,7 @@
         "prefix": "sfu",
         "body": "{\\sf ",
         "mode": "any",
-        "description": "{\\sf "
+        "description": "{\\sf"
     },
     {
         "prefix": "sdz",
@@ -5917,7 +5917,7 @@
         "prefix": "scu",
         "body": "{\\sc ",
         "mode": "any",
-        "description": "{\\sc "
+        "description": "{\\sc"
     },
     {
         "prefix": "scl",
@@ -6658,7 +6658,7 @@
     },
     {
         "prefix": "mvb",
-        "body": "{\\mathversion{bold} \\$ \\$1$}",
+        "body": "{\\mathversion{bold} \\$ $1\\$}",
         "mode": "text",
         "description": "{\\mathversion{bold} $ $1$}"
     },
@@ -7122,7 +7122,7 @@
         "prefix": "itu",
         "body": "{\\it ",
         "mode": "any",
-        "description": "{\\it "
+        "description": "{\\it"
     },
     {
         "prefix": "itm",
@@ -8651,9 +8651,9 @@
     },
     {
         "prefix": "bfu",
-        "body": "\\textbf{$1}",
-        "mode": "text",
-        "description": "\\textbf{}"
+        "body": "{\\bf ",
+        "mode": "any",
+        "description": "{\\bf"
     },
     {
         "prefix": "bff",

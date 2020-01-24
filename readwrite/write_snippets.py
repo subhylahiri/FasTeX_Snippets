@@ -18,7 +18,7 @@ make_snippet_json
 """
 import re
 import json
-from typing import Union, List, Dict, Optional
+from typing import Union, List, Dict, Optional, Sequence
 if __name__ == "__main__":
     import cson
 else:
@@ -30,6 +30,55 @@ SnippetDict = Dict[str, Snippet]
 AtomSnippetDict = Dict[str, SnippetDict]
 
 TAB_STOP = re.compile(r'(?<!\\)\$(\d)')
+TEX_OLD = re.compile(r'^\{\\([a-z][a-z]) $')
+DOUBLE_DOLLAR = re.compile(r'\\\$(.*)\\\$')
+
+
+def modern_live(snippet: Snippet) -> (Snippet, Snippet):
+    """Replace old style TeX with modern LaTeX
+    """
+    if not (isinstance(snippet['body'], str) or snippet['mode'] == "any"):
+        return snippet
+    match = TEX_OLD.match(snippet['body'])
+    if match is None:
+        return snippet
+    command = match.group(1)
+    txt_snip = snippet.copy()
+    txt_snip['mode'] = 'text'
+    txt_snip['body'] = '\\\\text' + command + '{$1}'
+    mth_snip = snippet.copy()
+    mth_snip['mode'] = 'maths'
+    mth_snip['body'] = '\\\\math' + command + '{$1}'
+    return txt_snip, mth_snip
+
+
+def un_dollar(snippet: Snippet):
+    """Replace $...$ with \\(...\\)
+    """
+    body = snippet['body']
+    if isinstance(body, list) or DOUBLE_DOLLAR.search(body) is None:
+        return
+    snippet['body'] = DOUBLE_DOLLAR.sub(r'\(\1\)', body)
+
+
+def choose(snippet: Snippet,
+           prefix: Sequence[re.Pattern] = (),
+           body: Sequence[re.Pattern] = (),
+           multiline: bool = True,
+           singleline: bool = True) -> bool:
+    """Filter the list of snippets
+    """
+    the_body = snippet['body']
+    multi = isinstance(the_body, list)
+    if (not multiline) and multi:
+        return False
+    if (not singleline) and (not multi):
+        return False
+    if any(rule.match(snippet['prefix']) for rule in prefix):
+        return False
+    if (not multi) and any(rule.search(the_body) for rule in body):
+        return False
+    return any(rule.search(line) for rule in body for line in the_body)
 
 
 def count_tabs(body: Body) -> int:
@@ -438,6 +487,29 @@ def read_data_json(file_name: str):
     with open(file_name, 'r') as file:
         snippets = json.load(file)
     return snippets
+
+
+def apply_options(snippets: List[Snippet],
+                  prefix: Sequence[re.Pattern] = (),
+                  body: Sequence[re.Pattern] = (),
+                  **kwds) -> List[Snippet]:
+    """Perform cull and modify snippets"""
+    multiline: bool = kwds.pop('multiline', True)
+    singleline: bool = kwds.pop('singleline', True)
+    dollar: bool = kwds.pop('dollar', True)
+    modern: bool = kwds.pop('modern', False)
+    new_snippets = []
+    for snip in snippets:
+        if not dollar:
+            un_dollar(snip)
+        if choose(snip, prefix, body, multiline, singleline):
+            if not modern:
+                snip = modern_live(snip)
+                if isinstance(snip, tuple):
+                    new_snippets.extend(snip)
+                    continue
+            new_snippets.append(snip)
+    return new_snippets
 
 
 def make_snippet_json(snippets: Union[Snippet, SnippetDict, None] = None,

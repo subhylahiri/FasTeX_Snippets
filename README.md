@@ -9,22 +9,32 @@ It is based on the WinEdt version by Bernhard Enders.
 - [Original documentation](http://www.cds.caltech.edu/~fastex/fastex_docs.html)
 - [WinEdt version](http://www.winedt.org/macros/latex/FasTeX.html)
 
-The basic idea is that the shortcuts are made up of lower-case letter and (occasionally) numbers.
+The basic idea is that you type shortcut codes that are replaced with LaTeX.
+The shortcuts are made up of lower-case letter and (occasionally) numbers.
 This means you can type them without reaching for modifier keys and symbols, 
-e.g. `bksl` maps too `\`, `ob` to `{` (open braces) and `eb` to `}` (end braces).
-The shortcuts are fairly systematic: prefix `x` for greek, `c` for upper-case, `d` for in dollars,
-`h` for superscript, `l` for subscript (high & low), `o` for in parentheses,...
-so `dxcd` gives you `$\Delta$`, `hct` gives `^T`, `lij` gives `_{ij}`, `ox` gives `(x)`,....
-Have a look at the documentation linked to above for more information.
+e.g. the shortcut `bksl` maps to `\`, shortcut `ob` to `{` (open braces) and shortcut `eb` to `}` (end braces).
+The shortcuts are fairly systematic: prefix `x` for greek, 
+`c` for upper-case, `d` for in dollars,
+`h` for superscript, `l` for subscript (high & low), 
+`o` for in parentheses, `f` for fraction,...
+suffix `a` for `a`/`alpha`,..., `u` for unfinished/universal, `mo` for `-1`,...  
+so `dxcd` → `$\Delta$` | 
+`hct` → `^T` |
+`hmo` → `^{-1}` |
+`lij` → `_{ij}` |
+`ox` → `(x)`,...  
+The prefixes can only appear in one order.  
+Have a look at the documentation linked to above for more information 
+although they have been modernised since.
 
 There are nearly 1600 shortcuts, so I haven't tested them all in this implementation.
-Please raise an issue if you find an error.
 I have also mostly stopped using Atom, so those snippets are likely to be very buggy.
+Please raise an issue if you find an error.
 
 They usually need a prefix or suffix to prevent them triggering accidentally.
 The regular VS Code snippets use `;` as a prefix (creating a word boundary is also necessary) and need `tab` or `enter` to complete.
-The Live Snippets use `  ` (double space) as a suffix and they can complete automatically, if you've set up LaTeX-Utilities that way.
-I could not find a way to get prefixes and suffixes to work with Atom.
+The Live Snippets do not need a prefix, use `⊔⊔` (double space) as a suffix, and they can complete automatically, if you've set up LaTeX-Utilities that way.
+I could not find a way to get prefixes and suffixes to work with Atom, so you need to start a new word to start and hit `tab`/`enter` to complete.
 These choices can be customised with the python code in this repo.
 
 ## Requirements
