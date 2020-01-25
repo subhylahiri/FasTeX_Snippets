@@ -1415,15 +1415,6 @@
         "description": "\\left\\{ \\left.  \\!\\right|\\right\\}"
     },
     {
-        "prefix": "setlu",
-        "body": [
-            "\\left\\{ \\left.  \\!\\right|",
-            "     \\right\\}"
-        ],
-        "mode": "text",
-        "description": "\\left\\{ \\left.  \\!\\right|"
-    },
-    {
         "prefix": "setcu",
         "body": "\\setcounter{",
         "mode": "any",
@@ -1859,7 +1850,7 @@
             "\\]"
         ],
         "mode": "text",
-        "description": "\\["
+        "description": "\\[ \\text{}"
     },
     {
         "prefix": "eqlbr",
@@ -4028,7 +4019,7 @@
             "\\]"
         ],
         "mode": "text",
-        "description": "\\["
+        "description": "\\[ \\left. f (t)\\right|_{t=0}"
     },
     {
         "prefix": "ethm",
