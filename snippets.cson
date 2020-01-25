@@ -1,314 +1,4 @@
 ".text.tex.latex": 
-    "tepaper.simplest": 
-        "prefix": "tepaper.simplest"
-        "body": """
-        %&latex2e--tepaper simplest
-        \\\\documentclass{article}
-        \\\\begin{document}
-        \\\\title{Title of paper}
-        \\\\author{Author1
-           \\\\thanks{Research partially supported by ...}
-           \\\\\\\\Department of Mathematics
-           \\\\\\\\University of Nebraska \\\\\\\\
-        \\\\and
-        Author2
-           \\\\thanks{Research partially supported by ...}
-           \\\\\\\\Department of Physics
-           \\\\\\\\San Jose State University }
-        \\\\date{put in custom date; delete this line for today's date}
-        \\\\maketitle
-        \\\\begin{abstract}
-        This brick is called {\\\\it paper/simplest/template.tex}. It uses the
-        default \\\\LaTeX\\\\ numbering, with theorems etc. and equations numbered
-        consecutively throughout the paper.
-        \\\\end{abstract}
-        \\\\section*{Introduction}
-        Text goes here
-        \\\\section{First Section Title}
-        Text goes here
-        \\\\section{Second Section Title}
-        Text goes here
-        \\\\bigskip
-            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-            %  REFERENCES
-            %  use ``biba or bibb'' to fill in reference items
-            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \\\\section*{References}
-        \\\\begin{description}
-        \\\\item Author, U. N., ...
-        \\\\end{description}
-        \\\\end{document}
-        """
-    "tepaper.eqnwith": 
-        "prefix": "tepaper.eqnwith"
-        "body": """
-        %&latex2e--tepaper eqnwith
-        \\\\documentclass{article}
-        \\\\usepackage{latexsym,amssymb}             % special symbols
-        \\\\usepackage{amsmath}                      % amsmath environments
-        \\\\usepackage{amsthm}                       % ams theorem/proof environments
-        % \\\\usepackage{amscd}                      % ams commutative diagrams
-        % \\\\usepackage{graphicx}                   % graphics commands
-        % \\\\usepackage{color}                      % color commands
-        % \\\\usepackage{verbatim}                   % comment/verbatim environments
-        \\\\newcommand{\\\\bfi}{\\\\bfseries\\\\itshape}
-        \\\\theoremstyle{plain} %--default
-        \\\\newtheorem{theorem}             {Theorem}  [section]
-        \\\\newtheorem{lemma}      [theorem]{Lemma}
-        \\\\newtheorem{corollary}  [theorem]{Corollary}
-        \\\\newtheorem{proposition}[theorem]{Proposition}
-        \\\\newtheorem{algorithm}  [theorem]{Algorithm}
-        \\\\newtheorem{criterion}  [theorem]{Criterion}
-        \\\\newtheorem{conjecture} [theorem]{Conjecture}
-        \\\\newtheorem{question}   [theorem]{Question}
-        \\\\theoremstyle{definition}
-        \\\\newtheorem{definition} [theorem]{Definition}
-        \\\\newtheorem{condition}  [theorem]{Condition}
-        \\\\newtheorem{example}    [theorem]{Example}
-        \\\\newtheorem{problem}    [theorem]{Problem}
-        \\\\newtheorem{solution}   [theorem]{Solution}
-        \\\\theoremstyle{remark}
-        \\\\newtheorem{remark}              {Remark}
-        \\\\newtheorem{note}                {Note}
-        \\\\newtheorem{claim}               {Claim}
-        \\\\newtheorem{summary}             {Summary}
-        \\\\newtheorem{case}                {Case}
-        \\\\newtheorem{acknowledgment}      {Acknowledgments}
-        \\\\newtheorem{conclusion}          {Conclusion}
-        \\\\newtheorem{notation}            {Notation}
-        {\\\\renewcommand{\\\\theequation}{\\\\thesection.\\\\arabic{equation}}
-        %--------------------------------
-        \\\\makeatletter
-        \\\\def\\\\equationwith#1{%
-          \\\\expandafter\\\\edef\\\\expandafter\\\\c@equation%
-          \\\\expandafter{\\\\csname c@#1\\\\endcsname}%
-          \\\\expandafter\\\\let\\\\expandafter\\\\theequation\\\\csname the#1\\\\endcsname
-        }
-        \\\\makeatother
-        \\\\equationwith{theorem}
-        %--------------------------------
-        \\\\begin{document}
-        \\\\title{Title of paper}
-        \\\\author{ Author1
-           \\\\thanks{Research partially supported by ...}
-           \\\\\\\\Department of Mathematics
-           \\\\\\\\University of ... \\\\\\\\
-        \\\\and  Author2
-           \\\\thanks{Research partially supported by ...}
-           \\\\\\\\Department of Physics
-           \\\\\\\\State University of ... }
-        \\\\date{put in custom date; delete this line for today's date}
-        \\\\maketitle
-        \\\\begin{abstract}
-        This brick is called {\\\\it paper/eqnwith/template.tex}.
-        It numbers equations and
-        theorems within each section, but you are required to insert counters;
-        it does not require any special style files.
-        \\\\end{abstract}
-        %The counters below will renumber equations in each section.
-        \\\\section*{Introduction}
-                        Text goes here
-        \\\\section{First Section Title}
-                        Text goes here
-        \\\\begin{acknowledgment}
-        We thank ...
-        \\\\end{acknowledgment}
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        %  BIBLIOGRAPHY
-        %  %use ``bibia'' or ``bibib'' to fill in  bibitems
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \\\\begin{thebibliography}{}
-        \\\\bibitem[]{}
-        \\\\end{thebibliography}
-        \\\\end{document}
-        """
-    "tepaper.simple": 
-        "prefix": "tepaper.simple"
-        "body": """
-        %&latex2e--tepaper.simple
-        \\\\documentclass{article}
-        \\\\usepackage{latexsym,amssymb}             % special symbols
-        \\\\usepackage{amsmath}                      % amsmath environments
-        \\\\usepackage{amsthm}                       % ams theorem/proof environments
-        % \\\\usepackage{amscd}                      % ams commutative diagrams
-        % \\\\usepackage{graphicx}                   % graphics commands
-        % \\\\usepackage{color}                      % color commands
-        % \\\\usepackage{verbatim}                   % comment/verbatim environments
-        \\\\newcommand{\\\\bfi}{\\\\bfseries\\\\itshape}
-        \\\\newtheorem{theorem}{Theorem}[section]
-        \\\\newtheorem{proposition}[theorem]{Proposition}
-        \\\\newtheorem{lemma}[theorem]{Lemma}
-        \\\\newtheorem{corollary}[theorem]{Corollary}
-        \\\\newtheorem{definition}[theorem]{Definition}
-        {\\\\renewcommand{\\\\theequation}{\\\\thesection.\\\\arabic{equation}}
-        \\\\begin{document}
-        \\\\title{Title of paper}
-        \\\\author{ Author1
-           \\\\thanks{Research partially supported by ...}
-           \\\\\\\\Department of Mathematics
-           \\\\\\\\University of ... \\\\\\\\
-        \\\\and  Author2
-           \\\\thanks{Research partially supported by ...}
-           \\\\\\\\Department of Physics
-           \\\\\\\\State University of ... }
-        \\\\date{put in custom date; delete this line for today's date}
-        \\\\maketitle
-        \\\\begin{abstract}
-        This brick is called {\\\\it paper/simple/template.tex}.
-        It numbers equations and
-        theorems within each section, but you are required to insert counters;
-        it does not require any special style files.
-        \\\\end{abstract}
-        %The counters below will renumber equations in each section.
-        \\\\section*{Introduction}
-        \\\\setcounter{equation}{0}
-                        Text goes here
-        \\\\section{First Section Title}
-        \\\\setcounter{equation}{0}
-                        Text goes here
-        \\\\begin{acknowledgment}
-        We thank ...
-        \\\\end{acknowledgment}
-            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-            %  REFERENCES
-            %  use ``biba or bibb'' to fill in reference items
-            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \\\\section*{References}
-        \\\\begin{description}
-        \\\\item Author, U. N., ...
-        \\\\end{description}
-        \\\\end{document}
-        """
-    "tepaper.amsart": 
-        "prefix": "tepaper.amsart"
-        "body": """
-        %&AMS article
-        \\\\documentclass{amsart}
-        \\\\usepackage{graphicx}
-        \\\\newcommand{\\\\bfi}{\\\\bfseries\\\\itshape}
-        \\\\theoremstyle{plain} %--default
-        \\\\newtheorem{theorem}             {Theorem}  [section]
-        \\\\newtheorem{lemma}      [theorem]{Lemma}
-        \\\\newtheorem{corollary}  [theorem]{Corollary}
-        \\\\newtheorem{proposition}[theorem]{Proposition}
-        \\\\newtheorem{algorithm}  [theorem]{Algorithm}
-        \\\\newtheorem{criterion}  [theorem]{Criterion}
-        \\\\newtheorem{conjecture} [theorem]{Conjecture}
-        \\\\newtheorem{question}   [theorem]{Question}
-        \\\\theoremstyle{definition}
-        \\\\newtheorem{definition} [theorem]{Definition}
-        \\\\newtheorem{condition}  [theorem]{Condition}
-        \\\\newtheorem{example}    [theorem]{Example}
-        \\\\newtheorem{problem}    [theorem]{Problem}
-        \\\\newtheorem{solution}   [theorem]{Solution}
-        \\\\theoremstyle{remark}
-        \\\\newtheorem{remark}              {Remark}
-        \\\\newtheorem{note}                {Note}
-        \\\\newtheorem{claim}               {Claim}
-        \\\\newtheorem{summary}             {Summary}
-        \\\\newtheorem{case}                {Case}
-        \\\\newtheorem{acknowledgment}      {Acknowledgments}
-        \\\\newtheorem{conclusion}          {Conclusion}
-        \\\\newtheorem{notation}            {Notation}
-        		\\\\numberwithin{equation}{section}
-        %----------------------------------------------------
-        \\\\begin{document}
-        \\\\title[put short title here]%
-        	  {Put the real title here\\\\\\\\
-        		and rest of title here}
-        \\\\author[Author One and Author Two]{%
-        		Author One\\\\\\\\
-        		Author Two\\\\\\\\
-        }
-        		\\\\address{Department of Mathematics\\\\\\\\
-        				 Northeastern University\\\\\\\\
-        				 Boston, Massachusetts 02115}%
-        		\\\\address{Mathematical Research Section\\\\\\\\
-        				 School of Mathematical Sciences\\\\\\\\
-        				 Australian National University\\\\\\\\
-        				 Canberra ACT 2601, Australia}
-        \\\\subjclass{Primary 54C40, 14E20; Secondary 46E25, 20C20}
-        \\\\date     {July 2, 1991}
-        %         \\\\thanks will become a 1st page footnote.
-        \\\\thanks{The first author was supported in part by NSF
-        		Grant \\\\#000000.}
-        %\\\\dedicatory{}
-        \\\\maketitle
-        \\\\begin{abstract}
-        		This is the abstract.
-        \\\\end{abstract}
-        \\\\tableofcontents
-        \\\\section{Other headings}
-        \\\\section*{This is an unnumbered first-level section head}
-        \\\\subsection{This is a numbered second-level section head}
-        \\\\subsection*{This is an unnumbered second-level section head}
-        \\\\subsubsection{This is a numbered third-level section head}
-        \\\\subsubsection*{This is an unnumbered third-level section head}
-        \\\\begin{theorem}
-        		Definition environemnt
-        \\\\end{theorem}
-        \\\\begin{definition}
-        		Definition environemnt
-        \\\\end{definition}
-        \\\\begin{remark}
-        		Remark environemnt
-        \\\\end{remark}
-        %-----------------
-        \\\\bibliographystyle{}
-        \\\\begin{thebibliography}{}
-        \\\\bibitem[{Arnol\\\\$'\\\\$d et al. [1982]}] {arnold:sing}
-        		 Arnol\\\\$'\\\\$d, V. L., Varchenko, A. N.,
-        		  and Gusein-Zade, S. M. [1982]
-        		 \\\\emph{Singularities of differentiable maps.} I,
-        		  ``Nauka'', Moscow (Russian);
-        		 English transl. Birkh\\\\\"auser, 1985.
-        \\\\bibitem[{Arnol\\\\$'\\\\$d et al. [1984]}] {arnold:sing2}
-        \\\\bysame [1984]
-        		\\\\emph{Singularities of differentiable maps.}~II,
-        		  ``Nauka'', Moscow;
-        		 English transl., Birkh\\\\\"auser, 1988.
-        \\\\end{thebibliography}
-        %-----------------
-        \\\\end{document}
-        """
-    "tepaper.html": 
-        "prefix": "tepaper.html"
-        "body": """
-        %article html
-        
-        %% Source: Ross Moore, Macquarie University, Sydney Australia
-        %% Manual: http://www-dsed.llnl.gov/files/programs/unix/latex2html/manual/
-        \\\\documentclass{article}
-        %% load extra AMS math symbols
-        \\\\usepackage[psamsfonts]{amsfonts}
-        %% and the extended enumerate environments
-        \\\\usepackage{enumerate}	
-        %% These are for making Web pages, using LaTeX2HTML
-        \\\\usepackage{html}
-        \\\\begin{htmlonly}
-        \\\\bodytext{BGCOLOR=#FFFFFF LINK=#9600a8 VLINK=#ff3b21 ALINK=#26ffab}
-        \\\\end{htmlonly}
-        \\\\usepackage[dvips]{color}
-        \\\\begin{htmlonly}
-        \\\\pagecolor{white}
-        \\\\end{htmlonly}	
-        %% adjust the size and positioning
-        %% of the text-area on the paper
-        %begin{latexonly}
-        \\\\addtolength{\\\\voffset}{-2cm}
-        \\\\addtolength{\\\\textheight}{4cm}
-        \\\\addtolength{\\\\hoffset}{-2cm}
-        \\\\addtolength{\\\\textwidth}{4cm}
-        %end{latexonly}	
-        \\\\title{}
-        \\\\author{}
-        \\\\date{}
-        \\\\begin{document}
-        \\\\maketitle
-        \\\\thispagestyle{empty}
-        %... put text here
-        \\\\end{document}
-        """
     "teletter": 
         "prefix": "teletter"
         "body": """
@@ -342,10 +32,10 @@
         """
     "dovstcpq": 
         "prefix": "dovstcpq"
-        "body": "\\\\$\\\\overset{\\\\longrightarrow}{\\\\text{PQ}}\\\\$"
+        "body": "\\\\(\\\\overset{\\\\longrightarrow}{\\\\text{PQ}}\\\\)"
     "dovstcpp": 
         "prefix": "dovstcpp"
-        "body": "\\\\$\\\\overset{\\\\longrightarrow}{\\\\text{PP}}\\\\$"
+        "body": "\\\\(\\\\overset{\\\\longrightarrow}{\\\\text{PP}}\\\\)"
     "upkgvrb": 
         "prefix": "upkgvrb"
         "body": "\\\\usepackage{verbatim}"
@@ -364,85 +54,6 @@
     "txtstyu": 
         "prefix": "txtstyu"
         "body": "\\\\textstyle{$1}"
-    "tepaper": 
-        "prefix": "tepaper"
-        "body": """
-        %&latex2e--tepaper
-        \\\\documentclass{article}
-        \\\\usepackage{latexsym,amssymb}             % special symbols
-        \\\\usepackage{amsmath}                      % amsmath environments
-        \\\\usepackage{amsthm}                       % ams theorem/proof environments
-        % \\\\usepackage{amscd}                      % ams commutative diagrams
-        % \\\\usepackage{graphicx}                   % graphics commands
-        % \\\\usepackage{color}                      % color commands
-        % \\\\usepackage{verbatim}                   % comment/verbatim environments
-        \\\\newcommand{\\\\bfi}{\\\\bfseries\\\\itshape}      % bold italic
-        \\\\makeatletter
-        \\\\@addtoreset{figure}{section}
-        \\\\def\\\\thefigure{\\\\thesection.\\\\@arabic\\\\c@figure}
-        \\\\def\\\\fps@figure{h, t}
-        \\\\@addtoreset{equation}{section}
-        \\\\def\\\\theequation{\\\\thesection.\\\\arabic{equation}}
-        \\\\makeatother
-        \\\\theoremstyle{plain} %--default
-        \\\\newtheorem{theorem}             {Theorem}  [section]
-        \\\\newtheorem{lemma}      [theorem]{Lemma}
-        \\\\newtheorem{corollary}  [theorem]{Corollary}
-        \\\\newtheorem{proposition}[theorem]{Proposition}
-        \\\\newtheorem{algorithm}  [theorem]{Algorithm}
-        \\\\newtheorem{criterion}  [theorem]{Criterion}
-        \\\\newtheorem{conjecture} [theorem]{Conjecture}
-        \\\\newtheorem{question}   [theorem]{Question}
-        \\\\theoremstyle{definition}
-        \\\\newtheorem{definition} [theorem]{Definition}
-        \\\\newtheorem{condition}  [theorem]{Condition}
-        \\\\newtheorem{example}    [theorem]{Example}
-        \\\\newtheorem{problem}    [theorem]{Problem}
-        \\\\newtheorem{solution}   [theorem]{Solution}
-        \\\\theoremstyle{remark}
-        \\\\newtheorem{remark}              {Remark}
-        \\\\newtheorem{note}                {Note}
-        \\\\newtheorem{claim}               {Claim}
-        \\\\newtheorem{summary}             {Summary}
-        \\\\newtheorem{case}                {Case}
-        \\\\newtheorem{acknowledgment}      {Acknowledgments}
-        \\\\newtheorem{conclusion}          {Conclusion}
-        \\\\newtheorem{notation}            {Notation}
-        \\\\begin{document}
-        \\\\title{Title of paper}
-        \\\\author{ Author1
-           \\\\thanks{Research partially supported by ...}
-           \\\\\\\\Department of Mathematics
-           \\\\\\\\University of ... \\\\\\\\
-        \\\\and  Author2
-           \\\\thanks{Research partially supported by ...}
-           \\\\\\\\Department of Physics
-           \\\\\\\\State University of ... }
-        \\\\date{put in custom date; delete this line for today's date}
-        \\\\maketitle
-        \\\\begin{abstract}
-        This template is called {\\\\it paper/template.tex}.
-        It numbers equations, figures, tables and theorems within each section.
-        Figures are placed automatically following the paragraph in which they
-        are cited, or at the top of the next page if there is not room
-        on the page of citation.
-        \\\\end{abstract}
-        \\\\section*{Introduction}
-        Text goes here
-        \\\\section{First Section Title}
-        Text goes here
-        \\\\begin{acknowledgment}
-        We thank ...
-        \\\\end{acknowledgment}
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        %  BIBLIOGRAPHY
-        %  %use ``bibia'' or ``bibib'' to fill in  bibitems
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \\\\begin{thebibliography}{}
-        \\\\bibitem[]{}
-        \\\\end{thebibliography}
-        \\\\end{document}
-        """
     "ovstcpq": 
         "prefix": "ovstcpq"
         "body": "\\\\overset{\\\\longrightarrow}{\\\\text{PQ}}"
@@ -451,7 +62,7 @@
         "body": "\\\\overset{\\\\longrightarrow}{\\\\text{PP}}"
     "opdcso3": 
         "prefix": "opdcso3"
-        "body": "\\\\$\\\\operatorname{SO(3)}\\\\$"
+        "body": "\\\\(\\\\operatorname{SO(3)}\\\\)"
     "opcrank": 
         "prefix": "opcrank"
         "body": "\\\\operatorname{Rank}"
@@ -472,7 +83,7 @@
         "body": "\\\\documentclass[a4paper]{article}"
     "dblackl": 
         "prefix": "dblackl"
-        "body": "\\\\quad \\\\$\\\\blacklozenge\\\\$"
+        "body": "\\\\quad \\\\(\\\\blacklozenge\\\\)"
     "upkggr": 
         "prefix": "upkggr"
         "body": "\\\\usepackage{graphicx}"
@@ -534,226 +145,6 @@
     "tgqeds": 
         "prefix": "tgqeds"
         "body": "\\\\tag*{\\\\qedsymbol}"
-    "tebook": 
-        "prefix": "tebook"
-        "body": """
-        %&latex2e--tebook
-        \\\\documentclass{book}
-        \\\\usepackage{latexsym,amssymb}             % special symbols
-        \\\\usepackage{amsmath}                      % amsmath environments
-        \\\\usepackage{amsthm}                       % ams theorem/proof environments
-        % \\\\usepackage{amscd}                      % ams commutative diagrams
-        % \\\\usepackage{graphicx}                   % graphics commands
-        % \\\\usepackage{color}                      % color commands
-        % \\\\usepackage{verbatim}                   % comment/verbatim environments
-        % \\\\usepackage{makeidx}                    % makeindex
-        \\\\theoremstyle{plain} %--default
-        \\\\newtheorem{theorem}             {Theorem}  [section]
-        \\\\newtheorem{lemma}      [theorem]{Lemma}
-        \\\\newtheorem{corollary}  [theorem]{Corollary}
-        \\\\newtheorem{proposition}[theorem]{Proposition}
-        \\\\newtheorem{algorithm}  [theorem]{Algorithm}
-        \\\\newtheorem{criterion}  [theorem]{Criterion}
-        \\\\newtheorem{conjecture} [theorem]{Conjecture}
-        \\\\newtheorem{question}   [theorem]{Question}
-        \\\\theoremstyle{definition}
-        \\\\newtheorem{definition} [theorem]{Definition}
-        \\\\newtheorem{condition}  [theorem]{Condition}
-        \\\\newtheorem{example}    [theorem]{Example}
-        \\\\newtheorem{problem}    [theorem]{Problem}
-        \\\\newtheorem{solution}   [theorem]{Solution}
-        \\\\theoremstyle{remark}
-        \\\\newtheorem{remark}              {Remark}
-        \\\\newtheorem{note}                {Note}
-        \\\\newtheorem{claim}               {Claim}
-        \\\\newtheorem{summary}             {Summary}
-        \\\\newtheorem{case}                {Case}
-        \\\\newtheorem{acknowledgment}      {Acknowledgments}
-        \\\\newtheorem{conclusion}          {Conclusion}
-        \\\\newtheorem{notation}            {Notation}
-        \\\\makeatletter
-        \\\\@addtoreset{figure}{section}             % figure numbering within section
-        \\\\def\\\\thefigure{\\\\thesection.\\\\@arabic\\\\c@figure}
-        \\\\def\\\\fps@figure{h, t}
-        \\\\@addtoreset{equation}{section}           % equation numbering within section
-        \\\\def\\\\theequation{\\\\thesection.\\\\arabic{equation}}
-        \\\\makeatother
-        \\\\begin{document}
-        \\\\title{Title of Book}
-        \\\\author{ Author1
-           \\\\thanks{Research partially supported by ...}
-           \\\\\\\\Department of Mathematics
-           \\\\\\\\University of ... \\\\\\\\
-        \\\\and  Author2
-           \\\\thanks{Research partially supported by ...}
-           \\\\\\\\Department of Physics
-           \\\\\\\\State University of ... }
-        \\\\date{put in custom date; delete this line for today's date}
-        \\\\maketitle
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        %  BIBLIOGRAPHY
-        %  %use ``bibia'' or ``bibib'' to fill in  bibitems
-        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        \\\\begin{thebibliography}{}
-        \\\\bibitem[]{}
-        \\\\end{thebibliography}
-        \\\\end{document}
-        """
-    "tabex6": 
-        "prefix": "tabex6"
-        "body": """
-        \\\\begin{center}
-        \\\\begin{tabular}{||l|c|c||}
-            \\\\hline
-         Case & Conditions & Connection                               \\\\\\\\ \\\\hline
-         Unconstrained
-              & \\\\${\\\\cal D}_q = T_q Q\\\\$
-              & \\\\${\\\\cal A}^{\\\\rm sym}(\\\\dot q)={\\\\Bbb I} ^{-1} J(\\\\dot{q})\\\\$ \\\\\\\\ [1ex]
-         Purely Kinematic
-              & \\\\${\\\\cal D}_q \\\\cap T_q({\\\\rm Orb}(q)) = \\\\{0\\\\}\\\\$
-              & \\\\${\\\\cal A}^{\\\\rm kin} (\\\\dot{q}) = 0\\\\$                     \\\\\\\\ [1ex]
-         Horizontal symmetries
-              & \\\\${\\\\cal D}_q \\\\cap T_q({\\\\rm Orb}(q))_G
-                                 = T_q({\\\\rm Orb}(q))_H\\\\$
-              & \\\\${\\\\cal A}^{\\\\rm sym} (\\\\dot{q})
-                             + {\\\\cal A}^{\\\\rm kin} (\\\\dot{q})
-                             ={\\\\Bbb I} ^{-1} J_H (\\\\dot{q})\\\\$            \\\\\\\\ [1ex]
-         General principal
-              & \\\\${\\\\cal D}_q + T_q({\\\\rm Orb}(q)) = T_q Q\\\\$
-              & \\\\${\\\\cal A}^{\\\\rm sym}(\\\\dot{q}) + {\\\\cal A}^{\\\\rm kin}(\\\\dot{q}) =
-                {\\\\Bbb I} ^{-1} J ^{\\\\rm nhc}(\\\\dot{q})\\\\$ \\\\\\\\
-         bundle case
-              &
-              &                                                       \\\\\\\\ \\\\hline
-        \\\\end{tabular}
-        \\\\end{center}
-        """
-    "tabex5": 
-        "prefix": "tabex5"
-        "body": """
-        \\\\begin{center}
-        \\\\fbox{\\\\fbox{\\\\parbox{4.0in}{
-        \\\\begin{tabular}{ll}
-        \\\\quad {\\\\bf Classical Mechanics}
-              & \\\\quad {\\\\bf Quantum Mechanics}                  \\\\\\\\ \\\\hline \\\\hline
-        immersed Lagrangian manifold
-              & element of \\\\$L^2 (Q)\\\\$ or \\\\${\\\\cal D}^\\\\prime (Q)\\\\$  \\\\\\\\
-        \\\\$\\\\Lambda \\\\rightarrow (T ^\\\\ast Q,\\\\Omega)\\\\$
-              &                        \\\\\\\\ \\\\hline
-        \\\\$\\\\Lambda = \\\\$ graph of \\\\${\\\\bf d} S\\\\$
-              & \\\\$\\\\psi = \\\\exp (iS/\\\\hbar)\\\\$                       \\\\\\\\ \\\\hline
-        \\\\$T ^{\\\\ast} Q\\\\$
-              & Hilbertspace                                   \\\\\\\\ \\\\hline
-        Lagrangian manifold
-              & (possibly unbounded)                           \\\\\\\\
-        \\\\$\\\\quad \\\\Omega \\\\subset (T^\\\\ast Q, \\\\Omega _Q)
-        \\\\times (T^\\\\ast R,-\\\\Omega_R)\\\\$
-              & \\\\$\\\\quad L^2 (R)\\\\$ to \\\\$L^2 (Q)\\\\$                   \\\\\\\\ \\\\hline
-                composition of canonical relations
-             & composition of operators                       \\\\\\\\
-        \\\\end{tabular}
-        }}} \\\\end{center}
-        """
-    "tabex4": 
-        "prefix": "tabex4"
-        "body": """
-        \\\\begin{center}
-        \\\\begin{tabular}{||l|l||}
-        \\\\hline \\\\hline
-        \\\\quad {\\\\bf Classical Mechanics}
-              & \\\\quad {\\\\bf Quantum Mechanics}                 \\\\\\\\ \\\\hline \\\\hline
-        immersed Lagrangian manifold
-              & element of \\\\$L^2 (Q)\\\\$
-                or \\\\${\\\\cal D}^\\\\prime (Q)\\\\$                      \\\\\\\\
-        \\\\$\\\\Lambda \\\\rightarrow (T ^\\\\ast Q,\\\\Omega)\\\\$
-              &                                               \\\\\\\\ \\\\hline
-        \\\\$\\\\Lambda = \\\\$ graph of \\\\${\\\\bf d} S\\\\$
-              & \\\\$\\\\psi = \\\\exp (iS/\\\\hbar)\\\\$                      \\\\\\\\ \\\\hline
-        \\\\$T ^{\\\\ast} Q\\\\$
-              & Hilbertspace                                  \\\\\\\\ \\\\hline
-        Lagrangian manifold
-              & (possibly unbounded)                          \\\\\\\\
-        \\\\$\\\\quad \\\\Omega \\\\subset(T^\\\\ast Q, \\\\Omega _Q)
-        \\\\times (T^\\\\ast R,-\\\\Omega_R)\\\\$
-              & \\\\$\\\\quad L^2 (R)\\\\$ to \\\\$L^2 (Q)\\\\$                  \\\\\\\\ \\\\hline
-        composition of canonical relations
-              & composition of operators                      \\\\\\\\ \\\\hline \\\\hline
-        \\\\end{tabular}
-        \\\\end{center}
-        """
-    "tabex3": 
-        "prefix": "tabex3"
-        "body": """
-        \\\\begin{center}
-        \\\\begin{tabular}{lll}
-        {\\\\it Classical Tensor Analysis\\\\/}
-             &
-             & {\\\\it Tensor Analysis on Manifolds\\\\/}
-        \\\\\\\\ \\\\\\\\
-        \\\\$ \\\\{ x ^a\\\\}\\\\$
-             & Coordinates
-             & \\\\$ \\\\{ x ^a\\\\}\\\\$
-        \\\\\\\\ \\\\\\\\
-        \\\\$ e _a = {\\\\displaystyle \\\\frac{\\\\partial z ^i }
-                                     {\\\\partial x ^a} \\\\dot{ i} _i }\\\\$
-             & \\\\$ \\\\!\\\\!\\\\! \\\\begin{array}{l}
-                        {\\\\rm coordinate} \\\\\\\\
-                        {\\\\rm basis \\\\, vectors }
-                        \\\\end{array} \\\\$
-             & \\\\$ {\\\\displaystyle \\\\frac{\\\\partial}{\\\\partial x^a} = e _a } \\\\$                \\\\\\\\ \\\\\\\\
-               \\\\$ \\\\!\\\\!\\\\!\\\\! \\\\left. \\\\begin{array}{l}
-                        \\\\bar{e} _a = {\\\\displaystyle \\\\frac{\\\\partial x ^b}
-                                           {\\\\partial \\\\bar{x} ^a} e _b }
-        \\\\\\\\ \\\\\\\\
-                        \\\\bar{e} ^a = {\\\\displaystyle \\\\frac{\\\\partial \\\\bar{x} ^a}
-                                           {\\\\partial \\\\bar{x} ^b} e^b }
-                         \\\\end{array}  \\\\right\\\\}\\\\$
-             & \\\\$ \\\\!\\\\!\\\\! \\\\begin{array}{l}
-                        {\\\\rm change \\\\, of} \\\\\\\\
-                        {\\\\rm coordinates} \\\\\\\\
-                        \\\\end{array} \\\\$
-             & \\\\$ \\\\left\\\\{ \\\\begin{array}{l}
-                        {\\\\displaystyle \\\\frac{\\\\partial}{\\\\partial \\\\bar{x} ^a} =
-                        \\\\frac{ \\\\partial x ^b}{\\\\partial \\\\bar{x} ^a}
-                        \\\\frac{ \\\\partial} {\\\\partial x ^b} }
-                        \\\\\\\\  \\\\\\\\
-                        {\\\\displaystyle d \\\\bar{x} ^a =
-                        \\\\frac{ \\\\partial \\\\bar{x} ^a }{ \\\\partial x ^b} d x ^b }
-                        \\\\end{array}  \\\\right. \\\\$
-        \\\\\\\\
-        \\\\end{tabular}
-        \\\\end{center}
-        """
-    "tabex2": 
-        "prefix": "tabex2"
-        "body": """
-        \\\\begin{center}
-        \\\\fbox{\\\\parbox{4.5in}{
-        \\\\begin{tabular}{ll}
-        \\\\multicolumn{2}{c}{\\\\bf Box 2.1.1 \\\\quad
-                               Summary of Important Formulas for \\\\S 2.1}  \\\\\\\\
-        {\\\\it Velocity\\\\/}
-              &                                                           \\\\\\\\
-              &                                                           \\\\\\\\
-        \\\\$ V = {\\\\displaystyle \\\\frac{\\\\partial \\\\phi}{\\\\partial t} } \\\\$
-              & \\\\$ V ^a ={\\\\displaystyle \\\\frac{\\\\partial \\\\phi ^a}
-                                            {\\\\partial t}}\\\\$                \\\\\\\\
-              &                                                           \\\\\\\\
-        \\\\$ v _t = V _t \\\\circ \\\\phi _t ^{-1} \\\\$
-              & \\\\$ v ^a _t = V ^a _t \\\\circ \\\\phi _t ^{-1} \\\\$                 \\\\\\\\
-              &                                                           \\\\\\\\
-        {\\\\it Covariant Derivative\\\\/}
-              &                                                           \\\\\\\\
-              &                                                           \\\\\\\\
-        \\\\$ {\\\\bf D} v \\\\cdot w = \\\\nabla _w v \\\\$
-              & \\\\$ (\\\\nabla _w v) ^a =
-                  {\\\\displaystyle \\\\frac{\\\\partial v ^a}
-                                      {\\\\partial x ^b}} w ^b +
-                                 \\\\gamma ^a _{b c} w ^b v ^c \\\\$             \\\\\\\\
-        \\\\end{tabular}
-        }}
-        \\\\end{center}
-        """
     "tabex1": 
         "prefix": "tabex1"
         "body": """
@@ -860,25 +251,25 @@
         "body": "\\\\,dx\\\\,dy\\\\,dz"
     "dtriap": 
         "prefix": "dtriap"
-        "body": "\\\\$(a_1, a_2, a_3)\\\\$"
+        "body": "\\\\((a_1, a_2, a_3)\\\\)"
     "dopso3": 
         "prefix": "dopso3"
-        "body": "\\\\$\\\\operatorname{so(3)}\\\\$"
+        "body": "\\\\(\\\\operatorname{so(3)}\\\\)"
     "dopcrn": 
         "prefix": "dopcrn"
-        "body": "\\\\$\\\\mathbb{R}^n\\\\$ "
+        "body": "\\\\(\\\\mathbb{R}^n\\\\) "
     "dopcrm": 
         "prefix": "dopcrm"
-        "body": "\\\\$\\\\mathbb{R}^m\\\\$ "
+        "body": "\\\\(\\\\mathbb{R}^m\\\\) "
     "dopcr3": 
         "prefix": "dopcr3"
-        "body": "\\\\$\\\\mathbb{R}^3\\\\$ "
+        "body": "\\\\(\\\\mathbb{R}^3\\\\) "
     "dopcr2": 
         "prefix": "dopcr2"
-        "body": "\\\\$\\\\mathbb{R}^2\\\\$ "
+        "body": "\\\\(\\\\mathbb{R}^2\\\\) "
     "dopcr1": 
         "prefix": "dopcr1"
-        "body": "\\\\$\\\\mathbb{R}^1\\\\$ "
+        "body": "\\\\(\\\\mathbb{R}^1\\\\) "
     "dfrbox": 
         "prefix": "dfrbox"
         "body": """
@@ -890,19 +281,19 @@
         "body": "\\\\documentclass{book}"
     "dbbcrn": 
         "prefix": "dbbcrn"
-        "body": "\\\\$\\\\mathbb{R}^n\\\\$ "
+        "body": "\\\\(\\\\mathbb{R}^n\\\\) "
     "dbbcrm": 
         "prefix": "dbbcrm"
-        "body": "\\\\$\\\\mathbb{R}^m\\\\$ "
+        "body": "\\\\(\\\\mathbb{R}^m\\\\) "
     "dbbcr3": 
         "prefix": "dbbcr3"
-        "body": "\\\\$\\\\mathbb{R}^3\\\\$ "
+        "body": "\\\\(\\\\mathbb{R}^3\\\\) "
     "dbbcr2": 
         "prefix": "dbbcr2"
-        "body": "\\\\$\\\\mathbb{R}^2\\\\$ "
+        "body": "\\\\(\\\\mathbb{R}^2\\\\) "
     "dbbcr1": 
         "prefix": "dbbcr1"
-        "body": "\\\\$\\\\mathbb{R}^1\\\\$ "
+        "body": "\\\\(\\\\mathbb{R}^1\\\\) "
     "blackl": 
         "prefix": "blackl"
         "body": "\\\\quad\\\\blacklozenge"
@@ -960,59 +351,39 @@
     "triap": 
         "prefix": "triap"
         "body": "(a_1, a_2, a_3)"
-    "teref": 
-        "prefix": "teref"
+    "tebtx": 
+        "prefix": "tebtx"
         "body": """
-        \\\\section*{References}
-        \\\\begin{description}
-        \\\\item   %use ``biba'' to fill in ref. items
-        \\\\end{description}
-        """
-    "temar": 
-        "prefix": "temar"
-        "body": """
-        \\\\textwidth 6.5 truein
-        \\\\oddsidemargin 0 truein
-        \\\\evensidemargin -0.50 truein
-        \\\\topmargin -.5 truein
-        \\\\textheight 8.5in
-        """
-    "tebib": 
-        "prefix": "tebib"
-        "body": """
-        \\\\begin{thebibliography}{}
-        \\\\bibitem[]{}   %use ``bibia'' or ``bibib'' to fill in  bibitems
-        \\\\end{thebibliography}
-        """
-    "teaut": 
-        "prefix": "teaut"
-        "body": """
-        \\\\title{Title of paper}
-        \\\\author{
-        Author1
-           \\\\thanks{Research partially supported by ...}
-           \\\\\\\\Department of Mathematics
-           \\\\\\\\University of ... \\\\\\\\
-        \\\\and
-        Author2
-           \\\\thanks{Research partially supported by ...}
-           \\\\\\\\Department of Physics
-           \\\\\\\\State University of ... }
-        \\\\date{put in custom date; delete this line for today's date}
-        \\\\maketitle
         %================================================================================
+        \\\\bibliographystyle{utcaps_nat}
+        \\\\bibliography{journals}
+        %================================================================================
+        \\\\end{document}
+        """
+    "teblx": 
+        "prefix": "teblx"
+        "body": """
+        %--------------------------------------------------------------------------------
+        \\\\usepackage[style=numeric-links,language=british]{biblatex}
+        \\\\ExecuteBibliographyOptions{sorting=none,giveninits=true,maxbibnames=99,uniquename=init}
+        \\\\DeclareNameAlias{author}{default}
+        %\\\\renewcommand{\\\\mkbibnamegiven}[1]{}
+        \\\\addbibresource{journals.bib}
+        \\\\setlength{\\\\bibitemsep}{\\\\parsep}
+        %--------------------------------------------------------------------------------
         """
     "teack": 
         "prefix": "teack"
         "body": """
         \\\\begin{acknowledgment}
+          $1
         \\\\end{acknowledgment}
         """
     "teabs": 
         "prefix": "teabs"
         "body": """
         \\\\begin{abstract}
-        Text goes here
+          $1
         \\\\end{abstract}
         """
     "sumlu": 
@@ -1026,55 +397,28 @@
         "body": "\\\\sum_j"
     "setlu": 
         "prefix": "setlu"
-        "body": """
-        \\\\left\\\\{ \\\\left.  \\\\!\\\\right|
-             \\\\right\\\\}
-        """
+        "body": "\\\\left\\\\{ \\\\left.  \\\\!\\\\right|\\\\right\\\\}"
     "setcu": 
         "prefix": "setcu"
         "body": "\\\\setcounter{"
-    "refib": 
-        "prefix": "refib"
-        "body": """
-        \\\\item Author [year]
-        {\\\\it Title.\\\\/}
-        Publisher.
-        """
-    "refia": 
-        "prefix": "refia"
-        "body": """
-        \\\\item Author [year]
-        Title.
-        {\\\\it Journal\\\\/} {\\\\bf 11}, 123--223.
-        """
     "rcmdu": 
         "prefix": "rcmdu"
         "body": "\\\\renewcommand{"
     "rcmdl": 
         "prefix": "rcmdl"
-        "body": "\\\\renewcommand{\\\\labelenumi}{\\\\em \\\\$(\\\\$\\\\roman{enumi}\\\\$)\\\\$}"
+        "body": "\\\\renewcommand{\\\\labelenumi}{\\\\em \\\\((\\\\$\\\\roman{enumi}\\\\$)\\\\)}"
     "qdetd": 
         "prefix": "qdetd"
-        "body": "\\\\quad \\\\$\\\\bigtriangledown\\\\$"
+        "body": "\\\\quad \\\\(\\\\bigtriangledown\\\\)"
     "qdesq": 
         "prefix": "qdesq"
-        "body": "\\\\quad \\\\$\\\\square\\\\$"
+        "body": "\\\\quad \\\\(\\\\square\\\\)"
     "qdbtd": 
         "prefix": "qdbtd"
-        "body": "\\\\quad \\\\$\\\\blacktriangledown\\\\$"
+        "body": "\\\\quad \\\\(\\\\blacktriangledown\\\\)"
     "qdbsq": 
         "prefix": "qdbsq"
-        "body": "\\\\quad \\\\$\\\\blacksquare\\\\$"
-    "pictu": 
-        "prefix": "pictu"
-        "body": """
-        \\\\begin{figure}[ht]
-        \\\\begin{center}
-               \\\\special{picture } %add pict filename
-        \\\\caption{\\\\label{}}
-        \\\\end{center}
-        \\\\end{figure}
-        """
+        "body": "\\\\quad \\\\(\\\\blacksquare\\\\)"
     "parau": 
         "prefix": "parau"
         "body": "\\\\paragraph{$1}"
@@ -1150,22 +494,18 @@
     "mxspu": 
         "prefix": "mxspu"
         "body": """
-        \\\\left(
-        \\\\begin{smallmatrix}
+        \\\\begin{psmallmatrix}
         ...&...\\\\\\\\
         ...&...
-        \\\\end{smallmatrix}
-        \\\\right)
+        \\\\end{psmallmatrix}
         """
     "mxsbu": 
         "prefix": "mxsbu"
         "body": """
-        \\\\left[
-        \\\\begin{smallmatrix}
+        \\\\begin{bsmallmatrix}
         ...&...\\\\\\\\
         ...&...
-        \\\\end{smallmatrix}
-        \\\\right]
+        \\\\end{bsmallmatrix}
         """
     "mxcvu": 
         "prefix": "mxcvu"
@@ -1213,14 +553,6 @@
     "lixl0": 
         "prefix": "lixl0"
         "body": "\\\\lim_{x \\\\rightarrow x_0}"
-    "lequs": 
-        "prefix": "lequs"
-        "body": """
-        \\\\begin{eqnarray*}
-        \\\\lefteqn{}\\\\\\\\
-        & &
-        \\\\end{eqnarray*}
-        """
     "intxt": 
         "prefix": "intxt"
         "body": "\\\\intertext{$1}"
@@ -1269,9 +601,9 @@
     "eqtxt": 
         "prefix": "eqtxt"
         "body": """
-        \\\\[
+        \\\\begin{equation*}
         \\\\quad \\\\text{$1}
-        \\\\]
+        \\\\end{equation*}
         """
     "eqlbr": 
         "prefix": "eqlbr"
@@ -1343,73 +675,73 @@
         "body": "\\\\end{alignat*}"
     "dxyzp": 
         "prefix": "dxyzp"
-        "body": "\\\\$(x, y, z)\\\\$"
+        "body": "\\\\((x, y, z)\\\\)"
     "dxvth": 
         "prefix": "dxvth"
-        "body": "\\\\$\\\\vartheta\\\\$"
+        "body": "\\\\(\\\\vartheta\\\\)"
     "dxvph": 
         "prefix": "dxvph"
-        "body": "\\\\$\\\\varphi\\\\$"
+        "body": "\\\\(\\\\varphi\\\\)"
     "dxpyq": 
         "prefix": "dxpyq"
-        "body": "\\\\$x^2 + y^2\\\\$"
+        "body": "\\\\(x^2 + y^2\\\\)"
     "dxcth": 
         "prefix": "dxcth"
-        "body": "\\\\$\\\\Theta\\\\$"
+        "body": "\\\\(\\\\Theta\\\\)"
     "dxcps": 
         "prefix": "dxcps"
-        "body": "\\\\$\\\\Psi\\\\$"
+        "body": "\\\\(\\\\Psi\\\\)"
     "dxcph": 
         "prefix": "dxcph"
-        "body": "\\\\$\\\\Phi\\\\$"
+        "body": "\\\\(\\\\Phi\\\\)"
     "dtsqq": 
         "prefix": "dtsqq"
-        "body": "\\\\$T^{\\\\ast}_{q} Q\\\\$"
+        "body": "\\\\(T^{\\\\ast}_{q} Q\\\\)"
     "dpdzy": 
         "prefix": "dpdzy"
-        "body": "\\\\$\\\\partial z/\\\\partial y\\\\$"
+        "body": "\\\\(\\\\partial z/\\\\partial y\\\\)"
     "dopcz": 
         "prefix": "dopcz"
-        "body": "\\\\$\\\\mathbb{Z}\\\\$ "
+        "body": "\\\\(\\\\mathbb{Z}\\\\) "
     "dopct": 
         "prefix": "dopct"
-        "body": "\\\\$\\\\mathbb{T}\\\\$ "
+        "body": "\\\\(\\\\mathbb{T}\\\\) "
     "dopcr": 
         "prefix": "dopcr"
-        "body": "\\\\$\\\\mathbb{R}\\\\$ "
+        "body": "\\\\(\\\\mathbb{R}\\\\) "
     "dopci": 
         "prefix": "dopci"
-        "body": "\\\\$\\\\mathbb{I}\\\\$ "
+        "body": "\\\\(\\\\mathbb{I}\\\\) "
     "dopcc": 
         "prefix": "dopcc"
-        "body": "\\\\$\\\\mathbb{C}\\\\$ "
+        "body": "\\\\(\\\\mathbb{C}\\\\) "
     "dgmks": 
         "prefix": "dgmks"
-        "body": "\\\\$\\\\mathfrak{k}^{\\\\ast}\\\\$ "
+        "body": "\\\\(\\\\mathfrak{k}^{\\\\ast}\\\\) "
     "dgmhs": 
         "prefix": "dgmhs"
-        "body": "\\\\$\\\\mathfrak{h}^{\\\\ast}\\\\$ "
+        "body": "\\\\(\\\\mathfrak{h}^{\\\\ast}\\\\) "
     "dgmgs": 
         "prefix": "dgmgs"
-        "body": "\\\\$\\\\mathfrak{g}^{\\\\ast}\\\\$ "
+        "body": "\\\\(\\\\mathfrak{g}^{\\\\ast}\\\\) "
     "dgmcx": 
         "prefix": "dgmcx"
-        "body": "\\\\$\\\\mathfrak{X}\\\\$ "
+        "body": "\\\\(\\\\mathfrak{X}\\\\) "
     "dgmct": 
         "prefix": "dgmct"
-        "body": "\\\\$\\\\mathfrak{T}\\\\$ "
+        "body": "\\\\(\\\\mathfrak{T}\\\\) "
     "dgmck": 
         "prefix": "dgmck"
-        "body": "\\\\$\\\\mathfrak{K}\\\\$ "
+        "body": "\\\\(\\\\mathfrak{K}\\\\) "
     "dgmch": 
         "prefix": "dgmch"
-        "body": "\\\\$\\\\mathfrak{H}\\\\$ "
+        "body": "\\\\(\\\\mathfrak{H}\\\\) "
     "dgmcg": 
         "prefix": "dgmcg"
-        "body": "\\\\$\\\\mathfrak{G}\\\\$ "
+        "body": "\\\\(\\\\mathfrak{G}\\\\) "
     "dgmca": 
         "prefix": "dgmca"
-        "body": "\\\\$\\\\mathfrak{A}\\\\$ "
+        "body": "\\\\(\\\\mathfrak{A}\\\\) "
     "dcrep": 
         "prefix": "dcrep"
         "body": "\\\\documentclass{report}"
@@ -1421,19 +753,19 @@
         "body": "\\\\documentclass{article}"
     "dbbcz": 
         "prefix": "dbbcz"
-        "body": "\\\\$\\\\mathbb{Z}\\\\$ "
+        "body": "\\\\(\\\\mathbb{Z}\\\\) "
     "dbbct": 
         "prefix": "dbbct"
-        "body": "\\\\$\\\\mathbb{T}\\\\$ "
+        "body": "\\\\(\\\\mathbb{T}\\\\) "
     "dbbcr": 
         "prefix": "dbbcr"
-        "body": "\\\\$\\\\mathbb{R}\\\\$ "
+        "body": "\\\\(\\\\mathbb{R}\\\\) "
     "dbbci": 
         "prefix": "dbbci"
-        "body": "\\\\$\\\\mathbb{I}\\\\$ "
+        "body": "\\\\(\\\\mathbb{I}\\\\) "
     "dbbcc": 
         "prefix": "dbbcc"
-        "body": "\\\\$\\\\mathbb{C}\\\\$ "
+        "body": "\\\\(\\\\mathbb{C}\\\\) "
     "captu": 
         "prefix": "captu"
         "body": "\\\\caption{$1}"
@@ -1467,22 +799,6 @@
     "bints": 
         "prefix": "bints"
         "body": "\\\\bigcap"
-    "bibib": 
-        "prefix": "bibib"
-        "body": """
-        \\\\bibitem[]{}
-        Author [year]
-        {\\\\it Title.\\\\/}
-        Publisher.
-        """
-    "bibia": 
-        "prefix": "bibia"
-        "body": """
-        \\\\bibitem[]{}
-        Author [year]
-        Title.
-        {\\\\it Journal\\\\/} {\\\\bf 11}, 123--223.
-        """
     "bcrit": 
         "prefix": "bcrit"
         "body": "\\\\begin{criterion}"
@@ -1647,7 +963,7 @@
         "body": "\\\\text{$1}"
     "txpf": 
         "prefix": "txpf"
-        "body": "\\\\texorpdfstring{\\\\$$1\\\\$}{$2}"
+        "body": "\\\\texorpdfstring{\\\\($1\\\\)}{$2}"
     "tsqq": 
         "prefix": "tsqq"
         "body": "T^{\\\\ast}_{q} Q"
@@ -1661,7 +977,7 @@
         "prefix": "tecs"
         "body": """
         \\\\begin{cases}
-        $1
+          $1
         \\\\end{cases}
         """
     "tebd": 
@@ -1684,27 +1000,6 @@
         %================================================================================
         \\\\begin{document}
         %================================================================================
-        """
-    "tebibx": 
-        "prefix": "tebibx"
-        "body": """
-        %================================================================================
-        \\\\bibliographystyle{utcaps_nat}
-        \\\\bibliography{journals}
-        %================================================================================
-        \\\\end{document}
-        """
-    "teblx": 
-        "prefix": "teblx"
-        "body": """
-        %--------------------------------------------------------------------------------
-        \\\\usepackage[style=numeric-links,language=british]{biblatex}
-        \\\\ExecuteBibliographyOptions{sorting=none,giveninits=true,maxbibnames=99,uniquename=init}
-        \\\\DeclareNameAlias{author}{default}
-        %\\\\renewcommand{\\\\mkbibnamegiven}[1]{}
-        \\\\addbibresource{journals.bib}
-        \\\\setlength{\\\\bibitemsep}{\\\\parsep}
-        %--------------------------------------------------------------------------------
         """
     "tbex": 
         "prefix": "tbex"
@@ -2072,11 +1367,11 @@
     "mx3d": 
         "prefix": "mx3d"
         "body": """
-        \\\\left| \\\\begin{matrix}
+        \\\\begin{vmatrix}
         a & b & c \\\\\\\\
         d & e & f \\\\\\\\
         g & h & i
-        \\\\end{matrix} \\\\right|
+        \\\\end{vmatrix}
         """
     "mx3b": 
         "prefix": "mx3b"
@@ -2258,14 +1553,6 @@
     "li00": 
         "prefix": "li00"
         "body": "\\\\lim_{(x,y) \\\\rightarrow (0,0)}"
-    "lequ": 
-        "prefix": "lequ"
-        "body": """
-        \\\\begin{eqnarray}
-        \\\\lefteqn{} \\\\nonumber \\\\\\\\
-        & &
-        \\\\end{eqnarray}
-        """
     "lebr": 
         "prefix": "lebr"
         "body": "\\\\left\\\\{"
@@ -2308,16 +1595,6 @@
     "impb": 
         "prefix": "impb"
         "body": "\\\\Leftarrow"
-    "illu": 
-        "prefix": "illu"
-        "body": """
-        \\\\begin{figure}
-        \\\\begin{center}
-               \\\\special{illustration } %add eps filename
-        \\\\caption{\\\\label{}}
-        \\\\end{center}
-        \\\\end{figure}
-        """
     "ilcd": 
         "prefix": "ilcd"
         "body": "\\\\int_D"
@@ -2446,7 +1723,7 @@
         "body": """
         \\\\begin{figure}[ht]
         \\\\begin{center}
-        \\\\includegraphics{}
+          \\\\includegraphics{$1}
         \\\\caption{\\\\label{}}
         \\\\end{center}
         \\\\end{figure}
@@ -2465,11 +1742,7 @@
         "body": "\\\\end{verbatim}"
     "eval": 
         "prefix": "eval"
-        "body": """
-        \\\\[
-        \\\\left. f \\\\left(\\\\frac{t}{2}\\\\right)\\\\right|_{t=0}
-        \\\\]
-        """
+        "body": "\\\\left. f \\\\left(\\\\frac{t}{2}\\\\right)\\\\right|_{t=0}"
     "ethm": 
         "prefix": "ethm"
         "body": "\\\\end{theorem}"
@@ -2491,9 +1764,9 @@
     "equn": 
         "prefix": "equn"
         "body": """
-        \\\\[
+        \\\\begin{equation*}
         F(b)-F(a)=\\\\int^b_af(x)\\\\, dx
-        \\\\]
+        \\\\end{equation*}
         """
     "eqst": 
         "prefix": "eqst"
@@ -2515,9 +1788,6 @@
         F(b)-F(a)=\\\\int^b_af(x)\\\\, dx$1
         \\\\end{equation}
         """
-    "eqas": 
-        "prefix": "eqas"
-        "body": "\\\\end{eqnarray*}"
     "eqad": 
         "prefix": "eqad"
         "body": """
@@ -2617,34 +1887,34 @@
         "body": "dy/dt"
     "dxyp": 
         "prefix": "dxyp"
-        "body": "\\\\$(x, y)\\\\$"
+        "body": "\\\\((x, y)\\\\)"
     "dxvs": 
         "prefix": "dxvs"
-        "body": "\\\\$\\\\varsigma\\\\$"
+        "body": "\\\\(\\\\varsigma\\\\)"
     "dxvr": 
         "prefix": "dxvr"
-        "body": "\\\\$\\\\varrho\\\\$"
+        "body": "\\\\(\\\\varrho\\\\)"
     "dxvp": 
         "prefix": "dxvp"
-        "body": "\\\\$\\\\varpi\\\\$"
+        "body": "\\\\(\\\\varpi\\\\)"
     "dxve": 
         "prefix": "dxve"
-        "body": "\\\\$\\\\varepsilon\\\\$"
+        "body": "\\\\(\\\\varepsilon\\\\)"
     "dxth": 
         "prefix": "dxth"
-        "body": "\\\\$\\\\theta\\\\$"
+        "body": "\\\\(\\\\theta\\\\)"
     "dxps": 
         "prefix": "dxps"
-        "body": "\\\\$\\\\psi\\\\$"
+        "body": "\\\\(\\\\psi\\\\)"
     "dxph": 
         "prefix": "dxph"
-        "body": "\\\\$\\\\phi\\\\$"
+        "body": "\\\\(\\\\phi\\\\)"
     "dxio": 
         "prefix": "dxio"
-        "body": "\\\\$\\\\iota\\\\$"
+        "body": "\\\\(\\\\iota\\\\)"
     "dxet": 
         "prefix": "dxet"
-        "body": "\\\\$\\\\eta\\\\$"
+        "body": "\\\\(\\\\eta\\\\)"
     "dxdy": 
         "prefix": "dxdy"
         "body": "\\\\,dx\\\\,dy"
@@ -2653,31 +1923,31 @@
         "body": "dx/dt"
     "dxcx": 
         "prefix": "dxcx"
-        "body": "\\\\$\\\\Xi\\\\$"
+        "body": "\\\\(\\\\Xi\\\\)"
     "dxcu": 
         "prefix": "dxcu"
-        "body": "\\\\$\\\\Upsilon\\\\$"
+        "body": "\\\\(\\\\Upsilon\\\\)"
     "dxcs": 
         "prefix": "dxcs"
-        "body": "\\\\$\\\\Sigma\\\\$"
+        "body": "\\\\(\\\\Sigma\\\\)"
     "dxcp": 
         "prefix": "dxcp"
-        "body": "\\\\$\\\\Pi\\\\$"
+        "body": "\\\\(\\\\Pi\\\\)"
     "dxco": 
         "prefix": "dxco"
-        "body": "\\\\$\\\\Omega\\\\$"
+        "body": "\\\\(\\\\Omega\\\\)"
     "dxcl": 
         "prefix": "dxcl"
-        "body": "\\\\$\\\\Lambda\\\\$"
+        "body": "\\\\(\\\\Lambda\\\\)"
     "dxcg": 
         "prefix": "dxcg"
-        "body": "\\\\$\\\\Gamma\\\\$"
+        "body": "\\\\(\\\\Gamma\\\\)"
     "dxcd": 
         "prefix": "dxcd"
-        "body": "\\\\$\\\\Delta\\\\$"
+        "body": "\\\\(\\\\Delta\\\\)"
     "dtsq": 
         "prefix": "dtsq"
-        "body": "\\\\$T^\\\\ast Q\\\\$"
+        "body": "\\\\(T^\\\\ast Q\\\\)"
     "divi": 
         "prefix": "divi"
         "body": "\\\\div"
@@ -2686,190 +1956,193 @@
         "body": "{\\\\displaystyle"
     "dgmu": 
         "prefix": "dgmu"
-        "body": "\\\\$\\\\mathfrak{}$1\\\\$"
+        "body": "\\\\(\\\\mathfrak{}$1\\\\)"
     "dgmt": 
         "prefix": "dgmt"
-        "body": "\\\\$\\\\mathfrak{t}\\\\$ "
+        "body": "\\\\(\\\\mathfrak{t}\\\\) "
     "dgmp": 
         "prefix": "dgmp"
-        "body": "\\\\$\\\\mathfrak{p}\\\\$ "
+        "body": "\\\\(\\\\mathfrak{p}\\\\) "
     "dgmk": 
         "prefix": "dgmk"
-        "body": "\\\\$\\\\mathfrak{k}\\\\$ "
+        "body": "\\\\(\\\\mathfrak{k}\\\\) "
     "dgmh": 
         "prefix": "dgmh"
-        "body": "\\\\$\\\\mathfrak{h}\\\\$ "
+        "body": "\\\\(\\\\mathfrak{h}\\\\) "
     "dgmg": 
         "prefix": "dgmg"
-        "body": "\\\\$\\\\mathfrak{g}\\\\$ "
+        "body": "\\\\(\\\\mathfrak{g}\\\\) "
     "dgmb": 
         "prefix": "dgmb"
-        "body": "\\\\$\\\\mathfrak{b}\\\\$ "
+        "body": "\\\\(\\\\mathfrak{b}\\\\) "
     "dccz": 
         "prefix": "dccz"
-        "body": "\\\\$\\\\mathcal{Z}\\\\$"
+        "body": "\\\\(\\\\mathcal{Z}\\\\)"
     "dccy": 
         "prefix": "dccy"
-        "body": "\\\\$\\\\mathcal{Y}\\\\$"
+        "body": "\\\\(\\\\mathcal{Y}\\\\)"
     "dccx": 
         "prefix": "dccx"
-        "body": "\\\\$\\\\mathcal{X}\\\\$"
+        "body": "\\\\(\\\\mathcal{X}\\\\)"
     "dccw": 
         "prefix": "dccw"
-        "body": "\\\\$\\\\mathcal{W}\\\\$"
+        "body": "\\\\(\\\\mathcal{W}\\\\)"
     "dccv": 
         "prefix": "dccv"
-        "body": "\\\\$\\\\mathcal{V}\\\\$"
+        "body": "\\\\(\\\\mathcal{V}\\\\)"
     "dccu": 
         "prefix": "dccu"
-        "body": "\\\\$\\\\mathcal{U}\\\\$"
+        "body": "\\\\(\\\\mathcal{U}\\\\)"
     "dcct": 
         "prefix": "dcct"
-        "body": "\\\\$\\\\mathcal{T}\\\\$"
+        "body": "\\\\(\\\\mathcal{T}\\\\)"
     "dccs": 
         "prefix": "dccs"
-        "body": "\\\\$\\\\mathcal{S}\\\\$"
+        "body": "\\\\(\\\\mathcal{S}\\\\)"
     "dccr": 
         "prefix": "dccr"
-        "body": "\\\\$\\\\mathcal{R}\\\\$"
+        "body": "\\\\(\\\\mathcal{R}\\\\)"
     "dccq": 
         "prefix": "dccq"
-        "body": "\\\\$\\\\mathcal{Q}\\\\$"
+        "body": "\\\\(\\\\mathcal{Q}\\\\)"
     "dccp": 
         "prefix": "dccp"
-        "body": "\\\\$\\\\mathcal{P}\\\\$"
+        "body": "\\\\(\\\\mathcal{P}\\\\)"
     "dcco": 
         "prefix": "dcco"
-        "body": "\\\\$\\\\mathcal{O}\\\\$"
+        "body": "\\\\(\\\\mathcal{O}\\\\)"
     "dccn": 
         "prefix": "dccn"
-        "body": "\\\\$\\\\mathcal{N}\\\\$"
+        "body": "\\\\(\\\\mathcal{N}\\\\)"
     "dccm": 
         "prefix": "dccm"
-        "body": "\\\\$\\\\mathcal{M}\\\\$"
+        "body": "\\\\(\\\\mathcal{M}\\\\)"
     "dccl": 
         "prefix": "dccl"
-        "body": "\\\\$\\\\mathcal{L}\\\\$"
+        "body": "\\\\(\\\\mathcal{L}\\\\)"
     "dcck": 
         "prefix": "dcck"
-        "body": "\\\\$\\\\mathcal{K}\\\\$"
+        "body": "\\\\(\\\\mathcal{K}\\\\)"
     "dccj": 
         "prefix": "dccj"
-        "body": "\\\\$\\\\mathcal{J}\\\\$"
+        "body": "\\\\(\\\\mathcal{J}\\\\)"
     "dcci": 
         "prefix": "dcci"
-        "body": "\\\\$\\\\mathcal{I}\\\\$"
+        "body": "\\\\(\\\\mathcal{I}\\\\)"
     "dcch": 
         "prefix": "dcch"
-        "body": "\\\\$\\\\mathcal{H}\\\\$"
+        "body": "\\\\(\\\\mathcal{H}\\\\)"
     "dccg": 
         "prefix": "dccg"
-        "body": "\\\\$\\\\mathcal{G}\\\\$"
+        "body": "\\\\(\\\\mathcal{G}\\\\)"
     "dccf": 
         "prefix": "dccf"
-        "body": "\\\\$\\\\mathcal{F}\\\\$"
+        "body": "\\\\(\\\\mathcal{F}\\\\)"
     "dcce": 
         "prefix": "dcce"
-        "body": "\\\\$\\\\mathcal{E}\\\\$"
+        "body": "\\\\(\\\\mathcal{E}\\\\)"
     "dccd": 
         "prefix": "dccd"
-        "body": "\\\\$\\\\mathcal{D}\\\\$"
+        "body": "\\\\(\\\\mathcal{D}\\\\)"
     "dccc": 
         "prefix": "dccc"
-        "body": "\\\\$\\\\mathcal{C}\\\\$"
+        "body": "\\\\(\\\\mathcal{C}\\\\)"
     "dccb": 
         "prefix": "dccb"
-        "body": "\\\\$\\\\mathcal{B}\\\\$"
+        "body": "\\\\(\\\\mathcal{B}\\\\)"
     "dcca": 
         "prefix": "dcca"
-        "body": "\\\\$\\\\mathcal{A}\\\\$"
+        "body": "\\\\(\\\\mathcal{A}\\\\)"
     "dbcz": 
         "prefix": "dbcz"
-        "body": "\\\\$\\\\mathbf{Z}\\\\$"
+        "body": "\\\\(\\\\mathbf{Z}\\\\)"
     "dbcy": 
         "prefix": "dbcy"
-        "body": "\\\\$\\\\mathbf{Y}\\\\$"
+        "body": "\\\\(\\\\mathbf{Y}\\\\)"
     "dbcx": 
         "prefix": "dbcx"
-        "body": "\\\\$\\\\mathbf{X}\\\\$"
+        "body": "\\\\(\\\\mathbf{X}\\\\)"
     "dbcw": 
         "prefix": "dbcw"
-        "body": "\\\\$\\\\mathbf{W}\\\\$"
+        "body": "\\\\(\\\\mathbf{W}\\\\)"
     "dbcv": 
         "prefix": "dbcv"
-        "body": "\\\\$\\\\mathbf{V}\\\\$"
+        "body": "\\\\(\\\\mathbf{V}\\\\)"
     "dbcu": 
         "prefix": "dbcu"
-        "body": "\\\\$\\\\mathbf{U}\\\\$"
+        "body": "\\\\(\\\\mathbf{U}\\\\)"
     "dbct": 
         "prefix": "dbct"
-        "body": "\\\\$\\\\mathbf{T}\\\\$"
+        "body": "\\\\(\\\\mathbf{T}\\\\)"
     "dbcs": 
         "prefix": "dbcs"
-        "body": "\\\\$\\\\mathbf{S}\\\\$"
+        "body": "\\\\(\\\\mathbf{S}\\\\)"
     "dbcr": 
         "prefix": "dbcr"
-        "body": "\\\\$\\\\mathbf{R}\\\\$"
+        "body": "\\\\(\\\\mathbf{R}\\\\)"
     "dbcq": 
         "prefix": "dbcq"
-        "body": "\\\\$\\\\mathbf{Q}\\\\$"
+        "body": "\\\\(\\\\mathbf{Q}\\\\)"
     "dbcp": 
         "prefix": "dbcp"
-        "body": "\\\\$\\\\mathbf{P}\\\\$"
+        "body": "\\\\(\\\\mathbf{P}\\\\)"
     "dbco": 
         "prefix": "dbco"
-        "body": "\\\\$\\\\mathbf{O}\\\\$"
+        "body": "\\\\(\\\\mathbf{O}\\\\)"
     "dbcn": 
         "prefix": "dbcn"
-        "body": "\\\\$\\\\mathbf{N}\\\\$"
+        "body": "\\\\(\\\\mathbf{N}\\\\)"
     "dbcm": 
         "prefix": "dbcm"
-        "body": "\\\\$\\\\mathbf{M}\\\\$"
+        "body": "\\\\(\\\\mathbf{M}\\\\)"
     "dbcl": 
         "prefix": "dbcl"
-        "body": "\\\\$\\\\mathbf{L}\\\\$"
+        "body": "\\\\(\\\\mathbf{L}\\\\)"
     "dbck": 
         "prefix": "dbck"
-        "body": "\\\\$\\\\mathbf{K}\\\\$"
+        "body": "\\\\(\\\\mathbf{K}\\\\)"
     "dbcj": 
         "prefix": "dbcj"
-        "body": "\\\\$\\\\mathbf{J}\\\\$"
+        "body": "\\\\(\\\\mathbf{J}\\\\)"
     "dbci": 
         "prefix": "dbci"
-        "body": "\\\\$\\\\mathbf{I}\\\\$"
+        "body": "\\\\(\\\\mathbf{I}\\\\)"
     "dbch": 
         "prefix": "dbch"
-        "body": "\\\\$\\\\mathbf{H}\\\\$"
+        "body": "\\\\(\\\\mathbf{H}\\\\)"
     "dbcg": 
         "prefix": "dbcg"
-        "body": "\\\\$\\\\mathbf{G}\\\\$"
+        "body": "\\\\(\\\\mathbf{G}\\\\)"
     "dbcf": 
         "prefix": "dbcf"
-        "body": "\\\\$\\\\mathbf{F}\\\\$"
+        "body": "\\\\(\\\\mathbf{F}\\\\)"
     "dbce": 
         "prefix": "dbce"
-        "body": "\\\\$\\\\mathbf{E}\\\\$"
+        "body": "\\\\(\\\\mathbf{E}\\\\)"
     "dbcd": 
         "prefix": "dbcd"
-        "body": "\\\\$\\\\mathbf{D}\\\\$"
+        "body": "\\\\(\\\\mathbf{D}\\\\)"
     "dbcc": 
         "prefix": "dbcc"
-        "body": "\\\\$\\\\mathbf{C}\\\\$"
+        "body": "\\\\(\\\\mathbf{C}\\\\)"
     "dbcb": 
         "prefix": "dbcb"
-        "body": "\\\\$\\\\mathbf{B}\\\\$"
+        "body": "\\\\(\\\\mathbf{B}\\\\)"
     "dbca": 
         "prefix": "dbca"
-        "body": "\\\\$\\\\mathbf{A}\\\\$"
+        "body": "\\\\(\\\\mathbf{A}\\\\)"
     "db10": 
         "prefix": "db10"
-        "body": "\\\\$\\\\mathbf{10}\\\\$"
+        "body": "\\\\(\\\\mathbf{10}\\\\)"
     "d03p": 
         "prefix": "d03p"
-        "body": "\\\\$(0, 0, 0)\\\\$"
+        "body": "\\\\((0, 0, 0)\\\\)"
     "d00p": 
         "prefix": "d00p"
-        "body": "\\\\$(0,0)\\\\$"
+        "body": "\\\\((0,0)\\\\)"
+    "csdd": 
+        "prefix": "csdd"
+        "body": "%================================"
     "crlr": 
         "prefix": "crlr"
         "body": """
@@ -2881,6 +2154,9 @@
     "cprt": 
         "prefix": "cprt"
         "body": "\\\\copyright"
+    "cpct": 
+        "prefix": "cpct"
+        "body": "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
     "coth": 
         "prefix": "coth"
         "body": "\\\\cos \\\\theta"
@@ -2890,6 +2166,9 @@
     "clin": 
         "prefix": "clin"
         "body": "\\\\centerline{$1}"
+    "cldd": 
+        "prefix": "cldd"
+        "body": "%================================================================================"
     "citu": 
         "prefix": "citu"
         "body": "\\\\cite{"
@@ -2905,7 +2184,7 @@
          @VGVV  @VVgV \\\\\\\\
          C @>>f>D\\\\\\\\
          \\\\end{CD}
-         \\\\end{equation*}
+        \\\\end{equation*}
         """
     "cdli": 
         "prefix": "cdli"
@@ -2914,8 +2193,11 @@
          \\\\begin{CD}
          0 @>>> A @>f>>B @>g>> C @>h>> C/g(B) @>>>0
          \\\\end{CD}
-         \\\\end{equation*}
+        \\\\end{equation*}
         """
+    "ccrf": 
+        "prefix": "ccrf"
+        "body": "\\\\Cref{$1}"
     "capt": 
         "prefix": "capt"
         "body": "\\\\caption{$1}"
@@ -2955,12 +2237,6 @@
     "bqst": 
         "prefix": "bqst"
         "body": "\\\\begin{question}"
-    "bqas": 
-        "prefix": "bqas"
-        "body": "\\\\begin{eqnarray*}"
-    "bqal": 
-        "prefix": "bqal"
-        "body": "\\\\begin{eqnarray}\\\\label{$1}"
     "bprf": 
         "prefix": "bprf"
         "body": "\\\\begin{proof}"
@@ -3225,6 +2501,9 @@
     "wty": 
         "prefix": "wty"
         "body": "theory"
+    "wtu": 
+        "prefix": "wtu"
+        "body": "\\\\widetilde{$1}"
     "wtm": 
         "prefix": "wtm"
         "body": "theorem"
@@ -3246,6 +2525,9 @@
     "wie": 
         "prefix": "wie"
         "body": "i.e.,"
+    "whu": 
+        "prefix": "whu"
+        "body": "\\\\widehat{$1}"
     "wgm": 
         "prefix": "wgm"
         "body": "geometry"
@@ -3546,9 +2828,6 @@
     "ova": 
         "prefix": "ova"
         "body": "\\\\vec{a}"
-    "wtu": 
-        "prefix": "wtu"
-        "body": "\\\\widetilde{$1}"
     "otu": 
         "prefix": "otu"
         "body": "\\\\tilde{$1}"
@@ -3591,9 +2870,6 @@
     "olp": 
         "prefix": "olp"
         "body": "\\\\overline{p}"
-    "whu": 
-        "prefix": "whu"
-        "body": "\\\\widehat{$1}"
     "ohz": 
         "prefix": "ohz"
         "body": "\\\\hat{z}"
@@ -3802,7 +3078,7 @@
         """
     "mvb": 
         "prefix": "mvb"
-        "body": "{\\\\mathversion{bold} \\\\$ $1\\\\$}"
+        "body": "{\\\\mathversion{bold} \\\\( $1\\\\)}"
     "mtt": 
         "prefix": "mtt"
         "body": "\\\\mathtt{$1}"
@@ -4322,9 +3598,6 @@
     "eqm": 
         "prefix": "eqm"
         "body": "''"
-    "eqa": 
-        "prefix": "eqa"
-        "body": "\\\\end{eqnarray}"
     "emu": 
         "prefix": "emu"
         "body": "\\\\emph{$1}"
@@ -4357,7 +3630,7 @@
         "body": "\\\\end{description}"
     "edp": 
         "prefix": "edp"
-        "body": "\\\\]"
+        "body": "\\\\end{equation*}"
     "edo": 
         "prefix": "edo"
         "body": "\\\\end{document}"
@@ -4372,58 +3645,58 @@
         "body": "\\\\end{acknowledgment}"
     "dxz": 
         "prefix": "dxz"
-        "body": "\\\\$\\\\zeta\\\\$"
+        "body": "\\\\(\\\\zeta\\\\)"
     "dxx": 
         "prefix": "dxx"
-        "body": "\\\\$\\\\xi\\\\$"
+        "body": "\\\\(\\\\xi\\\\)"
     "dxu": 
         "prefix": "dxu"
-        "body": "\\\\$\\\\upsilon\\\\$"
+        "body": "\\\\(\\\\upsilon\\\\)"
     "dxt": 
         "prefix": "dxt"
-        "body": "\\\\$\\\\tau\\\\$"
+        "body": "\\\\(\\\\tau\\\\)"
     "dxs": 
         "prefix": "dxs"
-        "body": "\\\\$\\\\sigma\\\\$"
+        "body": "\\\\(\\\\sigma\\\\)"
     "dxr": 
         "prefix": "dxr"
-        "body": "\\\\$\\\\rho\\\\$"
+        "body": "\\\\(\\\\rho\\\\)"
     "dxp": 
         "prefix": "dxp"
-        "body": "\\\\$\\\\pi\\\\$"
+        "body": "\\\\(\\\\pi\\\\)"
     "dxo": 
         "prefix": "dxo"
-        "body": "\\\\$\\\\omega\\\\$"
+        "body": "\\\\(\\\\omega\\\\)"
     "dxn": 
         "prefix": "dxn"
-        "body": "\\\\$\\\\nu\\\\$"
+        "body": "\\\\(\\\\nu\\\\)"
     "dxm": 
         "prefix": "dxm"
-        "body": "\\\\$\\\\mu\\\\$"
+        "body": "\\\\(\\\\mu\\\\)"
     "dxl": 
         "prefix": "dxl"
-        "body": "\\\\$\\\\lambda\\\\$"
+        "body": "\\\\(\\\\lambda\\\\)"
     "dxk": 
         "prefix": "dxk"
-        "body": "\\\\$\\\\kappa\\\\$"
+        "body": "\\\\(\\\\kappa\\\\)"
     "dxg": 
         "prefix": "dxg"
-        "body": "\\\\$\\\\gamma\\\\$"
+        "body": "\\\\(\\\\gamma\\\\)"
     "dxe": 
         "prefix": "dxe"
-        "body": "\\\\$\\\\epsilon\\\\$"
+        "body": "\\\\(\\\\epsilon\\\\)"
     "dxd": 
         "prefix": "dxd"
-        "body": "\\\\$\\\\delta\\\\$"
+        "body": "\\\\(\\\\delta\\\\)"
     "dxc": 
         "prefix": "dxc"
-        "body": "\\\\$\\\\chi\\\\$"
+        "body": "\\\\(\\\\chi\\\\)"
     "dxb": 
         "prefix": "dxb"
-        "body": "\\\\$\\\\beta\\\\$"
+        "body": "\\\\(\\\\beta\\\\)"
     "dxa": 
         "prefix": "dxa"
-        "body": "\\\\$\\\\alpha\\\\$"
+        "body": "\\\\(\\\\alpha\\\\)"
     "dtt": 
         "prefix": "dtt"
         "body": "\\\\det"
@@ -4435,211 +3708,217 @@
         "body": "\\\\qquad"
     "doo": 
         "prefix": "doo"
-        "body": "\\\\$o\\\\$"
+        "body": "\\\\(o\\\\)"
     "dmn": 
         "prefix": "dmn"
         "body": "\\\\dim"
     "dlr": 
         "prefix": "dlr"
-        "body": "\\\\$\\\\$"
+        "body": "\\\\(\\\\)"
     "dds": 
         "prefix": "dds"
         "body": "\\\\ddots"
     "dcz": 
         "prefix": "dcz"
-        "body": "\\\\$Z\\\\$"
+        "body": "\\\\(Z\\\\)"
     "dcy": 
         "prefix": "dcy"
-        "body": "\\\\$Y\\\\$"
+        "body": "\\\\(Y\\\\)"
     "dcx": 
         "prefix": "dcx"
-        "body": "\\\\$X\\\\$"
+        "body": "\\\\(X\\\\)"
     "dcw": 
         "prefix": "dcw"
-        "body": "\\\\$W\\\\$"
+        "body": "\\\\(W\\\\)"
     "dcv": 
         "prefix": "dcv"
-        "body": "\\\\$V\\\\$"
+        "body": "\\\\(V\\\\)"
     "dcu": 
         "prefix": "dcu"
-        "body": "\\\\$U\\\\$"
+        "body": "\\\\(U\\\\)"
     "dct": 
         "prefix": "dct"
-        "body": "\\\\$T\\\\$"
+        "body": "\\\\(T\\\\)"
     "dcs": 
         "prefix": "dcs"
-        "body": "\\\\$S\\\\$"
+        "body": "\\\\(S\\\\)"
     "dcr": 
         "prefix": "dcr"
-        "body": "\\\\$R\\\\$"
+        "body": "\\\\(R\\\\)"
     "dcq": 
         "prefix": "dcq"
-        "body": "\\\\$Q\\\\$"
+        "body": "\\\\(Q\\\\)"
     "dcp": 
         "prefix": "dcp"
-        "body": "\\\\$P\\\\$"
+        "body": "\\\\(P\\\\)"
     "dco": 
         "prefix": "dco"
-        "body": "\\\\$O\\\\$"
+        "body": "\\\\(O\\\\)"
     "dcn": 
         "prefix": "dcn"
-        "body": "\\\\$N\\\\$"
+        "body": "\\\\(N\\\\)"
     "dcm": 
         "prefix": "dcm"
-        "body": "\\\\$M\\\\$"
+        "body": "\\\\(M\\\\)"
     "dcl": 
         "prefix": "dcl"
-        "body": "\\\\$L\\\\$"
+        "body": "\\\\(L\\\\)"
     "dck": 
         "prefix": "dck"
-        "body": "\\\\$K\\\\$"
+        "body": "\\\\(K\\\\)"
     "dcj": 
         "prefix": "dcj"
-        "body": "\\\\$J\\\\$"
+        "body": "\\\\(J\\\\)"
     "dci": 
         "prefix": "dci"
-        "body": "\\\\$I\\\\$"
+        "body": "\\\\(I\\\\)"
     "dch": 
         "prefix": "dch"
-        "body": "\\\\$H\\\\$"
+        "body": "\\\\(H\\\\)"
     "dcg": 
         "prefix": "dcg"
-        "body": "\\\\$G\\\\$"
+        "body": "\\\\(G\\\\)"
     "dcf": 
         "prefix": "dcf"
-        "body": "\\\\$F\\\\$"
+        "body": "\\\\(F\\\\)"
     "dce": 
         "prefix": "dce"
-        "body": "\\\\$E\\\\$"
+        "body": "\\\\(E\\\\)"
     "dcd": 
         "prefix": "dcd"
-        "body": "\\\\$D\\\\$"
+        "body": "\\\\(D\\\\)"
     "dcc": 
         "prefix": "dcc"
-        "body": "\\\\$C\\\\$"
+        "body": "\\\\(C\\\\)"
     "dcb": 
         "prefix": "dcb"
-        "body": "\\\\$B\\\\$"
+        "body": "\\\\(B\\\\)"
     "dca": 
         "prefix": "dca"
-        "body": "\\\\$A\\\\$"
+        "body": "\\\\(A\\\\)"
     "dbz": 
         "prefix": "dbz"
-        "body": "\\\\$\\\\mathbf{z}\\\\$"
+        "body": "\\\\(\\\\mathbf{z}\\\\)"
     "dby": 
         "prefix": "dby"
-        "body": "\\\\$\\\\mathbf{y}\\\\$"
+        "body": "\\\\(\\\\mathbf{y}\\\\)"
     "dbx": 
         "prefix": "dbx"
-        "body": "\\\\$\\\\mathbf{x}\\\\$"
+        "body": "\\\\(\\\\mathbf{x}\\\\)"
     "dbw": 
         "prefix": "dbw"
-        "body": "\\\\$\\\\mathbf{w}\\\\$"
+        "body": "\\\\(\\\\mathbf{w}\\\\)"
     "dbv": 
         "prefix": "dbv"
-        "body": "\\\\$\\\\mathbf{v}\\\\$"
+        "body": "\\\\(\\\\mathbf{v}\\\\)"
     "dbu": 
         "prefix": "dbu"
-        "body": "\\\\$\\\\mathbf{u}\\\\$"
+        "body": "\\\\(\\\\mathbf{u}\\\\)"
     "dbt": 
         "prefix": "dbt"
-        "body": "\\\\$\\\\mathbf{t}\\\\$"
+        "body": "\\\\(\\\\mathbf{t}\\\\)"
     "dbs": 
         "prefix": "dbs"
-        "body": "\\\\$\\\\mathbf{s}\\\\$"
+        "body": "\\\\(\\\\mathbf{s}\\\\)"
     "dbr": 
         "prefix": "dbr"
-        "body": "\\\\$\\\\mathbf{r}\\\\$"
+        "body": "\\\\(\\\\mathbf{r}\\\\)"
     "dbq": 
         "prefix": "dbq"
-        "body": "\\\\$\\\\mathbf{q}\\\\$"
+        "body": "\\\\(\\\\mathbf{q}\\\\)"
     "dbp": 
         "prefix": "dbp"
-        "body": "\\\\$\\\\mathbf{p}\\\\$"
+        "body": "\\\\(\\\\mathbf{p}\\\\)"
     "dbo": 
         "prefix": "dbo"
-        "body": "\\\\$\\\\mathbf{o}\\\\$"
+        "body": "\\\\(\\\\mathbf{o}\\\\)"
     "dbn": 
         "prefix": "dbn"
-        "body": "\\\\$\\\\mathbf{n}\\\\$"
+        "body": "\\\\(\\\\mathbf{n}\\\\)"
     "dbm": 
         "prefix": "dbm"
-        "body": "\\\\$\\\\mathbf{m}\\\\$"
+        "body": "\\\\(\\\\mathbf{m}\\\\)"
     "dbl": 
         "prefix": "dbl"
-        "body": "\\\\$\\\\mathbf{l}\\\\$"
+        "body": "\\\\(\\\\mathbf{l}\\\\)"
     "dbk": 
         "prefix": "dbk"
-        "body": "\\\\$\\\\mathbf{k}\\\\$"
+        "body": "\\\\(\\\\mathbf{k}\\\\)"
     "dbj": 
         "prefix": "dbj"
-        "body": "\\\\$\\\\mathbf{j}\\\\$"
+        "body": "\\\\(\\\\mathbf{j}\\\\)"
     "dbi": 
         "prefix": "dbi"
-        "body": "\\\\$\\\\mathbf{i}\\\\$"
+        "body": "\\\\(\\\\mathbf{i}\\\\)"
     "dbh": 
         "prefix": "dbh"
-        "body": "\\\\$\\\\mathbf{h}\\\\$"
+        "body": "\\\\(\\\\mathbf{h}\\\\)"
     "dbg": 
         "prefix": "dbg"
-        "body": "\\\\$\\\\mathbf{g}\\\\$"
+        "body": "\\\\(\\\\mathbf{g}\\\\)"
     "dbf": 
         "prefix": "dbf"
-        "body": "\\\\$\\\\mathbf{f}\\\\$"
+        "body": "\\\\(\\\\mathbf{f}\\\\)"
     "dbe": 
         "prefix": "dbe"
-        "body": "\\\\$\\\\mathbf{e}\\\\$"
+        "body": "\\\\(\\\\mathbf{e}\\\\)"
     "dbd": 
         "prefix": "dbd"
-        "body": "\\\\$\\\\mathbf{d}\\\\$"
+        "body": "\\\\(\\\\mathbf{d}\\\\)"
     "dbc": 
         "prefix": "dbc"
-        "body": "\\\\$\\\\mathbf{c}\\\\$"
+        "body": "\\\\(\\\\mathbf{c}\\\\)"
     "dbb": 
         "prefix": "dbb"
-        "body": "\\\\$\\\\mathbf{b}\\\\$"
+        "body": "\\\\(\\\\mathbf{b}\\\\)"
     "dba": 
         "prefix": "dba"
-        "body": "\\\\$\\\\mathbf{a}\\\\$"
+        "body": "\\\\(\\\\mathbf{a}\\\\)"
     "db9": 
         "prefix": "db9"
-        "body": "\\\\$\\\\mathbf{9}\\\\$"
+        "body": "\\\\(\\\\mathbf{9}\\\\)"
     "db8": 
         "prefix": "db8"
-        "body": "\\\\$\\\\mathbf{8}\\\\$"
+        "body": "\\\\(\\\\mathbf{8}\\\\)"
     "db7": 
         "prefix": "db7"
-        "body": "\\\\$\\\\mathbf{7}\\\\$"
+        "body": "\\\\(\\\\mathbf{7}\\\\)"
     "db6": 
         "prefix": "db6"
-        "body": "\\\\$\\\\mathbf{6}\\\\$"
+        "body": "\\\\(\\\\mathbf{6}\\\\)"
     "db5": 
         "prefix": "db5"
-        "body": "\\\\$\\\\mathbf{5}\\\\$"
+        "body": "\\\\(\\\\mathbf{5}\\\\)"
     "db4": 
         "prefix": "db4"
-        "body": "\\\\$\\\\mathbf{4}\\\\$"
+        "body": "\\\\(\\\\mathbf{4}\\\\)"
     "db3": 
         "prefix": "db3"
-        "body": "\\\\$\\\\mathbf{3}\\\\$"
+        "body": "\\\\(\\\\mathbf{3}\\\\)"
     "db2": 
         "prefix": "db2"
-        "body": "\\\\$\\\\mathbf{2}\\\\$"
+        "body": "\\\\(\\\\mathbf{2}\\\\)"
     "db1": 
         "prefix": "db1"
-        "body": "\\\\$\\\\mathbf{1}\\\\$"
+        "body": "\\\\(\\\\mathbf{1}\\\\)"
     "db0": 
         "prefix": "db0"
-        "body": "\\\\$\\\\mathbf{0}\\\\$"
+        "body": "\\\\(\\\\mathbf{0}\\\\)"
     "d10": 
         "prefix": "d10"
-        "body": "\\\\$10\\\\$"
+        "body": "\\\\(10\\\\)"
     "d0p": 
         "prefix": "d0p"
-        "body": "\\\\$(0)\\\\$"
+        "body": "\\\\((0)\\\\)"
     "csp": 
         "prefix": "csp"
         "body": "\\\\quad"
+    "csd": 
+        "prefix": "csd"
+        "body": "%--------------------------------"
+    "crf": 
+        "prefix": "crf"
+        "body": "\\\\cref{$1}"
     "cr2": 
         "prefix": "cr2"
         "body": "\\\\sqrt[3]{2}"
@@ -4652,6 +3931,9 @@
     "coh": 
         "prefix": "coh"
         "body": "\\\\cosh"
+    "cld": 
+        "prefix": "cld"
+        "body": "%--------------------------------------------------------------------------------"
     "cit": 
         "prefix": "cit"
         "body": "\\\\cite{"
@@ -4661,10 +3943,10 @@
     "cdu": 
         "prefix": "cdu"
         "body": """
-        \\\\[
+        \\\\begin{equation*}
         \\\\begin{CD}
         \\\\end{CD}
-        \\\\]
+        \\\\end{equation*}
         """
     "cds": 
         "prefix": "cds"
@@ -4760,12 +4042,6 @@
         %                                                        %
         %========================================================%
         """
-    "cdv": 
-        "prefix": "cdv"
-        "body": "%--------------------------------------------------------------------------------"
-    "cddv": 
-        "prefix": "cddv"
-        "body": "%================================================================================"
     "cau": 
         "prefix": "cau"
         "body": "\\\\mathcal{$1}"
@@ -4787,9 +4063,6 @@
     "bqm": 
         "prefix": "bqm"
         "body": "``"
-    "bqa": 
-        "prefix": "bqa"
-        "body": "\\\\begin{eqnarray}"
     "bma": 
         "prefix": "bma"
         "body": "\\\\begin{math}"
@@ -4825,7 +4098,7 @@
         "body": "\\\\begin{description}"
     "bdp": 
         "prefix": "bdp"
-        "body": "\\\\["
+        "body": "\\\\begin{equation*}"
     "bdo": 
         "prefix": "bdo"
         "body": "\\\\begin{document}"
@@ -5461,109 +4734,109 @@
         "body": "}"
     "dz": 
         "prefix": "dz"
-        "body": "\\\\$z\\\\$"
+        "body": "\\\\(z\\\\)"
     "dy": 
         "prefix": "dy"
-        "body": "\\\\$y\\\\$"
+        "body": "\\\\(y\\\\)"
     "dx": 
         "prefix": "dx"
-        "body": "\\\\$x\\\\$"
+        "body": "\\\\(x\\\\)"
     "dw": 
         "prefix": "dw"
-        "body": "\\\\$w\\\\$"
+        "body": "\\\\(w\\\\)"
     "dv": 
         "prefix": "dv"
-        "body": "\\\\$v\\\\$"
+        "body": "\\\\(v\\\\)"
     "du": 
         "prefix": "du"
-        "body": "\\\\$u\\\\$"
+        "body": "\\\\(u\\\\)"
     "dt": 
         "prefix": "dt"
-        "body": "\\\\$t\\\\$"
+        "body": "\\\\(t\\\\)"
     "ds": 
         "prefix": "ds"
-        "body": "\\\\$s\\\\$"
+        "body": "\\\\(s\\\\)"
     "dr": 
         "prefix": "dr"
-        "body": "\\\\$r\\\\$"
+        "body": "\\\\(r\\\\)"
     "dq": 
         "prefix": "dq"
-        "body": "\\\\$q\\\\$"
+        "body": "\\\\(q\\\\)"
     "dp": 
         "prefix": "dp"
-        "body": "\\\\$p\\\\$"
+        "body": "\\\\(p\\\\)"
     "dn": 
         "prefix": "dn"
-        "body": "\\\\$n\\\\$"
+        "body": "\\\\(n\\\\)"
     "dm": 
         "prefix": "dm"
-        "body": "\\\\$m\\\\$"
+        "body": "\\\\(m\\\\)"
     "dl": 
         "prefix": "dl"
-        "body": "\\\\$l\\\\$"
+        "body": "\\\\(l\\\\)"
     "dk": 
         "prefix": "dk"
-        "body": "\\\\$k\\\\$"
+        "body": "\\\\(k\\\\)"
     "dj": 
         "prefix": "dj"
-        "body": "\\\\$j\\\\$"
+        "body": "\\\\(j\\\\)"
     "di": 
         "prefix": "di"
-        "body": "\\\\$i\\\\$"
+        "body": "\\\\(i\\\\)"
     "dh": 
         "prefix": "dh"
-        "body": "\\\\$h\\\\$"
+        "body": "\\\\(h\\\\)"
     "dg": 
         "prefix": "dg"
-        "body": "\\\\$g\\\\$"
+        "body": "\\\\(g\\\\)"
     "df": 
         "prefix": "df"
-        "body": "\\\\$f\\\\$"
+        "body": "\\\\(f\\\\)"
     "de": 
         "prefix": "de"
-        "body": "\\\\$e\\\\$"
+        "body": "\\\\(e\\\\)"
     "dd": 
         "prefix": "dd"
-        "body": "\\\\$d\\\\$"
+        "body": "\\\\(d\\\\)"
     "dc": 
         "prefix": "dc"
-        "body": "\\\\$c\\\\$"
+        "body": "\\\\(c\\\\)"
     "db": 
         "prefix": "db"
-        "body": "\\\\$b\\\\$"
+        "body": "\\\\(b\\\\)"
     "da": 
         "prefix": "da"
-        "body": "\\\\$a\\\\$"
+        "body": "\\\\(a\\\\)"
     "d9": 
         "prefix": "d9"
-        "body": "\\\\$9\\\\$"
+        "body": "\\\\(9\\\\)"
     "d8": 
         "prefix": "d8"
-        "body": "\\\\$8\\\\$"
+        "body": "\\\\(8\\\\)"
     "d7": 
         "prefix": "d7"
-        "body": "\\\\$7\\\\$"
+        "body": "\\\\(7\\\\)"
     "d6": 
         "prefix": "d6"
-        "body": "\\\\$6\\\\$"
+        "body": "\\\\(6\\\\)"
     "d5": 
         "prefix": "d5"
-        "body": "\\\\$5\\\\$"
+        "body": "\\\\(5\\\\)"
     "d4": 
         "prefix": "d4"
-        "body": "\\\\$4\\\\$"
+        "body": "\\\\(4\\\\)"
     "d3": 
         "prefix": "d3"
-        "body": "\\\\$3\\\\$"
+        "body": "\\\\(3\\\\)"
     "d2": 
         "prefix": "d2"
-        "body": "\\\\$2\\\\$"
+        "body": "\\\\(2\\\\)"
     "d1": 
         "prefix": "d1"
-        "body": "\\\\$1\\\\$"
+        "body": "\\\\(1\\\\)"
     "d0": 
         "prefix": "d0"
-        "body": "\\\\$0\\\\$"
+        "body": "\\\\(0\\\\)"
     "cu": 
         "prefix": "cu"
         "body": "^3"
