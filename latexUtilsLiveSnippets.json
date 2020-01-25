@@ -888,6 +888,22 @@
         "priority": 5
     },
     {
+        "prefix": "(^|[^\\\\])tebtx  ",
+        "body": "$1\\n%================================================================================\\n\\bibliographystyle{$$1}\\n\\bibliography{$$2}\\n%================================================================================\\n\\end{document}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\bibliographystyle{}",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])teblx  ",
+        "body": "$1\\n%--------------------------------------------------------------------------------\\n\\usepackage[style=numeric]{biblatex}\\n\\ExecuteBibliographyOptions{sorting=none,giveninits=true,maxbibnames=99,uniquename=init}\\n\\DeclareNameAlias{author}{default}\\n%\\renewcommand{\\mkbibnamegiven}[1]{}\\n\\addbibresource{$$1.bib}\\n\\setlength{\\bibitemsep}{\\parsep}\\n%--------------------------------------------------------------------------------",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\usepackage[style=numeric-links,language=british]{biblatex}",
+        "priority": 5
+    },
+    {
         "prefix": "(^|[^\\\\])tebib  ",
         "body": "$1\\n\\begin{thebibliography}{}\\n\\bibitem[]{}   %use ``bibia'' or ``bibib'' to fill in  bibitems\\n\\end{thebibliography}",
         "mode": "text",
@@ -949,14 +965,6 @@
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\left\\{ \\left.  \\!\\right|\\right\\}",
-        "priority": 5
-    },
-    {
-        "prefix": "(^|[^\\\\])setlu  ",
-        "body": "$1\\n\\left\\{ \\left.  \\!\\right|\\n     \\right\\}",
-        "mode": "text",
-        "triggerWhenComplete": true,
-        "description": "\\left\\{ \\left.  \\!\\right|",
         "priority": 5
     },
     {
@@ -1476,7 +1484,7 @@
         "body": "$1\\n\\[\\n\\quad \\text{$$1}\\n\\]",
         "mode": "text",
         "triggerWhenComplete": true,
-        "description": "\\[",
+        "description": "\\[ \\text{}",
         "priority": 5
     },
     {
@@ -2417,35 +2425,11 @@
     },
     {
         "prefix": "(^|[^\\\\])tecs  ",
-        "body": "$1\\n\\begin{cases}\\n$$1\\n\\end{cases}",
+        "body": "$1\\n\\begin{cases}\\n  $$1\\n\\end{cases}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{cases}",
         "priority": 4
-    },
-    {
-        "prefix": "(^|[^\\\\])tebd  ",
-        "body": "$1\\n%--Article Preamble-----------------------------------------------\\n\\documentclass[11pt]{article}\\n% Preamble:\\n\\usepackage{sl-preamble}\\n\\usepackage[margin=1.5in]{geometry}\\n%\\n% ----------------------------------------------------------------\\n\\vfuzz2pt % Don't report over-full v-boxes if over-edge is small\\n\\hfuzz2pt % Don't report over-full h-boxes if over-edge is small\\n%\\numberwithin{equation}{section}\\n%\\renewcommand{\\baselinestretch}{1.5}\\n% ----------------------------------------------------------------\\n% New commands etc.\\n%\\n%================================================================================\\n\\begin{document}\\n%================================================================================",
-        "mode": "text",
-        "triggerWhenComplete": true,
-        "description": "--Article Preamble-----------------------------------------------",
-        "priority": 4
-    },
-    {
-        "prefix": "(^|[^\\\\])tebibx  ",
-        "body": "$1\\n%================================================================================\\n\\bibliographystyle{utcaps_nat}\\n\\bibliography{journals}\\n%================================================================================\\n\\end{document}",
-        "mode": "text",
-        "triggerWhenComplete": true,
-        "description": "\\bibliographystyle{utcaps_nat}",
-        "priority": 6
-    },
-    {
-        "prefix": "(^|[^\\\\])teblx  ",
-        "body": "$1\\n%--------------------------------------------------------------------------------\\n\\usepackage[style=numeric-links,language=british]{biblatex}\\n\\ExecuteBibliographyOptions{sorting=none,giveninits=true,maxbibnames=99,uniquename=init}\\n\\DeclareNameAlias{author}{default}\\n%\\renewcommand{\\mkbibnamegiven}[1]{}\\n\\addbibresource{journals.bib}\\n\\setlength{\\bibitemsep}{\\parsep}\\n%--------------------------------------------------------------------------------",
-        "mode": "text",
-        "triggerWhenComplete": true,
-        "description": "\\usepackage[style=numeric-links,language=british]{biblatex}",
-        "priority": 5
     },
     {
         "prefix": "(^|[^\\\\])tbex  ",
@@ -4204,7 +4188,7 @@
         "body": "$1\\n\\[\\n\\left. f \\left(\\frac{t}{2}\\right)\\right|_{t=0}\\n\\]",
         "mode": "text",
         "triggerWhenComplete": true,
-        "description": "\\[",
+        "description": "\\[ \\left. f (t)\\right|_{t=0}",
         "priority": 4
     },
     {
@@ -5216,6 +5200,14 @@
         "priority": 4
     },
     {
+        "prefix": "(^|[^\\\\])csdd  ",
+        "body": "$1%================================",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "Divider: %=========",
+        "priority": 4
+    },
+    {
         "prefix": "(^|[^\\\\])crlr  ",
         "body": "$1\\n%===============================================================================%\\n%.......10........20........30........40........50........60........70........80%\\n%________|_________|_________|_________|_________|_________|_________|_________|%\\n%===============================================================================%",
         "mode": "text",
@@ -5229,6 +5221,14 @@
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\copyright",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])cpct  ",
+        "body": "$1%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "Divider: %%========",
         "priority": 4
     },
     {
@@ -5256,6 +5256,14 @@
         "priority": 4
     },
     {
+        "prefix": "(^|[^\\\\])cldd  ",
+        "body": "$1%================================================================================",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "Divider: %=========",
+        "priority": 4
+    },
+    {
         "prefix": "(^|[^\\\\])citu  ",
         "body": "$1\\cite{",
         "mode": "any",
@@ -5273,7 +5281,7 @@
     },
     {
         "prefix": "(^|[^\\\\])cdsq  ",
-        "body": "$1\\n\\begin{equation*}\\n \\begin{CD}\\n A @>F>>B\\\\\\n @VGVV  @VVgV \\\\\\n C @>>f>D\\\\\\n \\end{CD}\\n \\end{equation*}",
+        "body": "$1\\n\\begin{equation*}\\n \\begin{CD}\\n A @>F>>B\\\\\\n @VGVV  @VVgV \\\\\\n C @>>f>D\\\\\\n \\end{CD}\\n\\end{equation*}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{equation*}",
@@ -5281,7 +5289,7 @@
     },
     {
         "prefix": "(^|[^\\\\])cdli  ",
-        "body": "$1\\n\\begin{equation*}\\n \\begin{CD}\\n 0 @>>> A @>f>>B @>g>> C @>h>> C/g(B) @>>>0\\n \\end{CD}\\n \\end{equation*}",
+        "body": "$1\\n\\begin{equation*}\\n \\begin{CD}\\n 0 @>>> A @>f>>B @>g>> C @>h>> C/g(B) @>>>0\\n \\end{CD}\\n\\end{equation*}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{equation*}",
@@ -6112,6 +6120,14 @@
         "priority": 3
     },
     {
+        "prefix": "(^|[^\\\\])wtu  ",
+        "body": "$1\\widetilde{$$1}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\widetilde{}",
+        "priority": 3
+    },
+    {
         "prefix": "(^|[^\\\\])wtm  ",
         "body": "$1theorem",
         "mode": "text",
@@ -6165,6 +6181,14 @@
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "i.e.,",
+        "priority": 3
+    },
+    {
+        "prefix": "(^|[^\\\\])whu  ",
+        "body": "$1\\widehat{$$1}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\widehat{}",
         "priority": 3
     },
     {
@@ -6976,14 +7000,6 @@
         "priority": 3
     },
     {
-        "prefix": "(^|[^\\\\])wtu  ",
-        "body": "$1\\widetilde{$$1}",
-        "mode": "maths",
-        "triggerWhenComplete": true,
-        "description": "\\widetilde{}",
-        "priority": 3
-    },
-    {
         "prefix": "(^|[^\\\\])otu  ",
         "body": "$1\\tilde{$$1}",
         "mode": "maths",
@@ -7093,14 +7109,6 @@
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\overline{p}",
-        "priority": 3
-    },
-    {
-        "prefix": "(^|[^\\\\])whu  ",
-        "body": "$1\\widehat{$$1}",
-        "mode": "maths",
-        "triggerWhenComplete": true,
-        "description": "\\widehat{}",
         "priority": 3
     },
     {
@@ -9864,6 +9872,14 @@
         "priority": 3
     },
     {
+        "prefix": "(^|[^\\\\])csd  ",
+        "body": "$1%--------------------------------",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "Divider: %---------",
+        "priority": 3
+    },
+    {
         "prefix": "(^|[^\\\\])cr2  ",
         "body": "$1\\sqrt[3]{2}",
         "mode": "maths",
@@ -9893,6 +9909,14 @@
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\cosh",
+        "priority": 3
+    },
+    {
+        "prefix": "(^|[^\\\\])cld  ",
+        "body": "$1%--------------------------------------------------------------------------------",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "Divider: %---------",
         "priority": 3
     },
     {
@@ -10158,22 +10182,6 @@
         "triggerWhenComplete": true,
         "description": "Divider: %=========;%         ;%=========",
         "priority": 3
-    },
-    {
-        "prefix": "(^|[^\\\\])cdv  ",
-        "body": "$1\\n%--------------------------------------------------------------------------------",
-        "mode": "text",
-        "triggerWhenComplete": true,
-        "description": "Divider: %---------",
-        "priority": 3
-    },
-    {
-        "prefix": "(^|[^\\\\])cddv  ",
-        "body": "$1\\n%================================================================================",
-        "mode": "text",
-        "triggerWhenComplete": true,
-        "description": "Divider: %=========",
-        "priority": 4
     },
     {
         "prefix": "(^|[^\\\\])cau  ",

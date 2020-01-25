@@ -977,6 +977,27 @@
         \\\\topmargin -.5 truein
         \\\\textheight 8.5in
         """
+    "tebtx": 
+        "prefix": "tebtx"
+        "body": """
+        %================================================================================
+        \\\\bibliographystyle{$1}
+        \\\\bibliography{$2}
+        %================================================================================
+        \\\\end{document}
+        """
+    "teblx": 
+        "prefix": "teblx"
+        "body": """
+        %--------------------------------------------------------------------------------
+        \\\\usepackage[style=numeric]{biblatex}
+        \\\\ExecuteBibliographyOptions{sorting=none,giveninits=true,maxbibnames=99,uniquename=init}
+        \\\\DeclareNameAlias{author}{default}
+        %\\\\renewcommand{\\\\mkbibnamegiven}[1]{}
+        \\\\addbibresource{$1.bib}
+        \\\\setlength{\\\\bibitemsep}{\\\\parsep}
+        %--------------------------------------------------------------------------------
+        """
     "tebib": 
         "prefix": "tebib"
         "body": """
@@ -1026,10 +1047,7 @@
         "body": "\\\\sum_j"
     "setlu": 
         "prefix": "setlu"
-        "body": """
-        \\\\left\\\\{ \\\\left.  \\\\!\\\\right|
-             \\\\right\\\\}
-        """
+        "body": "\\\\left\\\\{ \\\\left.  \\\\!\\\\right|\\\\right\\\\}"
     "setcu": 
         "prefix": "setcu"
         "body": "\\\\setcounter{"
@@ -1661,50 +1679,8 @@
         "prefix": "tecs"
         "body": """
         \\\\begin{cases}
-        $1
+          $1
         \\\\end{cases}
-        """
-    "tebd": 
-        "prefix": "tebd"
-        "body": """
-        %--Article Preamble-----------------------------------------------
-        \\\\documentclass[11pt]{article}
-        % Preamble:
-        \\\\usepackage{sl-preamble}
-        \\\\usepackage[margin=1.5in]{geometry}
-        %
-        % ----------------------------------------------------------------
-        \\\\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
-        \\\\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
-        %\\\\numberwithin{equation}{section}
-        %\\\\renewcommand{\\\\baselinestretch}{1.5}
-        % ----------------------------------------------------------------
-        % New commands etc.
-        %
-        %================================================================================
-        \\\\begin{document}
-        %================================================================================
-        """
-    "tebibx": 
-        "prefix": "tebibx"
-        "body": """
-        %================================================================================
-        \\\\bibliographystyle{utcaps_nat}
-        \\\\bibliography{journals}
-        %================================================================================
-        \\\\end{document}
-        """
-    "teblx": 
-        "prefix": "teblx"
-        "body": """
-        %--------------------------------------------------------------------------------
-        \\\\usepackage[style=numeric-links,language=british]{biblatex}
-        \\\\ExecuteBibliographyOptions{sorting=none,giveninits=true,maxbibnames=99,uniquename=init}
-        \\\\DeclareNameAlias{author}{default}
-        %\\\\renewcommand{\\\\mkbibnamegiven}[1]{}
-        \\\\addbibresource{journals.bib}
-        \\\\setlength{\\\\bibitemsep}{\\\\parsep}
-        %--------------------------------------------------------------------------------
         """
     "tbex": 
         "prefix": "tbex"
@@ -2870,6 +2846,9 @@
     "d00p": 
         "prefix": "d00p"
         "body": "\\\\$(0,0)\\\\$"
+    "csdd": 
+        "prefix": "csdd"
+        "body": "%================================"
     "crlr": 
         "prefix": "crlr"
         "body": """
@@ -2881,6 +2860,9 @@
     "cprt": 
         "prefix": "cprt"
         "body": "\\\\copyright"
+    "cpct": 
+        "prefix": "cpct"
+        "body": "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
     "coth": 
         "prefix": "coth"
         "body": "\\\\cos \\\\theta"
@@ -2890,6 +2872,9 @@
     "clin": 
         "prefix": "clin"
         "body": "\\\\centerline{$1}"
+    "cldd": 
+        "prefix": "cldd"
+        "body": "%================================================================================"
     "citu": 
         "prefix": "citu"
         "body": "\\\\cite{"
@@ -2905,7 +2890,7 @@
          @VGVV  @VVgV \\\\\\\\
          C @>>f>D\\\\\\\\
          \\\\end{CD}
-         \\\\end{equation*}
+        \\\\end{equation*}
         """
     "cdli": 
         "prefix": "cdli"
@@ -2914,7 +2899,7 @@
          \\\\begin{CD}
          0 @>>> A @>f>>B @>g>> C @>h>> C/g(B) @>>>0
          \\\\end{CD}
-         \\\\end{equation*}
+        \\\\end{equation*}
         """
     "capt": 
         "prefix": "capt"
@@ -3225,6 +3210,9 @@
     "wty": 
         "prefix": "wty"
         "body": "theory"
+    "wtu": 
+        "prefix": "wtu"
+        "body": "\\\\widetilde{$1}"
     "wtm": 
         "prefix": "wtm"
         "body": "theorem"
@@ -3246,6 +3234,9 @@
     "wie": 
         "prefix": "wie"
         "body": "i.e.,"
+    "whu": 
+        "prefix": "whu"
+        "body": "\\\\widehat{$1}"
     "wgm": 
         "prefix": "wgm"
         "body": "geometry"
@@ -3546,9 +3537,6 @@
     "ova": 
         "prefix": "ova"
         "body": "\\\\vec{a}"
-    "wtu": 
-        "prefix": "wtu"
-        "body": "\\\\widetilde{$1}"
     "otu": 
         "prefix": "otu"
         "body": "\\\\tilde{$1}"
@@ -3591,9 +3579,6 @@
     "olp": 
         "prefix": "olp"
         "body": "\\\\overline{p}"
-    "whu": 
-        "prefix": "whu"
-        "body": "\\\\widehat{$1}"
     "ohz": 
         "prefix": "ohz"
         "body": "\\\\hat{z}"
@@ -4640,6 +4625,9 @@
     "csp": 
         "prefix": "csp"
         "body": "\\\\quad"
+    "csd": 
+        "prefix": "csd"
+        "body": "%--------------------------------"
     "cr2": 
         "prefix": "cr2"
         "body": "\\\\sqrt[3]{2}"
@@ -4652,6 +4640,9 @@
     "coh": 
         "prefix": "coh"
         "body": "\\\\cosh"
+    "cld": 
+        "prefix": "cld"
+        "body": "%--------------------------------------------------------------------------------"
     "cit": 
         "prefix": "cit"
         "body": "\\\\cite{"
@@ -4760,12 +4751,6 @@
         %                                                        %
         %========================================================%
         """
-    "cdv": 
-        "prefix": "cdv"
-        "body": "%--------------------------------------------------------------------------------"
-    "cddv": 
-        "prefix": "cddv"
-        "body": "%================================================================================"
     "cau": 
         "prefix": "cau"
         "body": "\\\\mathcal{$1}"
