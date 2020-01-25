@@ -1314,6 +1314,33 @@
         "description": "\\textwidth 6.5 truein"
     },
     {
+        "prefix": "tebtx",
+        "body": [
+            "%================================================================================",
+            "\\bibliographystyle{$1}",
+            "\\bibliography{$2}",
+            "%================================================================================",
+            "\\end{document}"
+        ],
+        "mode": "text",
+        "description": "\\bibliographystyle{}"
+    },
+    {
+        "prefix": "teblx",
+        "body": [
+            "%--------------------------------------------------------------------------------",
+            "\\usepackage[style=numeric]{biblatex}",
+            "\\ExecuteBibliographyOptions{sorting=none,giveninits=true,maxbibnames=99,uniquename=init}",
+            "\\DeclareNameAlias{author}{default}",
+            "%\\renewcommand{\\mkbibnamegiven}[1]{}",
+            "\\addbibresource{$1.bib}",
+            "\\setlength{\\bibitemsep}{\\parsep}",
+            "%--------------------------------------------------------------------------------"
+        ],
+        "mode": "text",
+        "description": "\\usepackage[style=numeric-links,language=british]{biblatex}"
+    },
+    {
         "prefix": "tebib",
         "body": [
             "\\begin{thebibliography}{}",
@@ -2578,57 +2605,6 @@
         ],
         "mode": "text",
         "description": "\\begin{cases}"
-    },
-    {
-        "prefix": "tebd",
-        "body": [
-            "%--Article Preamble-----------------------------------------------",
-            "\\documentclass[11pt]{article}",
-            "% Preamble:",
-            "\\usepackage{sl-preamble}",
-            "\\usepackage[margin=1.5in]{geometry}",
-            "%",
-            "% ----------------------------------------------------------------",
-            "\\vfuzz2pt % Don't report over-full v-boxes if over-edge is small",
-            "\\hfuzz2pt % Don't report over-full h-boxes if over-edge is small",
-            "%\\numberwithin{equation}{section}",
-            "%\\renewcommand{\\baselinestretch}{1.5}",
-            "% ----------------------------------------------------------------",
-            "% New commands etc.",
-            "%",
-            "%================================================================================",
-            "\\begin{document}",
-            "%================================================================================"
-        ],
-        "mode": "text",
-        "description": "--Article Preamble-----------------------------------------------"
-    },
-    {
-        "prefix": "tebibx",
-        "body": [
-            "%================================================================================",
-            "\\bibliographystyle{utcaps_nat}",
-            "\\bibliography{journals}",
-            "%================================================================================",
-            "\\end{document}"
-        ],
-        "mode": "text",
-        "description": "\\bibliographystyle{utcaps_nat}"
-    },
-    {
-        "prefix": "teblx",
-        "body": [
-            "%--------------------------------------------------------------------------------",
-            "\\usepackage[style=numeric-links,language=british]{biblatex}",
-            "\\ExecuteBibliographyOptions{sorting=none,giveninits=true,maxbibnames=99,uniquename=init}",
-            "\\DeclareNameAlias{author}{default}",
-            "%\\renewcommand{\\mkbibnamegiven}[1]{}",
-            "\\addbibresource{journals.bib}",
-            "\\setlength{\\bibitemsep}{\\parsep}",
-            "%--------------------------------------------------------------------------------"
-        ],
-        "mode": "text",
-        "description": "\\usepackage[style=numeric-links,language=british]{biblatex}"
     },
     {
         "prefix": "tbex",
@@ -5542,6 +5518,12 @@
         "description": "theory"
     },
     {
+        "prefix": "wtu",
+        "body": "\\widetilde{$1}",
+        "mode": "maths",
+        "description": "\\widetilde{}"
+    },
+    {
         "prefix": "wtm",
         "body": "theorem",
         "mode": "text",
@@ -5582,6 +5564,12 @@
         "body": "i.e.,",
         "mode": "text",
         "description": "i.e.,"
+    },
+    {
+        "prefix": "whu",
+        "body": "\\widehat{$1}",
+        "mode": "maths",
+        "description": "\\widehat{}"
     },
     {
         "prefix": "wgm",
@@ -6190,12 +6178,6 @@
         "description": "\\vec{a}"
     },
     {
-        "prefix": "wtu",
-        "body": "\\widetilde{$1}",
-        "mode": "maths",
-        "description": "\\widetilde{}"
-    },
-    {
         "prefix": "otu",
         "body": "\\tilde{$1}",
         "mode": "maths",
@@ -6278,12 +6260,6 @@
         "body": "\\overline{p}",
         "mode": "maths",
         "description": "\\overline{p}"
-    },
-    {
-        "prefix": "whu",
-        "body": "\\widehat{$1}",
-        "mode": "maths",
-        "description": "\\widehat{}"
     },
     {
         "prefix": "ohz",
