@@ -2573,7 +2573,7 @@
         "prefix": "tecs",
         "body": [
             "\\begin{cases}",
-            "$1",
+            "  $1",
             "\\end{cases}"
         ],
         "mode": "text",
@@ -4833,6 +4833,12 @@
         "description": "$(0,0)$"
     },
     {
+        "prefix": "csdd",
+        "body": "%================================",
+        "mode": "text",
+        "description": "Divider: %========="
+    },
+    {
         "prefix": "crlr",
         "body": [
             "%===============================================================================%",
@@ -4848,6 +4854,12 @@
         "body": "\\copyright",
         "mode": "any",
         "description": "\\copyright"
+    },
+    {
+        "prefix": "cpct",
+        "body": "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
+        "mode": "text",
+        "description": "Divider: %%========"
     },
     {
         "prefix": "coth",
@@ -4866,6 +4878,12 @@
         "body": "\\centerline{$1}",
         "mode": "any",
         "description": "\\centerline{}"
+    },
+    {
+        "prefix": "cldd",
+        "body": "%================================================================================",
+        "mode": "text",
+        "description": "Divider: %========="
     },
     {
         "prefix": "citu",
@@ -4888,7 +4906,7 @@
             " @VGVV  @VVgV \\\\",
             " C @>>f>D\\\\",
             " \\end{CD}",
-            " \\end{equation*}"
+            "\\end{equation*}"
         ],
         "mode": "text",
         "description": "\\begin{equation*}"
@@ -4900,7 +4918,7 @@
             " \\begin{CD}",
             " 0 @>>> A @>f>>B @>g>> C @>h>> C/g(B) @>>>0",
             " \\end{CD}",
-            " \\end{equation*}"
+            "\\end{equation*}"
         ],
         "mode": "text",
         "description": "\\begin{equation*}"
@@ -8349,6 +8367,12 @@
         "description": "\\quad"
     },
     {
+        "prefix": "csd",
+        "body": "%--------------------------------",
+        "mode": "text",
+        "description": "Divider: %---------"
+    },
+    {
         "prefix": "cr2",
         "body": "\\sqrt[3]{2}",
         "mode": "maths",
@@ -8371,6 +8395,12 @@
         "body": "\\cosh",
         "mode": "any",
         "description": "\\cosh"
+    },
+    {
+        "prefix": "cld",
+        "body": "%--------------------------------------------------------------------------------",
+        "mode": "text",
+        "description": "Divider: %---------"
     },
     {
         "prefix": "cit",
@@ -8578,22 +8608,6 @@
         ],
         "mode": "text",
         "description": "Divider: %=========;%         ;%========="
-    },
-    {
-        "prefix": "cdv",
-        "body": [
-            "%--------------------------------------------------------------------------------"
-        ],
-        "mode": "text",
-        "description": "Divider: %---------"
-    },
-    {
-        "prefix": "cddv",
-        "body": [
-            "%================================================================================"
-        ],
-        "mode": "text",
-        "description": "Divider: %========="
     },
     {
         "prefix": "cau",
