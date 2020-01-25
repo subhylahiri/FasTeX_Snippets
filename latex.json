@@ -1,5 +1,5 @@
 {
-    "latex2e--te2letter": {
+    "teletter": {
         "prefix": "teletter",
         "body": [
             "%&latex2e--te2letter",
@@ -20,8 +20,8 @@
         ],
         "description": "latex2e--te2letter"
     },
-    "\\begin{bmatrix}": {
-        "prefix": "mx2i",
+    "mx3b35pt": {
+        "prefix": "mx3b35pt",
         "body": [
             "\\begin{bmatrix}",
             "a & b & c \\\\ [35pt]",
@@ -31,7 +31,7 @@
         ],
         "description": "\\begin{bmatrix}"
     },
-    "\\theoremstyle{plain} %--default": {
+    "thmsty": {
         "prefix": "thmsty",
         "body": [
             "\\theoremstyle{plain} %--default",
@@ -61,7 +61,7 @@
         ],
         "description": "\\theoremstyle{plain} %--default"
     },
-    "\\begin{center}": {
+    "tabex1": {
         "prefix": "tabex1",
         "body": [
             "\\begin{center}",
@@ -80,7 +80,7 @@
         ],
         "description": "\\begin{center}"
     },
-    "\\fbox{\\fbox{\\parbox{2.0in}{": {
+    "dfrbox": {
         "prefix": "dfrbox",
         "body": [
             "\\fbox{\\fbox{\\parbox{2.0in}{",
@@ -88,7 +88,7 @@
         ],
         "description": "\\fbox{\\fbox{\\parbox{2.0in}{"
     },
-    "\\bibliographystyle{utcaps_nat}": {
+    "tebtx": {
         "prefix": "tebtx",
         "body": [
             "%================================================================================",
@@ -99,7 +99,7 @@
         ],
         "description": "\\bibliographystyle{utcaps_nat}"
     },
-    "\\usepackage[style=numeric-links,language=british]{biblatex}": {
+    "teblx": {
         "prefix": "teblx",
         "body": [
             "%--------------------------------------------------------------------------------",
@@ -113,7 +113,7 @@
         ],
         "description": "\\usepackage[style=numeric-links,language=british]{biblatex}"
     },
-    "\\begin{acknowledgment}": {
+    "teack": {
         "prefix": "teack",
         "body": [
             "\\begin{acknowledgment}",
@@ -122,7 +122,7 @@
         ],
         "description": "\\begin{acknowledgment}"
     },
-    "\\begin{abstract}": {
+    "teabs": {
         "prefix": "teabs",
         "body": [
             "\\begin{abstract}",
@@ -131,7 +131,7 @@
         ],
         "description": "\\begin{abstract}"
     },
-    "\\begin{psmallmatrix}": {
+    "mxspu": {
         "prefix": "mxspu",
         "body": [
             "\\begin{psmallmatrix}",
@@ -141,7 +141,7 @@
         ],
         "description": "\\begin{psmallmatrix}"
     },
-    "\\begin{bsmallmatrix}": {
+    "mxsbu": {
         "prefix": "mxsbu",
         "body": [
             "\\begin{bsmallmatrix}",
@@ -151,7 +151,7 @@
         ],
         "description": "\\begin{bsmallmatrix}"
     },
-    "\\begin{Vmatrix}": {
+    "mxcvu": {
         "prefix": "mxcvu",
         "body": [
             "\\begin{Vmatrix}",
@@ -161,30 +161,49 @@
         ],
         "description": "\\begin{Vmatrix}"
     },
-    "\\begin{equation*}": {
-        "prefix": "cdli",
+    "mx2bk": {
+        "prefix": "mx2bk",
+        "body": [
+            "\\begin{bmatrix}",
+            " a & b \\\\",
+            " c & d",
+            "\\end{bmatrix}"
+        ],
+        "description": "\\begin{bmatrix}"
+    },
+    "eqtxt": {
+        "prefix": "eqtxt",
         "body": [
             "\\begin{equation*}",
-            " \\begin{CD}",
-            " 0 @>>> A @>f>>B @>g>> C @>h>> C/g(B) @>>>0",
-            " \\end{CD}",
+            "\\quad \\text$0}",
             "\\end{equation*}"
         ],
         "description": "\\begin{equation*}"
     },
-    "\\begin{equation}": {
-        "prefix": "eqad",
+    "eqlbr": {
+        "prefix": "eqlbr",
         "body": [
             "\\begin{equation}",
-            " \\begin{aligned}",
-            " {}&a = b + c \\\\",
-            " {}&d = e + f + g",
+            "\\left.",
+            "\\begin{aligned}",
+            "&x = y           \\\\",
+            "&a = b^2 + b + 1",
             "\\end{aligned}",
+            "\\right\\}",
             "\\end{equation}"
         ],
         "description": "\\begin{equation}"
     },
-    "\\begin{align*}": {
+    "eqbox": {
+        "prefix": "eqbox",
+        "body": [
+            "\\begin{equation}",
+            "\\fbox{\\parbox{.7in}{\\$\\displaystyle{\\frac{x^2 + 1}{5} = y}\\$ }}",
+            "\\end{equation}"
+        ],
+        "description": "\\begin{equation}"
+    },
+    "eqaun": {
         "prefix": "eqaun",
         "body": [
             "\\begin{align*}",
@@ -194,7 +213,7 @@
         ],
         "description": "\\begin{align*}"
     },
-    "\\begin{align}": {
+    "eqanu": {
         "prefix": "eqanu",
         "body": [
             "\\begin{align}",
@@ -204,7 +223,7 @@
         ],
         "description": "\\begin{align}"
     },
-    "\\begin{cases}": {
+    "tecs": {
         "prefix": "tecs",
         "body": [
             "\\begin{cases}",
@@ -213,7 +232,7 @@
         ],
         "description": "\\begin{cases}"
     },
-    "--Article Preamble-----------------------------------------------": {
+    "tebd": {
         "prefix": "tebd",
         "body": [
             "%--Article Preamble-----------------------------------------------",
@@ -236,7 +255,7 @@
         ],
         "description": "--Article Preamble-----------------------------------------------"
     },
-    "\\begin{tabbing}": {
+    "tbex": {
         "prefix": "tbex",
         "body": [
             "\\begin{tabbing}",
@@ -247,7 +266,7 @@
         ],
         "description": "\\begin{tabbing}"
     },
-    "\\begin{table}[ht]                 %optional [t, b or h];": {
+    "tabl": {
         "prefix": "tabl",
         "body": [
             "\\begin{table}[ht]                 %optional [t, b or h];",
@@ -263,7 +282,79 @@
         ],
         "description": "\\begin{table}[ht]                 %optional [t, b or h];"
     },
-    "\\begin{vmatrix}": {
+    "mxvu": {
+        "prefix": "mxvu",
+        "body": [
+            "\\begin{vmatrix}",
+            "...&...\\\\",
+            "...&...",
+            "\\end{vmatrix}"
+        ],
+        "description": "\\begin{vmatrix}"
+    },
+    "mxsu": {
+        "prefix": "mxsu",
+        "body": [
+            "\\begin{smallmatrix}",
+            "...&...\\\\",
+            "...&...",
+            "\\end{smallmatrix}"
+        ],
+        "description": "\\begin{smallmatrix}"
+    },
+    "mxpu": {
+        "prefix": "mxpu",
+        "body": [
+            "\\begin{pmatrix}",
+            "...&...\\\\",
+            "...&...",
+            "\\end{pmatrix}"
+        ],
+        "description": "\\begin{pmatrix}"
+    },
+    "mxcb": {
+        "prefix": "mxcb",
+        "body": [
+            "\\begin{bmatrix}",
+            "x  \\\\",
+            "y",
+            "\\end{bmatrix}"
+        ],
+        "description": "\\begin{bmatrix}"
+    },
+    "mxbu": {
+        "prefix": "mxbu",
+        "body": [
+            "\\begin{bmatrix}",
+            "...&...\\\\",
+            "...&...",
+            "\\end{bmatrix}"
+        ],
+        "description": "\\begin{bmatrix}"
+    },
+    "mx3p": {
+        "prefix": "mx3p",
+        "body": [
+            "\\begin{pmatrix}",
+            "a & b & c \\\\",
+            "d & e & f \\\\",
+            "g & h & i",
+            "\\end{pmatrix}"
+        ],
+        "description": "\\begin{pmatrix}"
+    },
+    "mx3i": {
+        "prefix": "mx3i",
+        "body": [
+            "\\begin{pmatrix}",
+            " 1 & 0 & 0 \\\\",
+            " 0 & 1 & 0 \\\\",
+            " 0 & 0 & 1",
+            "\\end{pmatrix}"
+        ],
+        "description": "\\begin{pmatrix}"
+    },
+    "mx3d": {
         "prefix": "mx3d",
         "body": [
             "\\begin{vmatrix}",
@@ -274,28 +365,48 @@
         ],
         "description": "\\begin{vmatrix}"
     },
-    "\\begin{smallmatrix}": {
-        "prefix": "mxsu",
+    "mx3b": {
+        "prefix": "mx3b",
         "body": [
-            "\\begin{smallmatrix}",
-            "...&...\\\\",
-            "...&...",
-            "\\end{smallmatrix}"
+            "\\begin{bmatrix}",
+            "a & b & c \\\\",
+            "d & e & f \\\\",
+            "g & h & i",
+            "\\end{bmatrix}"
         ],
-        "description": "\\begin{smallmatrix}"
+        "description": "\\begin{bmatrix}"
     },
-    "\\begin{pmatrix}": {
-        "prefix": "mxc",
+    "mx2s": {
+        "prefix": "mx2s",
+        "body": [
+            "\\begin{bmatrix}",
+            " 0 & 1 \\\\",
+            "-1 & 0",
+            "\\end{bmatrix}"
+        ],
+        "description": "\\begin{bmatrix}"
+    },
+    "mx2p": {
+        "prefix": "mx2p",
         "body": [
             "\\begin{pmatrix}",
-            " x_1  \\\\",
-            " x_2  \\\\",
-            " x_3",
+            " a & b \\\\",
+            " c & d",
             "\\end{pmatrix}"
         ],
         "description": "\\begin{pmatrix}"
     },
-    "\\begin{figure}[ht]": {
+    "mx2i": {
+        "prefix": "mx2i",
+        "body": [
+            "\\begin{bmatrix}",
+            "1 & 0 \\\\",
+            "0 & 1",
+            "\\end{bmatrix}"
+        ],
+        "description": "\\begin{bmatrix}"
+    },
+    "figu": {
         "prefix": "figu",
         "body": [
             "\\begin{figure}[ht]",
@@ -307,7 +418,49 @@
         ],
         "description": "\\begin{figure}[ht]"
     },
-    "Divider: %=========;%.......10;%________|;%=========": {
+    "equn": {
+        "prefix": "equn",
+        "body": [
+            "\\begin{equation*}",
+            "F(b)-F(a)=\\int^b_af(x)\\, dx",
+            "\\end{equation*}"
+        ],
+        "description": "\\begin{equation*}"
+    },
+    "eqsp": {
+        "prefix": "eqsp",
+        "body": [
+            "\\begin{equation}",
+            "\\begin{split}",
+            "a  =  b &+ c + (c + d)  \\\\",
+            "        &{}- e + f",
+            "\\end{split}",
+            "\\end{equation}"
+        ],
+        "description": "\\begin{equation}"
+    },
+    "eqnu": {
+        "prefix": "eqnu",
+        "body": [
+            "\\begin{equation}",
+            "F(b)-F(a)=\\int^b_af(x)\\, d$0",
+            "\\end{equation}"
+        ],
+        "description": "\\begin{equation}"
+    },
+    "eqad": {
+        "prefix": "eqad",
+        "body": [
+            "\\begin{equation}",
+            " \\begin{aligned}",
+            " {}&a = b + c \\\\",
+            " {}&d = e + f + g",
+            "\\end{aligned}",
+            "\\end{equation}"
+        ],
+        "description": "\\begin{equation}"
+    },
+    "crlr": {
         "prefix": "crlr",
         "body": [
             "%===============================================================================%",
@@ -317,7 +470,31 @@
         ],
         "description": "Divider: %=========;%.......10;%________|;%========="
     },
-    "\\begin{matrix}": {
+    "cdsq": {
+        "prefix": "cdsq",
+        "body": [
+            "\\begin{equation*}",
+            " \\begin{CD}",
+            " A @>F>>B\\\\",
+            " @VGVV  @VVgV \\\\",
+            " C @>>f>D\\\\",
+            " \\end{CD}",
+            "\\end{equation*}"
+        ],
+        "description": "\\begin{equation*}"
+    },
+    "cdli": {
+        "prefix": "cdli",
+        "body": [
+            "\\begin{equation*}",
+            " \\begin{CD}",
+            " 0 @>>> A @>f>>B @>g>> C @>h>> C/g(B) @>>>0",
+            " \\end{CD}",
+            "\\end{equation*}"
+        ],
+        "description": "\\begin{equation*}"
+    },
+    "mxu": {
         "prefix": "mxu",
         "body": [
             "\\begin{matrix}",
@@ -327,7 +504,18 @@
         ],
         "description": "\\begin{matrix}"
     },
-    "\\begin{CD}": {
+    "mxc": {
+        "prefix": "mxc",
+        "body": [
+            "\\begin{pmatrix}",
+            " x_1  \\\\",
+            " x_2  \\\\",
+            " x_3",
+            "\\end{pmatrix}"
+        ],
+        "description": "\\begin{pmatrix}"
+    },
+    "cdu": {
         "prefix": "cdu",
         "body": [
             "\\begin{equation*}",
@@ -337,7 +525,7 @@
         ],
         "description": "\\begin{CD}"
     },
-    "Divider: %=========;%         ;%=========": {
+    "cbx": {
         "prefix": "cbx",
         "body": [
             "%========================================================%",
