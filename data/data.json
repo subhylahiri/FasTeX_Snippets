@@ -717,15 +717,6 @@
         "description": "\\left\\{ \\left.  \\!\\right|\\right\\}"
     },
     {
-        "prefix": "setlu",
-        "body": [
-            "\\left\\{ \\left.  \\!\\right|",
-            "     \\right\\}"
-        ],
-        "mode": "text",
-        "description": "\\left\\{ \\left.  \\!\\right|"
-    },
-    {
         "prefix": "setcu",
         "body": "\\setcounter{",
         "mode": "any",
@@ -914,28 +905,24 @@
     {
         "prefix": "mxspu",
         "body": [
-            "\\left(",
-            "\\begin{smallmatrix}",
+            "\\begin{psmallmatrix}",
             "...&...\\\\",
             "...&...",
-            "\\end{smallmatrix}",
-            "\\right)"
+            "\\end{psmallmatrix}"
         ],
         "mode": "maths",
-        "description": "\\left("
+        "description": "\\begin{psmallmatrix}"
     },
     {
         "prefix": "mxsbu",
         "body": [
-            "\\left[",
-            "\\begin{smallmatrix}",
+            "\\begin{bsmallmatrix}",
             "...&...\\\\",
             "...&...",
-            "\\end{smallmatrix}",
-            "\\right]"
+            "\\end{bsmallmatrix}"
         ],
         "mode": "maths",
-        "description": "\\left["
+        "description": "\\begin{bsmallmatrix}"
     },
     {
         "prefix": "mxcvu",
@@ -1018,17 +1005,6 @@
         "body": "\\lim_{x \\rightarrow x_0}",
         "mode": "maths",
         "description": "\\lim_{x \\rightarrow x_0}"
-    },
-    {
-        "prefix": "lequs",
-        "body": [
-            "\\begin{eqnarray*}",
-            "\\lefteqn{}\\\\",
-            "& &",
-            "\\end{eqnarray*}"
-        ],
-        "mode": "text",
-        "description": "\\begin{eqnarray*}"
     },
     {
         "prefix": "intxt",
@@ -1123,12 +1099,12 @@
     {
         "prefix": "eqtxt",
         "body": [
-            "\\[",
+            "\\begin{equation*}",
             "\\quad \\text{$1}",
-            "\\]"
+            "\\end{equation*}"
         ],
         "mode": "text",
-        "description": "\\["
+        "description": "\\begin{equation*}"
     },
     {
         "prefix": "eqlbr",
@@ -2552,14 +2528,14 @@
     {
         "prefix": "mx3d",
         "body": [
-            "\\left| \\begin{matrix}",
+            "\\begin{vmatrix}",
             "a & b & c \\\\",
             "d & e & f \\\\",
             "g & h & i",
-            "\\end{matrix} \\right|"
+            "\\end{vmatrix}"
         ],
         "mode": "maths",
-        "description": "\\left| \\begin{matrix}"
+        "description": "\\begin{vmatrix}"
     },
     {
         "prefix": "mx3b",
@@ -2901,17 +2877,6 @@
         "description": "\\lim_{(x,y) \\rightarrow (0,0)}"
     },
     {
-        "prefix": "lequ",
-        "body": [
-            "\\begin{eqnarray}",
-            "\\lefteqn{} \\nonumber \\\\",
-            "& &",
-            "\\end{eqnarray}"
-        ],
-        "mode": "text",
-        "description": "\\begin{eqnarray}"
-    },
-    {
         "prefix": "lebr",
         "body": "\\left\\{",
         "mode": "maths",
@@ -2994,19 +2959,6 @@
         "body": "\\Leftarrow",
         "mode": "any",
         "description": "\\Leftarrow"
-    },
-    {
-        "prefix": "illu",
-        "body": [
-            "\\begin{figure}",
-            "\\begin{center}",
-            "       \\special{illustration } %add eps filename",
-            "\\caption{\\label{}}",
-            "\\end{center}",
-            "\\end{figure}"
-        ],
-        "mode": "text",
-        "description": "\\begin{figure}"
     },
     {
         "prefix": "ilcd",
@@ -3259,7 +3211,7 @@
         "body": [
             "\\begin{figure}[ht]",
             "\\begin{center}",
-            "  \\includegraphics{}",
+            "  \\includegraphics{$1}",
             "\\caption{\\label{}}",
             "\\end{center}",
             "\\end{figure}"
@@ -3293,13 +3245,9 @@
     },
     {
         "prefix": "eval",
-        "body": [
-            "\\[",
-            "\\left. f \\left(\\frac{t}{2}\\right)\\right|_{t=0}",
-            "\\]"
-        ],
+        "body": "\\left. f \\left(\\frac{t}{2}\\right)\\right|_{t=0}",
         "mode": "text",
-        "description": "\\["
+        "description": "\\left. f \\right|_{t=0}"
     },
     {
         "prefix": "ethm",
@@ -3340,12 +3288,12 @@
     {
         "prefix": "equn",
         "body": [
-            "\\[",
+            "\\begin{equation*}",
             "F(b)-F(a)=\\int^b_af(x)\\, dx",
-            "\\]"
+            "\\end{equation*}"
         ],
         "mode": "text",
-        "description": "\\["
+        "description": "\\begin{equation*}"
     },
     {
         "prefix": "eqst",
@@ -3375,12 +3323,6 @@
         ],
         "mode": "text",
         "description": "\\begin{equation}"
-    },
-    {
-        "prefix": "eqas",
-        "body": "\\end{eqnarray*}",
-        "mode": "any",
-        "description": "\\end{eqnarray*}"
     },
     {
         "prefix": "eqad",
@@ -4253,18 +4195,6 @@
         "body": "\\begin{question}",
         "mode": "any",
         "description": "\\begin{question}"
-    },
-    {
-        "prefix": "bqas",
-        "body": "\\begin{eqnarray*}",
-        "mode": "any",
-        "description": "\\begin{eqnarray*}"
-    },
-    {
-        "prefix": "bqal",
-        "body": "\\begin{eqnarray}\\label{$1}",
-        "mode": "any",
-        "description": "\\begin{eqnarray}\\label{}"
     },
     {
         "prefix": "bprf",
@@ -6984,12 +6914,6 @@
         "description": "''"
     },
     {
-        "prefix": "eqa",
-        "body": "\\end{eqnarray}",
-        "mode": "any",
-        "description": "\\end{eqnarray}"
-    },
-    {
         "prefix": "emu",
         "body": "\\emph{$1}",
         "mode": "any",
@@ -7051,9 +6975,9 @@
     },
     {
         "prefix": "edp",
-        "body": "\\]",
+        "body": "\\end{equation*}",
         "mode": "any",
-        "description": "\\]"
+        "description": "\\end{equation*}"
     },
     {
         "prefix": "edo",
@@ -7676,13 +7600,13 @@
     {
         "prefix": "cdu",
         "body": [
-            "\\[",
+            "\\begin{equation*}",
             "\\begin{CD}",
             "\\end{CD}",
-            "\\]"
+            "\\end{equation*}"
         ],
         "mode": "text",
-        "description": "\\["
+        "description": "\\begin{CD}"
     },
     {
         "prefix": "cds",
@@ -7911,12 +7835,6 @@
         "description": "``"
     },
     {
-        "prefix": "bqa",
-        "body": "\\begin{eqnarray}",
-        "mode": "any",
-        "description": "\\begin{eqnarray}"
-    },
-    {
         "prefix": "bma",
         "body": "\\begin{math}",
         "mode": "any",
@@ -7984,9 +7902,9 @@
     },
     {
         "prefix": "bdp",
-        "body": "\\[",
+        "body": "\\begin{equation*}",
         "mode": "any",
-        "description": "\\["
+        "description": "\\begin{equation*}"
     },
     {
         "prefix": "bdo",
