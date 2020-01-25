@@ -78,3 +78,9 @@ My preference is to use the Live Snippets, overwriting the defaults, and enablin
 If you open the jupyter notebook `custom.ipynb`, you will see the options listed.
 You can make any changes you want and then run the appropriate cells to generate your file.
 You might also want to do a bit of editing of `data/data.json` by hand, removing some entries.
+
+You can see my choices in the branch "my_choices".
+I use Live Snippets for the single-liners and regular snippets for the multi-liners.
+I don't use a prefix for the regular snippets, as multi-liners are usually used on their own line.
+I removed most of the long templates for documents and tables and added some of my own.
+I also replaced some old-fashioned TeX with the newer versions.
