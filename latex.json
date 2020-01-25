@@ -24,8 +24,9 @@
         "prefix": "mx2i",
         "body": [
             "\\begin{bmatrix}",
-            "1 & 0 \\\\",
-            "0 & 1",
+            "a & b & c \\\\ [35pt]",
+            "d & e & f \\\\ [35pt]",
+            "g & h & i",
             "\\end{bmatrix}"
         ],
         "description": "\\begin{bmatrix}"

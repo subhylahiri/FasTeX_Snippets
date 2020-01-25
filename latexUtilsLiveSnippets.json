@@ -3724,7 +3724,7 @@
         "body": "$1\\left. f \\left(\\frac{t}{2}\\right)\\right|_{t=0}",
         "mode": "text",
         "triggerWhenComplete": true,
-        "description": "\\left. f \\right|_{t=0}",
+        "description": "\\[ \\left. f (t)\\right|_{t=0}",
         "priority": 4
     },
     {

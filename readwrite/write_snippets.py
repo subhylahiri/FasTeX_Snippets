@@ -170,7 +170,7 @@ def convert_all_vscode(snippets: List[Snippet],
     vsc_snippets = {}
     for snip in snippets:
         new_snip = convert_one_vsc(snip, prefix, suffix, endtab)
-        vsc_snippets[snip['description']] = new_snip
+        vsc_snippets[snip['prefix']] = new_snip
     return vsc_snippets
 
 
@@ -380,6 +380,34 @@ def convert_all_live(snippets: List[Snippet],
     return live_snippets
 
 
+def _modern_vsc(snippet: Snippet) -> Snippet:
+    """Replace old style TeX with modern LaTeX.
+
+    Replaces snippet with `body = "{\\?? "` with
+    `body = "${1|\\text,\\math|}??{$2}"`
+
+    Parameters
+    ----------
+    snippet : Snippet = Dict[str, Union[str, List[str]]]
+        Snippet to modify.
+
+    Returns
+    -------
+    snippet : Snippet
+        Unmodified/modified input.
+    """
+    if not isinstance(snippet['body'], str):
+        return snippet
+    match = TEX_OLD.match(snippet['body'])
+    if match is None:
+        return snippet
+    command = match.group(1)
+    new_snip = snippet.copy()
+    new_snip['mode'] = 'any'
+    new_snip['body'] = '${1|\\text,\\math|}' + command + '{$2}'
+    return new_snip
+
+
 def _modern_live(snippet: Snippet) -> (Snippet, Snippet):
     """Replace old style TeX with modern LaTeX.
 
@@ -390,7 +418,7 @@ def _modern_live(snippet: Snippet) -> (Snippet, Snippet):
     Parameters
     ----------
     snippet : Snippet = Dict[str, Union[str, List[str]]]
-        Snippet to modify *in place*.
+        Snippet to modify.
 
     Returns
     -------
@@ -507,7 +535,8 @@ def apply_options(snippets: List[Snippet],
         Convert dollar signs in snippets: `$...$ -> \\(...\\)`?
     modern : bool, optional, default = False
         Replace old-fashioned `{\\?? ` with modern versions: `\\text??{$1}` and
-        `\\math??{$1}` (e.g. `?? = bf`)?
+        `\\math??{$1}` (e.g. `?? = bf`)? If `textmaths`, create two snippets,
+        else create choice tab-stop.
         Creates two snippets. Only for Live Snippets.
     """
     multiline: bool = kwds.pop('multiline', True)
@@ -526,10 +555,13 @@ def apply_options(snippets: List[Snippet],
         if dollarfix:
             _un_dollar(snip)
         if modern:
-            snip = _modern_live(snip)
-            if isinstance(snip, tuple):
-                new_snippets.extend(snip)
-                continue
+            if textmaths:
+                snip = _modern_live(snip)
+                if isinstance(snip, tuple):
+                    new_snippets.extend(snip)
+                    continue
+            else:
+                snip = _modern_vsc(snip)
         new_snippets.append(snip)
     return new_snippets
 

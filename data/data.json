@@ -3247,7 +3247,7 @@
         "prefix": "eval",
         "body": "\\left. f \\left(\\frac{t}{2}\\right)\\right|_{t=0}",
         "mode": "text",
-        "description": "\\left. f \\right|_{t=0}"
+        "description": "\\[ \\left. f (t)\\right|_{t=0}"
     },
     {
         "prefix": "ethm",
