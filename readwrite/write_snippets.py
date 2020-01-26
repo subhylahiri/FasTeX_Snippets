@@ -232,7 +232,8 @@ def convert_one_atom(snippet: Snippet, prefix: str = '', suffix: str = '',
         maxtab = _count_tabs(snippet['body'])
     atom_prefix = prefix + snippet['prefix'] + suffix
     atom_body = _convert_body_atom(snippet['body'], endtab, maxtab)
-    return {'prefix': atom_prefix, 'body': atom_body}
+    return {'prefix': atom_prefix, 'body': atom_body,
+            "description": snippet['description']}
 
 
 def convert_all_atom(snippets: List[Snippet],
