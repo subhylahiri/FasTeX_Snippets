@@ -648,7 +648,7 @@
     {
         "prefix": "tgqeds",
         "body": "\\tag*{\\qedsymbol}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\tag*{\\qedsymbol}"
     },
     {
@@ -1068,7 +1068,7 @@
     {
         "prefix": "intxtu",
         "body": "\\intertext{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\intertext{}"
     },
     {
@@ -1080,7 +1080,7 @@
     {
         "prefix": "dxdydz",
         "body": "\\,dx\\,dy\\,dz",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\,dx\\,dy\\,dz"
     },
     {
@@ -1179,7 +1179,7 @@
     {
         "prefix": "blackl",
         "body": "\\quad\\blacklozenge",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\quad\\blacklozenge"
     },
     {
@@ -1221,7 +1221,7 @@
     {
         "prefix": "unstu",
         "body": "\\underset{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\underset{}"
     },
     {
@@ -1263,13 +1263,13 @@
     {
         "prefix": "txtqu",
         "body": "\\quad\\text{$1}\\quad",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\quad\\text{}\\quad"
     },
     {
         "prefix": "txtqa",
         "body": "\\quad \\text{and}\\quad",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\quad \\text{and}\\quad"
     },
     {
@@ -1417,7 +1417,7 @@
     {
         "prefix": "setcu",
         "body": "\\setcounter{",
-        "mode": "any",
+        "mode": "text",
         "description": "\\setcounter{"
     },
     {
@@ -1492,7 +1492,7 @@
     {
         "prefix": "parau",
         "body": "\\paragraph{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\paragraph{}"
     },
     {
@@ -1624,7 +1624,7 @@
     {
         "prefix": "nolim",
         "body": "\\nolimits",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\nolimits"
     },
     {
@@ -1684,7 +1684,7 @@
     {
         "prefix": "mrkbu",
         "body": "\\markboth{",
-        "mode": "any",
+        "mode": "text",
         "description": "\\markboth{"
     },
     {
@@ -1755,7 +1755,7 @@
     {
         "prefix": "intxt",
         "body": "\\intertext{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\intertext{}"
     },
     {
@@ -1839,7 +1839,7 @@
     {
         "prefix": "esplt",
         "body": "\\end{split}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\end{split}"
     },
     {
@@ -1902,25 +1902,25 @@
     {
         "prefix": "eprop",
         "body": "\\end{proposition}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{proposition}"
     },
     {
         "prefix": "eprob",
         "body": "\\end{problem}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{problem}"
     },
     {
         "prefix": "enote",
         "body": "\\end{note}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{note}"
     },
     {
         "prefix": "enota",
         "body": "\\end{notation}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{notation}"
     },
     {
@@ -1932,31 +1932,31 @@
     {
         "prefix": "ecrit",
         "body": "\\end{criterion}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{criterion}"
     },
     {
         "prefix": "ecncl",
         "body": "\\end{conclusion}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{conclusion}"
     },
     {
         "prefix": "ecmnt",
         "body": "\\end{comment}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{comment}"
     },
     {
         "prefix": "ecase",
         "body": "\\end{case}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{case}"
     },
     {
         "prefix": "ealda",
         "body": "\\end{alignedat}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\end{alignedat}"
     },
     {
@@ -2154,49 +2154,49 @@
     {
         "prefix": "captu",
         "body": "\\caption{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\caption{}"
     },
     {
         "prefix": "bthmt",
         "body": "\\begin{theorem}[Gauss' Theorem]",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{theorem}[Gauss' Theorem]"
     },
     {
         "prefix": "bsplt",
         "body": "\\begin{split}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\begin{split}"
     },
     {
         "prefix": "bprop",
         "body": "\\begin{proposition}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{proposition}"
     },
     {
         "prefix": "bprob",
         "body": "\\begin{problem}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{problem}"
     },
     {
         "prefix": "bnote",
         "body": "\\begin{note}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{note}"
     },
     {
         "prefix": "bnota",
         "body": "\\begin{notation}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{notation}"
     },
     {
         "prefix": "bmlts",
         "body": "\\begin{multline*}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{multline*}"
     },
     {
@@ -2214,7 +2214,7 @@
     {
         "prefix": "bints",
         "body": "\\bigcap",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\bigcap"
     },
     {
@@ -2242,25 +2242,25 @@
     {
         "prefix": "bcrit",
         "body": "\\begin{criterion}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{criterion}"
     },
     {
         "prefix": "bcncl",
         "body": "\\begin{conclusion}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{conclusion}"
     },
     {
         "prefix": "bcmnt",
         "body": "\\begin{comment}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{comment}"
     },
     {
         "prefix": "bcase",
         "body": "\\begin{case}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{case}"
     },
     {
@@ -2296,19 +2296,19 @@
     {
         "prefix": "balda",
         "body": "\\begin{alignedat}{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{alignedat}{}"
     },
     {
         "prefix": "balas",
         "body": "\\begin{alignat*}{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{alignat*}{}"
     },
     {
         "prefix": "atibp",
         "body": "(\\mathbf{a} \\times \\mathbf{b})",
-        "mode": "any",
+        "mode": "maths",
         "description": "(\\mathbf{a} \\times \\mathbf{b})"
     },
     {
@@ -2536,7 +2536,7 @@
     {
         "prefix": "vbar",
         "body": "\\mid",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\mid"
     },
     {
@@ -2548,7 +2548,7 @@
     {
         "prefix": "unst",
         "body": "\\underset{$1}{$2}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\underset{}{}"
     },
     {
@@ -2584,7 +2584,7 @@
     {
         "prefix": "tgsu",
         "body": "\\tag*{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\tag*{}"
     },
     {
@@ -2594,7 +2594,7 @@
             "  $1",
             "\\end{cases}"
         ],
-        "mode": "text",
+        "mode": "maths",
         "description": "\\begin{cases}"
     },
     {
@@ -2629,55 +2629,55 @@
     {
         "prefix": "sups",
         "body": "\\supset",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\supset"
     },
     {
         "prefix": "supr",
         "body": "\\sup",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\sup"
     },
     {
         "prefix": "supe",
         "body": "\\supseteq",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\supseteq"
     },
     {
         "prefix": "sumu",
         "body": "\\sum",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\sum"
     },
     {
         "prefix": "subs",
         "body": "\\subset",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\subset"
     },
     {
         "prefix": "sube",
         "body": "\\subseteq",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\subseteq"
     },
     {
         "prefix": "sstu",
         "body": "\\sideset{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\sideset{}"
     },
     {
         "prefix": "sssz",
         "body": " \\scriptscriptstyle",
-        "mode": "any",
+        "mode": "maths",
         "description": " \\scriptscriptstyle"
     },
     {
         "prefix": "ssns",
         "body": "\\subsection*{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\subsection*{}"
     },
     {
@@ -2701,7 +2701,7 @@
     {
         "prefix": "spdt",
         "body": "\\,dt",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\,dt"
     },
     {
@@ -2719,37 +2719,37 @@
     {
         "prefix": "sith",
         "body": "\\sin \\theta",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\sin \\theta"
     },
     {
         "prefix": "siph",
         "body": "\\sin \\phi",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\sin \\phi"
     },
     {
         "prefix": "setu",
         "body": "\\{    \\mid    \\}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\{    \\mid    \\}"
     },
     {
         "prefix": "setm",
         "body": "\\setminus",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\setminus"
     },
     {
         "prefix": "setc",
         "body": "\\setcounter{$1}{$2}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\setcounter{}{}"
     },
     {
         "prefix": "rtgu",
         "body": "\\raisetag{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\raisetag{}"
     },
     {
@@ -2791,13 +2791,13 @@
     {
         "prefix": "qetd",
         "body": "\\quad\\bigtriangledown",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\quad\\bigtriangledown"
     },
     {
         "prefix": "qesq",
         "body": "\\quad\\square",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\quad\\square"
     },
     {
@@ -2809,13 +2809,13 @@
     {
         "prefix": "qbtd",
         "body": "\\quad\\blacktriangledown",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\quad\\blacktriangledown"
     },
     {
         "prefix": "qbsq",
         "body": "\\quad\\blacksquare",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\quad\\blacksquare"
     },
     {
@@ -2833,37 +2833,37 @@
     {
         "prefix": "pidx",
         "body": "\\printindex",
-        "mode": "any",
+        "mode": "text",
         "description": "\\printindex"
     },
     {
         "prefix": "pgsm",
         "body": "\\pagestyle{myheadings}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\pagestyle{myheadings}"
     },
     {
         "prefix": "pgse",
         "body": "\\pagestyle{empty}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\pagestyle{empty}"
     },
     {
         "prefix": "pgnr",
         "body": "\\pagenumbering{roman}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\pagenumbering{roman}"
     },
     {
         "prefix": "pgna",
         "body": "\\pagenumbering{arabic}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\pagenumbering{arabic}"
     },
     {
         "prefix": "pdzy",
         "body": "\\partial z/\\partial y",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\partial z/\\partial y"
     },
     {
@@ -3049,7 +3049,7 @@
     {
         "prefix": "olra",
         "body": "\\Leftrightarrow",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\Leftrightarrow"
     },
     {
@@ -3163,13 +3163,13 @@
     {
         "prefix": "nrbu",
         "body": "\\|\\mathbf{u}\\|",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\|\\mathbf{u}\\|"
     },
     {
         "prefix": "nonu",
         "body": "\\nonumber",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\nonumber"
     },
     {
@@ -3181,7 +3181,7 @@
     {
         "prefix": "ndsp",
         "body": "\\! \\!",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\! \\!"
     },
     {
@@ -3359,7 +3359,7 @@
     {
         "prefix": "mrkb",
         "body": "\\markboth{$1}{$2}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\markboth{}{}"
     },
     {
@@ -3383,7 +3383,7 @@
     {
         "prefix": "midx",
         "body": "\\makeindex",
-        "mode": "any",
+        "mode": "text",
         "description": "\\makeindex"
     },
     {
@@ -3557,13 +3557,13 @@
     {
         "prefix": "lora",
         "body": "\\longrightarrow",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\longrightarrow"
     },
     {
         "prefix": "logg",
         "body": "\\log",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\log"
     },
     {
@@ -3575,25 +3575,25 @@
     {
         "prefix": "limu",
         "body": "\\lim{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\lim{}"
     },
     {
         "prefix": "lims",
         "body": "\\limsup",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\limsup"
     },
     {
         "prefix": "limm",
         "body": "\\lim",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\lim"
     },
     {
         "prefix": "limi",
         "body": "\\liminf",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\liminf"
     },
     {
@@ -3658,37 +3658,37 @@
     {
         "prefix": "itmu",
         "body": "\\item[",
-        "mode": "any",
+        "mode": "text",
         "description": "\\item["
     },
     {
         "prefix": "intu",
         "body": "\\int",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\int"
     },
     {
         "prefix": "intt",
         "body": "\\int \\!\\!\\! \\int \\!\\!\\! \\int",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\int \\!\\!\\! \\int \\!\\!\\! \\int"
     },
     {
         "prefix": "ints",
         "body": "\\cap",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\cap"
     },
     {
         "prefix": "intd",
         "body": "\\int \\!\\!\\! \\int",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\int \\!\\!\\! \\int"
     },
     {
         "prefix": "intc",
         "body": "\\oint",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\oint"
     },
     {
@@ -3700,19 +3700,19 @@
     {
         "prefix": "infm",
         "body": "\\inf",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\inf"
     },
     {
         "prefix": "infi",
         "body": "\\infty",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\infty"
     },
     {
         "prefix": "impb",
         "body": "\\Leftarrow",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\Leftarrow"
     },
     {
@@ -3743,13 +3743,13 @@
     {
         "prefix": "igru",
         "body": "\\includegraphics{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\includegraphics{}"
     },
     {
         "prefix": "idxu",
         "body": "\\index{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\index{}"
     },
     {
@@ -3887,7 +3887,7 @@
     {
         "prefix": "hlin",
         "body": "\\hline",
-        "mode": "any",
+        "mode": "text",
         "description": "\\hline"
     },
     {
@@ -3996,19 +3996,19 @@
     {
         "prefix": "excb",
         "body": "\\end{xcb}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{xcb}"
     },
     {
         "prefix": "exca",
         "body": "\\end{xca}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{xca}"
     },
     {
         "prefix": "evrb",
         "body": "\\end{verbatim}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{verbatim}"
     },
     {
@@ -4024,37 +4024,37 @@
     {
         "prefix": "ethm",
         "body": "\\end{theorem}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{theorem}"
     },
     {
         "prefix": "etab",
         "body": "\\end{table}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{table}"
     },
     {
         "prefix": "esum",
         "body": "\\end{summary}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{summary}"
     },
     {
         "prefix": "esol",
         "body": "\\end{solution}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{solution}"
     },
     {
         "prefix": "ermk",
         "body": "\\end{remark}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{remark}"
     },
     {
         "prefix": "eqvt",
         "body": "\\Leftrightarrow",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\Leftrightarrow"
     },
     {
@@ -4070,7 +4070,7 @@
     {
         "prefix": "eqst",
         "body": "\\end{question}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{question}"
     },
     {
@@ -4118,7 +4118,7 @@
     {
         "prefix": "eprf",
         "body": "\\end{proof}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{proof}"
     },
     {
@@ -4130,13 +4130,13 @@
     {
         "prefix": "empg",
         "body": "\\end{minipage}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{minipage}"
     },
     {
         "prefix": "empa",
         "body": "\\emptyset",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\emptyset"
     },
     {
@@ -4148,13 +4148,13 @@
     {
         "prefix": "elem",
         "body": "\\end{lemma}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{lemma}"
     },
     {
         "prefix": "eitm",
         "body": "\\end{itemize}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{itemize}"
     },
     {
@@ -4166,37 +4166,37 @@
     {
         "prefix": "egad",
         "body": "\\end{gathered}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\end{gathered}"
     },
     {
         "prefix": "eflr",
         "body": "\\end{flushright}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{flushright}"
     },
     {
         "prefix": "efll",
         "body": "\\end{flushleft}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{flushleft}"
     },
     {
         "prefix": "efig",
         "body": "\\end{figure}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{figure}"
     },
     {
         "prefix": "eesp",
         "body": "\\end{Sp}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\end{Sp}"
     },
     {
         "prefix": "eesb",
         "body": "\\end{Sb}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\end{Sb}"
     },
     {
@@ -4208,43 +4208,43 @@
     {
         "prefix": "edfn",
         "body": "\\end{definition}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{definition}"
     },
     {
         "prefix": "ectr",
         "body": "\\end{center}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{center}"
     },
     {
         "prefix": "ecor",
         "body": "\\end{corollary}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{corollary}"
     },
     {
         "prefix": "ecnj",
         "body": "\\end{conjecture}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{conjecture}"
     },
     {
         "prefix": "ecnd",
         "body": "\\end{condition}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{condition}"
     },
     {
         "prefix": "eclm",
         "body": "\\end{claim}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{claim}"
     },
     {
         "prefix": "ebib",
         "body": "\\end{thebibliography}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{thebibliography}"
     },
     {
@@ -4256,13 +4256,13 @@
     {
         "prefix": "ealg",
         "body": "\\end{algorithm}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{algorithm}"
     },
     {
         "prefix": "eald",
         "body": "\\end{aligned}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\end{aligned}"
     },
     {
@@ -4274,19 +4274,19 @@
     {
         "prefix": "eabs",
         "body": "\\end{abstract}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{abstract}"
     },
     {
         "prefix": "dzdt",
         "body": "dz/dt",
-        "mode": "any",
+        "mode": "maths",
         "description": "dz/dt"
     },
     {
         "prefix": "dydt",
         "body": "dy/dt",
-        "mode": "any",
+        "mode": "maths",
         "description": "dy/dt"
     },
     {
@@ -4352,13 +4352,13 @@
     {
         "prefix": "dxdy",
         "body": "\\,dx\\,dy",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\,dx\\,dy"
     },
     {
         "prefix": "dxdt",
         "body": "dx/dt",
-        "mode": "any",
+        "mode": "maths",
         "description": "dx/dt"
     },
     {
@@ -4418,13 +4418,13 @@
     {
         "prefix": "divi",
         "body": "\\div",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\div"
     },
     {
         "prefix": "disu",
         "body": "{\\displaystyle",
-        "mode": "any",
+        "mode": "maths",
         "description": "{\\displaystyle"
     },
     {
@@ -4831,19 +4831,19 @@
     {
         "prefix": "coth",
         "body": "\\cos \\theta",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\cos \\theta"
     },
     {
         "prefix": "coph",
         "body": "\\cos \\phi",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\cos \\phi"
     },
     {
         "prefix": "clin",
         "body": "\\centerline{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\centerline{}"
     },
     {
@@ -4855,13 +4855,13 @@
     {
         "prefix": "citu",
         "body": "\\cite{",
-        "mode": "any",
+        "mode": "text",
         "description": "\\cite{"
     },
     {
         "prefix": "citp",
         "body": "(\\cite{$1})",
-        "mode": "any",
+        "mode": "text",
         "description": "(\\cite{})"
     },
     {
@@ -4893,61 +4893,61 @@
     {
         "prefix": "capt",
         "body": "\\caption{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\caption{}"
     },
     {
         "prefix": "bxcb",
         "body": "\\begin{xcb}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{xcb}"
     },
     {
         "prefix": "bxca",
         "body": "\\begin{xca}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{xca}"
     },
     {
         "prefix": "bvrb",
         "body": "\\begin{verbatim}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{verbatim}"
     },
     {
         "prefix": "buni",
         "body": "\\bigcup",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\bigcup"
     },
     {
         "prefix": "bthm",
         "body": "\\begin{theorem}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{theorem}"
     },
     {
         "prefix": "btab",
         "body": "\\begin{table}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{table}"
     },
     {
         "prefix": "bsyu",
         "body": "\\boldsymbol{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\boldsymbol{}"
     },
     {
         "prefix": "bsum",
         "body": "\\begin{summary}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{summary}"
     },
     {
         "prefix": "bsol",
         "body": "\\begin{solution}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{solution}"
     },
     {
@@ -4959,49 +4959,49 @@
     {
         "prefix": "brmk",
         "body": "\\begin{remark}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{remark}"
     },
     {
         "prefix": "bqst",
         "body": "\\begin{question}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{question}"
     },
     {
         "prefix": "bqas",
         "body": "\\begin{eqnarray*}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{eqnarray*}"
     },
     {
         "prefix": "bqal",
         "body": "\\begin{eqnarray}\\label{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{eqnarray}\\label{}"
     },
     {
         "prefix": "bprf",
         "body": "\\begin{proof}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{proof}"
     },
     {
         "prefix": "bmpg",
         "body": "\\begin{minipage}{\\textwidth}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{minipage}{\\textwidth}"
     },
     {
         "prefix": "bmlt",
         "body": "\\begin{multline}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{multline}"
     },
     {
         "prefix": "blem",
         "body": "\\begin{lemma}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{lemma}"
     },
     {
@@ -5013,43 +5013,43 @@
     {
         "prefix": "bitm",
         "body": "\\begin{itemize}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{itemize}"
     },
     {
         "prefix": "bibb",
         "body": "\\item Author [year]",
-        "mode": "any",
+        "mode": "text",
         "description": "\\item Author [year]"
     },
     {
         "prefix": "biba",
         "body": "\\item Author [year]",
-        "mode": "any",
+        "mode": "text",
         "description": "\\item Author [year]"
     },
     {
         "prefix": "bgas",
         "body": "\\begin{gather*}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{gather*}"
     },
     {
         "prefix": "bgad",
         "body": "\\begin{gathered}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\begin{gathered}"
     },
     {
         "prefix": "bflr",
         "body": "\\begin{flushright}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{flushright}"
     },
     {
         "prefix": "bfll",
         "body": "\\begin{flushleft}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{flushleft}"
     },
     {
@@ -5061,25 +5061,25 @@
     {
         "prefix": "bfig",
         "body": "\\begin{figure}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{figure}"
     },
     {
         "prefix": "besp",
         "body": "\\begin{Sp}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\begin{Sp}"
     },
     {
         "prefix": "besb",
         "body": "\\begin{Sb}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\begin{Sb}"
     },
     {
         "prefix": "beql",
         "body": "\\begin{equation}\\label{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{equation}\\label{}"
     },
     {
@@ -5109,49 +5109,49 @@
     {
         "prefix": "bdma",
         "body": "\\begin{displaymath}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{displaymath}"
     },
     {
         "prefix": "bdfn",
         "body": "\\begin{definition}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{definition}"
     },
     {
         "prefix": "bctr",
         "body": "\\begin{center}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{center}"
     },
     {
         "prefix": "bcor",
         "body": "\\begin{corollary}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{corollary}"
     },
     {
         "prefix": "bcnj",
         "body": "\\begin{conjecture}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{conjecture}"
     },
     {
         "prefix": "bcnd",
         "body": "\\begin{condition}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{condition}"
     },
     {
         "prefix": "bclm",
         "body": "\\begin{claim}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{claim}"
     },
     {
         "prefix": "bbib",
         "body": "\\begin{thebibliography}{}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{thebibliography}{}"
     },
     {
@@ -5313,31 +5313,31 @@
     {
         "prefix": "bals",
         "body": "\\begin{align*}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{align*}"
     },
     {
         "prefix": "balg",
         "body": "\\begin{algorithm}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{algorithm}"
     },
     {
         "prefix": "bald",
         "body": "\\begin{aligned}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\begin{aligned}"
     },
     {
         "prefix": "bala",
         "body": "\\begin{alignat}{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{alignat}{}"
     },
     {
         "prefix": "babs",
         "body": "\\begin{abstract}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{abstract}"
     },
     {
@@ -5349,7 +5349,7 @@
     {
         "prefix": "artl",
         "body": "\\mapsto",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\mapsto"
     },
     {
@@ -5361,7 +5361,7 @@
     {
         "prefix": "angl",
         "body": "\\angle",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\angle"
     },
     {
@@ -5631,19 +5631,19 @@
     {
         "prefix": "upa",
         "body": "\\uparrow",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\uparrow"
     },
     {
         "prefix": "uni",
         "body": "\\cup",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\cup"
     },
     {
         "prefix": "uhr",
         "body": "\\upharpoonright",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\upharpoonright"
     },
     {
@@ -5679,7 +5679,7 @@
     {
         "prefix": "tsz",
         "body": " \\textstyle",
-        "mode": "any",
+        "mode": "maths",
         "description": " \\textstyle"
     },
     {
@@ -5691,67 +5691,67 @@
     {
         "prefix": "tsp",
         "body": "\\;",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\;"
     },
     {
         "prefix": "trv",
         "body": "\\pitchfork",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\pitchfork"
     },
     {
         "prefix": "tnh",
         "body": "\\tanh",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\tanh"
     },
     {
         "prefix": "tgu",
         "body": "\\tag{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\tag{}"
     },
     {
         "prefix": "tgs",
         "body": "\\tag*{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\tag*{}"
     },
     {
         "prefix": "sur",
         "body": "\\nearrow",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\nearrow"
     },
     {
         "prefix": "ssz",
         "body": " \\scriptstyle",
-        "mode": "any",
+        "mode": "maths",
         "description": " \\scriptstyle"
     },
     {
         "prefix": "sst",
         "body": "\\sideset{$1}{$2}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\sideset{}{}"
     },
     {
         "prefix": "ssp",
         "body": "\\,",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\,"
     },
     {
         "prefix": "ssn",
         "body": "\\subsection{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\subsection{}"
     },
     {
         "prefix": "ssn",
         "body": "\\paragraph{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\paragraph{}"
     },
     {
@@ -5787,19 +5787,19 @@
     {
         "prefix": "sps",
         "body": "\\setlength{\\parskip1.5ex plus 0.5ex minus 0.5ex}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\setlength{\\parskip1.5ex plus 0.5ex minus 0.5ex}"
     },
     {
         "prefix": "spn",
         "body": "\\setcounter{page}{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\setcounter{page}{}"
     },
     {
         "prefix": "spi",
         "body": "\\setlength{\\parindent}{0em}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\setlength{\\parindent}{0em}"
     },
     {
@@ -5829,7 +5829,7 @@
     {
         "prefix": "sln",
         "body": "\\setlength{$1}{$2}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\setlength{}{}"
     },
     {
@@ -5841,7 +5841,7 @@
     {
         "prefix": "sih",
         "body": "\\sinh",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\sinh"
     },
     {
@@ -5865,61 +5865,61 @@
     {
         "prefix": "sdz",
         "body": "\\,dz",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\,dz"
     },
     {
         "prefix": "sdy",
         "body": "\\,dy",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\,dy"
     },
     {
         "prefix": "sdx",
         "body": "\\,dx",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\,dx"
     },
     {
         "prefix": "sdw",
         "body": "\\,dw",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\,dw"
     },
     {
         "prefix": "sdv",
         "body": "\\,dv",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\,dv"
     },
     {
         "prefix": "sdu",
         "body": "\\,du",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\,du"
     },
     {
         "prefix": "sdt",
         "body": "\\,dt",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\,dt"
     },
     {
         "prefix": "sds",
         "body": "\\,ds",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\,ds"
     },
     {
         "prefix": "sdr",
         "body": "\\searrow",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\searrow"
     },
     {
         "prefix": "sdp",
         "body": "\\,\\circledS\\,",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\,\\circledS\\,"
     },
     {
@@ -5949,13 +5949,13 @@
     {
         "prefix": "rle",
         "body": "\\rangle",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\rangle"
     },
     {
         "prefix": "rlb",
         "body": "\\}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\}"
     },
     {
@@ -5973,13 +5973,13 @@
     {
         "prefix": "reo",
         "body": "\\ni",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\ni"
     },
     {
         "prefix": "rea",
         "body": "\\Re",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\Re"
     },
     {
@@ -6003,19 +6003,19 @@
     {
         "prefix": "prm",
         "body": "\\prime",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\prime"
     },
     {
         "prefix": "ppt",
         "body": "\\propto",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\propto"
     },
     {
         "prefix": "plm",
         "body": "\\pm",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\pm"
     },
     {
@@ -6177,7 +6177,7 @@
     {
         "prefix": "oti",
         "body": "\\otimes",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\otimes"
     },
     {
@@ -6195,13 +6195,13 @@
     {
         "prefix": "opl",
         "body": "\\oplus",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\oplus"
     },
     {
         "prefix": "omi",
         "body": "\\ominus",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\ominus"
     },
     {
@@ -6591,19 +6591,19 @@
     {
         "prefix": "ntg",
         "body": "\\notag",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\notag"
     },
     {
         "prefix": "nsp",
         "body": "\\!",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\!"
     },
     {
         "prefix": "nrm",
         "body": "\\|",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\|"
     },
     {
@@ -6615,7 +6615,7 @@
     {
         "prefix": "noi",
         "body": "\\noindent",
-        "mode": "any",
+        "mode": "text",
         "description": "\\noindent"
     },
     {
@@ -6627,7 +6627,7 @@
     {
         "prefix": "neo",
         "body": "\\not\\in",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\not\\in"
     },
     {
@@ -6668,7 +6668,7 @@
     {
         "prefix": "msp",
         "body": "\\:",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\:"
     },
     {
@@ -6686,7 +6686,7 @@
     {
         "prefix": "mlt",
         "body": "\\ll",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\ll"
     },
     {
@@ -6698,13 +6698,13 @@
     {
         "prefix": "mip",
         "body": "\\mp",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\mp"
     },
     {
         "prefix": "mgt",
         "body": "\\gg",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\gg"
     },
     {
@@ -6836,13 +6836,13 @@
     {
         "prefix": "ltn",
         "body": "<",
-        "mode": "any",
+        "mode": "maths",
         "description": "<"
     },
     {
         "prefix": "lte",
         "body": "\\leq",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\leq"
     },
     {
@@ -6866,7 +6866,7 @@
     {
         "prefix": "lle",
         "body": "\\langle",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\langle"
     },
     {
@@ -6878,7 +6878,7 @@
     {
         "prefix": "llb",
         "body": "\\{",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\{"
     },
     {
@@ -6908,7 +6908,7 @@
     {
         "prefix": "lgn",
         "body": "\\ln",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\ln"
     },
     {
@@ -7124,13 +7124,13 @@
     {
         "prefix": "itm",
         "body": "\\item",
-        "mode": "any",
+        "mode": "text",
         "description": "\\item"
     },
     {
         "prefix": "iso",
         "body": "\\cong",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\cong"
     },
     {
@@ -7142,31 +7142,31 @@
     {
         "prefix": "imp",
         "body": "\\implies",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\implies"
     },
     {
         "prefix": "ima",
         "body": "\\Im",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\Im"
     },
     {
         "prefix": "igr",
         "body": "\\includegraphics{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\includegraphics{}"
     },
     {
         "prefix": "iqe",
         "body": "\\( $1 \\)",
-        "mode": "any",
+        "mode": "text",
         "description": "\\(  \\)"
     },
     {
         "prefix": "idx",
         "body": "\\index{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\index{}"
     },
     {
@@ -7520,7 +7520,7 @@
     {
         "prefix": "hba",
         "body": "\\hbar",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\hbar"
     },
     {
@@ -7538,13 +7538,13 @@
     {
         "prefix": "gtn",
         "body": ">",
-        "mode": "any",
+        "mode": "maths",
         "description": ">"
     },
     {
         "prefix": "gte",
         "body": "\\geq",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\geq"
     },
     {
@@ -7640,7 +7640,7 @@
     {
         "prefix": "fof",
         "body": "}{",
-        "mode": "any",
+        "mode": "maths",
         "description": "}{"
     },
     {
@@ -7670,31 +7670,31 @@
     {
         "prefix": "etr",
         "body": "\\end{tabular}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{tabular}"
     },
     {
         "prefix": "etb",
         "body": "\\end{tabbing}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{tabbing}"
     },
     {
         "prefix": "eqv",
         "body": "\\equiv",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\equiv"
     },
     {
         "prefix": "eqt",
         "body": "\\end{quotation}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{quotation}"
     },
     {
         "prefix": "eqm",
         "body": "''",
-        "mode": "any",
+        "mode": "text",
         "description": "''"
     },
     {
@@ -7706,7 +7706,7 @@
     {
         "prefix": "emu",
         "body": "\\emph{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\emph{}"
     },
     {
@@ -7748,7 +7748,7 @@
     {
         "prefix": "een",
         "body": "\\end{enumerate}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{enumerate}"
     },
     {
@@ -7760,7 +7760,7 @@
     {
         "prefix": "eds",
         "body": "\\end{description}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{description}"
     },
     {
@@ -7772,7 +7772,7 @@
     {
         "prefix": "edo",
         "body": "\\end{document}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{document}"
     },
     {
@@ -7790,7 +7790,7 @@
     {
         "prefix": "eac",
         "body": "\\end{acknowledgment}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\end{acknowledgment}"
     },
     {
@@ -7904,13 +7904,13 @@
     {
         "prefix": "dtt",
         "body": "\\det",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\det"
     },
     {
         "prefix": "dsz",
         "body": " \\displaystyle",
-        "mode": "any",
+        "mode": "maths",
         "description": " \\displaystyle"
     },
     {
@@ -7928,7 +7928,7 @@
     {
         "prefix": "dmn",
         "body": "\\dim",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\dim"
     },
     {
@@ -8348,7 +8348,7 @@
     {
         "prefix": "cpg",
         "body": "\\clearpage",
-        "mode": "any",
+        "mode": "text",
         "description": "\\clearpage"
     },
     {
@@ -8360,7 +8360,7 @@
     {
         "prefix": "coh",
         "body": "\\cosh",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\cosh"
     },
     {
@@ -8372,13 +8372,13 @@
     {
         "prefix": "cit",
         "body": "\\cite{",
-        "mode": "any",
+        "mode": "text",
         "description": "\\cite{"
     },
     {
         "prefix": "cir",
         "body": "\\circ",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\circ"
     },
     {
@@ -8401,7 +8401,7 @@
     {
         "prefix": "cdp",
         "body": "\\cleardoublepage",
-        "mode": "any",
+        "mode": "text",
         "description": "\\cleardoublepage"
     },
     {
@@ -8591,55 +8591,55 @@
     {
         "prefix": "btr",
         "body": "\\begin{tabular}{|c|c|}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{tabular}{|c|c|}"
     },
     {
         "prefix": "btb",
         "body": "\\begin{tabbing}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{tabbing}"
     },
     {
         "prefix": "bsy",
         "body": "\\boldsymbol{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\boldsymbol{}"
     },
     {
         "prefix": "bqt",
         "body": "\\begin{quotation}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{quotation}"
     },
     {
         "prefix": "bqm",
         "body": "``",
-        "mode": "any",
+        "mode": "text",
         "description": "``"
     },
     {
         "prefix": "bqa",
         "body": "\\begin{eqnarray}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{eqnarray}"
     },
     {
         "prefix": "bma",
         "body": "\\begin{math}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{math}"
     },
     {
         "prefix": "blt",
         "body": "\\bullet",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\bullet"
     },
     {
         "prefix": "bga",
         "body": "\\begin{gather}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{gather}"
     },
     {
@@ -8663,13 +8663,13 @@
     {
         "prefix": "beq",
         "body": "\\begin{equation}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{equation}"
     },
     {
         "prefix": "ben",
         "body": "\\begin{enumerate}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{enumerate}"
     },
     {
@@ -8687,19 +8687,19 @@
     {
         "prefix": "bds",
         "body": "\\begin{description}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{description}"
     },
     {
         "prefix": "bdp",
         "body": "\\[",
-        "mode": "any",
+        "mode": "text",
         "description": "\\["
     },
     {
         "prefix": "bdo",
         "body": "\\begin{document}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{document}"
     },
     {
@@ -8867,13 +8867,13 @@
     {
         "prefix": "bal",
         "body": "\\begin{align}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{align}"
     },
     {
         "prefix": "bac",
         "body": "\\begin{acknowledgment}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\begin{acknowledgment}"
     },
     {
@@ -8885,37 +8885,37 @@
     {
         "prefix": "avz",
         "body": "|z|",
-        "mode": "any",
+        "mode": "maths",
         "description": "|z|"
     },
     {
         "prefix": "avy",
         "body": "|y|",
-        "mode": "any",
+        "mode": "maths",
         "description": "|y|"
     },
     {
         "prefix": "avx",
         "body": "|x|",
-        "mode": "any",
+        "mode": "maths",
         "description": "|x|"
     },
     {
         "prefix": "avc",
         "body": "|c|",
-        "mode": "any",
+        "mode": "maths",
         "description": "|c|"
     },
     {
         "prefix": "avb",
         "body": "|b|",
-        "mode": "any",
+        "mode": "maths",
         "description": "|b|"
     },
     {
         "prefix": "ava",
         "body": "|a|",
-        "mode": "any",
+        "mode": "maths",
         "description": "|a|"
     },
     {
@@ -8927,19 +8927,19 @@
     {
         "prefix": "apx",
         "body": "\\approx",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\approx"
     },
     {
         "prefix": "ale",
         "body": "\\aleph",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\aleph"
     },
     {
         "prefix": "ada",
         "body": "& = &",
-        "mode": "any",
+        "mode": "maths",
         "description": "& = &"
     },
     {
@@ -8951,13 +8951,13 @@
     {
         "prefix": "03p",
         "body": "(0, 0, 0)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(0, 0, 0)"
     },
     {
         "prefix": "00p",
         "body": "(0,0)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(0,0)"
     },
     {
@@ -9113,31 +9113,31 @@
     {
         "prefix": "tn",
         "body": "\\tan",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\tan"
     },
     {
         "prefix": "ti",
         "body": "\\times",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\times"
     },
     {
         "prefix": "tg",
         "body": "\\tag{$1}",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\tag{}"
     },
     {
         "prefix": "te",
         "body": "\\exists",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\exists"
     },
     {
         "prefix": "tb",
         "body": "\\>",
-        "mode": "any",
+        "mode": "text",
         "description": "\\>"
     },
     {
@@ -9161,7 +9161,7 @@
     {
         "prefix": "si",
         "body": "\\sin",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\sin"
     },
     {
@@ -9203,13 +9203,13 @@
     {
         "prefix": "pl",
         "body": "+",
-        "mode": "any",
+        "mode": "maths",
         "description": "+"
     },
     {
         "prefix": "pd",
         "body": "\\partial",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\partial"
     },
     {
@@ -9425,19 +9425,19 @@
     {
         "prefix": "ne",
         "body": "\\neq",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\neq"
     },
     {
         "prefix": "na",
         "body": "\\nabla",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\nabla"
     },
     {
         "prefix": "mx",
         "body": "\\max",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\max"
     },
     {
@@ -9449,13 +9449,13 @@
     {
         "prefix": "mn",
         "body": "\\min",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\min"
     },
     {
         "prefix": "mi",
         "body": "-",
-        "mode": "any",
+        "mode": "maths",
         "description": "-"
     },
     {
@@ -9677,7 +9677,7 @@
     {
         "prefix": "kr",
         "body": "\\ker",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\ker"
     },
     {
@@ -9899,7 +9899,7 @@
     {
         "prefix": "gc",
         "body": "\\gcd",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\gcd"
     },
     {
@@ -9911,7 +9911,7 @@
     {
         "prefix": "fa",
         "body": "\\forall",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\forall"
     },
     {
@@ -9935,13 +9935,13 @@
     {
         "prefix": "ex",
         "body": "\\exp",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\exp"
     },
     {
         "prefix": "eq",
         "body": "=",
-        "mode": "any",
+        "mode": "maths",
         "description": "="
     },
     {
@@ -9953,7 +9953,7 @@
     {
         "prefix": "eo",
         "body": "\\in",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\in"
     },
     {
@@ -10181,13 +10181,13 @@
     {
         "prefix": "co",
         "body": "\\cos",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\cos"
     },
     {
         "prefix": "cl",
         "body": "\\centerline{$1}",
-        "mode": "any",
+        "mode": "text",
         "description": "\\centerline{}"
     },
     {
@@ -10397,7 +10397,7 @@
     {
         "prefix": "ag",
         "body": "\\arg",
-        "mode": "any",
+        "mode": "maths",
         "description": "\\arg"
     },
     {
@@ -10415,7 +10415,7 @@
     {
         "prefix": "0p",
         "body": "(0)",
-        "mode": "any",
+        "mode": "maths",
         "description": "(0)"
     },
     {

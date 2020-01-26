@@ -79,6 +79,17 @@ If you open the jupyter notebook `custom.ipynb`, you will see the options listed
 You can make any changes you want and then run the appropriate cells to generate your file.
 You might also want to do a bit of editing of `data/data.json` by hand, removing some entries.
 
+There are some other options that can be chosen in the notebook. 
+You choose a prefix and/or suffix for snippet triggers.
+You can exclude single/multi-line snippets and create regexes for more complex exclusion rules.
+There is an option of whether or not to put a tab-stop at the end of every snippet. 
+There is an option of whether to keep track of "maths" and "text" mode snippets 
+(which only has an effect on Live Snippets) or set all modes to "any".
+You can choose whether to replace `$...$` with `\(...\)` 
+(LaTeX-Utilities does not recognise the contents of `$...$` as maths mode).
+You can choose whether to replace old style `{\??` with `\text??{` and `\math??{` (e.g. `?? = bf`), 
+using choice tab-stops for regular snippets and using different snippets in different modes for Live Snippets.
+
 You can see my choices in the branch "my_choices".
 I use Live Snippets for the single-liners and regular snippets for the multi-liners.
 I don't use a prefix for the regular snippets, as multi-liners are usually used on their own line.
