@@ -8817,7 +8817,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dlr  ",
-        "body": "$1\\(\\)",
+        "body": "$1$$",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$$",

@@ -4853,7 +4853,7 @@
         "description": "\dim"
     "dlr": 
         "prefix": "dlr"
-        "body": "\\\\(\\\\)"
+        "body": "\\\\$\\\\$"
         "description": "$$"
     "dds": 
         "prefix": "dds"
