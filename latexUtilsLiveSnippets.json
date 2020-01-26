@@ -306,7 +306,7 @@
     {
         "prefix": "(^|[^\\\\])tgqeds  ",
         "body": "$1\\tag*{\\qedsymbol}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\tag*{\\qedsymbol}",
         "priority": 6
@@ -578,7 +578,7 @@
     {
         "prefix": "(^|[^\\\\])intxtu  ",
         "body": "$1\\intertext{$$1}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\intertext{}",
         "priority": 6
@@ -594,7 +594,7 @@
     {
         "prefix": "(^|[^\\\\])dxdydz  ",
         "body": "$1\\,dx\\,dy\\,dz",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\,dx\\,dy\\,dz",
         "priority": 6
@@ -722,7 +722,7 @@
     {
         "prefix": "(^|[^\\\\])blackl  ",
         "body": "$1\\quad\\blacklozenge",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\quad\\blacklozenge",
         "priority": 6
@@ -778,7 +778,7 @@
     {
         "prefix": "(^|[^\\\\])unstu  ",
         "body": "$1\\underset{$$1}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\underset{}",
         "priority": 5
@@ -834,7 +834,7 @@
     {
         "prefix": "(^|[^\\\\])txtqu  ",
         "body": "$1\\quad\\text{$$1}\\quad",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\quad\\text{}\\quad",
         "priority": 5
@@ -842,7 +842,7 @@
     {
         "prefix": "(^|[^\\\\])txtqa  ",
         "body": "$1\\quad \\text{and}\\quad",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\quad \\text{and}\\quad",
         "priority": 5
@@ -970,7 +970,7 @@
     {
         "prefix": "(^|[^\\\\])setcu  ",
         "body": "$1\\setcounter{",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\setcounter{",
         "priority": 5
@@ -1050,7 +1050,7 @@
     {
         "prefix": "(^|[^\\\\])parau  ",
         "body": "$1\\paragraph{$$1}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\paragraph{}",
         "priority": 5
@@ -1226,7 +1226,7 @@
     {
         "prefix": "(^|[^\\\\])nolim  ",
         "body": "$1\\nolimits",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\nolimits",
         "priority": 5
@@ -1274,7 +1274,7 @@
     {
         "prefix": "(^|[^\\\\])mrkbu  ",
         "body": "$1\\markboth{",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\markboth{",
         "priority": 5
@@ -1362,7 +1362,7 @@
     {
         "prefix": "(^|[^\\\\])intxt  ",
         "body": "$1\\intertext{$$1}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\intertext{}",
         "priority": 5
@@ -1474,7 +1474,7 @@
     {
         "prefix": "(^|[^\\\\])esplt  ",
         "body": "$1\\end{split}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\end{split}",
         "priority": 5
@@ -1522,7 +1522,7 @@
     {
         "prefix": "(^|[^\\\\])eprop  ",
         "body": "$1\\end{proposition}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{proposition}",
         "priority": 5
@@ -1530,7 +1530,7 @@
     {
         "prefix": "(^|[^\\\\])eprob  ",
         "body": "$1\\end{problem}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{problem}",
         "priority": 5
@@ -1538,7 +1538,7 @@
     {
         "prefix": "(^|[^\\\\])enote  ",
         "body": "$1\\end{note}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{note}",
         "priority": 5
@@ -1546,7 +1546,7 @@
     {
         "prefix": "(^|[^\\\\])enota  ",
         "body": "$1\\end{notation}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{notation}",
         "priority": 5
@@ -1562,7 +1562,7 @@
     {
         "prefix": "(^|[^\\\\])ecrit  ",
         "body": "$1\\end{criterion}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{criterion}",
         "priority": 5
@@ -1570,7 +1570,7 @@
     {
         "prefix": "(^|[^\\\\])ecncl  ",
         "body": "$1\\end{conclusion}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{conclusion}",
         "priority": 5
@@ -1578,7 +1578,7 @@
     {
         "prefix": "(^|[^\\\\])ecmnt  ",
         "body": "$1\\end{comment}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{comment}",
         "priority": 5
@@ -1586,7 +1586,7 @@
     {
         "prefix": "(^|[^\\\\])ecase  ",
         "body": "$1\\end{case}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{case}",
         "priority": 5
@@ -1594,7 +1594,7 @@
     {
         "prefix": "(^|[^\\\\])ealda  ",
         "body": "$1\\end{alignedat}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\end{alignedat}",
         "priority": 5
@@ -1858,7 +1858,7 @@
     {
         "prefix": "(^|[^\\\\])captu  ",
         "body": "$1\\caption{$$1}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\caption{}",
         "priority": 5
@@ -1866,7 +1866,7 @@
     {
         "prefix": "(^|[^\\\\])bthmt  ",
         "body": "$1\\begin{theorem}[Gauss' Theorem]",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{theorem}[Gauss' Theorem]",
         "priority": 5
@@ -1874,7 +1874,7 @@
     {
         "prefix": "(^|[^\\\\])bsplt  ",
         "body": "$1\\begin{split}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\begin{split}",
         "priority": 5
@@ -1882,7 +1882,7 @@
     {
         "prefix": "(^|[^\\\\])bprop  ",
         "body": "$1\\begin{proposition}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{proposition}",
         "priority": 5
@@ -1890,7 +1890,7 @@
     {
         "prefix": "(^|[^\\\\])bprob  ",
         "body": "$1\\begin{problem}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{problem}",
         "priority": 5
@@ -1898,7 +1898,7 @@
     {
         "prefix": "(^|[^\\\\])bnote  ",
         "body": "$1\\begin{note}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{note}",
         "priority": 5
@@ -1906,7 +1906,7 @@
     {
         "prefix": "(^|[^\\\\])bnota  ",
         "body": "$1\\begin{notation}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{notation}",
         "priority": 5
@@ -1914,7 +1914,7 @@
     {
         "prefix": "(^|[^\\\\])bmlts  ",
         "body": "$1\\begin{multline*}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{multline*}",
         "priority": 5
@@ -1938,7 +1938,7 @@
     {
         "prefix": "(^|[^\\\\])bints  ",
         "body": "$1\\bigcap",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\bigcap",
         "priority": 5
@@ -1962,7 +1962,7 @@
     {
         "prefix": "(^|[^\\\\])bcrit  ",
         "body": "$1\\begin{criterion}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{criterion}",
         "priority": 5
@@ -1970,7 +1970,7 @@
     {
         "prefix": "(^|[^\\\\])bcncl  ",
         "body": "$1\\begin{conclusion}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{conclusion}",
         "priority": 5
@@ -1978,7 +1978,7 @@
     {
         "prefix": "(^|[^\\\\])bcmnt  ",
         "body": "$1\\begin{comment}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{comment}",
         "priority": 5
@@ -1986,7 +1986,7 @@
     {
         "prefix": "(^|[^\\\\])bcase  ",
         "body": "$1\\begin{case}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{case}",
         "priority": 5
@@ -2034,7 +2034,7 @@
     {
         "prefix": "(^|[^\\\\])balda  ",
         "body": "$1\\begin{alignedat}{$$1}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{alignedat}{}",
         "priority": 5
@@ -2042,7 +2042,7 @@
     {
         "prefix": "(^|[^\\\\])balas  ",
         "body": "$1\\begin{alignat*}{$$1}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{alignat*}{}",
         "priority": 5
@@ -2050,7 +2050,7 @@
     {
         "prefix": "(^|[^\\\\])atibp  ",
         "body": "$1(\\mathbf{a} \\times \\mathbf{b})",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "(\\mathbf{a} \\times \\mathbf{b})",
         "priority": 5
@@ -2354,7 +2354,7 @@
     {
         "prefix": "(^|[^\\\\])vbar  ",
         "body": "$1\\mid",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mid",
         "priority": 4
@@ -2370,7 +2370,7 @@
     {
         "prefix": "(^|[^\\\\])unst  ",
         "body": "$1\\underset{$$1}{$$2}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\underset{}{}",
         "priority": 4
@@ -2418,7 +2418,7 @@
     {
         "prefix": "(^|[^\\\\])tgsu  ",
         "body": "$1\\tag*{$$1}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\tag*{}",
         "priority": 4
@@ -2426,7 +2426,7 @@
     {
         "prefix": "(^|[^\\\\])tecs  ",
         "body": "$1\\n\\begin{cases}\\n  $$1\\n\\end{cases}",
-        "mode": "text",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\begin{cases}",
         "priority": 4
@@ -2450,7 +2450,7 @@
     {
         "prefix": "(^|[^\\\\])sups  ",
         "body": "$1\\supset",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\supset",
         "priority": 4
@@ -2458,7 +2458,7 @@
     {
         "prefix": "(^|[^\\\\])supr  ",
         "body": "$1\\sup",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\sup",
         "priority": 4
@@ -2466,7 +2466,7 @@
     {
         "prefix": "(^|[^\\\\])supe  ",
         "body": "$1\\supseteq",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\supseteq",
         "priority": 4
@@ -2474,7 +2474,7 @@
     {
         "prefix": "(^|[^\\\\])sumu  ",
         "body": "$1\\sum",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\sum",
         "priority": 4
@@ -2482,7 +2482,7 @@
     {
         "prefix": "(^|[^\\\\])subs  ",
         "body": "$1\\subset",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\subset",
         "priority": 4
@@ -2490,7 +2490,7 @@
     {
         "prefix": "(^|[^\\\\])sube  ",
         "body": "$1\\subseteq",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\subseteq",
         "priority": 4
@@ -2498,7 +2498,7 @@
     {
         "prefix": "(^|[^\\\\])sstu  ",
         "body": "$1\\sideset{$$1}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\sideset{}",
         "priority": 4
@@ -2506,7 +2506,7 @@
     {
         "prefix": "(^|[^\\\\])sssz  ",
         "body": "$1 \\scriptscriptstyle",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": " \\scriptscriptstyle",
         "priority": 4
@@ -2514,7 +2514,7 @@
     {
         "prefix": "(^|[^\\\\])ssns  ",
         "body": "$1\\subsection*{$$1}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\subsection*{}",
         "priority": 4
@@ -2546,7 +2546,7 @@
     {
         "prefix": "(^|[^\\\\])spdt  ",
         "body": "$1\\,dt",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\,dt",
         "priority": 4
@@ -2570,7 +2570,7 @@
     {
         "prefix": "(^|[^\\\\])sith  ",
         "body": "$1\\sin \\theta",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\sin \\theta",
         "priority": 4
@@ -2578,7 +2578,7 @@
     {
         "prefix": "(^|[^\\\\])siph  ",
         "body": "$1\\sin \\phi",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\sin \\phi",
         "priority": 4
@@ -2586,7 +2586,7 @@
     {
         "prefix": "(^|[^\\\\])setu  ",
         "body": "$1\\{    \\mid    \\}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\{    \\mid    \\}",
         "priority": 4
@@ -2594,7 +2594,7 @@
     {
         "prefix": "(^|[^\\\\])setm  ",
         "body": "$1\\setminus",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\setminus",
         "priority": 4
@@ -2602,7 +2602,7 @@
     {
         "prefix": "(^|[^\\\\])setc  ",
         "body": "$1\\setcounter{$$1}{$$2}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\setcounter{}{}",
         "priority": 4
@@ -2610,7 +2610,7 @@
     {
         "prefix": "(^|[^\\\\])rtgu  ",
         "body": "$1\\raisetag{$$1}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\raisetag{}",
         "priority": 4
@@ -2666,7 +2666,7 @@
     {
         "prefix": "(^|[^\\\\])qetd  ",
         "body": "$1\\quad\\bigtriangledown",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\quad\\bigtriangledown",
         "priority": 4
@@ -2674,7 +2674,7 @@
     {
         "prefix": "(^|[^\\\\])qesq  ",
         "body": "$1\\quad\\square",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\quad\\square",
         "priority": 4
@@ -2690,7 +2690,7 @@
     {
         "prefix": "(^|[^\\\\])qbtd  ",
         "body": "$1\\quad\\blacktriangledown",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\quad\\blacktriangledown",
         "priority": 4
@@ -2698,7 +2698,7 @@
     {
         "prefix": "(^|[^\\\\])qbsq  ",
         "body": "$1\\quad\\blacksquare",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\quad\\blacksquare",
         "priority": 4
@@ -2722,7 +2722,7 @@
     {
         "prefix": "(^|[^\\\\])pidx  ",
         "body": "$1\\printindex",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\printindex",
         "priority": 4
@@ -2730,7 +2730,7 @@
     {
         "prefix": "(^|[^\\\\])pgsm  ",
         "body": "$1\\pagestyle{myheadings}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\pagestyle{myheadings}",
         "priority": 4
@@ -2738,7 +2738,7 @@
     {
         "prefix": "(^|[^\\\\])pgse  ",
         "body": "$1\\pagestyle{empty}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\pagestyle{empty}",
         "priority": 4
@@ -2746,7 +2746,7 @@
     {
         "prefix": "(^|[^\\\\])pgnr  ",
         "body": "$1\\pagenumbering{roman}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\pagenumbering{roman}",
         "priority": 4
@@ -2754,7 +2754,7 @@
     {
         "prefix": "(^|[^\\\\])pgna  ",
         "body": "$1\\pagenumbering{arabic}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\pagenumbering{arabic}",
         "priority": 4
@@ -2762,7 +2762,7 @@
     {
         "prefix": "(^|[^\\\\])pdzy  ",
         "body": "$1\\partial z/\\partial y",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\partial z/\\partial y",
         "priority": 4
@@ -3010,7 +3010,7 @@
     {
         "prefix": "(^|[^\\\\])olra  ",
         "body": "$1\\Leftrightarrow",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\Leftrightarrow",
         "priority": 4
@@ -3162,7 +3162,7 @@
     {
         "prefix": "(^|[^\\\\])nrbu  ",
         "body": "$1\\|\\mathbf{u}\\|",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\|\\mathbf{u}\\|",
         "priority": 4
@@ -3170,7 +3170,7 @@
     {
         "prefix": "(^|[^\\\\])nonu  ",
         "body": "$1\\nonumber",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\nonumber",
         "priority": 4
@@ -3186,7 +3186,7 @@
     {
         "prefix": "(^|[^\\\\])ndsp  ",
         "body": "$1\\! \\!",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\! \\!",
         "priority": 4
@@ -3338,7 +3338,7 @@
     {
         "prefix": "(^|[^\\\\])mrkb  ",
         "body": "$1\\markboth{$$1}{$$2}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\markboth{}{}",
         "priority": 4
@@ -3370,7 +3370,7 @@
     {
         "prefix": "(^|[^\\\\])midx  ",
         "body": "$1\\makeindex",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\makeindex",
         "priority": 4
@@ -3602,7 +3602,7 @@
     {
         "prefix": "(^|[^\\\\])lora  ",
         "body": "$1\\longrightarrow",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\longrightarrow",
         "priority": 4
@@ -3610,7 +3610,7 @@
     {
         "prefix": "(^|[^\\\\])logg  ",
         "body": "$1\\log",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\log",
         "priority": 4
@@ -3626,7 +3626,7 @@
     {
         "prefix": "(^|[^\\\\])limu  ",
         "body": "$1\\lim{$$1}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\lim{}",
         "priority": 4
@@ -3634,7 +3634,7 @@
     {
         "prefix": "(^|[^\\\\])lims  ",
         "body": "$1\\limsup",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\limsup",
         "priority": 4
@@ -3642,7 +3642,7 @@
     {
         "prefix": "(^|[^\\\\])limm  ",
         "body": "$1\\lim",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\lim",
         "priority": 4
@@ -3650,7 +3650,7 @@
     {
         "prefix": "(^|[^\\\\])limi  ",
         "body": "$1\\liminf",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\liminf",
         "priority": 4
@@ -3730,7 +3730,7 @@
     {
         "prefix": "(^|[^\\\\])itmu  ",
         "body": "$1\\item[",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\item[",
         "priority": 4
@@ -3738,7 +3738,7 @@
     {
         "prefix": "(^|[^\\\\])intu  ",
         "body": "$1\\int",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\int",
         "priority": 4
@@ -3746,7 +3746,7 @@
     {
         "prefix": "(^|[^\\\\])intt  ",
         "body": "$1\\int \\!\\!\\! \\int \\!\\!\\! \\int",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\int \\!\\!\\! \\int \\!\\!\\! \\int",
         "priority": 4
@@ -3754,7 +3754,7 @@
     {
         "prefix": "(^|[^\\\\])ints  ",
         "body": "$1\\cap",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\cap",
         "priority": 4
@@ -3762,7 +3762,7 @@
     {
         "prefix": "(^|[^\\\\])intd  ",
         "body": "$1\\int \\!\\!\\! \\int",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\int \\!\\!\\! \\int",
         "priority": 4
@@ -3770,7 +3770,7 @@
     {
         "prefix": "(^|[^\\\\])intc  ",
         "body": "$1\\oint",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\oint",
         "priority": 4
@@ -3786,7 +3786,7 @@
     {
         "prefix": "(^|[^\\\\])infm  ",
         "body": "$1\\inf",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\inf",
         "priority": 4
@@ -3794,7 +3794,7 @@
     {
         "prefix": "(^|[^\\\\])infi  ",
         "body": "$1\\infty",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\infty",
         "priority": 4
@@ -3802,7 +3802,7 @@
     {
         "prefix": "(^|[^\\\\])impb  ",
         "body": "$1\\Leftarrow",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\Leftarrow",
         "priority": 4
@@ -3834,7 +3834,7 @@
     {
         "prefix": "(^|[^\\\\])igru  ",
         "body": "$1\\includegraphics{$$1}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\includegraphics{}",
         "priority": 4
@@ -3842,7 +3842,7 @@
     {
         "prefix": "(^|[^\\\\])idxu  ",
         "body": "$1\\index{$$1}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\index{}",
         "priority": 4
@@ -4026,7 +4026,7 @@
     {
         "prefix": "(^|[^\\\\])hlin  ",
         "body": "$1\\hline",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\hline",
         "priority": 4
@@ -4162,7 +4162,7 @@
     {
         "prefix": "(^|[^\\\\])excb  ",
         "body": "$1\\end{xcb}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{xcb}",
         "priority": 4
@@ -4170,7 +4170,7 @@
     {
         "prefix": "(^|[^\\\\])exca  ",
         "body": "$1\\end{xca}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{xca}",
         "priority": 4
@@ -4178,7 +4178,7 @@
     {
         "prefix": "(^|[^\\\\])evrb  ",
         "body": "$1\\end{verbatim}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{verbatim}",
         "priority": 4
@@ -4194,7 +4194,7 @@
     {
         "prefix": "(^|[^\\\\])ethm  ",
         "body": "$1\\end{theorem}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{theorem}",
         "priority": 4
@@ -4202,7 +4202,7 @@
     {
         "prefix": "(^|[^\\\\])etab  ",
         "body": "$1\\end{table}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{table}",
         "priority": 4
@@ -4210,7 +4210,7 @@
     {
         "prefix": "(^|[^\\\\])esum  ",
         "body": "$1\\end{summary}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{summary}",
         "priority": 4
@@ -4218,7 +4218,7 @@
     {
         "prefix": "(^|[^\\\\])esol  ",
         "body": "$1\\end{solution}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{solution}",
         "priority": 4
@@ -4226,7 +4226,7 @@
     {
         "prefix": "(^|[^\\\\])ermk  ",
         "body": "$1\\end{remark}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{remark}",
         "priority": 4
@@ -4234,7 +4234,7 @@
     {
         "prefix": "(^|[^\\\\])eqvt  ",
         "body": "$1\\Leftrightarrow",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\Leftrightarrow",
         "priority": 4
@@ -4250,7 +4250,7 @@
     {
         "prefix": "(^|[^\\\\])eqst  ",
         "body": "$1\\end{question}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{question}",
         "priority": 4
@@ -4290,7 +4290,7 @@
     {
         "prefix": "(^|[^\\\\])eprf  ",
         "body": "$1\\end{proof}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{proof}",
         "priority": 4
@@ -4306,7 +4306,7 @@
     {
         "prefix": "(^|[^\\\\])empg  ",
         "body": "$1\\end{minipage}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{minipage}",
         "priority": 4
@@ -4314,7 +4314,7 @@
     {
         "prefix": "(^|[^\\\\])empa  ",
         "body": "$1\\emptyset",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\emptyset",
         "priority": 4
@@ -4330,7 +4330,7 @@
     {
         "prefix": "(^|[^\\\\])elem  ",
         "body": "$1\\end{lemma}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{lemma}",
         "priority": 4
@@ -4338,7 +4338,7 @@
     {
         "prefix": "(^|[^\\\\])eitm  ",
         "body": "$1\\end{itemize}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{itemize}",
         "priority": 4
@@ -4354,7 +4354,7 @@
     {
         "prefix": "(^|[^\\\\])egad  ",
         "body": "$1\\end{gathered}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\end{gathered}",
         "priority": 4
@@ -4362,7 +4362,7 @@
     {
         "prefix": "(^|[^\\\\])eflr  ",
         "body": "$1\\end{flushright}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{flushright}",
         "priority": 4
@@ -4370,7 +4370,7 @@
     {
         "prefix": "(^|[^\\\\])efll  ",
         "body": "$1\\end{flushleft}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{flushleft}",
         "priority": 4
@@ -4378,7 +4378,7 @@
     {
         "prefix": "(^|[^\\\\])efig  ",
         "body": "$1\\end{figure}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{figure}",
         "priority": 4
@@ -4386,7 +4386,7 @@
     {
         "prefix": "(^|[^\\\\])eesp  ",
         "body": "$1\\end{Sp}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\end{Sp}",
         "priority": 4
@@ -4394,7 +4394,7 @@
     {
         "prefix": "(^|[^\\\\])eesb  ",
         "body": "$1\\end{Sb}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\end{Sb}",
         "priority": 4
@@ -4410,7 +4410,7 @@
     {
         "prefix": "(^|[^\\\\])edfn  ",
         "body": "$1\\end{definition}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{definition}",
         "priority": 4
@@ -4418,7 +4418,7 @@
     {
         "prefix": "(^|[^\\\\])ectr  ",
         "body": "$1\\end{center}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{center}",
         "priority": 4
@@ -4426,7 +4426,7 @@
     {
         "prefix": "(^|[^\\\\])ecor  ",
         "body": "$1\\end{corollary}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{corollary}",
         "priority": 4
@@ -4434,7 +4434,7 @@
     {
         "prefix": "(^|[^\\\\])ecnj  ",
         "body": "$1\\end{conjecture}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{conjecture}",
         "priority": 4
@@ -4442,7 +4442,7 @@
     {
         "prefix": "(^|[^\\\\])ecnd  ",
         "body": "$1\\end{condition}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{condition}",
         "priority": 4
@@ -4450,7 +4450,7 @@
     {
         "prefix": "(^|[^\\\\])eclm  ",
         "body": "$1\\end{claim}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{claim}",
         "priority": 4
@@ -4458,7 +4458,7 @@
     {
         "prefix": "(^|[^\\\\])ebib  ",
         "body": "$1\\end{thebibliography}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{thebibliography}",
         "priority": 4
@@ -4474,7 +4474,7 @@
     {
         "prefix": "(^|[^\\\\])ealg  ",
         "body": "$1\\end{algorithm}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{algorithm}",
         "priority": 4
@@ -4482,7 +4482,7 @@
     {
         "prefix": "(^|[^\\\\])eald  ",
         "body": "$1\\end{aligned}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\end{aligned}",
         "priority": 4
@@ -4498,7 +4498,7 @@
     {
         "prefix": "(^|[^\\\\])eabs  ",
         "body": "$1\\end{abstract}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{abstract}",
         "priority": 4
@@ -4506,7 +4506,7 @@
     {
         "prefix": "(^|[^\\\\])dzdt  ",
         "body": "$1dz/dt",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "dz/dt",
         "priority": 4
@@ -4514,7 +4514,7 @@
     {
         "prefix": "(^|[^\\\\])dydt  ",
         "body": "$1dy/dt",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "dy/dt",
         "priority": 4
@@ -4602,7 +4602,7 @@
     {
         "prefix": "(^|[^\\\\])dxdy  ",
         "body": "$1\\,dx\\,dy",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\,dx\\,dy",
         "priority": 4
@@ -4610,7 +4610,7 @@
     {
         "prefix": "(^|[^\\\\])dxdt  ",
         "body": "$1dx/dt",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "dx/dt",
         "priority": 4
@@ -4690,7 +4690,7 @@
     {
         "prefix": "(^|[^\\\\])divi  ",
         "body": "$1\\div",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\div",
         "priority": 4
@@ -4698,7 +4698,7 @@
     {
         "prefix": "(^|[^\\\\])disu  ",
         "body": "$1{\\displaystyle",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "{\\displaystyle",
         "priority": 4
@@ -5234,7 +5234,7 @@
     {
         "prefix": "(^|[^\\\\])coth  ",
         "body": "$1\\cos \\theta",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\cos \\theta",
         "priority": 4
@@ -5242,7 +5242,7 @@
     {
         "prefix": "(^|[^\\\\])coph  ",
         "body": "$1\\cos \\phi",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\cos \\phi",
         "priority": 4
@@ -5250,7 +5250,7 @@
     {
         "prefix": "(^|[^\\\\])clin  ",
         "body": "$1\\centerline{$$1}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\centerline{}",
         "priority": 4
@@ -5266,7 +5266,7 @@
     {
         "prefix": "(^|[^\\\\])citu  ",
         "body": "$1\\cite{",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\cite{",
         "priority": 4
@@ -5274,7 +5274,7 @@
     {
         "prefix": "(^|[^\\\\])citp  ",
         "body": "$1(\\cite{$$1})",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "(\\cite{})",
         "priority": 4
@@ -5298,7 +5298,7 @@
     {
         "prefix": "(^|[^\\\\])capt  ",
         "body": "$1\\caption{$$1}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\caption{}",
         "priority": 4
@@ -5306,7 +5306,7 @@
     {
         "prefix": "(^|[^\\\\])bxcb  ",
         "body": "$1\\begin{xcb}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{xcb}",
         "priority": 4
@@ -5314,7 +5314,7 @@
     {
         "prefix": "(^|[^\\\\])bxca  ",
         "body": "$1\\begin{xca}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{xca}",
         "priority": 4
@@ -5322,7 +5322,7 @@
     {
         "prefix": "(^|[^\\\\])bvrb  ",
         "body": "$1\\begin{verbatim}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{verbatim}",
         "priority": 4
@@ -5330,7 +5330,7 @@
     {
         "prefix": "(^|[^\\\\])buni  ",
         "body": "$1\\bigcup",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\bigcup",
         "priority": 4
@@ -5338,7 +5338,7 @@
     {
         "prefix": "(^|[^\\\\])bthm  ",
         "body": "$1\\begin{theorem}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{theorem}",
         "priority": 4
@@ -5346,7 +5346,7 @@
     {
         "prefix": "(^|[^\\\\])btab  ",
         "body": "$1\\begin{table}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{table}",
         "priority": 4
@@ -5354,7 +5354,7 @@
     {
         "prefix": "(^|[^\\\\])bsyu  ",
         "body": "$1\\boldsymbol{$$1}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\boldsymbol{}",
         "priority": 4
@@ -5362,7 +5362,7 @@
     {
         "prefix": "(^|[^\\\\])bsum  ",
         "body": "$1\\begin{summary}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{summary}",
         "priority": 4
@@ -5370,7 +5370,7 @@
     {
         "prefix": "(^|[^\\\\])bsol  ",
         "body": "$1\\begin{solution}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{solution}",
         "priority": 4
@@ -5386,7 +5386,7 @@
     {
         "prefix": "(^|[^\\\\])brmk  ",
         "body": "$1\\begin{remark}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{remark}",
         "priority": 4
@@ -5394,7 +5394,7 @@
     {
         "prefix": "(^|[^\\\\])bqst  ",
         "body": "$1\\begin{question}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{question}",
         "priority": 4
@@ -5402,7 +5402,7 @@
     {
         "prefix": "(^|[^\\\\])bqas  ",
         "body": "$1\\begin{eqnarray*}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{eqnarray*}",
         "priority": 4
@@ -5410,7 +5410,7 @@
     {
         "prefix": "(^|[^\\\\])bqal  ",
         "body": "$1\\begin{eqnarray}\\label{$$1}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{eqnarray}\\label{}",
         "priority": 4
@@ -5418,7 +5418,7 @@
     {
         "prefix": "(^|[^\\\\])bprf  ",
         "body": "$1\\begin{proof}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{proof}",
         "priority": 4
@@ -5426,7 +5426,7 @@
     {
         "prefix": "(^|[^\\\\])bmpg  ",
         "body": "$1\\begin{minipage}{\\textwidth}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{minipage}{\\textwidth}",
         "priority": 4
@@ -5434,7 +5434,7 @@
     {
         "prefix": "(^|[^\\\\])bmlt  ",
         "body": "$1\\begin{multline}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{multline}",
         "priority": 4
@@ -5442,7 +5442,7 @@
     {
         "prefix": "(^|[^\\\\])blem  ",
         "body": "$1\\begin{lemma}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{lemma}",
         "priority": 4
@@ -5458,7 +5458,7 @@
     {
         "prefix": "(^|[^\\\\])bitm  ",
         "body": "$1\\begin{itemize}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{itemize}",
         "priority": 4
@@ -5466,7 +5466,7 @@
     {
         "prefix": "(^|[^\\\\])bibb  ",
         "body": "$1\\item Author [year]",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\item Author [year]",
         "priority": 4
@@ -5474,7 +5474,7 @@
     {
         "prefix": "(^|[^\\\\])biba  ",
         "body": "$1\\item Author [year]",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\item Author [year]",
         "priority": 4
@@ -5482,7 +5482,7 @@
     {
         "prefix": "(^|[^\\\\])bgas  ",
         "body": "$1\\begin{gather*}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{gather*}",
         "priority": 4
@@ -5490,7 +5490,7 @@
     {
         "prefix": "(^|[^\\\\])bgad  ",
         "body": "$1\\begin{gathered}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\begin{gathered}",
         "priority": 4
@@ -5498,7 +5498,7 @@
     {
         "prefix": "(^|[^\\\\])bflr  ",
         "body": "$1\\begin{flushright}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{flushright}",
         "priority": 4
@@ -5506,7 +5506,7 @@
     {
         "prefix": "(^|[^\\\\])bfll  ",
         "body": "$1\\begin{flushleft}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{flushleft}",
         "priority": 4
@@ -5522,7 +5522,7 @@
     {
         "prefix": "(^|[^\\\\])bfig  ",
         "body": "$1\\begin{figure}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{figure}",
         "priority": 4
@@ -5530,7 +5530,7 @@
     {
         "prefix": "(^|[^\\\\])besp  ",
         "body": "$1\\begin{Sp}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\begin{Sp}",
         "priority": 4
@@ -5538,7 +5538,7 @@
     {
         "prefix": "(^|[^\\\\])besb  ",
         "body": "$1\\begin{Sb}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\begin{Sb}",
         "priority": 4
@@ -5546,7 +5546,7 @@
     {
         "prefix": "(^|[^\\\\])beql  ",
         "body": "$1\\begin{equation}\\label{$$1}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{equation}\\label{}",
         "priority": 4
@@ -5586,7 +5586,7 @@
     {
         "prefix": "(^|[^\\\\])bdma  ",
         "body": "$1\\begin{displaymath}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{displaymath}",
         "priority": 4
@@ -5594,7 +5594,7 @@
     {
         "prefix": "(^|[^\\\\])bdfn  ",
         "body": "$1\\begin{definition}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{definition}",
         "priority": 4
@@ -5602,7 +5602,7 @@
     {
         "prefix": "(^|[^\\\\])bctr  ",
         "body": "$1\\begin{center}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{center}",
         "priority": 4
@@ -5610,7 +5610,7 @@
     {
         "prefix": "(^|[^\\\\])bcor  ",
         "body": "$1\\begin{corollary}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{corollary}",
         "priority": 4
@@ -5618,7 +5618,7 @@
     {
         "prefix": "(^|[^\\\\])bcnj  ",
         "body": "$1\\begin{conjecture}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{conjecture}",
         "priority": 4
@@ -5626,7 +5626,7 @@
     {
         "prefix": "(^|[^\\\\])bcnd  ",
         "body": "$1\\begin{condition}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{condition}",
         "priority": 4
@@ -5634,7 +5634,7 @@
     {
         "prefix": "(^|[^\\\\])bclm  ",
         "body": "$1\\begin{claim}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{claim}",
         "priority": 4
@@ -5642,7 +5642,7 @@
     {
         "prefix": "(^|[^\\\\])bbib  ",
         "body": "$1\\begin{thebibliography}{}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{thebibliography}{}",
         "priority": 4
@@ -5858,7 +5858,7 @@
     {
         "prefix": "(^|[^\\\\])bals  ",
         "body": "$1\\begin{align*}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{align*}",
         "priority": 4
@@ -5866,7 +5866,7 @@
     {
         "prefix": "(^|[^\\\\])balg  ",
         "body": "$1\\begin{algorithm}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{algorithm}",
         "priority": 4
@@ -5874,7 +5874,7 @@
     {
         "prefix": "(^|[^\\\\])bald  ",
         "body": "$1\\begin{aligned}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\begin{aligned}",
         "priority": 4
@@ -5882,7 +5882,7 @@
     {
         "prefix": "(^|[^\\\\])bala  ",
         "body": "$1\\begin{alignat}{$$1}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{alignat}{}",
         "priority": 4
@@ -5890,7 +5890,7 @@
     {
         "prefix": "(^|[^\\\\])babs  ",
         "body": "$1\\begin{abstract}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{abstract}",
         "priority": 4
@@ -5906,7 +5906,7 @@
     {
         "prefix": "(^|[^\\\\])artl  ",
         "body": "$1\\mapsto",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mapsto",
         "priority": 4
@@ -5922,7 +5922,7 @@
     {
         "prefix": "(^|[^\\\\])angl  ",
         "body": "$1\\angle",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\angle",
         "priority": 4
@@ -6282,7 +6282,7 @@
     {
         "prefix": "(^|[^\\\\])upa  ",
         "body": "$1\\uparrow",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\uparrow",
         "priority": 3
@@ -6290,7 +6290,7 @@
     {
         "prefix": "(^|[^\\\\])uni  ",
         "body": "$1\\cup",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\cup",
         "priority": 3
@@ -6298,7 +6298,7 @@
     {
         "prefix": "(^|[^\\\\])uhr  ",
         "body": "$1\\upharpoonright",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\upharpoonright",
         "priority": 3
@@ -6346,7 +6346,7 @@
     {
         "prefix": "(^|[^\\\\])tsz  ",
         "body": "$1 \\textstyle",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": " \\textstyle",
         "priority": 3
@@ -6362,7 +6362,7 @@
     {
         "prefix": "(^|[^\\\\])tsp  ",
         "body": "$1\\;",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\;",
         "priority": 3
@@ -6370,7 +6370,7 @@
     {
         "prefix": "(^|[^\\\\])trv  ",
         "body": "$1\\pitchfork",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\pitchfork",
         "priority": 3
@@ -6378,7 +6378,7 @@
     {
         "prefix": "(^|[^\\\\])tnh  ",
         "body": "$1\\tanh",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\tanh",
         "priority": 3
@@ -6386,7 +6386,7 @@
     {
         "prefix": "(^|[^\\\\])tgu  ",
         "body": "$1\\tag{$$1}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\tag{}",
         "priority": 3
@@ -6394,7 +6394,7 @@
     {
         "prefix": "(^|[^\\\\])tgs  ",
         "body": "$1\\tag*{$$1}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\tag*{}",
         "priority": 3
@@ -6402,7 +6402,7 @@
     {
         "prefix": "(^|[^\\\\])sur  ",
         "body": "$1\\nearrow",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\nearrow",
         "priority": 3
@@ -6410,7 +6410,7 @@
     {
         "prefix": "(^|[^\\\\])ssz  ",
         "body": "$1 \\scriptstyle",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": " \\scriptstyle",
         "priority": 3
@@ -6418,7 +6418,7 @@
     {
         "prefix": "(^|[^\\\\])sst  ",
         "body": "$1\\sideset{$$1}{$$2}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\sideset{}{}",
         "priority": 3
@@ -6426,7 +6426,7 @@
     {
         "prefix": "(^|[^\\\\])ssp  ",
         "body": "$1\\,",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\,",
         "priority": 3
@@ -6434,7 +6434,7 @@
     {
         "prefix": "(^|[^\\\\])ssn  ",
         "body": "$1\\subsection{$$1}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\subsection{}",
         "priority": 3
@@ -6442,7 +6442,7 @@
     {
         "prefix": "(^|[^\\\\])ssn  ",
         "body": "$1\\paragraph{$$1}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\paragraph{}",
         "priority": 3
@@ -6490,7 +6490,7 @@
     {
         "prefix": "(^|[^\\\\])sps  ",
         "body": "$1\\setlength{\\parskip1.5ex plus 0.5ex minus 0.5ex}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\setlength{\\parskip1.5ex plus 0.5ex minus 0.5ex}",
         "priority": 3
@@ -6498,7 +6498,7 @@
     {
         "prefix": "(^|[^\\\\])spn  ",
         "body": "$1\\setcounter{page}{$$1}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\setcounter{page}{}",
         "priority": 3
@@ -6506,7 +6506,7 @@
     {
         "prefix": "(^|[^\\\\])spi  ",
         "body": "$1\\setlength{\\parindent}{0em}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\setlength{\\parindent}{0em}",
         "priority": 3
@@ -6546,7 +6546,7 @@
     {
         "prefix": "(^|[^\\\\])sln  ",
         "body": "$1\\setlength{$$1}{$$2}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\setlength{}{}",
         "priority": 3
@@ -6562,7 +6562,7 @@
     {
         "prefix": "(^|[^\\\\])sih  ",
         "body": "$1\\sinh",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\sinh",
         "priority": 3
@@ -6594,7 +6594,7 @@
     {
         "prefix": "(^|[^\\\\])sdz  ",
         "body": "$1\\,dz",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\,dz",
         "priority": 3
@@ -6602,7 +6602,7 @@
     {
         "prefix": "(^|[^\\\\])sdy  ",
         "body": "$1\\,dy",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\,dy",
         "priority": 3
@@ -6610,7 +6610,7 @@
     {
         "prefix": "(^|[^\\\\])sdx  ",
         "body": "$1\\,dx",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\,dx",
         "priority": 3
@@ -6618,7 +6618,7 @@
     {
         "prefix": "(^|[^\\\\])sdw  ",
         "body": "$1\\,dw",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\,dw",
         "priority": 3
@@ -6626,7 +6626,7 @@
     {
         "prefix": "(^|[^\\\\])sdv  ",
         "body": "$1\\,dv",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\,dv",
         "priority": 3
@@ -6634,7 +6634,7 @@
     {
         "prefix": "(^|[^\\\\])sdu  ",
         "body": "$1\\,du",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\,du",
         "priority": 3
@@ -6642,7 +6642,7 @@
     {
         "prefix": "(^|[^\\\\])sdt  ",
         "body": "$1\\,dt",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\,dt",
         "priority": 3
@@ -6650,7 +6650,7 @@
     {
         "prefix": "(^|[^\\\\])sds  ",
         "body": "$1\\,ds",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\,ds",
         "priority": 3
@@ -6658,7 +6658,7 @@
     {
         "prefix": "(^|[^\\\\])sdr  ",
         "body": "$1\\searrow",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\searrow",
         "priority": 3
@@ -6666,7 +6666,7 @@
     {
         "prefix": "(^|[^\\\\])sdp  ",
         "body": "$1\\,\\circledS\\,",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\,\\circledS\\,",
         "priority": 3
@@ -6706,7 +6706,7 @@
     {
         "prefix": "(^|[^\\\\])rle  ",
         "body": "$1\\rangle",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\rangle",
         "priority": 3
@@ -6714,7 +6714,7 @@
     {
         "prefix": "(^|[^\\\\])rlb  ",
         "body": "$1\\}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\}",
         "priority": 3
@@ -6738,7 +6738,7 @@
     {
         "prefix": "(^|[^\\\\])reo  ",
         "body": "$1\\ni",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\ni",
         "priority": 3
@@ -6746,7 +6746,7 @@
     {
         "prefix": "(^|[^\\\\])rea  ",
         "body": "$1\\Re",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\Re",
         "priority": 3
@@ -6778,7 +6778,7 @@
     {
         "prefix": "(^|[^\\\\])prm  ",
         "body": "$1\\prime",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\prime",
         "priority": 3
@@ -6786,7 +6786,7 @@
     {
         "prefix": "(^|[^\\\\])ppt  ",
         "body": "$1\\propto",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\propto",
         "priority": 3
@@ -6794,7 +6794,7 @@
     {
         "prefix": "(^|[^\\\\])plm  ",
         "body": "$1\\pm",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\pm",
         "priority": 3
@@ -7010,7 +7010,7 @@
     {
         "prefix": "(^|[^\\\\])oti  ",
         "body": "$1\\otimes",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\otimes",
         "priority": 3
@@ -7034,7 +7034,7 @@
     {
         "prefix": "(^|[^\\\\])opl  ",
         "body": "$1\\oplus",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\oplus",
         "priority": 3
@@ -7042,7 +7042,7 @@
     {
         "prefix": "(^|[^\\\\])omi  ",
         "body": "$1\\ominus",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\ominus",
         "priority": 3
@@ -7562,7 +7562,7 @@
     {
         "prefix": "(^|[^\\\\])ntg  ",
         "body": "$1\\notag",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\notag",
         "priority": 3
@@ -7570,7 +7570,7 @@
     {
         "prefix": "(^|[^\\\\])nsp  ",
         "body": "$1\\!",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\!",
         "priority": 3
@@ -7578,7 +7578,7 @@
     {
         "prefix": "(^|[^\\\\])nrm  ",
         "body": "$1\\|",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\|",
         "priority": 3
@@ -7594,7 +7594,7 @@
     {
         "prefix": "(^|[^\\\\])noi  ",
         "body": "$1\\noindent",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\noindent",
         "priority": 3
@@ -7610,7 +7610,7 @@
     {
         "prefix": "(^|[^\\\\])neo  ",
         "body": "$1\\not\\in",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\not\\in",
         "priority": 3
@@ -7650,7 +7650,7 @@
     {
         "prefix": "(^|[^\\\\])msp  ",
         "body": "$1\\:",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\:",
         "priority": 3
@@ -7674,7 +7674,7 @@
     {
         "prefix": "(^|[^\\\\])mlt  ",
         "body": "$1\\ll",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\ll",
         "priority": 3
@@ -7690,7 +7690,7 @@
     {
         "prefix": "(^|[^\\\\])mip  ",
         "body": "$1\\mp",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mp",
         "priority": 3
@@ -7698,7 +7698,7 @@
     {
         "prefix": "(^|[^\\\\])mgt  ",
         "body": "$1\\gg",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\gg",
         "priority": 3
@@ -7874,7 +7874,7 @@
     {
         "prefix": "(^|[^\\\\])ltn  ",
         "body": "$1<",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "<",
         "priority": 3
@@ -7882,7 +7882,7 @@
     {
         "prefix": "(^|[^\\\\])lte  ",
         "body": "$1\\leq",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\leq",
         "priority": 3
@@ -7914,7 +7914,7 @@
     {
         "prefix": "(^|[^\\\\])lle  ",
         "body": "$1\\langle",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\langle",
         "priority": 3
@@ -7930,7 +7930,7 @@
     {
         "prefix": "(^|[^\\\\])llb  ",
         "body": "$1\\{",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\{",
         "priority": 3
@@ -7970,7 +7970,7 @@
     {
         "prefix": "(^|[^\\\\])lgn  ",
         "body": "$1\\ln",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\ln",
         "priority": 3
@@ -8258,7 +8258,7 @@
     {
         "prefix": "(^|[^\\\\])itm  ",
         "body": "$1\\item",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\item",
         "priority": 3
@@ -8266,7 +8266,7 @@
     {
         "prefix": "(^|[^\\\\])iso  ",
         "body": "$1\\cong",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\cong",
         "priority": 3
@@ -8282,7 +8282,7 @@
     {
         "prefix": "(^|[^\\\\])imp  ",
         "body": "$1\\implies",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\implies",
         "priority": 3
@@ -8290,7 +8290,7 @@
     {
         "prefix": "(^|[^\\\\])ima  ",
         "body": "$1\\Im",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\Im",
         "priority": 3
@@ -8298,7 +8298,7 @@
     {
         "prefix": "(^|[^\\\\])igr  ",
         "body": "$1\\includegraphics{$$1}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\includegraphics{}",
         "priority": 3
@@ -8306,7 +8306,7 @@
     {
         "prefix": "(^|[^\\\\])iqe  ",
         "body": "$1\\( $$1 \\)",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\(  \\)",
         "priority": 3
@@ -8314,7 +8314,7 @@
     {
         "prefix": "(^|[^\\\\])idx  ",
         "body": "$1\\index{$$1}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\index{}",
         "priority": 3
@@ -8786,7 +8786,7 @@
     {
         "prefix": "(^|[^\\\\])hba  ",
         "body": "$1\\hbar",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\hbar",
         "priority": 3
@@ -8810,7 +8810,7 @@
     {
         "prefix": "(^|[^\\\\])gtn  ",
         "body": "$1>",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": ">",
         "priority": 3
@@ -8818,7 +8818,7 @@
     {
         "prefix": "(^|[^\\\\])gte  ",
         "body": "$1\\geq",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\geq",
         "priority": 3
@@ -8946,7 +8946,7 @@
     {
         "prefix": "(^|[^\\\\])fof  ",
         "body": "$1}{",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "}{",
         "priority": 3
@@ -8986,7 +8986,7 @@
     {
         "prefix": "(^|[^\\\\])etr  ",
         "body": "$1\\end{tabular}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{tabular}",
         "priority": 3
@@ -8994,7 +8994,7 @@
     {
         "prefix": "(^|[^\\\\])etb  ",
         "body": "$1\\end{tabbing}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{tabbing}",
         "priority": 3
@@ -9002,7 +9002,7 @@
     {
         "prefix": "(^|[^\\\\])eqv  ",
         "body": "$1\\equiv",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\equiv",
         "priority": 3
@@ -9010,7 +9010,7 @@
     {
         "prefix": "(^|[^\\\\])eqt  ",
         "body": "$1\\end{quotation}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{quotation}",
         "priority": 3
@@ -9018,7 +9018,7 @@
     {
         "prefix": "(^|[^\\\\])eqm  ",
         "body": "$1''",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "''",
         "priority": 3
@@ -9034,7 +9034,7 @@
     {
         "prefix": "(^|[^\\\\])emu  ",
         "body": "$1\\emph{$$1}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\emph{}",
         "priority": 3
@@ -9090,7 +9090,7 @@
     {
         "prefix": "(^|[^\\\\])een  ",
         "body": "$1\\end{enumerate}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{enumerate}",
         "priority": 3
@@ -9106,7 +9106,7 @@
     {
         "prefix": "(^|[^\\\\])eds  ",
         "body": "$1\\end{description}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{description}",
         "priority": 3
@@ -9122,7 +9122,7 @@
     {
         "prefix": "(^|[^\\\\])edo  ",
         "body": "$1\\end{document}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{document}",
         "priority": 3
@@ -9146,7 +9146,7 @@
     {
         "prefix": "(^|[^\\\\])eac  ",
         "body": "$1\\end{acknowledgment}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{acknowledgment}",
         "priority": 3
@@ -9298,7 +9298,7 @@
     {
         "prefix": "(^|[^\\\\])dtt  ",
         "body": "$1\\det",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\det",
         "priority": 3
@@ -9306,7 +9306,7 @@
     {
         "prefix": "(^|[^\\\\])dsz  ",
         "body": "$1 \\displaystyle",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": " \\displaystyle",
         "priority": 3
@@ -9330,7 +9330,7 @@
     {
         "prefix": "(^|[^\\\\])dmn  ",
         "body": "$1\\dim",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\dim",
         "priority": 3
@@ -9890,7 +9890,7 @@
     {
         "prefix": "(^|[^\\\\])cpg  ",
         "body": "$1\\clearpage",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\clearpage",
         "priority": 3
@@ -9906,7 +9906,7 @@
     {
         "prefix": "(^|[^\\\\])coh  ",
         "body": "$1\\cosh",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\cosh",
         "priority": 3
@@ -9922,7 +9922,7 @@
     {
         "prefix": "(^|[^\\\\])cit  ",
         "body": "$1\\cite{",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\cite{",
         "priority": 3
@@ -9930,7 +9930,7 @@
     {
         "prefix": "(^|[^\\\\])cir  ",
         "body": "$1\\circ",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\circ",
         "priority": 3
@@ -9954,7 +9954,7 @@
     {
         "prefix": "(^|[^\\\\])cdp  ",
         "body": "$1\\cleardoublepage",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\cleardoublepage",
         "priority": 3
@@ -10202,7 +10202,7 @@
     {
         "prefix": "(^|[^\\\\])btr  ",
         "body": "$1\\begin{tabular}{|c|c|}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{tabular}{|c|c|}",
         "priority": 3
@@ -10210,7 +10210,7 @@
     {
         "prefix": "(^|[^\\\\])btb  ",
         "body": "$1\\begin{tabbing}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{tabbing}",
         "priority": 3
@@ -10218,7 +10218,7 @@
     {
         "prefix": "(^|[^\\\\])bsy  ",
         "body": "$1\\boldsymbol{$$1}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\boldsymbol{}",
         "priority": 3
@@ -10226,7 +10226,7 @@
     {
         "prefix": "(^|[^\\\\])bqt  ",
         "body": "$1\\begin{quotation}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{quotation}",
         "priority": 3
@@ -10234,7 +10234,7 @@
     {
         "prefix": "(^|[^\\\\])bqm  ",
         "body": "$1``",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "``",
         "priority": 3
@@ -10242,7 +10242,7 @@
     {
         "prefix": "(^|[^\\\\])bqa  ",
         "body": "$1\\begin{eqnarray}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{eqnarray}",
         "priority": 3
@@ -10250,7 +10250,7 @@
     {
         "prefix": "(^|[^\\\\])bma  ",
         "body": "$1\\begin{math}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{math}",
         "priority": 3
@@ -10258,7 +10258,7 @@
     {
         "prefix": "(^|[^\\\\])blt  ",
         "body": "$1\\bullet",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\bullet",
         "priority": 3
@@ -10266,7 +10266,7 @@
     {
         "prefix": "(^|[^\\\\])bga  ",
         "body": "$1\\begin{gather}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{gather}",
         "priority": 3
@@ -10298,7 +10298,7 @@
     {
         "prefix": "(^|[^\\\\])beq  ",
         "body": "$1\\begin{equation}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{equation}",
         "priority": 3
@@ -10306,7 +10306,7 @@
     {
         "prefix": "(^|[^\\\\])ben  ",
         "body": "$1\\begin{enumerate}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{enumerate}",
         "priority": 3
@@ -10330,7 +10330,7 @@
     {
         "prefix": "(^|[^\\\\])bds  ",
         "body": "$1\\begin{description}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{description}",
         "priority": 3
@@ -10338,7 +10338,7 @@
     {
         "prefix": "(^|[^\\\\])bdp  ",
         "body": "$1\\[",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\[",
         "priority": 3
@@ -10346,7 +10346,7 @@
     {
         "prefix": "(^|[^\\\\])bdo  ",
         "body": "$1\\begin{document}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{document}",
         "priority": 3
@@ -10570,7 +10570,7 @@
     {
         "prefix": "(^|[^\\\\])bal  ",
         "body": "$1\\begin{align}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{align}",
         "priority": 3
@@ -10578,7 +10578,7 @@
     {
         "prefix": "(^|[^\\\\])bac  ",
         "body": "$1\\begin{acknowledgment}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{acknowledgment}",
         "priority": 3
@@ -10594,7 +10594,7 @@
     {
         "prefix": "(^|[^\\\\])avz  ",
         "body": "$1|z|",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "|z|",
         "priority": 3
@@ -10602,7 +10602,7 @@
     {
         "prefix": "(^|[^\\\\])avy  ",
         "body": "$1|y|",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "|y|",
         "priority": 3
@@ -10610,7 +10610,7 @@
     {
         "prefix": "(^|[^\\\\])avx  ",
         "body": "$1|x|",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "|x|",
         "priority": 3
@@ -10618,7 +10618,7 @@
     {
         "prefix": "(^|[^\\\\])avc  ",
         "body": "$1|c|",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "|c|",
         "priority": 3
@@ -10626,7 +10626,7 @@
     {
         "prefix": "(^|[^\\\\])avb  ",
         "body": "$1|b|",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "|b|",
         "priority": 3
@@ -10634,7 +10634,7 @@
     {
         "prefix": "(^|[^\\\\])ava  ",
         "body": "$1|a|",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "|a|",
         "priority": 3
@@ -10650,7 +10650,7 @@
     {
         "prefix": "(^|[^\\\\])apx  ",
         "body": "$1\\approx",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\approx",
         "priority": 3
@@ -10658,7 +10658,7 @@
     {
         "prefix": "(^|[^\\\\])ale  ",
         "body": "$1\\aleph",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\aleph",
         "priority": 3
@@ -10666,7 +10666,7 @@
     {
         "prefix": "(^|[^\\\\])ada  ",
         "body": "$1& = &",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "& = &",
         "priority": 3
@@ -10682,7 +10682,7 @@
     {
         "prefix": "(^|[^\\\\])03p  ",
         "body": "$1(0, 0, 0)",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "(0, 0, 0)",
         "priority": 3
@@ -10690,7 +10690,7 @@
     {
         "prefix": "(^|[^\\\\])00p  ",
         "body": "$1(0,0)",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "(0,0)",
         "priority": 3
@@ -10898,7 +10898,7 @@
     {
         "prefix": "(^|[^\\\\])tn  ",
         "body": "$1\\tan",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\tan",
         "priority": 2
@@ -10906,7 +10906,7 @@
     {
         "prefix": "(^|[^\\\\])ti  ",
         "body": "$1\\times",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\times",
         "priority": 2
@@ -10914,7 +10914,7 @@
     {
         "prefix": "(^|[^\\\\])tg  ",
         "body": "$1\\tag{$$1}",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\tag{}",
         "priority": 2
@@ -10922,7 +10922,7 @@
     {
         "prefix": "(^|[^\\\\])te  ",
         "body": "$1\\exists",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\exists",
         "priority": 2
@@ -10930,7 +10930,7 @@
     {
         "prefix": "(^|[^\\\\])tb  ",
         "body": "$1\\>",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\>",
         "priority": 2
@@ -10962,7 +10962,7 @@
     {
         "prefix": "(^|[^\\\\])si  ",
         "body": "$1\\sin",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\sin",
         "priority": 2
@@ -11018,7 +11018,7 @@
     {
         "prefix": "(^|[^\\\\])pl  ",
         "body": "$1+",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "+",
         "priority": 2
@@ -11026,7 +11026,7 @@
     {
         "prefix": "(^|[^\\\\])pd  ",
         "body": "$1\\partial",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\partial",
         "priority": 2
@@ -11314,7 +11314,7 @@
     {
         "prefix": "(^|[^\\\\])ne  ",
         "body": "$1\\neq",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\neq",
         "priority": 2
@@ -11322,7 +11322,7 @@
     {
         "prefix": "(^|[^\\\\])na  ",
         "body": "$1\\nabla",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\nabla",
         "priority": 2
@@ -11330,7 +11330,7 @@
     {
         "prefix": "(^|[^\\\\])mx  ",
         "body": "$1\\max",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\max",
         "priority": 2
@@ -11346,7 +11346,7 @@
     {
         "prefix": "(^|[^\\\\])mn  ",
         "body": "$1\\min",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\min",
         "priority": 2
@@ -11354,7 +11354,7 @@
     {
         "prefix": "(^|[^\\\\])mi  ",
         "body": "$1-",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "-",
         "priority": 2
@@ -11650,7 +11650,7 @@
     {
         "prefix": "(^|[^\\\\])kr  ",
         "body": "$1\\ker",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\ker",
         "priority": 2
@@ -11946,7 +11946,7 @@
     {
         "prefix": "(^|[^\\\\])gc  ",
         "body": "$1\\gcd",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\gcd",
         "priority": 2
@@ -11962,7 +11962,7 @@
     {
         "prefix": "(^|[^\\\\])fa  ",
         "body": "$1\\forall",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\forall",
         "priority": 2
@@ -11994,7 +11994,7 @@
     {
         "prefix": "(^|[^\\\\])ex  ",
         "body": "$1\\exp",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\exp",
         "priority": 2
@@ -12002,7 +12002,7 @@
     {
         "prefix": "(^|[^\\\\])eq  ",
         "body": "$1=",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "=",
         "priority": 2
@@ -12018,7 +12018,7 @@
     {
         "prefix": "(^|[^\\\\])eo  ",
         "body": "$1\\in",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\in",
         "priority": 2
@@ -12322,7 +12322,7 @@
     {
         "prefix": "(^|[^\\\\])co  ",
         "body": "$1\\cos",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\cos",
         "priority": 2
@@ -12330,7 +12330,7 @@
     {
         "prefix": "(^|[^\\\\])cl  ",
         "body": "$1\\centerline{$$1}",
-        "mode": "any",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\centerline{}",
         "priority": 2
@@ -12610,7 +12610,7 @@
     {
         "prefix": "(^|[^\\\\])ag  ",
         "body": "$1\\arg",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\arg",
         "priority": 2
@@ -12634,7 +12634,7 @@
     {
         "prefix": "(^|[^\\\\])0p  ",
         "body": "$1(0)",
-        "mode": "any",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "(0)",
         "priority": 2
