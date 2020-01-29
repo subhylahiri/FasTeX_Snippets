@@ -1,0 +1,82 @@
+%--Article Preamble-----------------------------------------------
+\documentclass[11pt]{article}
+% Preamble:
+\usepackage[T1]{fontenc}
+\usepackage[tables]{sl-preamble}
+\usepackage[margin=1.5in]{geometry}
+%
+% ----------------------------------------------------------------
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+%\numberwithin{equation}{section}
+%\renewcommand{\baselinestretch}{1.5}
+% ----------------------------------------------------------------
+% New commands etc.
+%
+%================================================================================
+\begin{document}
+%================================================================================
+\title{FasTeX codes: prefixes and suffixes}
+\author{Subhaneil Lahiri}
+\date{}
+\maketitle
+%================================================================================
+
+\begin{center}
+\begin{tabular}{>{\ttfamily}cl>{\ttfamily}c>{\ttfamily}l}
+\toprule
+  \textnormal{Code} & Meaning & \textnormal{Example} & \textnormal{Result} \\
+\midrule
+  b & begin             & beqlb{} & \verb.\begin{equation}\label{}. \\
+  e & end{}             & eeq{}   & \verb.\end{equation}. \\
+  o & open              & obk{}   & [ \\
+  e & close             & eeq{}   & ] \\
+  c & capital           & xcd{}   & \verb.\Delta. \\
+  x & Greek             & xd{}    & \verb.\delta. \\
+  d & in dollars        & dx{}    & \$x\$ \\
+  f & fraction          & fu{}    & \verb.\frac{. \\
+  h & high/superscript{}& hdg{}   & \verb.^\dag. \\
+  l & low/subscript{}   & li{}    & \verb._i. \\
+  le& left              & lel{}   & \verb.\left\langle. \\
+  ri& right             & rir{}   & \verb.\right\rangle. \\
+ txt& text              & txtbf{} & \verb.\textbf{}. \\
+  m & math              & mrm{}   & \verb.\mathrm{}. \\
+  b & bold{}            & bd{}    & \verb.\mathbf{d}. \\
+  bb& blackboard-bold{} & bbcz{}  & \verb.\mathbb{Z}. \\
+  op& open-letter       & opcrm{} & \verb.\mathbb{R}^m. \\
+  c & calligraphic      & ccd{}   & \verb.\mathcal{D}. \\
+  gm& German/fraktur    & gmks{}  & \verb.\mathfrak{k}^{\ast}. \\
+  mx& matrix            & mxu{}   & \verb'\begin{matrix}...\end{matrix}' \\
+  sd& space differential& sdx{}   & \verb.\,dx. \\
+  int& integral         & intc{}  & \verb.\oint. \\
+  i & integral          & iba{}   & \verb.\int^b_a. \\
+  o & function of       & ox{}    & (x) \\
+  oe& function of       & oef{}   & (f) \\
+  o & over              & obp{}   & \verb.\bar{p}. \\
+  ob& over bar          & obp{}   & \verb.\bar{p}. \\
+  od& over dot          & odp{}   & \verb.\dot{p}. \\
+  odd& over dot dot     & oddp{}  & \verb.\ddot{p}. \\
+  ol& over line         & olp{}   & \verb.\overline{p}. \\
+  oh& over hat          & ohp{}   & \verb.\hat{p}. \\
+  ov& over vec          & ovv{}   & \verb.\vec{v}. \\
+  oc& over check        & ocu{}   & \verb.\check{}.* \\
+  ot& over tilde{}      & otu{}   & \verb.\tilde{}.* \\
+  wt& wide over tilde{} & wtu{}   & \verb.\widetilde{}.* \\
+  wh& wide over hat     & whu{}   & \verb.\widehat{}.* \\
+  o & circled{}         & opl{}   & \verb.\oplus. \\
+  op& operator          & opdiv{} & \verb.\operatorname{div}. \\
+  a & acute accent      & ae{}    & \verb.\'{e}. \\
+  g & grave accent      & ge{}    & \verb.\`{e}. \\
+  u & umlaut            & uo{}    & \verb.\"{o}. \\
+  w & word(s)           & wprp{}  & perpendicular \\
+  te& template          & teabs{} & \verb"\begin{abstract}...\end{abstract}" \\
+\bottomrule
+\end{tabular}
+\end{center}
+* Only example.
+
+
+
+
+%================================================================================
+\end{document}
