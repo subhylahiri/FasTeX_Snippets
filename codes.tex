@@ -40,7 +40,7 @@
   \bottomrule
   \end{tabular}
 \end{center}
-  \caption{Prefixes: general and text mode.}
+  \caption{Prefixes: general and text mode.}\label{tb:preftext}
 \end{table}
 
 %--------------------------------------------------------------------------------
@@ -64,7 +64,7 @@
     bb & blackboard-bold{}& bbcz{}  & \verb.\mathbb{Z}. \\
     op & open-letter      & opcrm{} & \verb.\mathbb{R}^m. \\
     c & calligraphic      & ccd{}   & \verb.\mathcal{D}. \\
-    gm& German/fraktur    & gmks{}  & \verb.\mathfrak{k}^{\ast}. \\
+    gm& German/Fraktur    & gmks{}  & \verb.\mathfrak{k}^{\ast}. \\
     mx& matrix            & mxu{}   & \verb'\begin{matrix}...\end{matrix}' \\
     sd& space differential& sdx{}   & \verb.\,dx. \\
     int/i& integral       & intc/iba{} & \verb.\oint./\verb.\int^b_a. \\
@@ -87,7 +87,24 @@
   They are listed in order of increasing priority -- when combined, the later prefixes should appear to the left of the earlier ones.
   Not every combination exists.
   Everything from \texttt{f} to \texttt{op} effectively has the same priority, as they are never combined.
-  }
+  }\label{tb:prefmaths}
+\end{table}
+
+
+\begin{table}[htb] 
+\begin{center}
+  \begin{tabular}{>{\ttfamily}cl>{\ttfamily}c>{\ttfamily}l}
+  \toprule
+    \textnormal{Code} & Meaning & \textnormal{Example} & \textnormal{Result} \\
+  \midrule
+  eq & equation & beq{} & \verb.\.\verb.begin{equation}. \\
+  al & align & bal{} & \verb.\.\verb.begin{align}. \\
+  ga & gather & bga{} & \verb.\.\verb.begin{gather}. \\
+  \bottomrule
+  \end{tabular}
+\end{center}
+\caption{}
+\label{tb:suffeq}
 \end{table}
 
 
