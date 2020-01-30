@@ -1184,6 +1184,12 @@
         "description": "\\end{multline*}"
     },
     {
+        "prefix": "emltd",
+        "body": "\\end{multlined}",
+        "mode": "maths",
+        "description": "\\end{multlined}"
+    },
+    {
         "prefix": "ecrit",
         "body": "\\end{criterion}",
         "mode": "text",
@@ -1452,6 +1458,12 @@
         "body": "\\begin{multline*}",
         "mode": "text",
         "description": "\\begin{multline*}"
+    },
+    {
+        "prefix": "bmltd",
+        "body": "\\begin{multlined}",
+        "mode": "maths",
+        "description": "\\begin{multlined}"
     },
     {
         "prefix": "blstr",
@@ -8491,7 +8503,7 @@
     {
         "prefix": "op",
         "body": "(",
-        "mode": "maths",
+        "mode": "any",
         "description": "("
     },
     {
