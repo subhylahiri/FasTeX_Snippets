@@ -769,7 +769,7 @@
         \\\\quad \\\\text{$1}
         \\\\end{equation*}
         """
-        "description": "\begin{equation*}"
+        "description": "\begin{equation*} \text{}"
     "eqlbr": 
         "prefix": "eqlbr"
         "body": """
@@ -4741,8 +4741,8 @@
         "description": "\end{description}"
     "edp": 
         "prefix": "edp"
-        "body": "\\\\end{equation*}"
-        "description": "\end{equation*}"
+        "body": "\\\\]"
+        "description": "\]"
     "edo": 
         "prefix": "edo"
         "body": "\\\\end{document}"

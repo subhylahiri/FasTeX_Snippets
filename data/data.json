@@ -3422,6 +3422,12 @@
         "description": "\\end{Sb}"
     },
     {
+        "prefix": "eeqs",
+        "body": "\\end{equation*}",
+        "mode": "text",
+        "description": "\\end{equation*}"
+    },
+    {
         "prefix": "edma",
         "body": "\\end{displaymath}",
         "mode": "any",
@@ -4291,6 +4297,12 @@
         "body": "\\begin{Sb}",
         "mode": "maths",
         "description": "\\begin{Sb}"
+    },
+    {
+        "prefix": "beqs",
+        "body": "\\begin{equation*}",
+        "mode": "text",
+        "description": "\\begin{equation*}"
     },
     {
         "prefix": "beql",

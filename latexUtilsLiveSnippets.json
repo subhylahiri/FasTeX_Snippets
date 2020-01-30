@@ -9809,8 +9809,8 @@
     },
     {
         "prefix": "(^|[^\\\\])bdp  ",
-        "body": "$1\\begin{equation*}",
-        "mode": "any",
+        "body": "$1\\[",
+        "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{equation*}",
         "priority": 3
