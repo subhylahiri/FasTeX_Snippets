@@ -40,8 +40,60 @@
   \bottomrule
   \end{tabular}
 \end{center}
-  \caption{Prefixes: general and text mode.}\label{tb:preftext}
+  \caption{Prefixes: general and text mode.}
+  \label{tb:preftext}
 \end{table}
+
+%--------------------------------------------------------------------------------
+
+\begin{table}[htb] 
+  \begin{center}
+    \begin{tabular}{>{\ttfamily}cl>{\ttfamily}c>{\ttfamily}l}
+    \toprule
+      \textnormal{Code} & Meaning & \textnormal{Example} & \textnormal{Result} \\
+    \midrule
+    fig & figure    & bfig{} & \verb.\.\verb.begin{figure}. \\
+    tab & table     & btab{} & \verb.\.\verb.begin{table}. \\
+    en  & enumerate & ben{}  & \verb.\.\verb.begin{enumerate}. \\
+    itm & itemize   & bitm{} & \verb.\.\verb.begin{itemize}. \\
+    ctr & center    & bctr{} & \verb.\.\verb.begin{center}. \\
+    fll & flushleft & bfll{} & \verb.\.\verb.begin{flushleft}. \\
+    flr & flushright& bflr{} & \verb.\.\verb.begin{flushright}. \\
+    flr & flushright& bflr{} & \verb.\.\verb.begin{flushright}. \\
+    vrb & verbatim  & bvrb{} & \verb.\.\verb.begin{verbatim}. \\
+    tr  & tabular   & btr{}  & \verb.\.\verb.begin{tabular}{|c|c|}. \\
+    abs & abstract  & babs{} & \verb.\.\verb.begin{abstract}. \\
+    do  & document  & bdo{}  & \verb.\.\verb.begin{document}. \\
+    thm & theorem   & bthm{} & \verb.\.\verb.begin{theorem}. \\
+    cor & corollary & bcor{} & \verb.\.\verb.begin{corollary}. \\
+    dfn & definition& bdfn{} & \verb.\.\verb.begin{definition}. \\
+    cnj & conjecture& bcnj{} & \verb.\.\verb.begin{conjecture}. \\
+    clm & claim     & bclm{} & \verb.\.\verb.begin{claim}}. \\
+    lem & lemma     & blem{} & \verb.\.\verb.begin{lemma}. \\
+    alg & algorithm & balg{} & \verb.\.\verb.begin{algorithm}. \\
+    cnd & condition & bcnd{} & \verb.\.\verb.begin{condition}. \\
+    prf & proof     & bprf{} & \verb.\.\verb.begin{proof}. \\
+    qst & question  & bqst{} & \verb.\.\verb.begin{question}. \\
+    rmk & remark    & brmk{} & \verb.\.\verb.begin{remark}. \\
+    sol & solution  & bsol{} & \verb.\.\verb.begin{solution}. \\
+    sum & summary   & bsum{} & \verb.\.\verb.begin{summary}. \\
+    b   & brace{}         & ob{}    & \{ \\
+    bk  & bracket         & obk{}   & [ \\
+    p   & parenthesis     & op{}    & ( \\
+    bf  & bold-face font  & txtbf{} & \verb.\textbf{}. \\
+    it  & italic font     & txtit{} & \verb.\textit{}. \\
+    rm  & roman font      & txtrm{} & \verb.\textrm{}. \\
+    sc  & small-caps font & txtsc{} & \verb.\textsc{}. \\
+    sf  & sans-serif font & txtsf{} & \verb.\textsf{}. \\
+    sl  & slanted font    & txtsl{} & \verb.\textsl{}. \\
+    tt  & teletype font   & txttt{} & \verb.\texttt{}. \\
+    up  & upright font    & txtup{} & \verb.\textup{}. \\
+    \bottomrule
+    \end{tabular}
+  \end{center}
+  \caption{Suffixes and middles: text mode.}
+  \label{tb:sufftext}
+  \end{table}
 
 %--------------------------------------------------------------------------------
 
@@ -51,43 +103,40 @@
   \toprule
     \textnormal{Code} & Meaning & \textnormal{Example} & \textnormal{Result} \\
   \midrule
-    c & capital           & xcd{}   & \verb.\Delta. \\
-    x & Greek             & xd{}    & \verb.\delta. \\
-    f & fraction          & fu{}    & \verb.\frac{. \\
+    d & in dollars        & dx{}    & \$x\$ \\
+    f & fraction          & fpdu{}  & \verb.\\frac{\\partial}{\\partial. \\
+    op& operator          & opdiv{} & \verb.\operatorname{div}. \\
+    o & over              & ohu{}   & \verb.\hat{}. \\
+    w & wide-over         & whu{}   & \verb.\widehat{}. \\
     h & high/superscript{}& hdg{}   & \verb.^\dag. \\
     l & low/subscript{}   & li{}    & \verb._i. \\
+    pd& partial derivative& pdzy{}  & \verb.\partial z/\partial y. \\
     le& left              & lel{}   & \verb.\left\langle. \\
     ri& right             & rir{}   & \verb.\right\rangle. \\
+  o/oe& function of       & ox/oef{}& (x)/(f) \\
    txt& text              & txt{}   & \verb.\text{}. \\
     m & math              & mrm{}   & \verb.\mathrm{}. \\
     b & bold{}            & bd{}    & \verb.\mathbf{d}. \\
-    bb & blackboard-bold{}& bbcz{}  & \verb.\mathbb{Z}. \\
-    op & open-letter      & opcrm{} & \verb.\mathbb{R}^m. \\
-    c & calligraphic      & ccd{}   & \verb.\mathcal{D}. \\
+    bb& blackboard-bold{} & bbcz{}  & \verb.\mathbb{Z}. \\
+    op& open-letter       & opcrm{} & \verb.\mathbb{R}^m. \\
+  c/ca& calligraphic      & ccd/cau{}   & \verb.\mathcal{D}./\verb.\mathcal{}. \\
     gm& German/Fraktur    & gmks{}  & \verb.\mathfrak{k}^{\ast}. \\
     mx& matrix            & mxu{}   & \verb'\begin{matrix}...\end{matrix}' \\
     sd& space differential& sdx{}   & \verb.\,dx. \\
-    int/i& integral       & intc/iba{} & \verb.\oint./\verb.\int^b_a. \\
-    o/oe & function of    & ox/oef{}& (x)/(f) \\
-    o & over              & otu{}   & \verb.\tilde{}. \\
-    w & wide over         & whu{}   & \verb.\widehat{}. \\
-    ob& over bar          & obp{}   & \verb.\bar{p}. \\
-    od& over dot          & odp{}   & \verb.\dot{p}. \\
-    odd& over dot dot     & oddp{}  & \verb.\ddot{p}. \\
-    ol& over line         & olp{}   & \verb.\overline{p}. \\
-    oh& over hat          & ohp{}   & \verb.\hat{p}. \\
-    ov& over vec          & ovv{}   & \verb.\vec{v}. \\
+ int/i& integral        & intc/iba{}& \verb.\oint./\verb.\int^b_a. \\
     o & circled{}         & opl{}   & \verb.\oplus. \\
-    op& operator          & opdiv{} & \verb.\operatorname{div}. \\
-    d & in dollars        & dx{}    & \$x\$ \\
+    x & Greek             & xd{}    & \verb.\delta. \\
+    c & capital           & xcd{}   & \verb.\Delta. \\
   \bottomrule
   \end{tabular}
 \end{center}
   \caption{Prefixes: maths mode.
-  They are listed in order of increasing priority -- when combined, the later prefixes should appear to the left of the earlier ones.
+  They are listed in order of increasing priority -- 
+  when combined the earlier prefixes should appear to the left of the later ones.
   Not every combination exists.
-  Everything from \texttt{f} to \texttt{op} effectively has the same priority, as they are never combined.
-  }\label{tb:prefmaths}
+  Everything from \texttt{f} to \texttt{op} effectively has the same priority, 
+  as they are never combined.}
+  \label{tb:prefmaths}
 \end{table}
 
 
@@ -97,13 +146,37 @@
   \toprule
     \textnormal{Code} & Meaning & \textnormal{Example} & \textnormal{Result} \\
   \midrule
-  eq & equation & beq{} & \verb.\.\verb.begin{equation}. \\
-  al & align & bal{} & \verb.\.\verb.begin{align}. \\
-  ga & gather & bga{} & \verb.\.\verb.begin{gather}. \\
-  \bottomrule
+  \multicolumn{2}{l}{Middles:} \\
+  b  & bar          & obp{}   & \verb.\bar{p}. \\
+  d{}& dot          & odp{}   & \verb.\dot{p}. \\
+  dd{}& dot dot     & oddp{}  & \verb.\ddot{p}. \\
+  l  & line         & olp{}   & \verb.\overline{p}. \\
+  h  & hat          & ohp{}   & \verb.\hat{p}. \\
+  v  & vec          & ovv{}   & \verb.\vec{v}. \\
+  t  & tilde{}      & wtu{}   & \verb.\widetilde{}. \\   
+  v  & var          & xve{}   & \verb.\varepsilon. \\
+  \multicolumn{2}{l}{Suffixes:} \\
+  eq & equation     & beq{}   & \verb.\.\verb.begin{equation}. \\
+  al & align        & bal{}   & \verb.\.\verb.begin{align}. \\
+  ala& alignat      & bala{}  & \verb.\.\verb.begin{alignat}{}. \\
+  ga & gather       & bga{}   & \verb.\.\verb.begin{gather}. \\
+  mlt& multline     & bmlt{}  & \verb.\.\verb.begin{multline}. \\
+  dma& displaymath  & bdma{}  & \verb.\.\verb.begin{displaymath}. \\
+  dp & displaymath  & bdp{}   & \verb.\\.[ \\
+  s  & starred{}    & bgas{}  & \verb.\.\verb.begin{gather*}. \\
+  d{}& -ed environment      & bald{} & \verb.\.\verb.begin{aligned}. \\
+  u  & universal/unfinished & otu{}  & \verb.\tilde{}.\\
+  a-z& a-z          & bbca{}  & \verb.\mathbb{A}. \\
+  a-z& alpha-zeta   & ohxa{}  & \verb.\hat{\alpha}. \\
+  th & theta        & xth{}   & \verb.\theta. \\
+  ph & phi          & xcph{}  & \verb.\Phi. \\
+  ps & psi          & xps{}   & \verb.\psi. \\
+  et & eta          & xet{}   & \verb.\eta. \\
+  0-9& 0-9          & f13{}   & \verb.\frac{1}{3}. \\
+\bottomrule
   \end{tabular}
 \end{center}
-\caption{}
+\caption{Suffixes and middles: equation environments and maths mode.}
 \label{tb:suffeq}
 \end{table}
 
