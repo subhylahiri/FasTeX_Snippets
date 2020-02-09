@@ -2610,6 +2610,24 @@
         "description": "\\begin{cases}"
     },
     {
+        "prefix": "tebd",
+        "body": [
+            "\\documentclass{article}",
+            "\\usepackage{latexsym,amssymb}             % special symbols",
+            "\\usepackage{amsmath}                      % amsmath environments",
+            "\\usepackage{amsthm}                       % ams theorem/proof environments",
+            "% \\usepackage{amscd}                      % ams commutative diagrams",
+            "% \\usepackage{graphicx}                   % graphics commands",
+            "% \\usepackage{color}                      % color commands",
+            "% \\usepackage{verbatim}                   % comment/verbatim environments",
+            "% \\usepackage{makeidx}                    % makeindex",
+            "\\newcommand{\\bfi}{\\bfseries\\itshape}      % bold italic",
+            "\\begin{document}"
+        ],
+        "mode": "maths",
+        "description": "\\begin{cases}"
+    },
+    {
         "prefix": "tbex",
         "body": [
             "\\begin{tabbing}",
