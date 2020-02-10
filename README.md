@@ -26,6 +26,7 @@ so `dxcd` → `$\Delta$` |
 `lij` → `_{ij}` |
 Have a look at the documentation linked to above for more information 
 although they have been modernised since.
+In the file (codes.pdf) I have listed some of the building-blocks of the shortcuts to help you guess them.
 
 There are nearly 1600 shortcuts, so I haven't tested them all in this implementation.
 I have also mostly stopped using Atom, so those snippets are likely to be very buggy.
