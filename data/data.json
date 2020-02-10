@@ -538,6 +538,12 @@
         "description": "\\quad\\blacklozenge"
     },
     {
+        "prefix": "adjlim",
+        "body": "\\adjustlimits",
+        "mode": "maths",
+        "description": "\\adjustlimits"
+    },
+    {
         "prefix": "wrtns",
         "body": "rotations",
         "mode": "text",
@@ -709,6 +715,12 @@
         "body": "\\sum_j",
         "mode": "maths",
         "description": "\\sum_j"
+    },
+    {
+        "prefix": "subst",
+        "body": "\\substack{$1 \\\\ $2}",
+        "mode": "maths",
+        "description": "\\substack{ \\\\ }"
     },
     {
         "prefix": "setlu",
@@ -1412,6 +1424,30 @@
         "description": "$\\mathbb{C}$ "
     },
     {
+        "prefix": "crsst",
+        "body": "\\crampedsubstack{$1 \\\\ $2}",
+        "mode": "maths",
+        "description": "\\crampedsubstack{ \\\\ }"
+    },
+    {
+        "prefix": "crrlp",
+        "body": "\\crampedrlap[$1]{$2}",
+        "mode": "maths",
+        "description": "\\crampedrlap[]{} "
+    },
+    {
+        "prefix": "crllp",
+        "body": "\\crampedllap[$1]{$2}",
+        "mode": "maths",
+        "description": "\\crampedllap[]{} "
+    },
+    {
+        "prefix": "crclp",
+        "body": "\\crampedclap[$1]{$2}",
+        "mode": "maths",
+        "description": "\\crampedclap[]{} "
+    },
+    {
         "prefix": "captu",
         "body": "\\caption{$1}",
         "mode": "text",
@@ -1977,6 +2013,12 @@
         "body": "\\sum^{n}_{i = 1}",
         "mode": "maths",
         "description": "\\sum^{n}_{i = 1}"
+    },
+    {
+        "prefix": "smop",
+        "body": "\\smashoperator[$1]{$2}",
+        "mode": "any",
+        "description": "\\smashoperator[]{}"
     },
     {
         "prefix": "slnu",
@@ -2625,6 +2667,12 @@
         "description": "\\mathrm{}"
     },
     {
+        "prefix": "mrlp",
+        "body": "\\mathrlap{$1}",
+        "mode": "maths",
+        "description": "\\mathrlap{}"
+    },
+    {
         "prefix": "mrkb",
         "body": "\\markboth{$1}{$2}",
         "mode": "text",
@@ -2635,6 +2683,12 @@
         "body": "\\mathop{$1}",
         "mode": "maths",
         "description": "\\mathop{}"
+    },
+    {
+        "prefix": "mllp",
+        "body": "\\mathllap{$1}",
+        "mode": "maths",
+        "description": "\\mathllap{}"
     },
     {
         "prefix": "mlem",
@@ -2671,6 +2725,12 @@
         "body": "\\newtheorem{corollary}{Corollary}",
         "mode": "text",
         "description": "\\newtheorem{corollary}{Corollary}"
+    },
+    {
+        "prefix": "mclp",
+        "body": "\\mathclap{$1}",
+        "mode": "maths",
+        "description": "\\mathclap{}"
     },
     {
         "prefix": "mcal",
@@ -3456,6 +3516,12 @@
         "body": "\\end{center}",
         "mode": "text",
         "description": "\\end{center}"
+    },
+    {
+        "prefix": "ecsa",
+        "body": "\\end{crampedsubarray}",
+        "mode": "text",
+        "description": "\\end{crampedsubarray}"
     },
     {
         "prefix": "ecor",
@@ -4363,6 +4429,12 @@
         "body": "\\begin{center}",
         "mode": "text",
         "description": "\\begin{center}"
+    },
+    {
+        "prefix": "bcsa",
+        "body": "\\begin{crampedsubarray}{$1}",
+        "mode": "text",
+        "description": "\\begin{crampedsubarray}{}"
     },
     {
         "prefix": "bcor",
@@ -6920,6 +6992,12 @@
         "description": "\\end{tabular}"
     },
     {
+        "prefix": "esa",
+        "body": "\\end{subarray}",
+        "mode": "maths",
+        "description": "\\end{subarray}"
+    },
+    {
         "prefix": "etb",
         "body": "\\end{tabbing}",
         "mode": "text",
@@ -7580,6 +7658,12 @@
         "description": "Divider: %---------"
     },
     {
+        "prefix": "cru",
+        "body": "\\cramped[$1]{$2}",
+        "mode": "maths",
+        "description": "\\cramped[]{}"
+    },
+    {
         "prefix": "crf",
         "body": "\\cref{$1}",
         "mode": "maths",
@@ -7851,6 +7935,12 @@
         "body": "\\boldsymbol{$1}",
         "mode": "maths",
         "description": "\\boldsymbol{}"
+    },
+    {
+        "prefix": "bsa",
+        "body": "\\begin{subarray}{$1}",
+        "mode": "maths",
+        "description": "\\begin{subarray}{}"
     },
     {
         "prefix": "bqt",
