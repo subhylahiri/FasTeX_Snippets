@@ -1183,6 +1183,12 @@
         "description": "\\quad\\blacklozenge"
     },
     {
+        "prefix": "adjlim",
+        "body": "\\adjustlimits",
+        "mode": "maths",
+        "description": "\\adjustlimits"
+    },
+    {
         "prefix": "wrtns",
         "body": "rotations",
         "mode": "text",
@@ -1407,6 +1413,12 @@
         "body": "\\sum_j",
         "mode": "maths",
         "description": "\\sum_j"
+    },
+    {
+        "prefix": "subst",
+        "body": "\\substack{$1 \\\\ $2}",
+        "mode": "maths",
+        "description": "\\substack{ \\\\ }"
     },
     {
         "prefix": "setlu",
@@ -2158,6 +2170,30 @@
         "description": "$\\mathbb{C}$ "
     },
     {
+        "prefix": "crsst",
+        "body": "\\crampedsubstack{$1 \\\\ $2}",
+        "mode": "maths",
+        "description": "\\crampedsubstack{ \\\\ }"
+    },
+    {
+        "prefix": "crrlp",
+        "body": "\\crampedrlap[$1]{$2}",
+        "mode": "maths",
+        "description": "\\crampedrlap[]{} "
+    },
+    {
+        "prefix": "crllp",
+        "body": "\\crampedllap[$1]{$2}",
+        "mode": "maths",
+        "description": "\\crampedllap[]{} "
+    },
+    {
+        "prefix": "crclp",
+        "body": "\\crampedclap[$1]{$2}",
+        "mode": "maths",
+        "description": "\\crampedclap[]{} "
+    },
+    {
         "prefix": "captu",
         "body": "\\caption{$1}",
         "mode": "text",
@@ -2610,6 +2646,24 @@
         "description": "\\begin{cases}"
     },
     {
+        "prefix": "tebd",
+        "body": [
+            "\\documentclass{article}",
+            "\\usepackage{latexsym,amssymb}             % special symbols",
+            "\\usepackage{amsmath}                      % amsmath environments",
+            "\\usepackage{amsthm}                       % ams theorem/proof environments",
+            "% \\usepackage{amscd}                      % ams commutative diagrams",
+            "% \\usepackage{graphicx}                   % graphics commands",
+            "% \\usepackage{color}                      % color commands",
+            "% \\usepackage{verbatim}                   % comment/verbatim environments",
+            "% \\usepackage{makeidx}                    % makeindex",
+            "\\newcommand{\\bfi}{\\bfseries\\itshape}      % bold italic",
+            "\\begin{document}"
+        ],
+        "mode": "maths",
+        "description": "\\begin{cases}"
+    },
+    {
         "prefix": "tbex",
         "body": [
             "\\begin{tabbing}",
@@ -2721,6 +2775,12 @@
         "body": "\\sum^{n}_{i = 1}",
         "mode": "maths",
         "description": "\\sum^{n}_{i = 1}"
+    },
+    {
+        "prefix": "smop",
+        "body": "\\smashoperator[$1]{$2}",
+        "mode": "any",
+        "description": "\\smashoperator[]{}"
     },
     {
         "prefix": "slnu",
@@ -3369,6 +3429,12 @@
         "description": "\\mathrm{}"
     },
     {
+        "prefix": "mrlp",
+        "body": "\\mathrlap{$1}",
+        "mode": "maths",
+        "description": "\\mathrlap{}"
+    },
+    {
         "prefix": "mrkb",
         "body": "\\markboth{$1}{$2}",
         "mode": "text",
@@ -3379,6 +3445,12 @@
         "body": "\\mathop{$1}",
         "mode": "maths",
         "description": "\\mathop{}"
+    },
+    {
+        "prefix": "mllp",
+        "body": "\\mathllap{$1}",
+        "mode": "maths",
+        "description": "\\mathllap{}"
     },
     {
         "prefix": "mlem",
@@ -3415,6 +3487,12 @@
         "body": "\\newtheorem{corollary}{Corollary}",
         "mode": "text",
         "description": "\\newtheorem{corollary}{Corollary}"
+    },
+    {
+        "prefix": "mclp",
+        "body": "\\mathclap{$1}",
+        "mode": "maths",
+        "description": "\\mathclap{}"
     },
     {
         "prefix": "mcal",
@@ -4234,6 +4312,12 @@
         "body": "\\end{center}",
         "mode": "text",
         "description": "\\end{center}"
+    },
+    {
+        "prefix": "ecsa",
+        "body": "\\end{crampedsubarray}",
+        "mode": "text",
+        "description": "\\end{crampedsubarray}"
     },
     {
         "prefix": "ecor",
@@ -5147,6 +5231,12 @@
         "body": "\\begin{center}",
         "mode": "text",
         "description": "\\begin{center}"
+    },
+    {
+        "prefix": "bcsa",
+        "body": "\\begin{crampedsubarray}{$1}",
+        "mode": "text",
+        "description": "\\begin{crampedsubarray}{}"
     },
     {
         "prefix": "bcor",
@@ -7674,6 +7764,12 @@
         "description": "\\flat"
     },
     {
+        "prefix": "f1u",
+        "body": "\\frac{1}{",
+        "mode": "maths",
+        "description": "\\frac{1}{"
+    },
+    {
         "prefix": "f14",
         "body": "\\frac{1}{4}",
         "mode": "maths",
@@ -7696,6 +7792,12 @@
         "body": "\\end{tabular}",
         "mode": "text",
         "description": "\\end{tabular}"
+    },
+    {
+        "prefix": "esa",
+        "body": "\\end{subarray}",
+        "mode": "maths",
+        "description": "\\end{subarray}"
     },
     {
         "prefix": "etb",
@@ -8364,6 +8466,12 @@
         "description": "Divider: %---------"
     },
     {
+        "prefix": "cru",
+        "body": "\\cramped[$1]{$2}",
+        "mode": "maths",
+        "description": "\\cramped[]{}"
+    },
+    {
         "prefix": "cr2",
         "body": "\\sqrt[3]{2}",
         "mode": "maths",
@@ -8629,6 +8737,12 @@
         "body": "\\boldsymbol{$1}",
         "mode": "maths",
         "description": "\\boldsymbol{}"
+    },
+    {
+        "prefix": "bsa",
+        "body": "\\begin{subarray}{$1}",
+        "mode": "maths",
+        "description": "\\begin{subarray}{}"
     },
     {
         "prefix": "bqt",
