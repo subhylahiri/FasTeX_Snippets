@@ -6890,6 +6890,12 @@
         "description": "\\flat"
     },
     {
+        "prefix": "f1u",
+        "body": "\\frac{1}{",
+        "mode": "maths",
+        "description": "\\frac{1}{"
+    },
+    {
         "prefix": "f14",
         "body": "\\frac{1}{4}",
         "mode": "maths",
