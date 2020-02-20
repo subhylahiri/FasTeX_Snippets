@@ -12,7 +12,7 @@ class CSONWriter():
     ----------
     file : io.TextIO
         Text file object for snippet `.cson` file.
-    indent : int, optional, default = 4
+    size : int, optional, default = 4
         Number of spaces per indent level.
     level : int, optional, default = 0
         Indent level of current entry.
@@ -39,7 +39,7 @@ class CSONWriter():
     def _indent(self):
         """Write an indent to a CSON file.
         """
-        self._write(' ' * self.indent * self.level)
+        self._write(' ' * (self.indent * self.level))
 
     def _write_strings(self, text: str):
         """Write a multi-line string to a CSON file.
@@ -70,24 +70,6 @@ class CSONWriter():
         else:
             self._write('"' + text + '"\n')
 
-    def write_dict(self, thing: dict):
-        """Write a dict to a CSON file.
-
-        Parameters
-        ----------
-        thing : dict
-            Dictionary to write to `self.file`.
-        """
-        if self.level >= 0:
-            self._write('\n')
-        self.level += 1
-        for key, value in thing.items():
-            self._indent()
-            self._write('"' + key + '": ')
-            self.write_any(value)
-        self.level -= 1
-        # self._indent('}\n')
-
     def write_num(self, value: Number):
         """Write a number to a CSON file.
 
@@ -115,6 +97,23 @@ class CSONWriter():
         """Write a null to a CSON file.
         """
         self._write('null\n')
+
+    def write_dict(self, thing: dict):
+        """Write a dict to a CSON file.
+
+        Parameters
+        ----------
+        thing : dict
+            Dictionary to write to `self.file`.
+        """
+        if self.level >= 0:
+            self._write('\n')
+        self.level += 1
+        for key, value in thing.items():
+            self._indent()
+            self._write('"' + key + '": ')
+            self.write_any(value)
+        self.level -= 1
 
     def write_list(self, array: list):
         """Write a list to a CSON file.
