@@ -3,6 +3,7 @@
 from io import TextIOBase
 from typing import Any
 from numbers import Number
+from contextlib import contextmanager
 
 
 class CSONWriter():
@@ -12,7 +13,7 @@ class CSONWriter():
     ----------
     file : io.TextIO
         Text file object for snippet `.cson` file.
-    size : int, optional, default = 4
+    indent : int, optional, default = 4
         Number of spaces per indent level.
     level : int, optional, default = 0
         Indent level of current entry.
@@ -26,36 +27,33 @@ class CSONWriter():
         self.indent = indent
         self.level = level
 
-    def _write(self, text: str):
-        """Write text to a CSON file.
+    @contextmanager
+    def indented(self):
+        """Context manager for one level higher indent
+        """
+        self.level += 1
+        try:
+            yield
+        finally:
+            self.level -= 1
+
+    def write(self, text: str, indented: bool = False, ended: bool = True):
+        """Write raw text to a CSON file.
 
         Parameters
         ----------
         text : str
-            String to write to `self.file`.
+            Contents of line to be written.
+        indented : bool, optional
+            Indent before writing? By default False.
+        ended : bool, optional
+            New line after writing? By default True.
         """
+        if indented:
+            text = (' ' * (self.indent * self.level)) + text
+        if ended:
+            text += '\n'
         self.file.write(text)
-
-    def _indent(self):
-        """Write an indent to a CSON file.
-        """
-        self._write(' ' * (self.indent * self.level))
-
-    def _write_strings(self, text: str):
-        """Write a multi-line string to a CSON file.
-
-        Parameters
-        ----------
-        text : str
-            Multi-line string to write to `self.file`.
-        """
-        lines = text.splitlines()
-        self._write('"""\n')
-        for line in lines:
-            self._indent()
-            self._write(line + '\n')
-        self._indent()
-        self._write('"""\n')
 
     def write_str(self, text: str):
         """Write a string to a CSON file.
@@ -66,9 +64,12 @@ class CSONWriter():
             String to write to `self.file`.
         """
         if '\n' in text:
-            self._write_strings(text)
+            self.write('"""', ended=True)
+            for line in text.splitlines():
+                self.write(line, True, True)
+            self.write('"""', True)
         else:
-            self._write('"' + text + '"\n')
+            self.write('"' + text + '"')
 
     def write_num(self, value: Number):
         """Write a number to a CSON file.
@@ -78,7 +79,7 @@ class CSONWriter():
         value : Number
             Number to write to `self.file`.
         """
-        self._write(f'{value}\n')
+        self.write(str(value))
 
     def write_bool(self, value: bool):
         """Write a boolean to a CSON file.
@@ -89,14 +90,14 @@ class CSONWriter():
             Boolean to write to `self.file`.
         """
         if value:
-            self._write('true\n')
+            self.write('true')
         else:
-            self._write('false\n')
+            self.write('false')
 
     def write_null(self):
         """Write a null to a CSON file.
         """
-        self._write('null\n')
+        self.write('null')
 
     def write_dict(self, thing: dict):
         """Write a dict to a CSON file.
@@ -107,13 +108,11 @@ class CSONWriter():
             Dictionary to write to `self.file`.
         """
         if self.level >= 0:
-            self._write('\n')
-        self.level += 1
-        for key, value in thing.items():
-            self._indent()
-            self._write('"' + key + '": ')
-            self.write_any(value)
-        self.level -= 1
+            self.write('', ended=True)
+        with self.indented():
+            for key, value in thing.items():
+                self.write(f'"{key}": ', True, False)
+                self.write_any(value, False, True)
 
     def write_list(self, array: list):
         """Write a list to a CSON file.
@@ -123,23 +122,26 @@ class CSONWriter():
         array : list
             List to write to `self.file`.
         """
-        self._write('[\n')
-        self.level += 1
-        for element in array:
-            self._indent()
-            self.write_any(element)
-        self.level -= 1
-        self._indent()
-        self._write(']\n')
+        self.write('[', ended=True)
+        with self.indented():
+            for element in array:
+                self.write_any(element, True, True)
+        self.write(']', True)
 
-    def write_any(self, data: Any):
+    def write_any(self, data: Any, indented: bool = False, ended: bool = True):
         """Write piece of data to a CSON file.
 
         Parameters
         ----------
         data : Any
             Thing to write to `self.file`.
+        indented : bool, optional
+            Indent before writing? By default False
+        ended : bool, optional
+            New line after writing? By default True.
         """
+        if indented:
+            self.write('', True, False)
         if isinstance(data, str):
             self.write_str(data)
         elif isinstance(data, dict):
@@ -154,6 +156,8 @@ class CSONWriter():
             self.write_null()
         else:
             raise TypeError(f'Unknown data type: {type(data)}.')
+        if not ended:
+            self.write('\b', False, False)
 
 
 def dump(obj: Any, file: TextIOBase, indent: int = 4, level: int = 0):
