@@ -5781,7 +5781,7 @@
     {
         "prefix": "txt",
         "body": "\\text{$1}",
-        "mode": "text",
+        "mode": "maths",
         "description": "\\text{}"
     },
     {

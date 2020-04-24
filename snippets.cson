@@ -996,6 +996,10 @@
         "prefix": "blackl"
         "body": "\\\\quad\\\\blacklozenge"
         "description": "\quad\blacklozenge"
+    "adjlim": 
+        "prefix": "adjlim"
+        "body": "\\\\adjustlimits"
+        "description": "\adjustlimits"
     "wrtns": 
         "prefix": "wrtns"
         "body": "rotations"
@@ -1164,6 +1168,10 @@
         "prefix": "sumlj"
         "body": "\\\\sum_j"
         "description": "\sum_j"
+    "subst": 
+        "prefix": "subst"
+        "body": "\\\\substack{$1 \\\\\\\\ $2}"
+        "description": "\substack{ \\ }"
     "setlu": 
         "prefix": "setlu"
         "body": "\\\\left\\\\{ \\\\left.  \\\\!\\\\right|\\\\right\\\\}"
@@ -1535,6 +1543,10 @@
         "prefix": "emlts"
         "body": "\\\\end{multline*}"
         "description": "\end{multline*}"
+    "emltd": 
+        "prefix": "emltd"
+        "body": "\\\\end{multlined}"
+        "description": "\end{multlined}"
     "ecrit": 
         "prefix": "ecrit"
         "body": "\\\\end{criterion}"
@@ -1683,6 +1695,22 @@
         "prefix": "dbbcc"
         "body": "\\\\$\\\\mathbb{C}\\\\$ "
         "description": "$\mathbb{C}$ "
+    "crsst": 
+        "prefix": "crsst"
+        "body": "\\\\crampedsubstack{$1 \\\\\\\\ $2}"
+        "description": "\crampedsubstack{ \\ }"
+    "crrlp": 
+        "prefix": "crrlp"
+        "body": "\\\\crampedrlap[$1]{$2}"
+        "description": "\crampedrlap[]{} "
+    "crllp": 
+        "prefix": "crllp"
+        "body": "\\\\crampedllap[$1]{$2}"
+        "description": "\crampedllap[]{} "
+    "crclp": 
+        "prefix": "crclp"
+        "body": "\\\\crampedclap[$1]{$2}"
+        "description": "\crampedclap[]{} "
     "captu": 
         "prefix": "captu"
         "body": "\\\\caption{$1}"
@@ -1715,6 +1743,10 @@
         "prefix": "bmlts"
         "body": "\\\\begin{multline*}"
         "description": "\begin{multline*}"
+    "bmltd": 
+        "prefix": "bmltd"
+        "body": "\\\\begin{multlined}"
+        "description": "\begin{multlined}"
     "blstr": 
         "prefix": "blstr"
         "body": "\\\\renewcommand{\\\\baselinestretch}{1.5}"
@@ -1985,6 +2017,22 @@
         \\\\end{cases}
         """
         "description": "\begin{cases}"
+    "tebd": 
+        "prefix": "tebd"
+        "body": """
+        \\\\documentclass{article}
+        \\\\usepackage{latexsym,amssymb}             % special symbols
+        \\\\usepackage{amsmath}                      % amsmath environments
+        \\\\usepackage{amsthm}                       % ams theorem/proof environments
+        % \\\\usepackage{amscd}                      % ams commutative diagrams
+        % \\\\usepackage{graphicx}                   % graphics commands
+        % \\\\usepackage{color}                      % color commands
+        % \\\\usepackage{verbatim}                   % comment/verbatim environments
+        % \\\\usepackage{makeidx}                    % makeindex
+        \\\\newcommand{\\\\bfi}{\\\\bfseries\\\\itshape}      % bold italic
+        \\\\begin{document}
+        """
+        "description": "\begin{cases}"
     "tbex": 
         "prefix": "tbex"
         "body": """
@@ -2066,6 +2114,10 @@
         "prefix": "sni1"
         "body": "\\\\sum^{n}_{i = 1}"
         "description": "\sum^{n}_{i = 1}"
+    "smop": 
+        "prefix": "smop"
+        "body": "\\\\smashoperator[$1]{$2}"
+        "description": "\smashoperator[]{}"
     "slnu": 
         "prefix": "slnu"
         "body": "\\\\setlength{$1}"
@@ -2518,6 +2570,10 @@
         "prefix": "mrmu"
         "body": "\\\\mathrm{$1}"
         "description": "\mathrm{}"
+    "mrlp": 
+        "prefix": "mrlp"
+        "body": "\\\\mathrlap{$1}"
+        "description": "\mathrlap{}"
     "mrkb": 
         "prefix": "mrkb"
         "body": "\\\\markboth{$1}{$2}"
@@ -2526,6 +2582,10 @@
         "prefix": "mopu"
         "body": "\\\\mathop{$1}"
         "description": "\mathop{}"
+    "mllp": 
+        "prefix": "mllp"
+        "body": "\\\\mathllap{$1}"
+        "description": "\mathllap{}"
     "mlem": 
         "prefix": "mlem"
         "body": "\\\\newtheorem{lemma}{Lemma}"
@@ -2550,6 +2610,10 @@
         "prefix": "mcor"
         "body": "\\\\newtheorem{corollary}{Corollary}"
         "description": "\newtheorem{corollary}{Corollary}"
+    "mclp": 
+        "prefix": "mclp"
+        "body": "\\\\mathclap{$1}"
+        "description": "\mathclap{}"
     "mcal": 
         "prefix": "mcal"
         "body": "\\\\mathcal{$1}"
@@ -3095,6 +3159,10 @@
         "prefix": "eesb"
         "body": "\\\\end{Sb}"
         "description": "\end{Sb}"
+    "eeqs": 
+        "prefix": "eeqs"
+        "body": "\\\\end{equation*}"
+        "description": "\end{equation*}"
     "edma": 
         "prefix": "edma"
         "body": "\\\\end{displaymath}"
@@ -3107,6 +3175,10 @@
         "prefix": "ectr"
         "body": "\\\\end{center}"
         "description": "\end{center}"
+    "ecsa": 
+        "prefix": "ecsa"
+        "body": "\\\\end{crampedsubarray}"
+        "description": "\end{crampedsubarray}"
     "ecor": 
         "prefix": "ecor"
         "body": "\\\\end{corollary}"
@@ -3686,6 +3758,10 @@
         "prefix": "besb"
         "body": "\\\\begin{Sb}"
         "description": "\begin{Sb}"
+    "beqs": 
+        "prefix": "beqs"
+        "body": "\\\\begin{equation*}"
+        "description": "\begin{equation*}"
     "beql": 
         "prefix": "beql"
         "body": "\\\\begin{equation}\\\\label{$1}"
@@ -3718,6 +3794,10 @@
         "prefix": "bctr"
         "body": "\\\\begin{center}"
         "description": "\begin{center}"
+    "bcsa": 
+        "prefix": "bcsa"
+        "body": "\\\\begin{crampedsubarray}{$1}"
+        "description": "\begin{crampedsubarray}{}"
     "bcor": 
         "prefix": "bcor"
         "body": "\\\\begin{corollary}"
@@ -5401,6 +5481,10 @@
         "prefix": "flt"
         "body": "\\\\flat"
         "description": "\flat"
+    "f1u": 
+        "prefix": "f1u"
+        "body": "\\\\frac{1}{"
+        "description": "\frac{1}{"
     "f14": 
         "prefix": "f14"
         "body": "\\\\frac{1}{4}"
@@ -5417,6 +5501,10 @@
         "prefix": "etr"
         "body": "\\\\end{tabular}"
         "description": "\end{tabular}"
+    "esa": 
+        "prefix": "esa"
+        "body": "\\\\end{subarray}"
+        "description": "\end{subarray}"
     "etb": 
         "prefix": "etb"
         "body": "\\\\end{tabbing}"
@@ -5861,6 +5949,10 @@
         "prefix": "csd"
         "body": "%--------------------------------"
         "description": "Divider: %---------"
+    "cru": 
+        "prefix": "cru"
+        "body": "\\\\cramped[$1]{$2}"
+        "description": "\cramped[]{}"
     "cr2": 
         "prefix": "cr2"
         "body": "\\\\sqrt[3]{2}"
@@ -6042,6 +6134,10 @@
         "prefix": "bsy"
         "body": "\\\\boldsymbol{$1}"
         "description": "\boldsymbol{}"
+    "bsa": 
+        "prefix": "bsa"
+        "body": "\\\\begin{subarray}{$1}"
+        "description": "\begin{subarray}{}"
     "bqt": 
         "prefix": "bqt"
         "body": "\\\\begin{quotation}"

@@ -728,6 +728,14 @@
         "priority": 6
     },
     {
+        "prefix": "(^|[^\\\\])adjlim  ",
+        "body": "$1\\adjustlimits",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\adjustlimits",
+        "priority": 6
+    },
+    {
         "prefix": "(^|[^\\\\])wrtns  ",
         "body": "$1rotations",
         "mode": "text",
@@ -957,6 +965,14 @@
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\sum_j",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])subst  ",
+        "body": "$1\\substack{$$1 \\\\ $$2}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\substack{ \\\\ }",
         "priority": 5
     },
     {
@@ -1560,6 +1576,14 @@
         "priority": 5
     },
     {
+        "prefix": "(^|[^\\\\])emltd  ",
+        "body": "$1\\end{multlined}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\end{multlined}",
+        "priority": 5
+    },
+    {
         "prefix": "(^|[^\\\\])ecrit  ",
         "body": "$1\\end{criterion}",
         "mode": "text",
@@ -1856,6 +1880,38 @@
         "priority": 5
     },
     {
+        "prefix": "(^|[^\\\\])crsst  ",
+        "body": "$1\\crampedsubstack{$$1 \\\\ $$2}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\crampedsubstack{ \\\\ }",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])crrlp  ",
+        "body": "$1\\crampedrlap[$$1]{$$2}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\crampedrlap[]{} ",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])crllp  ",
+        "body": "$1\\crampedllap[$$1]{$$2}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\crampedllap[]{} ",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])crclp  ",
+        "body": "$1\\crampedclap[$$1]{$$2}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\crampedclap[]{} ",
+        "priority": 5
+    },
+    {
         "prefix": "(^|[^\\\\])captu  ",
         "body": "$1\\caption{$$1}",
         "mode": "text",
@@ -1917,6 +1973,14 @@
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{multline*}",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])bmltd  ",
+        "body": "$1\\begin{multlined}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\begin{multlined}",
         "priority": 5
     },
     {
@@ -2432,6 +2496,14 @@
         "priority": 4
     },
     {
+        "prefix": "(^|[^\\\\])tebd  ",
+        "body": "$1\\n\\documentclass{article}\\n\\usepackage{latexsym,amssymb}             % special symbols\\n\\usepackage{amsmath}                      % amsmath environments\\n\\usepackage{amsthm}                       % ams theorem/proof environments\\n% \\usepackage{amscd}                      % ams commutative diagrams\\n% \\usepackage{graphicx}                   % graphics commands\\n% \\usepackage{color}                      % color commands\\n% \\usepackage{verbatim}                   % comment/verbatim environments\\n% \\usepackage{makeidx}                    % makeindex\\n\\newcommand{\\bfi}{\\bfseries\\itshape}      % bold italic\\n\\begin{document}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\begin{cases}",
+        "priority": 4
+    },
+    {
         "prefix": "(^|[^\\\\])tbex  ",
         "body": "$1\\n\\begin{tabbing}\\nxxxxxxxxxxx\\= xxxxxxxxxxx\\= xxxxxxxxxxx\\= \\kill\\nitems      \\> for        \\> row        \\> one      \\\\\\nitems      \\> for        \\> row        \\> two      \\\\\\n\\end{tabbing}",
         "mode": "text",
@@ -2557,6 +2629,14 @@
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\sum^{n}_{i = 1}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])smop  ",
+        "body": "$1\\smashoperator[$$1]{$$2}",
+        "mode": "any",
+        "triggerWhenComplete": true,
+        "description": "\\smashoperator[]{}",
         "priority": 4
     },
     {
@@ -3336,6 +3416,14 @@
         "priority": 4
     },
     {
+        "prefix": "(^|[^\\\\])mrlp  ",
+        "body": "$1\\mathrlap{$$1}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\mathrlap{}",
+        "priority": 4
+    },
+    {
         "prefix": "(^|[^\\\\])mrkb  ",
         "body": "$1\\markboth{$$1}{$$2}",
         "mode": "text",
@@ -3349,6 +3437,14 @@
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\mathop{}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])mllp  ",
+        "body": "$1\\mathllap{$$1}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\mathllap{}",
         "priority": 4
     },
     {
@@ -3397,6 +3493,14 @@
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\newtheorem{corollary}{Corollary}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])mclp  ",
+        "body": "$1\\mathclap{$$1}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\mathclap{}",
         "priority": 4
     },
     {
@@ -4400,6 +4504,14 @@
         "priority": 4
     },
     {
+        "prefix": "(^|[^\\\\])eeqs  ",
+        "body": "$1\\end{equation*}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\end{equation*}",
+        "priority": 4
+    },
+    {
         "prefix": "(^|[^\\\\])edma  ",
         "body": "$1\\end{displaymath}",
         "mode": "any",
@@ -4421,6 +4533,14 @@
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{center}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])ecsa  ",
+        "body": "$1\\end{crampedsubarray}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\end{crampedsubarray}",
         "priority": 4
     },
     {
@@ -5544,6 +5664,14 @@
         "priority": 4
     },
     {
+        "prefix": "(^|[^\\\\])beqs  ",
+        "body": "$1\\begin{equation*}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{equation*}",
+        "priority": 4
+    },
+    {
         "prefix": "(^|[^\\\\])beql  ",
         "body": "$1\\begin{equation}\\label{$$1}",
         "mode": "text",
@@ -5605,6 +5733,14 @@
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\begin{center}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])bcsa  ",
+        "body": "$1\\begin{crampedsubarray}{$$1}",
+        "mode": "text",
+        "triggerWhenComplete": true,
+        "description": "\\begin{crampedsubarray}{}",
         "priority": 4
     },
     {
@@ -6330,7 +6466,7 @@
     {
         "prefix": "(^|[^\\\\])txt  ",
         "body": "$1\\text{$$1}",
-        "mode": "text",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\text{}",
         "priority": 3
@@ -8960,6 +9096,14 @@
         "priority": 3
     },
     {
+        "prefix": "(^|[^\\\\])f1u  ",
+        "body": "$1\\frac{1}{",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\frac{1}{",
+        "priority": 3
+    },
+    {
         "prefix": "(^|[^\\\\])f14  ",
         "body": "$1\\frac{1}{4}",
         "mode": "maths",
@@ -8989,6 +9133,14 @@
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\end{tabular}",
+        "priority": 3
+    },
+    {
+        "prefix": "(^|[^\\\\])esa  ",
+        "body": "$1\\end{subarray}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\end{subarray}",
         "priority": 3
     },
     {
@@ -9880,6 +10032,14 @@
         "priority": 3
     },
     {
+        "prefix": "(^|[^\\\\])cru  ",
+        "body": "$1\\cramped[$$1]{$$2}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\cramped[]{}",
+        "priority": 3
+    },
+    {
         "prefix": "(^|[^\\\\])cr2  ",
         "body": "$1\\sqrt[3]{2}",
         "mode": "maths",
@@ -10221,6 +10381,14 @@
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\boldsymbol{}",
+        "priority": 3
+    },
+    {
+        "prefix": "(^|[^\\\\])bsa  ",
+        "body": "$1\\begin{subarray}{$$1}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\begin{subarray}{}",
         "priority": 3
     },
     {
@@ -11106,7 +11274,7 @@
     {
         "prefix": "(^|[^\\\\])op  ",
         "body": "$1(",
-        "mode": "maths",
+        "mode": "any",
         "triggerWhenComplete": true,
         "description": "(",
         "priority": 2
