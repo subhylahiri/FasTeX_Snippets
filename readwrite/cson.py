@@ -7,6 +7,7 @@ from collections.abc import Iterable, Mapping
 from contextlib import contextmanager
 CSONable = Union[None, bool, Number, Iterable, Mapping, str]
 
+
 class CSONWriter():
     """Class for writing to a CSON file
 
@@ -48,19 +49,19 @@ class CSONWriter():
             self.level -= 1
             self.parent = old_parent
 
-    def write_raw(self, text: str, indented: bool = False, ended: bool = False):
+    def write_raw(self, text: str, started: bool = False, ended: bool = False):
         """Write raw text to a CSON file.
 
         Parameters
         ----------
         text : str
             Contents of line to be written.
-        indented : bool, optional
+        started : bool, optional
             Indent before writing? By default False.
         ended : bool, optional
             New line after writing? By default False.
         """
-        if indented:
+        if started:
             text = (' ' * (self.indent * self.level)) + text
         if ended:
             text += '\n'
@@ -149,19 +150,19 @@ class CSONWriter():
                 self.write(element, True, True)
         self.write_raw(']', True)
 
-    def write(self, data: CSONable, indented: bool = False, ended: bool = True):
+    def write(self, data: CSONable, started: bool = False, ended: bool = True):
         """Write piece of data to a CSON file.
 
         Parameters
         ----------
         data : CSONable = Union[None, bool, Number, Iterable, Mapping, str]
             Thing to write to `self.file`.
-        indented : bool, optional
+        started : bool, optional
             Indent before writing? By default False
         ended : bool, optional
             New line after writing? By default True.
         """
-        self.write_raw('', indented, False)
+        self.write_raw('', started, False)
         if isinstance(data, str):
             self.write_str(data)
         elif isinstance(data, Mapping):
