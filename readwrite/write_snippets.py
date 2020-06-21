@@ -90,7 +90,7 @@ def _body_prepend(body: Body, addendum: str) -> Body:
     return addendum + body
 
 
-def _convert_body_vsc(body: Body, endtab: bool = True, maxtab: int = 0) -> Body:
+def _conv_body_vsc(body: Body, endtab: bool = True, maxtab: int = 0) -> Body:
     """Convert tab stops for a VSCode snippet
 
     Parameters
@@ -109,7 +109,7 @@ def _convert_body_vsc(body: Body, endtab: bool = True, maxtab: int = 0) -> Body:
         `else:` `$1`,...,`$n-1`,`$0`.
     """
     if isinstance(body, list):
-        return [_convert_body_vsc(line, endtab, maxtab) for line in body]
+        return [_conv_body_vsc(line, endtab, maxtab) for line in body]
     if endtab or maxtab == 0:
         return body
     return re.sub(fr'[^\\]\${maxtab}', '$0', body)
@@ -139,7 +139,7 @@ def convert_one_vsc(snippet: Snippet, prefix: str = '', suffix: str = '',
     if not endtab:
         maxtab = _count_tabs(snippet['body'])
     vsc_prefix = prefix + snippet['prefix'] + suffix
-    vsc_body = _convert_body_vsc(snippet['body'], endtab, maxtab)
+    vsc_body = _conv_body_vsc(snippet['body'], endtab, maxtab)
     return {'prefix': vsc_prefix, 'body': vsc_body,
             'description': snippet['description']}
 
@@ -181,7 +181,7 @@ def _help_body_atom(body: str) -> str:
     return body
 
 
-def _convert_body_atom(body: Body, endtab: bool = True, maxtab: int = 0) -> Body:
+def _conv_body_atom(body: Body, endtab: bool = True, maxtab: int = 0) -> Body:
     """Convert body for an Atom snippet
 
     Parameters
@@ -231,7 +231,7 @@ def convert_one_atom(snippet: Snippet, prefix: str = '', suffix: str = '',
     if not endtab:
         maxtab = _count_tabs(snippet['body'])
     atom_prefix = prefix + snippet['prefix'] + suffix
-    atom_body = _convert_body_atom(snippet['body'], endtab, maxtab)
+    atom_body = _conv_body_atom(snippet['body'], endtab, maxtab)
     return {'prefix': atom_prefix, 'body': atom_body,
             "description": snippet['description']}
 
@@ -292,7 +292,7 @@ def _help_body_live(body: str, endtab: bool = True, maxtab: int = 0) -> str:
     return body
 
 
-def _convert_body_live(body: Body, endtab: bool = True, maxtab: int = 0) -> Body:
+def _conv_body_live(body: Body, endtab: bool = True, maxtab: int = 0) -> Body:
     """Convert tab stops for a VSCode live snippet
 
     Parameters
@@ -343,7 +343,7 @@ def convert_one_live(snippet: Snippet, prefix: str = '', suffix: str = '',
     if not endtab:
         maxtab = _count_tabs(snippet['body'])
     live_prefix = r'(^|[^\\])' + prefix + snippet['prefix'] + suffix
-    live_body = _convert_body_live(snippet['body'], endtab, maxtab)
+    live_body = _conv_body_live(snippet['body'], endtab, maxtab)
     return {'prefix': live_prefix, 'body': live_body, 'mode': snippet['mode'],
             'triggerWhenComplete': True, 'description': snippet['description'],
             'priority': len(snippet['prefix'])}
@@ -619,7 +619,7 @@ def _main():
     make_snippet_cson(snips)
     live_snips = convert_all_live(snippet_data, suffix='  ')
     make_snippet_json(live_snippets=live_snips)
-    # live_snips, snips = convert_split(snippet_data, suffix='  ', prefix_m=';')
+    # live_snips, snips = convert_split(snippet_data, suffix=' ', prefix_m=';')
     # make_snippet_json(snips, live_snippets=live_snips)
 
 

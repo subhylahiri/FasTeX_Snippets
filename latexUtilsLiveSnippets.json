@@ -5922,7 +5922,7 @@
     {
         "prefix": "(^|[^\\\\])txt  ",
         "body": "$1\\text{$$1}",
-        "mode": "text",
+        "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\text{}",
         "priority": 3
