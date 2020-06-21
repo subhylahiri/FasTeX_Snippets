@@ -411,8 +411,8 @@
         "body": [
             "\\begin{figure}[ht]",
             "\\begin{center}",
-            "  \\includegraphics$0}",
-            "\\caption{\\label{}}",
+            "\\includegraphics[$2]{$1}",
+            "\\caption$0\\label{$3}}",
             "\\end{center}",
             "\\end{figure}"
         ],
