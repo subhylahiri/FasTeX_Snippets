@@ -3144,11 +3144,35 @@
         "priority": 4
     },
     {
+        "prefix": "(^|[^\\\\])lxnn  ",
+        "body": "$1_{\\nu\\nu}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "_{\\nu\\nu}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])lxnm  ",
+        "body": "$1_{\\nu\\mu}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "_{\\nu\\mu}",
+        "priority": 4
+    },
+    {
         "prefix": "(^|[^\\\\])lxmn  ",
         "body": "$1_{\\mu\\nu}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "_{\\mu\\nu}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])lxmm  ",
+        "body": "$1_{\\mu\\mu}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "_{\\mu\\mu}",
         "priority": 4
     },
     {
@@ -3541,6 +3565,38 @@
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "^\\phi",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])hxnn  ",
+        "body": "$1^{\\nu\\nu}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "^{\\nu\\nu}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])hxnm  ",
+        "body": "$1^{\\nu\\mu}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "^{\\nu\\mu}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])hxmn  ",
+        "body": "$1^{\\mu\\nu}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "^{\\mu\\nu}",
+        "priority": 4
+    },
+    {
+        "prefix": "(^|[^\\\\])hxmm  ",
+        "body": "$1^{\\mu\\mu}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "^{\\mu\\mu}",
         "priority": 4
     },
     {
@@ -7544,11 +7600,51 @@
         "priority": 3
     },
     {
+        "prefix": "(^|[^\\\\])lkk  ",
+        "body": "$1_{kk}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "_{kk}",
+        "priority": 3
+    },
+    {
+        "prefix": "(^|[^\\\\])lkj  ",
+        "body": "$1_{kj}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "_{kj}",
+        "priority": 3
+    },
+    {
+        "prefix": "(^|[^\\\\])lki  ",
+        "body": "$1_{ki}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "_{ki}",
+        "priority": 3
+    },
+    {
         "prefix": "(^|[^\\\\])ljk  ",
         "body": "$1_{jk}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "_{jk}",
+        "priority": 3
+    },
+    {
+        "prefix": "(^|[^\\\\])ljj  ",
+        "body": "$1_{jj}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "_{jj}",
+        "priority": 3
+    },
+    {
+        "prefix": "(^|[^\\\\])lji  ",
+        "body": "$1_{ji}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "_{ji}",
         "priority": 3
     },
     {
@@ -7560,6 +7656,14 @@
         "priority": 3
     },
     {
+        "prefix": "(^|[^\\\\])lik  ",
+        "body": "$1_{ik}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "_{ik}",
+        "priority": 3
+    },
+    {
         "prefix": "(^|[^\\\\])lij  ",
         "body": "$1_{ij}",
         "mode": "maths",
@@ -7568,11 +7672,11 @@
         "priority": 3
     },
     {
-        "prefix": "(^|[^\\\\])lji  ",
-        "body": "$1_{ji}",
+        "prefix": "(^|[^\\\\])lii  ",
+        "body": "$1_{ii}",
         "mode": "maths",
         "triggerWhenComplete": true,
-        "description": "_{ji}",
+        "description": "_{ii}",
         "priority": 3
     },
     {
@@ -8032,14 +8136,6 @@
         "priority": 3
     },
     {
-        "prefix": "(^|[^\\\\])hxmn  ",
-        "body": "$1^{\\mu\\nu}",
-        "mode": "maths",
-        "triggerWhenComplete": true,
-        "description": "^{\\mu\\nu}",
-        "priority": 4
-    },
-    {
         "prefix": "(^|[^\\\\])hxl  ",
         "body": "$1^\\lambda",
         "mode": "maths",
@@ -8152,11 +8248,51 @@
         "priority": 3
     },
     {
-        "prefix": "(^|[^\\\\])hjk  ",
-        "body": "$1^{jk}",
+        "prefix": "(^|[^\\\\])hk  ",
+        "body": "$1^{kk}",
         "mode": "maths",
         "triggerWhenComplete": true,
-        "description": "^{jk}",
+        "description": "^{kk}",
+        "priority": 2
+    },
+    {
+        "prefix": "(^|[^\\\\])hkj  ",
+        "body": "$1^{kj}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "^{kj}",
+        "priority": 3
+    },
+    {
+        "prefix": "(^|[^\\\\])hki  ",
+        "body": "$1^{ki}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "^{ki}",
+        "priority": 3
+    },
+    {
+        "prefix": "(^|[^\\\\])hjj  ",
+        "body": "$1^{jj}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "^{jj}",
+        "priority": 3
+    },
+    {
+        "prefix": "(^|[^\\\\])hji  ",
+        "body": "$1^{ji}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "^{ji}",
+        "priority": 3
+    },
+    {
+        "prefix": "(^|[^\\\\])hik  ",
+        "body": "$1^{ik}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "^{ik}",
         "priority": 3
     },
     {
@@ -8165,6 +8301,14 @@
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "^{ij}",
+        "priority": 3
+    },
+    {
+        "prefix": "(^|[^\\\\])hii  ",
+        "body": "$1^{ii}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "^{ii}",
         "priority": 3
     },
     {
@@ -8961,7 +9105,7 @@
     },
     {
         "prefix": "(^|[^\\\\])dlr  ",
-        "body": "$1\\($$1\\)",
+        "body": "$1\\(\\)",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "$$",
@@ -9970,7 +10114,7 @@
     {
         "prefix": "(^|[^\\\\])bdp  ",
         "body": "$1\\begin{equation*}",
-        "mode": "text",
+        "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\begin{equation*}",
         "priority": 3
@@ -11033,10 +11177,10 @@
     },
     {
         "prefix": "(^|[^\\\\])lu  ",
-        "body": "$1_{",
+        "body": "$1_{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
-        "description": "_{",
+        "description": "_{}",
         "priority": 2
     },
     {
@@ -11329,10 +11473,10 @@
     },
     {
         "prefix": "(^|[^\\\\])hu  ",
-        "body": "$1^{",
+        "body": "$1^{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
-        "description": "^{",
+        "description": "^{}",
         "priority": 2
     },
     {
@@ -11585,10 +11729,10 @@
     },
     {
         "prefix": "(^|[^\\\\])fu  ",
-        "body": "$1\\frac{",
+        "body": "$1\\frac{$$1}{$$2}",
         "mode": "maths",
         "triggerWhenComplete": true,
-        "description": "\\frac{",
+        "description": "\\frac{}{}",
         "priority": 2
     },
     {
