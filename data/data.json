@@ -3561,10 +3561,28 @@
         "description": "_\\phi"
     },
     {
+        "prefix": "lxnn",
+        "body": "_{\\nu\\nu}",
+        "mode": "maths",
+        "description": "_{\\nu\\nu}"
+    },
+    {
+        "prefix": "lxnm",
+        "body": "_{\\nu\\mu}",
+        "mode": "maths",
+        "description": "_{\\nu\\mu}"
+    },
+    {
         "prefix": "lxmn",
         "body": "_{\\mu\\nu}",
         "mode": "maths",
         "description": "_{\\mu\\nu}"
+    },
+    {
+        "prefix": "lxmm",
+        "body": "_{\\mu\\mu}",
+        "mode": "maths",
+        "description": "_{\\mu\\mu}"
     },
     {
         "prefix": "lxio",
@@ -3883,6 +3901,30 @@
         "body": "^\\phi",
         "mode": "maths",
         "description": "^\\phi"
+    },
+    {
+        "prefix": "hxnn",
+        "body": "^{\\nu\\nu}",
+        "mode": "maths",
+        "description": "^{\\nu\\nu}"
+    },
+    {
+        "prefix": "hxnm",
+        "body": "^{\\nu\\mu}",
+        "mode": "maths",
+        "description": "^{\\nu\\mu}"
+    },
+    {
+        "prefix": "hxmn",
+        "body": "^{\\mu\\nu}",
+        "mode": "maths",
+        "description": "^{\\mu\\nu}"
+    },
+    {
+        "prefix": "hxmm",
+        "body": "^{\\mu\\mu}",
+        "mode": "maths",
+        "description": "^{\\mu\\mu}"
     },
     {
         "prefix": "hxio",
@@ -6996,10 +7038,40 @@
         "description": "\\{"
     },
     {
+        "prefix": "lkk",
+        "body": "_{kk}",
+        "mode": "maths",
+        "description": "_{kk}"
+    },
+    {
+        "prefix": "lkj",
+        "body": "_{kj}",
+        "mode": "maths",
+        "description": "_{kj}"
+    },
+    {
+        "prefix": "lki",
+        "body": "_{ki}",
+        "mode": "maths",
+        "description": "_{ki}"
+    },
+    {
         "prefix": "ljk",
         "body": "_{jk}",
         "mode": "maths",
         "description": "_{jk}"
+    },
+    {
+        "prefix": "ljj",
+        "body": "_{jj}",
+        "mode": "maths",
+        "description": "_{jj}"
+    },
+    {
+        "prefix": "lji",
+        "body": "_{ji}",
+        "mode": "maths",
+        "description": "_{ji}"
     },
     {
         "prefix": "lin",
@@ -7008,16 +7080,22 @@
         "description": "\\line{}"
     },
     {
+        "prefix": "lik",
+        "body": "_{ik}",
+        "mode": "maths",
+        "description": "_{ik}"
+    },
+    {
         "prefix": "lij",
         "body": "_{ij}",
         "mode": "maths",
         "description": "_{ij}"
     },
     {
-        "prefix": "lji",
-        "body": "_{ji}",
+        "prefix": "lii",
+        "body": "_{ii}",
         "mode": "maths",
-        "description": "_{ji}"
+        "description": "_{ii}"
     },
     {
         "prefix": "lgn",
@@ -7356,12 +7434,6 @@
         "description": "^\\mu"
     },
     {
-        "prefix": "hxmn",
-        "body": "^{\\mu\\nu}",
-        "mode": "maths",
-        "description": "^{\\mu\\nu}"
-    },
-    {
         "prefix": "hxl",
         "body": "^\\lambda",
         "mode": "maths",
@@ -7446,16 +7518,52 @@
         "description": "^{-1}"
     },
     {
-        "prefix": "hjk",
-        "body": "^{jk}",
+        "prefix": "hk",
+        "body": "^{kk}",
         "mode": "maths",
-        "description": "^{jk}"
+        "description": "^{kk}"
+    },
+    {
+        "prefix": "hkj",
+        "body": "^{kj}",
+        "mode": "maths",
+        "description": "^{kj}"
+    },
+    {
+        "prefix": "hki",
+        "body": "^{ki}",
+        "mode": "maths",
+        "description": "^{ki}"
+    },
+    {
+        "prefix": "hjj",
+        "body": "^{jj}",
+        "mode": "maths",
+        "description": "^{jj}"
+    },
+    {
+        "prefix": "hji",
+        "body": "^{ji}",
+        "mode": "maths",
+        "description": "^{ji}"
+    },
+    {
+        "prefix": "hik",
+        "body": "^{ik}",
+        "mode": "maths",
+        "description": "^{ik}"
     },
     {
         "prefix": "hij",
         "body": "^{ij}",
         "mode": "maths",
         "description": "^{ij}"
+    },
+    {
+        "prefix": "hii",
+        "body": "^{ii}",
+        "mode": "maths",
+        "description": "^{ii}"
     },
     {
         "prefix": "hfi",
@@ -9628,9 +9736,9 @@
     },
     {
         "prefix": "lu",
-        "body": "_{",
+        "body": "_{$1}",
         "mode": "maths",
-        "description": "_{"
+        "description": "_{}"
     },
     {
         "prefix": "lt",
@@ -9850,9 +9958,9 @@
     },
     {
         "prefix": "hu",
-        "body": "^{",
+        "body": "^{$1}",
         "mode": "maths",
-        "description": "^{"
+        "description": "^{}"
     },
     {
         "prefix": "ht",
@@ -10042,9 +10150,9 @@
     },
     {
         "prefix": "fu",
-        "body": "\\frac{",
+        "body": "\\frac{$1}{$2}",
         "mode": "maths",
-        "description": "\\frac{"
+        "description": "\\frac{}{}"
     },
     {
         "prefix": "fa",
