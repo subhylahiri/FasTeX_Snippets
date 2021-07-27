@@ -2646,6 +2646,20 @@
         "description": "\\begin{cases}"
     },
     {
+        "prefix": "tesl",
+        "body": [
+            "%-------------Slide--------------------------------------------------------",
+            "",
+            "\\begin{frame}{$1}",
+            "%",
+            "  $0",
+            "%",
+            "\\end{frame}"
+        ],
+        "mode": "text",
+        "description": "Slide"
+    },
+    {
         "prefix": "tebd",
         "body": [
             "\\documentclass{article}",
@@ -2660,8 +2674,8 @@
             "\\newcommand{\\bfi}{\\bfseries\\itshape}      % bold italic",
             "\\begin{document}"
         ],
-        "mode": "maths",
-        "description": "\\begin{cases}"
+        "mode": "text",
+        "description": "\\begin{document}"
     },
     {
         "prefix": "tbex",
