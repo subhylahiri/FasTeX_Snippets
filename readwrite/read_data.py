@@ -12,7 +12,7 @@ write_data_json
 import re
 import json
 from io import TextIOBase
-from typing import Union, List, Dict, Sequence
+from typing import Tuple, Union, List, Dict, Sequence
 
 Body = Union[str, List[str]]
 Snippet = Dict[str, Body]
@@ -266,7 +266,7 @@ def get_ini_macro(file: TextIOBase) -> str:
 
 
 def get_macro_matches(macro: str,
-                      patterns: Sequence[re.Pattern]) -> (re.Match, int):
+                      patterns: Sequence[re.Pattern]) -> Tuple[re.Match, int]:
     """Get match object from macro.
 
     Parameters
