@@ -1398,7 +1398,7 @@
     },
     {
         "prefix": "sumlu",
-        "body": "\\sum_{",
+        "body": "\\sum_{$1}",
         "mode": "maths",
         "description": "\\sum_{"
     },
@@ -1428,7 +1428,7 @@
     },
     {
         "prefix": "setcu",
-        "body": "\\setcounter{",
+        "body": "\\setcounter{$1}",
         "mode": "text",
         "description": "\\setcounter{"
     },
@@ -1454,7 +1454,7 @@
     },
     {
         "prefix": "rcmdu",
-        "body": "\\renewcommand{",
+        "body": "\\renewcommand{$1}$2{$3}",
         "mode": "text",
         "description": "\\renewcommand{"
     },
@@ -1641,7 +1641,7 @@
     },
     {
         "prefix": "ncmdu",
-        "body": "\\newcommand{",
+        "body": "\\newcommand{$1}$2{$3}",
         "mode": "text",
         "description": "\\newcommand{"
     },
@@ -1695,7 +1695,7 @@
     },
     {
         "prefix": "mrkbu",
-        "body": "\\markboth{",
+        "body": "\\markboth{$1}",
         "mode": "text",
         "description": "\\markboth{"
     },
@@ -2858,7 +2858,7 @@
     },
     {
         "prefix": "refu",
-        "body": "\\ref{",
+        "body": "\\ref{$1}",
         "mode": "any",
         "description": "\\ref{"
     },
@@ -3074,7 +3074,7 @@
     },
     {
         "prefix": "opnu",
-        "body": "\\operatorname{",
+        "body": "\\operatorname{$1}",
         "mode": "maths",
         "description": "\\operatorname{"
     },
@@ -5012,7 +5012,7 @@
     },
     {
         "prefix": "citu",
-        "body": "\\cite{",
+        "body": "\\cite{$1}",
         "mode": "text",
         "description": "\\cite{"
     },
@@ -7887,7 +7887,7 @@
     },
     {
         "prefix": "f1u",
-        "body": "\\frac{1}{",
+        "body": "\\frac{1}{$1}",
         "mode": "maths",
         "description": "\\frac{1}{"
     },
@@ -7983,7 +7983,7 @@
     },
     {
         "prefix": "endu",
-        "body": "\\end{",
+        "body": "\\end{$1}",
         "mode": "any",
         "description": "\\end{"
     },
@@ -8625,7 +8625,7 @@
     },
     {
         "prefix": "cit",
-        "body": "\\cite{",
+        "body": "\\cite{$1}",
         "mode": "text",
         "description": "\\cite{"
     },
@@ -8916,7 +8916,7 @@
     },
     {
         "prefix": "beu",
-        "body": "\\begin{",
+        "body": "\\begin{$1}",
         "mode": "any",
         "description": "\\begin{"
     },
@@ -10176,7 +10176,7 @@
     },
     {
         "prefix": "f1",
-        "body": "\\frac{1}{",
+        "body": "\\frac{1}{$1}",
         "mode": "maths",
         "description": "\\frac{1}{"
     },
