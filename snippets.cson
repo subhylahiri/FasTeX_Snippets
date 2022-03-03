@@ -492,7 +492,7 @@
         "description": "\begin{abstract}"
     "sumlu": 
         "prefix": "sumlu"
-        "body": "\\\\sum_{"
+        "body": "\\\\sum_{$1}"
         "description": "\sum_{"
     "sumli": 
         "prefix": "sumli"
@@ -512,11 +512,11 @@
         "description": "\left\{ \left.  \!\right|\right\}"
     "setcu": 
         "prefix": "setcu"
-        "body": "\\\\setcounter{"
+        "body": "\\\\setcounter{$1}"
         "description": "\setcounter{"
     "rcmdu": 
         "prefix": "rcmdu"
-        "body": "\\\\renewcommand{"
+        "body": "\\\\renewcommand{$1}$2{$3}"
         "description": "\renewcommand{"
     "rcmdl": 
         "prefix": "rcmdl"
@@ -632,7 +632,7 @@
         "description": "\nolimits"
     "ncmdu": 
         "prefix": "ncmdu"
-        "body": "\\\\newcommand{"
+        "body": "\\\\newcommand{$1}$2{$3}"
         "description": "\newcommand{"
     "mxspu": 
         "prefix": "mxspu"
@@ -672,7 +672,7 @@
         "description": "\begin{bmatrix}"
     "mrkbu": 
         "prefix": "mrkbu"
-        "body": "\\\\markboth{"
+        "body": "\\\\markboth{$1}"
         "description": "\markboth{"
     "mprop": 
         "prefix": "mprop"
@@ -1293,6 +1293,18 @@
         \\\\end{cases}
         """
         "description": "\begin{cases}"
+    "tesl": 
+        "prefix": "tesl"
+        "body": """
+        %-------------Slide--------------------------------------------------------
+        
+        \\\\begin{frame}{$1}
+        %
+          $0
+        %
+        \\\\end{frame}
+        """
+        "description": "Slide"
     "tebd": 
         "prefix": "tebd"
         "body": """
@@ -1314,7 +1326,7 @@
         \\\\begin{document}
         %================================================================================
         """
-        "description": "--Article Preamble-----------------------------------------------"
+        "description": "\begin{document}"
     "tbex": 
         "prefix": "tbex"
         "body": """
@@ -1442,7 +1454,7 @@
         "description": "\right]"
     "refu": 
         "prefix": "refu"
-        "body": "\\\\ref{"
+        "body": "\\\\ref{$1}"
         "description": "\ref{"
     "refp": 
         "prefix": "refp"
@@ -1586,7 +1598,7 @@
         "description": "\operatorname{sl}"
     "opnu": 
         "prefix": "opnu"
-        "body": "\\\\operatorname{"
+        "body": "\\\\operatorname{$1}"
         "description": "\operatorname{"
     "opcz": 
         "prefix": "opcz"
@@ -2888,7 +2900,7 @@
         "description": "Divider: %========="
     "citu": 
         "prefix": "citu"
-        "body": "\\\\cite{"
+        "body": "\\\\cite{$1}"
         "description": "\cite{"
     "citp": 
         "prefix": "citp"
@@ -4805,7 +4817,7 @@
         "description": "\flat"
     "f1u": 
         "prefix": "f1u"
-        "body": "\\\\frac{1}{"
+        "body": "\\\\frac{1}{$1}"
         "description": "\frac{1}{"
     "f14": 
         "prefix": "f14"
@@ -4865,7 +4877,7 @@
         "description": "\end{gather}"
     "endu": 
         "prefix": "endu"
-        "body": "\\\\end{"
+        "body": "\\\\end{$1}"
         "description": "\end{"
     "eeq": 
         "prefix": "eeq"
@@ -5297,7 +5309,7 @@
         "description": "Divider: %---------"
     "cit": 
         "prefix": "cit"
-        "body": "\\\\cite{"
+        "body": "\\\\cite{$1}"
         "description": "\cite{"
     "cir": 
         "prefix": "cir"
@@ -5490,7 +5502,7 @@
         "description": "\mathbf{f}"
     "beu": 
         "prefix": "beu"
-        "body": "\\\\begin{"
+        "body": "\\\\begin{$1}"
         "description": "\begin{"
     "beq": 
         "prefix": "beq"
@@ -6326,7 +6338,7 @@
         "description": "\forall"
     "f1": 
         "prefix": "f1"
-        "body": "\\\\frac{1}{"
+        "body": "\\\\frac{1}{$1}"
         "description": "\frac{1}{"
     "f2": 
         "prefix": "f2"

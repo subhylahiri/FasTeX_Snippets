@@ -745,7 +745,7 @@
     },
     {
         "prefix": "(^|[^\\\\])sumlu  ",
-        "body": "$1\\sum_{",
+        "body": "$1\\sum_{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\sum_{",
@@ -785,7 +785,7 @@
     },
     {
         "prefix": "(^|[^\\\\])setcu  ",
-        "body": "$1\\setcounter{",
+        "body": "$1\\setcounter{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\setcounter{",
@@ -793,7 +793,7 @@
     },
     {
         "prefix": "(^|[^\\\\])rcmdu  ",
-        "body": "$1\\renewcommand{",
+        "body": "$1\\renewcommand{$$1}$$2{$$3}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\renewcommand{",
@@ -1025,7 +1025,7 @@
     },
     {
         "prefix": "(^|[^\\\\])ncmdu  ",
-        "body": "$1\\newcommand{",
+        "body": "$1\\newcommand{$$1}$$2{$$3}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\newcommand{",
@@ -1033,7 +1033,7 @@
     },
     {
         "prefix": "(^|[^\\\\])mrkbu  ",
-        "body": "$1\\markboth{",
+        "body": "$1\\markboth{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\markboth{",
@@ -2369,7 +2369,7 @@
     },
     {
         "prefix": "(^|[^\\\\])refu  ",
-        "body": "$1\\ref{",
+        "body": "$1\\ref{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\ref{",
@@ -2657,7 +2657,7 @@
     },
     {
         "prefix": "(^|[^\\\\])opnu  ",
-        "body": "$1\\operatorname{",
+        "body": "$1\\operatorname{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\operatorname{",
@@ -4921,7 +4921,7 @@
     },
     {
         "prefix": "(^|[^\\\\])citu  ",
-        "body": "$1\\cite{",
+        "body": "$1\\cite{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\cite{",
@@ -8721,7 +8721,7 @@
     },
     {
         "prefix": "(^|[^\\\\])f1u  ",
-        "body": "$1\\frac{1}{",
+        "body": "$1\\frac{1}{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\frac{1}{",
@@ -8841,7 +8841,7 @@
     },
     {
         "prefix": "(^|[^\\\\])endu  ",
-        "body": "$1\\end{",
+        "body": "$1\\end{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\end{",
@@ -9705,7 +9705,7 @@
     },
     {
         "prefix": "(^|[^\\\\])cit  ",
-        "body": "$1\\cite{",
+        "body": "$1\\cite{$$1}",
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\cite{",
@@ -10065,7 +10065,7 @@
     },
     {
         "prefix": "(^|[^\\\\])beu  ",
-        "body": "$1\\begin{",
+        "body": "$1\\begin{$$1}",
         "mode": "any",
         "triggerWhenComplete": true,
         "description": "\\begin{",
@@ -11745,7 +11745,7 @@
     },
     {
         "prefix": "(^|[^\\\\])f1  ",
-        "body": "$1\\frac{1}{",
+        "body": "$1\\frac{1}{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\frac{1}{",

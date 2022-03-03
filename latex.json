@@ -232,6 +232,19 @@
         ],
         "description": "\\begin{cases}"
     },
+    "tesl": {
+        "prefix": "tesl",
+        "body": [
+            "%-------------Slide--------------------------------------------------------",
+            "",
+            "\\begin{frame}$0}",
+            "%",
+            "  $0",
+            "%",
+            "\\end{frame}"
+        ],
+        "description": "Slide"
+    },
     "tebd": {
         "prefix": "tebd",
         "body": [
@@ -253,7 +266,7 @@
             "\\begin{document}",
             "%================================================================================"
         ],
-        "description": "--Article Preamble-----------------------------------------------"
+        "description": "\\begin{document}"
     },
     "tbex": {
         "prefix": "tbex",
