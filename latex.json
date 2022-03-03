@@ -1275,7 +1275,7 @@
     },
     "sumlu": {
         "prefix": ";sumlu",
-        "body": "\\sum_{",
+        "body": "\\sum_{$1}",
         "description": "\\sum_{"
     },
     "sumli": {
@@ -1300,7 +1300,7 @@
     },
     "setcu": {
         "prefix": ";setcu",
-        "body": "\\setcounter{",
+        "body": "\\setcounter{$1}",
         "description": "\\setcounter{"
     },
     "refib": {
@@ -1323,7 +1323,7 @@
     },
     "rcmdu": {
         "prefix": ";rcmdu",
-        "body": "\\renewcommand{",
+        "body": "\\renewcommand{$1}$2{$3}",
         "description": "\\renewcommand{"
     },
     "rcmdl": {
@@ -1480,7 +1480,7 @@
     },
     "ncmdu": {
         "prefix": ";ncmdu",
-        "body": "\\newcommand{",
+        "body": "\\newcommand{$1}$2{$3}",
         "description": "\\newcommand{"
     },
     "mxspu": {
@@ -1529,7 +1529,7 @@
     },
     "mrkbu": {
         "prefix": ";mrkbu",
-        "body": "\\markboth{",
+        "body": "\\markboth{$1}",
         "description": "\\markboth{"
     },
     "mprop": {
@@ -2328,6 +2328,19 @@
         ],
         "description": "\\begin{cases}"
     },
+    "tesl": {
+        "prefix": ";tesl",
+        "body": [
+            "%-------------Slide--------------------------------------------------------",
+            "",
+            "\\begin{frame}{$1}",
+            "%",
+            "  $0",
+            "%",
+            "\\end{frame}"
+        ],
+        "description": "Slide"
+    },
     "tebd": {
         "prefix": ";tebd",
         "body": [
@@ -2343,7 +2356,7 @@
             "\\newcommand{\\bfi}{\\bfseries\\itshape}      % bold italic",
             "\\begin{document}"
         ],
-        "description": "\\begin{cases}"
+        "description": "\\begin{document}"
     },
     "tbex": {
         "prefix": ";tbex",
@@ -2499,7 +2512,7 @@
     },
     "refu": {
         "prefix": ";refu",
-        "body": "\\ref{",
+        "body": "\\ref{$1}",
         "description": "\\ref{"
     },
     "refp": {
@@ -2679,7 +2692,7 @@
     },
     "opnu": {
         "prefix": ";opnu",
-        "body": "\\operatorname{",
+        "body": "\\operatorname{$1}",
         "description": "\\operatorname{"
     },
     "opcz": {
@@ -3106,10 +3119,25 @@
         "body": "_\\phi",
         "description": "_\\phi"
     },
+    "lxnn": {
+        "prefix": ";lxnn",
+        "body": "_{\\nu\\nu}",
+        "description": "_{\\nu\\nu}"
+    },
+    "lxnm": {
+        "prefix": ";lxnm",
+        "body": "_{\\nu\\mu}",
+        "description": "_{\\nu\\mu}"
+    },
     "lxmn": {
         "prefix": ";lxmn",
         "body": "_{\\mu\\nu}",
         "description": "_{\\mu\\nu}"
+    },
+    "lxmm": {
+        "prefix": ";lxmm",
+        "body": "_{\\mu\\mu}",
+        "description": "_{\\mu\\mu}"
     },
     "lxio": {
         "prefix": ";lxio",
@@ -3378,6 +3406,26 @@
         "body": "^\\phi",
         "description": "^\\phi"
     },
+    "hxnn": {
+        "prefix": ";hxnn",
+        "body": "^{\\nu\\nu}",
+        "description": "^{\\nu\\nu}"
+    },
+    "hxnm": {
+        "prefix": ";hxnm",
+        "body": "^{\\nu\\mu}",
+        "description": "^{\\nu\\mu}"
+    },
+    "hxmn": {
+        "prefix": ";hxmn",
+        "body": "^{\\mu\\nu}",
+        "description": "^{\\mu\\nu}"
+    },
+    "hxmm": {
+        "prefix": ";hxmm",
+        "body": "^{\\mu\\mu}",
+        "description": "^{\\mu\\mu}"
+    },
     "hxio": {
         "prefix": ";hxio",
         "body": "^\\iota",
@@ -3533,8 +3581,8 @@
         "body": [
             "\\begin{figure}[ht]",
             "\\begin{center}",
-            "\\includegraphics{}",
-            "\\caption{\\label{}}",
+            "\\includegraphics[$2]{$1}",
+            "\\caption{$4\\label{$3}}",
             "\\end{center}",
             "\\end{figure}"
         ],
@@ -4278,7 +4326,7 @@
     },
     "citu": {
         "prefix": ";citu",
-        "body": "\\cite{",
+        "body": "\\cite{$1}",
         "description": "\\cite{"
     },
     "citp": {
@@ -5976,25 +6024,55 @@
         "body": "\\{",
         "description": "\\{"
     },
+    "lkk": {
+        "prefix": ";lkk",
+        "body": "_{kk}",
+        "description": "_{kk}"
+    },
+    "lkj": {
+        "prefix": ";lkj",
+        "body": "_{kj}",
+        "description": "_{kj}"
+    },
+    "lki": {
+        "prefix": ";lki",
+        "body": "_{ki}",
+        "description": "_{ki}"
+    },
     "ljk": {
         "prefix": ";ljk",
         "body": "_{jk}",
         "description": "_{jk}"
+    },
+    "ljj": {
+        "prefix": ";ljj",
+        "body": "_{jj}",
+        "description": "_{jj}"
+    },
+    "lji": {
+        "prefix": ";lji",
+        "body": "_{ji}",
+        "description": "_{ji}"
     },
     "lin": {
         "prefix": ";lin",
         "body": "\\line{$1}",
         "description": "\\line{}"
     },
+    "lik": {
+        "prefix": ";lik",
+        "body": "_{ik}",
+        "description": "_{ik}"
+    },
     "lij": {
         "prefix": ";lij",
         "body": "_{ij}",
         "description": "_{ij}"
     },
-    "lji": {
-        "prefix": ";lji",
-        "body": "_{ji}",
-        "description": "_{ji}"
+    "lii": {
+        "prefix": ";lii",
+        "body": "_{ii}",
+        "description": "_{ii}"
     },
     "lgn": {
         "prefix": ";lgn",
@@ -6276,11 +6354,6 @@
         "body": "^\\mu",
         "description": "^\\mu"
     },
-    "hxmn": {
-        "prefix": ";hxmn",
-        "body": "^{\\mu\\nu}",
-        "description": "^{\\mu\\nu}"
-    },
     "hxl": {
         "prefix": ";hxl",
         "body": "^\\lambda",
@@ -6351,15 +6424,45 @@
         "body": "^{-1}",
         "description": "^{-1}"
     },
-    "hjk": {
-        "prefix": ";hjk",
-        "body": "^{jk}",
-        "description": "^{jk}"
+    "hk": {
+        "prefix": ";hk",
+        "body": "^k",
+        "description": "^k"
+    },
+    "hkj": {
+        "prefix": ";hkj",
+        "body": "^{kj}",
+        "description": "^{kj}"
+    },
+    "hki": {
+        "prefix": ";hki",
+        "body": "^{ki}",
+        "description": "^{ki}"
+    },
+    "hjj": {
+        "prefix": ";hjj",
+        "body": "^{jj}",
+        "description": "^{jj}"
+    },
+    "hji": {
+        "prefix": ";hji",
+        "body": "^{ji}",
+        "description": "^{ji}"
+    },
+    "hik": {
+        "prefix": ";hik",
+        "body": "^{ik}",
+        "description": "^{ik}"
     },
     "hij": {
         "prefix": ";hij",
         "body": "^{ij}",
         "description": "^{ij}"
+    },
+    "hii": {
+        "prefix": ";hii",
+        "body": "^{ii}",
+        "description": "^{ii}"
     },
     "hfi": {
         "prefix": ";hfi",
@@ -6618,7 +6721,7 @@
     },
     "f1u": {
         "prefix": ";f1u",
-        "body": "\\frac{1}{",
+        "body": "\\frac{1}{$1}",
         "description": "\\frac{1}{"
     },
     "f14": {
@@ -6698,7 +6801,7 @@
     },
     "endu": {
         "prefix": ";endu",
-        "body": "\\end{",
+        "body": "\\end{$1}",
         "description": "\\end{"
     },
     "eeq": {
@@ -7233,7 +7336,7 @@
     },
     "cit": {
         "prefix": ";cit",
-        "body": "\\cite{",
+        "body": "\\cite{$1}",
         "description": "\\cite{"
     },
     "cir": {
@@ -7477,7 +7580,7 @@
     },
     "beu": {
         "prefix": ";beu",
-        "body": "\\begin{",
+        "body": "\\begin{$1}",
         "description": "\\begin{"
     },
     "beq": {
@@ -8172,8 +8275,8 @@
     },
     "lu": {
         "prefix": ";lu",
-        "body": "_{",
-        "description": "_{"
+        "body": "_{$1}",
+        "description": "_{}"
     },
     "lt": {
         "prefix": ";lt",
@@ -8357,8 +8460,8 @@
     },
     "hu": {
         "prefix": ";hu",
-        "body": "^{",
-        "description": "^{"
+        "body": "^{$1}",
+        "description": "^{}"
     },
     "ht": {
         "prefix": ";ht",
@@ -8404,11 +8507,6 @@
         "prefix": ";hl",
         "body": "^l",
         "description": "^l"
-    },
-    "hk": {
-        "prefix": ";hk",
-        "body": "^k",
-        "description": "^k"
     },
     "hj": {
         "prefix": ";hj",
@@ -8517,8 +8615,8 @@
     },
     "fu": {
         "prefix": ";fu",
-        "body": "\\frac{",
-        "description": "\\frac{"
+        "body": "\\frac{$1}{$2}",
+        "description": "\\frac{}{}"
     },
     "fa": {
         "prefix": ";fa",
@@ -8527,7 +8625,7 @@
     },
     "f1": {
         "prefix": ";f1",
-        "body": "\\frac{1}{",
+        "body": "\\frac{1}{$1}",
         "description": "\\frac{1}{"
     },
     "f2": {
