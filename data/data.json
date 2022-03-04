@@ -347,6 +347,36 @@
         "description": "latex2e--te2letter"
     },
     {
+        "prefix": "sumlxvth",
+        "body": "\\sum_\\vartheta",
+        "mode": "maths",
+        "description": "\\sum_\\vartheta"
+    },
+    {
+        "prefix": "sumlxvph",
+        "body": "\\sum_\\varphi",
+        "mode": "maths",
+        "description": "\\sum_\\varphi"
+    },
+    {
+        "prefix": "sumlxcth",
+        "body": "\\sum_\\Theta",
+        "mode": "maths",
+        "description": "\\sum_\\Theta"
+    },
+    {
+        "prefix": "sumlxcps",
+        "body": "\\sum_\\Psi",
+        "mode": "maths",
+        "description": "\\sum_\\Psi"
+    },
+    {
+        "prefix": "sumlxcph",
+        "body": "\\sum_\\Phi",
+        "mode": "maths",
+        "description": "\\sum_\\Phi"
+    },
+    {
         "prefix": "opcpcgcl",
         "body": "\\operatorname{PGL}",
         "mode": "maths",
@@ -493,6 +523,150 @@
         ],
         "mode": "text",
         "description": "latex2e--tepaper"
+    },
+    {
+        "prefix": "sumlxvs",
+        "body": "\\sum_\\varsigma",
+        "mode": "maths",
+        "description": "\\sum_\\varsigma"
+    },
+    {
+        "prefix": "sumlxvr",
+        "body": "\\sum_\\varrho",
+        "mode": "maths",
+        "description": "\\sum_\\varrho"
+    },
+    {
+        "prefix": "sumlxvp",
+        "body": "\\sum_\\varpi",
+        "mode": "maths",
+        "description": "\\sum_\\varpi"
+    },
+    {
+        "prefix": "sumlxve",
+        "body": "\\sum_\\varepsilon",
+        "mode": "maths",
+        "description": "\\sum_\\varepsilon"
+    },
+    {
+        "prefix": "sumlxth",
+        "body": "\\sum_\\theta",
+        "mode": "maths",
+        "description": "\\sum_\\theta"
+    },
+    {
+        "prefix": "sumlxps",
+        "body": "\\sum_\\psi",
+        "mode": "maths",
+        "description": "\\sum_\\psi"
+    },
+    {
+        "prefix": "sumlxph",
+        "body": "\\sum_\\phi",
+        "mode": "maths",
+        "description": "\\sum_\\phi"
+    },
+    {
+        "prefix": "sumlxnn",
+        "body": "\\sum_{\\nu\\nu}",
+        "mode": "maths",
+        "description": "\\sum_{\\nu\\nu}"
+    },
+    {
+        "prefix": "sumlxnm",
+        "body": "\\sum_{\\nu\\mu}",
+        "mode": "maths",
+        "description": "\\sum_{\\nu\\mu}"
+    },
+    {
+        "prefix": "sumlxmn",
+        "body": "\\sum_{\\mu\\nu}",
+        "mode": "maths",
+        "description": "\\sum_{\\mu\\nu}"
+    },
+    {
+        "prefix": "sumlxmm",
+        "body": "\\sum_{\\mu\\mu}",
+        "mode": "maths",
+        "description": "\\sum_{\\mu\\mu}"
+    },
+    {
+        "prefix": "sumlxio",
+        "body": "\\sum_\\iota",
+        "mode": "maths",
+        "description": "\\sum_\\iota"
+    },
+    {
+        "prefix": "sumlxgd",
+        "body": "\\sum_{\\gamma\\delta}",
+        "mode": "maths",
+        "description": "\\sum_{\\gamma\\delta}"
+    },
+    {
+        "prefix": "sumlxet",
+        "body": "\\sum_\\eta",
+        "mode": "maths",
+        "description": "\\sum_\\eta"
+    },
+    {
+        "prefix": "sumlxcx",
+        "body": "\\sum_\\Xi",
+        "mode": "maths",
+        "description": "\\sum_\\Xi"
+    },
+    {
+        "prefix": "sumlxcu",
+        "body": "\\sum_\\Upsilon",
+        "mode": "maths",
+        "description": "\\sum_\\Upsilon"
+    },
+    {
+        "prefix": "sumlxcs",
+        "body": "\\sum_\\Sigma",
+        "mode": "maths",
+        "description": "\\sum_\\Sigma"
+    },
+    {
+        "prefix": "sumlxcp",
+        "body": "\\sum_\\Pi",
+        "mode": "maths",
+        "description": "\\sum_\\Pi"
+    },
+    {
+        "prefix": "sumlxco",
+        "body": "\\sum_\\Omega",
+        "mode": "maths",
+        "description": "\\sum_\\Omega"
+    },
+    {
+        "prefix": "sumlxcl",
+        "body": "\\sum_\\Lambda",
+        "mode": "maths",
+        "description": "\\sum_\\Lambda"
+    },
+    {
+        "prefix": "sumlxcg",
+        "body": "\\sum_\\Gamma",
+        "mode": "maths",
+        "description": "\\sum_\\Gamma"
+    },
+    {
+        "prefix": "sumlxcd",
+        "body": "\\sum_\\Delta",
+        "mode": "maths",
+        "description": "\\sum_\\Delta"
+    },
+    {
+        "prefix": "sumlxab",
+        "body": "\\sum_{\\alpha\\beta}",
+        "mode": "maths",
+        "description": "\\sum_{\\alpha\\beta}"
+    },
+    {
+        "prefix": "sumlijk",
+        "body": "\\sum_{ijk}",
+        "mode": "maths",
+        "description": "\\sum_{ijk}"
     },
     {
         "prefix": "ovstcpq",
@@ -910,10 +1084,334 @@
         "description": "\\begin{center}"
     },
     {
+        "prefix": "sumlxz",
+        "body": "\\sum_\\zeta",
+        "mode": "maths",
+        "description": "\\sum_\\zeta"
+    },
+    {
+        "prefix": "sumlxx",
+        "body": "\\sum_\\xi",
+        "mode": "maths",
+        "description": "\\sum_\\xi"
+    },
+    {
+        "prefix": "sumlxu",
+        "body": "\\sum_\\upsilon",
+        "mode": "maths",
+        "description": "\\sum_\\upsilon"
+    },
+    {
+        "prefix": "sumlxt",
+        "body": "\\sum_\\tau",
+        "mode": "maths",
+        "description": "\\sum_\\tau"
+    },
+    {
+        "prefix": "sumlxs",
+        "body": "\\sum_\\sigma",
+        "mode": "maths",
+        "description": "\\sum_\\sigma"
+    },
+    {
+        "prefix": "sumlxr",
+        "body": "\\sum_\\rho",
+        "mode": "maths",
+        "description": "\\sum_\\rho"
+    },
+    {
+        "prefix": "sumlxp",
+        "body": "\\sum_\\pi",
+        "mode": "maths",
+        "description": "\\sum_\\pi"
+    },
+    {
+        "prefix": "sumlxo",
+        "body": "\\sum_\\omega",
+        "mode": "maths",
+        "description": "\\sum_\\omega"
+    },
+    {
+        "prefix": "sumlxn",
+        "body": "\\sum_\\nu",
+        "mode": "maths",
+        "description": "\\sum_\\nu"
+    },
+    {
+        "prefix": "sumlxm",
+        "body": "\\sum_\\mu",
+        "mode": "maths",
+        "description": "\\sum_\\mu"
+    },
+    {
+        "prefix": "sumlxl",
+        "body": "\\sum_\\lambda",
+        "mode": "maths",
+        "description": "\\sum_\\lambda"
+    },
+    {
+        "prefix": "sumlxk",
+        "body": "\\sum_\\kappa",
+        "mode": "maths",
+        "description": "\\sum_\\kappa"
+    },
+    {
+        "prefix": "sumlxg",
+        "body": "\\sum_\\gamma",
+        "mode": "maths",
+        "description": "\\sum_\\gamma"
+    },
+    {
+        "prefix": "sumlxe",
+        "body": "\\sum_\\epsilon",
+        "mode": "maths",
+        "description": "\\sum_\\epsilon"
+    },
+    {
+        "prefix": "sumlxd",
+        "body": "\\sum_\\delta",
+        "mode": "maths",
+        "description": "\\sum_\\delta"
+    },
+    {
+        "prefix": "sumlxc",
+        "body": "\\sum_\\chi",
+        "mode": "maths",
+        "description": "\\sum_\\chi"
+    },
+    {
+        "prefix": "sumlxb",
+        "body": "\\sum_\\beta",
+        "mode": "maths",
+        "description": "\\sum_\\beta"
+    },
+    {
+        "prefix": "sumlxa",
+        "body": "\\sum_\\alpha",
+        "mode": "maths",
+        "description": "\\sum_\\alpha"
+    },
+    {
+        "prefix": "sumluu",
+        "body": "\\sum_u",
+        "mode": "maths",
+        "description": "\\sum_u"
+    },
+    {
+        "prefix": "sumlmn",
+        "body": "\\sum_{mn}",
+        "mode": "maths",
+        "description": "\\sum_{mn}"
+    },
+    {
+        "prefix": "sumlkk",
+        "body": "\\sum_{kk}",
+        "mode": "maths",
+        "description": "\\sum_{kk}"
+    },
+    {
+        "prefix": "sumlkj",
+        "body": "\\sum_{kj}",
+        "mode": "maths",
+        "description": "\\sum_{kj}"
+    },
+    {
+        "prefix": "sumlki",
+        "body": "\\sum_{ki}",
+        "mode": "maths",
+        "description": "\\sum_{ki}"
+    },
+    {
+        "prefix": "sumljk",
+        "body": "\\sum_{jk}",
+        "mode": "maths",
+        "description": "\\sum_{jk}"
+    },
+    {
+        "prefix": "sumljj",
+        "body": "\\sum_{jj}",
+        "mode": "maths",
+        "description": "\\sum_{jj}"
+    },
+    {
+        "prefix": "sumlji",
+        "body": "\\sum_{ji}",
+        "mode": "maths",
+        "description": "\\sum_{ji}"
+    },
+    {
+        "prefix": "sumlik",
+        "body": "\\sum_{ik}",
+        "mode": "maths",
+        "description": "\\sum_{ik}"
+    },
+    {
         "prefix": "sumlij",
         "body": "\\sum_{ij}",
         "mode": "maths",
         "description": "\\sum_{ij}"
+    },
+    {
+        "prefix": "sumlii",
+        "body": "\\sum_{ii}",
+        "mode": "maths",
+        "description": "\\sum_{ii}"
+    },
+    {
+        "prefix": "sumlcz",
+        "body": "\\sum_Z",
+        "mode": "maths",
+        "description": "\\sum_Z"
+    },
+    {
+        "prefix": "sumlcy",
+        "body": "\\sum_Y",
+        "mode": "maths",
+        "description": "\\sum_Y"
+    },
+    {
+        "prefix": "sumlcx",
+        "body": "\\sum_X",
+        "mode": "maths",
+        "description": "\\sum_X"
+    },
+    {
+        "prefix": "sumlcw",
+        "body": "\\sum_W",
+        "mode": "maths",
+        "description": "\\sum_W"
+    },
+    {
+        "prefix": "sumlcv",
+        "body": "\\sum_V",
+        "mode": "maths",
+        "description": "\\sum_V"
+    },
+    {
+        "prefix": "sumlcu",
+        "body": "\\sum_U",
+        "mode": "maths",
+        "description": "\\sum_U"
+    },
+    {
+        "prefix": "sumlct",
+        "body": "\\sum_T",
+        "mode": "maths",
+        "description": "\\sum_T"
+    },
+    {
+        "prefix": "sumlcs",
+        "body": "\\sum_S",
+        "mode": "maths",
+        "description": "\\sum_S"
+    },
+    {
+        "prefix": "sumlcr",
+        "body": "\\sum_R",
+        "mode": "maths",
+        "description": "\\sum_R"
+    },
+    {
+        "prefix": "sumlcq",
+        "body": "\\sum_Q",
+        "mode": "maths",
+        "description": "\\sum_Q"
+    },
+    {
+        "prefix": "sumlcp",
+        "body": "\\sum_P",
+        "mode": "maths",
+        "description": "\\sum_P"
+    },
+    {
+        "prefix": "sumlco",
+        "body": "\\sum_O",
+        "mode": "maths",
+        "description": "\\sum_O"
+    },
+    {
+        "prefix": "sumlcn",
+        "body": "\\sum_N",
+        "mode": "maths",
+        "description": "\\sum_N"
+    },
+    {
+        "prefix": "sumlcm",
+        "body": "\\sum_M",
+        "mode": "maths",
+        "description": "\\sum_M"
+    },
+    {
+        "prefix": "sumlcl",
+        "body": "\\sum_L",
+        "mode": "maths",
+        "description": "\\sum_L"
+    },
+    {
+        "prefix": "sumlck",
+        "body": "\\sum_K",
+        "mode": "maths",
+        "description": "\\sum_K"
+    },
+    {
+        "prefix": "sumlcj",
+        "body": "\\sum_J",
+        "mode": "maths",
+        "description": "\\sum_J"
+    },
+    {
+        "prefix": "sumlci",
+        "body": "\\sum_I",
+        "mode": "maths",
+        "description": "\\sum_I"
+    },
+    {
+        "prefix": "sumlch",
+        "body": "\\sum_H",
+        "mode": "maths",
+        "description": "\\sum_H"
+    },
+    {
+        "prefix": "sumlcg",
+        "body": "\\sum_G",
+        "mode": "maths",
+        "description": "\\sum_G"
+    },
+    {
+        "prefix": "sumlcf",
+        "body": "\\sum_F",
+        "mode": "maths",
+        "description": "\\sum_F"
+    },
+    {
+        "prefix": "sumlce",
+        "body": "\\sum_E",
+        "mode": "maths",
+        "description": "\\sum_E"
+    },
+    {
+        "prefix": "sumlcd",
+        "body": "\\sum_D",
+        "mode": "maths",
+        "description": "\\sum_D"
+    },
+    {
+        "prefix": "sumlcc",
+        "body": "\\sum_C",
+        "mode": "maths",
+        "description": "\\sum_C"
+    },
+    {
+        "prefix": "sumlcb",
+        "body": "\\sum_B",
+        "mode": "maths",
+        "description": "\\sum_B"
+    },
+    {
+        "prefix": "sumlca",
+        "body": "\\sum_A",
+        "mode": "maths",
+        "description": "\\sum_A"
     },
     {
         "prefix": "snsref",
@@ -926,6 +1424,12 @@
         "body": "\\renewcommand{qedsymbol}{}",
         "mode": "text",
         "description": "\\renewcommand{qedsymbol}{}"
+    },
+    {
+        "prefix": "prodlu",
+        "body": "\\prod_{$1}",
+        "mode": "maths",
+        "description": "\\prod_{"
     },
     {
         "prefix": "opsech",
@@ -1397,10 +1901,106 @@
         "description": "\\begin{abstract}"
     },
     {
+        "prefix": "sumlz",
+        "body": "\\sum_z",
+        "mode": "maths",
+        "description": "\\sum_z"
+    },
+    {
+        "prefix": "sumly",
+        "body": "\\sum_y",
+        "mode": "maths",
+        "description": "\\sum_y"
+    },
+    {
+        "prefix": "sumlx",
+        "body": "\\sum_x",
+        "mode": "maths",
+        "description": "\\sum_x"
+    },
+    {
+        "prefix": "sumlw",
+        "body": "\\sum_w",
+        "mode": "maths",
+        "description": "\\sum_w"
+    },
+    {
+        "prefix": "sumlv",
+        "body": "\\sum_v",
+        "mode": "maths",
+        "description": "\\sum_v"
+    },
+    {
         "prefix": "sumlu",
         "body": "\\sum_{$1}",
         "mode": "maths",
         "description": "\\sum_{"
+    },
+    {
+        "prefix": "sumlt",
+        "body": "\\sum_t",
+        "mode": "maths",
+        "description": "\\sum_t"
+    },
+    {
+        "prefix": "sumls",
+        "body": "\\sum_s",
+        "mode": "maths",
+        "description": "\\sum_s"
+    },
+    {
+        "prefix": "sumlr",
+        "body": "\\sum_r",
+        "mode": "maths",
+        "description": "\\sum_r"
+    },
+    {
+        "prefix": "sumlq",
+        "body": "\\sum_q",
+        "mode": "maths",
+        "description": "\\sum_q"
+    },
+    {
+        "prefix": "sumlp",
+        "body": "\\sum_p",
+        "mode": "maths",
+        "description": "\\sum_p"
+    },
+    {
+        "prefix": "sumlo",
+        "body": "\\sum_o",
+        "mode": "maths",
+        "description": "\\sum_o"
+    },
+    {
+        "prefix": "sumln",
+        "body": "\\sum_n",
+        "mode": "maths",
+        "description": "\\sum_n"
+    },
+    {
+        "prefix": "sumlm",
+        "body": "\\sum_m",
+        "mode": "maths",
+        "description": "\\sum_m"
+    },
+    {
+        "prefix": "sumll",
+        "body": "\\sum_l",
+        "mode": "maths",
+        "description": "\\sum_l"
+    },
+    {
+        "prefix": "sumlk",
+        "body": "\\sum_k",
+        "mode": "maths",
+        "description": "\\sum_k"
+    },
+    {
+        "prefix": "sumlj",
+        "body": "\\sum_j",
+        "mode": "maths",
+        "description": "\\sum_j"
     },
     {
         "prefix": "sumli",
@@ -1409,10 +2009,52 @@
         "description": "\\sum_i"
     },
     {
-        "prefix": "sumlj",
-        "body": "\\sum_j",
+        "prefix": "sumlh",
+        "body": "\\sum_h",
         "mode": "maths",
-        "description": "\\sum_j"
+        "description": "\\sum_h"
+    },
+    {
+        "prefix": "sumlg",
+        "body": "\\sum_g",
+        "mode": "maths",
+        "description": "\\sum_g"
+    },
+    {
+        "prefix": "sumlf",
+        "body": "\\sum_f",
+        "mode": "maths",
+        "description": "\\sum_f"
+    },
+    {
+        "prefix": "sumle",
+        "body": "\\sum_e",
+        "mode": "maths",
+        "description": "\\sum_e"
+    },
+    {
+        "prefix": "sumld",
+        "body": "\\sum_d",
+        "mode": "maths",
+        "description": "\\sum_d"
+    },
+    {
+        "prefix": "sumlc",
+        "body": "\\sum_c",
+        "mode": "maths",
+        "description": "\\sum_c"
+    },
+    {
+        "prefix": "sumlb",
+        "body": "\\sum_b",
+        "mode": "maths",
+        "description": "\\sum_b"
+    },
+    {
+        "prefix": "sumla",
+        "body": "\\sum_a",
+        "mode": "maths",
+        "description": "\\sum_a"
     },
     {
         "prefix": "subst",
@@ -7532,7 +8174,7 @@
         "description": "^{-1}"
     },
     {
-        "prefix": "hk",
+        "prefix": "hkk",
         "body": "^{kk}",
         "mode": "maths",
         "description": "^{kk}"
