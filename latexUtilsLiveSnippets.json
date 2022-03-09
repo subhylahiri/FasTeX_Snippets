@@ -1,5 +1,45 @@
 [
     {
+        "prefix": "(^|[^\\\\])sumlxvth  ",
+        "body": "$1\\sum_\\vartheta",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\vartheta",
+        "priority": 8
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxvph  ",
+        "body": "$1\\sum_\\varphi",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\varphi",
+        "priority": 8
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxcth  ",
+        "body": "$1\\sum_\\Theta",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\Theta",
+        "priority": 8
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxcps  ",
+        "body": "$1\\sum_\\Psi",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\Psi",
+        "priority": 8
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxcph  ",
+        "body": "$1\\sum_\\Phi",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\Phi",
+        "priority": 8
+    },
+    {
         "prefix": "(^|[^\\\\])opcpcgcl  ",
         "body": "$1\\operatorname{PGL}",
         "mode": "maths",
@@ -69,6 +109,390 @@
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\textstyle{}",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxvs  ",
+        "body": "$1\\sum_\\varsigma",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\varsigma",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxvr  ",
+        "body": "$1\\sum_\\varrho",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\varrho",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxvp  ",
+        "body": "$1\\sum_\\varpi",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\varpi",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxve  ",
+        "body": "$1\\sum_\\varepsilon",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\varepsilon",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxth  ",
+        "body": "$1\\sum_\\theta",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\theta",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxps  ",
+        "body": "$1\\sum_\\psi",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\psi",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxph  ",
+        "body": "$1\\sum_\\phi",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\phi",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxnn  ",
+        "body": "$1\\sum_{\\nu\\nu}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_{\\nu\\nu}",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxnm  ",
+        "body": "$1\\sum_{\\nu\\mu}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_{\\nu\\mu}",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxmn  ",
+        "body": "$1\\sum_{\\mu\\nu}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_{\\mu\\nu}",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxmm  ",
+        "body": "$1\\sum_{\\mu\\mu}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_{\\mu\\mu}",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxio  ",
+        "body": "$1\\sum_\\iota",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\iota",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxgd  ",
+        "body": "$1\\sum_{\\gamma\\delta}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_{\\gamma\\delta}",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxet  ",
+        "body": "$1\\sum_\\eta",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\eta",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxcx  ",
+        "body": "$1\\sum_\\Xi",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\Xi",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxcu  ",
+        "body": "$1\\sum_\\Upsilon",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\Upsilon",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxcs  ",
+        "body": "$1\\sum_\\Sigma",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\Sigma",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxcp  ",
+        "body": "$1\\sum_\\Pi",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\Pi",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxco  ",
+        "body": "$1\\sum_\\Omega",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\Omega",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxcl  ",
+        "body": "$1\\sum_\\Lambda",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\Lambda",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxcg  ",
+        "body": "$1\\sum_\\Gamma",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\Gamma",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxcd  ",
+        "body": "$1\\sum_\\Delta",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\Delta",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxab  ",
+        "body": "$1\\sum_{\\alpha\\beta}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_{\\alpha\\beta}",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlijk  ",
+        "body": "$1\\sum_{ijk}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_{ijk}",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxvs  ",
+        "body": "$1\\sum_\\varsigma",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\varsigma",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxvr  ",
+        "body": "$1\\sum_\\varrho",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\varrho",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxvp  ",
+        "body": "$1\\sum_\\varpi",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\varpi",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxve  ",
+        "body": "$1\\sum_\\varepsilon",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\varepsilon",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxth  ",
+        "body": "$1\\sum_\\theta",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\theta",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxps  ",
+        "body": "$1\\sum_\\psi",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\psi",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxph  ",
+        "body": "$1\\sum_\\phi",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\phi",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxnn  ",
+        "body": "$1\\sum_{\\nu\\nu}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_{\\nu\\nu}",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxnm  ",
+        "body": "$1\\sum_{\\nu\\mu}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_{\\nu\\mu}",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxmn  ",
+        "body": "$1\\sum_{\\mu\\nu}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_{\\mu\\nu}",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxmm  ",
+        "body": "$1\\sum_{\\mu\\mu}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_{\\mu\\mu}",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxio  ",
+        "body": "$1\\sum_\\iota",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\iota",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxgd  ",
+        "body": "$1\\sum_{\\gamma\\delta}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_{\\gamma\\delta}",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxet  ",
+        "body": "$1\\sum_\\eta",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\eta",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxcx  ",
+        "body": "$1\\sum_\\Xi",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\Xi",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxcu  ",
+        "body": "$1\\sum_\\Upsilon",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\Upsilon",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxcs  ",
+        "body": "$1\\sum_\\Sigma",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\Sigma",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxcp  ",
+        "body": "$1\\sum_\\Pi",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\Pi",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxco  ",
+        "body": "$1\\sum_\\Omega",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\Omega",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxcl  ",
+        "body": "$1\\sum_\\Lambda",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\Lambda",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxcg  ",
+        "body": "$1\\sum_\\Gamma",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\Gamma",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxcd  ",
+        "body": "$1\\sum_\\Delta",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\Delta",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxab  ",
+        "body": "$1\\sum_{\\alpha\\beta}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_{\\alpha\\beta}",
+        "priority": 7
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlijk  ",
+        "body": "$1\\sum_{ijk}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_{ijk}",
         "priority": 7
     },
     {
@@ -240,11 +664,443 @@
         "priority": 6
     },
     {
+        "prefix": "(^|[^\\\\])sumlxz  ",
+        "body": "$1\\sum_\\zeta",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\zeta",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxx  ",
+        "body": "$1\\sum_\\xi",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\xi",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxu  ",
+        "body": "$1\\sum_\\upsilon",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\upsilon",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxt  ",
+        "body": "$1\\sum_\\tau",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\tau",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxs  ",
+        "body": "$1\\sum_\\sigma",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\sigma",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxr  ",
+        "body": "$1\\sum_\\rho",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\rho",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxp  ",
+        "body": "$1\\sum_\\pi",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\pi",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxo  ",
+        "body": "$1\\sum_\\omega",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\omega",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxn  ",
+        "body": "$1\\sum_\\nu",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\nu",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxm  ",
+        "body": "$1\\sum_\\mu",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\mu",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxl  ",
+        "body": "$1\\sum_\\lambda",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\lambda",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxk  ",
+        "body": "$1\\sum_\\kappa",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\kappa",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxg  ",
+        "body": "$1\\sum_\\gamma",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\gamma",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxe  ",
+        "body": "$1\\sum_\\epsilon",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\epsilon",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxd  ",
+        "body": "$1\\sum_\\delta",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\delta",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxc  ",
+        "body": "$1\\sum_\\chi",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\chi",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxb  ",
+        "body": "$1\\sum_\\beta",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\beta",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlxa  ",
+        "body": "$1\\sum_\\alpha",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_\\alpha",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumluu  ",
+        "body": "$1\\sum_u",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_u",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlmn  ",
+        "body": "$1\\sum_{mn}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_{mn}",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlkk  ",
+        "body": "$1\\sum_{kk}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_{kk}",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlkj  ",
+        "body": "$1\\sum_{kj}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_{kj}",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlki  ",
+        "body": "$1\\sum_{ki}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_{ki}",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumljk  ",
+        "body": "$1\\sum_{jk}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_{jk}",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumljj  ",
+        "body": "$1\\sum_{jj}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_{jj}",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlji  ",
+        "body": "$1\\sum_{ji}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_{ji}",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlik  ",
+        "body": "$1\\sum_{ik}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_{ik}",
+        "priority": 6
+    },
+    {
         "prefix": "(^|[^\\\\])sumlij  ",
         "body": "$1\\sum_{ij}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\sum_{ij}",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlii  ",
+        "body": "$1\\sum_{ii}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_{ii}",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlcz  ",
+        "body": "$1\\sum_Z",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_Z",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlcy  ",
+        "body": "$1\\sum_Y",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_Y",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlcx  ",
+        "body": "$1\\sum_X",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_X",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlcw  ",
+        "body": "$1\\sum_W",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_W",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlcv  ",
+        "body": "$1\\sum_V",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_V",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlcu  ",
+        "body": "$1\\sum_U",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_U",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlct  ",
+        "body": "$1\\sum_T",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_T",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlcs  ",
+        "body": "$1\\sum_S",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_S",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlcr  ",
+        "body": "$1\\sum_R",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_R",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlcq  ",
+        "body": "$1\\sum_Q",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_Q",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlcp  ",
+        "body": "$1\\sum_P",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_P",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlco  ",
+        "body": "$1\\sum_O",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_O",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlcn  ",
+        "body": "$1\\sum_N",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_N",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlcm  ",
+        "body": "$1\\sum_M",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_M",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlcl  ",
+        "body": "$1\\sum_L",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_L",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlck  ",
+        "body": "$1\\sum_K",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_K",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlcj  ",
+        "body": "$1\\sum_J",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_J",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlci  ",
+        "body": "$1\\sum_I",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_I",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlch  ",
+        "body": "$1\\sum_H",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_H",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlcg  ",
+        "body": "$1\\sum_G",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_G",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlcf  ",
+        "body": "$1\\sum_F",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_F",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlce  ",
+        "body": "$1\\sum_E",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_E",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlcd  ",
+        "body": "$1\\sum_D",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_D",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlcc  ",
+        "body": "$1\\sum_C",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_C",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlcb  ",
+        "body": "$1\\sum_B",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_B",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlca  ",
+        "body": "$1\\sum_A",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_A",
         "priority": 6
     },
     {
@@ -261,6 +1117,14 @@
         "mode": "text",
         "triggerWhenComplete": true,
         "description": "\\renewcommand{qedsymbol}{}",
+        "priority": 6
+    },
+    {
+        "prefix": "(^|[^\\\\])prodlu  ",
+        "body": "$1\\prod_{$$1}",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\prod_{",
         "priority": 6
     },
     {
@@ -744,11 +1608,139 @@
         "priority": 5
     },
     {
+        "prefix": "(^|[^\\\\])sumlz  ",
+        "body": "$1\\sum_z",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_z",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumly  ",
+        "body": "$1\\sum_y",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_y",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlx  ",
+        "body": "$1\\sum_x",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_x",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlw  ",
+        "body": "$1\\sum_w",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_w",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlv  ",
+        "body": "$1\\sum_v",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_v",
+        "priority": 5
+    },
+    {
         "prefix": "(^|[^\\\\])sumlu  ",
         "body": "$1\\sum_{$$1}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "\\sum_{",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlt  ",
+        "body": "$1\\sum_t",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_t",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumls  ",
+        "body": "$1\\sum_s",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_s",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlr  ",
+        "body": "$1\\sum_r",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_r",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlq  ",
+        "body": "$1\\sum_q",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_q",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlp  ",
+        "body": "$1\\sum_p",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_p",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlo  ",
+        "body": "$1\\sum_o",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_o",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumln  ",
+        "body": "$1\\sum_n",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_n",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlm  ",
+        "body": "$1\\sum_m",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_m",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumll  ",
+        "body": "$1\\sum_l",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_l",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlk  ",
+        "body": "$1\\sum_k",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_k",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlj  ",
+        "body": "$1\\sum_j",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_j",
         "priority": 5
     },
     {
@@ -760,11 +1752,211 @@
         "priority": 5
     },
     {
-        "prefix": "(^|[^\\\\])sumlj  ",
-        "body": "$1\\sum_j",
+        "prefix": "(^|[^\\\\])sumls  ",
+        "body": "$1\\sum_s",
         "mode": "maths",
         "triggerWhenComplete": true,
-        "description": "\\sum_j",
+        "description": "\\sum_s",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlr  ",
+        "body": "$1\\sum_r",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_r",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlq  ",
+        "body": "$1\\sum_q",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_q",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlp  ",
+        "body": "$1\\sum_p",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_p",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlo  ",
+        "body": "$1\\sum_o",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_o",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumln  ",
+        "body": "$1\\sum_n",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_n",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlm  ",
+        "body": "$1\\sum_m",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_m",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumll  ",
+        "body": "$1\\sum_l",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_l",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlk  ",
+        "body": "$1\\sum_k",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_k",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlh  ",
+        "body": "$1\\sum_h",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_h",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlg  ",
+        "body": "$1\\sum_g",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_g",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlf  ",
+        "body": "$1\\sum_f",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_f",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumle  ",
+        "body": "$1\\sum_e",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_e",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumld  ",
+        "body": "$1\\sum_d",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_d",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlc  ",
+        "body": "$1\\sum_c",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_c",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlb  ",
+        "body": "$1\\sum_b",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_b",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumla  ",
+        "body": "$1\\sum_a",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_a",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumli  ",
+        "body": "$1\\sum_i",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_i",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlh  ",
+        "body": "$1\\sum_h",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_h",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlg  ",
+        "body": "$1\\sum_g",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_g",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlf  ",
+        "body": "$1\\sum_f",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_f",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumle  ",
+        "body": "$1\\sum_e",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_e",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumld  ",
+        "body": "$1\\sum_d",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_d",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlc  ",
+        "body": "$1\\sum_c",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_c",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumlb  ",
+        "body": "$1\\sum_b",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_b",
+        "priority": 5
+    },
+    {
+        "prefix": "(^|[^\\\\])sumla  ",
+        "body": "$1\\sum_a",
+        "mode": "maths",
+        "triggerWhenComplete": true,
+        "description": "\\sum_a",
         "priority": 5
     },
     {
@@ -8248,12 +9440,12 @@
         "priority": 3
     },
     {
-        "prefix": "(^|[^\\\\])hk  ",
+        "prefix": "(^|[^\\\\])hkk  ",
         "body": "$1^{kk}",
         "mode": "maths",
         "triggerWhenComplete": true,
         "description": "^{kk}",
-        "priority": 2
+        "priority": 3
     },
     {
         "prefix": "(^|[^\\\\])hkj  ",

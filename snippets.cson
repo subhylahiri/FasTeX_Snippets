@@ -19,6 +19,26 @@
         \\\\end{document}
         """
         "description": "latex2e--te2letter"
+    "sumlxvth": 
+        "prefix": "sumlxvth"
+        "body": "\\\\sum_\\\\vartheta"
+        "description": "\sum_\vartheta"
+    "sumlxvph": 
+        "prefix": "sumlxvph"
+        "body": "\\\\sum_\\\\varphi"
+        "description": "\sum_\varphi"
+    "sumlxcth": 
+        "prefix": "sumlxcth"
+        "body": "\\\\sum_\\\\Theta"
+        "description": "\sum_\Theta"
+    "sumlxcps": 
+        "prefix": "sumlxcps"
+        "body": "\\\\sum_\\\\Psi"
+        "description": "\sum_\Psi"
+    "sumlxcph": 
+        "prefix": "sumlxcph"
+        "body": "\\\\sum_\\\\Phi"
+        "description": "\sum_\Phi"
     "opcpcgcl": 
         "prefix": "opcpcgcl"
         "body": "\\\\operatorname{PGL}"
@@ -65,6 +85,102 @@
         "prefix": "txtstyu"
         "body": "\\\\textstyle{$1}"
         "description": "\textstyle{}"
+    "sumlxvs": 
+        "prefix": "sumlxvs"
+        "body": "\\\\sum_\\\\varsigma"
+        "description": "\sum_\varsigma"
+    "sumlxvr": 
+        "prefix": "sumlxvr"
+        "body": "\\\\sum_\\\\varrho"
+        "description": "\sum_\varrho"
+    "sumlxvp": 
+        "prefix": "sumlxvp"
+        "body": "\\\\sum_\\\\varpi"
+        "description": "\sum_\varpi"
+    "sumlxve": 
+        "prefix": "sumlxve"
+        "body": "\\\\sum_\\\\varepsilon"
+        "description": "\sum_\varepsilon"
+    "sumlxth": 
+        "prefix": "sumlxth"
+        "body": "\\\\sum_\\\\theta"
+        "description": "\sum_\theta"
+    "sumlxps": 
+        "prefix": "sumlxps"
+        "body": "\\\\sum_\\\\psi"
+        "description": "\sum_\psi"
+    "sumlxph": 
+        "prefix": "sumlxph"
+        "body": "\\\\sum_\\\\phi"
+        "description": "\sum_\phi"
+    "sumlxnn": 
+        "prefix": "sumlxnn"
+        "body": "\\\\sum_{\\\\nu\\\\nu}"
+        "description": "\sum_{\nu\nu}"
+    "sumlxnm": 
+        "prefix": "sumlxnm"
+        "body": "\\\\sum_{\\\\nu\\\\mu}"
+        "description": "\sum_{\nu\mu}"
+    "sumlxmn": 
+        "prefix": "sumlxmn"
+        "body": "\\\\sum_{\\\\mu\\\\nu}"
+        "description": "\sum_{\mu\nu}"
+    "sumlxmm": 
+        "prefix": "sumlxmm"
+        "body": "\\\\sum_{\\\\mu\\\\mu}"
+        "description": "\sum_{\mu\mu}"
+    "sumlxio": 
+        "prefix": "sumlxio"
+        "body": "\\\\sum_\\\\iota"
+        "description": "\sum_\iota"
+    "sumlxgd": 
+        "prefix": "sumlxgd"
+        "body": "\\\\sum_{\\\\gamma\\\\delta}"
+        "description": "\sum_{\gamma\delta}"
+    "sumlxet": 
+        "prefix": "sumlxet"
+        "body": "\\\\sum_\\\\eta"
+        "description": "\sum_\eta"
+    "sumlxcx": 
+        "prefix": "sumlxcx"
+        "body": "\\\\sum_\\\\Xi"
+        "description": "\sum_\Xi"
+    "sumlxcu": 
+        "prefix": "sumlxcu"
+        "body": "\\\\sum_\\\\Upsilon"
+        "description": "\sum_\Upsilon"
+    "sumlxcs": 
+        "prefix": "sumlxcs"
+        "body": "\\\\sum_\\\\Sigma"
+        "description": "\sum_\Sigma"
+    "sumlxcp": 
+        "prefix": "sumlxcp"
+        "body": "\\\\sum_\\\\Pi"
+        "description": "\sum_\Pi"
+    "sumlxco": 
+        "prefix": "sumlxco"
+        "body": "\\\\sum_\\\\Omega"
+        "description": "\sum_\Omega"
+    "sumlxcl": 
+        "prefix": "sumlxcl"
+        "body": "\\\\sum_\\\\Lambda"
+        "description": "\sum_\Lambda"
+    "sumlxcg": 
+        "prefix": "sumlxcg"
+        "body": "\\\\sum_\\\\Gamma"
+        "description": "\sum_\Gamma"
+    "sumlxcd": 
+        "prefix": "sumlxcd"
+        "body": "\\\\sum_\\\\Delta"
+        "description": "\sum_\Delta"
+    "sumlxab": 
+        "prefix": "sumlxab"
+        "body": "\\\\sum_{\\\\alpha\\\\beta}"
+        "description": "\sum_{\alpha\beta}"
+    "sumlijk": 
+        "prefix": "sumlijk"
+        "body": "\\\\sum_{ijk}"
+        "description": "\sum_{ijk}"
     "ovstcpq": 
         "prefix": "ovstcpq"
         "body": "\\\\overset{\\\\longrightarrow}{\\\\text{PQ}}"
@@ -196,10 +312,226 @@
         \\\\end{center}
         """
         "description": "\begin{center}"
+    "sumlxz": 
+        "prefix": "sumlxz"
+        "body": "\\\\sum_\\\\zeta"
+        "description": "\sum_\zeta"
+    "sumlxx": 
+        "prefix": "sumlxx"
+        "body": "\\\\sum_\\\\xi"
+        "description": "\sum_\xi"
+    "sumlxu": 
+        "prefix": "sumlxu"
+        "body": "\\\\sum_\\\\upsilon"
+        "description": "\sum_\upsilon"
+    "sumlxt": 
+        "prefix": "sumlxt"
+        "body": "\\\\sum_\\\\tau"
+        "description": "\sum_\tau"
+    "sumlxs": 
+        "prefix": "sumlxs"
+        "body": "\\\\sum_\\\\sigma"
+        "description": "\sum_\sigma"
+    "sumlxr": 
+        "prefix": "sumlxr"
+        "body": "\\\\sum_\\\\rho"
+        "description": "\sum_\rho"
+    "sumlxp": 
+        "prefix": "sumlxp"
+        "body": "\\\\sum_\\\\pi"
+        "description": "\sum_\pi"
+    "sumlxo": 
+        "prefix": "sumlxo"
+        "body": "\\\\sum_\\\\omega"
+        "description": "\sum_\omega"
+    "sumlxn": 
+        "prefix": "sumlxn"
+        "body": "\\\\sum_\\\\nu"
+        "description": "\sum_\nu"
+    "sumlxm": 
+        "prefix": "sumlxm"
+        "body": "\\\\sum_\\\\mu"
+        "description": "\sum_\mu"
+    "sumlxl": 
+        "prefix": "sumlxl"
+        "body": "\\\\sum_\\\\lambda"
+        "description": "\sum_\lambda"
+    "sumlxk": 
+        "prefix": "sumlxk"
+        "body": "\\\\sum_\\\\kappa"
+        "description": "\sum_\kappa"
+    "sumlxg": 
+        "prefix": "sumlxg"
+        "body": "\\\\sum_\\\\gamma"
+        "description": "\sum_\gamma"
+    "sumlxe": 
+        "prefix": "sumlxe"
+        "body": "\\\\sum_\\\\epsilon"
+        "description": "\sum_\epsilon"
+    "sumlxd": 
+        "prefix": "sumlxd"
+        "body": "\\\\sum_\\\\delta"
+        "description": "\sum_\delta"
+    "sumlxc": 
+        "prefix": "sumlxc"
+        "body": "\\\\sum_\\\\chi"
+        "description": "\sum_\chi"
+    "sumlxb": 
+        "prefix": "sumlxb"
+        "body": "\\\\sum_\\\\beta"
+        "description": "\sum_\beta"
+    "sumlxa": 
+        "prefix": "sumlxa"
+        "body": "\\\\sum_\\\\alpha"
+        "description": "\sum_\alpha"
+    "sumluu": 
+        "prefix": "sumluu"
+        "body": "\\\\sum_u"
+        "description": "\sum_u"
+    "sumlmn": 
+        "prefix": "sumlmn"
+        "body": "\\\\sum_{mn}"
+        "description": "\sum_{mn}"
+    "sumlkk": 
+        "prefix": "sumlkk"
+        "body": "\\\\sum_{kk}"
+        "description": "\sum_{kk}"
+    "sumlkj": 
+        "prefix": "sumlkj"
+        "body": "\\\\sum_{kj}"
+        "description": "\sum_{kj}"
+    "sumlki": 
+        "prefix": "sumlki"
+        "body": "\\\\sum_{ki}"
+        "description": "\sum_{ki}"
+    "sumljk": 
+        "prefix": "sumljk"
+        "body": "\\\\sum_{jk}"
+        "description": "\sum_{jk}"
+    "sumljj": 
+        "prefix": "sumljj"
+        "body": "\\\\sum_{jj}"
+        "description": "\sum_{jj}"
+    "sumlji": 
+        "prefix": "sumlji"
+        "body": "\\\\sum_{ji}"
+        "description": "\sum_{ji}"
+    "sumlik": 
+        "prefix": "sumlik"
+        "body": "\\\\sum_{ik}"
+        "description": "\sum_{ik}"
     "sumlij": 
         "prefix": "sumlij"
         "body": "\\\\sum_{ij}"
         "description": "\sum_{ij}"
+    "sumlii": 
+        "prefix": "sumlii"
+        "body": "\\\\sum_{ii}"
+        "description": "\sum_{ii}"
+    "sumlcz": 
+        "prefix": "sumlcz"
+        "body": "\\\\sum_Z"
+        "description": "\sum_Z"
+    "sumlcy": 
+        "prefix": "sumlcy"
+        "body": "\\\\sum_Y"
+        "description": "\sum_Y"
+    "sumlcx": 
+        "prefix": "sumlcx"
+        "body": "\\\\sum_X"
+        "description": "\sum_X"
+    "sumlcw": 
+        "prefix": "sumlcw"
+        "body": "\\\\sum_W"
+        "description": "\sum_W"
+    "sumlcv": 
+        "prefix": "sumlcv"
+        "body": "\\\\sum_V"
+        "description": "\sum_V"
+    "sumlcu": 
+        "prefix": "sumlcu"
+        "body": "\\\\sum_U"
+        "description": "\sum_U"
+    "sumlct": 
+        "prefix": "sumlct"
+        "body": "\\\\sum_T"
+        "description": "\sum_T"
+    "sumlcs": 
+        "prefix": "sumlcs"
+        "body": "\\\\sum_S"
+        "description": "\sum_S"
+    "sumlcr": 
+        "prefix": "sumlcr"
+        "body": "\\\\sum_R"
+        "description": "\sum_R"
+    "sumlcq": 
+        "prefix": "sumlcq"
+        "body": "\\\\sum_Q"
+        "description": "\sum_Q"
+    "sumlcp": 
+        "prefix": "sumlcp"
+        "body": "\\\\sum_P"
+        "description": "\sum_P"
+    "sumlco": 
+        "prefix": "sumlco"
+        "body": "\\\\sum_O"
+        "description": "\sum_O"
+    "sumlcn": 
+        "prefix": "sumlcn"
+        "body": "\\\\sum_N"
+        "description": "\sum_N"
+    "sumlcm": 
+        "prefix": "sumlcm"
+        "body": "\\\\sum_M"
+        "description": "\sum_M"
+    "sumlcl": 
+        "prefix": "sumlcl"
+        "body": "\\\\sum_L"
+        "description": "\sum_L"
+    "sumlck": 
+        "prefix": "sumlck"
+        "body": "\\\\sum_K"
+        "description": "\sum_K"
+    "sumlcj": 
+        "prefix": "sumlcj"
+        "body": "\\\\sum_J"
+        "description": "\sum_J"
+    "sumlci": 
+        "prefix": "sumlci"
+        "body": "\\\\sum_I"
+        "description": "\sum_I"
+    "sumlch": 
+        "prefix": "sumlch"
+        "body": "\\\\sum_H"
+        "description": "\sum_H"
+    "sumlcg": 
+        "prefix": "sumlcg"
+        "body": "\\\\sum_G"
+        "description": "\sum_G"
+    "sumlcf": 
+        "prefix": "sumlcf"
+        "body": "\\\\sum_F"
+        "description": "\sum_F"
+    "sumlce": 
+        "prefix": "sumlce"
+        "body": "\\\\sum_E"
+        "description": "\sum_E"
+    "sumlcd": 
+        "prefix": "sumlcd"
+        "body": "\\\\sum_D"
+        "description": "\sum_D"
+    "sumlcc": 
+        "prefix": "sumlcc"
+        "body": "\\\\sum_C"
+        "description": "\sum_C"
+    "sumlcb": 
+        "prefix": "sumlcb"
+        "body": "\\\\sum_B"
+        "description": "\sum_B"
+    "sumlca": 
+        "prefix": "sumlca"
+        "body": "\\\\sum_A"
+        "description": "\sum_A"
     "snsref": 
         "prefix": "snsref"
         "body": "\\\\section*{References}"
@@ -208,6 +540,10 @@
         "prefix": "rcqeds"
         "body": "\\\\renewcommand{qedsymbol}{}"
         "description": "\renewcommand{qedsymbol}{}"
+    "prodlu": 
+        "prefix": "prodlu"
+        "body": "\\\\prod_{$1}"
+        "description": "\prod_{"
     "opsech": 
         "prefix": "opsech"
         "body": "\\\\operatorname{sech}"
@@ -490,18 +826,110 @@
         \\\\end{abstract}
         """
         "description": "\begin{abstract}"
+    "sumlz": 
+        "prefix": "sumlz"
+        "body": "\\\\sum_z"
+        "description": "\sum_z"
+    "sumly": 
+        "prefix": "sumly"
+        "body": "\\\\sum_y"
+        "description": "\sum_y"
+    "sumlx": 
+        "prefix": "sumlx"
+        "body": "\\\\sum_x"
+        "description": "\sum_x"
+    "sumlw": 
+        "prefix": "sumlw"
+        "body": "\\\\sum_w"
+        "description": "\sum_w"
+    "sumlv": 
+        "prefix": "sumlv"
+        "body": "\\\\sum_v"
+        "description": "\sum_v"
     "sumlu": 
         "prefix": "sumlu"
         "body": "\\\\sum_{$1}"
         "description": "\sum_{"
-    "sumli": 
-        "prefix": "sumli"
-        "body": "\\\\sum_i"
-        "description": "\sum_i"
+    "sumlt": 
+        "prefix": "sumlt"
+        "body": "\\\\sum_t"
+        "description": "\sum_t"
+    "sumls": 
+        "prefix": "sumls"
+        "body": "\\\\sum_s"
+        "description": "\sum_s"
+    "sumlr": 
+        "prefix": "sumlr"
+        "body": "\\\\sum_r"
+        "description": "\sum_r"
+    "sumlq": 
+        "prefix": "sumlq"
+        "body": "\\\\sum_q"
+        "description": "\sum_q"
+    "sumlp": 
+        "prefix": "sumlp"
+        "body": "\\\\sum_p"
+        "description": "\sum_p"
+    "sumlo": 
+        "prefix": "sumlo"
+        "body": "\\\\sum_o"
+        "description": "\sum_o"
+    "sumln": 
+        "prefix": "sumln"
+        "body": "\\\\sum_n"
+        "description": "\sum_n"
+    "sumlm": 
+        "prefix": "sumlm"
+        "body": "\\\\sum_m"
+        "description": "\sum_m"
+    "sumll": 
+        "prefix": "sumll"
+        "body": "\\\\sum_l"
+        "description": "\sum_l"
+    "sumlk": 
+        "prefix": "sumlk"
+        "body": "\\\\sum_k"
+        "description": "\sum_k"
     "sumlj": 
         "prefix": "sumlj"
         "body": "\\\\sum_j"
         "description": "\sum_j"
+    "sumli": 
+        "prefix": "sumli"
+        "body": "\\\\sum_i"
+        "description": "\sum_i"
+    "sumlh": 
+        "prefix": "sumlh"
+        "body": "\\\\sum_h"
+        "description": "\sum_h"
+    "sumlg": 
+        "prefix": "sumlg"
+        "body": "\\\\sum_g"
+        "description": "\sum_g"
+    "sumlf": 
+        "prefix": "sumlf"
+        "body": "\\\\sum_f"
+        "description": "\sum_f"
+    "sumle": 
+        "prefix": "sumle"
+        "body": "\\\\sum_e"
+        "description": "\sum_e"
+    "sumld": 
+        "prefix": "sumld"
+        "body": "\\\\sum_d"
+        "description": "\sum_d"
+    "sumlc": 
+        "prefix": "sumlc"
+        "body": "\\\\sum_c"
+        "description": "\sum_c"
+    "sumlb": 
+        "prefix": "sumlb"
+        "body": "\\\\sum_b"
+        "description": "\sum_b"
+    "sumla": 
+        "prefix": "sumla"
+        "body": "\\\\sum_a"
+        "description": "\sum_a"
     "subst": 
         "prefix": "subst"
         "body": "\\\\substack{$1 \\\\\\\\ $2}"
@@ -4579,10 +5007,10 @@
         "prefix": "hmo"
         "body": "^{-1}"
         "description": "^{-1}"
-    "hk": 
-        "prefix": "hk"
-        "body": "^k"
-        "description": "^k"
+    "hkk": 
+        "prefix": "hkk"
+        "body": "^{kk}"
+        "description": "^{kk}"
     "hkj": 
         "prefix": "hkj"
         "body": "^{kj}"
@@ -6244,6 +6672,10 @@
         "prefix": "hl"
         "body": "^l"
         "description": "^l"
+    "hk": 
+        "prefix": "hk"
+        "body": "^k"
+        "description": "^k"
     "hj": 
         "prefix": "hj"
         "body": "^j"
